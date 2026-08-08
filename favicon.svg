@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Sfondo quadrato arrotondato blu navy -->
+  <rect width="64" height="64" rx="14" fill="#0F2A4A"/>
+  <!-- Foglio contratto bianco -->
+  <rect x="18" y="16" width="28" height="34" rx="3" fill="white" opacity="0.95"/>
+  <!-- Righe del contratto -->
+  <rect x="22" y="23" width="18" height="2.5" rx="1" fill="#0F2A4A" opacity="0.4"/>
+  <rect x="22" y="29" width="16" height="2.5" rx="1" fill="#0F2A4A" opacity="0.4"/>
+  <rect x="22" y="35" width="14" height="2.5" rx="1" fill="#0F2A4A" opacity="0.4"/>
+  <!-- Cerchio blu con spunta -->
+  <circle cx="39" cy="43" r="7" fill="#2E7CF6"/>
+  <polyline points="35,43 38,46 44,40" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

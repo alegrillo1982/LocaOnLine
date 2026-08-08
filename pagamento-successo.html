@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18245314132"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18245314132');
+  </script>
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pagamento Confermato – LocaOnLine</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif']}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"/>
+  <style>
+    @keyframes popIn { 0%{transform:scale(0.5);opacity:0} 70%{transform:scale(1.1)} 100%{transform:scale(1);opacity:1} }
+    .pop-in { animation: popIn 0.6s cubic-bezier(.175,.885,.32,1.275) forwards; }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+    .fade-up { animation: fadeUp 0.5s ease forwards; }
+    .delay-1 { animation-delay: 0.3s; opacity:0; }
+    .delay-2 { animation-delay: 0.5s; opacity:0; }
+    .delay-3 { animation-delay: 0.7s; opacity:0; }
+  </style>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <meta name="theme-color" content="#0F2A4A" />
+</head>
+<body class="font-sans bg-[#F4F7FB] min-h-screen flex items-center justify-center p-4">
+
+  <div class="w-full max-w-lg text-center">
+
+    <!-- Cerchio successo -->
+    <div class="w-24 h-24 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6 pop-in">
+      <i class="fa-solid fa-circle-check text-green-500 text-5xl"></i>
+    </div>
+
+    <!-- Titolo -->
+    <h1 class="text-3xl font-extrabold text-[#0F2A4A] mb-2 fade-up delay-1">Pagamento confermato!</h1>
+    <p class="text-slate-500 mb-8 fade-up delay-1">La tua richiesta è stata ricevuta con successo. Il nostro team la prenderà in carico a breve.</p>
+
+    <!-- Card info -->
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-6 text-left fade-up delay-2">
+      <h3 class="font-bold text-[#0F2A4A] mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-circle-info text-[#2E7CF6]"></i> Cosa succede adesso
+      </h3>
+      <div class="space-y-3">
+        <div class="flex items-start gap-3">
+          <div class="w-6 h-6 rounded-full bg-[#EBF2FF] flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span class="text-[#2E7CF6] text-xs font-bold">1</span>
+          </div>
+          <p class="text-sm text-slate-600">Il nostro team verifica i documenti caricati (di solito entro poche ore)</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-6 h-6 rounded-full bg-[#EBF2FF] flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span class="text-[#2E7CF6] text-xs font-bold">2</span>
+          </div>
+          <p class="text-sm text-slate-600">Procediamo con la registrazione presso l'Agenzia delle Entrate: l'80% delle pratiche entro 8 ore lavorative, 48 ore garantite</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <i class="fa-solid fa-check text-green-500 text-[10px]"></i>
+          </div>
+          <p class="text-sm text-slate-600">Ricevi tutto via email: ricevuta di registrazione e fattura in allegato</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ricevuta Stripe -->
+    <div class="bg-green-50 border border-green-200 rounded-2xl p-4 mb-6 fade-up delay-2">
+      <p class="text-green-700 text-sm"><i class="fa-solid fa-receipt mr-2"></i>Stripe ha inviato la ricevuta di pagamento alla tua email.</p>
+    </div>
+
+    <!-- Pratica ID -->
+    <div id="pratica-info" class="hidden bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 mb-6 fade-up delay-2">
+      <p class="text-xs text-slate-500">ID pratica: <strong class="font-mono text-[#0F2A4A]" id="pratica-id-display">–</strong></p>
+    </div>
+
+    <!-- Crea account (mostrato solo a chi ha acquistato senza registrarsi) -->
+    <div id="crea-account-box" class="hidden bg-white rounded-2xl border-2 border-[#2E7CF6] shadow-sm p-6 mb-6 text-left fade-up delay-2">
+      <h3 class="font-bold text-[#0F2A4A] mb-2 flex items-center gap-2">
+        <i class="fa-solid fa-user-plus text-[#2E7CF6]"></i> Vuoi seguire la pratica online?
+      </h3>
+      <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+        Scegli una password e potrai accedere all'area riservata per vedere lo stato di
+        avanzamento e scaricare i documenti. Puoi anche saltare questo passaggio: riceverai
+        comunque tutti gli aggiornamenti via email.
+      </p>
+      <div class="space-y-3">
+        <div>
+          <label for="acc-email" class="block text-xs font-semibold text-slate-500 mb-1">Email</label>
+          <input id="acc-email" type="email" autocomplete="email"
+                 class="w-full px-4 py-2.5 border-2 border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#2E7CF6]"
+                 placeholder="la-tua@email.it"/>
+        </div>
+        <div>
+          <label for="acc-password" class="block text-xs font-semibold text-slate-500 mb-1">Password</label>
+          <input id="acc-password" type="password" minlength="6" autocomplete="new-password"
+                 class="w-full px-4 py-2.5 border-2 border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#2E7CF6]"
+                 placeholder="Almeno 6 caratteri"/>
+        </div>
+        <p id="acc-msg" class="hidden text-xs rounded-lg px-3 py-2"></p>
+        <button id="acc-submit"
+                class="w-full inline-flex items-center justify-center gap-2 py-3 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white font-semibold rounded-xl transition-colors">
+          <i id="acc-icon" class="fa-solid fa-lock"></i>
+          <span id="acc-label">Crea il mio account</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row gap-3 fade-up delay-3">
+      <a href="dashboard.html" id="btn-dashboard"
+         class="flex-1 inline-flex items-center justify-center gap-2 py-3 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white font-semibold rounded-xl transition-colors shadow-md">
+        <i class="fa-solid fa-gauge-high"></i> Vai alla dashboard
+      </a>
+      <a href="contatti.html"
+         class="flex-1 inline-flex items-center justify-center gap-2 py-3 bg-white border border-slate-200 hover:bg-slate-50 text-[#0F2A4A] font-semibold rounded-xl transition-colors">
+        <i class="fa-solid fa-headset"></i> Contattaci
+      </a>
+    </div>
+
+    <!-- Footer minimal -->
+    <p class="text-slate-400 text-xs mt-8">
+      <a href="index.html" class="hover:text-slate-600 transition-colors">LocaOnLine</a> –
+      <a href="privacy.html" class="hover:text-slate-600 transition-colors ml-1">Privacy Policy</a>
+    </p>
+  </div>
+
+  <script>
+    // Mostra ID pratica se presente nell'URL (?client_reference_id=xxx)
+    const params = new URLSearchParams(window.location.search);
+    const praticaId = params.get('client_reference_id');
+    if (praticaId) {
+      document.getElementById('pratica-id-display').textContent = praticaId.slice(0,8).toUpperCase();
+      document.getElementById('pratica-info').classList.remove('hidden');
+    }
+  </script>
+
+  <!-- ===== Creazione account post-acquisto (solo utenti ospite) ===== -->
+  <script type="module">
+    import { initializeApp }   from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import { getAuth, onAuthStateChanged,
+             EmailAuthProvider, linkWithCredential }
+                               from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+    import { getFirestore, collection, query, where,
+             orderBy, limit, getDocs }
+                               from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+
+    const firebaseConfig = {
+      apiKey:            "AIzaSyCnSy8XSjZGRC76YDaknvlHphcCVLZOlL0",
+      authDomain:        "locaonline-e8157.firebaseapp.com",
+      projectId:         "locaonline-e8157",
+      storageBucket:     "locaonline-e8157.firebasestorage.app",
+      messagingSenderId: "423895184436",
+      appId:             "1:423895184436:web:d34d03ebc2f2b916abc661",
+    };
+
+    const app  = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db   = getFirestore(app);
+
+    const box      = document.getElementById('crea-account-box');
+    const emailEl  = document.getElementById('acc-email');
+    const passEl   = document.getElementById('acc-password');
+    const msgEl    = document.getElementById('acc-msg');
+    const btnEl    = document.getElementById('acc-submit');
+    const iconEl   = document.getElementById('acc-icon');
+    const labelEl  = document.getElementById('acc-label');
+
+    function showMsg(text, ok = false) {
+      msgEl.textContent = text;
+      msgEl.className = ok
+        ? 'text-xs rounded-lg px-3 py-2 bg-green-50 text-green-700'
+        : 'text-xs rounded-lg px-3 py-2 bg-red-50 text-red-600';
+    }
+
+    // Il riquadro compare solo a chi ha comprato senza registrarsi (utente anonimo)
+    onAuthStateChanged(auth, async (user) => {
+      if (!user || !user.isAnonymous) return;
+      box.classList.remove('hidden');
+      // Senza account l'ospite non ritroverebbe la pratica in dashboard:
+      // il pulsante ricompare solo dopo aver scelto la password.
+      document.getElementById('btn-dashboard')?.classList.add('hidden');
+
+      // Precompila l'email dai dati di fatturazione della pratica appena pagata.
+      // NON usiamo il parametro URL: i Payment Link di Stripe accettano solo
+      // client_reference_id, prefilled_email, prefilled_promo_code, locale e UTM,
+      // e non rimandano indietro l'id pratica. Cerchiamo quindi l'ultima pratica
+      // creata da questo utente, che è per forza quella appena pagata.
+      try {
+        const q = query(
+          collection(db, 'pratiche'),
+          where('userId', '==', user.uid),
+          orderBy('createdAt', 'desc'),
+          limit(1)
+        );
+        const snap = await getDocs(q);
+        if (!snap.empty) {
+          const p = snap.docs[0].data();
+          if (p.clienteEmail) emailEl.value = p.clienteEmail;
+          // Mostra l'id pratica anche senza parametri nell'URL
+          const idEl = document.getElementById('pratica-id-display');
+          if (idEl && !praticaId) {
+            idEl.textContent = snap.docs[0].id.slice(0, 8).toUpperCase();
+            document.getElementById('pratica-info')?.classList.remove('hidden');
+          }
+        }
+      } catch (err) {
+        console.warn('Recupero pratica non riuscito:', err);
+      }
+    });
+
+    btnEl?.addEventListener('click', async () => {
+      const email    = emailEl.value.trim();
+      const password = passEl.value;
+
+      if (!email || !email.includes('@')) { showMsg('Inserisci un indirizzo email valido.'); return; }
+      if (password.length < 6)            { showMsg('La password deve avere almeno 6 caratteri.'); return; }
+
+      btnEl.disabled = true;
+      iconEl.className = 'fa-solid fa-circle-notch fa-spin';
+      labelEl.textContent = 'Creazione in corso…';
+
+      try {
+        // Collega email e password all'account anonimo: la pratica resta la stessa
+        const cred = EmailAuthProvider.credential(email, password);
+        await linkWithCredential(auth.currentUser, cred);
+        showMsg('Account creato! Ti stiamo portando nell\'area riservata…', true);
+        setTimeout(() => { window.location.href = 'dashboard.html'; }, 1400);
+      } catch (err) {
+        console.error('Creazione account non riuscita:', err);
+        const map = {
+          'auth/email-already-in-use': 'Esiste già un account con questa email. Accedi dall\'area riservata.',
+          'auth/invalid-email':        'Indirizzo email non valido.',
+          'auth/weak-password':        'Password troppo debole: usa almeno 6 caratteri.',
+          'auth/requires-recent-login':'Sessione scaduta. Accedi di nuovo per completare.',
+        };
+        showMsg(map[err.code] || 'Non è stato possibile creare l\'account. Riprova più tardi.');
+        btnEl.disabled = false;
+        iconEl.className = 'fa-solid fa-lock';
+        labelEl.textContent = 'Crea il mio account';
+      }
+    });
+  </script>
+</body>
+</html>

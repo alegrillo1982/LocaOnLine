@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Pagine private - non indicizzare
+Disallow: /dashboard.html
+Disallow: /login.html
+Disallow: /admin.html
+
+# Sitemap
+Sitemap: https://locaonline.it/sitemap.xml

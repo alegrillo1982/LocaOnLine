@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18245314132"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18245314132');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accedi – LocaOnLine | Area Riservata</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Tailwind CSS v3 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } }
+    }
+  </script>
+
+  <!-- Google reCAPTCHA v3 -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeAnR0tAAAAAPP-7SdD06CqmHYt9QmuE3vmPvJsQ"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    /* Pannello sinistro: pattern decorativo */
+    .auth-panel {
+      background: linear-gradient(145deg, #0F2A4A 0%, #1B4F8A 60%, #2E7CF6 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .auth-panel::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 26px 26px;
+    }
+    .auth-panel::after {
+      content: '';
+      position: absolute;
+      width: 420px; height: 420px;
+      border-radius: 50%;
+      background: rgba(46,124,246,0.18);
+      bottom: -120px; right: -100px;
+    }
+
+    /* Input focus ring brandizzato */
+    .input-field {
+      width: 100%;
+      padding: 0.65rem 1rem;
+      border: 1.5px solid #E2E8F0;
+      border-radius: 0.625rem;
+      font-size: 0.9rem;
+      color: #0F2A4A;
+      background: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .input-field:focus {
+      border-color: #2E7CF6;
+      box-shadow: 0 0 0 3px rgba(46,124,246,0.12);
+    }
+    .input-field::placeholder { color: #A0AEC0; }
+
+    /* Pannello form: transizione tra login e registrazione */
+    .form-panel { transition: opacity 0.25s ease, transform 0.25s ease; }
+    .form-panel.hidden-panel {
+      opacity: 0;
+      transform: translateY(8px);
+      pointer-events: none;
+      position: absolute;
+      top: 0; left: 0; right: 0;
+    }
+
+    /* Password toggle */
+    .pass-wrapper { position: relative; }
+    .pass-toggle {
+      position: absolute;
+      right: 12px; top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #A0AEC0;
+      font-size: 0.85rem;
+      transition: color 0.2s;
+    }
+    .pass-toggle:hover { color: #2E7CF6; }
+
+    /* Pulsante Google */
+    .btn-google {
+      transition: background 0.18s, border-color 0.18s, box-shadow 0.18s, transform 0.15s;
+    }
+    .btn-google:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transform: translateY(-1px);
+    }
+    .btn-google:active { transform: translateY(0); }
+
+    /* Pulsante primario */
+    .btn-primary {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%;
+      padding: 0.75rem 1.5rem;
+      background: #2E7CF6;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 0.625rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(46,124,246,0.3);
+    }
+    .btn-primary:hover { background: #1B5EC7; transform: translateY(-1px); box-shadow: 0 6px 18px rgba(46,124,246,0.35); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+    /* Spinner */
+    .spinner {
+      width: 16px; height: 16px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: none;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Alert box */
+    .alert {
+      display: none;
+      padding: 0.7rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 0.84rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .alert.error   { background: #FFF0F0; color: #C0392B; border: 1px solid #FECACA; display: flex; gap: 8px; align-items: center; }
+    .alert.success { background: #F0FFF4; color: #276749; border: 1px solid #BBF7D0; display: flex; gap: 8px; align-items: center; }
+  </style>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <meta name="theme-color" content="#0F2A4A" />
+</head>
+
+<body class="font-sans bg-[#F4F7FB] min-h-screen flex items-stretch antialiased">
+
+  <!-- ===== LAYOUT SPLIT ===== -->
+  <div class="flex w-full min-h-screen">
+
+    <!-- Pannello sinistro – brand (nascosto su mobile) -->
+    <aside class="auth-panel hidden lg:flex flex-col justify-between w-[42%] xl:w-[38%] p-12 relative z-0" aria-hidden="true">
+      <!-- Logo -->
+      <div class="relative z-10">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <div class="w-10 h-10 rounded-xl bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/20">
+            <i class="fa-solid fa-file-contract text-white text-base"></i>
+          </div>
+          <span class="text-2xl font-extrabold text-white tracking-tight">Loca<span class="text-blue-300">OnLine</span></span>
+        </a>
+      </div>
+
+      <!-- Testo centrale -->
+      <div class="relative z-10 space-y-6">
+        <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-xs text-white/80 font-medium tracking-wide">
+          <i class="fa-solid fa-shield-halved text-blue-300"></i>
+          Area riservata – Accesso sicuro
+        </div>
+        <h1 class="text-3xl xl:text-4xl font-extrabold text-white leading-snug">
+          Gestisci le tue<br/>pratiche in un<br/>unico posto.
+        </h1>
+        <p class="text-blue-200 text-sm leading-relaxed max-w-xs">
+          Monitora lo stato dei tuoi contratti, carica documenti e ricevi aggiornamenti in tempo reale dal team di Grillo Alessandro – LocaOnLine.
+        </p>
+
+        <!-- Feature pills -->
+        <div class="space-y-2.5 pt-2">
+          <div class="flex items-center gap-3 text-white/80 text-sm">
+            <div class="w-6 h-6 rounded-full bg-white/15 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-check text-[10px] text-blue-300"></i>
+            </div>
+            Registrazione contratti in pochi click
+          </div>
+          <div class="flex items-center gap-3 text-white/80 text-sm">
+            <div class="w-6 h-6 rounded-full bg-white/15 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-check text-[10px] text-blue-300"></i>
+            </div>
+            Upload documenti sicuro e criptato
+          </div>
+          <div class="flex items-center gap-3 text-white/80 text-sm">
+            <div class="w-6 h-6 rounded-full bg-white/15 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-check text-[10px] text-blue-300"></i>
+            </div>
+            Aggiornamenti in tempo reale
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer del pannello -->
+      <div class="relative z-10">
+        <p class="text-white/40 text-xs">&copy; LocaOnLine – Grillo Alessandro P.IVA 13367301002</p>
+      </div>
+    </aside>
+
+    <!-- Pannello destro – form -->
+    <main class="flex-1 flex flex-col items-center justify-center p-6 sm:p-10">
+
+      <!-- Logo mobile -->
+      <div class="lg:hidden mb-8 flex items-center gap-2">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-[#1B4F8A] to-[#2E7CF6] flex items-center justify-center">
+          <i class="fa-solid fa-file-contract text-white text-sm"></i>
+        </div>
+        <span class="text-xl font-extrabold">
+          <span class="text-[#0F2A4A]">Loca</span><span class="text-[#2E7CF6]">OnLine</span>
+        </span>
+      </div>
+
+      <div class="w-full max-w-md">
+
+        <!-- Tabs login / registrati -->
+        <div class="flex bg-slate-100 rounded-xl p-1 mb-8" role="tablist" aria-label="Modalità di accesso">
+          <button id="tab-login" role="tab" aria-selected="true"  aria-controls="panel-login"
+                  class="flex-1 py-2 text-sm font-semibold rounded-lg bg-white text-[#0F2A4A] shadow-sm transition-all">
+            Accedi
+          </button>
+          <button id="tab-register" role="tab" aria-selected="false" aria-controls="panel-register"
+                  class="flex-1 py-2 text-sm font-medium rounded-lg text-slate-500 hover:text-slate-700 transition-all">
+            Registrati
+          </button>
+        </div>
+
+        <!-- Alert globale -->
+        <div id="global-alert" class="alert"></div>
+
+        <!-- Wrapper form (posizionamento relativo per transizione) -->
+        <div class="relative">
+
+          <!-- ===== FORM LOGIN ===== -->
+          <div id="panel-login" class="form-panel" role="tabpanel" aria-labelledby="tab-login">
+            <h2 class="text-2xl font-extrabold text-[#0F2A4A] mb-1">Bentornato</h2>
+            <p class="text-slate-500 text-sm mb-7">Inserisci le tue credenziali per accedere all'area riservata.</p>
+
+            <form id="form-login" novalidate class="space-y-5">
+              <!-- Email -->
+              <div>
+                <label for="login-email" class="block text-sm font-medium text-[#0F2A4A] mb-1.5">Indirizzo email</label>
+                <input id="login-email" type="email" autocomplete="email" placeholder="nome@esempio.it"
+                       class="input-field" required />
+              </div>
+
+              <!-- Password -->
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <label for="login-password" class="block text-sm font-medium text-[#0F2A4A]">Password</label>
+                  <button type="button" id="forgot-btn" class="text-xs text-[#2E7CF6] hover:underline font-medium">Password dimenticata?</button>
+                </div>
+                <div class="pass-wrapper">
+                  <input id="login-password" type="password" autocomplete="current-password" placeholder="••••••••"
+                         class="input-field pr-10" required />
+                  <span class="pass-toggle" data-target="login-password" title="Mostra/nascondi password">
+                    <i class="fa-solid fa-eye"></i>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Ricordami -->
+              <label class="flex items-center gap-2.5 cursor-pointer select-none">
+                <input type="checkbox" id="remember-me" class="w-4 h-4 accent-[#2E7CF6] rounded" />
+                <span class="text-sm text-slate-600">Ricordami su questo dispositivo</span>
+              </label>
+
+              <!-- Submit -->
+              <button type="submit" id="btn-login" class="btn-primary mt-2">
+                <span class="spinner" id="spin-login"></span>
+                <i class="fa-solid fa-right-to-bracket" id="icon-login"></i>
+                <span id="label-login">Accedi all'area riservata</span>
+              </button>
+            </form>
+
+            <!-- Divisore -->
+            <div class="flex items-center gap-3 my-5">
+              <div class="flex-1 h-px bg-slate-200"></div>
+              <span class="text-xs text-slate-400 font-medium">oppure</span>
+              <div class="flex-1 h-px bg-slate-200"></div>
+            </div>
+
+            <!-- Google -->
+            <button type="button" id="btn-google-login" class="btn-google w-full flex items-center justify-center gap-3 py-2.5 px-4 bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50 rounded-xl text-sm font-semibold text-slate-700 shadow-sm transition-all">
+              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844a4.14 4.14 0 0 1-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615Z" fill="#4285F4"/>
+                <path d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18Z" fill="#34A853"/>
+                <path d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332Z" fill="#FBBC05"/>
+                <path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58Z" fill="#EA4335"/>
+              </svg>
+              Continua con Google
+            </button>
+
+            <p class="text-center text-sm text-slate-500 mt-5">
+              Non hai ancora un account?
+              <button type="button" id="goto-register" class="text-[#2E7CF6] font-semibold hover:underline">Registrati ora</button>
+            </p>
+          </div>
+
+          <!-- ===== FORM REGISTRAZIONE ===== -->
+          <div id="panel-register" class="form-panel hidden-panel" role="tabpanel" aria-labelledby="tab-register">
+            <h2 class="text-2xl font-extrabold text-[#0F2A4A] mb-1">Crea il tuo account</h2>
+            <p class="text-slate-500 text-sm mb-7">Registrati gratuitamente per gestire le tue pratiche online.</p>
+
+            <form id="form-register" novalidate class="space-y-4">
+              <!-- Nome e Cognome -->
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label for="reg-nome" class="block text-sm font-medium text-[#0F2A4A] mb-1.5">Nome</label>
+                  <input id="reg-nome" type="text" autocomplete="given-name" placeholder="Mario" class="input-field" required />
+                </div>
+                <div>
+                  <label for="reg-cognome" class="block text-sm font-medium text-[#0F2A4A] mb-1.5">Cognome</label>
+                  <input id="reg-cognome" type="text" autocomplete="family-name" placeholder="Rossi" class="input-field" required />
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div>
+                <label for="reg-email" class="block text-sm font-medium text-[#0F2A4A] mb-1.5">Indirizzo email</label>
+                <input id="reg-email" type="email" autocomplete="email" placeholder="nome@esempio.it" class="input-field" required />
+              </div>
+
+              <!-- Telefono opzionale -->
+              <div>
+                <label for="reg-tel" class="block text-sm font-medium text-[#0F2A4A] mb-1.5">
+                  Telefono <span class="text-slate-400 font-normal">(opzionale)</span>
+                </label>
+                <input id="reg-tel" type="tel" autocomplete="tel" placeholder="+39 333 000 0000" class="input-field" />
+                <p class="text-xs text-slate-400 mt-1.5">
+                  <i class="fa-solid fa-shield-halved text-[#2E7CF6] mr-1"></i>
+                  Utile per un contatto rapido in caso di necessità. Non verrà usato per scopi commerciali né per comunicazioni non legate alla tua pratica.
+                </p>
+              </div>
+
+              <!-- Password -->
+              <div>
+                <label for="reg-password" class="block text-sm font-medium text-[#0F2A4A] mb-1.5">Crea password</label>
+                <div class="pass-wrapper">
+                  <input id="reg-password" type="password" autocomplete="new-password" placeholder="Min. 8 caratteri"
+                         class="input-field pr-10" required minlength="8" />
+                  <span class="pass-toggle" data-target="reg-password">
+                    <i class="fa-solid fa-eye"></i>
+                  </span>
+                </div>
+                <!-- Strength bar -->
+                <div class="mt-2 flex gap-1" id="strength-bars">
+                  <div class="h-1 flex-1 rounded bg-slate-200" id="sb1"></div>
+                  <div class="h-1 flex-1 rounded bg-slate-200" id="sb2"></div>
+                  <div class="h-1 flex-1 rounded bg-slate-200" id="sb3"></div>
+                  <div class="h-1 flex-1 rounded bg-slate-200" id="sb4"></div>
+                </div>
+                <p id="strength-label" class="text-xs text-slate-400 mt-1"></p>
+              </div>
+
+              <!-- Privacy -->
+              <label class="flex items-start gap-2.5 cursor-pointer select-none">
+                <input type="checkbox" id="privacy" class="w-4 h-4 mt-0.5 accent-[#2E7CF6] rounded flex-shrink-0" required />
+                <span class="text-sm text-slate-600">
+                  Accetto la
+                  <a href="privacy.html" target="_blank" class="text-[#2E7CF6] hover:underline font-medium">Privacy Policy</a>
+                  e i
+                  <a href="termini.html" target="_blank" class="text-[#2E7CF6] hover:underline font-medium">Termini di servizio</a>
+                </span>
+              </label>
+
+              <!-- Submit -->
+              <button type="submit" id="btn-register" class="btn-primary mt-1">
+                <span class="spinner" id="spin-register"></span>
+                <i class="fa-solid fa-user-plus" id="icon-register"></i>
+                <span id="label-register">Crea il mio account</span>
+              </button>
+            </form>
+
+            <!-- Divisore -->
+            <div class="flex items-center gap-3 my-5">
+              <div class="flex-1 h-px bg-slate-200"></div>
+              <span class="text-xs text-slate-400 font-medium">oppure</span>
+              <div class="flex-1 h-px bg-slate-200"></div>
+            </div>
+
+            <!-- Google -->
+            <button type="button" id="btn-google-register" class="btn-google w-full flex items-center justify-center gap-3 py-2.5 px-4 bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50 rounded-xl text-sm font-semibold text-slate-700 shadow-sm transition-all">
+              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844a4.14 4.14 0 0 1-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615Z" fill="#4285F4"/>
+                <path d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18Z" fill="#34A853"/>
+                <path d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332Z" fill="#FBBC05"/>
+                <path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58Z" fill="#EA4335"/>
+              </svg>
+              Registrati con Google
+            </button>
+
+            <p class="text-center text-sm text-slate-500 mt-5">
+              Hai già un account?
+              <button type="button" id="goto-login" class="text-[#2E7CF6] font-semibold hover:underline">Accedi</button>
+            </p>
+          </div>
+        </div><!-- /wrapper -->
+
+        <!-- Back link -->
+        <div class="mt-10 text-center">
+          <a href="index.html" class="inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-slate-600 transition-colors">
+            <i class="fa-solid fa-arrow-left"></i>
+            Torna al sito
+          </a>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ===== FIREBASE v10 via CDN ===== -->
+  <script type="module">
+    // ─── Configurazione Firebase (sostituisci con i tuoi valori) ───
+    import { initializeApp }                          from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import { getAuth, signInWithEmailAndPassword,
+             createUserWithEmailAndPassword,
+             sendPasswordResetEmail,
+             signInWithPopup, GoogleAuthProvider,
+             setPersistence, browserLocalPersistence,
+             browserSessionPersistence }              from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+
+    const firebaseConfig = {
+      apiKey:            "AIzaSyCnSy8XSjZGRC76YDaknvlHphcCVLZOlL0",
+      authDomain:        "locaonline-e8157.firebaseapp.com",
+      projectId:         "locaonline-e8157",
+      storageBucket:     "locaonline-e8157.firebasestorage.app",
+      messagingSenderId: "423895184436",
+      appId:             "1:423895184436:web:d34d03ebc2f2b916abc661",
+    };
+
+    const app  = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    // ─── UI helpers ───────────────────────────────────────────────
+    const alert$ = document.getElementById('global-alert');
+
+    function showAlert(msg, type = 'error') {
+      const icon = type === 'error' ? 'fa-circle-exclamation' : 'fa-circle-check';
+      alert$.className = `alert ${type}`;
+      alert$.innerHTML = `<i class="fa-solid ${icon}"></i><span>${msg}</span>`;
+    }
+    function hideAlert() {
+      alert$.className = 'alert';
+      alert$.innerHTML = '';
+    }
+
+    function setLoading(btnId, spinId, iconId, loading) {
+      const btn  = document.getElementById(btnId);
+      const spin = document.getElementById(spinId);
+      const icon = document.getElementById(iconId);
+      btn.disabled       = loading;
+      spin.style.display = loading ? 'block' : 'none';
+      icon.style.display = loading ? 'none'  : 'inline';
+    }
+
+    function firebaseError(code) {
+      const map = {
+        'auth/user-not-found':      'Nessun account trovato con questa email.',
+        'auth/wrong-password':      'Password non corretta. Riprova.',
+        'auth/invalid-credential':  'Credenziali non valide. Controlla email e password.',
+        'auth/email-already-in-use':'Questa email è già registrata. Prova ad accedere.',
+        'auth/weak-password':       'La password è troppo debole (min. 8 caratteri).',
+        'auth/invalid-email':       'Formato email non valido.',
+        'auth/too-many-requests':   'Troppi tentativi. Riprova tra qualche minuto.',
+        'auth/network-request-failed': 'Errore di rete. Controlla la connessione.',
+        'auth/unauthorized-domain': 'Dominio non autorizzato. Contatta l\'assistenza.',
+      };
+      return map[code] || 'Si è verificato un errore. Riprova.';
+    }
+
+    // ─── LOGIN ────────────────────────────────────────────────────
+    document.getElementById('form-login').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      hideAlert();
+      const email    = document.getElementById('login-email').value.trim();
+      const password = document.getElementById('login-password').value;
+      const remember = document.getElementById('remember-me').checked;
+
+      if (!email || !password) { showAlert('Inserisci email e password.'); return; }
+
+      setLoading('btn-login', 'spin-login', 'icon-login', true);
+      try {
+        const persistence = remember ? browserLocalPersistence : browserSessionPersistence;
+        await setPersistence(auth, persistence);
+        await signInWithEmailAndPassword(auth, email, password);
+        showAlert('Accesso effettuato! Reindirizzamento…', 'success');
+        setTimeout(() => { window.location.href = 'dashboard.html'; }, 900);
+      } catch (err) {
+        showAlert(firebaseError(err.code));
+      } finally {
+        setLoading('btn-login', 'spin-login', 'icon-login', false);
+      }
+    });
+
+    // ─── REGISTRAZIONE ────────────────────────────────────────────
+    // Soglia minima punteggio reCAPTCHA (0.0 = bot, 1.0 = umano)
+    const RECAPTCHA_SITE_KEY  = '6LeAnR0tAAAAAPP-7SdD06CqmHYt9QmuE3vmPvJsQ';
+    const RECAPTCHA_MIN_SCORE = 0.5;
+
+    document.getElementById('form-register').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      hideAlert();
+      const email    = document.getElementById('reg-email').value.trim();
+      const password = document.getElementById('reg-password').value;
+      const privacy  = document.getElementById('privacy').checked;
+
+      if (!email || !password)  { showAlert('Compila tutti i campi obbligatori.'); return; }
+      if (!privacy)             { showAlert('Devi accettare la Privacy Policy per continuare.'); return; }
+      if (password.length < 8) { showAlert('La password deve contenere almeno 8 caratteri.'); return; }
+
+      setLoading('btn-register', 'spin-register', 'icon-register', true);
+
+      try {
+        // ── Verifica reCAPTCHA v3 ──────────────────────────────────
+        // Isolato in un try/catch dedicato e con grecaptcha.ready(): un problema
+        // con reCAPTCHA (script non ancora pronto, timeout, ecc.) NON deve mai
+        // bloccare la registrazione — è solo un controllo anti-bot accessorio.
+        let recaptchaOk = true; // fallback: se reCAPTCHA fallisce o non è configurato, lascia passare
+        if (typeof grecaptcha !== 'undefined' && RECAPTCHA_SITE_KEY !== 'RECAPTCHA_SITE_KEY') {
+          try {
+            const token = await Promise.race([
+              new Promise((resolve, reject) => {
+                grecaptcha.ready(() => {
+                  grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'register' })
+                    .then(resolve)
+                    .catch(reject);
+                });
+              }),
+              new Promise((_, reject) => setTimeout(() => reject(new Error('reCAPTCHA timeout dopo 5s')), 5000))
+            ]);
+            // Verifica lato client il token — in produzione dovresti verificarlo lato server
+            // Per ora usiamo un controllo base: se il token esiste siamo ok
+            // (la verifica completa del punteggio richiede una Cloud Function)
+            recaptchaOk = token && token.length > 0;
+          } catch (recaptchaErr) {
+            console.warn('reCAPTCHA non disponibile, procedo comunque con la registrazione:', recaptchaErr);
+            recaptchaOk = true;
+          }
+        }
+
+        if (!recaptchaOk) {
+          showAlert('Verifica di sicurezza fallita. Riprova.');
+          setLoading('btn-register', 'spin-register', 'icon-register', false);
+          return;
+        }
+
+        // ── Crea account Firebase ──────────────────────────────────
+        await createUserWithEmailAndPassword(auth, email, password);
+        showAlert('Account creato con successo! Reindirizzamento…', 'success');
+        setTimeout(() => { window.location.href = 'dashboard.html'; }, 900);
+      } catch (err) {
+        console.error('Errore registrazione:', err);
+        showAlert(firebaseError(err.code));
+      } finally {
+        setLoading('btn-register', 'spin-register', 'icon-register', false);
+      }
+    });
+
+    // ─── PASSWORD RESET ───────────────────────────────────────────
+    document.getElementById('forgot-btn').addEventListener('click', async () => {
+      const email = document.getElementById('login-email').value.trim();
+      if (!email) { showAlert('Inserisci prima la tua email nel campo sopra.'); return; }
+      hideAlert();
+      try {
+        await sendPasswordResetEmail(auth, email);
+        showAlert('Email di recupero inviata! Controlla la tua casella.', 'success');
+      } catch (err) {
+        showAlert(firebaseError(err.code));
+      }
+    });
+
+    // ─── GOOGLE SIGN-IN ───────────────────────────────────────────
+    const googleProvider = new GoogleAuthProvider();
+    googleProvider.setCustomParameters({ prompt: 'select_account' });
+
+    async function signInWithGoogle() {
+      hideAlert();
+      try {
+        await signInWithPopup(auth, googleProvider);
+        showAlert('Accesso con Google effettuato! Reindirizzamento…', 'success');
+        setTimeout(() => { window.location.href = 'dashboard.html'; }, 900);
+      } catch (err) {
+        if (err.code !== 'auth/popup-closed-by-user' && err.code !== 'auth/cancelled-popup-request') {
+          showAlert(firebaseError(err.code));
+        }
+      }
+    }
+
+    document.getElementById('btn-google-login').addEventListener('click', signInWithGoogle);
+    document.getElementById('btn-google-register').addEventListener('click', signInWithGoogle);
+  </script>
+
+  <!-- ===== JS UI (non-module, nessun import Firebase) ===== -->
+  <script>
+    // ─── Tab switch ───────────────────────────────────────────────
+    const tabLogin    = document.getElementById('tab-login');
+    const tabRegister = document.getElementById('tab-register');
+    const panelLogin  = document.getElementById('panel-login');
+    const panelReg    = document.getElementById('panel-register');
+
+    function switchToLogin() {
+      panelLogin.classList.remove('hidden-panel');
+      panelReg.classList.add('hidden-panel');
+      tabLogin.classList.add('bg-white', 'text-[#0F2A4A]', 'shadow-sm');
+      tabLogin.classList.remove('text-slate-500');
+      tabRegister.classList.remove('bg-white', 'text-[#0F2A4A]', 'shadow-sm');
+      tabRegister.classList.add('text-slate-500');
+      tabLogin.setAttribute('aria-selected', 'true');
+      tabRegister.setAttribute('aria-selected', 'false');
+    }
+
+    function switchToRegister() {
+      panelReg.classList.remove('hidden-panel');
+      panelLogin.classList.add('hidden-panel');
+      tabRegister.classList.add('bg-white', 'text-[#0F2A4A]', 'shadow-sm');
+      tabRegister.classList.remove('text-slate-500');
+      tabLogin.classList.remove('bg-white', 'text-[#0F2A4A]', 'shadow-sm');
+      tabLogin.classList.add('text-slate-500');
+      tabRegister.setAttribute('aria-selected', 'true');
+      tabLogin.setAttribute('aria-selected', 'false');
+    }
+
+    tabLogin.addEventListener('click', switchToLogin);
+    tabRegister.addEventListener('click', switchToRegister);
+    document.getElementById('goto-register').addEventListener('click', switchToRegister);
+    document.getElementById('goto-login').addEventListener('click', switchToLogin);
+
+    // ─── Password toggle ──────────────────────────────────────────
+    document.querySelectorAll('.pass-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const input = document.getElementById(btn.dataset.target);
+        const icon  = btn.querySelector('i');
+        if (input.type === 'password') {
+          input.type = 'text';
+          icon.className = 'fa-solid fa-eye-slash';
+        } else {
+          input.type = 'password';
+          icon.className = 'fa-solid fa-eye';
+        }
+      });
+    });
+
+    // ─── Password strength ────────────────────────────────────────
+    const pwInput = document.getElementById('reg-password');
+    const bars    = [document.getElementById('sb1'), document.getElementById('sb2'),
+                     document.getElementById('sb3'), document.getElementById('sb4')];
+    const label   = document.getElementById('strength-label');
+    const levels  = [
+      { color: 'bg-red-400',    text: 'Molto debole', textColor: 'text-red-400' },
+      { color: 'bg-orange-400', text: 'Debole',        textColor: 'text-orange-400' },
+      { color: 'bg-yellow-400', text: 'Discreta',      textColor: 'text-yellow-500' },
+      { color: 'bg-green-500',  text: 'Forte',         textColor: 'text-green-600' },
+    ];
+
+    pwInput.addEventListener('input', () => {
+      const v = pwInput.value;
+      let score = 0;
+      if (v.length >= 8)              score++;
+      if (/[A-Z]/.test(v))            score++;
+      if (/[0-9]/.test(v))            score++;
+      if (/[^A-Za-z0-9]/.test(v))     score++;
+
+      bars.forEach((b, i) => {
+        b.className = `h-1 flex-1 rounded ${i < score ? levels[score - 1].color : 'bg-slate-200'}`;
+      });
+      label.textContent = v.length ? levels[score - 1]?.text || '' : '';
+      label.className = `text-xs mt-1 ${score ? levels[score - 1].textColor : 'text-slate-400'}`;
+    });
+  </script>
+
+  <!-- ===== COOKIE BANNER ===== -->
+  <div id="cookie-banner"
+       class="fixed bottom-0 left-0 right-0 z-50 bg-[#0F2A4A] border-t border-white/10 shadow-2xl"
+       role="dialog" aria-label="Informativa cookie" style="display:none;">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div class="flex-1 min-w-0">
+        <p class="text-white text-sm font-medium mb-1">🍪 Questo sito utilizza i cookie</p>
+        <p class="text-slate-400 text-xs leading-relaxed">
+          Utilizziamo cookie tecnici essenziali per il funzionamento del sito e, previo consenso, cookie analitici.
+          <a href="privacy.html" class="text-[#5B9BFF] hover:underline ml-1">Leggi l'informativa privacy</a>
+        </p>
+      </div>
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <button id="cookie-manage" class="px-4 py-2 text-xs font-semibold text-slate-300 hover:text-white border border-white/20 hover:border-white/40 rounded-lg transition-colors">
+          Solo essenziali
+        </button>
+        <button id="cookie-accept" class="px-4 py-2 text-xs font-semibold text-white bg-[#2E7CF6] hover:bg-[#1B5EC7] rounded-lg transition-colors shadow-sm">
+          Accetta tutti
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Cookie banner
+    const _banner = document.getElementById('cookie-banner');
+    const COOKIE_KEY = 'locaonline_cookie_consent';
+    if (!localStorage.getItem(COOKIE_KEY)) _banner.style.display = 'block';
+    document.getElementById('cookie-accept').addEventListener('click', () => {
+      localStorage.setItem(COOKIE_KEY, 'all');
+      localStorage.setItem(COOKIE_KEY + '_date', new Date().toISOString());
+      _banner.style.display = 'none';
+    });
+    document.getElementById('cookie-manage').addEventListener('click', () => {
+      localStorage.setItem(COOKIE_KEY, 'essential');
+      localStorage.setItem(COOKIE_KEY + '_date', new Date().toISOString());
+      _banner.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,3439 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Google tag (gtag.js) — copre sia Google Ads sia GA4, collegato allo stesso
+       contenitore GT-5N59K2RN. Senza questo la dashboard era invisibile in Analytics
+       e non si poteva misurare quanti utenti abbandonano durante il checkout. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18245314132"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18245314132');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard – LocaOnLine | Area Riservata</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Tailwind CSS v3 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <style>
+    html, body { height: 100%; margin: 0; }
+
+    /* Sidebar */
+    #sidebar {
+      transition: transform 0.28s cubic-bezier(.4,0,.2,1), width 0.28s;
+    }
+    @media (max-width: 1023px) {
+      #sidebar { transform: translateX(-100%); position: fixed; z-index: 40; height: 100dvh; }
+      #sidebar.open { transform: translateX(0); }
+      /* NIENTE regola display sull'overlay: un selettore #id batte per specificità
+         la classe .hidden di Tailwind, e l'overlay restava visibile su TUTTI i
+         dispositivi mobili — pagina scurita e non cliccabile. La visibilità è
+         già gestita dal JS che aggiunge/toglie la classe .hidden. */
+    }
+
+    /* Nav item attivo */
+    .nav-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 9px 14px;
+      border-radius: 10px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #94A3B8;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      text-decoration: none;
+      border: none; background: none; width: 100%; text-align: left;
+    }
+    .nav-item:hover  { background: rgba(255,255,255,0.07); color: #fff; }
+    .nav-item.active { background: rgba(46,124,246,0.18); color: #fff; }
+    .nav-item.active i { color: #2E7CF6; }
+    .nav-item i { width: 18px; text-align: center; font-size: 0.95rem; }
+
+    /* Badge stato pratica */
+    .badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 3px 10px; border-radius: 100px; font-size: 0.75rem; font-weight: 600;
+    }
+    .badge-blue    { background: #EBF2FF; color: #1B5EC7; }
+    .badge-green   { background: #DCFCE7; color: #166534; }
+    .badge-yellow  { background: #FEF9C3; color: #854D0E; }
+    .badge-red     { background: #FEE2E2; color: #991B1B; }
+    .badge-gray    { background: #F1F5F9; color: #475569; }
+
+    /* Sezione view */
+    .view { display: none; }
+    .view.active { display: block; }
+
+    /* Drag & drop area */
+    #drop-zone {
+      border: 2px dashed #CBD5E1;
+      border-radius: 14px;
+      transition: border-color 0.2s, background 0.2s;
+      cursor: pointer;
+    }
+    #drop-zone.drag-over {
+      border-color: #2E7CF6;
+      background: #EBF2FF;
+    }
+    #drop-zone:hover { border-color: #2E7CF6; }
+
+    /* Scrollbar sottile */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 99px; }
+
+    /* Toast */
+    #toast {
+      position: fixed; bottom: 24px; right: 24px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      background: #0F2A4A; color: #fff;
+      font-size: 0.84rem; font-weight: 500;
+      display: flex; align-items: center; gap: 10px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+      z-index: 999;
+      transform: translateY(80px); opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      pointer-events: none;
+    }
+    #toast.show { transform: translateY(0); opacity: 1; }
+    #toast.success i { color: #4ADE80; }
+    #toast.error   i { color: #F87171; }
+
+    /* Card stat */
+    .stat-card {
+      background: #fff; border-radius: 16px; padding: 20px 22px;
+      border: 1px solid #E2E8F0;
+      transition: box-shadow 0.2s;
+    }
+    .stat-card:hover { box-shadow: 0 8px 24px rgba(15,42,74,0.08); }
+
+    /* Upload list item */
+    .upload-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 10px 14px; background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 10px;
+    }
+    .upload-progress-bar {
+      height: 4px; border-radius: 99px;
+      background: #2E7CF6;
+      transition: width 0.4s ease;
+    }
+
+    /* Tabella responsive */
+    .table-wrap { overflow-x: auto; }
+    table { border-collapse: separate; border-spacing: 0; width: 100%; }
+    thead th {
+      background: #F8FAFC; font-size: 0.75rem; font-weight: 600;
+      color: #64748B; text-transform: uppercase; letter-spacing: 0.06em;
+      padding: 10px 16px; border-bottom: 1px solid #E2E8F0;
+    }
+    thead th:first-child { border-radius: 10px 0 0 0; }
+    thead th:last-child  { border-radius: 0 10px 0 0; }
+    tbody tr { transition: background 0.15s; }
+    tbody tr:hover td { background: #F8FAFC; }
+    tbody td {
+      padding: 14px 16px; font-size: 0.875rem;
+      border-bottom: 1px solid #F1F5F9; color: #1E293B;
+    }
+
+    /* Avatar utente */
+    .user-avatar {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: linear-gradient(135deg, #1B4F8A, #2E7CF6);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 700; font-size: 0.8rem;
+      flex-shrink: 0;
+    }
+  </style>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <meta name="theme-color" content="#0F2A4A" />
+</head>
+
+<body class="font-sans bg-[#F4F7FB] antialiased flex h-screen overflow-hidden">
+
+  <!-- ===== OVERLAY MOBILE ===== -->
+  <div id="sidebar-overlay" class="hidden fixed inset-0 bg-black/40 z-30 lg:hidden backdrop-blur-sm" aria-hidden="true"></div>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside id="sidebar" class="w-64 bg-[#0F2A4A] flex flex-col flex-shrink-0 h-full overflow-y-auto" aria-label="Navigazione principale">
+
+    <!-- Logo -->
+    <div class="px-5 py-5 border-b border-white/10 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-white/15 flex items-center justify-center">
+          <i class="fa-solid fa-file-contract text-white text-sm"></i>
+        </div>
+        <span class="text-base font-extrabold text-white tracking-tight">Loca<span class="text-blue-400">OnLine</span></span>
+      </a>
+      <!-- Chiudi sidebar (mobile) -->
+      <button id="sidebar-close" class="lg:hidden text-white/50 hover:text-white p-1" aria-label="Chiudi menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Profilo utente -->
+    <div class="px-5 py-4 border-b border-white/10">
+      <div class="flex items-center gap-3">
+        <div class="user-avatar" id="sidebar-avatar">…</div>
+        <div class="min-w-0">
+          <p class="text-white text-sm font-semibold truncate" id="sidebar-name"> </p>
+          <p class="text-slate-400 text-xs truncate" id="sidebar-email"> </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigazione -->
+    <nav class="flex-1 px-3 py-4 space-y-1" aria-label="Menu gestionale">
+      <p class="text-slate-500 text-xs font-semibold uppercase tracking-widest px-3 mb-2">Menu</p>
+
+      <button class="nav-item active" data-view="overview" aria-current="page">
+        <i class="fa-solid fa-gauge-high"></i> Panoramica
+      </button>
+      <button class="nav-item" data-view="pratiche">
+        <i class="fa-solid fa-folder-open"></i> Le mie pratiche
+      </button>
+      <button class="nav-item" data-view="documenti">
+        <i class="fa-solid fa-paperclip"></i> I miei documenti
+      </button>
+      <button class="nav-item" data-view="richiedi">
+        <i class="fa-solid fa-cart-shopping"></i> Richiedi Servizio
+      </button>
+      <button class="nav-item" data-view="fatture">
+        <i class="fa-solid fa-file-invoice"></i> Le mie fatture
+      </button>
+
+      <div class="pt-3 pb-1">
+        <p class="text-slate-500 text-xs font-semibold uppercase tracking-widest px-3 mb-2">Supporto</p>
+      </div>
+      <button class="nav-item" data-view="assistenza">
+        <i class="fa-solid fa-headset"></i> Assistenza
+      </button>
+      <button class="nav-item" data-view="account">
+        <i class="fa-solid fa-circle-user"></i> Il mio account
+      </button>
+      <a href="index.html" class="nav-item">
+        <i class="fa-solid fa-globe"></i> Vai al sito
+      </a>
+      <a href="privacy.html" class="nav-item">
+        <i class="fa-solid fa-shield-halved"></i> Privacy Policy
+      </a>
+      <!-- Link admin: visibile solo all'amministratore -->
+      <a href="admin.html" id="nav-admin-link" class="nav-item hidden" style="color:#F87171;">
+        <i class="fa-solid fa-shield-halved" style="color:#F87171;"></i> Backoffice Admin
+      </a>
+    </nav>
+
+    <!-- Footer sidebar -->
+    <div class="px-5 py-3 border-t border-white/5">
+      <p class="text-white/30 text-[10px] leading-relaxed">
+        LocaOnLine – Grillo Alessandro<br/>
+        P.IVA 13367301002 – REA RM-1441915
+      </p>
+    </div>
+
+    <!-- Pulsante Esci -->
+    <div class="px-3 py-4 border-t border-white/10">
+      <button id="btn-logout" class="nav-item w-full text-red-400 hover:bg-red-500/10 hover:text-red-300">
+        <i class="fa-solid fa-right-from-bracket text-red-400"></i>
+        Esci dall'account
+      </button>
+    </div>
+  </aside>
+
+  <!-- ===== CONTENUTO PRINCIPALE ===== -->
+  <div class="flex-1 flex flex-col min-w-0 overflow-hidden">
+
+    <!-- Top bar -->
+    <header class="h-14 bg-white border-b border-slate-200 flex items-center justify-between px-4 sm:px-6 flex-shrink-0 shadow-sm z-20">
+      <div class="flex items-center gap-3">
+        <!-- Burger mobile -->
+        <button id="sidebar-open" class="lg:hidden p-2 rounded-lg text-slate-500 hover:bg-slate-100 transition-colors" aria-label="Apri menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div>
+          <h1 id="topbar-title" class="text-base font-bold text-[#0F2A4A] leading-none">Panoramica</h1>
+          <p class="text-xs text-slate-400 mt-0.5 leading-none" id="topbar-sub">Area riservata</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <!-- Notifica -->
+        <button class="relative p-2 rounded-lg text-slate-400 hover:bg-slate-100 transition-colors" aria-label="Notifiche">
+          <i class="fa-solid fa-bell text-base"></i>
+          <span class="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>
+        </button>
+        <!-- Avatar top bar -->
+        <div class="user-avatar cursor-pointer" id="topbar-avatar" title="Profilo utente"></div>
+      </div>
+    </header>
+
+    <!-- Scroll area -->
+    <main class="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">
+
+      <!-- ===== VIEW: PANORAMICA ===== -->
+      <section class="view active" id="view-overview" aria-label="Panoramica">
+
+        <div class="mb-6">
+          <p class="text-slate-500 text-sm" id="welcome-msg"> </p>
+          <h2 class="text-2xl font-extrabold text-[#0F2A4A]">Panoramica delle tue pratiche</h2>
+        </div>
+
+        <!-- Stat cards -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <div class="stat-card">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Totale pratiche</span>
+              <div class="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
+                <i class="fa-solid fa-folder text-[#2E7CF6] text-sm"></i>
+              </div>
+            </div>
+            <p class="text-3xl font-extrabold text-[#0F2A4A]" id="stat-totale">–</p>
+            <p class="text-xs text-slate-400 mt-1">contratti caricati</p>
+          </div>
+          <div class="stat-card">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Registrate</span>
+              <div class="w-8 h-8 rounded-lg bg-green-50 flex items-center justify-center">
+                <i class="fa-solid fa-circle-check text-green-500 text-sm"></i>
+              </div>
+            </div>
+            <p class="text-3xl font-extrabold text-[#0F2A4A]" id="stat-registrate">–</p>
+            <p class="text-xs text-slate-400 mt-1">completate</p>
+          </div>
+          <div class="stat-card">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">In lavorazione</span>
+              <div class="w-8 h-8 rounded-lg bg-yellow-50 flex items-center justify-center">
+                <i class="fa-solid fa-clock text-yellow-500 text-sm"></i>
+              </div>
+            </div>
+            <p class="text-3xl font-extrabold text-[#0F2A4A]" id="stat-lavorazione">–</p>
+            <p class="text-xs text-slate-400 mt-1">in corso</p>
+          </div>
+          <div class="stat-card">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Documenti</span>
+              <div class="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center">
+                <i class="fa-solid fa-paperclip text-purple-500 text-sm"></i>
+              </div>
+            </div>
+            <p class="text-3xl font-extrabold text-[#0F2A4A]" id="stat-documenti">–</p>
+            <p class="text-xs text-slate-400 mt-1">file caricati</p>
+          </div>
+        </div>
+
+        <!-- Pratiche recenti (mini tabella) -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm mb-6">
+          <div class="flex items-center justify-between px-5 py-4 border-b border-slate-100">
+            <h3 class="font-bold text-[#0F2A4A] text-base">Pratiche recenti</h3>
+            <button class="text-xs text-[#2E7CF6] font-semibold hover:underline" data-view="pratiche" id="link-all-pratiche">Vedi tutte →</button>
+          </div>
+          <div class="table-wrap" id="overview-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Pratica</th>
+                  <th>Servizio</th>
+                  <th>Stato</th>
+                  <th>Scadenza</th>
+                </tr>
+              </thead>
+              <tbody id="overview-tbody">
+                <!-- Skeleton loader -->
+                <tr id="overview-skeleton">
+                  <td colspan="4" class="py-8 text-center text-slate-400 text-sm">
+                    <i class="fa-solid fa-circle-notch fa-spin mr-2 text-[#2E7CF6]"></i>Caricamento…
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Banner nuova pratica -->
+        <div class="bg-gradient-to-r from-[#0F2A4A] to-[#1B4F8A] rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <p class="text-blue-200 text-sm font-medium mb-1">Hai un nuovo contratto?</p>
+            <h3 class="text-white font-bold text-lg">Avvia una nuova pratica di registrazione</h3>
+          </div>
+          <button onclick="window.navigateTo('richiedi')"
+             class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white font-semibold text-sm rounded-xl whitespace-nowrap transition-colors shadow-lg shadow-blue-900/30 flex-shrink-0">
+            <i class="fa-solid fa-plus"></i>
+            Nuova pratica
+          </button>
+        </div>
+      </section>
+
+      <!-- ===== VIEW: LE MIE PRATICHE ===== -->
+      <section class="view" id="view-pratiche" aria-label="Le mie pratiche">
+
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div>
+            <p class="text-slate-500 text-sm">Area riservata</p>
+            <h2 class="text-2xl font-extrabold text-[#0F2A4A]">Le mie pratiche</h2>
+          </div>
+          <button onclick="window.navigateTo('richiedi')"
+             class="inline-flex items-center gap-2 px-4 py-2.5 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white text-sm font-semibold rounded-xl transition-colors shadow-sm self-start sm:self-auto">
+            <i class="fa-solid fa-plus"></i> Nuova pratica
+          </button>
+        </div>
+
+        <!-- Filtri -->
+        <div class="flex flex-wrap gap-2 mb-5" id="filter-bar">
+          <button class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#0F2A4A] text-white" data-filter="all">Tutte (0)</button>
+          <button class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-500 hover:border-[#2E7CF6] hover:text-[#2E7CF6]" data-filter="registrato">Registrate</button>
+          <button class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-500 hover:border-[#2E7CF6] hover:text-[#2E7CF6]" data-filter="lavorazione">In lavorazione</button>
+          <button class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-500 hover:border-[#2E7CF6] hover:text-[#2E7CF6]" data-filter="documenti">Docs mancanti</button>
+        </div>
+
+        <!-- Tabella pratiche completa -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+          <div class="table-wrap">
+            <table id="pratiche-table">
+              <thead>
+                <tr>
+                  <th>N° Pratica</th>
+                  <th>Servizio</th>
+                  <th>Data apertura</th>
+                  <th>Stato</th>
+                  <th>Scadenza</th>
+                  <th>Azioni</th>
+                </tr>
+              </thead>
+              <tbody id="pratiche-tbody">
+                <!-- Skeleton -->
+                <tr id="pratiche-skeleton">
+                  <td colspan="6" class="py-10 text-center text-slate-400 text-sm">
+                    <i class="fa-solid fa-circle-notch fa-spin mr-2 text-[#2E7CF6]"></i>Caricamento pratiche…
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Info legenda -->
+        <div class="mt-4 flex flex-wrap gap-3">
+          <span class="flex items-center gap-1.5 text-xs text-slate-500"><span class="badge badge-green">Registrato</span> Pratica completata e protocollata presso l'Agenzia delle Entrate</span>
+          <span class="flex items-center gap-1.5 text-xs text-slate-500"><span class="badge badge-yellow">In lavorazione</span> I nostri operatori stanno elaborando</span>
+          <span class="flex items-center gap-1.5 text-xs text-slate-500"><span class="badge badge-red">Docs mancanti</span> È richiesta la tua azione</span>
+        </div>
+      </section>
+
+      <!-- ===== VIEW: I MIEI DOCUMENTI ===== -->
+      <section class="view" id="view-documenti" aria-label="I miei documenti">
+
+        <div class="mb-6">
+          <p class="text-slate-500 text-sm">Area riservata</p>
+          <h2 class="text-2xl font-extrabold text-[#0F2A4A]">I miei documenti</h2>
+        </div>
+
+        <!-- Upload area -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-6">
+          <h3 class="font-bold text-[#0F2A4A] text-base mb-1">Aggiungi documenti a una pratica</h3>
+          <p class="text-sm text-slate-500 mb-4">Seleziona la pratica a cui aggiungere documenti, poi carica i file. I documenti saranno visibili al nostro team nel backoffice.</p>
+
+          <!-- Selezione pratica -->
+          <div class="mb-4">
+            <label for="doc-pratica-select" class="block text-sm font-semibold text-[#0F2A4A] mb-1.5">
+              Associa a una pratica <span class="text-slate-400 font-normal">(opzionale)</span>
+            </label>
+            <div class="relative">
+              <select id="doc-pratica-select"
+                      class="w-full appearance-none pl-4 pr-10 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] bg-white focus:outline-none focus:border-[#2E7CF6] transition-all cursor-pointer">
+                <option value="">— Documento generico (non associato) —</option>
+              </select>
+              <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 text-xs pointer-events-none"></i>
+            </div>
+            <p class="text-xs text-slate-400 mt-1.5">
+              <i class="fa-solid fa-circle-info text-[#2E7CF6] mr-1"></i>
+              Se il nostro team ti ha chiesto documenti aggiuntivi, seleziona la pratica corrispondente.
+            </p>
+          </div>
+
+          <!-- Drop zone -->
+          <div id="drop-zone" class="flex flex-col items-center justify-center py-10 px-6 text-center mb-4"
+               role="button" tabindex="0" aria-label="Zona caricamento documenti">
+            <div class="w-14 h-14 rounded-2xl bg-[#EBF2FF] flex items-center justify-center mb-4">
+              <i class="fa-solid fa-cloud-arrow-up text-[#2E7CF6] text-2xl"></i>
+            </div>
+            <p class="font-semibold text-[#0F2A4A] mb-1">Trascina i file qui</p>
+            <p class="text-sm text-slate-400 mb-4">oppure</p>
+            <label for="file-input"
+                   class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white text-sm font-semibold rounded-xl cursor-pointer transition-colors shadow-sm">
+              <i class="fa-solid fa-folder-open"></i>
+              Seleziona file
+            </label>
+            <input id="file-input" type="file" multiple accept=".pdf,.jpg,.jpeg,.png" class="hidden" aria-label="Carica documenti" />
+            <p class="text-xs text-slate-400 mt-4">PDF, JPG, PNG • max 10 MB per file<br/>Va bene anche una foto di ogni singola pagina fatta con il telefono</p>
+          </div>
+
+          <!-- Lista upload in corso -->
+          <div id="upload-list" class="space-y-2.5" aria-live="polite" aria-label="File in caricamento"></div>
+        </div>
+
+        <!-- Documenti caricati per pratica -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="flex items-center justify-between px-5 py-4 border-b border-slate-100">
+            <h3 class="font-bold text-[#0F2A4A] text-base">Documenti caricati</h3>
+            <span class="text-xs text-slate-400 font-medium" id="docs-count">–</span>
+          </div>
+          <div class="divide-y divide-slate-100" id="docs-list">
+            <div id="docs-skeleton" class="py-10 flex flex-col items-center justify-center gap-2 text-slate-400 text-sm">
+              <i class="fa-solid fa-circle-notch fa-spin text-[#2E7CF6] text-xl mb-1"></i>
+              Caricamento documenti…
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== VIEW: RICHIEDI UN SERVIZIO (WIZARD 3 STEP) ===== -->
+      <section class="view" id="view-richiedi" aria-label="Richiedi un servizio">
+
+        <!-- Banner modalità ospite (acquisto senza registrazione) -->
+        <div id="ospite-banner" class="hidden mb-6 bg-[#EBF2FF] border border-[#2E7CF6]/30 rounded-2xl p-4 flex items-start gap-3">
+          <i class="fa-solid fa-circle-info text-[#2E7CF6] mt-0.5"></i>
+          <div>
+            <p class="text-sm font-semibold text-[#0F2A4A]">Stai procedendo senza registrazione</p>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              Compila i dati, carica i documenti e paga: non serve creare un account.
+              Al termine del pagamento potrai scegliere una password per seguire la pratica online.
+              Riceverai comunque tutti gli aggiornamenti via email.
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <p class="text-slate-500 text-sm">Area riservata</p>
+          <h2 class="text-2xl font-extrabold text-[#0F2A4A]">Richiedi un Servizio</h2>
+        </div>
+
+        <!-- Progress bar wizard -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 mb-6">
+          <div class="flex items-center justify-between relative">
+            <div class="absolute left-0 right-0 top-5 h-0.5 bg-slate-200 mx-16 z-0"></div>
+            <div id="wizard-progress-line" class="absolute left-0 top-5 h-0.5 bg-[#2E7CF6] mx-16 z-0 transition-all duration-500" style="width:0%"></div>
+            <div class="flex flex-col items-center z-10">
+              <div id="step-circle-1" class="w-10 h-10 rounded-full bg-[#2E7CF6] text-white text-sm font-bold flex items-center justify-center shadow-md transition-all">1</div>
+              <p class="text-xs font-semibold text-[#2E7CF6] mt-2 text-center">Servizio<br/>e Documenti</p>
+            </div>
+            <div class="flex flex-col items-center z-10">
+              <div id="step-circle-2" class="w-10 h-10 rounded-full bg-slate-200 text-slate-400 text-sm font-bold flex items-center justify-center transition-all">2</div>
+              <p id="step-label-2" class="text-xs font-semibold text-slate-400 mt-2 text-center">I tuoi dati</p>
+            </div>
+            <div class="flex flex-col items-center z-10">
+              <div id="step-circle-3" class="w-10 h-10 rounded-full bg-slate-200 text-slate-400 text-sm font-bold flex items-center justify-center transition-all">3</div>
+              <p id="step-label-3" class="text-xs font-semibold text-slate-400 mt-2 text-center">Riepilogo<br/>e Pagamento</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
+          <div class="xl:col-span-2 bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
+
+            <!-- STEP 1 -->
+            <div id="wizard-step-1">
+              <h3 class="font-bold text-[#0F2A4A] text-base mb-5 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-[#2E7CF6] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">1</span>
+                Seleziona il servizio
+              </h3>
+              <div class="mb-5">
+                <div class="relative">
+                  <select id="service-select" class="w-full appearance-none pl-4 pr-10 py-3 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] font-medium bg-white focus:outline-none focus:border-[#2E7CF6] focus:ring-2 focus:ring-[#2E7CF6]/10 transition-all cursor-pointer">
+                    <option value="">— Scegli un servizio —</option>
+                    <optgroup label="Redazione Contratti">
+                      <option value="redazioneLocazione">Redazione Contratto di Locazione</option>
+                      <option value="redazioneComodato">Redazione Comodato d'Uso Gratuito</option>
+                    </optgroup>
+                    <optgroup label="📋 Registrazione (Agenzia delle Entrate)">
+                      <option value="registrazione">Registrazione Contratto di Locazione (Agenzia delle Entrate)</option>
+                      <option value="registrazioneComodato">Registrazione Comodato d'Uso Gratuito (Agenzia delle Entrate)</option>
+                    </optgroup>
+                    <optgroup label="Adempimenti Successivi">
+                      <option value="adempimentiProroga">Proroga del contratto</option>
+                      <option value="adempimentiRisoluzione">Risoluzione anticipata</option>
+                      <option value="adempimentiSubentro">Subentro / Cessione</option>
+                      <option value="adempimentiRinegoziazione">Rinegoziazione del canone</option>
+                    </optgroup>
+                    <optgroup label="📅 Pagamenti Periodici">
+                      <option value="annualitaSuccessiva">Annualità Successiva</option>
+                      <option value="preliminareCompravendita">Preliminare di Compravendita</option>
+                    </optgroup>
+                  </select>
+                  <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 text-xs pointer-events-none"></i>
+                </div>
+              </div>
+              <div id="price-box" class="hidden mb-5 p-4 rounded-xl bg-[#F4F7FB] border border-slate-200">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="text-xs text-slate-500 font-medium mb-0.5">Servizio selezionato</p>
+                    <p class="text-sm font-semibold text-[#0F2A4A]" id="price-service-name">–</p>
+                    <p class="text-xs text-slate-400 mt-1" id="price-description">–</p>
+                  </div>
+                  <div class="text-right flex-shrink-0 ml-4">
+                    <p class="text-xs text-slate-500 font-medium mb-0.5">Costo</p>
+                    <p class="text-2xl font-extrabold text-[#0F2A4A]" id="price-amount">–</p>
+                    <p class="text-xs text-slate-400">IVA inclusa</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-5">
+                <label class="block text-sm font-semibold text-[#0F2A4A] mb-2">Carica i documenti <span class="font-normal text-slate-400">(puoi farlo anche dopo)</span></label>
+                <p id="upload-hint" class="text-xs text-slate-400 mb-3">Seleziona prima un servizio per vedere quali documenti sono richiesti.</p>
+                <div id="service-drop-zone" class="service-drop-zone flex flex-col items-center justify-center py-8 px-6 text-center rounded-2xl border-2 border-dashed border-slate-200 hover:border-[#2E7CF6] hover:bg-[#EBF2FF]/30 transition-all cursor-pointer" role="button" tabindex="0">
+                  <div class="w-12 h-12 rounded-2xl bg-[#EBF2FF] flex items-center justify-center mb-3">
+                    <i class="fa-solid fa-cloud-arrow-up text-[#2E7CF6] text-xl"></i>
+                  </div>
+                  <p class="font-semibold text-[#0F2A4A] text-sm mb-1">Trascina i file qui</p>
+                  <p class="text-xs text-slate-400 mb-3">oppure</p>
+                  <label for="service-file-input" class="inline-flex items-center gap-2 px-4 py-2 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white text-xs font-semibold rounded-lg cursor-pointer transition-colors">
+                    <i class="fa-solid fa-folder-open text-xs"></i> Seleziona file
+                  </label>
+                  <input id="service-file-input" type="file" multiple accept=".pdf,.jpg,.jpeg,.png" class="hidden"/>
+                  <p class="text-xs text-slate-400 mt-3">PDF, JPG, PNG • max 10 MB per file<br/>Va bene anche una foto di ogni singola pagina fatta con il telefono</p>
+                </div>
+
+                <!-- 38 utenti su 40 abbandonavano proprio qui (dati GA4, 10 lug–6 ago):
+                     la validazione non ha mai imposto i documenti, ma l'interfaccia
+                     lasciava credere il contrario. Questo riquadro lo rende esplicito. -->
+                <div class="mt-4 flex items-start gap-2.5 bg-[#E7F9EF] border border-green-200 rounded-xl px-3.5 py-3">
+                  <i class="fa-solid fa-circle-check text-green-600 mt-0.5 flex-shrink-0"></i>
+                  <p class="text-xs text-slate-600 leading-relaxed m-0">
+                    <strong class="text-[#0F2A4A]">Non hai il contratto a portata di mano?</strong>
+                    Nessun problema: prosegui e completa l'ordine adesso. Potrai inviarci i
+                    documenti quando vuoi, via email a
+                    <a href="mailto:info@locaonline.it" class="text-[#2E7CF6] font-semibold hover:underline">info@locaonline.it</a>,
+                    su <a href="https://wa.me/39068848163?text=Ciao%2C%20invio%20i%20documenti%20per%20la%20mia%20pratica" target="_blank" rel="noopener" class="text-[#2E7CF6] font-semibold hover:underline">WhatsApp</a>
+                    o dall'area riservata. Iniziamo a lavorare appena li riceviamo.
+                  </p>
+                </div>
+
+                <!-- Scatto da fotocamera: solo su telefono, dove selezionare un file
+                     è scomodo e spesso il contratto è su carta e non sul dispositivo. -->
+                <div class="md:hidden mt-3">
+                  <label for="service-camera-input"
+                         class="flex items-center justify-center gap-2 w-full py-3.5 border-2 border-[#2E7CF6] text-[#2E7CF6] font-semibold rounded-xl cursor-pointer active:bg-[#EBF2FF] transition-colors">
+                    <i class="fa-solid fa-camera"></i> Fotografa una pagina
+                  </label>
+                  <input id="service-camera-input" type="file" accept="image/*" capture="environment" class="hidden"/>
+                  <div class="mt-2 flex items-start gap-2 text-xs text-slate-600 bg-[#FFF8E6] border border-amber-200 rounded-xl px-3 py-2.5 leading-relaxed">
+                    <i class="fa-solid fa-lightbulb text-amber-500 mt-0.5 flex-shrink-0"></i>
+                    <span>Scatta <strong>una pagina alla volta</strong> e ripeti il tocco per ogni foglio del contratto.
+                    Inquadra la pagina intera <strong>compresi i bordi</strong>, appoggiata su una superficie piana
+                    e ben illuminata. Se una pagina risulta tagliata o poco leggibile dovremo richiedertela.</span>
+                  </div>
+                </div>
+                <div id="service-file-list" class="mt-3 space-y-2"></div>
+              </div>
+              <div class="mb-5">
+                <label for="service-notes" class="block text-sm font-semibold text-[#0F2A4A] mb-2">Note aggiuntive <span class="text-slate-400 font-normal">(opzionale)</span></label>
+                <textarea id="service-notes" rows="3" placeholder="Eventuali dettagli sull'immobile, date importanti, o altre istruzioni per il nostro team…" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all resize-none"></textarea>
+              </div>
+              <button id="btn-step1-next" class="w-full flex items-center justify-center gap-2 py-3.5 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white font-semibold rounded-xl transition-colors shadow-md">
+                <span id="btn-step1-label">Avanti — Dati fatturazione</span> <i class="fa-solid fa-arrow-right text-sm"></i>
+              </button>
+            </div>
+
+            <!-- STEP 2 -->
+            <div id="wizard-step-2" class="hidden">
+              <h3 class="font-bold text-[#0F2A4A] text-base mb-2 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-[#2E7CF6] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">2</span>
+                Dati per la fatturazione
+              </h3>
+              <p class="text-xs text-slate-400 mb-3 ml-8">Ci servono solo per intestarti correttamente la fattura. Bastano due minuti.</p>
+              <div class="ml-8 mb-5 flex items-start gap-2 text-xs text-slate-500 bg-[#EBF2FF] border border-[#2E7CF6]/20 rounded-xl px-3 py-2.5">
+                <i class="fa-solid fa-circle-info text-[#2E7CF6] mt-0.5 flex-shrink-0"></i>
+                <span>Codice fiscale e indirizzo sono richiesti dalla normativa sulla
+                <strong>fattura elettronica</strong>, obbligatoria in Italia. Non vengono usati
+                per altri scopi e non sono ceduti a terzi.</span>
+              </div>
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-4 mb-5">
+                <div>
+                  <label for="fatt-email" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Email per comunicazioni <span class="text-red-400">*</span></label>
+                  <input id="fatt-email" type="email" placeholder="mario@esempio.it" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all" />
+                  <p class="text-[10px] text-slate-400 mt-1">Usata per notifiche sullo stato della tua pratica</p>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-[#0F2A4A] mb-2">Intestatario fattura <span class="text-red-400">*</span></label>
+                  <div class="grid grid-cols-2 gap-3">
+                    <label class="flex items-center gap-3 p-3 border-2 border-slate-200 rounded-xl cursor-pointer hover:border-[#2E7CF6] transition-colors has-[:checked]:border-[#2E7CF6] has-[:checked]:bg-[#EBF2FF]">
+                      <input type="radio" name="fatt-tipo" value="privato" class="accent-[#2E7CF6] w-4 h-4 flex-shrink-0" checked />
+                      <div><p class="text-sm font-semibold text-[#0F2A4A]">Privato</p><p class="text-xs text-slate-400">Solo CF</p></div>
+                    </label>
+                    <label class="flex items-center gap-3 p-3 border-2 border-slate-200 rounded-xl cursor-pointer hover:border-[#2E7CF6] transition-colors has-[:checked]:border-[#2E7CF6] has-[:checked]:bg-[#EBF2FF]">
+                      <input type="radio" name="fatt-tipo" value="azienda" class="accent-[#2E7CF6] w-4 h-4 flex-shrink-0" />
+                      <div><p class="text-sm font-semibold text-[#0F2A4A]">Azienda</p><p class="text-xs text-slate-400">P.IVA + CF</p></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div id="fatt-nome-wrapper">
+                    <label for="fatt-nome" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Nome <span class="text-red-400">*</span></label>
+                    <input id="fatt-nome" type="text" placeholder="Mario" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all" />
+                  </div>
+                  <div id="fatt-cognome-wrapper">
+                    <label for="fatt-cognome" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Cognome <span class="text-red-400">*</span></label>
+                    <input id="fatt-cognome" type="text" placeholder="Rossi" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all" />
+                  </div>
+                  <div id="fatt-ragione-wrapper" class="hidden sm:col-span-2">
+                    <label for="fatt-ragione" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Ragione sociale <span class="text-red-400">*</span></label>
+                    <input id="fatt-ragione" type="text" placeholder="Esempio Srl" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all" />
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label for="fatt-cf" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Codice Fiscale <span class="text-red-400">*</span></label>
+                    <input id="fatt-cf" type="text" placeholder="RSSMRA80A01H501Z" maxlength="16" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm font-mono text-[#0F2A4A] placeholder:text-slate-400 placeholder:font-sans focus:outline-none focus:border-[#2E7CF6] transition-all uppercase" />
+                  </div>
+                  <div id="fatt-piva-wrapper" class="hidden">
+                    <label for="fatt-piva" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Partita IVA <span class="text-red-400">*</span></label>
+                    <input id="fatt-piva" type="text" placeholder="12345678901" maxlength="11" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm font-mono text-[#0F2A4A] placeholder:text-slate-400 placeholder:font-sans focus:outline-none focus:border-[#2E7CF6] transition-all" />
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div class="sm:col-span-2">
+                    <label for="fatt-indirizzo" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Indirizzo <span class="text-red-400">*</span></label>
+                    <input id="fatt-indirizzo" type="text" placeholder="Via Roma 1" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all" />
+                  </div>
+                  <div>
+                    <label for="fatt-cap" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">CAP <span class="text-red-400">*</span></label>
+                    <input id="fatt-cap" type="text" placeholder="00100" maxlength="5" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm font-mono text-[#0F2A4A] placeholder:text-slate-400 placeholder:font-sans focus:outline-none focus:border-[#2E7CF6] transition-all" />
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div class="sm:col-span-2">
+                    <label for="fatt-comune" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Comune <span class="text-red-400">*</span></label>
+                    <input id="fatt-comune" type="text" placeholder="Roma" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all" />
+                  </div>
+                  <div>
+                    <label for="fatt-provincia" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Prov. <span class="text-red-400">*</span></label>
+                    <input id="fatt-provincia" type="text" placeholder="RM" maxlength="2" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm font-mono text-[#0F2A4A] placeholder:text-slate-400 placeholder:font-sans focus:outline-none focus:border-[#2E7CF6] transition-all uppercase" />
+                  </div>
+                </div>
+                <div id="fatt-sdi-wrapper" class="hidden">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                      <label for="fatt-sdi" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Codice SDI <span class="text-slate-400 font-normal">(opzionale)</span></label>
+                      <input id="fatt-sdi" type="text" placeholder="XXXXXXX" maxlength="7" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm font-mono text-[#0F2A4A] placeholder:text-slate-400 placeholder:font-sans focus:outline-none focus:border-[#2E7CF6] transition-all uppercase" />
+                    </div>
+                    <div>
+                      <label for="fatt-pec-cliente" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">PEC fatturazione <span class="text-slate-400 font-normal">(opzionale)</span></label>
+                      <input id="fatt-pec-cliente" type="email" placeholder="fatture@pec.esempio.it" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dati Annualità Successiva -->
+              <div id="annualita-box" class="hidden mb-5">
+                <div class="border-t border-slate-100 mb-4"></div>
+                <h4 class="text-sm font-bold text-[#0F2A4A] mb-3 flex items-center gap-2">
+                  <i class="fa-solid fa-calendar-day text-[#2E7CF6]"></i> Dati annualità
+                </h4>
+                <div class="p-4 bg-[#EBF2FF] border border-blue-200 rounded-xl space-y-4">
+                  <div>
+                    <label for="annualita-anno" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">
+                      Anno di riferimento <span class="text-red-400">*</span>
+                    </label>
+                    <input id="annualita-anno" type="number" min="2020" max="2099" placeholder="2027"
+                           class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all bg-white" />
+                    <p class="text-xs text-slate-400 mt-1">L'annualità per cui va effettuata la comunicazione all'Agenzia delle Entrate.</p>
+                  </div>
+                  <div>
+                    <label for="annualita-canone" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">
+                      Canone annuo <span class="text-slate-400 font-normal">(opzionale)</span>
+                    </label>
+                    <div class="relative">
+                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">€</span>
+                      <input id="annualita-canone" type="number" min="0" step="0.01" placeholder="es. 9000.00"
+                             class="w-full pl-7 pr-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all bg-white" />
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">
+                      <i class="fa-solid fa-circle-info text-[#2E7CF6] mr-1"></i>
+                      Indicalo solo se il canone è variato rispetto all'anno precedente, ad esempio per un aggiornamento ISTAT. Se non specificato, useremo l'ultimo canone registrato.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dati Risoluzione -->
+              <div id="risoluzione-box" class="hidden mb-5">
+                <div class="border-t border-slate-100 mb-4"></div>
+                <h4 class="text-sm font-bold text-[#0F2A4A] mb-3 flex items-center gap-2">
+                  <i class="fa-solid fa-calendar-xmark text-[#2E7CF6]"></i> Dati risoluzione
+                </h4>
+                <div class="p-4 bg-[#EBF2FF] border border-blue-200 rounded-xl space-y-4">
+                  <div>
+                    <label for="risoluzione-data" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">
+                      Data di risoluzione <span class="text-red-400">*</span>
+                    </label>
+                    <input id="risoluzione-data" type="date"
+                           class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all bg-white" />
+                    <p class="text-xs text-slate-400 mt-1">La data in cui il contratto viene risolto, da comunicare all'Agenzia delle Entrate.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Imposta di registro -->
+              <div id="imposta-box" class="hidden mb-5">
+                <div class="border-t border-slate-100 mb-4"></div>
+                <h4 class="text-sm font-bold text-[#0F2A4A] mb-3 flex items-center gap-2">
+                  <i class="fa-solid fa-landmark text-amber-500"></i> Imposta di registro
+                </h4>
+                <div class="p-4 bg-amber-50 border border-amber-200 rounded-xl space-y-4">
+                  <div id="cedolare-row" class="hidden">
+                    <label class="flex items-center justify-between cursor-pointer">
+                      <div>
+                        <p class="text-sm font-semibold text-[#0F2A4A]">Regime cedolare secca</p>
+                        <p class="text-xs text-slate-500">In cedolare secca l'imposta di registro non è dovuta</p>
+                      </div>
+                      <div class="relative ml-4 flex-shrink-0">
+                        <input type="checkbox" id="cedolare-secca" class="sr-only peer"/>
+                        <div class="w-11 h-6 bg-slate-200 peer-checked:bg-[#2E7CF6] rounded-full transition-colors"></div>
+                        <div class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow peer-checked:translate-x-5 transition-transform"></div>
+                      </div>
+                    </label>
+                  </div>
+                  <div id="iban-fields">
+                    <p class="text-xs font-semibold text-amber-800 mb-3"><i class="fa-solid fa-circle-info mr-1.5"></i>L'Agenzia delle Entrate addebiterà direttamente su questo IBAN l'imposta di registro e l'imposta di bollo, calcolate automaticamente in base al contratto.</p>
+                    <div class="space-y-3">
+                      <div>
+                        <label for="iban-input" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">IBAN <span class="text-red-400">*</span></label>
+                        <input id="iban-input" type="text" placeholder="IT60 X054 2811 1010 0000 0123 456" maxlength="34" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm font-mono text-[#0F2A4A] placeholder:text-slate-400 placeholder:font-sans focus:outline-none focus:border-[#2E7CF6] transition-all uppercase bg-white" />
+                        <p id="iban-error" class="text-xs text-red-500 mt-1 hidden"></p>
+                      </div>
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                          <label for="iban-intestatario" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Intestatario conto <span class="text-red-400">*</span></label>
+                          <select id="iban-intestatario" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] focus:outline-none focus:border-[#2E7CF6] transition-all bg-white">
+                            <option value="">Seleziona…</option>
+                            <option value="proprietario">Proprietario / Locatore</option>
+                            <option value="inquilino">Inquilino / Conduttore</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label for="iban-nome" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Nome intestatario <span class="text-red-400">*</span></label>
+                          <input id="iban-nome" type="text" placeholder="Mario Rossi" class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all bg-white" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap-3">
+                <button id="btn-step2-back" class="flex-1 flex items-center justify-center gap-2 py-3 border-2 border-slate-200 hover:bg-slate-50 text-slate-600 font-semibold rounded-xl transition-colors">
+                  <i class="fa-solid fa-arrow-left text-sm"></i> Indietro
+                </button>
+                <button id="btn-step2-next" class="flex-1 flex items-center justify-center gap-2 py-3 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white font-semibold rounded-xl transition-colors shadow-md">
+                  Avanti — Riepilogo <i class="fa-solid fa-arrow-right text-sm"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div id="wizard-step-3" class="hidden">
+              <h3 class="font-bold text-[#0F2A4A] text-base mb-5 flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-[#2E7CF6] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">3</span>
+                Riepilogo e pagamento
+              </h3>
+              <div class="bg-[#F4F7FB] border border-slate-200 rounded-2xl p-5 mb-5 space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm text-slate-600">Servizio</span>
+                  <span class="text-sm font-semibold text-[#0F2A4A]" id="recap-servizio">–</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-sm text-slate-600">Intestatario</span>
+                  <span class="text-sm font-semibold text-[#0F2A4A]" id="recap-intestatario">–</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-sm text-slate-600">Documenti caricati</span>
+                  <span class="text-sm font-semibold text-[#0F2A4A]" id="recap-documenti">–</span>
+                </div>
+                <div class="flex items-center justify-between" id="recap-annualita-row" style="display:none;">
+                  <span class="text-sm text-slate-600">Annualità di riferimento</span>
+                  <span class="text-sm font-semibold text-[#0F2A4A]" id="recap-annualita">–</span>
+                </div>
+                <div class="flex items-center justify-between" id="recap-risoluzione-row" style="display:none;">
+                  <span class="text-sm text-slate-600">Data di risoluzione</span>
+                  <span class="text-sm font-semibold text-[#0F2A4A]" id="recap-risoluzione">–</span>
+                </div>
+                <div class="border-t border-slate-200 pt-3 flex items-center justify-between">
+                  <span class="font-bold text-[#0F2A4A]">Totale compenso</span>
+                  <span class="text-2xl font-extrabold text-[#2E7CF6]" id="recap-totale">–</span>
+                </div>
+                <p class="text-xs text-slate-400">Escluse imposte di registro e bollo, variabili per ogni pratica.</p>
+              </div>
+              <div class="mb-5 p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
+                <label class="flex items-start gap-3 cursor-pointer select-none">
+                  <input type="checkbox" id="disclaimer-check" class="w-4 h-4 mt-0.5 accent-[#2E7CF6] flex-shrink-0" />
+                  <span class="text-xs text-slate-600 leading-relaxed">
+                    Confermo che LocaOnLine registrerà il contratto <strong class="text-[#0F2A4A]">così come fornito</strong>, senza verificarne la correttezza legale o formale.
+                    <a href="termini.html" target="_blank" class="text-[#2E7CF6] hover:underline ml-1">Termini →</a>
+                  </span>
+                </label>
+                <div class="flex items-start gap-2 pt-2 border-t border-slate-200">
+                  <i class="fa-solid fa-triangle-exclamation text-amber-500 text-xs mt-0.5 flex-shrink-0"></i>
+                  <p class="text-xs text-slate-500 leading-relaxed">
+                    <strong class="text-amber-700">Scadenza imminente?</strong> Elaboriamo l'80% delle pratiche entro 8 ore lavorative, con garanzia di 48 ore dalla ricezione di tutti i documenti. Sanzioni per ritardi non imputabili a LocaOnLine. <a href="contatti.html" target="_blank" class="text-[#2E7CF6] hover:underline">Contattaci prima</a>.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <button id="btn-step3-back" class="flex items-center justify-center gap-2 px-5 py-3 border-2 border-slate-200 hover:bg-slate-50 text-slate-600 font-semibold rounded-xl transition-colors">
+                  <i class="fa-solid fa-arrow-left text-sm"></i> Indietro
+                </button>
+                <button id="btn-checkout" class="flex-1 flex items-center justify-center gap-2 py-3.5 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white font-bold rounded-xl transition-colors shadow-lg">
+                  <span id="checkout-spinner" class="hidden w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin"></span>
+                  <i class="fa-solid fa-lock text-sm" id="checkout-icon"></i>
+                  <span id="checkout-label">Procedi al pagamento sicuro</span>
+                </button>
+              </div>
+
+              <!-- Aiuto immediato prima del pagamento: è il punto in cui nasce
+                   il dubbio che blocca l'acquisto. WhatsApp abbassa la soglia
+                   rispetto a una telefonata. -->
+              <div class="mt-4 pt-4 border-t border-slate-200 text-center">
+                <p class="text-xs text-slate-500 mb-2">Un dubbio prima di pagare? Scrivici, rispondiamo noi.</p>
+                <div class="flex flex-col sm:flex-row gap-2 justify-center">
+                  <a href="https://wa.me/39068848163?text=Ciao%2C%20sto%20compilando%20una%20richiesta%20sul%20sito%20e%20avrei%20una%20domanda"
+                     target="_blank" rel="noopener"
+                     class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#25D366] hover:bg-[#1DA851] text-white text-sm font-semibold rounded-xl transition-colors">
+                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+                  </a>
+                  <a href="tel:+39068848163"
+                     class="inline-flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-slate-200 hover:border-[#2E7CF6] text-[#0F2A4A] text-sm font-semibold rounded-xl transition-colors">
+                    <i class="fa-solid fa-phone text-xs"></i> 06 884 8163
+                  </a>
+                </div>
+                <p class="text-xs text-slate-400 mt-2">Lun–Sab, 9–13 e 15–18</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Card laterale -->
+          <div class="space-y-4">
+            <div id="service-info-box" class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
+              <h4 class="font-bold text-[#0F2A4A] text-sm mb-3 flex items-center gap-2">
+                <i class="fa-solid fa-circle-info text-[#2E7CF6]"></i> Informazioni sul servizio
+              </h4>
+              <div id="service-info-content">
+                <p class="text-slate-400 text-xs leading-relaxed">Seleziona un servizio per vedere i dettagli, i documenti richiesti e i tempi di evasione.</p>
+              </div>
+            </div>
+            <div class="bg-gradient-to-b from-[#0F2A4A] to-[#1B4F8A] rounded-2xl p-5 space-y-3">
+              <h4 class="font-bold text-white text-sm mb-1">Le nostre garanzie</h4>
+              <div class="flex items-start gap-3"><i class="fa-solid fa-shield-halved text-blue-300 text-sm mt-0.5 flex-shrink-0"></i><p class="text-blue-100 text-xs leading-relaxed">Pagamento 100% sicuro tramite Stripe.</p></div>
+              <div class="flex items-start gap-3"><i class="fa-solid fa-clock-rotate-left text-blue-300 text-sm mt-0.5 flex-shrink-0"></i><p class="text-blue-100 text-xs leading-relaxed">Elaborazione entro 48 ore dalla ricezione di tutti i documenti.</p></div>
+              <div class="flex items-start gap-3"><i class="fa-solid fa-headset text-blue-300 text-sm mt-0.5 flex-shrink-0"></i><p class="text-blue-100 text-xs leading-relaxed">Assistenza dedicata. Risposta entro 24h.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== VIEW: LE MIE FATTURE ===== -->
+      <section class="view" id="view-fatture" aria-label="Le mie fatture">
+        <div class="mb-6">
+          <p class="text-slate-500 text-sm">Area riservata</p>
+          <h2 class="text-2xl font-extrabold text-[#0F2A4A]">Le mie fatture</h2>
+        </div>
+
+        <!-- Lista fatture da Firestore -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="flex items-center justify-between px-5 py-4 border-b border-slate-100">
+            <h3 class="font-bold text-[#0F2A4A] text-base">Storico fatture</h3>
+            <span class="text-xs text-slate-400" id="fatture-count">–</span>
+          </div>
+          <div id="fatture-list">
+            <div class="py-10 flex flex-col items-center gap-2 text-slate-400 text-sm">
+              <i class="fa-solid fa-circle-notch fa-spin text-[#2E7CF6] text-xl mb-1"></i>
+              Caricamento fatture…
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ===== VIEW: ASSISTENZA ===== -->
+      <section class="view" id="view-assistenza" aria-label="Assistenza">
+        <div class="mb-6">
+          <p class="text-slate-500 text-sm">Area riservata</p>
+          <h2 class="text-2xl font-extrabold text-[#0F2A4A]">Assistenza</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+            <div class="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+              <i class="fa-solid fa-envelope text-[#2E7CF6] text-lg"></i>
+            </div>
+            <h3 class="font-bold text-[#0F2A4A] mb-1">Scrivi al team</h3>
+            <p class="text-sm text-slate-500 mb-4">Per domande sulle tue pratiche, contattaci direttamente via email.</p>
+            <a href="mailto:info@locaonline.it"
+               class="inline-flex items-center gap-2 px-4 py-2 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white text-sm font-semibold rounded-lg transition-colors">
+              <i class="fa-solid fa-paper-plane text-xs"></i>
+              info@locaonline.it
+            </a>
+          </div>
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+            <div class="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+              <i class="fa-solid fa-circle-question text-[#2E7CF6] text-lg"></i>
+            </div>
+            <h3 class="font-bold text-[#0F2A4A] mb-1">Domande frequenti</h3>
+            <p class="text-sm text-slate-500 mb-4">Consulta le risposte alle domande più comuni sui contratti di locazione.</p>
+            <a href="servizi.html"
+               class="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-[#0F2A4A] text-sm font-semibold rounded-lg transition-colors">
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+              Vai alla sezione Servizi
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== VIEW: IL MIO ACCOUNT ===== -->
+      <section class="view" id="view-account" aria-label="Il mio account">
+
+        <div class="mb-6">
+          <p class="text-slate-500 text-sm">Area riservata</p>
+          <h2 class="text-2xl font-extrabold text-[#0F2A4A]">Il mio account</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+          <!-- Info account -->
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+            <h3 class="font-bold text-[#0F2A4A] text-base mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-circle-user text-[#2E7CF6]"></i>
+              Informazioni account
+            </h3>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
+                <div class="user-avatar w-10 h-10 text-sm flex-shrink-0" id="account-avatar">–</div>
+                <div>
+                  <p class="text-sm font-semibold text-[#0F2A4A]" id="account-name">–</p>
+                  <p class="text-xs text-slate-400" id="account-email">–</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between py-2 border-b border-slate-100">
+                <span class="text-xs text-slate-500">Metodo di accesso</span>
+                <span class="text-xs font-semibold text-[#0F2A4A]" id="account-provider">–</span>
+              </div>
+              <div class="flex items-center justify-between py-2 border-b border-slate-100">
+                <span class="text-xs text-slate-500">Account creato il</span>
+                <span class="text-xs font-semibold text-[#0F2A4A]" id="account-created">–</span>
+              </div>
+              <div class="flex items-center justify-between py-2">
+                <span class="text-xs text-slate-500">Ultimo accesso</span>
+                <span class="text-xs font-semibold text-[#0F2A4A]" id="account-lastlogin">–</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Zona pericolosa -->
+          <div class="bg-white rounded-2xl border border-red-100 shadow-sm p-6">
+            <h3 class="font-bold text-red-600 text-base mb-2 flex items-center gap-2">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              Zona pericolosa
+            </h3>
+            <p class="text-xs text-slate-500 leading-relaxed mb-5">
+              La cancellazione dell'account è <strong class="text-[#0F2A4A]">permanente e irreversibile</strong>.
+              Verranno eliminati il tuo profilo, i documenti caricati e le pratiche non ancora completate.
+            </p>
+
+            <!-- Cosa viene cancellato -->
+            <div class="space-y-2 mb-5">
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-xmark text-red-400 text-xs mt-0.5 flex-shrink-0"></i>
+                <p class="text-xs text-slate-600">Profilo utente e credenziali di accesso</p>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-xmark text-red-400 text-xs mt-0.5 flex-shrink-0"></i>
+                <p class="text-xs text-slate-600">Documenti caricati (contratti, carte d'identità, ecc.)</p>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-xmark text-red-400 text-xs mt-0.5 flex-shrink-0"></i>
+                <p class="text-xs text-slate-600">Pratiche non ancora completate</p>
+              </div>
+              <div class="flex items-start gap-2.5 pt-1 border-t border-slate-100">
+                <i class="fa-solid fa-lock text-amber-500 text-xs mt-0.5 flex-shrink-0"></i>
+                <p class="text-xs text-slate-600">
+                  <strong class="text-[#0F2A4A]">Conservate per obbligo legale (10 anni):</strong>
+                  le pratiche con stato "Registrato" non possono essere cancellate in quanto atti fiscali registrati presso l'Agenzia delle Entrate.
+                </p>
+              </div>
+            </div>
+
+            <button id="btn-delete-account"
+                    class="w-full flex items-center justify-center gap-2 py-2.5 px-4 border-2 border-red-200 hover:border-red-400 hover:bg-red-50 text-red-500 hover:text-red-600 text-sm font-semibold rounded-xl transition-all">
+              <i class="fa-solid fa-trash-can text-sm"></i>
+              Elimina il mio account
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ===== MODAL CONFERMA CANCELLAZIONE ===== -->
+  <div id="delete-modal"
+       class="fixed inset-0 z-60 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+       style="display:none !important;" aria-modal="true" role="dialog" aria-labelledby="modal-title">
+    <div class="bg-white rounded-2xl shadow-2xl w-full max-w-md p-6">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center flex-shrink-0">
+          <i class="fa-solid fa-triangle-exclamation text-red-500"></i>
+        </div>
+        <div>
+          <h3 id="modal-title" class="font-bold text-[#0F2A4A] text-base">Conferma cancellazione account</h3>
+          <p class="text-xs text-slate-400">Questa operazione non può essere annullata</p>
+        </div>
+      </div>
+
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        Stai per eliminare definitivamente il tuo account e tutti i dati associati.
+        Le pratiche con stato <strong class="text-[#0F2A4A]">"Registrato"</strong> verranno conservate per obbligo legale.
+      </p>
+
+      <div class="bg-red-50 border border-red-100 rounded-xl p-3 mb-5">
+        <p class="text-xs text-red-600 font-medium mb-2">Per confermare, digita <strong>ELIMINA</strong> nel campo sottostante:</p>
+        <input id="delete-confirm-input"
+               type="text" placeholder="ELIMINA"
+               class="w-full px-3 py-2 border-2 border-red-200 focus:border-red-400 rounded-lg text-sm font-mono text-red-700 placeholder:text-red-300 focus:outline-none transition-colors bg-white" />
+      </div>
+
+      <div class="flex gap-3">
+        <button id="modal-cancel"
+                class="flex-1 py-2.5 px-4 border border-slate-200 hover:bg-slate-50 text-slate-600 text-sm font-semibold rounded-xl transition-colors">
+          Annulla
+        </button>
+        <button id="modal-confirm"
+                disabled
+                class="flex-1 py-2.5 px-4 bg-red-100 text-red-300 text-sm font-semibold rounded-xl transition-all cursor-not-allowed"
+                aria-disabled="true">
+          <span id="delete-spinner" class="hidden w-4 h-4 border-2 border-red-300 border-t-red-600 rounded-full animate-spin inline-block mr-1"></span>
+          Elimina definitivamente
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div id="toast" role="alert" aria-live="assertive">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-msg">Operazione completata</span>
+  </div>
+
+  <!-- ===== FIREBASE v10 via CDN ===== -->
+  <script type="module">
+    import { initializeApp }                          from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import { getAuth, onAuthStateChanged, signOut,
+             deleteUser, signInAnonymously }          from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+    import { getFirestore, collection, query, where,
+             onSnapshot, addDoc, serverTimestamp,
+             orderBy, getDocs, deleteDoc, doc }       from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+    import { getStorage, ref, uploadBytesResumable,
+             getDownloadURL, deleteObject }           from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js';
+
+    // ─── Configurazione Firebase ──────────────────────────────────
+    const firebaseConfig = {
+      apiKey:            "AIzaSyCnSy8XSjZGRC76YDaknvlHphcCVLZOlL0",
+      authDomain:        "locaonline-e8157.firebaseapp.com",
+      projectId:         "locaonline-e8157",
+      storageBucket:     "locaonline-e8157.firebasestorage.app",
+      messagingSenderId: "423895184436",
+      appId:             "1:423895184436:web:d34d03ebc2f2b916abc661",
+    };
+
+    const app     = initializeApp(firebaseConfig);
+    const auth    = getAuth(app);
+    const db      = getFirestore(app);
+    const storage = getStorage(app);
+
+    // ─── Helpers UI ───────────────────────────────────────────────
+    function badgeHTML(status) {
+      const map = {
+        registrato: `<span class="badge badge-green"><i class="fa-solid fa-circle-check text-[10px]"></i> Registrato</span>`,
+        lavorazione:`<span class="badge badge-yellow"><i class="fa-solid fa-clock text-[10px]"></i> In lavorazione</span>`,
+        documenti:  `<span class="badge badge-red"><i class="fa-solid fa-triangle-exclamation text-[10px]"></i> Docs mancanti</span>`,
+        attesa:     `<span class="badge badge-blue"><i class="fa-solid fa-hourglass-half text-[10px]"></i> In attesa</span>`,
+      };
+      return map[status] || `<span class="badge badge-gray"><i class="fa-solid fa-circle text-[10px]"></i> ${status}</span>`;
+    }
+
+    function relativeTime(ts) {
+      if (!ts) return '–';
+      const now  = Date.now();
+      const diff = now - ts.toMillis();
+      const m = Math.floor(diff / 60000);
+      const h = Math.floor(diff / 3600000);
+      const d = Math.floor(diff / 86400000);
+      if (m < 2)  return 'Adesso';
+      if (m < 60) return `${m} min fa`;
+      if (h < 24) return `${h} ore fa`;
+      if (d === 1) return 'Ieri';
+      if (d < 30) return `${d} giorni fa`;
+      return ts.toDate().toLocaleDateString('it-IT', { day:'2-digit', month:'short', year:'numeric' });
+    }
+
+    function formatDate(ts) {
+      if (!ts) return '–';
+      return ts.toDate().toLocaleDateString('it-IT', { day:'2-digit', month:'short', year:'numeric' });
+    }
+
+    // Empty state pratiche
+    const EMPTY_PRATICHE = `
+      <tr>
+        <td colspan="6" class="py-16 text-center">
+          <div class="flex flex-col items-center gap-3">
+            <div class="w-16 h-16 rounded-2xl bg-[#EBF2FF] flex items-center justify-center">
+              <i class="fa-solid fa-folder-open text-[#2E7CF6] text-2xl"></i>
+            </div>
+            <p class="font-semibold text-[#0F2A4A] text-base">Nessuna pratica in corso</p>
+            <p class="text-slate-400 text-sm max-w-xs">Non hai ancora nessuna pratica. Inizia ora richiedendo il tuo primo servizio.</p>
+            <button onclick="window.navigateTo('documenti')"
+                    class="mt-2 inline-flex items-center gap-2 px-4 py-2 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white text-sm font-semibold rounded-xl transition-colors">
+              <i class="fa-solid fa-plus text-xs"></i>
+              Richiedi il tuo primo servizio
+            </button>
+          </div>
+        </td>
+      </tr>`;
+
+    const EMPTY_OVERVIEW = `
+      <tr>
+        <td colspan="4" class="py-12 text-center">
+          <div class="flex flex-col items-center gap-2">
+            <i class="fa-solid fa-inbox text-slate-300 text-3xl mb-1"></i>
+            <p class="text-slate-400 text-sm">Nessuna pratica ancora avviata.</p>
+          </div>
+        </td>
+      </tr>`;
+
+    // ─── Parametri URL per la modalità ospite ─────────────────────
+    // servizi.html rimanda qui con ?ospite=1&servizio=<chiave> per permettere
+    // l'acquisto senza registrazione (accesso anonimo Firebase silenzioso).
+    const _urlParams  = new URLSearchParams(window.location.search);
+    const _isOspite   = _urlParams.get('ospite') === '1';
+    const _servizioUrl = _urlParams.get('servizio');
+    // Modalità test Stripe: con ?test=1 il checkout usa i Payment Link di test
+    // (buy.stripe.com/test_...) invece di quelli reali. Serve per provare l'intero
+    // flusso senza addebiti veri. Il sito resta normale per tutti gli altri.
+    const _isTest = _urlParams.get('test') === '1';
+
+    // ─── Auth guard ───────────────────────────────────────────────
+    onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        // Modalità ospite: accesso anonimo silenzioso, nessun modulo da compilare.
+        // onAuthStateChanged verrà richiamato subito dopo con l'utente anonimo.
+        if (_isOspite) {
+          signInAnonymously(auth).catch(err => {
+            console.error('Accesso ospite non riuscito:', err);
+            window.location.href = 'login.html';
+          });
+          return;
+        }
+        window.location.href = 'login.html';
+        return;
+      }
+
+      // Popola UI con i dati utente reali da Firebase/Google
+      const isOspite    = user.isAnonymous;
+      const displayName = user.displayName;  // es. "Alessandro Grillo" da Google
+      const email       = user.email || '';
+
+      // Nome da mostrare: usa displayName se disponibile, altrimenti la parte prima
+      // della @ dell'email. Gli utenti ospite non hanno né nome né email.
+      const name = displayName || (email ? email.split('@')[0] : 'Ospite');
+
+      // Iniziali: prende la prima lettera di ogni parola del nome (max 2)
+      const initials = name
+        .split(' ')
+        .filter(Boolean)
+        .map(p => p[0].toUpperCase())
+        .slice(0, 2)
+        .join('');
+
+      const hour     = new Date().getHours();
+      const greeting = hour < 12 ? 'Buongiorno' : hour < 18 ? 'Buon pomeriggio' : 'Buonasera';
+      const firstName = name.split(' ')[0];
+
+      document.getElementById('sidebar-name').textContent   = name;
+      document.getElementById('sidebar-email').textContent  = email || 'Acquisto senza registrazione';
+      document.getElementById('sidebar-avatar').textContent = initials;
+      document.getElementById('topbar-avatar').textContent  = initials;
+      document.getElementById('welcome-msg').textContent    = isOspite
+        ? 'Completa la tua richiesta'
+        : `${greeting}, ${firstName}!`;
+
+      // Mostra link backoffice solo all'admin
+      if (user.uid === 'LgPYxTOxbpeDVngiPkrD5JTiPLy2') {
+        document.getElementById('nav-admin-link')?.classList.remove('hidden');
+      }
+
+      // ─── Modalità ospite ─────────────────────────────────────────
+      // L'utente sta acquistando senza aver creato un account: mostriamo
+      // l'avviso e nascondiamo le sezioni che per lui sarebbero vuote.
+      if (isOspite) {
+        document.getElementById('ospite-banner')?.classList.remove('hidden');
+        ['pratiche','documenti','fatture','account'].forEach(v => {
+          document.querySelector(`.nav-item[data-view="${v}"]`)?.classList.add('hidden');
+        });
+      }
+
+      // ─── Avviso modalità test ────────────────────────────────────
+      if (_isTest) {
+        const t = document.createElement('div');
+        t.className = 'bg-red-600 text-white text-center text-sm font-bold py-2 px-4';
+        t.textContent = '⚠ MODALITÀ TEST STRIPE — nessun addebito reale. Le pratiche create qui vanno eliminate dopo i test.';
+        document.body.prepend(t);
+      }
+
+      // ─── Preselezione servizio da URL ────────────────────────────
+      // Vale sia per gli ospiti sia per gli utenti già registrati che
+      // arrivano da servizi.html con ?servizio=<chiave>.
+      if (isOspite || _servizioUrl) {
+        setTimeout(() => {
+          if (typeof window.navigateTo === 'function') window.navigateTo('richiedi');
+          const sel = document.getElementById('service-select');
+          if (sel && _servizioUrl && [...sel.options].some(o => o.value === _servizioUrl)) {
+            sel.value = _servizioUrl;
+            sel.dispatchEvent(new Event('change'));
+          }
+        }, 0);
+      }
+
+      // ─── Popola sezione "Il mio account" ─────────────────────────
+      const accountAvatar   = document.getElementById('account-avatar');
+      const accountName     = document.getElementById('account-name');
+      const accountEmail    = document.getElementById('account-email');
+      const accountProvider = document.getElementById('account-provider');
+      const accountCreated  = document.getElementById('account-created');
+      const accountLastLogin= document.getElementById('account-lastlogin');
+
+      if (accountAvatar)    accountAvatar.textContent    = initials;
+      if (accountName)      accountName.textContent      = name;
+      if (accountEmail)     accountEmail.textContent     = email;
+      if (accountProvider)  accountProvider.textContent  = user.providerData[0]?.providerId === 'google.com' ? 'Google' : 'Email / Password';
+      if (accountCreated)   accountCreated.textContent   = user.metadata.creationTime
+        ? new Date(user.metadata.creationTime).toLocaleDateString('it-IT', { day:'2-digit', month:'long', year:'numeric' })
+        : '–';
+      if (accountLastLogin) accountLastLogin.textContent = user.metadata.lastSignInTime
+        ? new Date(user.metadata.lastSignInTime).toLocaleDateString('it-IT', { day:'2-digit', month:'long', year:'numeric' })
+        : '–';
+
+      // ─── Logica cancellazione account ────────────────────────────
+      const deleteModal   = document.getElementById('delete-modal');
+      const deleteInput   = document.getElementById('delete-confirm-input');
+      const modalConfirm  = document.getElementById('modal-confirm');
+      const modalCancel   = document.getElementById('modal-cancel');
+      const deleteSpinner = document.getElementById('delete-spinner');
+
+      // Apri modal
+      document.getElementById('btn-delete-account')?.addEventListener('click', () => {
+        deleteModal.style.removeProperty('display');
+        deleteModal.style.display = 'flex';
+        deleteInput.value = '';
+        modalConfirm.disabled = true;
+        modalConfirm.className = 'flex-1 py-2.5 px-4 bg-red-100 text-red-300 text-sm font-semibold rounded-xl transition-all cursor-not-allowed';
+      });
+
+      // Chiudi modal
+      modalCancel?.addEventListener('click', () => {
+        deleteModal.style.display = 'none';
+      });
+
+      // Abilita pulsante solo se digita ELIMINA
+      deleteInput?.addEventListener('input', () => {
+        const ok = deleteInput.value.trim() === 'ELIMINA';
+        modalConfirm.disabled = !ok;
+        modalConfirm.className = ok
+          ? 'flex-1 py-2.5 px-4 bg-red-500 hover:bg-red-600 text-white text-sm font-semibold rounded-xl transition-all'
+          : 'flex-1 py-2.5 px-4 bg-red-100 text-red-300 text-sm font-semibold rounded-xl transition-all cursor-not-allowed';
+      });
+
+      // Esegui cancellazione
+      modalConfirm?.addEventListener('click', async () => {
+        if (deleteInput.value.trim() !== 'ELIMINA') return;
+
+        modalConfirm.disabled = true;
+        deleteSpinner.classList.remove('hidden');
+
+        try {
+          // 1. Cancella documenti da Firestore + Storage
+          const docsSnap = await getDocs(query(
+            collection(db, 'documents'), where('userId', '==', user.uid)
+          ));
+          for (const d of docsSnap.docs) {
+            const data = d.data();
+            // Cancella file da Storage se esiste il path
+            if (data.storagePath) {
+              try { await deleteObject(ref(storage, data.storagePath)); } catch (_) {}
+            }
+            await deleteDoc(doc(db, 'documents', d.id));
+          }
+
+          // 2. Cancella pratiche NON registrate da Firestore
+          const pratSnap = await getDocs(query(
+            collection(db, 'pratiche'), where('userId', '==', user.uid)
+          ));
+          for (const p of pratSnap.docs) {
+            if (p.data().status !== 'registrato') {
+              // Cancella anche i file allegati alla richiesta
+              const docs = p.data().documentiRichiesta || [];
+              for (const fd of docs) {
+                if (fd.storagePath) {
+                  try { await deleteObject(ref(storage, fd.storagePath)); } catch (_) {}
+                }
+              }
+              await deleteDoc(doc(db, 'pratiche', p.id));
+            }
+            // Le pratiche "registrato" vengono lasciate per obbligo legale
+          }
+
+          // 3. Elimina utente da Firebase Auth
+          await deleteUser(user);
+
+          // 4. Redirect alla home
+          window.location.href = 'index.html';
+
+        } catch (err) {
+          console.error('Errore cancellazione account:', err);
+          // Se Firebase Auth richiede ri-autenticazione recente
+          if (err.code === 'auth/requires-recent-login') {
+            window.showToast('Per sicurezza devi prima disconnetterti e riaccedere, poi riprovare.', 'error');
+          } else {
+            window.showToast('Errore durante la cancellazione. Contatta info@locaonline.it', 'error');
+          }
+          deleteSpinner.classList.add('hidden');
+          modalConfirm.disabled = false;
+        }
+      });
+
+      // ─── Logout ─────────────────────────────────────────────────
+      document.getElementById('btn-logout').addEventListener('click', async () => {
+        await signOut(auth);
+        window.location.href = 'login.html';
+      });
+
+      // ─── onSnapshot: DOCUMENTI (stat card + lista) ───────────────
+      const docsQ = query(
+        collection(db, 'documents'),
+        where('userId', '==', user.uid),
+        orderBy('uploadedAt', 'desc')
+      );
+
+      onSnapshot(docsQ, (snap) => {
+        // Aggiorna stat card
+        document.getElementById('stat-documenti').textContent = snap.size;
+
+        // Aggiorna contatore header lista
+        const countEl = document.getElementById('docs-count');
+        if (countEl) countEl.textContent = snap.size ? `${snap.size} file` : '0 file';
+
+        const docsList = document.getElementById('docs-list');
+        if (!docsList) return;
+
+        // Empty state
+        if (snap.empty) {
+          docsList.innerHTML = `
+            <div class="py-16 flex flex-col items-center justify-center gap-3 text-center px-6">
+              <div class="w-14 h-14 rounded-2xl bg-[#EBF2FF] flex items-center justify-center">
+                <i class="fa-solid fa-file-circle-plus text-[#2E7CF6] text-2xl"></i>
+              </div>
+              <p class="font-semibold text-[#0F2A4A] text-base">Nessun documento caricato</p>
+              <p class="text-slate-400 text-sm max-w-xs">Carica il contratto e i documenti richiesti per avviare la tua pratica di registrazione.</p>
+            </div>`;
+          return;
+        }
+
+        // Helper: icona e colore per tipo file
+        function fileIcon(type, name) {
+          if (type === 'application/pdf' || name?.endsWith('.pdf'))
+            return `<div class="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-file-pdf text-red-500"></i></div>`;
+          if (type?.startsWith('image/'))
+            return `<div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-file-image text-blue-500"></i></div>`;
+          return `<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-file text-slate-500"></i></div>`;
+        }
+
+        // Helper: badge stato documento
+        function docBadge(status) {
+          const map = {
+            verified:   `<span class="badge badge-green text-[11px] flex-shrink-0">Verificato</span>`,
+            pending:    `<span class="badge badge-yellow text-[11px] flex-shrink-0">In revisione</span>`,
+            rejected:   `<span class="badge badge-red text-[11px] flex-shrink-0">Non leggibile</span>`,
+          };
+          return map[status] || `<span class="badge badge-gray text-[11px] flex-shrink-0">Caricato</span>`;
+        }
+
+        // Helper: formato dimensione file
+        function fileSize(bytes) {
+          if (!bytes) return '';
+          if (bytes < 1024) return `${bytes} B`;
+          if (bytes < 1024 * 1024) return `${(bytes/1024).toFixed(0)} KB`;
+          return `${(bytes/(1024*1024)).toFixed(1)} MB`;
+        }
+
+        // Helper: data leggibile
+        function fmtDate(ts) {
+          if (!ts) return '';
+          return ts.toDate().toLocaleDateString('it-IT', { day:'2-digit', month:'short', year:'numeric' });
+        }
+
+        // Render lista
+        docsList.innerHTML = snap.docs.map(doc => {
+          const d    = doc.data();
+          const ext  = (d.fileName || '').split('.').pop()?.toUpperCase() || '';
+          const meta = [ext, fileSize(d.fileSize), d.uploadedAt ? `Caricato il ${fmtDate(d.uploadedAt)}` : ''].filter(Boolean).join(' • ');
+
+          return `
+            <div class="flex items-center gap-4 px-5 py-4 hover:bg-slate-50 transition-colors group">
+              ${fileIcon(d.fileType, d.fileName)}
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-semibold text-[#0F2A4A] truncate">${d.fileName || 'File senza nome'}</p>
+                <p class="text-xs text-slate-400 mt-0.5">${meta}</p>
+              </div>
+              ${docBadge(d.status)}
+              ${d.downloadUrl
+                ? `<a href="${d.downloadUrl}" target="_blank" rel="noopener"
+                      class="text-slate-300 group-hover:text-slate-500 p-1.5 rounded-lg hover:bg-slate-100 transition-colors flex-shrink-0"
+                      aria-label="Scarica ${d.fileName}">
+                     <i class="fa-solid fa-download text-sm"></i>
+                   </a>`
+                : `<span class="w-8 flex-shrink-0"></span>`
+              }
+            </div>`;
+        }).join('');
+
+      }, (err) => {
+        console.warn('Docs snapshot error:', err);
+        const docsList = document.getElementById('docs-list');
+        if (docsList) docsList.innerHTML = `
+          <div class="py-8 text-center text-red-400 text-sm">
+            <i class="fa-solid fa-circle-exclamation mr-2"></i>Errore nel caricamento dei documenti.
+          </div>`;
+      });
+
+      // ─── onSnapshot: PRATICHE ────────────────────────────────────
+      const pratQ = query(
+        collection(db, 'pratiche'),
+        where('userId', '==', user.uid),
+        orderBy('createdAt', 'desc')
+      );
+
+      let activeFilterCache = 'all'; // non usata, compatibilità futura
+
+      onSnapshot(pratQ, (snap) => {
+        const pratiche = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+
+        // Aggiorna cache per il filtro UI
+        if (window._setPratiche) window._setPratiche(pratiche);
+
+        // Rileva filtro attivo corrente
+        const activeFilterBtn = document.querySelector('.filter-btn.bg-\\[\\#0F2A4A\\]');
+        const activeFilter = activeFilterBtn?.dataset.filter || 'all';
+
+        // Aggiorna stat card
+        const totale      = pratiche.length;
+        const registrate  = pratiche.filter(p => p.status === 'registrato').length;
+        const lavorazione = pratiche.filter(p => p.status === 'lavorazione').length;
+        document.getElementById('stat-totale').textContent      = totale;
+        document.getElementById('stat-registrate').textContent  = registrate;
+        document.getElementById('stat-lavorazione').textContent = lavorazione;
+
+        // Aggiorna bottone "Tutte" con conteggio reale
+        const btnAll = document.querySelector('.filter-btn[data-filter="all"]');
+        if (btnAll) btnAll.textContent = `Tutte (${totale})`;
+
+        // ── Mini tabella overview (prime 3) ────────────────────────
+        const overviewTbody = document.getElementById('overview-tbody');
+        if (pratiche.length === 0) {
+          overviewTbody.innerHTML = EMPTY_OVERVIEW;
+        } else {
+          overviewTbody.innerHTML = pratiche.slice(0, 3).map(p => `
+            <tr>
+              <td class="font-medium">${p.codice || p.id.slice(0,8).toUpperCase()}</td>
+              <td class="text-slate-500 text-xs">${p.tipoServizioLabel || p.tipoServizio || '–'}</td>
+              <td>${badgeHTML(p.status)}</td>
+              <td>${scadenzaBadge(p.dataScadenza, p.status)}</td>
+            </tr>`).join('');
+        }
+
+        // ── Tabella completa pratiche ─────────────────────────────
+        renderPratiche(pratiche, activeFilter);
+
+        // ── Cache pratiche per il modal dettaglio ─────────────────
+        pratiche.forEach(p => { window._praticheCache[p.id] = p; });
+
+        // ── Popola select pratiche nella view documenti ───────────
+        const docSel = document.getElementById('doc-pratica-select');
+        if (docSel) {
+          const currentVal = docSel.value;
+          docSel.innerHTML = '<option value="">— Documento generico (non associato) —</option>';
+          pratiche.forEach(p => {
+            const opt = document.createElement('option');
+            opt.value = p.id;
+            opt.textContent = `${(p.tipoServizioLabel || p.tipoServizio || 'Pratica').slice(0,40)} · ${p.id.slice(0,8).toUpperCase()}`;
+            docSel.appendChild(opt);
+          });
+          if (currentVal) docSel.value = currentVal;
+        }
+
+      }, (err) => {
+        console.warn('Pratiche snapshot error:', err);
+        // Messaggio di errore con link per creare l'indice se mancante
+        const errMsg = err.code === 'failed-precondition'
+          ? 'Indice Firestore mancante. Controlla la console del browser per il link di creazione.'
+          : 'Errore nel caricamento delle pratiche.';
+        const emptyState = `<tr><td colspan="4" class="py-8 text-center text-slate-400 text-sm">
+          <i class="fa-solid fa-inbox text-slate-300 text-3xl mb-2 block"></i>
+          Nessuna pratica ancora avviata.
+        </td></tr>`;
+        // Se l'errore è indice mancante mostra empty state pulito (pratiche = 0 è normale per nuovi utenti)
+        document.getElementById('overview-tbody').innerHTML = emptyState;
+        document.getElementById('pratiche-tbody').innerHTML = EMPTY_PRATICHE;
+        // Azzera stat card a 0
+        ['stat-totale','stat-registrate','stat-lavorazione'].forEach(id => {
+          document.getElementById(id).textContent = '0';
+        });
+        if (err.code !== 'failed-precondition') console.error('Pratiche error:', err);
+      });
+
+      // Render tabella pratiche con filtro applicato
+      window.renderPratiche = function(pratiche, filter) {
+        const tbody   = document.getElementById('pratiche-tbody');
+        const visible = filter === 'all' ? pratiche : pratiche.filter(p => p.status === filter);
+
+        if (pratiche.length === 0) {
+          tbody.innerHTML = EMPTY_PRATICHE;
+          return;
+        }
+        if (visible.length === 0) {
+          tbody.innerHTML = `
+            <tr><td colspan="6" class="py-10 text-center text-slate-400 text-sm">
+              <i class="fa-solid fa-filter mr-2"></i>Nessuna pratica con questo stato.
+            </td></tr>`;
+          return;
+        }
+
+        tbody.innerHTML = visible.map(p => {
+          const scadBadge = scadenzaBadge(p.dataScadenza, p.status);
+          return `
+          <tr data-status="${p.status || ''}" data-id="${p.id}">
+            <td class="font-semibold text-[#0F2A4A]">${p.codice || p.id.slice(0,8).toUpperCase()}</td>
+            <td>${p.tipoServizioLabel || p.tipoServizio || p.tipo || '–'}</td>
+            <td class="text-slate-400 text-xs">${formatDate(p.createdAt)}</td>
+            <td>${badgeHTML(p.status)}</td>
+            <td>${scadBadge}</td>
+            <td>
+              <button class="text-xs text-[#2E7CF6] hover:underline font-medium"
+                      onclick="window.openPraticaModal('${p.id}')">
+                Dettagli
+              </button>
+            </td>
+          </tr>`;
+        }).join('');
+      };
+
+      // ─── Modal dettaglio pratica ──────────────────────────────────
+      window._praticheCache = {};
+
+      window.openPraticaModal = async function(praticaId) {
+        const p = window._praticheCache[praticaId];
+        if (!p) { window.showToast('Pratica non trovata', 'error'); return; }
+
+        const modal = document.getElementById('pratica-modal');
+
+        document.getElementById('pmodal-codice').textContent  = `Pratica ${p.codice || p.id.slice(0,8).toUpperCase()}`;
+        document.getElementById('pmodal-servizio').textContent = p.tipoServizioLabel || p.tipoServizio || 'Pratica';
+        document.getElementById('pmodal-stato').innerHTML      = badgeHTML(p.status);
+        document.getElementById('pmodal-data').textContent    = formatDate(p.createdAt) || '–';
+        document.getElementById('pmodal-importo').textContent = p.prezzo || (p.prezzoNum ? `€ ${p.prezzoNum.toFixed(2)}` : '–');
+
+        // Scadenza
+        const scadRow = document.getElementById('pmodal-scadenza-row');
+        if (p.dataScadenza && p.status === 'registrato') {
+          const scad = new Date(p.dataScadenza);
+          const oggi = new Date(); oggi.setHours(0,0,0,0);
+          const diff = Math.round((scad - oggi) / (1000*60*60*24));
+          const str  = scad.toLocaleDateString('it-IT', { day:'2-digit', month:'long', year:'numeric' });
+          const el   = document.getElementById('pmodal-scadenza');
+          el.textContent = diff < 0 ? `${str} (scaduto)` : diff === 0 ? `${str} (scade oggi)` : `${str} (tra ${diff} giorni)`;
+          el.className = `text-sm font-semibold ${diff <= 15 ? 'text-red-600' : 'text-amber-600'}`;
+          scadRow.style.display = 'flex';
+        } else {
+          scadRow.style.display = 'none';
+        }
+
+        // Note
+        const noteBox = document.getElementById('pmodal-note-box');
+        if (p.note) {
+          document.getElementById('pmodal-note').textContent = p.note;
+          noteBox.style.display = 'block';
+        } else {
+          noteBox.style.display = 'none';
+        }
+
+        // Documenti collegati a questa pratica (due fonti: collection "documents" + array salvato sulla pratica)
+        const docsEl = document.getElementById('pmodal-docs');
+        docsEl.innerHTML = '<p class="text-sm text-slate-400"><i class="fa-solid fa-circle-notch fa-spin mr-1.5"></i>Caricamento documenti…</p>';
+        try {
+          // Fonte 1: documenti caricati dopo, dalla sezione "I miei documenti" (collegati via praticaId)
+          const snap = await getDocs(query(collection(db, 'documents'), where('praticaId', '==', praticaId)));
+          const docsCollection = snap.docs.map(d => d.data());
+
+          // Fonte 2: documenti caricati durante la richiesta iniziale del servizio (salvati nell'array sulla pratica)
+          const docsRichiesta = (p.documentiRichiesta || []).map(d => ({ ...d, fonte: 'cliente' }));
+
+          const docs = [...docsRichiesta, ...docsCollection];
+
+          docsEl.innerHTML = docs.length === 0
+            ? '<p class="text-sm text-slate-400">Nessun documento collegato a questa pratica.</p>'
+            : docs.map(d => `
+              <a href="${d.downloadUrl}" target="_blank" rel="noopener"
+                 class="flex items-center gap-3 p-3 bg-slate-50 border border-slate-200 rounded-xl hover:border-[#2E7CF6] transition-colors group">
+                <i class="fa-solid fa-file-pdf text-red-400 flex-shrink-0"></i>
+                <div class="flex-1 min-w-0">
+                  <p class="text-sm font-medium text-[#0F2A4A] truncate">${d.fileName}</p>
+                  <p class="text-xs text-slate-400">${d.fonte === 'admin' ? '📤 Da LocaOnLine' : '📥 Caricato da te'}</p>
+                </div>
+                <i class="fa-solid fa-up-right-from-square text-slate-300 group-hover:text-[#2E7CF6] transition-colors text-xs"></i>
+              </a>`).join('');
+        } catch (err) {
+          console.warn('Errore caricamento documenti pratica:', err);
+          docsEl.innerHTML = '<p class="text-sm text-slate-400">Impossibile caricare i documenti al momento.</p>';
+        }
+
+        // Azioni contestuali
+        const actions = document.getElementById('pmodal-actions');
+        actions.innerHTML = '';
+        if (p.status === 'docs_mancanti') {
+          actions.innerHTML = `
+            <button onclick="document.getElementById('pratica-modal').classList.add('hidden'); window.navigateTo('documenti');"
+                    class="w-full px-4 py-2.5 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white text-sm font-semibold rounded-xl transition-colors">
+              <i class="fa-solid fa-cloud-arrow-up mr-1.5"></i> Carica i documenti richiesti
+            </button>`;
+        } else if (p.status === 'registrato') {
+          actions.innerHTML = `
+            <a href="contatti.html" class="block w-full text-center px-4 py-2.5 bg-slate-50 hover:bg-slate-100 text-[#0F2A4A] text-sm font-semibold rounded-xl transition-colors border border-slate-200">
+              <i class="fa-solid fa-envelope mr-1.5"></i> Hai domande su questa pratica?
+            </a>`;
+        }
+
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      };
+
+      document.getElementById('pmodal-close')?.addEventListener('click', () => {
+        const modal = document.getElementById('pratica-modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      });
+      document.getElementById('pratica-modal')?.addEventListener('click', (e) => {
+        if (e.target.id === 'pratica-modal') {
+          e.currentTarget.classList.add('hidden');
+          e.currentTarget.classList.remove('flex');
+        }
+      });
+
+      // ─── Helper: badge scadenza con conto alla rovescia ──────────
+      function scadenzaBadge(dataScadenza, status) {
+        if (!dataScadenza || status !== 'registrato') return '<span class="text-slate-300 text-xs">–</span>';
+
+        const scad    = new Date(dataScadenza);
+        const oggi    = new Date(); oggi.setHours(0,0,0,0);
+        const diff    = Math.round((scad - oggi) / (1000 * 60 * 60 * 24));
+        const dateStr = scad.toLocaleDateString('it-IT', { day:'2-digit', month:'short', year:'numeric' });
+
+        if (diff < 0) {
+          return `<span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-slate-100 text-slate-500 text-xs font-medium">
+            <i class="fa-solid fa-calendar-check text-[10px]"></i> Scaduto
+          </span>`;
+        }
+        if (diff === 0) {
+          return `<span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-red-50 text-red-600 text-xs font-bold">
+            <i class="fa-solid fa-circle-exclamation text-[10px]"></i> Scade oggi
+          </span>`;
+        }
+        if (diff <= 15) {
+          return `<span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-red-50 text-red-600 text-xs font-semibold">
+            <i class="fa-solid fa-calendar-xmark text-[10px]"></i> ${diff}gg · ${dateStr}
+          </span>`;
+        }
+        return `<span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-amber-50 text-amber-700 text-xs font-medium">
+          <i class="fa-solid fa-calendar text-[10px]"></i> ${diff}gg · ${dateStr}
+        </span>`;
+      }
+
+      // ════════════════════════════════════════════════════════════
+      // FATTURAZIONE ELETTRONICA — FatturaPA XML + upload fattura
+      // ════════════════════════════════════════════════════════════
+
+      // ─── Dati fornitore (Grillo Alessandro) ──────────────────────
+      const FORNITORE = {
+        piva:          '13367301002',
+        cf:            'GRLLSN82A13H501S',
+        nome:          'Grillo',
+        cognome:       'Alessandro',
+        indirizzo:     'Via Lutezia 5',
+        cap:           '00198',
+        comune:        'Roma',
+        provincia:     'RM',
+        nazione:       'IT',
+        email:         'info@locaonline.it',
+        pec:           'a.grillo@pec.tiffanysrl.it',
+        codDest:       'KRRH6B9',     // Codice destinatario Aruba
+        regFiscale:    'RF19',        // RF19 = Regime forfettario
+      };
+
+      // ─── Contatore progressivo fatture (da Firestore) ────────────
+      let _nextFatturaNum = 1;
+
+      // ─── Genera XML FatturaPA ─────────────────────────────────────
+      function generaFatturaXML(pratica, cliente, numero, datiFatt) {
+        const oggi      = new Date();
+        const dataDoc   = oggi.toISOString().slice(0, 10);
+        const anno      = oggi.getFullYear();
+        const numFatt   = String(numero).padStart(4, '0');
+        const numProgressivo = `${anno}/${numFatt}`;
+        const imponibile = pratica.prezzoNum || pratica.importo || 0;
+        const bollo      = imponibile > 77.47 ? 2.00 : 0;
+
+        // Dati cliente da datiFatturazione
+        const d         = datiFatt || {};
+        const isAzienda = d.tipo === 'azienda';
+        const denominazione = isAzienda
+          ? (d.ragioneSociale || '')
+          : `${d.nome || ''} ${d.cognome || ''}`.trim();
+        const cfCliente   = d.cf || 'XXXXXXXXXXXXXXXXXXX';
+        const pivaCliente = d.piva || '';
+        const indirizzo   = d.indirizzo || 'Da completare';
+        const cap         = d.cap || '00000';
+        const comune      = d.comune || 'Da completare';
+        const provincia   = d.provincia || '';
+        const codSDI      = d.codSDI || '0000000';
+
+        const esc = s => (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+        return `<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica versione="FPR12"
+  xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2"
+  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 http://www.fatturapa.gov.it/export/fatturazione/sdi/fatturapa/v1.2/Schema_del_file_xml_FatturaPA_versione_1.2.xsd">
+
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>${FORNITORE.piva}</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>${numFatt}</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>${codSDI || FORNITORE.codDest}</CodiceDestinatario>
+      <ContattiTrasmittente>
+        <Email>${FORNITORE.email}</Email>
+      </ContattiTrasmittente>
+    </DatiTrasmissione>
+
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>${FORNITORE.piva}</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>${FORNITORE.cf}</CodiceFiscale>
+        <Anagrafica>
+          <Nome>${FORNITORE.nome}</Nome>
+          <Cognome>${FORNITORE.cognome}</Cognome>
+        </Anagrafica>
+        <RegimeFiscale>${FORNITORE.regFiscale}</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>${FORNITORE.indirizzo}</Indirizzo>
+        <CAP>${FORNITORE.cap}</CAP>
+        <Comune>${FORNITORE.comune}</Comune>
+        <Provincia>${FORNITORE.provincia}</Provincia>
+        <Nazione>${FORNITORE.nazione}</Nazione>
+      </Sede>
+      <Contatti>
+        <Email>${FORNITORE.email}</Email>
+      </Contatti>
+    </CedentePrestatore>
+
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        ${pivaCliente ? `<IdFiscaleIVA><IdPaese>IT</IdPaese><IdCodice>${esc(pivaCliente)}</IdCodice></IdFiscaleIVA>` : ''}
+        <CodiceFiscale>${esc(cfCliente)}</CodiceFiscale>
+        <Anagrafica>
+          ${isAzienda
+            ? `<Denominazione>${esc(denominazione)}</Denominazione>`
+            : `<Nome>${esc(d.nome || '')}</Nome><Cognome>${esc(d.cognome || '')}</Cognome>`
+          }
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>${esc(indirizzo)}</Indirizzo>
+        <CAP>${esc(cap)}</CAP>
+        <Comune>${esc(comune)}</Comune>
+        ${provincia ? `<Provincia>${esc(provincia)}</Provincia>` : ''}
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>${dataDoc}</Data>
+        <Numero>${numProgressivo}</Numero>
+        <ImportoTotaleDocumento>${(imponibile + bollo).toFixed(2)}</ImportoTotaleDocumento>
+        ${bollo > 0 ? `<DatiBollo>
+          <BolloVirtuale>SI</BolloVirtuale>
+          <ImportoBollo>${bollo.toFixed(2)}</ImportoBollo>
+        </DatiBollo>` : ''}
+        <Causale>Operazione effettuata ai sensi dell art. 1 commi 54-89 L. 190/2014 Regime Forfettario. Non soggetta a ritenuta d acconto ai sensi della L. 190/2014.</Causale>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <Descrizione>${esc(pratica.tipoServizioLabel || pratica.servizioLabel || 'Servizio LocaOnLine')}</Descrizione>
+        <Quantita>1.00</Quantita>
+        <PrezzoUnitario>${imponibile.toFixed(2)}</PrezzoUnitario>
+        <PrezzoTotale>${imponibile.toFixed(2)}</PrezzoTotale>
+        <AliquotaIVA>0.00</AliquotaIVA>
+        <Natura>N2.2</Natura>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>0.00</AliquotaIVA>
+        <Natura>N2.2</Natura>
+        <ImponibileImporto>${imponibile.toFixed(2)}</ImponibileImporto>
+        <Imposta>0.00</Imposta>
+        <RiferimentoNormativo>Operazione non soggetta a IVA ai sensi dell art. 1 commi 54-89 L. 190/2014 Regime Forfettario</RiferimentoNormativo>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP08</ModalitaPagamento>
+        <DataScadenzaPagamento>${dataDoc}</DataScadenzaPagamento>
+        <ImportoPagamento>${imponibile.toFixed(2)}</ImportoPagamento>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>`;
+
+        return `<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica versione="FPR12"
+  xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2"
+  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 http://www.fatturapa.gov.it/export/fatturazione/sdi/fatturapa/v1.2/Schema_del_file_xml_FatturaPA_versione_1.2.xsd">
+
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>IT</IdPaese>
+        <IdCodice>${FORNITORE.piva}</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>${numFatt}</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>${FORNITORE.codDest}</CodiceDestinatario>
+      <ContattiTrasmittente>
+        <Email>${FORNITORE.email}</Email>
+      </ContattiTrasmittente>
+    </DatiTrasmissione>
+
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>${FORNITORE.piva}</IdCodice>
+        </IdFiscaleIVA>
+        <CodiceFiscale>${FORNITORE.cf}</CodiceFiscale>
+        <Anagrafica>
+          <Nome>${FORNITORE.nome}</Nome>
+          <Cognome>${FORNITORE.cognome}</Cognome>
+        </Anagrafica>
+        <RegimeFiscale>${FORNITORE.regFiscale}</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>${FORNITORE.indirizzo}</Indirizzo>
+        <CAP>${FORNITORE.cap}</CAP>
+        <Comune>${FORNITORE.comune}</Comune>
+        <Provincia>${FORNITORE.provincia}</Provincia>
+        <Nazione>${FORNITORE.nazione}</Nazione>
+      </Sede>
+      <Contatti>
+        <Email>${FORNITORE.email}</Email>
+      </Contatti>
+    </CedentePrestatore>
+
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <CodiceFiscale>XXXXXXXXXXXXXXXXXXX</CodiceFiscale>
+        <Anagrafica>
+          <Denominazione>${clienteNome.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Da completare</Indirizzo>
+        <CAP>00000</CAP>
+        <Comune>Da completare</Comune>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>${dataDoc}</Data>
+        <Numero>${numProgressivo}</Numero>
+        <ImportoTotaleDocumento>${(imponibile + bollo).toFixed(2)}</ImportoTotaleDocumento>
+        ${bollo > 0 ? `<DatiBollo>
+          <BolloVirtuale>SI</BolloVirtuale>
+          <ImportoBollo>${bollo.toFixed(2)}</ImportoBollo>
+        </DatiBollo>` : ''}
+        <Causale>Operazione effettuata ai sensi dell art. 1 commi 54-89 L. 190/2014 Regime Forfettario. Non soggetta a ritenuta d acconto ai sensi della L. 190/2014.</Causale>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <Descrizione>${(pratica.tipoServizioLabel || pratica.tipoServizio || 'Servizio LocaOnLine').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</Descrizione>
+        <Quantita>1.00</Quantita>
+        <PrezzoUnitario>${imponibile.toFixed(2)}</PrezzoUnitario>
+        <PrezzoTotale>${imponibile.toFixed(2)}</PrezzoTotale>
+        <AliquotaIVA>0.00</AliquotaIVA>
+        <Natura>N2.2</Natura>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>0.00</AliquotaIVA>
+        <Natura>N2.2</Natura>
+        <ImponibileImporto>${imponibile.toFixed(2)}</ImponibileImporto>
+        <Imposta>0.00</Imposta>
+        <RiferimentoNormativo>Operazione non soggetta a IVA ai sensi dell art. 1 commi 54-89 L. 190/2014 Regime Forfettario</RiferimentoNormativo>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP08</ModalitaPagamento>
+        <DataScadenzaPagamento>${dataDoc}</DataScadenzaPagamento>
+        <ImportoPagamento>${imponibile.toFixed(2)}</ImportoPagamento>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>`;
+      }
+
+      // ─── Download XML ─────────────────────────────────────────────
+      function downloadXML(xml, filename) {
+        const blob = new Blob([xml], { type: 'application/xml' });
+        const url  = URL.createObjectURL(blob);
+        const a    = document.createElement('a');
+        a.href     = url;
+        a.download = filename;
+        a.click();
+        URL.revokeObjectURL(url);
+      }
+
+      // ─── onSnapshot: FATTURE ─────────────────────────────────────
+      const fattureQ = query(
+        collection(db, 'fatture'),
+        where('userId', '==', user.uid)
+      );
+
+      onSnapshot(fattureQ, (snap) => {
+        _nextFatturaNum = snap.size + 1;
+        const countEl = document.getElementById('fatture-count');
+        if (countEl) countEl.textContent = snap.size ? `${snap.size} fatture` : '0 fatture';
+
+        const list = document.getElementById('fatture-list');
+        if (!list) return;
+
+        if (snap.empty) {
+          list.innerHTML = `
+            <div class="py-14 flex flex-col items-center gap-3 text-center px-6">
+              <div class="w-14 h-14 rounded-2xl bg-[#EBF2FF] flex items-center justify-center">
+                <i class="fa-solid fa-file-invoice text-[#2E7CF6] text-2xl"></i>
+              </div>
+              <p class="font-semibold text-[#0F2A4A]">Nessuna fattura disponibile</p>
+              <p class="text-slate-400 text-xs max-w-xs">Le fatture relative ai tuoi pagamenti appariranno qui non appena emesse dal nostro ufficio.</p>
+            </div>`;
+          return;
+        }
+
+        list.innerHTML = snap.docs.map(d => {
+          const f = d.data();
+          const dataStr = f.createdAt
+            ? f.createdAt.toDate().toLocaleDateString('it-IT', { day:'2-digit', month:'short', year:'numeric' })
+            : '–';
+          const hasFattura = !!f.fatturaUrl;
+
+          return `
+            <div class="flex items-center gap-4 px-5 py-4 hover:bg-slate-50 transition-colors border-b border-slate-100 last:border-0">
+              <div class="w-10 h-10 rounded-lg ${hasFattura ? 'bg-green-50' : 'bg-amber-50'} flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-file-invoice ${hasFattura ? 'text-green-500' : 'text-amber-500'}"></i>
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-sm font-semibold text-[#0F2A4A] truncate">${f.servizioLabel || f.servizio || 'Servizio'}</p>
+                <p class="text-xs text-slate-400 mt-0.5">${dataStr} • € ${(f.importo || 0).toFixed(2)} • ${f.numeroFattura || '–'}</p>
+              </div>
+              <div class="flex items-center gap-2 flex-shrink-0">
+                <!-- Scarica XML pre-compilato -->
+                <button onclick="window._downloadXMLFattura('${d.id}')"
+                        class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#2E7CF6] border border-[#2E7CF6]/30 hover:border-[#2E7CF6] rounded-lg transition-colors"
+                        title="Scarica XML FatturaPA pre-compilato">
+                  <i class="fa-solid fa-code text-[10px]"></i>
+                  XML
+                </button>
+                ${hasFattura
+                  ? `<a href="${f.fatturaUrl}" target="_blank"
+                        class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-green-600 border border-green-200 hover:border-green-400 rounded-lg transition-colors">
+                       <i class="fa-solid fa-download text-[10px]"></i>
+                       PDF
+                     </a>`
+                  : `<label class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-500 border border-slate-200 hover:border-[#2E7CF6] hover:text-[#2E7CF6] rounded-lg transition-colors cursor-pointer"
+                            title="Carica la fattura emessa da Aruba">
+                       <i class="fa-solid fa-upload text-[10px]"></i>
+                       Carica fattura
+                       <input type="file" accept=".pdf,.xml,.p7m" class="hidden"
+                              onchange="window._uploadFattura('${d.id}', this)" />
+                     </label>`
+                }
+              </div>
+            </div>`;
+        }).join('');
+
+      }, (err) => {
+        console.warn('Fatture snapshot error:', err);
+        // Mostra empty state invece di spinner infinito
+        const fl = document.getElementById('fatture-list');
+        if (fl) fl.innerHTML = `
+          <div class="py-14 flex flex-col items-center gap-3 text-center px-6">
+            <div class="w-14 h-14 rounded-2xl bg-[#EBF2FF] flex items-center justify-center">
+              <i class="fa-solid fa-file-invoice text-[#2E7CF6] text-2xl"></i>
+            </div>
+            <p class="font-semibold text-[#0F2A4A]">Nessuna fattura disponibile</p>
+            <p class="text-slate-400 text-xs max-w-xs">Le fatture relative ai tuoi pagamenti appariranno qui non appena emesse dal nostro ufficio.</p>
+          </div>`;
+        const fc = document.getElementById('fatture-count');
+        if (fc) fc.textContent = '0 fatture';
+      });
+
+      // ─── Esponi funzioni globali per la UI ────────────────────────
+
+      // Scarica XML pre-compilato per una fattura
+      window._downloadXMLFattura = async (fatturaId) => {
+        try {
+          const snap = await getDocs(query(
+            collection(db, 'fatture'),
+            where('userId', '==', user.uid)
+          ));
+          const fattDoc = snap.docs.find(d => d.id === fatturaId);
+          if (!fattDoc) { window.showToast('Fattura non trovata', 'error'); return; }
+
+          const f   = fattDoc.data();
+          const xml = generaFatturaXML(
+            { prezzoNum: f.importo, tipoServizioLabel: f.servizioLabel },
+            user,
+            f.numeroProgressivo || fattDoc.id.slice(0, 4),
+            f.datiFatturazione || null
+          );
+          const filename = `IT${FORNITORE.piva}_${(f.numeroProgressivo || '0001').toString().padStart(5,'0')}.xml`;
+          downloadXML(xml, filename);
+          window.showToast('XML FatturaPA scaricato', 'success');
+        } catch (err) {
+          console.error(err);
+          window.showToast('Errore nel download XML', 'error');
+        }
+      };
+
+      // Carica fattura PDF emessa da Aruba
+      window._uploadFattura = async (fatturaId, input) => {
+        const file = input.files[0];
+        if (!file) return;
+        try {
+          window.showToast('Caricamento fattura in corso…', 'info');
+          const path     = `fatture/${user.uid}/${fatturaId}_${file.name}`;
+          const sRef     = ref(storage, path);
+          const task     = uploadBytesResumable(sRef, file);
+          await new Promise((resolve, reject) => {
+            task.on('state_changed', null, reject, resolve);
+          });
+          const url = await getDownloadURL(task.snapshot.ref);
+          // Aggiorna documento fattura con URL
+          const { updateDoc } = await import('https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js');
+          await updateDoc(doc(db, 'fatture', fatturaId), {
+            fatturaUrl:  url,
+            fatturaPath: path,
+            fatturaName: file.name,
+            uploadedAt:  serverTimestamp(),
+          });
+          window.showToast('Fattura caricata con successo!', 'success');
+        } catch (err) {
+          console.error(err);
+          window.showToast('Errore nel caricamento della fattura', 'error');
+        }
+      };
+
+      // ─── Crea record fattura su Firestore dopo checkout ──────────
+      // Chiamata da setBtnLoading dopo redirect Stripe (pre-redirect)
+      window._creaRecordFattura = async (praticaId, pratica) => {
+        try {
+          const datiFatt = getDatiFatturazione();
+          await addDoc(collection(db, 'fatture'), {
+            userId:            user.uid,
+            praticaId:         praticaId,
+            servizio:          pratica.tipoServizio,
+            servizioLabel:     pratica.tipoServizioLabel,
+            importo:           pratica.prezzoNum,
+            numeroProgressivo: _nextFatturaNum,
+            numeroFattura:     `${new Date().getFullYear()}/${String(_nextFatturaNum).padStart(4,'0')}`,
+            stato:             'da_emettere',
+            fatturaUrl:        null,
+            datiFatturazione:  datiFatt,
+            createdAt:         serverTimestamp(),
+          });
+          _nextFatturaNum++;
+        } catch (err) {
+          console.error('Errore creazione record fattura:', err);
+        }
+      };
+      function handleFiles(files) {
+        // Legge la pratica selezionata nel select (se presente)
+        const praticaIdAssociata = document.getElementById('doc-pratica-select')?.value || null;
+
+        Array.from(files).forEach(file => {
+          if (file.size > 10 * 1024 * 1024) {
+            window.showToast(`${file.name} supera i 10 MB`, 'error');
+            return;
+          }
+
+          const itemId      = 'up-' + Date.now() + '-' + Math.random().toString(36).slice(2);
+          const storagePath = `users/${user.uid}/documents/${Date.now()}_${file.name}`;
+          const storageRef  = ref(storage, storagePath);
+          const uploadTask  = uploadBytesResumable(storageRef, file);
+
+          // Elemento progress UI
+          const item = document.createElement('div');
+          item.className = 'upload-item';
+          item.id = itemId;
+          item.innerHTML = `
+            <div class="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-file text-[#2E7CF6] text-sm"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-medium text-[#0F2A4A] truncate mb-1">${file.name}</p>
+              <div class="h-1 bg-slate-200 rounded-full overflow-hidden">
+                <div class="upload-progress-bar" id="bar-${itemId}" style="width:0%"></div>
+              </div>
+              <p class="text-xs text-slate-400 mt-1" id="pct-${itemId}">Caricamento in corso…</p>
+            </div>`;
+          document.getElementById('upload-list').prepend(item);
+
+          uploadTask.on('state_changed',
+            (snap) => {
+              const pct = Math.round((snap.bytesTransferred / snap.totalBytes) * 100);
+              document.getElementById(`bar-${itemId}`).style.width = pct + '%';
+              document.getElementById(`pct-${itemId}`).textContent = `${pct}%`;
+            },
+            (err) => {
+              document.getElementById(`pct-${itemId}`).textContent = 'Errore nel caricamento';
+              document.getElementById(`bar-${itemId}`).style.background = '#F87171';
+              window.showToast('Errore: ' + file.name, 'error');
+              console.error('Upload error:', err);
+            },
+            async () => {
+              try {
+                const url = await getDownloadURL(uploadTask.snapshot.ref);
+
+                // Salva su Firestore nella collection "documents"
+                await addDoc(collection(db, 'documents'), {
+                  userId:      user.uid,
+                  praticaId:   praticaIdAssociata || null,
+                  fileName:    file.name,
+                  fileSize:    file.size,
+                  fileType:    file.type,
+                  storagePath: storagePath,
+                  downloadUrl: url,
+                  uploadedAt:  serverTimestamp(),
+                  updatedAt:   serverTimestamp(),
+                  status:      'pending',
+                  fonte:       'cliente',
+                });
+
+                // Aggiorna UI progress
+                document.getElementById(`pct-${itemId}`).textContent = 'Caricato con successo ✓';
+                document.getElementById(`bar-${itemId}`).style.background = '#4ADE80';
+                window.showToast(file.name + ' caricato con successo', 'success');
+
+                // Rimuovi dalla lista dopo 4s
+                setTimeout(() => { item.remove(); }, 4000);
+              } catch (err) {
+                window.showToast('Errore nel salvataggio dei metadati', 'error');
+                console.error('Firestore write error:', err);
+              }
+            }
+          );
+        });
+      }
+
+      document.getElementById('file-input').addEventListener('change', (e) => {
+        handleFiles(e.target.files);
+        e.target.value = '';
+      });
+
+      const dz = document.getElementById('drop-zone');
+      dz.addEventListener('dragover',  (e) => { e.preventDefault(); dz.classList.add('drag-over'); });
+      dz.addEventListener('dragleave', ()  => dz.classList.remove('drag-over'));
+      dz.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dz.classList.remove('drag-over');
+        handleFiles(e.dataTransfer.files);
+      });
+      dz.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') document.getElementById('file-input').click();
+      });
+
+      // ════════════════════════════════════════════════════════════
+      // RICHIEDI UN SERVIZIO — Stripe Payment Links + Firebase
+      // ════════════════════════════════════════════════════════════
+
+      // ─── 1. CATALOGO SERVIZI ─────────────────────────────────────
+      // Sostituisci i valori STRIPE_LINK_* con i tuoi Payment Link reali
+      // da https://dashboard.stripe.com/payment-links
+      // ─── Payment Link di TEST (modalità sandbox Stripe) ──────────
+      // Usati solo quando l'URL contiene ?test=1. Incollare qui i link
+      // creati in Stripe con l'interruttore "Modalità test" attivo:
+      // hanno la forma https://buy.stripe.com/test_xxxxxxxxxx
+      // Lasciare null i servizi che non si vogliono testare: in quel caso
+      // il checkout in modalità test verrà bloccato con un avviso.
+      const SERVIZI_TEST = {
+        redazioneLocazione:       null,
+        redazioneComodato:        null,
+        registrazione:            null,
+        registrazioneComodato:    null,
+        adempimentiProroga:       null,
+        adempimentiRisoluzione:   null,
+        adempimentiSubentro:      null,
+        adempimentiRinegoziazione:null,
+        annualitaSuccessiva:      null,
+        preliminareCompravendita: null,
+      };
+
+      const SERVIZI = {
+        redazioneLocazione: {
+          label:       'Redazione Contratto di Locazione',
+          prezzo:      '€ 35,00',
+          prezzoNum:   35.00,
+          descrizione: 'Redazione professionale del contratto conforme alla normativa vigente.',
+          documenti:   'Carta d\'identità proprietario e inquilino, dati catastali dell\'immobile.',
+          tempi:       '80% in 8 ore lavorative (48h garantite)',
+          stripeLink:  'https://buy.stripe.com/6oU8wQcT2ach074d39gw00e',
+        },
+        redazioneComodato: {
+          label:       'Redazione Comodato d\'Uso Gratuito',
+          prezzo:      '€ 35,00',
+          prezzoNum:   35.00,
+          descrizione: 'Redazione del contratto di comodato gratuito tra privati o familiari.',
+          documenti:   'Carta d\'identità comodante e comodatario, dati catastali dell\'immobile.',
+          tempi:       '80% in 8 ore lavorative (48h garantite)',
+          stripeLink:  'https://buy.stripe.com/7sY5kEbOYckpf1Y6ELgw00j',
+        },
+        registrazione: {
+          label:       'Registrazione Contratto di Locazione (Agenzia delle Entrate)',
+          prezzo:      '€ 25,00',
+          prezzoNum:   25.00,
+          descrizione: 'Registrazione del contratto di locazione presso l\'Agenzia delle Entrate. Include contratti a canone libero e canone concordato.',
+          documenti:   'Il contratto di locazione firmato da tutte le parti (PDF).',
+          tempi:       '80% in 8 ore lavorative (48h garantite)',
+          stripeLink:  'https://buy.stripe.com/4gM9AU8CM7053jgd39gw00i',
+        },
+        registrazioneComodato: {
+          label:       'Registrazione Comodato d\'Uso Gratuito (Agenzia delle Entrate)',
+          prezzo:      '€ 25,00',
+          prezzoNum:   25.00,
+          descrizione: 'Registrazione del contratto di comodato d\'uso gratuito presso l\'Agenzia delle Entrate.',
+          documenti:   'Il contratto di comodato firmato da tutte le parti (PDF).',
+          tempi:       '80% in 8 ore lavorative (48h garantite)',
+          stripeLink:  'https://buy.stripe.com/dRm8wQ8CM3NT9HE2ovgw00c',
+        },
+        adempimentiProroga: {
+          label:       'Proroga del contratto',
+          prezzo:      '€ 25,00',
+          prezzoNum:   25.00,
+          descrizione: 'Comunicazione di proroga del contratto esistente all\'Agenzia delle Entrate.',
+          documenti:   'Il contratto. Se non riporta già il timbro e i dati di registrazione dell\'Agenzia delle Entrate, carica anche la ricevuta di registrazione.',
+          tempi:       '80% in 8 ore lavorative (48h garantite)',
+          stripeLink:  'https://buy.stripe.com/aFacN63is0BH9HE5AHgw00f',
+        },
+        adempimentiRisoluzione: {
+          label:       'Risoluzione anticipata',
+          prezzo:      '€ 25,00',
+          prezzoNum:   25.00,
+          descrizione: 'Comunicazione di risoluzione anticipata del contratto all\'Agenzia delle Entrate.',
+          documenti:   'Il contratto. Se non riporta già il timbro e i dati di registrazione dell\'Agenzia delle Entrate, carica anche la ricevuta di registrazione.',
+          tempi:       '80% in 8 ore lavorative (48h garantite)',
+          stripeLink:  'https://buy.stripe.com/7sY7sMg5e5W13jg6ELgw00d',
+        },
+        adempimentiSubentro: {
+          label:       'Subentro / Cessione',
+          prezzo:      '€ 25,00',
+          prezzoNum:   25.00,
+          descrizione: 'Comunicazione di cessione o subentro nel contratto di locazione.',
+          documenti:   'Il contratto. Se non riporta già il timbro e i dati di registrazione dell\'Agenzia delle Entrate, carica anche la ricevuta di registrazione.',
+          tempi:       '80% in 8 ore lavorative (48h garantite)',
+          stripeLink:  'https://buy.stripe.com/6oU6oIf1a3NT2fc4wDgw00h',
+        },
+        adempimentiRinegoziazione: {
+          label:       'Rinegoziazione del canone',
+          prezzo:      '€ 25,00',
+          prezzoNum:   25.00,
+          descrizione: 'Comunicazione di modifica del canone di locazione all\'Agenzia delle Entrate.',
+          documenti:   'Il contratto. Se non riporta già il timbro e i dati di registrazione dell\'Agenzia delle Entrate, carica anche la ricevuta di registrazione.',
+          tempi:       '80% in 8 ore lavorative (48h garantite)',
+          stripeLink:  'https://buy.stripe.com/dRm28saKUgAF5roe7dgw00g',
+        },
+        annualitaSuccessiva: {
+          label:       'Annualità Successiva',
+          prezzo:      '€ 25,00',
+          prezzoNum:   25.00,
+          descrizione: 'Versamento dell\'imposta di registro per l\'annualità successiva alla prima, dovuta per i contratti senza cedolare secca.',
+          documenti:   'Ricevuta di registrazione del contratto originale.',
+          tempi:       '80% in 8 ore lavorative (48h garantite)',
+          stripeLink:  'https://buy.stripe.com/aFa6oI1akgAF3jg4wDgw00b',
+          richiedeAnnualita: true,
+        },
+        preliminareCompravendita: {
+          label:       'Preliminare di Compravendita',
+          prezzo:      '€ 35,00',
+          prezzoNum:   35.00,
+          descrizione: 'Registrazione del preliminare di compravendita (compromesso) presso l\'Agenzia delle Entrate.',
+          documenti:   'Il preliminare firmato (va bene anche una foto di ogni pagina fatta con il telefono) + IBAN per l\'imposta di registro.',
+          tempi:       '80% in 8 ore lavorative (48h garantite)',
+          stripeLink:  'https://buy.stripe.com/6oU5kEbOY5W1f1Y5AHgw00a',
+          note:        'L\'imposta di registro è a carico del cliente: €200 fissi + 0,50% su eventuale acconto prezzo + 0,50% su eventuale caparra confirmatoria. Verrà addebitata direttamente sull\'IBAN fornito.',
+        },
+      };
+
+      // ─── 2. STATO LOCALE RICHIESTA ───────────────────────────────
+      let _serviceFiles    = [];
+      let _selectedService = null;
+
+      // ─── 3. SELECT → aggiorna prezzo, info, CTA ──────────────────
+      const serviceSelect      = document.getElementById('service-select');
+      const priceBox           = document.getElementById('price-box');
+      const priceServiceEl     = document.getElementById('price-service-name');
+      const priceDescEl        = document.getElementById('price-description');
+      const priceAmountEl      = document.getElementById('price-amount');
+      const uploadHint         = document.getElementById('upload-hint');
+      const serviceInfoContent = document.getElementById('service-info-content');
+      const btnCheckout        = document.getElementById('btn-checkout');
+      const checkoutLabel      = document.getElementById('checkout-label');
+      const checkoutIcon       = document.getElementById('checkout-icon');
+
+      // ─── Tracciamento del funnel di checkout ─────────────────────
+      // Serve a capire in quale passaggio le persone abbandonano: finora
+      // GA4 vedeva solo la pagina, non i passi del wizard.
+      function traccia(evento, dati = {}) {
+        try {
+          if (typeof gtag === 'function') {
+            gtag('event', evento, Object.assign({
+              // Permette di separare in GA4 gli acquisti senza registrazione
+              // da quelli di utenti già registrati, ed escludere i test.
+              ospite: _isOspite ? 'si' : 'no',
+              test:   _isTest   ? 'si' : 'no',
+            }, dati));
+          }
+        } catch (err) {
+          console.warn('Tracciamento non riuscito:', evento, err);
+        }
+      }
+
+      function updateServiceUI(key) {
+        if (key && SERVIZI[key]) {
+          traccia('servizio_selezionato', {
+            servizio: key,
+            servizio_nome: SERVIZI[key].label,
+            valore: SERVIZI[key].prezzoNum,
+          });
+        }
+        _selectedService = key || null;
+        const s = SERVIZI[key];
+
+        if (!s) {
+          priceBox.classList.add('hidden');
+          uploadHint.textContent = 'Seleziona prima un servizio per vedere quali documenti sono richiesti.';
+          serviceInfoContent.innerHTML = '<p class="text-slate-400 text-xs leading-relaxed">Seleziona un servizio dal menu per vedere i dettagli, i documenti richiesti e i tempi di evasione.</p>';
+          setBtnDisabled('Seleziona un servizio per continuare');
+          return;
+        }
+
+        priceBox.classList.remove('hidden');
+        priceServiceEl.textContent = s.label;
+        priceDescEl.textContent    = s.descrizione;
+        priceAmountEl.textContent  = s.prezzo;
+        uploadHint.textContent     = `Documenti richiesti: ${s.documenti}`;
+
+        serviceInfoContent.innerHTML = `
+          <div class="space-y-3">
+            <div>
+              <p class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider mb-1">Descrizione</p>
+              <p class="text-xs text-slate-600 leading-relaxed">${s.descrizione}</p>
+            </div>
+            <div>
+              <p class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider mb-1">Documenti necessari</p>
+              <p class="text-xs text-slate-600 leading-relaxed">${s.documenti}</p>
+            </div>
+            <div class="flex items-center gap-2 bg-green-50 rounded-lg px-3 py-2">
+              <i class="fa-solid fa-clock text-green-500 text-xs flex-shrink-0"></i>
+              <p class="text-xs text-green-700 font-medium">Tempi: ${s.tempi}</p>
+            </div>
+            <div class="flex items-center justify-between bg-[#EBF2FF] rounded-lg px-3 py-2">
+              <p class="text-xs text-[#1B4F8A] font-medium">Costo totale (IVA incl.)</p>
+              <p class="text-base font-extrabold text-[#0F2A4A]">${s.prezzo}</p>
+            </div>
+          </div>`;
+
+        setBtnEnabled();
+      }
+
+      function setBtnDisabled(msg) {
+        btnCheckout.disabled = true;
+        btnCheckout.className = 'w-full flex items-center justify-center gap-3 py-4 px-6 rounded-xl font-bold text-base transition-all bg-slate-100 text-slate-400 cursor-not-allowed';
+        checkoutLabel.textContent = msg;
+        checkoutIcon.className = 'fa-brands fa-stripe';
+      }
+
+      function setBtnEnabled() {
+        btnCheckout.disabled = false;
+        btnCheckout.className = 'w-full flex items-center justify-center gap-3 py-4 px-6 rounded-xl font-bold text-base transition-all bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white shadow-lg shadow-blue-500/25 hover:scale-[1.01] active:scale-100';
+        checkoutLabel.textContent = `Procedi al pagamento — ${SERVIZI[_selectedService]?.prezzo || ''}`;
+        checkoutIcon.className = 'fa-brands fa-stripe text-xl';
+      }
+
+      function setBtnLoading(loading) {
+        const spinner = document.getElementById('checkout-spinner');
+        btnCheckout.disabled = loading;
+        spinner.classList.toggle('hidden', !loading);
+        checkoutIcon.classList.toggle('hidden', loading);
+        checkoutLabel.textContent = loading
+          ? 'Caricamento documenti…'
+          : `Procedi al pagamento — ${SERVIZI[_selectedService]?.prezzo || ''}`;
+      }
+
+      if (serviceSelect) {
+        serviceSelect.addEventListener('change', () => updateServiceUI(serviceSelect.value));
+      }
+
+      // ─── WIZARD MULTI-STEP ───────────────────────────────────────
+      let _currentWizardStep = 1;
+
+      function showWizardStep(step) {
+        [1,2,3].forEach(s => {
+          const el = document.getElementById(`wizard-step-${s}`);
+          if (el) el.classList.toggle('hidden', s !== step);
+
+          const circle = document.getElementById(`step-circle-${s}`);
+          const label  = document.getElementById(`step-label-${s}`);
+          if (circle) {
+            if (s < step) {
+              circle.className = 'w-10 h-10 rounded-full bg-green-500 text-white text-sm font-bold flex items-center justify-center shadow-md transition-all';
+              circle.innerHTML = '<i class="fa-solid fa-check text-sm"></i>';
+            } else if (s === step) {
+              circle.className = 'w-10 h-10 rounded-full bg-[#2E7CF6] text-white text-sm font-bold flex items-center justify-center shadow-md transition-all';
+              circle.textContent = s;
+            } else {
+              circle.className = 'w-10 h-10 rounded-full bg-slate-200 text-slate-400 text-sm font-bold flex items-center justify-center transition-all';
+              circle.textContent = s;
+            }
+          }
+          if (label) {
+            label.className = s <= step
+              ? 'text-xs font-semibold text-[#2E7CF6] mt-2 text-center'
+              : 'text-xs font-semibold text-slate-400 mt-2 text-center';
+          }
+        });
+
+        // Progress line
+        const line = document.getElementById('wizard-progress-line');
+        if (line) {
+          const pct = step === 1 ? '0%' : step === 2 ? '50%' : '100%';
+          line.style.width = pct;
+        }
+
+        _currentWizardStep = step;
+        // Scroll to top of section
+        document.getElementById('view-richiedi')?.scrollIntoView({ behavior:'smooth', block:'start' });
+      }
+
+      // Step 1 → 2
+      document.getElementById('btn-step1-next')?.addEventListener('click', () => {
+        if (!_selectedService) {
+          window.showToast('Seleziona un servizio per continuare.', 'error');
+          return;
+        }
+        traccia('step1_completato', {
+          servizio: _selectedService,
+          n_documenti: _serviceFiles.length,
+        });
+        showWizardStep(2);
+      });
+
+      // Step 2 → 1
+      document.getElementById('btn-step2-back')?.addEventListener('click', () => showWizardStep(1));
+
+      // Step 2 → 3 (con validazione fatturazione)
+      document.getElementById('btn-step2-next')?.addEventListener('click', () => {
+        const datiFatt = getDatiFatturazione();
+        const errFatt  = validaDatiFatturazione(datiFatt);
+        if (errFatt) { window.showToast(errFatt, 'error'); return; }
+
+        // Validazione IBAN se richiesta
+        const impostaData = getImpostaData();
+        if (impostaData && !impostaData.cedolareSecca) {
+          if (!impostaData.ibanIntestatario) { window.showToast('Seleziona l\'intestatario del conto IBAN.', 'error'); return; }
+          if (!impostaData.ibanNome) { window.showToast('Inserisci il nome dell\'intestatario del conto.', 'error'); return; }
+          const ibanCheck = validateIBAN(impostaData.iban);
+          if (!ibanCheck.valid) { showIbanError(ibanCheck.msg); window.showToast('IBAN non valido.', 'error'); return; }
+        }
+
+        traccia('step2_completato', {
+          servizio: _selectedService,
+          tipo_cliente: datiFatt.tipo,
+        });
+
+        // Popola riepilogo step 3
+        const s = SERVIZI[_selectedService] || {};
+        const df = datiFatt;
+        const nomeInt = df.tipo === 'azienda'
+          ? df.ragioneSociale
+          : `${df.nome || ''} ${df.cognome || ''}`.trim();
+
+        document.getElementById('recap-servizio').textContent    = s.label || '–';
+        document.getElementById('recap-intestatario').textContent = nomeInt || '–';
+        document.getElementById('recap-documenti').textContent   = `${_serviceFiles.length} file caricati`;
+        document.getElementById('recap-totale').textContent      = s.prezzo || '–';
+
+        // Recap annualità (se applicabile)
+        const annoVal = document.getElementById('annualita-anno')?.value.trim();
+        const recapAnnualitaRow = document.getElementById('recap-annualita-row');
+        if (SERVIZI_CON_ANNUALITA.has(_selectedService) && annoVal) {
+          const canoneVal = document.getElementById('annualita-canone')?.value.trim();
+          document.getElementById('recap-annualita').textContent = canoneVal
+            ? `${annoVal} (canone: € ${Number(canoneVal).toFixed(2)})`
+            : annoVal;
+          recapAnnualitaRow.style.display = 'flex';
+        } else if (recapAnnualitaRow) {
+          recapAnnualitaRow.style.display = 'none';
+        }
+
+        // Recap risoluzione (se applicabile)
+        const risoluzioneDataVal = document.getElementById('risoluzione-data')?.value;
+        const recapRisoluzioneRow = document.getElementById('recap-risoluzione-row');
+        if (SERVIZI_CON_RISOLUZIONE.has(_selectedService) && risoluzioneDataVal) {
+          document.getElementById('recap-risoluzione').textContent = new Date(risoluzioneDataVal).toLocaleDateString('it-IT');
+          recapRisoluzioneRow.style.display = 'flex';
+        } else if (recapRisoluzioneRow) {
+          recapRisoluzioneRow.style.display = 'none';
+        }
+
+        showWizardStep(3);
+      });
+
+      // Step 3 → 2
+      document.getElementById('btn-step3-back')?.addEventListener('click', () => showWizardStep(2));
+
+      // ─── Reset completo del wizard ────────────────────────────────
+      function resetWizard() {
+        // Reset selezione servizio
+        const sel = document.getElementById('service-select');
+        if (sel) sel.value = '';
+        _selectedService = null;
+        _serviceFiles    = [];
+
+        // Nascondi price box
+        document.getElementById('price-box')?.classList.add('hidden');
+        document.getElementById('upload-hint').textContent = 'Seleziona prima un servizio per vedere quali documenti sono richiesti.';
+
+        // Svuota lista file
+        const fl = document.getElementById('service-file-list');
+        if (fl) fl.innerHTML = '';
+
+        // Reset note
+        const notes = document.getElementById('service-notes');
+        if (notes) notes.value = '';
+
+        // Reset dati annualità
+        document.getElementById('annualita-box')?.classList.add('hidden');
+        const annoEl = document.getElementById('annualita-anno');
+        if (annoEl) annoEl.value = '';
+        const canoneEl = document.getElementById('annualita-canone');
+        if (canoneEl) canoneEl.value = '';
+
+        // Reset dati risoluzione
+        document.getElementById('risoluzione-box')?.classList.add('hidden');
+        const risoluzioneDataEl = document.getElementById('risoluzione-data');
+        if (risoluzioneDataEl) risoluzioneDataEl.value = '';
+
+        // Reset imposta registro
+        document.getElementById('imposta-box')?.classList.add('hidden');
+        const cedolare = document.getElementById('cedolare-secca');
+        if (cedolare) cedolare.checked = false;
+        document.getElementById('iban-input') && (document.getElementById('iban-input').value = '');
+        document.getElementById('iban-nome')  && (document.getElementById('iban-nome').value  = '');
+        document.getElementById('iban-intestatario') && (document.getElementById('iban-intestatario').value = '');
+        hideIbanError?.();
+
+        // Reset dati fatturazione
+        const fattFields = [
+          'fatt-email','fatt-nome','fatt-cognome','fatt-ragione',
+          'fatt-cf','fatt-piva','fatt-indirizzo','fatt-cap',
+          'fatt-comune','fatt-provincia','fatt-sdi','fatt-pec-cliente'
+        ];
+        fattFields.forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.value = '';
+        });
+
+        // Reset radio tipo privato
+        const radioPrivato = document.querySelector('input[name="fatt-tipo"][value="privato"]');
+        if (radioPrivato) {
+          radioPrivato.checked = true;
+          // Mostra campi privato, nascondi azienda
+          document.getElementById('fatt-nome-wrapper')?.classList.remove('hidden');
+          document.getElementById('fatt-cognome-wrapper')?.classList.remove('hidden');
+          document.getElementById('fatt-ragione-wrapper')?.classList.add('hidden');
+          document.getElementById('fatt-piva-wrapper')?.classList.add('hidden');
+          document.getElementById('fatt-sdi-wrapper')?.classList.add('hidden');
+        }
+
+        // Reset disclaimer
+        const disclaimer = document.getElementById('disclaimer-check');
+        if (disclaimer) disclaimer.checked = false;
+
+        // Torna allo step 1
+        showWizardStep(1);
+      }
+
+      // Reset wizard quando si naviga altrove o si torna alla sezione
+      const origNavigateTo = window.navigateTo;
+      window.navigateTo = function(view) {
+        if (view !== 'richiedi') resetWizard();
+        origNavigateTo(view);
+      };
+
+      // ─── Toggle privato / azienda ─────────────────────────────────
+      document.querySelectorAll('input[name="fatt-tipo"]').forEach(radio => {
+        radio.addEventListener('change', () => {
+          const isAzienda = radio.value === 'azienda';
+          document.getElementById('fatt-nome-wrapper')?.classList.toggle('hidden', isAzienda);
+          document.getElementById('fatt-cognome-wrapper')?.classList.toggle('hidden', isAzienda);
+          document.getElementById('fatt-ragione-wrapper')?.classList.toggle('hidden', !isAzienda);
+          document.getElementById('fatt-piva-wrapper')?.classList.toggle('hidden', !isAzienda);
+          document.getElementById('fatt-sdi-wrapper')?.classList.toggle('hidden', !isAzienda);
+        });
+      });
+
+      // Formattazione automatica CF maiuscolo
+      document.getElementById('fatt-cf')?.addEventListener('input', (e) => {
+        e.target.value = e.target.value.toUpperCase();
+      });
+
+      // ─── Raccoglie dati fatturazione dal form ─────────────────────
+      function getDatiFatturazione() {
+        const tipo     = document.querySelector('input[name="fatt-tipo"]:checked')?.value || 'privato';
+        const isAz     = tipo === 'azienda';
+        const email    = document.getElementById('fatt-email')?.value.trim() || '';
+        const cf       = document.getElementById('fatt-cf')?.value.trim().toUpperCase() || '';
+        const piva     = document.getElementById('fatt-piva')?.value.trim() || '';
+        const ind      = document.getElementById('fatt-indirizzo')?.value.trim() || '';
+        const cap      = document.getElementById('fatt-cap')?.value.trim() || '';
+        const comune   = document.getElementById('fatt-comune')?.value.trim() || '';
+        const prov     = document.getElementById('fatt-provincia')?.value.trim().toUpperCase() || '';
+
+        if (isAz) {
+          return {
+            tipo, email,
+            ragioneSociale: document.getElementById('fatt-ragione')?.value.trim() || '',
+            cf, piva,
+            indirizzo: ind, cap, comune, provincia: prov,
+            codSDI:    document.getElementById('fatt-sdi')?.value.trim().toUpperCase() || '0000000',
+            pec:       document.getElementById('fatt-pec-cliente')?.value.trim() || '',
+          };
+        }
+        return {
+          tipo, email,
+          nome:    document.getElementById('fatt-nome')?.value.trim() || '',
+          cognome: document.getElementById('fatt-cognome')?.value.trim() || '',
+          cf,
+          indirizzo: ind, cap, comune, provincia: prov,
+        };
+      }
+
+      // ─── Valida dati fatturazione ─────────────────────────────────
+      function validaDatiFatturazione(d) {
+        if (!d.email || !d.email.includes('@'))
+          return 'Inserisci un\'email valida per le comunicazioni sulla pratica.';
+        if (!d.cf || d.cf.length < 11)
+          return 'Inserisci un codice fiscale valido.';
+        if (d.tipo === 'privato' && (!d.nome || !d.cognome))
+          return 'Inserisci nome e cognome per la fattura.';
+        if (d.tipo === 'azienda' && !d.ragioneSociale)
+          return 'Inserisci la ragione sociale per la fattura.';
+        if (d.tipo === 'azienda' && (!d.piva || d.piva.length !== 11))
+          return 'Inserisci una Partita IVA valida (11 cifre).';
+        if (!d.indirizzo || !d.cap || !d.comune || !d.provincia)
+          return 'Inserisci l\'indirizzo completo per la fattura.';
+        return null;
+      }
+
+      // ─── Servizi che richiedono la sezione imposta di registro ───
+      const SERVIZI_CON_IMPOSTA = new Set([
+        'registrazione',
+        'registrazioneComodato',
+        'adempimentiProroga',
+        'adempimentiRisoluzione',
+        'adempimentiSubentro',
+        'adempimentiRinegoziazione',
+        'annualitaSuccessiva',
+      ]);
+
+      // Servizi per cui la cedolare secca NON è applicabile → IBAN sempre obbligatorio
+      const SERVIZI_SENZA_CEDOLARE = new Set([
+        'registrazioneComodato',  // comodato: cedolare secca non applicabile
+        'adempimentiSubentro',    // subentro: segue il regime del contratto originale, ma l'imposta è sempre dovuta
+        'adempimentiRinegoziazione', // rinegoziazione: idem
+        'annualitaSuccessiva',    // annualità: per definizione dovuta solo se NON in cedolare secca
+      ]);
+
+      // Servizi che richiedono il blocco "Dati annualità" (anno + canone)
+      const SERVIZI_CON_ANNUALITA = new Set(['annualitaSuccessiva']);
+
+      // Servizi che richiedono il blocco "Dati risoluzione" (data di risoluzione)
+      const SERVIZI_CON_RISOLUZIONE = new Set(['adempimentiRisoluzione']);
+
+      // Mostra/nascondi blocco imposta al cambio servizio
+      const impostaBox      = document.getElementById('imposta-box');
+      const cedolareRow     = document.getElementById('cedolare-row');
+      const ibanFields      = document.getElementById('iban-fields');
+      const annualitaBox    = document.getElementById('annualita-box');
+      const risoluzioneBox  = document.getElementById('risoluzione-box');
+
+      serviceSelect?.addEventListener('change', () => {
+        const key = serviceSelect.value;
+
+        // Reset sempre
+        document.getElementById('cedolare-secca').checked = false;
+        document.getElementById('iban-input').value = '';
+        document.getElementById('iban-nome').value = '';
+        hideIbanError();
+
+        // Box Annualità Successiva (anno + canone)
+        if (SERVIZI_CON_ANNUALITA.has(key)) {
+          annualitaBox?.classList.remove('hidden');
+        } else {
+          annualitaBox?.classList.add('hidden');
+          document.getElementById('annualita-anno') && (document.getElementById('annualita-anno').value = '');
+          document.getElementById('annualita-canone') && (document.getElementById('annualita-canone').value = '');
+        }
+
+        // Box Risoluzione (data di risoluzione)
+        if (SERVIZI_CON_RISOLUZIONE.has(key)) {
+          risoluzioneBox?.classList.remove('hidden');
+        } else {
+          risoluzioneBox?.classList.add('hidden');
+          document.getElementById('risoluzione-data') && (document.getElementById('risoluzione-data').value = '');
+        }
+
+        if (SERVIZI_CON_IMPOSTA.has(key)) {
+          impostaBox.classList.remove('hidden');
+          ibanFields.classList.remove('hidden');
+
+          if (SERVIZI_SENZA_CEDOLARE.has(key)) {
+            // Nascondi toggle cedolare secca — non applicabile
+            cedolareRow?.classList.add('hidden');
+          } else {
+            // Mostra toggle cedolare secca (es. registrazione locazione)
+            cedolareRow?.classList.remove('hidden');
+          }
+        } else {
+          impostaBox.classList.add('hidden');
+        }
+      });
+
+      // Toggle cedolare secca → mostra/nascondi campi IBAN
+      document.getElementById('cedolare-secca')?.addEventListener('change', (e) => {
+        const ibanFields = document.getElementById('iban-fields');
+        if (e.target.checked) {
+          ibanFields.classList.add('hidden');
+          hideIbanError();
+        } else {
+          ibanFields.classList.remove('hidden');
+        }
+      });
+
+      // Formattazione automatica IBAN (gruppi di 4 con spazio)
+      document.getElementById('iban-input')?.addEventListener('input', (e) => {
+        let val = e.target.value.replace(/\s/g, '').toUpperCase();
+        val = val.replace(/(.{4})/g, '$1 ').trim();
+        e.target.value = val;
+        hideIbanError();
+      });
+
+      // Validazione IBAN
+      function validateIBAN(raw) {
+        const clean = raw.replace(/\s/g, '').toUpperCase();
+        if (!clean.startsWith('IT')) return { valid: false, msg: 'L\'IBAN deve iniziare con IT per conti italiani.' };
+        if (clean.length !== 27) return { valid: false, msg: `Lunghezza errata: ${clean.length} caratteri (attesi 27).` };
+        if (!/^[A-Z0-9]+$/.test(clean)) return { valid: false, msg: 'L\'IBAN contiene caratteri non validi.' };
+        return { valid: true };
+      }
+
+      function showIbanError(msg) {
+        const el = document.getElementById('iban-error');
+        el.querySelector('span').textContent = msg;
+        el.classList.remove('hidden');
+        el.classList.add('flex');
+        document.getElementById('iban-input').classList.add('border-red-400');
+      }
+
+      function hideIbanError() {
+        const el = document.getElementById('iban-error');
+        el.classList.add('hidden');
+        el.classList.remove('flex');
+        document.getElementById('iban-input')?.classList.remove('border-red-400');
+      }
+
+      // Raccoglie i dati IBAN da includere in Firestore
+      function getImpostaData() {
+        const key = serviceSelect?.value;
+        if (!SERVIZI_CON_IMPOSTA.has(key)) return null; // servizio non soggetto
+
+        // Per i servizi senza cedolare (es. comodato) è sempre dovuta
+        const cedolare = SERVIZI_SENZA_CEDOLARE.has(key)
+          ? false
+          : document.getElementById('cedolare-secca')?.checked;
+
+        if (cedolare) return { cedolareSecca: true };
+
+        const intestatario = document.getElementById('iban-intestatario')?.value || null;
+        const nome         = document.getElementById('iban-nome')?.value.trim() || '';
+        const ibanRaw      = document.getElementById('iban-input')?.value || '';
+        const ibanClean    = ibanRaw.replace(/\s/g, '').toUpperCase();
+
+        return { cedolareSecca: false, ibanIntestatario: intestatario, ibanNome: nome, iban: ibanClean };
+      }
+
+      // ─── 4. GESTIONE FILE (lista locale, pre-upload) ──────────────
+      // Chiarisce nel pulsante cosa comporta proseguire senza allegati,
+      // così la scelta è consapevole invece che un dubbio che blocca.
+      function aggiornaEtichettaStep1() {
+        const el = document.getElementById('btn-step1-label');
+        if (!el) return;
+        el.textContent = _serviceFiles.length === 0
+          ? 'Prosegui — invierò i documenti dopo'
+          : 'Avanti — Dati fatturazione';
+      }
+
+      function renderServiceFileList() {
+        const list = document.getElementById('service-file-list');
+        if (!list) return;
+        if (_serviceFiles.length === 0) { list.innerHTML = ''; return; }
+        list.innerHTML = _serviceFiles.map((f, i) => `
+          <div class="flex items-center gap-3 px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-lg">
+            <i class="fa-solid ${f.type === 'application/pdf' || f.name.endsWith('.pdf') ? 'fa-file-pdf text-red-400' : 'fa-file-image text-blue-400'} text-sm flex-shrink-0"></i>
+            <div class="flex-1 min-w-0">
+              <p class="text-xs font-medium text-[#0F2A4A] truncate">${f.name}</p>
+              <p class="text-[10px] text-slate-400">${(f.size / 1024).toFixed(0)} KB</p>
+            </div>
+            <button onclick="window._removeServiceFile(${i})"
+                    class="text-slate-300 hover:text-red-400 transition-colors p-1 rounded flex-shrink-0" aria-label="Rimuovi">
+              <i class="fa-solid fa-xmark text-xs"></i>
+            </button>
+          </div>`).join('');
+      }
+
+      window._removeServiceFile = (idx) => {
+        _serviceFiles.splice(idx, 1);
+        renderServiceFileList();
+        aggiornaEtichettaStep1();
+      };
+
+      function addServiceFiles(files) {
+        Array.from(files).forEach(f => {
+          if (f.size > 10 * 1024 * 1024) { window.showToast(`${f.name} supera i 10 MB`, 'error'); return; }
+          if (_serviceFiles.some(x => x.name === f.name && x.size === f.size)) return;
+          _serviceFiles.push(f);
+        });
+        renderServiceFileList();
+        aggiornaEtichettaStep1();
+        traccia('documenti_aggiunti', { n_documenti: _serviceFiles.length });
+      }
+
+      const svcFileInput = document.getElementById('service-file-input');
+      if (svcFileInput) {
+        svcFileInput.addEventListener('change', (e) => { addServiceFiles(e.target.files); e.target.value = ''; });
+      }
+
+      // Scatto da fotocamera (solo mobile). Le foto arrivano quasi sempre con lo
+      // stesso nome generico, quindi verrebbero scartate come duplicati: le
+      // rinominiamo in pagina-1, pagina-2… così si accumulano e nel back office
+      // l'ordine delle pagine è leggibile a colpo d'occhio.
+      const svcCameraInput = document.getElementById('service-camera-input');
+      if (svcCameraInput) {
+        svcCameraInput.addEventListener('change', (e) => {
+          const foto = e.target.files && e.target.files[0];
+          if (foto) {
+            const n   = _serviceFiles.filter(x => /^pagina-\d+\./.test(x.name)).length + 1;
+            const ext = (foto.type.split('/')[1] || 'jpg').replace('jpeg', 'jpg');
+            try {
+              addServiceFiles([new File([foto], `pagina-${n}.${ext}`, { type: foto.type })]);
+            } catch (_) {
+              addServiceFiles([foto]); // fallback per browser senza costruttore File
+            }
+          }
+          e.target.value = '';
+        });
+      }
+
+      const sdz = document.getElementById('service-drop-zone');
+      if (sdz) {
+        sdz.addEventListener('dragover',  (e) => { e.preventDefault(); sdz.classList.add('drag-over'); });
+        sdz.addEventListener('dragleave', ()  => sdz.classList.remove('drag-over'));
+        sdz.addEventListener('drop', (e) => { e.preventDefault(); sdz.classList.remove('drag-over'); addServiceFiles(e.dataTransfer.files); });
+        sdz.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') svcFileInput?.click(); });
+      }
+
+      // ─── 5. CHECKOUT: upload → Firestore → redirect Stripe ───────
+      if (btnCheckout) {
+        btnCheckout.addEventListener('click', async () => {
+          if (!_selectedService) return;
+          const s = SERVIZI[_selectedService];
+
+          // Evento standard GA4: da qui in poi l'utente ha premuto "paga"
+          traccia('begin_checkout', {
+            currency: 'EUR',
+            value: s.prezzoNum,
+            servizio: _selectedService,
+            n_documenti: _serviceFiles.length,
+          });
+
+          if (!s.stripeLink || s.stripeLink.startsWith('STRIPE_LINK_')) {
+            window.showToast('Payment Link Stripe non ancora configurato per questo servizio.', 'error');
+            return;
+          }
+
+          setBtnLoading(true);
+
+          try {
+            // Validazione imposta di registro
+            const impostaData = getImpostaData();
+            if (impostaData && !impostaData.cedolareSecca) {
+              if (!impostaData.ibanIntestatario) {
+                window.showToast('Seleziona chi è l\'intestatario del conto IBAN.', 'error');
+                setBtnLoading(false); setBtnEnabled(); return;
+              }
+              if (!impostaData.ibanNome) {
+                window.showToast('Inserisci il nome dell\'intestatario del conto.', 'error');
+                setBtnLoading(false); setBtnEnabled(); return;
+              }
+              const ibanCheck = validateIBAN(impostaData.iban);
+              if (!ibanCheck.valid) {
+                showIbanError(ibanCheck.msg);
+                window.showToast('IBAN non valido. Controlla il codice inserito.', 'error');
+                setBtnLoading(false); setBtnEnabled(); return;
+              }
+            }
+
+            // Validazione disclaimer responsabilità
+            const disclaimerCheck = document.getElementById('disclaimer-check');
+            if (!disclaimerCheck?.checked) {
+              window.showToast('Devi confermare di aver letto le condizioni prima di procedere.', 'error');
+              setBtnLoading(false); setBtnEnabled(); return;
+            }
+
+            // Validazione dati Annualità Successiva (se selezionata)
+            let datiAnnualita = null;
+            if (SERVIZI_CON_ANNUALITA.has(_selectedService)) {
+              const anno   = document.getElementById('annualita-anno')?.value.trim();
+              const canone = document.getElementById('annualita-canone')?.value.trim();
+              if (!anno || anno.length !== 4) {
+                window.showToast('Inserisci l\'anno di riferimento per l\'annualità.', 'error');
+                setBtnLoading(false); setBtnEnabled(); return;
+              }
+              datiAnnualita = {
+                anno:   Number(anno),
+                canone: canone ? Number(canone) : null,
+              };
+            }
+
+            // Validazione dati Risoluzione (se selezionata)
+            let datiRisoluzione = null;
+            if (SERVIZI_CON_RISOLUZIONE.has(_selectedService)) {
+              const dataRisoluzione = document.getElementById('risoluzione-data')?.value;
+              if (!dataRisoluzione) {
+                window.showToast('Inserisci la data di risoluzione del contratto.', 'error');
+                setBtnLoading(false); setBtnEnabled(); return;
+              }
+              datiRisoluzione = { dataRisoluzione };
+            }
+
+            // Validazione dati fatturazione
+            const datiFatt = getDatiFatturazione();
+            const errFatt  = validaDatiFatturazione(datiFatt);
+            if (errFatt) {
+              window.showToast(errFatt, 'error');
+              setBtnLoading(false); setBtnEnabled(); return;
+            }
+            // 5a. Carica ogni file su Storage
+            const uploadedDocs = [];
+            for (const file of _serviceFiles) {
+              // Percorso sotto users/{uid}/: è l'unico ramo (insieme a fatture/)
+              // consentito dalle regole Storage attive dal 13/07/2026.
+              // Il vecchio percorso "richieste_servizi/..." ricadeva nel catch-all
+              // "tutto il resto → false" e l'upload veniva rifiutato.
+              const path  = `users/${user.uid}/richieste/${Date.now()}_${file.name}`;
+              const sRef  = ref(storage, path);
+              const task  = uploadBytesResumable(sRef, file);
+              await new Promise((resolve, reject) => {
+                task.on('state_changed', null, reject, async () => {
+                  const url = await getDownloadURL(task.snapshot.ref);
+                  uploadedDocs.push({ fileName: file.name, fileSize: file.size, storagePath: path, downloadUrl: url });
+                  resolve();
+                });
+              });
+            }
+
+            // 5b. Crea pratica su Firestore
+            const notes = document.getElementById('service-notes')?.value.trim() || null;
+            const praticaRef = await addDoc(collection(db, 'pratiche'), {
+              userId:             user.uid,
+              clienteEmail:       datiFatt.email || user.email,
+              isTest:             _isTest,   // true solo con ?test=1: pratiche da eliminare dopo i test
+              documentiInAttesa:  _serviceFiles.length === 0,  // il cliente li invierà dopo
+              tipoServizio:       _selectedService,
+              tipoServizioLabel:  s.label,
+              prezzo:             s.prezzoNum,
+              prezzoFormatted:    s.prezzo,
+              status:             'In attesa di pagamento',
+              documentiRichiesta: uploadedDocs,
+              note:               notes,
+              impostaRegistro:    impostaData,
+              datiAnnualita:      datiAnnualita,
+              datiRisoluzione:    datiRisoluzione,
+              datiFatturazione:   datiFatt,
+              stripeLink:         s.stripeLink,
+              createdAt:          serverTimestamp(),
+              updatedAt:          serverTimestamp(),
+            });
+
+            window.showToast('Documenti caricati! Reindirizzamento al pagamento…', 'success');
+
+            // 5b-bis. Crea anche un documento "vero" per ogni file nella collection
+            // "documents", collegato via praticaId. Necessario per: il modal dettaglio
+            // pratica, il backoffice admin, e la sincronizzazione automatica col NAS.
+            for (const doc of uploadedDocs) {
+              try {
+                await addDoc(collection(db, 'documents'), {
+                  userId:      user.uid,
+                  praticaId:   praticaRef.id,
+                  fileName:    doc.fileName,
+                  fileSize:    doc.fileSize,
+                  storagePath: doc.storagePath,
+                  downloadUrl: doc.downloadUrl,
+                  uploadedAt:  serverTimestamp(),
+                  updatedAt:   serverTimestamp(),
+                  status:      'pending',
+                  fonte:       'cliente',
+                });
+              } catch (err) {
+                console.warn('Errore creazione documento collegato:', err);
+              }
+            }
+
+            // Crea record fattura su Firestore (stato: da_emettere)
+            if (window._creaRecordFattura) {
+              await window._creaRecordFattura(praticaRef.id, {
+                tipoServizio:      _selectedService,
+                tipoServizioLabel: s.label,
+                prezzoNum:         s.prezzoNum,
+              });
+            }
+
+            // 5c. Redirect a Stripe con l'ID pratica.
+            // NOTA: i Payment Link accettano solo client_reference_id, prefilled_email,
+            // prefilled_promo_code, locale e UTM — ogni altro parametro viene scartato
+            // silenziosamente. La pagina di ritorno NON si può passare da qui: va
+            // configurata dentro ogni Payment Link (scheda "Dopo il pagamento" →
+            // "Reindirizza i clienti al tuo sito web") con:
+            //   https://locaonline.it/pagamento-successo.html?session_id={CHECKOUT_SESSION_ID}
+            // Il dominio deve essere SENZA www, altrimenti il redirect di Netlify
+            // cambia origine e la sessione ospite (anonima) va persa.
+            const linkBase = _isTest
+              ? SERVIZI_TEST[_selectedService]
+              : s.stripeLink;
+
+            if (_isTest && !linkBase) {
+              alert('Modalità test: manca il Payment Link di test per questo servizio.\n\n'
+                  + 'Aggiungilo in SERVIZI_TEST dentro dashboard.html.');
+              return;
+            }
+
+            const stripeUrl  = `${linkBase}?client_reference_id=${praticaRef.id}`;
+            // Distingue chi arriva davvero a Stripe da chi si blocca prima
+            // (upload fallito, errore di rete, permessi): la differenza tra
+            // questo evento e begin_checkout misura i problemi tecnici residui.
+            traccia('redirect_stripe', {
+              currency: 'EUR',
+              value: s.prezzoNum,
+              servizio: _selectedService,
+              pratica_id: praticaRef.id,
+            });
+            setTimeout(() => {
+              resetWizard(); // Pulisce il form per eventuali richieste future
+              window.location.href = stripeUrl;
+            }, 1200);
+
+          } catch (err) {
+            console.error('Checkout error:', err);
+            window.showToast('Errore durante l\'elaborazione. Riprova.', 'error');
+            setBtnLoading(false);
+            setBtnEnabled();
+          }
+        });
+      }
+
+    });
+  </script>
+
+  <!-- ===== JS UI (non-module) ===== -->
+  <script>
+    // ─── Toast ────────────────────────────────────────────────────
+    let toastTimer;
+    window.showToast = function(msg, type = 'success') {
+      const t    = document.getElementById('toast');
+      const icon = t.querySelector('i');
+      document.getElementById('toast-msg').textContent = msg;
+      icon.className = type === 'success' ? 'fa-solid fa-circle-check'
+                     : type === 'error'   ? 'fa-solid fa-circle-xmark'
+                     :                      'fa-solid fa-circle-info';
+      t.className = `show ${type}`;
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => { t.className = ''; }, 3500);
+    };
+
+    // ─── Navigazione SPA ─────────────────────────────────────────
+    const views    = document.querySelectorAll('.view');
+    const navItems = document.querySelectorAll('.nav-item[data-view]');
+    const topbarTitle = document.getElementById('topbar-title');
+    const topbarSub   = document.getElementById('topbar-sub');
+
+    const viewMeta = {
+      overview:   { title: 'Panoramica',           sub: 'Area riservata' },
+      pratiche:   { title: 'Le mie pratiche',      sub: 'Gestione contratti' },
+      documenti:  { title: 'I miei documenti',     sub: 'Upload e archivio' },
+      richiedi:   { title: 'Richiedi un Servizio', sub: 'Acquisto e pagamento' },
+      fatture:    { title: 'Le mie fatture',       sub: 'Fatturazione elettronica' },
+      assistenza: { title: 'Assistenza',            sub: 'Supporto clienti' },
+      account:    { title: 'Il mio account',        sub: 'Profilo e impostazioni' },
+    };
+
+    function navigateTo(viewId) {
+      views.forEach(v => v.classList.remove('active'));
+      document.getElementById('view-' + viewId)?.classList.add('active');
+      navItems.forEach(n => {
+        n.classList.toggle('active', n.dataset.view === viewId);
+        n.setAttribute('aria-current', n.dataset.view === viewId ? 'page' : 'false');
+      });
+      const meta = viewMeta[viewId] || {};
+      topbarTitle.textContent = meta.title || '';
+      topbarSub.textContent   = meta.sub   || '';
+      // Chiudi sidebar mobile
+      document.getElementById('sidebar').classList.remove('open');
+      document.getElementById('sidebar-overlay').classList.add('hidden');
+    }
+
+    navItems.forEach(btn => {
+      btn.addEventListener('click', () => navigateTo(btn.dataset.view));
+    });
+
+    // Link interni (panoramica → pratiche)
+    document.getElementById('link-all-pratiche')?.addEventListener('click', () => navigateTo('pratiche'));
+
+    // Esponi navigateTo globalmente (usato dall'empty state)
+    window.navigateTo = navigateTo;
+
+    // ─── Sidebar mobile ───────────────────────────────────────────
+    const sidebar        = document.getElementById('sidebar');
+    const overlay        = document.getElementById('sidebar-overlay');
+    const btnOpen        = document.getElementById('sidebar-open');
+    const btnClose       = document.getElementById('sidebar-close');
+
+    btnOpen.addEventListener('click', () => {
+      sidebar.classList.add('open');
+      overlay.classList.remove('hidden');
+    });
+    const closeSidebar = () => {
+      sidebar.classList.remove('open');
+      overlay.classList.add('hidden');
+    };
+    btnClose.addEventListener('click', closeSidebar);
+    overlay.addEventListener('click',  closeSidebar);
+
+    // ─── Filtro pratiche (delegato a renderPratiche con dati live) ─
+    let _allPratiche = [];
+    window._setPratiche = (arr) => { _allPratiche = arr; };
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.className = 'filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-500 hover:border-[#2E7CF6] hover:text-[#2E7CF6]';
+        });
+        btn.className = 'filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#0F2A4A] text-white';
+        const filter = btn.dataset.filter;
+        if (window.renderPratiche) window.renderPratiche(_allPratiche, filter);
+      });
+    });
+  </script>
+
+  <!-- ===== MODAL: DETTAGLIO PRATICA (CLIENTE) ===== -->
+  <div id="pratica-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4"
+       style="background:rgba(15,42,74,0.55);" role="dialog" aria-modal="true" aria-label="Dettaglio pratica">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full max-h-[85vh] overflow-y-auto">
+      <div class="flex items-center justify-between px-6 py-5 border-b border-slate-100 sticky top-0 bg-white rounded-t-3xl">
+        <div>
+          <p class="text-xs text-slate-400 font-medium" id="pmodal-codice">–</p>
+          <h3 class="text-lg font-bold text-[#0F2A4A]" id="pmodal-servizio">Dettaglio pratica</h3>
+        </div>
+        <button id="pmodal-close" class="w-8 h-8 rounded-full hover:bg-slate-100 flex items-center justify-center text-slate-400 transition-colors" aria-label="Chiudi">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="p-6 space-y-5">
+
+        <!-- Stato -->
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-slate-500">Stato attuale</span>
+          <span id="pmodal-stato">–</span>
+        </div>
+
+        <!-- Scadenza -->
+        <div class="flex items-center justify-between" id="pmodal-scadenza-row" style="display:none;">
+          <span class="text-sm text-slate-500">Scadenza contratto</span>
+          <span id="pmodal-scadenza" class="text-sm font-semibold">–</span>
+        </div>
+
+        <!-- Data apertura -->
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-slate-500">Data apertura</span>
+          <span class="text-sm font-medium text-[#0F2A4A]" id="pmodal-data">–</span>
+        </div>
+
+        <!-- Importo -->
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-slate-500">Importo</span>
+          <span class="text-sm font-bold text-[#0F2A4A]" id="pmodal-importo">–</span>
+        </div>
+
+        <div class="border-t border-slate-100"></div>
+
+        <!-- Note -->
+        <div id="pmodal-note-box" style="display:none;">
+          <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Note inviate</p>
+          <p class="text-sm text-slate-600 bg-slate-50 rounded-xl p-3" id="pmodal-note">–</p>
+        </div>
+
+        <!-- Documenti -->
+        <div>
+          <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Documenti della pratica</p>
+          <div id="pmodal-docs" class="space-y-2">
+            <p class="text-sm text-slate-400">Nessun documento collegato.</p>
+          </div>
+        </div>
+
+        <!-- CTA azioni -->
+        <div class="pt-2 space-y-2" id="pmodal-actions"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== COOKIE BANNER ===== -->
+  <div id="cookie-banner"
+       class="fixed bottom-0 left-0 right-0 z-50 bg-[#0F2A4A] border-t border-white/10 shadow-2xl"
+       role="dialog" aria-label="Informativa cookie" style="display:none;">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div class="flex-1 min-w-0">
+        <p class="text-white text-sm font-medium mb-1">🍪 Questo sito utilizza i cookie</p>
+        <p class="text-slate-400 text-xs leading-relaxed">
+          Utilizziamo cookie tecnici essenziali per il funzionamento del sito e, previo consenso, cookie analitici.
+          <a href="privacy.html" class="text-[#5B9BFF] hover:underline ml-1">Leggi l'informativa privacy</a>
+        </p>
+      </div>
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <button id="cookie-manage" class="px-4 py-2 text-xs font-semibold text-slate-300 hover:text-white border border-white/20 hover:border-white/40 rounded-lg transition-colors">
+          Solo essenziali
+        </button>
+        <button id="cookie-accept" class="px-4 py-2 text-xs font-semibold text-white bg-[#2E7CF6] hover:bg-[#1B5EC7] rounded-lg transition-colors shadow-sm">
+          Accetta tutti
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const _banner = document.getElementById('cookie-banner');
+    const COOKIE_KEY = 'locaonline_cookie_consent';
+    if (!localStorage.getItem(COOKIE_KEY)) _banner.style.display = 'block';
+    document.getElementById('cookie-accept').addEventListener('click', () => {
+      localStorage.setItem(COOKIE_KEY, 'all');
+      localStorage.setItem(COOKIE_KEY + '_date', new Date().toISOString());
+      _banner.style.display = 'none';
+    });
+    document.getElementById('cookie-manage').addEventListener('click', () => {
+      localStorage.setItem(COOKIE_KEY, 'essential');
+      localStorage.setItem(COOKIE_KEY + '_date', new Date().toISOString());
+      _banner.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

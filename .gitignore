@@ -1,0 +1,65 @@
+# ═══════════════════════════════════════════════════════════════════
+#  LocaOnLine — file esclusi dal repository
+#  La cartella pubblicata da Netlify coincide con questo repository:
+#  tutto ciò che resta qui diventa raggiungibile da un indirizzo web.
+# ═══════════════════════════════════════════════════════════════════
+
+# ─── Documentazione interna ──────────────────────────────────────
+# Contiene dati fiscali, UID amministratore, configurazione di rete
+# dell'ufficio e strategia commerciale: non deve stare online.
+riepilogo-locaonline.md
+*.md
+!README.md
+
+# ─── Backend: Cloud Functions e regole di sicurezza ──────────────
+# Vanno gestite con Firebase CLI, non pubblicate sul sito.
+locaonline-functions/
+functions/
+firestore.rules
+storage.rules
+firebase.json
+.firebaserc
+
+# ─── Segreti: non devono MAI finire nel repository ───────────────
+# Chiavi service account Google Cloud / Firebase
+*-firebase-adminsdk-*.json
+locaonline-e8157-*.json
+service-account*.json
+*serviceaccount*.json
+
+# Variabili d'ambiente
+.env
+.env.*
+!.env.example
+
+# File di lavoro di Firebase CLI
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# ─── Dipendenze ──────────────────────────────────────────────────
+node_modules/
+package-lock.json.bak
+
+# ─── File di sistema macOS e Windows ─────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# ─── Editor ──────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+
+# ─── Archivi, backup e bozze ─────────────────────────────────────
+*.zip
+*.bak
+*.old
+backup/
+bozze/

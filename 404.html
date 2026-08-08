@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18245314132"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18245314132');
+  </script>
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pagina non trovata – LocaOnLine</title>
+  <meta name="robots" content="noindex, nofollow"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif']}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <meta name="theme-color" content="#0F2A4A"/>
+
+  <style>
+    @keyframes float {
+      0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)}
+    }
+    .float { animation: float 3.5s ease-in-out infinite; }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+    .fade-up { animation: fadeUp 0.6s ease forwards; }
+    .delay-1 { animation-delay:0.15s; opacity:0; }
+    .delay-2 { animation-delay:0.3s;  opacity:0; }
+    .delay-3 { animation-delay:0.45s; opacity:0; }
+  </style>
+</head>
+<body class="font-sans bg-[#F4F7FB] min-h-screen flex flex-col">
+
+  <!-- Header minimal -->
+  <header class="bg-white border-b border-slate-100 px-6 py-4">
+    <a href="index.html" class="flex items-center gap-2 w-fit">
+      <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#1B4F8A] to-[#2E7CF6] flex items-center justify-center">
+        <i class="fa-solid fa-file-contract text-white text-xs"></i>
+      </div>
+      <span class="text-lg font-extrabold"><span class="text-[#0F2A4A]">Loca</span><span class="text-[#2E7CF6]">OnLine</span></span>
+    </a>
+  </header>
+
+  <!-- Contenuto 404 -->
+  <main class="flex-1 flex items-center justify-center p-6">
+    <div class="text-center max-w-lg">
+
+      <!-- Illustrazione -->
+      <div class="float mb-8">
+        <div class="relative inline-block">
+          <!-- Foglio contratto -->
+          <div class="w-32 h-40 bg-white rounded-2xl shadow-xl border border-slate-200 mx-auto flex flex-col items-center justify-center gap-2 relative">
+            <div class="w-16 h-2.5 bg-slate-100 rounded-full"></div>
+            <div class="w-14 h-2.5 bg-slate-100 rounded-full"></div>
+            <div class="w-12 h-2.5 bg-slate-100 rounded-full"></div>
+            <div class="w-16 h-2.5 bg-slate-100 rounded-full"></div>
+            <!-- Punto interrogativo -->
+            <div class="absolute -top-4 -right-4 w-10 h-10 rounded-full bg-[#2E7CF6] shadow-lg flex items-center justify-center">
+              <span class="text-white font-extrabold text-lg leading-none">?</span>
+            </div>
+          </div>
+          <!-- Numero 404 sotto -->
+          <p class="text-8xl font-extrabold text-[#EBF2FF] mt-4 leading-none select-none">404</p>
+        </div>
+      </div>
+
+      <!-- Testo -->
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-[#0F2A4A] mb-3 fade-up delay-1">
+        Pagina non trovata
+      </h1>
+      <p class="text-slate-500 text-sm sm:text-base leading-relaxed mb-8 fade-up delay-2">
+        La pagina che cerchi non esiste o è stata spostata.<br/>
+        Controlla l'indirizzo o torna alla home.
+      </p>
+
+      <!-- Link utili -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center mb-10 fade-up delay-3">
+        <a href="index.html"
+           class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white font-semibold rounded-xl transition-colors shadow-md">
+          <i class="fa-solid fa-house text-sm"></i> Torna alla home
+        </a>
+        <a href="servizi.html"
+           class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border border-slate-200 hover:bg-slate-50 text-[#0F2A4A] font-semibold rounded-xl transition-colors">
+          <i class="fa-solid fa-list text-sm"></i> Vedi i servizi
+        </a>
+        <a href="contatti.html"
+           class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border border-slate-200 hover:bg-slate-50 text-[#0F2A4A] font-semibold rounded-xl transition-colors">
+          <i class="fa-solid fa-envelope text-sm"></i> Contattaci
+        </a>
+      </div>
+
+      <!-- Link rapidi -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 text-left fade-up delay-3">
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Forse stavi cercando</p>
+        <div class="space-y-2">
+          <a href="servizi.html#registrazione"
+             class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-50 transition-colors group">
+            <div class="w-8 h-8 rounded-lg bg-[#EBF2FF] flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-building-columns text-[#2E7CF6] text-xs"></i>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-[#0F2A4A] group-hover:text-[#2E7CF6] transition-colors">Registrazione contratto di locazione</p>
+              <p class="text-xs text-slate-400">A partire da € 25</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-300 group-hover:text-[#2E7CF6] ml-auto text-xs transition-colors"></i>
+          </a>
+          <a href="servizi.html#comodato"
+             class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-50 transition-colors group">
+            <div class="w-8 h-8 rounded-lg bg-[#EBF2FF] flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-handshake text-[#2E7CF6] text-xs"></i>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-[#0F2A4A] group-hover:text-[#2E7CF6] transition-colors">Registrazione comodato d'uso</p>
+              <p class="text-xs text-slate-400">A partire da € 25</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-300 group-hover:text-[#2E7CF6] ml-auto text-xs transition-colors"></i>
+          </a>
+          <a href="come-funziona.html"
+             class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-50 transition-colors group">
+            <div class="w-8 h-8 rounded-lg bg-[#EBF2FF] flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-circle-question text-[#2E7CF6] text-xs"></i>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-[#0F2A4A] group-hover:text-[#2E7CF6] transition-colors">Come funziona il servizio</p>
+              <p class="text-xs text-slate-400">4 passi semplici</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-300 group-hover:text-[#2E7CF6] ml-auto text-xs transition-colors"></i>
+          </a>
+          <a href="login.html"
+             class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-50 transition-colors group">
+            <div class="w-8 h-8 rounded-lg bg-[#EBF2FF] flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-right-to-bracket text-[#2E7CF6] text-xs"></i>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-[#0F2A4A] group-hover:text-[#2E7CF6] transition-colors">Accedi all'area riservata</p>
+              <p class="text-xs text-slate-400">Dashboard e gestione pratiche</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-300 group-hover:text-[#2E7CF6] ml-auto text-xs transition-colors"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer minimal -->
+  <footer class="py-5 text-center border-t border-slate-200 bg-white">
+    <p class="text-slate-400 text-xs">
+      &copy; <span id="footer-year"></span> <a href="index.html" class="hover:text-[#2E7CF6] transition-colors font-semibold">LocaOnLine</a>
+      &nbsp;·&nbsp;
+      <a href="privacy.html" class="hover:text-[#2E7CF6] transition-colors">Privacy</a>
+      &nbsp;·&nbsp;
+      <a href="termini.html" class="hover:text-[#2E7CF6] transition-colors">Termini</a>
+      &nbsp;·&nbsp;
+      <a href="contatti.html" class="hover:text-[#2E7CF6] transition-colors">Contatti</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
