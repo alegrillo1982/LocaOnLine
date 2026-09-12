@@ -607,13 +607,13 @@
                 </div>
               </div>
               <div class="mb-5">
-                <label class="block text-sm font-semibold text-[#0F2A4A] mb-2">Carica i documenti <span class="font-normal text-slate-400">(puoi farlo anche dopo)</span></label>
+                <label class="block text-sm font-semibold text-[#0F2A4A] mb-2">Inviaci le foto o il PDF del contratto <span class="font-normal text-slate-400">(puoi farlo anche dopo)</span></label>
                 <p id="upload-hint" class="text-xs text-slate-400 mb-3">Seleziona prima un servizio per vedere quali documenti sono richiesti.</p>
                 <div id="service-drop-zone" class="service-drop-zone flex flex-col items-center justify-center py-8 px-6 text-center rounded-2xl border-2 border-dashed border-slate-200 hover:border-[#2E7CF6] hover:bg-[#EBF2FF]/30 transition-all cursor-pointer" role="button" tabindex="0">
                   <div class="w-12 h-12 rounded-2xl bg-[#EBF2FF] flex items-center justify-center mb-3">
                     <i class="fa-solid fa-cloud-arrow-up text-[#2E7CF6] text-xl"></i>
                   </div>
-                  <p class="font-semibold text-[#0F2A4A] text-sm mb-1">Trascina i file qui</p>
+                  <p class="font-semibold text-[#0F2A4A] text-sm mb-1">Trascina qui le foto o i PDF</p>
                   <p class="text-xs text-slate-400 mb-3">oppure</p>
                   <label for="service-file-input" class="inline-flex items-center gap-2 px-4 py-2 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white text-xs font-semibold rounded-lg cursor-pointer transition-colors">
                     <i class="fa-solid fa-folder-open text-xs"></i> Seleziona file
@@ -637,6 +637,31 @@
                   </p>
                 </div>
 
+                <!-- Alternativa completa via WhatsApp: molte persone non hanno
+                     confidenza con i file e hanno il contratto stampato. Qui il
+                     canale diventa acquisizione, non solo assistenza. -->
+                <div class="mt-4 rounded-2xl border-2 border-[#25D366]/40 bg-[#F2FCF6] px-4 py-4">
+                  <div class="flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-[#25D366] flex items-center justify-center flex-shrink-0">
+                      <i class="fa-brands fa-whatsapp text-white text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm font-bold text-[#0F2A4A] mb-1">Non vai d'accordo con il computer? Facciamo tutto noi.</p>
+                      <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                        Scatta le foto del contratto con il telefono e mandacele su WhatsApp.
+                        Prepariamo noi la pratica e ti rimandiamo un link semplice, solo per pagare.
+                        Non serve che tu compili nulla.
+                      </p>
+                      <a href="https://wa.me/39068848163?text=Buongiorno%2C%20vorrei%20registrare%20un%20contratto%20ma%20preferisco%20mandarvi%20le%20foto%20su%20WhatsApp"
+                         target="_blank" rel="noopener"
+                         class="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#25D366] hover:bg-[#1DA851] text-white text-sm font-bold rounded-xl transition-colors">
+                        <i class="fa-brands fa-whatsapp text-base"></i> Mandaci le foto su WhatsApp
+                      </a>
+                      <p class="text-xs text-slate-400 mt-2">Oppure chiama lo <a href="tel:+39068848163" class="text-[#2E7CF6] font-semibold">06 884 8163</a> — Lun–Sab 9–13 e 15–18</p>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- Scatto da fotocamera: solo su telefono, dove selezionare un file
                      è scomodo e spesso il contratto è su carta e non sul dispositivo. -->
                 <div class="md:hidden mt-3">
@@ -657,6 +682,12 @@
               <div class="mb-5">
                 <label for="service-notes" class="block text-sm font-semibold text-[#0F2A4A] mb-2">Note aggiuntive <span class="text-slate-400 font-normal">(opzionale)</span></label>
                 <textarea id="service-notes" rows="3" placeholder="Eventuali dettagli sull'immobile, date importanti, o altre istruzioni per il nostro team…" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all resize-none"></textarea>
+              </div>
+              <div class="mb-4 flex items-start gap-2 text-xs text-slate-500 leading-relaxed">
+                <i class="fa-solid fa-shield-heart text-[#2E7CF6] mt-0.5 flex-shrink-0"></i>
+                <span>Non preoccuparti se una foto viene storta o se manca qualcosa: prima di
+                trasmettere all'Agenzia delle Entrate controlliamo tutto noi e ti contattiamo
+                se serve.</span>
               </div>
               <button id="btn-step1-next" class="w-full flex items-center justify-center gap-2 py-3.5 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white font-semibold rounded-xl transition-colors shadow-md">
                 <span id="btn-step1-label">Avanti — Dati fatturazione</span> <i class="fa-solid fa-arrow-right text-sm"></i>
@@ -953,9 +984,10 @@
             </div>
             <div class="bg-gradient-to-b from-[#0F2A4A] to-[#1B4F8A] rounded-2xl p-5 space-y-3">
               <h4 class="font-bold text-white text-sm mb-1">Le nostre garanzie</h4>
-              <div class="flex items-start gap-3"><i class="fa-solid fa-shield-halved text-blue-300 text-sm mt-0.5 flex-shrink-0"></i><p class="text-blue-100 text-xs leading-relaxed">Pagamento 100% sicuro tramite Stripe.</p></div>
-              <div class="flex items-start gap-3"><i class="fa-solid fa-clock-rotate-left text-blue-300 text-sm mt-0.5 flex-shrink-0"></i><p class="text-blue-100 text-xs leading-relaxed">Elaborazione entro 48 ore dalla ricezione di tutti i documenti.</p></div>
-              <div class="flex items-start gap-3"><i class="fa-solid fa-headset text-blue-300 text-sm mt-0.5 flex-shrink-0"></i><p class="text-blue-100 text-xs leading-relaxed">Assistenza dedicata. Risposta entro 24h.</p></div>
+              <div class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-blue-300 text-sm mt-0.5 flex-shrink-0"></i><p class="text-blue-100 text-xs leading-relaxed">Dietro questo sito ci sono persone vere: agenzia immobiliare a Roma, in Via Lutezia 5. Quando chiami risponde Alessandro o un collega, non un call center.</p></div>
+              <div class="flex items-start gap-3"><i class="fa-solid fa-shield-halved text-blue-300 text-sm mt-0.5 flex-shrink-0"></i><p class="text-blue-100 text-xs leading-relaxed">Paghi con carta, bancomat o Postepay. Stessi standard di sicurezza della tua banca: i numeri della carta non li vediamo e non li conserviamo.</p></div>
+              <div class="flex items-start gap-3"><i class="fa-solid fa-clock-rotate-left text-blue-300 text-sm mt-0.5 flex-shrink-0"></i><p class="text-blue-100 text-xs leading-relaxed">L'80% delle pratiche completato entro 8 ore lavorative, 48 ore garantite.</p></div>
+              <div class="flex items-start gap-3"><i class="fa-solid fa-headset text-blue-300 text-sm mt-0.5 flex-shrink-0"></i><p class="text-blue-100 text-xs leading-relaxed">Assistenza dedicata. Rispondiamo entro poche ore lavorative.</p></div>
             </div>
           </div>
         </div>
