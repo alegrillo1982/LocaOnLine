@@ -49,14 +49,14 @@
 
   <url>
     <loc>https://locaonline.it/guide.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://locaonline.it/guida-quanto-costa-registrare-contratto-locazione.html</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -91,6 +91,14 @@
   <url>
     <loc>https://locaonline.it/guida-cedolare-secca-quando-conviene.html</loc>
     <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <url>
+    <loc>https://locaonline.it/guida-risoluzione-anticipata-contratto-locazione.html</loc>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>

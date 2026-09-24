@@ -956,6 +956,19 @@
           }
         });
 
+        // Normalizza un numero di telefono per wa.me.
+        // Attenzione: in Italia esistono cellulari che iniziano con 390-393,
+        // quindi "inizia con 39" NON basta a dire che c'è il prefisso
+        // internazionale. Un numero nazionale ha al massimo 10-11 cifre;
+        // con il prefisso 39 davanti ne ha di più.
+        function numeroWhatsApp(t) {
+          let d = String(t || '').replace(/\D/g, '');
+          if (d.startsWith('00')) return d.slice(2);  // 0039...
+          if (d.startsWith('0'))  return '39' + d;    // fisso nazionale (06..., 02...)
+          if (d.length <= 10)     return '39' + d;    // cellulare nazionale, anche 390-393
+          return d;                                   // già con prefisso 39
+        }
+
         // Dati fatturazione
         const df = p.datiFatturazione;
         if (df) {
@@ -965,6 +978,7 @@
               <div><p class="text-[10px] text-slate-400">Tipo</p><p class="font-semibold">${isAz ? 'Azienda' : 'Privato'}</p></div>
               <div><p class="text-[10px] text-slate-400">${isAz ? 'Ragione sociale' : 'Nome'}</p><p class="font-semibold">${isAz ? df.ragioneSociale : `${df.nome} ${df.cognome}`}</p></div>
               <div><p class="text-[10px] text-slate-400">Codice Fiscale</p><p class="font-mono font-semibold">${df.cf || '–'}</p></div>
+              ${df.telefono ? `<div><p class="text-[10px] text-slate-400">Telefono</p><p class="font-semibold"><a href="tel:${df.telefono.replace(/\s+/g,'')}" class="text-[#2E7CF6] hover:underline">${df.telefono}</a> · <a href="https://wa.me/${numeroWhatsApp(df.telefono)}" target="_blank" rel="noopener" class="text-[#25D366] hover:underline">WhatsApp</a></p></div>` : ''}
               ${isAz ? `<div><p class="text-[10px] text-slate-400">P.IVA</p><p class="font-mono font-semibold">${df.piva || '–'}</p></div>` : ''}
               <div class="col-span-2"><p class="text-[10px] text-slate-400">Indirizzo</p><p class="font-semibold">${df.indirizzo || '–'}, ${df.cap || ''} ${df.comune || ''} (${df.provincia || ''})</p></div>
               ${isAz && df.codSDI ? `<div><p class="text-[10px] text-slate-400">Codice SDI</p><p class="font-mono font-semibold">${df.codSDI}</p></div>` : ''}

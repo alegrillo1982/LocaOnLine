@@ -714,6 +714,12 @@
                   <p class="text-[10px] text-slate-400 mt-1">Usata per notifiche sullo stato della tua pratica</p>
                 </div>
                 <div>
+                  <label for="fatt-telefono" class="block text-xs font-semibold text-[#0F2A4A] mb-1.5">Telefono <span class="font-normal text-slate-400">(facoltativo)</span></label>
+                  <input id="fatt-telefono" type="tel" autocomplete="tel" inputmode="tel" placeholder="333 123 4567"
+                         class="w-full px-3 py-2.5 border-2 border-slate-200 rounded-xl text-sm text-[#0F2A4A] placeholder:text-slate-400 focus:outline-none focus:border-[#2E7CF6] transition-all" />
+                  <p class="text-[10px] text-slate-400 mt-1">Solo per contattarti se manca qualcosa nei documenti. Nessuna chiamata commerciale.</p>
+                </div>
+                <div>
                   <label class="block text-xs font-semibold text-[#0F2A4A] mb-2">Intestatario fattura <span class="text-red-400">*</span></label>
                   <div class="grid grid-cols-2 gap-3">
                     <label class="flex items-center gap-3 p-3 border-2 border-slate-200 rounded-xl cursor-pointer hover:border-[#2E7CF6] transition-colors has-[:checked]:border-[#2E7CF6] has-[:checked]:bg-[#EBF2FF]">
@@ -2763,7 +2769,8 @@
         const fattFields = [
           'fatt-email','fatt-nome','fatt-cognome','fatt-ragione',
           'fatt-cf','fatt-piva','fatt-indirizzo','fatt-cap',
-          'fatt-comune','fatt-provincia','fatt-sdi','fatt-pec-cliente'
+          'fatt-comune','fatt-provincia','fatt-sdi','fatt-pec-cliente',
+          'fatt-telefono'
         ];
         fattFields.forEach(id => {
           const el = document.getElementById(id);
@@ -2819,6 +2826,7 @@
         const tipo     = document.querySelector('input[name="fatt-tipo"]:checked')?.value || 'privato';
         const isAz     = tipo === 'azienda';
         const email    = document.getElementById('fatt-email')?.value.trim() || '';
+        const telefono = document.getElementById('fatt-telefono')?.value.trim() || '';
         const cf       = document.getElementById('fatt-cf')?.value.trim().toUpperCase() || '';
         const piva     = document.getElementById('fatt-piva')?.value.trim() || '';
         const ind      = document.getElementById('fatt-indirizzo')?.value.trim() || '';
@@ -2828,7 +2836,7 @@
 
         if (isAz) {
           return {
-            tipo, email,
+            tipo, email, telefono,
             ragioneSociale: document.getElementById('fatt-ragione')?.value.trim() || '',
             cf, piva,
             indirizzo: ind, cap, comune, provincia: prov,
@@ -2837,7 +2845,7 @@
           };
         }
         return {
-          tipo, email,
+          tipo, email, telefono,
           nome:    document.getElementById('fatt-nome')?.value.trim() || '',
           cognome: document.getElementById('fatt-cognome')?.value.trim() || '',
           cf,
