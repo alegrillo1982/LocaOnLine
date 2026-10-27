@@ -3479,5 +3479,22 @@
       _banner.style.display = 'none';
     });
   </script>
+
+  <script>
+    // Traccia i clic su WhatsApp: è il canale da cui arriva la maggior parte
+    // dei clienti, ma finora non sapevamo quante persone lo usassero.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href*="wa.me/"]');
+      if (!a) return;
+      try {
+        if (typeof gtag === 'function') {
+          gtag('event', 'contatto_whatsapp', {
+            pagina: window.location.pathname,
+            posizione: a.dataset.posizione || 'non specificata'
+          });
+        }
+      } catch (err) { /* il tracciamento non deve mai bloccare il clic */ }
+    }, true);
+  </script>
 </body>
 </html>

@@ -41,98 +41,116 @@
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://locaonline.it/#business",
-        "name": "LocaOnLine",
-        "legalName": "Grillo Alessandro",
-        "description": "Servizio online per la registrazione di contratti di locazione e comodato d'uso presso l'Agenzia delle Entrate. Attivo dal 2016, oltre 3.000 pratiche gestite.",
-        "url": "https://locaonline.it",
-        "telephone": "+39-06-8848163",
-        "email": "info@locaonline.it",
-        "foundingDate": "2016",
-        "vatID": "13367301002",
-        "taxID": "GRLLSN82A13H501S",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Via Lutezia 5",
-          "postalCode": "00198",
-          "addressLocality": "Roma",
-          "addressRegion": "RM",
-          "addressCountry": "IT"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Italia"
-        },
-        "serviceType": "Registrazione contratti immobiliari",
-        "priceRange": "€€",
-        "openingHours": ["Mo-Sa 09:00-13:00", "Mo-Sa 15:00-18:00"]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://locaonline.it/#business",
+      "name": "LocaOnLine",
+      "legalName": "Grillo Alessandro",
+      "description": "Servizio online per la registrazione di contratti di locazione e comodato d'uso presso l'Agenzia delle Entrate. Attivo dal 2016, oltre 3.000 pratiche gestite.",
+      "url": "https://locaonline.it",
+      "telephone": "+39-06-8848163",
+      "email": "info@locaonline.it",
+      "foundingDate": "2016",
+      "vatID": "13367301002",
+      "taxID": "GRLLSN82A13H501S",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Lutezia 5",
+        "postalCode": "00198",
+        "addressLocality": "Roma",
+        "addressRegion": "RM",
+        "addressCountry": "IT"
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://locaonline.it/#website",
-        "url": "https://locaonline.it",
-        "name": "LocaOnLine",
-        "description": "Registrazione contratti di locazione e comodato online",
-        "inLanguage": "it-IT",
-        "publisher": { "@id": "https://locaonline.it/#business" }
+      "areaServed": {
+        "@type": "Country",
+        "name": "Italia"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://locaonline.it/#webpage",
-        "url": "https://locaonline.it/",
-        "name": "LocaOnLine – Registrazione Contratti di Locazione Online",
-        "description": "Registra il tuo contratto di locazione o comodato online. Servizio professionale a partire da 40€.",
-        "isPartOf": { "@id": "https://locaonline.it/#website" },
-        "about": { "@id": "https://locaonline.it/#business" },
-        "inLanguage": "it-IT"
-      },
-      {
-        "@type": "Service",
-        "name": "Registrazione Contratto di Locazione",
-        "provider": { "@id": "https://locaonline.it/#business" },
-        "description": "Registrazione online del contratto di locazione presso l'Agenzia delle Entrate.",
-        "offers": {
-          "@type": "Offer",
-          "price": "25.00",
-          "priceCurrency": "EUR",
-          "availability": "https://schema.org/InStock"
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Quanto costa registrare un contratto di locazione online?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "La registrazione del contratto di locazione presso l'Agenzia delle Entrate tramite LocaOnLine costa 40€. Per la redazione del contratto il costo è di 50€."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Quanto tempo ci vuole per registrare un contratto di affitto?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "L'80% delle pratiche viene registrato entro 8 ore lavorative dalla ricezione dei documenti. In ogni caso garantiamo la registrazione entro 48 ore. Soddisfatti o rimborsati."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Posso registrare un comodato d'uso gratuito online?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sì. LocaOnLine gestisce anche la registrazione dei contratti di comodato d'uso gratuito presso l'Agenzia delle Entrate, al costo di 40€."
-            }
-          }
-        ]
+      "serviceType": "Registrazione contratti immobiliari",
+      "priceRange": "€€",
+      "openingHours": [
+        "Mo-Sa 09:00-13:00",
+        "Mo-Sa 15:00-18:00"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "5",
+        "bestRating": "5",
+        "worstRating": "1"
       }
-    ]
-  }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://locaonline.it/#website",
+      "url": "https://locaonline.it",
+      "name": "LocaOnLine",
+      "description": "Registrazione contratti di locazione e comodato online",
+      "inLanguage": "it-IT",
+      "publisher": {
+        "@id": "https://locaonline.it/#business"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://locaonline.it/#webpage",
+      "url": "https://locaonline.it/",
+      "name": "LocaOnLine – Registrazione Contratti di Locazione Online",
+      "description": "Registra il tuo contratto di locazione o comodato online. Servizio professionale a partire da 40€.",
+      "isPartOf": {
+        "@id": "https://locaonline.it/#website"
+      },
+      "about": {
+        "@id": "https://locaonline.it/#business"
+      },
+      "inLanguage": "it-IT"
+    },
+    {
+      "@type": "Service",
+      "name": "Registrazione Contratto di Locazione",
+      "provider": {
+        "@id": "https://locaonline.it/#business"
+      },
+      "description": "Registrazione online del contratto di locazione presso l'Agenzia delle Entrate.",
+      "offers": {
+        "@type": "Offer",
+        "price": "25.00",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto costa registrare un contratto di locazione online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La registrazione del contratto di locazione presso l'Agenzia delle Entrate tramite LocaOnLine costa 40€. Per la redazione del contratto il costo è di 50€."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo ci vuole per registrare un contratto di affitto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'80% delle pratiche viene registrato entro 8 ore lavorative dalla ricezione dei documenti. In ogni caso garantiamo la registrazione entro 48 ore. Soddisfatti o rimborsati."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso registrare un comodato d'uso gratuito online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì. LocaOnLine gestisce anche la registrazione dei contratti di comodato d'uso gratuito presso l'Agenzia delle Entrate, al costo di 40€."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <!-- Tailwind CSS v3 CDN -->
@@ -676,6 +694,80 @@
     </section>
 
   </main>
+
+
+    <!-- RECENSIONI -->
+    <section class="bg-[#F4F7FB] py-14 border-t border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <div class="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-1.5 mb-4">
+            <span class="text-[#FBBF24] text-sm tracking-tight">★★★★★</span>
+            <span class="text-sm font-bold text-[#0F2A4A]">5,0</span>
+            <span class="text-sm text-slate-400">su Google</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#0F2A4A] mb-3">Cosa dicono i nostri clienti</h2>
+          <p class="text-slate-500 max-w-xl mx-auto">Recensioni verificate sulla nostra scheda Google. Nessuna selezione: sono tutte.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <figure class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-[#EBF2FF] flex items-center justify-center flex-shrink-0">
+                <span class="font-bold text-[#2E7CF6]">F</span>
+              </div>
+              <div>
+                <figcaption class="font-semibold text-[#0F2A4A] text-sm leading-tight">Flavio Pegoraro</figcaption>
+                <span class="text-[#FBBF24] text-sm tracking-tight">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="text-sm text-slate-600 leading-relaxed m-0">Consiglio a tutti, veramente super veloce: in poche ore mi hanno registrato il contratto. Prezzo ottimo, che dire, TOP</blockquote>
+          </figure>
+          <figure class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-[#EBF2FF] flex items-center justify-center flex-shrink-0">
+                <span class="font-bold text-[#2E7CF6]">E</span>
+              </div>
+              <div>
+                <figcaption class="font-semibold text-[#0F2A4A] text-sm leading-tight">Europa</figcaption>
+                <span class="text-[#FBBF24] text-sm tracking-tight">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="text-sm text-slate-600 leading-relaxed m-0">Da anni faccio i miei contratti e quelli di parenti con Alessandro Grillo. Professionalità, puntualità e gentilezza non sono mai mancati. Lo consiglio a chiunque.</blockquote>
+          </figure>
+          <figure class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-[#EBF2FF] flex items-center justify-center flex-shrink-0">
+                <span class="font-bold text-[#2E7CF6]">V</span>
+              </div>
+              <div>
+                <figcaption class="font-semibold text-[#0F2A4A] text-sm leading-tight">Veronica Castiello</figcaption>
+                <span class="text-[#FBBF24] text-sm tracking-tight">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="text-sm text-slate-600 leading-relaxed m-0">Alessandro si è mostrato immediatamente disponibile, mi ha aiutata con gentilezza a completare le pratiche necessarie.</blockquote>
+          </figure>
+          <figure class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-[#EBF2FF] flex items-center justify-center flex-shrink-0">
+                <span class="font-bold text-[#2E7CF6]">E</span>
+              </div>
+              <div>
+                <figcaption class="font-semibold text-[#0F2A4A] text-sm leading-tight">Emanuela Venanzoni</figcaption>
+                <span class="text-[#FBBF24] text-sm tracking-tight">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="text-sm text-slate-600 leading-relaxed m-0">Ottimo servizio, cortesi e veloci. Assolutamente consigliato.</blockquote>
+          </figure>
+        </div>
+
+        <p class="text-center mt-8">
+          <a href="https://g.page/r/CT8WVagD532JEAE" target="_blank" rel="noopener"
+             class="text-sm font-semibold text-[#2E7CF6] hover:underline">
+            Leggi tutte le recensioni su Google <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+          </a>
+        </p>
+      </div>
+    </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="bg-[#0a1f38] text-slate-300" aria-label="Footer">

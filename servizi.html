@@ -675,6 +675,80 @@
       </div>
     </section>
 
+
+    <!-- RECENSIONI -->
+    <section class="bg-[#F4F7FB] py-14 border-t border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <div class="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-1.5 mb-4">
+            <span class="text-[#FBBF24] text-sm tracking-tight">★★★★★</span>
+            <span class="text-sm font-bold text-[#0F2A4A]">5,0</span>
+            <span class="text-sm text-slate-400">su Google</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#0F2A4A] mb-3">Chi ci ha già scelto</h2>
+          <p class="text-slate-500 max-w-xl mx-auto">Recensioni verificate sulla nostra scheda Google.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <figure class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-[#EBF2FF] flex items-center justify-center flex-shrink-0">
+                <span class="font-bold text-[#2E7CF6]">F</span>
+              </div>
+              <div>
+                <figcaption class="font-semibold text-[#0F2A4A] text-sm leading-tight">Flavio Pegoraro</figcaption>
+                <span class="text-[#FBBF24] text-sm tracking-tight">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="text-sm text-slate-600 leading-relaxed m-0">Consiglio a tutti, veramente super veloce: in poche ore mi hanno registrato il contratto. Prezzo ottimo, che dire, TOP</blockquote>
+          </figure>
+          <figure class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-[#EBF2FF] flex items-center justify-center flex-shrink-0">
+                <span class="font-bold text-[#2E7CF6]">E</span>
+              </div>
+              <div>
+                <figcaption class="font-semibold text-[#0F2A4A] text-sm leading-tight">Europa</figcaption>
+                <span class="text-[#FBBF24] text-sm tracking-tight">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="text-sm text-slate-600 leading-relaxed m-0">Da anni faccio i miei contratti e quelli di parenti con Alessandro Grillo. Professionalità, puntualità e gentilezza non sono mai mancati. Lo consiglio a chiunque.</blockquote>
+          </figure>
+          <figure class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-[#EBF2FF] flex items-center justify-center flex-shrink-0">
+                <span class="font-bold text-[#2E7CF6]">V</span>
+              </div>
+              <div>
+                <figcaption class="font-semibold text-[#0F2A4A] text-sm leading-tight">Veronica Castiello</figcaption>
+                <span class="text-[#FBBF24] text-sm tracking-tight">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="text-sm text-slate-600 leading-relaxed m-0">Alessandro si è mostrato immediatamente disponibile, mi ha aiutata con gentilezza a completare le pratiche necessarie.</blockquote>
+          </figure>
+          <figure class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-[#EBF2FF] flex items-center justify-center flex-shrink-0">
+                <span class="font-bold text-[#2E7CF6]">E</span>
+              </div>
+              <div>
+                <figcaption class="font-semibold text-[#0F2A4A] text-sm leading-tight">Emanuela Venanzoni</figcaption>
+                <span class="text-[#FBBF24] text-sm tracking-tight">★★★★★</span>
+              </div>
+            </div>
+            <blockquote class="text-sm text-slate-600 leading-relaxed m-0">Ottimo servizio, cortesi e veloci. Assolutamente consigliato.</blockquote>
+          </figure>
+        </div>
+
+        <p class="text-center mt-8">
+          <a href="https://g.page/r/CT8WVagD532JEAE" target="_blank" rel="noopener"
+             class="text-sm font-semibold text-[#2E7CF6] hover:underline">
+            Leggi tutte le recensioni su Google <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+          </a>
+        </p>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="bg-gradient-to-r from-[#0F2A4A] to-[#1B4F8A] py-16">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -748,6 +822,23 @@
     if (!localStorage.getItem(KEY)) banner.style.display = 'block';
     document.getElementById('cookie-accept').addEventListener('click', () => { localStorage.setItem(KEY,'all'); banner.style.display='none'; });
     document.getElementById('cookie-manage').addEventListener('click', () => { localStorage.setItem(KEY,'essential'); banner.style.display='none'; });
+  </script>
+
+  <script>
+    // Traccia i clic su WhatsApp: è il canale da cui arriva la maggior parte
+    // dei clienti, ma finora non sapevamo quante persone lo usassero.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href*="wa.me/"]');
+      if (!a) return;
+      try {
+        if (typeof gtag === 'function') {
+          gtag('event', 'contatto_whatsapp', {
+            pagina: window.location.pathname,
+            posizione: a.dataset.posizione || 'non specificata'
+          });
+        }
+      } catch (err) { /* il tracciamento non deve mai bloccare il clic */ }
+    }, true);
   </script>
 </body>
 </html>
