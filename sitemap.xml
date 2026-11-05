@@ -49,7 +49,7 @@
 
   <url>
     <loc>https://locaonline.it/guide.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -117,6 +117,14 @@
   <url>
     <loc>https://locaonline.it/guida-contratto-non-registrato-ravvedimento.html</loc>
     <lastmod>2026-10-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <url>
+    <loc>https://locaonline.it/guida-annualita-successiva-imposta-registro.html</loc>
+    <lastmod>2026-11-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
