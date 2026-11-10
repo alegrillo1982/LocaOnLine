@@ -9,9 +9,11 @@
   "deposito": "prot. QC 2023/0082672",
   "nota": "Allegato 1 con errata corrige (E34 Ostia sostituita da E341 Ostia Levante ed E342 Ostia Ponente).",
   "deposito_data": "27.07.2023",
+  "valido_fino": "2026-07-27",
   "protocollo": "RA/2023/0044852",
   "ufficio": "Dipartimento Patrimonio Sviluppo e Valorizzazione",
-  "ufficio_breve": "Dip. Patrimonio Sviluppo e Valorizzazione"
+  "ufficio_breve": "Dip. Patrimonio Sviluppo e Valorizzazione",
+  "nota_validita": "Titolo G: validità triennale dal giorno successivo al deposito; senza rinnovo, le fasce di oscillazione si rivalutano con la variazione ISTAT assoluta. L'accordo resta in vigore fino alla firma del nuovo."
  },
  "esempio_zona": "cerca per codice (C10) o per nome (Garbatella, via Lungara)",
  "regole": {
@@ -4735,10 +4737,10 @@
    "macrozona": "Periferica - suburbana",
    "oscillazione": [
     4.4,
-    10.5
+    9.5
    ],
    "A": [
-    4.0,
+    4.4,
     5.7
    ],
    "B": [
@@ -4749,8 +4751,7 @@
     8.2,
     9.5
    ],
-   "pregio": false,
-   "avviso": "Nella tabella dell'accordo l'oscillazione di questa zona è 4,40 - 10,50, ma le fasce vanno da 4,00 a 9,50."
+   "pregio": false
   },
   {
    "codice": "R7",

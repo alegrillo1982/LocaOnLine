@@ -56,10 +56,26 @@
       $("fonte-accordo").textContent =
         `${a.titolo} del ${a.data_testo}, depositato il ${a.deposito_data} con prot. ${a.protocollo}` +
         (a.ufficio ? ` (${a.ufficio})` : "") + (voce && voce.zone ? `: ${voce.zone} zone.` : ".");
+      avvisoValidita(a);
       window.dispatchEvent(new CustomEvent("accordo", { detail: accordo }));
     } catch (e) {
       $("accordo-in-uso").textContent = "Accordo non caricato: controlla la connessione e ricarica la pagina.";
     }
+  }
+
+  /** Un accordo oltre la sua validita' (per Roma tre anni dal deposito)
+   *  resta in vigore fino al nuovo, ma le fasce vanno rivalutate con
+   *  l'ISTAT: la pagina usa i valori originali, quindi lo dice. */
+  function avvisoValidita(a) {
+    const box = $("avviso-validita");
+    const oggi = new Date().toISOString().slice(0, 10);
+    if (!a.valido_fino || oggi <= a.valido_fino) { box.hidden = true; return; }
+    const [aa, mm, gg] = a.valido_fino.split("-");
+    box.innerHTML = `<strong>Accordo di ${a.comune} oltre la scadenza (${gg}/${mm}/${aa}).</strong> ` +
+      "Resta in vigore finché non viene firmato quello nuovo, ma nel frattempo le fasce di oscillazione " +
+      "vanno <strong>rivalutate con la variazione ISTAT</strong>. Qui trovi i valori originali dell'accordo: " +
+      "chiedi all'associazione che vidima il contratto quelli aggiornati.";
+    box.hidden = false;
   }
 
   fetch("accordi/indice.json")
