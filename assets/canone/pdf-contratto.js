@@ -3,7 +3,7 @@
  * i modelli dell'UPPI (Times, testo giustificato, logo e riquadro sulla
  * prima pagina, numero di pagina in fondo).
  *
- *   PdfContratto.crea({ PDFLib, fontkit, regolare, grassetto, logo }, blocchi) -> Promise<Uint8Array>
+ *   PdfContratto.crea({ PDFLib, fontkit, regolare, grassetto, logo, icona, sansRegolare, sansGrassetto }, blocchi) -> Promise<Uint8Array>
  *
  * Gira nel browser e con Node.
  */
@@ -240,13 +240,13 @@
       else if (b.t === "spazio") { if (!spazio(b.h)) y -= b.h; }
     });
 
-    // i numeri di pagina e, sotto, il promemoria di LocaOnLine
-    const GRIGIO = rgb(0.4, 0.45, 0.5), PROMEMORIA = "Compilato con LocaOnLine \u00b7 registra il contratto online su locaonline.it";
+    // i numeri di pagina e, sotto, l'invito a registrare il contratto con LocaOnLine
+    const Marchio = r.marchio || (typeof MarchioPdf !== "undefined" ? MarchioPdf : null);
+    const marchio = Marchio ? await Marchio.prepara(doc, r.PDFLib, { icona: r.icona, regolare: r.sansRegolare, grassetto: r.sansGrassetto }) : null;
     pagine.forEach((p, i) => {
       const t = String(i + 1), w = reg.widthOfTextAtSize(t, 10);
-      p.drawText(t, { x: (L - w) / 2, y: 30, size: 10, font: reg, color: NERO });
-      const wp = reg.widthOfTextAtSize(PROMEMORIA, 7.5);
-      p.drawText(PROMEMORIA, { x: (L - wp) / 2, y: 16, size: 7.5, font: reg, color: GRIGIO });
+      p.drawText(t, { x: (L - w) / 2, y: 40, size: 10, font: reg, color: NERO });
+      if (marchio) Marchio.disegna(doc, r.PDFLib, p, marchio, { cx: L / 2, y: 14, campagna: "contratto" });
     });
     return doc.save();
   }

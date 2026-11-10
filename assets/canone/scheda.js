@@ -230,8 +230,9 @@
     if (!ultimo || !window.PDFLib || !window.fontkit) throw new Error("la stampa non è ancora pronta, riprova tra un attimo");
     if (!caratteri) {
       const prendi = (f) => fetch(`assets/canone/caratteri/${f}`).then((r) => { if (!r.ok) throw new Error("file mancante: " + f); return r.arrayBuffer(); });
-      const [regolare, grassetto] = await Promise.all([prendi("Carlito-Regular.ttf"), prendi("Carlito-Bold.ttf")]);
-      caratteri = { regolare, grassetto };
+      const [regolare, grassetto, icona] = await Promise.all([prendi("Carlito-Regular.ttf"), prendi("Carlito-Bold.ttf"),
+        fetch("assets/canone/icona-locaonline.png").then((r) => (r.ok ? r.arrayBuffer() : null)).catch(() => null)]);
+      caratteri = { regolare, grassetto, icona };
     }
     const scheda = Object.assign({}, ultimo.scheda, { numero_scheda: "" });
     const byte = await CanoneStampa.creaPDF({ PDFLib: window.PDFLib, fontkit: window.fontkit, ...caratteri }, accordo, scheda, ultimo.r);

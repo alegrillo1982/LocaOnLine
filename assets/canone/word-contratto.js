@@ -2,9 +2,10 @@
  * Il contratto in Word (.docx), dai blocchi di Contratto.genera: stessa
  * impaginazione del PDF e dei modelli dell'UPPI, da modificare in Word.
  *
- *   WordContratto.crea(docx, logo, blocchi) -> Promise<Blob> (browser) | Promise<Buffer> (Node)
+ *   WordContratto.crea(docx, logo, blocchi, misura, icona) -> Promise<Blob> (browser) | Promise<Buffer> (Node)
  *
- * docx: la libreria docx (globale "docx" nel browser), logo: i byte del PNG.
+ * docx: la libreria docx (globale "docx" nel browser), logo e icona: i byte
+ * dei PNG (l'icona va in fondo alla pagina, con l'invito a registrare).
  */
 (function (radice, fabbrica) {
   if (typeof module === "object" && module.exports) module.exports = fabbrica();
@@ -64,9 +65,30 @@
 
   /** misura (facoltativa): la larghezza vera di un testo in Times New Roman,
    *  (testo, corpo, grassetto) -> punti; senza, una stima prudente. */
-  function crea(X, logo, blocchi, misura) {
+  /** In fondo a ogni pagina: icona e invito a registrare il contratto con
+   *  LocaOnLine, con sito e WhatsApp cliccabili (come nel PDF). */
+  function piede(X, icona) {
+    const { Paragraph, TextRun, AlignmentType, ImageRun, ExternalHyperlink } = X;
+    const SITO = "https://locaonline.it/servizi.html?utm_source=pdf&utm_medium=documento&utm_campaign=contratto_word";
+    const a = (text, o = {}) => new TextRun({ text, font: "Arial", size: 15, color: "666E78", ...o });
+    const forte = (text, color = "0F2A4A") => new TextRun({ text, font: "Arial", size: 18, bold: true, color });
+    return [
+      new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 80, after: 0 }, children: [
+        ...(icona ? [new ImageRun({ type: "png", data: icona, transformation: { width: 18, height: 18 } }), a("  ")] : []),
+        new ExternalHyperlink({ link: SITO, children: [forte("Registra il tuo contratto con "), forte("Loca"), forte("OnLine", "2E7CF6")] }),
+      ] }),
+      new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 0, after: 0 }, children: [
+        a("Ci pensiamo noi all'Agenzia delle Entrate, tutto online  \u00b7  "),
+        new ExternalHyperlink({ link: SITO, children: [a("locaonline.it", { bold: true, color: "0F2A4A" })] }),
+        a("  \u00b7  "),
+        new ExternalHyperlink({ link: "https://wa.me/39068848163", children: [a("WhatsApp 06 884 8163")] }),
+      ] }),
+    ];
+  }
+
+  function crea(X, logo, blocchi, misura, icona) {
     const { Document, Packer, Paragraph, TextRun, AlignmentType, Table, TableRow, TableCell, WidthType,
-            BorderStyle, ImageRun, Footer, PageNumber, VerticalAlign, TableLayoutType, HeightRule } = X;
+            BorderStyle, ImageRun, Footer, PageNumber, VerticalAlign, TableLayoutType, HeightRule, ExternalHyperlink } = X;
     const corsa = (testo, { g = false, s = 11, sottolinea = false } = {}) =>
       new TextRun({ text: testo, bold: g, size: s * 2, font: CARATTERE, underline: sottolinea ? {} : undefined });
     const nessunBordo = { top: { style: BorderStyle.NONE, size: 0, color: "FFFFFF" }, bottom: { style: BorderStyle.NONE, size: 0, color: "FFFFFF" },
@@ -134,8 +156,7 @@
           margin: { top: cm(1.5), bottom: cm(2), left: cm(2), right: cm(2), footer: cm(0.8) } } },
         footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.CENTER,
           children: [new TextRun({ children: [PageNumber.CURRENT], font: CARATTERE, size: 20 })] }),
-          new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({
-            text: "Compilato con LocaOnLine \u00b7 registra il contratto online su locaonline.it", font: CARATTERE, size: 15, color: "666E78" })] })] }) },
+          ...piede(X, icona)] }) },
         children: figli,
       }],
     });

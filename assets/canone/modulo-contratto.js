@@ -409,9 +409,11 @@
     if (!accordo) throw new Error("accordo non ancora caricato");
     if (!risorse) {
       const prendi = (f) => fetch(f).then((r) => { if (!r.ok) throw new Error("file mancante: " + f); return r.arrayBuffer(); });
-      const [regolare, grassetto, logo] = await Promise.all([prendi("assets/canone/caratteri/LiberationSerif-Regular.ttf"),
-        prendi("assets/canone/caratteri/LiberationSerif-Bold.ttf"), prendi("assets/canone/logo-locaonline.png")]);
-      risorse = { regolare, grassetto, logo };
+      const [regolare, grassetto, logo, icona, sansRegolare, sansGrassetto] = await Promise.all([prendi("assets/canone/caratteri/LiberationSerif-Regular.ttf"),
+        prendi("assets/canone/caratteri/LiberationSerif-Bold.ttf"), prendi("assets/canone/logo-locaonline.png"),
+        prendi("assets/canone/icona-locaonline.png"), prendi("assets/canone/caratteri/Carlito-Regular.ttf"),
+        prendi("assets/canone/caratteri/Carlito-Bold.ttf")]);
+      risorse = { regolare, grassetto, logo, icona, sansRegolare, sansGrassetto };
     }
     return Contratto.genera(leggi(), accordo, {});
   }
@@ -452,7 +454,8 @@
         const fr = window.fontkit.create(new Uint8Array(risorse.regolare)), fb = window.fontkit.create(new Uint8Array(risorse.grassetto));
         risorse.misura = (testo, s, g) => { const f = g ? fb : fr; return f.layout(testo).glyphs.reduce((w, x) => w + x.advanceWidth, 0) / f.unitsPerEm * s; };
       }
-      scarica(await WordContratto.crea(window.docx, new Uint8Array(risorse.logo), blocchi, risorse.misura), nomeFile("docx"));
+      scarica(await WordContratto.crea(window.docx, new Uint8Array(risorse.logo), blocchi, risorse.misura,
+        new Uint8Array(risorse.icona)), nomeFile("docx"));
     } catch (e) { stato.textContent = "Word non creato: " + e.message; }
   });
 

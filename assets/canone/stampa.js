@@ -261,6 +261,11 @@
     testo(`Calcolo secondo l'${accordo.accordo.titolo.replace(/^Accordo/, "Accordo")} del ${accordo.accordo.data_testo}` +
           (d.numero_scheda ? ` · scheda n. ${d.numero_scheda}` : "") + ".", 296, 812, { s: 6, colore: GRIGIO, centro: true });
 
+    // l'invito a registrare il contratto con LocaOnLine
+    const Marchio = risorse.marchio || (typeof MarchioPdf !== "undefined" ? MarchioPdf : null);
+    if (Marchio) Marchio.disegna(doc, risorse.PDFLib, pagina, await Marchio.prepara(doc, risorse.PDFLib, { icona: risorse.icona, font: { reg, bold } }),
+      { cx: LARGHEZZA / 2, y: y(786), campagna: "scheda_canone" });
+
     return doc.save();
   }
 
