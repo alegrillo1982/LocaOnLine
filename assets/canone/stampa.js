@@ -217,7 +217,8 @@
     dato(z ? `${z.codice} · ${z.nome}` : "", 84, 372, 532, 8.5);
     const xf = 377 + testo("FASCIA DI OSCILLAZIONE MIN/MAX", 377, 531, { s: 7.5 }) + 5;
     spazio(xf, xf + 24, 532); testo("/", xf + 25, 531, { s: 8 }); spazio(xf + 30, xf + 54, 532);
-    if (z) { dato(v(z.oscillazione[0]), xf, xf + 24, 532, 8.5); dato(v(z.oscillazione[1]), xf + 30, xf + 54, 532, 8.5); }
+    const osc = r.oscillazione || (z && z.oscillazione);     // con l'aumento per gli immobili storici
+    if (z) { dato(v(osc[0]), xf, xf + 24, 532, 8.5); dato(v(osc[1]), xf + 30, xf + 54, 532, 8.5); }
 
     testo("PARAMETRI n.", 62, 544, { s: 7.5 }); spazio(112, 130, 545); dato(String(r.parametri ?? ""), 112, 130, 545);
     let xs = 135 + testo("SUBFASCIA: (", 135, 544, { s: 7.5 });
@@ -243,6 +244,15 @@
     testo("Importo massimo canone mensile: €", 62, 600, { s: 7.5 }); spazio(185, 250, 601); dato(v(r.canone_massimo), 185, 250, 601);
     testo("; Importo canone mensile pattuito: €", 252, 600, { f: bold, s: 7.5 }); spazio(381, 440, 601);
     dato(v(r.canone_pattuito), 381, 440, 601); testo(";", 442, 600, { s: 7.5 });
+
+    // ----------------------------------------------------- note
+    // Le regole dell'accordo che la scheda 2/B non prevede: vani bassi e
+    // immobili storici. Una riga ciascuna, sopra le firme, solo se usate.
+    const note = [];
+    const bassi = sup.vani_bassi || {};
+    if (bassi.netta) note.push(`Vani con altezza inferiore a m 1,70: ${v(bassi.netta)} mq × ${v(rs.vani_bassi)} = ${v(bassi.applicata)} mq, compresi nel totale della superficie convenzionale.`);
+    if (r.storico_percento) note.push(`Immobile di cui all'art. 1, c. 2, lett. a), L. 431/98 o vincolato (D.Lgs. 42/2004): fasce di oscillazione aumentate del ${r.storico_percento}%.`);
+    note.forEach((t, i) => testo("Nota: " + t, 62, 607.5 + i * 7, { s: 6.3, colore: DATO }));
 
     // ----------------------------------------------------- firme
     testo("Il locatore", 120, 624, { s: 8 }); spazio(52, 195, 640);

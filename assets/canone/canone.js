@@ -82,7 +82,11 @@
       { chiave: "verde", etichetta: "Sup. verde condominiale (Sup. tot. cond / MM.Tab A)", coeff: x(r.verde_condominiale),
         fattore: r.verde_condominiale,
         nota: `La quota millesimale del verde condominiale (superficie totale × millesimi / 1000), × ${virgola(r.verde_condominiale)}.` },
-    ];
+    ].concat(r.vani_bassi ? [
+      // Roma, punto 6 g): non nella scheda 2/B, ma nell'accordo
+      { chiave: "vani_bassi", etichetta: "Vani con altezza inferiore a m 1,70", coeff: x(r.vani_bassi), fattore: r.vani_bassi,
+        nota: `Non oltre il ${Math.round(r.vani_bassi * 100)}% della superficie di questi vani: non contarli anche nella superficie dell'appartamento.` },
+    ] : []);
   }
 
   /** La superficie convenzionale proposta per una riga. */
@@ -133,7 +137,8 @@
    *   superfici: { chiave: { netta, applicata } }   (applicata vuota = proposta)
    *   caratteristiche: { idrica, fognante, gas, riscaldamento }
    *   parametri: [20 vero/falso], maggiorazioni: { ammobiliato: %, seminterrato: vero, ... },
-   *   valore_mq (vuoto = proposto), canone_pattuito
+   *   valore_mq (vuoto = proposto), canone_pattuito,
+   *   storico (vero: immobile storico o vincolato, fasce aumentate)
    */
   function calcola(accordo, scheda) {
     const regole = accordo.regole, avvisi = [];
@@ -193,11 +198,19 @@
     }
     const aumenti = applicate.some((a) => a.percento > 0);
 
+    // immobili storici o vincolati (Roma, punto 9): fasce aumentate nei
+    // valori minimo e massimo, se l'accordo lo prevede
+    const storicoPercento = scheda.storico && regole.storici_dlgs42 ? regole.storici_dlgs42 : 0;
+    // in centesimi interi, arrotondando al centesimo per eccesso da 0,5:
+    // 13,50 + 15% = 15,525 -> 15,53 (con i decimali del computer: 15,52)
+    const per = (n) => Math.round(Math.round(n * 100) * (100 + storicoPercento) / 100) / 100;
+
     // il valore al mq
-    let valoreProposto = null, fascia = null, limiti = null;
+    let valoreProposto = null, fascia = null, limiti = null, oscillazione = null;
     if (z) {
-      fascia = ordinata(z[lettera]);
-      limiti = [Math.min(z.A[0], z.A[1]), Math.min(z.oscillazione[1], z.C[1])];
+      fascia = ordinata(z[lettera]).map(per);
+      limiti = [per(Math.min(z.A[0], z.A[1])), per(Math.min(z.oscillazione[1], z.C[1]))];
+      oscillazione = z.oscillazione.map(per);
       if (lettera === "A") {
         valoreProposto = normale ? fascia[0] + (fascia[1] - fascia[0]) * Math.min(nParametri, f.B_da - 1) / (f.B_da - 1) : fascia[0];
       } else if (lettera === "B") {
@@ -247,6 +260,7 @@
 
     return {
       zona: z, pregio: !!(z && z.pregio), righe, superfici, totale, totale_proposto: totaleProposto,
+      oscillazione, storico_percento: storicoPercento,
       normale, parametri: nParametri, fascia_lettera: lettera, subfascia: SUBFASCE[lettera], fascia, limiti,
       valore_proposto: valoreProposto, valore, maggiorazioni: applicate, maggiorazioni_percento: percentuale,
       valore_maggiorato: valoreMaggiorato, valore_applicato: valoreApplicato, limitato,

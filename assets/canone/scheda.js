@@ -77,7 +77,7 @@
         senza_ascensore: casella("senza_ascensore"), attico: casella("attico"), classe_ABC: casella("classe_ABC"),
         eco_bonus: casella("eco_bonus"), sisma_bonus: casella("sisma_bonus"), classe_DEF: casella("classe_DEF") },
       valore_mq: valore.dataset.modificato ? valore.value.trim() : "",
-      canone_pattuito: campo("canone_pattuito").value.trim(),
+      canone_pattuito: campo("canone_pattuito").value.trim(), storico: casella("storico"),
     };
   }
 
@@ -96,6 +96,7 @@
       particella: (d.catasto || {}).particella, subalterno: (d.catasto || {}).subalterno,
       ammobiliato: (d.maggiorazioni || {}).ammobiliato, canone_pattuito: d.canone_pattuito };
     for (const [k, val] of Object.entries(testo)) if (val !== undefined && val !== null && campo(k)) campo(k).value = val;
+    campo("storico").checked = !!d.storico;
     for (const k of ["idrica", "fognante", "gas", "riscaldamento"]) campo(k).checked = !!(d.caratteristiche || {})[k];
     for (const k of ["seminterrato", "senza_ascensore", "attico", "classe_ABC", "eco_bonus", "sisma_bonus", "classe_DEF"])
       campo(k).checked = !!(d.maggiorazioni || {})[k];
@@ -164,7 +165,8 @@
 
     const z = r.zona;
     document.getElementById("esito-zona").textContent = z ? `${z.codice} · ${z.nome}` : "scegli la zona";
-    document.getElementById("esito-oscillazione").textContent = z ? `${v(z.oscillazione[0])} / ${v(z.oscillazione[1])} €/mq` : "—";
+    document.getElementById("esito-oscillazione").textContent = z
+      ? `${v(r.oscillazione[0])} / ${v(r.oscillazione[1])} €/mq` + (r.storico_percento ? ` (immobile storico: +${r.storico_percento}%)` : "") : "—";
     document.getElementById("esito-subfascia").textContent = z
       ? `${r.parametri} parametri · subfascia ${r.subfascia} (fascia ${r.fascia_lettera}: ${v(r.fascia[0])} – ${v(r.fascia[1])})` +
         (r.normale ? "" : " · appartamento non normale")
@@ -285,6 +287,10 @@
       op.textContent = `${anni} + 2 anni${anni >= 6 ? " o più" : ""}${p ? ` (+${p}%)` : ""}`;
     });
     if (accordo.esempio_zona) document.getElementById("esempio-zona").textContent = accordo.esempio_zona;
+    // immobili storici: la casella solo se l'accordo prevede l'aumento delle fasce
+    const storici = accordo.regole.storici_dlgs42;
+    document.getElementById("riga-storico").hidden = !storici;
+    document.getElementById("nota-storico").textContent = storici ? `fasce di oscillazione +${storici}%` : "";
     ricalcola();
   });
 

@@ -34,6 +34,7 @@
    "balconi_cantine": 0.25,
    "scoperta_esclusiva": 0.15,
    "verde_condominiale": 0.1,
+   "vani_bassi": 0.7,
    "tolleranza": 0.05
   },
   "fasce": {
