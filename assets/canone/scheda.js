@@ -81,6 +81,34 @@
     };
   }
 
+  /** Rimette nel modulo una scheda salvata (con l'accordo gia' caricato). */
+  function carica(d) {
+    if (!d || !Object.keys(d).length || !accordo) return;
+    modulo.reset();
+    campo("zona").value = "";
+    document.getElementById("zona-scelta").innerHTML = "";
+    costruisciSuperfici(null);
+    delete document.getElementById("valore-mq").dataset.modificato;
+    const tipo = modulo.querySelector(`input[name=tipo][value="${d.tipo}"]`);
+    if (tipo) tipo.checked = true;
+    const testo = { durata_anni: d.durata_anni, transitorio_percento: d.transitorio_percento, locatore: d.locatore,
+      conduttore: d.conduttore, citta: d.citta, indirizzo: d.indirizzo, foglio: (d.catasto || {}).foglio,
+      particella: (d.catasto || {}).particella, subalterno: (d.catasto || {}).subalterno,
+      ammobiliato: (d.maggiorazioni || {}).ammobiliato, canone_pattuito: d.canone_pattuito };
+    for (const [k, val] of Object.entries(testo)) if (val !== undefined && val !== null && campo(k)) campo(k).value = val;
+    for (const k of ["idrica", "fognante", "gas", "riscaldamento"]) campo(k).checked = !!(d.caratteristiche || {})[k];
+    for (const k of ["seminterrato", "senza_ascensore", "attico", "classe_ABC", "eco_bonus", "sisma_bonus", "classe_DEF"])
+      campo(k).checked = !!(d.maggiorazioni || {})[k];
+    (d.parametri || []).forEach((on, i) => {
+      const c = modulo.querySelector(`input[name=parametro][value="${i}"]`);
+      if (c) c.checked = !!on;
+    });
+    if (d.zona) scegliZona(d.zona, false);
+    scriviSuperfici(d.superfici);
+    if (d.valore_mq) { const c = document.getElementById("valore-mq"); c.value = d.valore_mq; c.dataset.modificato = "1"; }
+    ricalcola();
+  }
+
   // ------------------------------------------------------------------ zona
 
   function scegliZona(codice, aggiorna = true) {
@@ -260,5 +288,15 @@
     ricalcola();
   });
 
-  window.SchedaCanone = { ultimo: () => ultimo, accordo: () => accordo };
+  window.SchedaCanone = {
+    ultimo: () => ultimo, accordo: () => accordo, carica,
+    leggi: () => (accordo ? leggi() : null),
+    // un titolo per l'elenco della dashboard: zona, indirizzo, canone massimo
+    titolo: () => {
+      if (!ultimo) return "Scheda del canone";
+      const s = ultimo.scheda, r = ultimo.r;
+      return [r.zona ? `${r.zona.codice} ${r.zona.nome}` : "Zona da scegliere", s.indirizzo,
+              r.canone_massimo ? `max € ${Canone.virgola(r.canone_massimo)}` : ""].filter(Boolean).join(" · ");
+    },
+  };
 })();

@@ -454,6 +454,13 @@
     const app  = initializeApp(firebaseConfig);
     const auth = getAuth(app);
 
+    // ─── Dove andare dopo l'accesso ───────────────────────────────
+    // Di norma la dashboard. Con ?torna=<pagina> si torna a una pagina del
+    // sito (per esempio canone-concordato.html, per salvare il lavoro).
+    // Solo pagine interne: niente indirizzi esterni.
+    const _torna = new URLSearchParams(location.search).get('torna') || '';
+    const destinazione = /^[a-z0-9-]+\.html(\?[A-Za-z0-9=&_-]*)?$/.test(_torna) ? _torna : 'dashboard.html';
+
     // ─── UI helpers ───────────────────────────────────────────────
     const alert$ = document.getElementById('global-alert');
 
@@ -507,7 +514,7 @@
         await setPersistence(auth, persistence);
         await signInWithEmailAndPassword(auth, email, password);
         showAlert('Accesso effettuato! Reindirizzamento…', 'success');
-        setTimeout(() => { window.location.href = 'dashboard.html'; }, 900);
+        setTimeout(() => { window.location.href = destinazione; }, 900);
       } catch (err) {
         showAlert(firebaseError(err.code));
       } finally {
@@ -570,7 +577,7 @@
         // ── Crea account Firebase ──────────────────────────────────
         await createUserWithEmailAndPassword(auth, email, password);
         showAlert('Account creato con successo! Reindirizzamento…', 'success');
-        setTimeout(() => { window.location.href = 'dashboard.html'; }, 900);
+        setTimeout(() => { window.location.href = destinazione; }, 900);
       } catch (err) {
         console.error('Errore registrazione:', err);
         showAlert(firebaseError(err.code));
@@ -601,7 +608,7 @@
       try {
         await signInWithPopup(auth, googleProvider);
         showAlert('Accesso con Google effettuato! Reindirizzamento…', 'success');
-        setTimeout(() => { window.location.href = 'dashboard.html'; }, 900);
+        setTimeout(() => { window.location.href = destinazione; }, 900);
       } catch (err) {
         if (err.code !== 'auth/popup-closed-by-user' && err.code !== 'auth/cancelled-popup-request') {
           showAlert(firebaseError(err.code));
@@ -610,6 +617,11 @@
     }
 
     document.getElementById('btn-google-login').addEventListener('click', signInWithGoogle);
+
+    // Arrivo dalla pagina del canone concordato: si spiega perché accedere
+    if (destinazione.startsWith('canone-concordato.html')) {
+      showAlert('Accedi o crea il tuo account gratuito: poi torni alla pagina del canone concordato e il lavoro viene salvato nella tua area.', 'success');
+    }
     document.getElementById('btn-google-register').addEventListener('click', signInWithGoogle);
   </script>
 

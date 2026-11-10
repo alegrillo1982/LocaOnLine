@@ -1,5 +1,5 @@
 {
- "_nota": "Elenco dei comuni con l'accordo territoriale. Per aggiungere un comune: il file dell'accordo in questa cartella (stessa struttura di roma-2023-07-25.json) e una riga qui sotto.",
+ "_nota": "Elenco dei comuni con l'accordo territoriale. Per aggiungere un comune: il file dell'accordo in questa cartella (stessa struttura di roma-2023-07-25.json) e una riga qui sotto. \"pdf\" e' il link al PDF ufficiale caricato in Firebase Storage (cartella accordi/): vuoto finche' non c'e'.",
  "comuni": [
   {
    "comune": "Roma",
@@ -7,7 +7,8 @@
    "accordo": "roma-2023-07-25",
    "sottoscritto": "25 luglio 2023",
    "depositato": "27 luglio 2023",
-   "zone": 215
+   "zone": 215,
+   "pdf": ""
   }
  ]
 }

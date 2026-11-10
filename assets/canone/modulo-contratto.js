@@ -501,5 +501,26 @@
   aggiungiPersona("conduttori");
   aggiungiUnita({ descrizione: "" });
   numeraPersone(); aggiorna();
-  window.ModuloContratto = { daScheda };
+  /** Rimette nel modulo un contratto salvato: prima svuota tutto. */
+  function ricarica(d) {
+    modulo.reset();
+    modulo.querySelectorAll(".persone").forEach((box) => { box.innerHTML = ""; });
+    document.getElementById("unita-catastali").innerHTML = "";
+    modulo.querySelectorAll("[data-toccato]").forEach((c) => delete c.dataset.toccato);
+    carica(d || {});
+    if (!modulo.querySelector('.persone[data-ruolo="locatori"] .persona')) aggiungiPersona("locatori");
+    if (!modulo.querySelector('.persone[data-ruolo="conduttori"] .persona')) aggiungiPersona("conduttori");
+    if (!document.querySelector("#unita-catastali .unita-catastale")) aggiungiUnita({ descrizione: "" });
+    numeraPersone(); aggiorna();
+  }
+
+  /** Un titolo per l'elenco della dashboard: tipo, locatori e conduttori. */
+  function titolo() {
+    const d = leggi(), nome = (p) => (p.tipo === "giuridica" ? p.denominazione : p.cognome) || "";
+    const tipo = (Contratto.MODELLI[d.tipo] || {}).nome || "Contratto";
+    const loc = d.locatori.map(nome).filter(Boolean).join(", "), con = d.conduttori.map(nome).filter(Boolean).join(", ");
+    return [tipo, (loc || con) ? `${loc || "…"} → ${con || "…"}` : "", d.immobile.via].filter(Boolean).join(" · ");
+  }
+
+  window.ModuloContratto = { daScheda, leggi, ricarica, titolo };
 })();

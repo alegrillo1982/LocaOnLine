@@ -231,6 +231,9 @@
       <button class="nav-item" data-view="fatture">
         <i class="fa-solid fa-file-invoice"></i> Le mie fatture
       </button>
+      <button class="nav-item" data-view="canone">
+        <i class="fa-solid fa-calculator"></i> Canone concordato
+      </button>
 
       <div class="pt-3 pb-1">
         <p class="text-slate-500 text-xs font-semibold uppercase tracking-widest px-3 mb-2">Supporto</p>
@@ -1022,6 +1025,47 @@
 
       </section>
 
+      <!-- ===== VIEW: CANONE CONCORDATO ===== -->
+      <!-- Schede e contratti salvati da canone-concordato.html; la logica
+           sta in assets/canone/area-canone.js -->
+      <section class="view" id="view-canone" aria-label="Canone concordato">
+        <div class="mb-6 sm:flex sm:items-end sm:justify-between gap-4">
+          <div>
+            <p class="text-slate-500 text-sm">Area riservata</p>
+            <h2 class="text-2xl font-extrabold text-[#0F2A4A]">Canone concordato</h2>
+            <p class="text-sm text-slate-500 mt-1">Le schede del canone e i contratti che hai salvato: aprili per modificarli o scaricarli di nuovo.</p>
+          </div>
+          <a href="canone-concordato.html" class="mt-3 sm:mt-0 inline-flex items-center gap-2 px-4 py-2.5 bg-[#2E7CF6] hover:bg-[#1B5EC7] text-white text-sm font-semibold rounded-xl whitespace-nowrap">
+            <i class="fa-solid fa-plus text-xs"></i> Nuovo calcolo</a>
+        </div>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-slate-100">
+              <h3 class="font-bold text-[#0F2A4A] text-base">Schede del canone</h3>
+              <span class="text-xs text-slate-400" id="canone-schede-conta">–</span>
+            </div>
+            <div id="canone-schede"><p class="px-5 py-6 text-sm text-slate-400"><i class="fa-solid fa-circle-notch fa-spin text-[#2E7CF6] mr-1"></i> Caricamento…</p></div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-slate-100">
+              <h3 class="font-bold text-[#0F2A4A] text-base">Contratti</h3>
+              <span class="text-xs text-slate-400" id="canone-contratti-conta">–</span>
+            </div>
+            <div id="canone-contratti"><p class="px-5 py-6 text-sm text-slate-400"><i class="fa-solid fa-circle-notch fa-spin text-[#2E7CF6] mr-1"></i> Caricamento…</p></div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+            <div class="px-5 py-4 border-b border-slate-100">
+              <h3 class="font-bold text-[#0F2A4A] text-base">Accordi territoriali</h3>
+              <p class="text-xs text-slate-400 mt-1">Potrebbero non essere gli ultimi in vigore: la verifica spetta all'associazione che vidima il contratto.</p>
+            </div>
+            <div id="canone-accordi"><p class="px-5 py-6 text-sm text-slate-400">Caricamento…</p></div>
+          </div>
+        </div>
+      </section>
+
       <!-- ===== VIEW: ASSISTENZA ===== -->
       <section class="view" id="view-assistenza" aria-label="Assistenza">
         <div class="mb-6">
@@ -1344,7 +1388,7 @@
       // l'avviso e nascondiamo le sezioni che per lui sarebbero vuote.
       if (isOspite) {
         document.getElementById('ospite-banner')?.classList.remove('hidden');
-        ['pratiche','documenti','fatture','account'].forEach(v => {
+        ['pratiche','documenti','fatture','canone','account'].forEach(v => {
           document.querySelector(`.nav-item[data-view="${v}"]`)?.classList.add('hidden');
         });
       }
@@ -1439,6 +1483,14 @@
               try { await deleteObject(ref(storage, data.storagePath)); } catch (_) {}
             }
             await deleteDoc(doc(db, 'documents', d.id));
+          }
+
+          // 1b. Cancella schede del canone e contratti salvati
+          for (const nome of ['schede_canone', 'contratti_compilati']) {
+            try {
+              const salvati = await getDocs(query(collection(db, nome), where('userId', '==', user.uid)));
+              for (const d of salvati.docs) await deleteDoc(doc(db, nome, d.id));
+            } catch (_) { /* nessun lavoro salvato o raccolta non attiva */ }
           }
 
           // 2. Cancella pratiche NON registrate da Firestore
@@ -3317,6 +3369,7 @@
       documenti:  { title: 'I miei documenti',     sub: 'Upload e archivio' },
       richiedi:   { title: 'Richiedi un Servizio', sub: 'Acquisto e pagamento' },
       fatture:    { title: 'Le mie fatture',       sub: 'Fatturazione elettronica' },
+      canone:     { title: 'Canone concordato',    sub: 'Schede e contratti salvati' },
       assistenza: { title: 'Assistenza',            sub: 'Supporto clienti' },
       account:    { title: 'Il mio account',        sub: 'Profilo e impostazioni' },
     };
@@ -3496,5 +3549,7 @@
       } catch (err) { /* il tracciamento non deve mai bloccare il clic */ }
     }, true);
   </script>
+  <!-- Canone concordato: schede e contratti salvati -->
+  <script type="module" src="assets/canone/area-canone.js"></script>
 </body>
 </html>

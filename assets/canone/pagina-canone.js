@@ -53,6 +53,9 @@
       const a = accordo.accordo;
       $("accordo-in-uso").textContent =
         `Accordo del ${a.data_testo}, depositato il ${a.deposito_data} (prot. ${a.protocollo}).`;
+      // il PDF ufficiale, se e' stato caricato (link in accordi/indice.json)
+      const pdf = $("accordo-pdf");
+      if (voce && voce.pdf) { pdf.href = voce.pdf; pdf.hidden = false; } else pdf.hidden = true;
       $("fonte-accordo").textContent =
         `${a.titolo} del ${a.data_testo}, depositato il ${a.deposito_data} con prot. ${a.protocollo}` +
         (a.ufficio ? ` (${a.ufficio})` : "") + (voce && voce.zone ? `: ${voce.zone} zone.` : ".");
@@ -78,7 +81,7 @@
     box.hidden = false;
   }
 
-  fetch("accordi/indice.json")
+  const indicePronto = fetch("accordi/indice.json")
     .then((r) => r.json())
     .then((d) => {
       indice = d;
@@ -89,7 +92,8 @@
       const voluto = new URLSearchParams(location.search).get("comune");
       const trovato = voluto && comuni.find((c) => c.comune.toLowerCase() === voluto.toLowerCase());
       if (trovato) sceltaComune.value = trovato.accordo;
-      caricaAccordo(sceltaComune.value);
+      sceltaComune.dataset.prima = sceltaComune.value;
+      return caricaAccordo(sceltaComune.value);
     })
     .catch(() => { $("accordo-in-uso").textContent = "Elenco dei comuni non caricato: ricarica la pagina."; });
 
@@ -136,4 +140,19 @@
     $(id).addEventListener("input", () => { modificato = true; inAnticipo(); });
   }
   window.addEventListener("beforeunload", (e) => { if (modificato) { e.preventDefault(); e.returnValue = ""; } });
+
+  // Per il salvataggio (salva-canone.js): scegliere l'accordo di un lavoro
+  // salvato, passare da un passo all'altro, dire che e' tutto salvato.
+  window.PaginaCanone = {
+    async scegliAccordo(codice) {
+      await indicePronto;
+      if (!indice || !indice.comuni.some((c) => c.accordo === codice)) throw new Error("accordo non più disponibile: " + codice);
+      sceltaComune.value = codice;
+      sceltaComune.dataset.prima = codice;
+      await caricaAccordo(codice);
+    },
+    mostra: (quale) => mostra(quale),
+    passo: () => (passi.contratto[1].hidden ? "scheda" : "contratto"),
+    segnaSalvato: () => { modificato = false; },
+  };
 })();
