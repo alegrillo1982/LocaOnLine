@@ -38,6 +38,10 @@ firebase-debug.log
 firestore-debug.log
 ui-debug.log
 
+# ─── Strumenti locali ────────────────────────────────────────────
+# Si aprono sul computer, non fanno parte del sito.
+timbro-registrazione.html
+
 # ─── Dipendenze ──────────────────────────────────────────────────
 node_modules/
 package-lock.json.bak
