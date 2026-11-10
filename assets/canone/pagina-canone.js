@@ -41,7 +41,7 @@
 
   // ------------------------------------------------------------ accordi
   const sceltaComune = $("comune");
-  let indice = null;
+  let indice = null, attuale = null;      // attuale: il codice dell'accordo caricato
 
   async function caricaAccordo(codice) {
     const voce = indice.comuni.find((c) => c.accordo === codice);
@@ -60,6 +60,7 @@
         `${a.titolo} del ${a.data_testo}, depositato il ${a.deposito_data} con prot. ${a.protocollo}` +
         (a.ufficio ? ` (${a.ufficio})` : "") + (voce && voce.zone ? `: ${voce.zone} zone.` : ".");
       avvisoValidita(a);
+      attuale = codice;
       window.dispatchEvent(new CustomEvent("accordo", { detail: accordo }));
     } catch (e) {
       $("accordo-in-uso").textContent = "Accordo non caricato: controlla la connessione e ricarica la pagina.";
@@ -149,7 +150,8 @@
       if (!indice || !indice.comuni.some((c) => c.accordo === codice)) throw new Error("accordo non più disponibile: " + codice);
       sceltaComune.value = codice;
       sceltaComune.dataset.prima = codice;
-      await caricaAccordo(codice);
+      // gia' caricato: non si ricarica, altrimenti la scheda ripartirebbe da capo
+      if (attuale !== codice) await caricaAccordo(codice);
     },
     mostra: (quale) => mostra(quale),
     passo: () => (passi.contratto[1].hidden ? "scheda" : "contratto"),

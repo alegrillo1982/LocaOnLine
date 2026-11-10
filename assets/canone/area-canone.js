@@ -37,7 +37,7 @@ function riga(chiave, d) {
         <i class="fa-solid ${e.icona} text-[#2E7CF6]"></i>
       </div>
       <div class="flex-1 min-w-0">
-        <p class="text-sm font-semibold text-[#0F2A4A] truncate">${testo(v.titolo) || 'Senza titolo'}</p>
+        <p class="text-sm font-semibold text-[#0F2A4A] line-clamp-2 break-words">${testo(v.titolo) || 'Senza titolo'}</p>
         <p class="text-xs text-slate-400 mt-0.5">${testo(v.comune)}${v.comune ? ' · ' : ''}aggiornato il ${quando(v.aggiornato) || '–'}</p>
       </div>
       <div class="flex items-center gap-2 flex-shrink-0">
