@@ -32,33 +32,51 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "La registrazione del contratto di locazione è obbligatoria?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sì. Tutti i contratti di locazione e comodato devono essere registrati presso l'Agenzia delle Entrate entro 30 giorni dalla stipula (art. 17 DPR 131/1986). La mancata registrazione espone le parti a sanzioni." }
+        "name": "La registrazione è obbligatoria?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì. Tutti i contratti di locazione e comodato devono essere registrati presso l'Agenzia delle Entrate entro 30 giorni dalla stipula (art. 17 DPR 131/1986). La mancata registrazione espone le parti a sanzioni."
+        }
       },
       {
         "@type": "Question",
-        "name": "Quanto tempo ci vuole per registrare un contratto di affitto online?",
-        "acceptedAnswer": { "@type": "Answer", "text": "L'80% delle pratiche viene registrato entro 8 ore lavorative dalla ricezione dei documenti; in ogni caso garantiamo la registrazione entro 48 ore. In caso di documentazione incompleta, il cliente viene contattato immediatamente." }
+        "name": "Quanto devo aspettare per ricevere la conferma di registrazione?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L'80% delle pratiche viene completato entro 8 ore lavorative dalla ricezione dei documenti; il termine massimo garantito è di 48 ore. In caso di documentazione incompleta, ti contatteremo subito per completarla."
+        }
       },
       {
         "@type": "Question",
-        "name": "Devo essere fisicamente presente per registrare il contratto?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No. Il servizio LocaOnLine è completamente online. Si caricano i documenti, si effettua il pagamento, e il professionista si occupa di tutto il resto dal suo ufficio senza che il cliente debba recarsi da nessuna parte." }
-      },
-      {
-        "@type": "Question",
-        "name": "Quanto costa registrare un contratto di locazione?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Il compenso per la registrazione del contratto di locazione tramite LocaOnLine è di 40€. A questo si aggiunge l'imposta di registro (2% del canone annuo, min. 67€) se il contratto non è in cedolare secca (il regime fiscale a tassa fissa che la sostituisce), e l'imposta di bollo di 16€ per foglio per ciascuna copia." }
-      },
-      {
-        "@type": "Question",
-        "name": "Come ricevo la conferma di avvenuta registrazione?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Riceverai tutto via email; se hai creato un account, trovi i documenti anche nella tua area riservata su LocaOnLine, con la ricevuta di registrazione rilasciata dall'Agenzia delle Entrate con il numero di registrazione ufficiale." }
+        "name": "Devo essere fisicamente presente?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, assolutamente. Il servizio è completamente online. Carichi i documenti, effettui il pagamento, e pensiamo noi a tutto il resto dal nostro ufficio."
+        }
       },
       {
         "@type": "Question",
         "name": "Cosa succede se l'Agenzia delle Entrate richiede documenti aggiuntivi?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Il professionista ti contatterà via email indicando esattamente cosa manca. Puoi caricare i documenti mancanti rispondendo alla nostra email, oppure dalla tua area riservata se hai creato un account." }
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Il nostro operatore ti contatterà via email indicando esattamente cosa serve. Puoi inviarli rispondendo alla nostra email o caricarli in area riservata, se hai un account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come ricevo la conferma di avvenuta registrazione?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Riceverai tutto via email; se hai creato un account trovi anche in area riservata la ricevuta di registrazione rilasciata dall'Agenzia delle Entrate con il numero di registrazione."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "È possibile annullare la pratica dopo il pagamento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Una volta avviata la procedura di registrazione non è possibile annullare. Per qualsiasi dubbio, contattaci prima di procedere al pagamento."
+        }
       }
     ]
   }
@@ -343,7 +361,7 @@
     // FAQ accordion
     const faqs = [
       { q: 'La registrazione è obbligatoria?', a: 'Sì. Tutti i contratti di locazione e comodato devono essere registrati presso l\'Agenzia delle Entrate entro 30 giorni dalla stipula (art. 17 DPR 131/1986). La mancata registrazione espone le parti a sanzioni.' },
-      { q: 'Quanto devo aspettare per ricevere la conferma di registrazione?', a: 'L'80% delle pratiche viene completato entro 8 ore lavorative dalla ricezione dei documenti; il termine massimo garantito è di 48 ore. In caso di documentazione incompleta, ti contatteremo subito per completarla.' },
+      { q: 'Quanto devo aspettare per ricevere la conferma di registrazione?', a: 'L\'80% delle pratiche viene completato entro 8 ore lavorative dalla ricezione dei documenti; il termine massimo garantito è di 48 ore. In caso di documentazione incompleta, ti contatteremo subito per completarla.' },
       { q: 'Devo essere fisicamente presente?', a: 'No, assolutamente. Il servizio è completamente online. Carichi i documenti, effettui il pagamento, e pensiamo noi a tutto il resto dal nostro ufficio.' },
       { q: 'Cosa succede se l\'Agenzia delle Entrate richiede documenti aggiuntivi?', a: 'Il nostro operatore ti contatterà via email indicando esattamente cosa serve. Puoi inviarli rispondendo alla nostra email o caricarli in area riservata, se hai un account.' },
       { q: 'Come ricevo la conferma di avvenuta registrazione?', a: 'Riceverai tutto via email; se hai creato un account trovi anche in area riservata la ricevuta di registrazione rilasciata dall\'Agenzia delle Entrate con il numero di registrazione.' },
