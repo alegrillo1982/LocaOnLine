@@ -1,5 +1,5 @@
 {
- "_nota": "Elenco dei comuni con l'accordo territoriale. Per aggiungere un comune: il file dell'accordo in questa cartella (stessa struttura di roma-2023-07-25.json) e una riga qui sotto. \"pdf\" e' il link al PDF ufficiale caricato in Firebase Storage (cartella accordi/): vuoto finche' non c'e'.",
+ "_nota": "Elenco dei comuni con l'accordo territoriale. Per aggiungere un comune: il file dell'accordo in questa cartella (stessa struttura di roma-2023-07-25.json) e una riga qui sotto. \"pdf\" e \"pdf_studenti\" sono i link ai PDF ufficiali (accordo e accordo per gli studenti universitari) caricati in Firebase Storage, cartella accordi/: vuoti finche' non ci sono.",
  "comuni": [
   {
    "comune": "Roma",
@@ -8,7 +8,8 @@
    "sottoscritto": "25 luglio 2023",
    "depositato": "27 luglio 2023",
    "zone": 215,
-   "pdf": ""
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Froma-2023-07-25.pdf?alt=media&token=a9a83efb-6904-4b6d-91bf-a6d49f70dd6b",
+   "pdf_studenti": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Froma-2023-07-25-studenti.pdf.pdf?alt=media&token=713cf31c-c77c-436d-bf98-5f4fc6c463b3"
   }
  ]
 }

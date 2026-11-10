@@ -100,9 +100,9 @@ async function mostraAccordi() {
           <p class="text-xs text-slate-400 mt-0.5">Accordo del ${testo(c.sottoscritto)}, depositato il ${testo(c.depositato)}</p>
         </div>
         <div class="flex items-center gap-2 flex-shrink-0">
-          ${c.pdf ? `<a href="${testo(c.pdf)}" target="_blank" rel="noopener"
+          ${[['pdf', 'Accordo'], ['pdf_studenti', 'Studenti']].filter(([k]) => c[k]).map(([k, nome]) => `<a href="${testo(c[k])}" target="_blank" rel="noopener"
              class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-600 border border-slate-200 hover:border-[#2E7CF6] rounded-lg">
-             <i class="fa-regular fa-file-pdf text-[11px]"></i> PDF</a>` : ''}
+             <i class="fa-regular fa-file-pdf text-[11px]"></i> ${nome}</a>`).join('')}
           <a href="canone-concordato.html?comune=${encodeURIComponent(c.comune.toLowerCase())}"
              class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#2E7CF6] border border-[#2E7CF6]/30 hover:border-[#2E7CF6] rounded-lg">
              <i class="fa-solid fa-calculator text-[10px]"></i> Calcola</a>

@@ -54,8 +54,10 @@
       $("accordo-in-uso").textContent =
         `Accordo del ${a.data_testo}, depositato il ${a.deposito_data} (prot. ${a.protocollo}).`;
       // il PDF ufficiale, se e' stato caricato (link in accordi/indice.json)
-      const pdf = $("accordo-pdf");
-      if (voce && voce.pdf) { pdf.href = voce.pdf; pdf.hidden = false; } else pdf.hidden = true;
+      for (const [id, campo] of [["accordo-pdf", "pdf"], ["accordo-pdf-studenti", "pdf_studenti"]]) {
+        const link = $(id);
+        if (voce && voce[campo]) { link.href = voce[campo]; link.hidden = false; } else link.hidden = true;
+      }
       $("fonte-accordo").textContent =
         `${a.titolo} del ${a.data_testo}, depositato il ${a.deposito_data} con prot. ${a.protocollo}` +
         (a.ufficio ? ` (${a.ufficio})` : "") + (voce && voce.zone ? `: ${voce.zone} zone.` : ".");
