@@ -1,0 +1,200 @@
+/*
+ * Canone concordato: scheda del canone e contratto (canone-concordato.html).
+ * Le classi sono quelle del portale UPPI, da cui vengono gli script: qui
+ * hanno i colori di LocaOnLine. Tutto dentro .cc, per non toccare il resto
+ * del sito. Niente regole per id dentro le media query (vedi CLAUDE.md).
+ */
+.cc { --blu: #2E7CF6; --notte: #0F2A4A; --velo: #EBF2FF; --bordo: #DCE3EC; --tenue: #64748B; --testo: #1E293B; --dati: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+.cc [hidden] { display: none !important; }
+.cc input, .cc select, .cc textarea { font: 400 15px/1.3 Inter, sans-serif; color: var(--testo); background: #fff; border: 1px solid var(--bordo); border-radius: 8px; padding: 9px 10px; width: 100%; min-width: 0; box-sizing: border-box; }
+.cc input:focus, .cc select:focus, .cc textarea:focus { outline: 2px solid var(--blu); outline-offset: -1px; border-color: var(--blu); }
+.cc input[type=checkbox], .cc input[type=radio] { appearance: auto; width: 18px; height: 18px; padding: 0; margin: 0; flex: none; accent-color: var(--blu); }
+.cc input[type=date] { min-height: 40px; }
+
+/* le sezioni */
+.cc .sezione-canone { margin: 0 0 16px; padding: 18px; background: #fff; border: 1px solid var(--bordo); border-radius: 16px; }
+.cc .sezione-canone h2 { font: 800 13px/1.2 Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--notte); margin: 0 0 14px; }
+.cc .sezione-canone h2 small { font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--tenue); margin-left: 4px; }
+.cc .nota-copia { font-size: 14px; color: #4A5568; margin: 0 0 12px; }
+.cc .stacco { margin-top: 14px; }
+.cc h3.sotto { margin: 20px 0 8px; font: 700 12px/1.2 Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--tenue); }
+.cc h3.sotto small { text-transform: none; letter-spacing: 0; font-weight: 400; }
+
+/* campi in griglia: etichetta sopra, campo sotto */
+.cc .griglia-campi { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px 14px; }
+.cc .griglia-campi label, .cc .campo-lungo, .cc .unita-catastale label { display: flex; flex-direction: column; gap: 5px; font: 600 12px/1.3 Inter, sans-serif; color: var(--tenue); min-width: 0; }
+.cc .griglia-campi label small, .cc .campo-lungo small { font-weight: 400; }
+.cc .griglia-campi .largo { grid-column: span 2; }
+.cc .campo-lungo { margin-top: 12px; }
+.cc .campo-lungo textarea { resize: vertical; }
+.cc .campo-calcolato { display: block; padding: 9px 0; font: 500 14px/1.3 Inter, sans-serif; color: var(--notte); }
+.cc .con-ripristina { display: flex; align-items: center; gap: 4px; }
+.cc .con-ripristina input { flex: 1; }
+.cc .con-ripristina select { width: auto; }
+.cc .nota-cedolare { display: block; margin-top: 2px; color: #8A5208; font-weight: 400; }
+
+/* scelte e caselle */
+.cc .scelta-tipo { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-bottom: 12px; }
+.cc .scelta-tipo label, .cc .caselle label, .cc .parametri label { display: inline-flex; align-items: center; gap: 8px; font: 400 15px/1.35 Inter, sans-serif; color: var(--testo); }
+.cc .caselle { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+.cc .caselle.maggiorazioni { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px 18px; }
+.cc .caselle .con-campo input { width: 4em; padding: 5px 6px; text-align: right; }
+.cc .caselle small { color: var(--tenue); font-size: 12px; }
+.cc .etichetta-caselle { font: 600 12px Inter, sans-serif; color: var(--tenue); width: 100%; }
+.cc .esito-normale { margin: 12px 0 0; font-size: 14px; }
+.cc .parametri { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 22px; }
+.cc .parametri label { align-items: flex-start; font-size: 14px; }
+.cc .parametri .n { display: inline-block; min-width: 1.6em; font: 600 12px/1.5 var(--dati); color: var(--tenue); }
+
+/* tipo della scheda */
+.cc #scheda-canone:not(.tipo-agevolato) .solo-agevolato, .cc #scheda-canone:not(.tipo-transitorio) .solo-transitorio { display: none; }
+
+/* catasto e zona */
+.cc .catasto { display: flex; align-items: flex-end; gap: 10px; flex-wrap: wrap; grid-column: 1 / -1; }
+.cc .catasto > span { width: 100%; font: 600 12px/1.3 Inter, sans-serif; color: var(--tenue); }
+.cc .catasto label { display: inline-flex; flex-direction: row; align-items: center; gap: 6px; font: 600 13px var(--dati); color: var(--tenue); }
+.cc .catasto input { width: 6.5em; }
+.cc .cerca-zona { margin-top: 16px; position: relative; }
+.cc .cerca-zona > label { display: block; font: 600 12px/1.3 Inter, sans-serif; color: var(--tenue); margin-bottom: 5px; }
+.cc .cerca-zona > label small { font-weight: 400; }
+.cc .risultati-zona { position: absolute; left: 0; right: 0; z-index: 20; max-height: 320px; overflow-y: auto; background: #fff; border: 1px solid var(--bordo); border-radius: 10px; box-shadow: 0 10px 24px rgba(15,42,74,.15); }
+.cc .risultati-zona button { display: block; width: 100%; padding: 10px 12px; text-align: left; font-size: 14px; background: none; border: 0; border-bottom: 1px solid var(--bordo); cursor: pointer; }
+.cc .risultati-zona button:hover, .cc .risultati-zona button:focus { background: var(--velo); }
+.cc .risultati-zona small { display: block; color: var(--tenue); font-size: 12px; }
+.cc .risultati-zona .nessuna { padding: 10px 12px; margin: 0; color: var(--tenue); font-size: 14px; }
+.cc .zona-scelta { margin: 10px 0 0; font-size: 14px; }
+.cc .zona-scelta .macro { color: var(--tenue); font-size: 12px; margin-left: 4px; }
+.cc .annulla-consegna { margin-left: 6px; padding: 2px 8px; font-size: 13px; color: var(--blu); background: var(--velo); border: 0; border-radius: 6px; cursor: pointer; }
+
+/* tabella delle superfici: scorre di lato sul telefono */
+.cc .scorre { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.cc .tabella-superfici { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 14px; }
+.cc .tabella-superfici th, .cc .tabella-superfici td { padding: 7px 8px; border-bottom: 1px solid var(--bordo); text-align: left; vertical-align: middle; }
+.cc .tabella-superfici thead th { font: 600 11px/1.2 Inter, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: var(--tenue); }
+.cc .tabella-superfici tbody th { font-weight: 500; }
+.cc .tabella-superfici .coeff { font-family: var(--dati); font-size: 13px; white-space: nowrap; }
+.cc .tabella-superfici .nota-riga td { padding-top: 0; font-size: 12px; color: var(--tenue); }
+.cc .tabella-superfici tr[data-riga] th, .cc .tabella-superfici tr[data-riga] td { border-bottom: 0; }
+.cc .tabella-superfici tfoot th { text-align: right; }
+.cc .tabella-superfici tr[data-riga] td:last-child { white-space: nowrap; }
+.cc .campo-numero { width: 7em; font-family: var(--dati); text-align: right; }
+.cc .campo-numero.modificata { border-color: #C98A1B; background: #FFF8EC; }
+.cc .ripristina { padding: 2px 6px; font-size: 13px; color: #8A5208; background: none; border: 0; cursor: pointer; }
+
+/* il calcolo */
+.cc .righe-calcolo { display: grid; grid-template-columns: minmax(180px, 34%) 1fr; gap: 10px 16px; margin: 0; font-size: 15px; }
+.cc .righe-calcolo dt { font: 600 12px/1.6 Inter, sans-serif; color: var(--tenue); }
+.cc .righe-calcolo dd { margin: 0; color: var(--notte); }
+.cc .righe-calcolo small { color: var(--tenue); margin-left: 6px; }
+.cc .avvisi-canone { margin: 14px 0 0; padding: 0; list-style: none; }
+.cc .avvisi-canone li { margin-bottom: 6px; padding: 9px 12px; font-size: 14px; color: #6B4200; background: #FFF3DA; border-left: 3px solid #C98A1B; border-radius: 0 8px 8px 0; }
+
+/* la barra dei pulsanti: resta in fondo allo schermo mentre si compila */
+.cc .barra-canone { position: sticky; bottom: 0; z-index: 30; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 8px 10px;
+  margin: 0 -4px; padding: 12px 14px calc(12px + env(safe-area-inset-bottom, 0px)); background: #fff; border: 1px solid var(--bordo); border-top: 3px solid var(--blu); border-radius: 14px 14px 0 0; box-shadow: 0 -6px 18px rgba(15,42,74,.08); font-size: 15px; }
+.cc .barra-canone > span:first-child { margin-right: auto; }
+.cc .barra-canone b { font-family: var(--dati); font-size: 17px; color: var(--blu); }
+.cc .barra-canone button { padding: 10px 16px; font: 700 14px Inter, sans-serif; border-radius: 10px; cursor: pointer; white-space: nowrap; }
+.cc .barra-canone .secondario { color: var(--notte); background: #fff; border: 1px solid var(--bordo); }
+.cc .barra-canone .primario { color: #fff; background: var(--blu); border: 1px solid var(--blu); }
+.cc .stato-salvataggio { color: #9B2C1F; font-size: 13px; }
+.cc .stato-salvataggio:empty { display: none; }
+
+/* il contratto: persone */
+.cc .persona { margin: 0 0 14px; padding: 14px 14px 6px; border: 1px solid var(--bordo); border-radius: 12px; background: #F8FAFD; min-width: 0; }
+.cc .persona legend { padding: 0 6px; font: 700 12px/1 Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--blu); }
+.cc .persona .togli, .cc .unita-catastale .togli { margin-left: 6px; padding: 2px 8px; color: var(--tenue); background: none; border: 0; cursor: pointer; font-size: 14px; }
+.cc .riga-cf { display: flex; align-items: flex-end; gap: 6px 14px; flex-wrap: wrap; margin-bottom: 12px; }
+.cc .riga-cf label { display: flex; flex-direction: column; gap: 5px; flex: 0 1 300px; font: 600 12px/1.3 Inter, sans-serif; color: var(--tenue); }
+.cc .riga-cf input { font-family: var(--dati); letter-spacing: .05em; text-transform: uppercase; }
+.cc .esito-cf { font-size: 13px; color: var(--tenue); padding-bottom: 10px; }
+.cc .esito-cf.trovato { color: #2F6B4F; }
+.cc .esito-cf.errore { color: #9B2C1F; }
+.cc .amministratore { margin: 10px 0 8px; padding: 10px 12px 4px; border-left: 3px solid var(--velo); background: #fff; }
+.cc .titolo-amministratore { margin: 0 0 8px; font: 700 12px/1 Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--blu); }
+.cc .aggiungi { margin: 2px 0 4px; padding: 8px 14px; font: 700 13px Inter, sans-serif; color: var(--blu); background: var(--velo); border: 1px dashed var(--blu); border-radius: 10px; cursor: pointer; }
+.cc .persona.giuridica .solo-fisica, .cc .persona:not(.giuridica) .solo-giuridica,
+.cc .persona:not(.conduttore) .solo-conduttore, .cc .persona.conduttore .non-conduttore { display: none; }
+
+/* unita' catastali */
+.cc .unita-catastale { display: grid; grid-template-columns: 1.6fr repeat(7, minmax(60px, 1fr)) auto; gap: 8px; align-items: end; margin-bottom: 10px; }
+.cc .unita-catastale > * { min-width: 0; }
+.cc .nota-recesso { display: flex; align-items: center; gap: 8px; margin-top: 4px; font: 400 14px/1.3 Inter, sans-serif; color: var(--testo); }
+
+/* i campi che cambiano con il tipo di contratto (come sul portale UPPI) */
+.cc #modulo-contratto:not(.con-porzione) .solo-porzione, .cc #modulo-contratto:not(.con-bonifico) .solo-bonifico,
+.cc #modulo-contratto:not(.con-altro) .solo-altro, .cc #modulo-contratto:not(.senza-cedolare) .solo-istat,
+.cc #modulo-contratto:not(.con-deposito) .solo-deposito, .cc #modulo-contratto:not(.con-fideiussori) .solo-fideiussori { display: none; }
+.cc #modulo-contratto:not(.tipo-agevolato) .solo-agevolato, .cc #modulo-contratto:not(.tipo-studenti) .solo-studenti,
+.cc #modulo-contratto:not(.tipo-studenti) .persona .solo-studente, .cc #modulo-contratto .persona:not(.conduttore) .solo-studente,
+.cc #modulo-contratto.tipo-studenti:not(.oneri-al-locatore) .oneri-acconto, .cc #modulo-contratto.tipo-studenti:not(.oneri-al-locatore) .oneri-locatore { display: none; }
+.cc #modulo-contratto.tipo-studenti .persona.conduttore .non-conduttore { display: grid; }
+.cc #modulo-contratto:not(.tipo-transitorio) .solo-transitorio, .cc #modulo-contratto.tipo-studenti .no-studenti,
+.cc #modulo-contratto.tipo-transitorio .solo-istat { display: none; }
+.cc #modulo-contratto.tipo-transitorio .persona.conduttore .non-conduttore { display: grid; }
+.cc #modulo-contratto.tipo-transitorio .no-transitorio { display: none; }
+.cc #modulo-contratto.canone-totale .solo-mensile, .cc #modulo-contratto:not(.canone-totale) .solo-totale { display: none; }
+.cc #modulo-contratto:not(.tipo-esigenza) .solo-esigenza, .cc #modulo-contratto:not(.tipo-turistico) .solo-turistico,
+.cc #modulo-contratto.tipo-turistico .no-turistico { display: none; }
+.cc #modulo-contratto:not(.tipo-libero) .solo-libero, .cc #modulo-contratto:not(.tipo-comodato) .solo-comodato,
+.cc #modulo-contratto.tipo-comodato .no-comodato, .cc #modulo-contratto.tipo-libero .no-libero,
+.cc #modulo-contratto:not(.tipo-oneri-modo) .solo-oneri-modo,
+.cc #modulo-contratto.tipo-oneri-modo:not(.oneri-al-locatore) .oneri-acconto,
+.cc #modulo-contratto.tipo-comodato:not(.comodato-determinato) .campo-fine { display: none; }
+.cc #modulo-contratto.tipo-comodato .persona.conduttore .non-conduttore { display: grid; }
+.cc #modulo-contratto.tipo-comodato .persona .solo-conduttore { display: none; }
+/* l'associazione che assiste il locatore: non nel comodato */
+.cc #modulo-contratto.tipo-comodato .solo-assistenza { display: none; }
+
+/* etichette lunghe da computer, brevi da telefono */
+.cc .solo-stretto { display: none; }
+
+/* le schede 1 e 2 */
+.cc .linguette { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 6px; background: #fff; border: 1px solid var(--bordo); border-radius: 14px; margin-bottom: 16px; }
+.cc .linguette button { padding: 11px 8px; font: 700 14px/1.25 Inter, sans-serif; color: var(--tenue); background: none; border: 0; border-radius: 10px; cursor: pointer; }
+.cc .linguette button[aria-selected=true] { color: #fff; background: var(--notte); }
+
+/* telefono: una colonna dove serve, nessun elemento che esce dallo schermo */
+@media (max-width: 640px) {
+  .cc .sezione-canone { padding: 16px 14px; }
+  .cc .griglia-campi .largo { grid-column: 1 / -1; }
+  .cc .parametri { grid-template-columns: 1fr; }
+  .cc .righe-calcolo { grid-template-columns: 1fr; gap: 2px; }
+  .cc .righe-calcolo dd { margin-bottom: 10px; }
+  .cc .barra-canone { gap: 6px 8px; padding: 8px 10px calc(8px + env(safe-area-inset-bottom, 0px)); font-size: 14px; }
+  .cc .barra-canone > span:first-child { flex: 1 0 100%; }
+  .cc .barra-canone > span:first-child:empty { display: none; }
+  .cc .barra-canone button { flex: 1 1 0; padding: 9px 6px; font-size: 14px; }
+  .cc .barra-canone .primario { flex-grow: 1.4; }
+  .cc .solo-largo { display: none; }
+  .cc .solo-stretto { display: inline; }
+  /* catasto: foglio, particella e subalterno su una riga, larghi uguali */
+  .cc .catasto label { flex: 1 1 0; }
+  .cc .catasto input { width: 100%; }
+  /* superfici: ogni voce diventa un riquadro, niente scorrimento di lato */
+  .cc .tabella-superfici { display: block; min-width: 0; }
+  .cc .tabella-superfici thead { display: none; }
+  .cc .tabella-superfici tbody, .cc .tabella-superfici tfoot { display: block; }
+  .cc .tabella-superfici tr[data-riga] { display: grid; grid-template-columns: 1fr auto 1fr; gap: 4px 8px; align-items: end; padding-top: 12px; }
+  .cc .tabella-superfici tr[data-riga] th { grid-column: 1 / -1; padding: 0; }
+  .cc .tabella-superfici tr[data-riga] td { display: flex; flex-direction: column; gap: 3px; padding: 0; }
+  .cc .tabella-superfici tr[data-riga] td:nth-of-type(1)::before { content: "Netta (mq)"; }
+  .cc .tabella-superfici tr[data-riga] td:nth-of-type(2) { padding-bottom: 10px; white-space: normal; max-width: 6.5em; font-size: 12px; text-align: center; }
+  .cc .tabella-superfici tr[data-riga] td:nth-of-type(3)::before { content: "Convenzionale (mq)"; }
+  .cc .tabella-superfici tr[data-riga] td::before { font: 600 11px Inter, sans-serif; color: var(--tenue); }
+  .cc .tabella-superfici tr[data-riga] td:nth-of-type(3) { flex-direction: row; flex-wrap: wrap; align-items: center; }
+  .cc .tabella-superfici tr[data-riga] td:nth-of-type(3)::before { flex: 1 0 100%; }
+  .cc .tabella-superfici .campo-numero { width: 100%; max-width: 9em; }
+  .cc .tabella-superfici tr[data-riga] td:nth-of-type(3) .campo-numero { flex: 1; }
+  .cc .tabella-superfici .nota-riga { display: block; }
+  .cc .tabella-superfici .nota-riga td { display: block; padding: 6px 0 12px; border-bottom: 1px solid var(--bordo); white-space: normal; }
+  .cc .tabella-superfici tfoot tr { display: flex; justify-content: space-between; gap: 8px; padding-top: 10px; }
+  .cc .tabella-superfici tfoot th, .cc .tabella-superfici tfoot td { border: 0; padding: 0; }
+  .cc .unita-catastale { grid-template-columns: repeat(3, minmax(0, 1fr)); padding-bottom: 10px; border-bottom: 1px dashed var(--bordo); }
+  .cc .unita-catastale > label:nth-child(1) { grid-row: 1; grid-column: 1 / 3; }
+  .cc .unita-catastale > .togli { grid-row: 1; grid-column: 3; justify-self: end; align-self: center; }
+  .cc .unita-catastale > label:nth-child(5) { grid-column: 1 / -1; }
+}
+@media (min-width: 641px) and (max-width: 900px) {
+  .cc .unita-catastale { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}

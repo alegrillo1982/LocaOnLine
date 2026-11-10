@@ -1,0 +1,4822 @@
+{
+ "accordo": {
+  "codice": "roma-2023-07-25",
+  "comune": "Roma",
+  "provincia": "RM",
+  "titolo": "Accordo territoriale per il territorio del Comune di Roma Capitale",
+  "data": "2023-07-25",
+  "data_testo": "25 luglio 2023",
+  "deposito": "prot. QC 2023/0082672",
+  "nota": "Allegato 1 con errata corrige (E34 Ostia sostituita da E341 Ostia Levante ed E342 Ostia Ponente).",
+  "deposito_data": "27.07.2023",
+  "protocollo": "RA/2023/0044852",
+  "ufficio": "Dipartimento Patrimonio Sviluppo e Valorizzazione",
+  "ufficio_breve": "Dip. Patrimonio Sviluppo e Valorizzazione"
+ },
+ "esempio_zona": "cerca per codice (C10) o per nome (Garbatella, via Lungara)",
+ "regole": {
+  "superficie": {
+   "fino_46": {
+    "coeff": 1.3,
+    "massimo": 52.9
+   },
+   "da_46_a_70": {
+    "coeff": 1.15,
+    "massimo": 70.0
+   },
+   "oltre_120_riduzione_massima": 0.15,
+   "box": 0.5,
+   "box_pregio": 0.8,
+   "posto_auto_comune": 0.2,
+   "posto_auto_comune_pregio": 0.5,
+   "balconi_cantine": 0.25,
+   "scoperta_esclusiva": 0.15,
+   "verde_condominiale": 0.1,
+   "tolleranza": 0.05
+  },
+  "fasce": {
+   "B_da": 3,
+   "B_massimo_a": 6,
+   "C_da": 7,
+   "C_massimo_a": 9
+  },
+  "maggiorazioni": {
+   "ammobiliato_massimo": 15,
+   "ammobiliato_studenti": 10,
+   "seminterrato": -10,
+   "senza_ascensore": -10,
+   "attico": 10,
+   "classe_ABC": 10,
+   "classe_DEF": 5,
+   "eco_bonus": 5,
+   "sisma_bonus": 10
+  },
+  "durata": {
+   "4": 7,
+   "5": 8,
+   "6": 9
+  },
+  "transitorio_massimo": 10,
+  "storici_dlgs42": 15
+ },
+ "parametri": [
+  "Posto auto",
+  "Cortile d'uso comune, area verde o impianto sportivo",
+  "Cantina",
+  "Terrazzo o balcone",
+  "Area verde di pertinenza",
+  "Aria condizionata",
+  "Stabile con ascensore",
+  "Bagno con finestra o doppi servizi",
+  "Porta blindata",
+  "Doppi vetri",
+  "Stabile con servizio di portierato",
+  "Stabile o UI ultimati o completamente ristrutturati negli ultimi 10 anni",
+  "Sistema di sicurezza o sistema di allarme",
+  "Cucina abitabile con finestra",
+  "Videocitofono o videosorveglianza",
+  "Antenna centralizzata o impianto satellitare",
+  "Riscaldamento autonomo",
+  "Stabile non superiore a 4 piani",
+  "Strutture di superamento di barriere architettoniche",
+  "Terrazzo o locale condominiale ad uso comune"
+ ],
+ "zone": [
+  {
+   "codice": "B1",
+   "nome": "TESTACCIO (PIAZZA S.MARIA LIBERATRICE)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    17.6
+   ],
+   "A": [
+    10.5,
+    13.2
+   ],
+   "B": [
+    13.2,
+    15.3
+   ],
+   "C": [
+    15.3,
+    17.6
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B2",
+   "nome": "SAN SABA (VIA G.L. BERNINI)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    22.6
+   ],
+   "A": [
+    10.5,
+    13.2
+   ],
+   "B": [
+    13.2,
+    18.9
+   ],
+   "C": [
+    18.9,
+    22.6
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B3",
+   "nome": "CELIO (VIA CLAUDIA)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    22.6
+   ],
+   "A": [
+    10.5,
+    13.2
+   ],
+   "B": [
+    13.2,
+    18.9
+   ],
+   "C": [
+    18.9,
+    22.6
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B4",
+   "nome": "MONTI (VIA DEI SERPENTI)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    22.6
+   ],
+   "A": [
+    10.5,
+    13.2
+   ],
+   "B": [
+    13.2,
+    18.9
+   ],
+   "C": [
+    18.9,
+    22.6
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B12",
+   "nome": "AVENTINO (RIPA - VIA DI S. SABINA)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    12.6,
+    26.4
+   ],
+   "A": [
+    12.6,
+    15.4
+   ],
+   "B": [
+    15.4,
+    22.0
+   ],
+   "C": [
+    22.0,
+    26.4
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B13",
+   "nome": "SANT'ANGELO - CAMPITELLI (VIA DEL PORTICO D'OTTAVIA)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    12.6,
+    26.4
+   ],
+   "A": [
+    12.6,
+    15.4
+   ],
+   "B": [
+    15.4,
+    22.0
+   ],
+   "C": [
+    22.0,
+    26.4
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B14",
+   "nome": "TRASTEVERE (VIA DELLA LUNGARA)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    12.6,
+    26.4
+   ],
+   "A": [
+    12.6,
+    15.4
+   ],
+   "B": [
+    15.4,
+    22.0
+   ],
+   "C": [
+    22.0,
+    26.4
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B15",
+   "nome": "BORGO (VIA DELLE CONCILIAZIONE)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    12.6,
+    26.4
+   ],
+   "A": [
+    12.6,
+    15.4
+   ],
+   "B": [
+    15.4,
+    22.0
+   ],
+   "C": [
+    22.0,
+    26.4
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B17",
+   "nome": "SALLUSTIANO - CASTRO PRETORIO (PIAZZA INDIPENDENZA)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    12.6,
+    26.4
+   ],
+   "A": [
+    12.6,
+    15.4
+   ],
+   "B": [
+    15.4,
+    22.0
+   ],
+   "C": [
+    22.0,
+    26.4
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B18",
+   "nome": "ESQUILINO (PIAZZA VITTORIO)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    7.0,
+    15.7
+   ],
+   "A": [
+    7.0,
+    9.2
+   ],
+   "B": [
+    9.2,
+    13.1
+   ],
+   "C": [
+    13.1,
+    15.7
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B25",
+   "nome": "LUDOVISI (VIA VENETO)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    12.6,
+    26.4
+   ],
+   "A": [
+    12.6,
+    15.4
+   ],
+   "B": [
+    15.4,
+    22.0
+   ],
+   "C": [
+    22.0,
+    26.4
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B29",
+   "nome": "VIMINALE (VIA TORINO)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    22.6
+   ],
+   "A": [
+    10.5,
+    13.2
+   ],
+   "B": [
+    13.2,
+    18.9
+   ],
+   "C": [
+    18.9,
+    22.6
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B31",
+   "nome": "TRIDENTE (CAMPO MARZIO, COLONNA, PIGNA, TREVI)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    12.6,
+    31.5
+   ],
+   "A": [
+    12.6,
+    18.3
+   ],
+   "B": [
+    18.3,
+    26.2
+   ],
+   "C": [
+    26.2,
+    31.5
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "B32",
+   "nome": "CORSO VITTORIO (PONTE, PARIONE, REGOLA, S. EUSTACHIO)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    12.6,
+    28.9
+   ],
+   "A": [
+    12.6,
+    16.9
+   ],
+   "B": [
+    16.9,
+    24.1
+   ],
+   "C": [
+    24.1,
+    28.9
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "C1",
+   "nome": "PARIOLI (P.ZZA EUCLIDE)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    23.8
+   ],
+   "A": [
+    10.5,
+    13.8
+   ],
+   "B": [
+    13.9,
+    19.8
+   ],
+   "C": [
+    19.8,
+    23.8
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "C2",
+   "nome": "SALARIO (VIA NIZZA)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    23.8
+   ],
+   "A": [
+    10.5,
+    13.8
+   ],
+   "B": [
+    13.9,
+    19.8
+   ],
+   "C": [
+    19.8,
+    23.8
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "C3",
+   "nome": "PINCIANO (VIA GIOVANNI PAISIELLO)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    23.8
+   ],
+   "A": [
+    10.5,
+    13.8
+   ],
+   "B": [
+    13.9,
+    19.8
+   ],
+   "C": [
+    19.8,
+    23.8
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "C4",
+   "nome": "NOMENTANO TORLONIA (PIAZZA GALENO)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    23.8
+   ],
+   "A": [
+    10.5,
+    13.8
+   ],
+   "B": [
+    13.9,
+    19.8
+   ],
+   "C": [
+    19.8,
+    23.8
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "C40",
+   "nome": "PRATI (VIA COLA DI RIENZO)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    22.0
+   ],
+   "A": [
+    10.5,
+    12.8
+   ],
+   "B": [
+    12.8,
+    18.4
+   ],
+   "C": [
+    18.4,
+    22.0
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "C41",
+   "nome": "DELLA VITTORIA (PIAZZA MAZZINI)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    22.0
+   ],
+   "A": [
+    10.5,
+    12.8
+   ],
+   "B": [
+    12.8,
+    18.4
+   ],
+   "C": [
+    18.4,
+    22.0
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "C46",
+   "nome": "SALARIO TRIESTE (CORSO TRIESTE FINO A S. EMERENZIANA - VILLA ADA - VIA SALARIA)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    23.9
+   ],
+   "A": [
+    10.5,
+    13.9
+   ],
+   "B": [
+    13.9,
+    19.9
+   ],
+   "C": [
+    19.9,
+    23.9
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "C49",
+   "nome": "FLAMINIO (VIA G. RENI)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    22.0
+   ],
+   "A": [
+    10.5,
+    12.8
+   ],
+   "B": [
+    12.8,
+    18.4
+   ],
+   "C": [
+    18.4,
+    22.0
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "C50",
+   "nome": "FLAMINIO PORTA DEL POPOLO (PIAZZA DELLA MARINA)",
+   "macrozona": "Pregio",
+   "oscillazione": [
+    10.5,
+    22.4
+   ],
+   "A": [
+    10.5,
+    13.0
+   ],
+   "B": [
+    13.0,
+    18.6
+   ],
+   "C": [
+    18.6,
+    22.4
+   ],
+   "pregio": true
+  },
+  {
+   "codice": "C5",
+   "nome": "SAN LORENZO (VIA DEI SABELLI)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    4.4,
+    13.6
+   ],
+   "A": [
+    4.4,
+    8.1
+   ],
+   "B": [
+    8.1,
+    11.6
+   ],
+   "C": [
+    11.6,
+    13.6
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C7",
+   "nome": "APPIO - VILLA FIORELLI (VIA TARANTO)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    14.1
+   ],
+   "A": [
+    6.1,
+    7.9
+   ],
+   "B": [
+    7.9,
+    11.3
+   ],
+   "C": [
+    11.3,
+    14.1
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C8",
+   "nome": "APPIO - NOCERA UMBRA (PIAZZA SANTA MARIA AUSILIATRICE)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    14.1
+   ],
+   "A": [
+    6.1,
+    7.9
+   ],
+   "B": [
+    7.9,
+    11.3
+   ],
+   "C": [
+    11.3,
+    14.1
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C9",
+   "nome": "APPIO METRONIO (PIAZZA TUSCOLO)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    15.5
+   ],
+   "A": [
+    6.1,
+    8.6
+   ],
+   "B": [
+    8.6,
+    12.3
+   ],
+   "C": [
+    12.3,
+    15.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C10",
+   "nome": "GARBATELLA (LARGO DELLE SETTE CHIESE)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    13.5
+   ],
+   "A": [
+    6.1,
+    8.2
+   ],
+   "B": [
+    8.2,
+    11.8
+   ],
+   "C": [
+    11.8,
+    13.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C11",
+   "nome": "MARCONI (PIAZZA ENRICO FERMI)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    13.3
+   ],
+   "A": [
+    6.1,
+    8.2
+   ],
+   "B": [
+    8.2,
+    11.8
+   ],
+   "C": [
+    11.8,
+    13.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C12",
+   "nome": "MONTEVERDE VECCHIO (VIA POERIO)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    16.0
+   ],
+   "A": [
+    6.1,
+    9.8
+   ],
+   "B": [
+    9.8,
+    14.0
+   ],
+   "C": [
+    14.0,
+    16.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C13",
+   "nome": "MONTEVERDE NUOVO (VIA DI DONNA OLIMPIA)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    12.8
+   ],
+   "A": [
+    6.1,
+    8.2
+   ],
+   "B": [
+    8.2,
+    11.8
+   ],
+   "C": [
+    11.8,
+    12.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C14",
+   "nome": "AURELIO MONTE DI CRETA (PIAZZA IRNERIO)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    4.7,
+    12.8
+   ],
+   "A": [
+    4.7,
+    8.1
+   ],
+   "B": [
+    8.1,
+    11.6
+   ],
+   "C": [
+    11.6,
+    12.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C15",
+   "nome": "AURELIO GREGORIO VII (VIA GREGORIO VII)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    15.5
+   ],
+   "A": [
+    6.1,
+    8.4
+   ],
+   "B": [
+    8.4,
+    12.0
+   ],
+   "C": [
+    12.0,
+    15.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C16",
+   "nome": "CAVALLEGGERI (VIA DELLE FORNACI)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    14.5
+   ],
+   "A": [
+    6.1,
+    8.4
+   ],
+   "B": [
+    8.4,
+    12.0
+   ],
+   "C": [
+    12.0,
+    14.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C17",
+   "nome": "BALDUINA GIOVENALE (VIA DELLE MEDAGLIE D'ORO)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    12.8
+   ],
+   "A": [
+    6.1,
+    8.2
+   ],
+   "B": [
+    8.2,
+    11.8
+   ],
+   "C": [
+    11.8,
+    12.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C18",
+   "nome": "CIPRO (VIA ANGELO EMO)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.3,
+    13.5
+   ],
+   "A": [
+    6.3,
+    8.4
+   ],
+   "B": [
+    8.4,
+    12.0
+   ],
+   "C": [
+    12.0,
+    13.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C19",
+   "nome": "PONTE MILVIO FARNESINA (VIA DELLA FARNESINA)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    8.8,
+    17.9
+   ],
+   "A": [
+    8.8,
+    11.4
+   ],
+   "B": [
+    11.4,
+    16.3
+   ],
+   "C": [
+    16.3,
+    17.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C21",
+   "nome": "SALARIO AFRICANO (VIALE LIBIA)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    15.5
+   ],
+   "A": [
+    6.1,
+    9.8
+   ],
+   "B": [
+    9.8,
+    14.0
+   ],
+   "C": [
+    14.0,
+    15.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C22",
+   "nome": "BATTERIA NOMENTANA LANCIANI (VIA COSTANTINO MAES)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    14.5
+   ],
+   "A": [
+    6.1,
+    9.5
+   ],
+   "B": [
+    9.5,
+    13.6
+   ],
+   "C": [
+    13.6,
+    14.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C24",
+   "nome": "BOLOGNA (VIA LIVORNO)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.5,
+    15.0
+   ],
+   "A": [
+    6.5,
+    9.7
+   ],
+   "B": [
+    9.7,
+    13.8
+   ],
+   "C": [
+    13.8,
+    15.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C26",
+   "nome": "VILLAGGIO OLIMPICO (V.LE DE COUBERTIN)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    14.0
+   ],
+   "A": [
+    6.1,
+    9.0
+   ],
+   "B": [
+    9.0,
+    12.9
+   ],
+   "C": [
+    12.9,
+    14.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C27",
+   "nome": "PORTA PORTESE (VIA ETTORE ROLLI)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    8.8,
+    16.0
+   ],
+   "A": [
+    8.8,
+    10.1
+   ],
+   "B": [
+    10.2,
+    14.5
+   ],
+   "C": [
+    14.5,
+    16.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C29",
+   "nome": "CASAL BERTONE PORTONACCIO (VIA DI CASAL BERTONE)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    4.2,
+    12.4
+   ],
+   "A": [
+    4.2,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    12.4
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C30",
+   "nome": "PIGNETO (PIAZZA DEL PIGNETO)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    4.4,
+    13.1
+   ],
+   "A": [
+    4.4,
+    7.3
+   ],
+   "B": [
+    7.4,
+    10.5
+   ],
+   "C": [
+    10.5,
+    13.1
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C31",
+   "nome": "MARCO POLO (VIALE MARCO POLO)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    15.0
+   ],
+   "A": [
+    6.1,
+    8.2
+   ],
+   "B": [
+    8.2,
+    11.8
+   ],
+   "C": [
+    11.8,
+    15.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C32",
+   "nome": "OSTIENSE (VIA DEL PORTO FLUVIALE)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    12.5
+   ],
+   "A": [
+    6.1,
+    7.7
+   ],
+   "B": [
+    7.7,
+    11.0
+   ],
+   "C": [
+    11.0,
+    12.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C35",
+   "nome": "AURELIO MADONNA DEL RIPOSO (VIA BENTIVOGLIO)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    12.8
+   ],
+   "A": [
+    6.1,
+    8.2
+   ],
+   "B": [
+    8.2,
+    11.8
+   ],
+   "C": [
+    11.8,
+    12.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C38",
+   "nome": "CASILINO MARRANELLA (VIA LABICO)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    4.1,
+    11.9
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    11.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C42",
+   "nome": "VIGNA CLARA (VIA DI VIGNA STELLUTI)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    8.8,
+    15.5
+   ],
+   "A": [
+    8.8,
+    9.8
+   ],
+   "B": [
+    9.8,
+    14.0
+   ],
+   "C": [
+    14.0,
+    15.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C43",
+   "nome": "TRIONFALE IGEA (VIA MARIO FANI)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    8.8,
+    16.5
+   ],
+   "A": [
+    8.8,
+    10.5
+   ],
+   "B": [
+    10.5,
+    15.0
+   ],
+   "C": [
+    15.0,
+    16.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C44",
+   "nome": "CAMILLUCCIA (VIA DELLA CAMILLUCCIA)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    8.8,
+    18.1
+   ],
+   "A": [
+    8.8,
+    11.1
+   ],
+   "B": [
+    11.1,
+    15.8
+   ],
+   "C": [
+    15.8,
+    18.1
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C45",
+   "nome": "NOCETTA (VIA DELLA NOCETTA)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    4.4,
+    12.6
+   ],
+   "A": [
+    4.4,
+    6.5
+   ],
+   "B": [
+    6.5,
+    9.3
+   ],
+   "C": [
+    9.3,
+    12.6
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C47",
+   "nome": "BALDUINA BELSITO (PIAZZA MADONNA DEL CENACOLO)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.3,
+    14.3
+   ],
+   "A": [
+    6.3,
+    8.3
+   ],
+   "B": [
+    8.4,
+    11.9
+   ],
+   "C": [
+    11.9,
+    14.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C48",
+   "nome": "TOR MARANCIA NAVIGATORI (VIA C.T. ODESCALCHI)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    13.5
+   ],
+   "A": [
+    6.1,
+    8.2
+   ],
+   "B": [
+    8.2,
+    11.8
+   ],
+   "C": [
+    11.8,
+    13.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C51",
+   "nome": "APPIO LATINO (VIA LATINA)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    6.1,
+    13.3
+   ],
+   "A": [
+    6.1,
+    8.2
+   ],
+   "B": [
+    8.2,
+    11.8
+   ],
+   "C": [
+    11.8,
+    13.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "C52",
+   "nome": "COLLINA FLEMING (VIA BEVAGNA)",
+   "macrozona": "Centrale - semicentrale",
+   "oscillazione": [
+    8.8,
+    15.5
+   ],
+   "A": [
+    8.8,
+    9.8
+   ],
+   "B": [
+    9.8,
+    14.0
+   ],
+   "C": [
+    14.0,
+    15.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D1",
+   "nome": "PRENESTINO LABICANO (VIALE PARTENOPE VIA TEANO)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    10.9
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D2",
+   "nome": "TOR PIGNATTARA (VIA DI TOR PIGNATTARA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.4,
+    11.9
+   ],
+   "A": [
+    4.4,
+    5.7
+   ],
+   "B": [
+    5.7,
+    8.2
+   ],
+   "C": [
+    8.2,
+    11.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D5",
+   "nome": "SAN PAOLO (VIA TULLIO LEVI CIVITA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    5.3,
+    12.6
+   ],
+   "A": [
+    5.3,
+    7.5
+   ],
+   "B": [
+    7.5,
+    10.7
+   ],
+   "C": [
+    10.7,
+    12.6
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D7",
+   "nome": "PORTUENSE (VIA PROSPERO COLONNA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    6.1,
+    12.8
+   ],
+   "A": [
+    6.1,
+    8.3
+   ],
+   "B": [
+    8.4,
+    11.0
+   ],
+   "C": [
+    11.0,
+    12.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D8",
+   "nome": "MAGLIANA (VIA DELL'IMPRUNETA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    5.3,
+    11.7
+   ],
+   "A": [
+    5.3,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    11.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D9",
+   "nome": "COLLI PORTUENSI (PIAZZALE EUGENIO MORELLI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    6.1,
+    12.6
+   ],
+   "A": [
+    6.1,
+    8.3
+   ],
+   "B": [
+    8.4,
+    12.0
+   ],
+   "C": [
+    12.0,
+    12.6
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D11",
+   "nome": "MONTESACRO (V.LE ADRIATICO)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    5.3,
+    13.0
+   ],
+   "A": [
+    5.3,
+    8.0
+   ],
+   "B": [
+    8.1,
+    11.5
+   ],
+   "C": [
+    11.5,
+    13.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D12",
+   "nome": "VALMELAINA - TUFELLO (VIA DELLE ISOLE CURZOLANE)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.7,
+    12.8
+   ],
+   "A": [
+    4.7,
+    7.3
+   ],
+   "B": [
+    7.4,
+    10.5
+   ],
+   "C": [
+    10.5,
+    12.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D14",
+   "nome": "CENTOCELLE (PIAZZA DEI MIRTI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    11.4
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    11.4
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D15",
+   "nome": "ARDEATINO OTTAVO COLLE (VIA DEL SERAFICO)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    7.0,
+    15.9
+   ],
+   "A": [
+    7.0,
+    9.7
+   ],
+   "B": [
+    9.7,
+    13.8
+   ],
+   "C": [
+    13.8,
+    15.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D16",
+   "nome": "PIETRALATA TIBURTINO (V. FILIPPO MEDA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    12.4
+   ],
+   "A": [
+    4.1,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.0
+   ],
+   "C": [
+    9.0,
+    12.4
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D17",
+   "nome": "COLLATINO (VIA DELLA SERENISSIMA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    11.2
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    11.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D18",
+   "nome": "ALESSANDRINO (VIALE ALESSANDRINO)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    10.9
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D19",
+   "nome": "CINECITTA' DON BOSCO (P.ZZA S. GIOVANNI BOSCO)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    11.7
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    11.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D20",
+   "nome": "CINECITTA' LAMARO (VIA RAIMONDO SCINTU)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    10.5
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D21",
+   "nome": "APPIO CLAUDIO (V.LE GIULIO AGRICOLA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    12.2
+   ],
+   "A": [
+    4.1,
+    6.6
+   ],
+   "B": [
+    6.6,
+    9.4
+   ],
+   "C": [
+    9.4,
+    12.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D22",
+   "nome": "STATUARIO - CAPANNELLE (VIA DEL CALICE)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    3.8,
+    12.2
+   ],
+   "A": [
+    3.8,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    12.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D23",
+   "nome": "QUARTO MIGLIO (VIA APPIA PIGNATELLI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    7.0,
+    15.9
+   ],
+   "A": [
+    7.0,
+    9.7
+   ],
+   "B": [
+    9.7,
+    13.8
+   ],
+   "C": [
+    13.8,
+    15.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D24",
+   "nome": "PRIMAVALLE - TORREVECCHIA (VIA DI TORREVECCHIA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    3.5,
+    11.9
+   ],
+   "A": [
+    3.5,
+    6.6
+   ],
+   "B": [
+    6.6,
+    9.4
+   ],
+   "C": [
+    9.4,
+    11.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D26",
+   "nome": "SAN BASILIO (VIA POLLENZA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    10.5
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D27",
+   "nome": "TALENTI (VIA UGO OJETTI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    5.9,
+    13.7
+   ],
+   "A": [
+    5.9,
+    8.3
+   ],
+   "B": [
+    8.4,
+    11.9
+   ],
+   "C": [
+    11.9,
+    13.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D28",
+   "nome": "GIULIANO DALMATA (VIA MATTEO BARTOLI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    6.1,
+    13.7
+   ],
+   "A": [
+    6.1,
+    8.3
+   ],
+   "B": [
+    8.4,
+    11.9
+   ],
+   "C": [
+    11.9,
+    13.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D29",
+   "nome": "EUR (VIALE EUROPA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    7.0,
+    16.2
+   ],
+   "A": [
+    7.0,
+    10.5
+   ],
+   "B": [
+    10.6,
+    15.1
+   ],
+   "C": [
+    15.1,
+    16.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D30",
+   "nome": "TOMBA DI NERONE (VIA DI GROTTA ROSSA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    5.3,
+    12.8
+   ],
+   "A": [
+    5.3,
+    7.9
+   ],
+   "B": [
+    7.9,
+    11.3
+   ],
+   "C": [
+    11.3,
+    12.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D31",
+   "nome": "CASSIA DUE PONTI (VIA ORIOLO ROMANO)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    8.8,
+    14.5
+   ],
+   "A": [
+    8.8,
+    9.2
+   ],
+   "B": [
+    9.2,
+    13.1
+   ],
+   "C": [
+    13.1,
+    14.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D32",
+   "nome": "FONTE MERAVIGLIOSA - ARDEATINO MILLEVOI (VIA STEFANO GRADI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    6.1,
+    16.5
+   ],
+   "A": [
+    6.1,
+    9.8
+   ],
+   "B": [
+    9.8,
+    14.0
+   ],
+   "C": [
+    14.0,
+    16.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D34",
+   "nome": "MONTAGNOLA (VIA PICO DELLA MIRANDOLA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    6.4,
+    15.0
+   ],
+   "A": [
+    6.4,
+    9.2
+   ],
+   "B": [
+    9.2,
+    13.2
+   ],
+   "C": [
+    13.2,
+    15.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D36",
+   "nome": "GROTTAPERFETTA - ROMA 70 (VIALE ERMINIO SPALLA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    7.0,
+    16.0
+   ],
+   "A": [
+    7.0,
+    9.7
+   ],
+   "B": [
+    9.7,
+    13.8
+   ],
+   "C": [
+    13.8,
+    16.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D37",
+   "nome": "APPIA ANTICA (VIA DI TOR CARBONE)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    6.7,
+    15.5
+   ],
+   "A": [
+    6.7,
+    9.7
+   ],
+   "B": [
+    9.7,
+    13.8
+   ],
+   "C": [
+    13.8,
+    15.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D38",
+   "nome": "TINTORETTO (VIALE BALLARIN)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    7.0,
+    16.0
+   ],
+   "A": [
+    7.0,
+    9.7
+   ],
+   "B": [
+    9.7,
+    13.8
+   ],
+   "C": [
+    13.8,
+    16.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D45",
+   "nome": "PINETA SACCHETTI (VIA MATTIA BATTISTINI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    3.5,
+    12.2
+   ],
+   "A": [
+    3.5,
+    6.6
+   ],
+   "B": [
+    6.6,
+    9.4
+   ],
+   "C": [
+    9.4,
+    12.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D46",
+   "nome": "CONCA D'ORO (VIA VAL DI LANZO)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    5.3,
+    13.0
+   ],
+   "A": [
+    5.3,
+    7.9
+   ],
+   "B": [
+    7.9,
+    11.3
+   ],
+   "C": [
+    11.3,
+    13.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D47",
+   "nome": "SACCO PASTORE (VIA DI VAL TROMPIA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    5.3,
+    13.0
+   ],
+   "A": [
+    5.3,
+    7.9
+   ],
+   "B": [
+    7.9,
+    11.3
+   ],
+   "C": [
+    11.3,
+    13.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D48",
+   "nome": "PIETRALATA (VIA DI PIETRALATA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    11.9
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    11.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D49",
+   "nome": "CASAL BRUCIATO (VIA C. FACCHINETTI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    11.4
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    11.4
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D52",
+   "nome": "CASILINO VILLA DE SANTIS (VIA ROMOLO BALZANI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    10.5
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D53",
+   "nome": "QUADRARO (VIA DEI QUINTILI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.4,
+    11.7
+   ],
+   "A": [
+    4.4,
+    6.1
+   ],
+   "B": [
+    6.2,
+    8.8
+   ],
+   "C": [
+    8.8,
+    11.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D54",
+   "nome": "ARCO DI TRAVERTINO - TOR FISCALE (VIA DEMETRIADE)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    6.1,
+    13.1
+   ],
+   "A": [
+    6.1,
+    8.1
+   ],
+   "B": [
+    8.1,
+    11.6
+   ],
+   "C": [
+    11.6,
+    13.1
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D57",
+   "nome": "NOMENTANO KANT (VIALE KANT)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    11.0
+   ],
+   "A": [
+    4.1,
+    6.6
+   ],
+   "B": [
+    6.7,
+    9.5
+   ],
+   "C": [
+    9.5,
+    11.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D58",
+   "nome": "PODERE ROSA (VIA DIEGO FABBRI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    10.0
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D59",
+   "nome": "CASAL DEI PAZZI (VIA DI CASAL DEI PAZZI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    11.7
+   ],
+   "A": [
+    4.1,
+    6.6
+   ],
+   "B": [
+    6.7,
+    9.5
+   ],
+   "C": [
+    9.5,
+    11.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D61",
+   "nome": "COLLI ANIENE - VERDEROCCA (VIA GROTTA DI GREGNA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    10.0
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D63",
+   "nome": "TOR TRE TESTE (VIA DAVIDE CAMPARI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    10.0
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D64",
+   "nome": "TORRE SPACCATA (VIA DEI ROMANISTI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    10.5
+   ],
+   "A": [
+    4.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D66",
+   "nome": "TORRACCIA DI SAN BASILIO (VIA DONATO MENICHELLA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.3,
+    11.0
+   ],
+   "A": [
+    4.3,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    11.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D68",
+   "nome": "CORTINA D'AMPEZZO (VIA CORTINA D'AMPEZZO)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    8.8,
+    15.0
+   ],
+   "A": [
+    8.8,
+    11.0
+   ],
+   "B": [
+    11.0,
+    14.0
+   ],
+   "C": [
+    14.0,
+    15.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D69",
+   "nome": "MONTE MARIO ALTO (VIA AUGUSTO CONTI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    8.8,
+    16.4
+   ],
+   "A": [
+    8.8,
+    11.0
+   ],
+   "B": [
+    11.0,
+    15.0
+   ],
+   "C": [
+    15.0,
+    16.4
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D70",
+   "nome": "PORTUENSE AFFOGALASINO (VIA AFFOGALASINO)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.4,
+    13.7
+   ],
+   "A": [
+    4.4,
+    7.0
+   ],
+   "B": [
+    7.0,
+    10.0
+   ],
+   "C": [
+    10.0,
+    13.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D71",
+   "nome": "NUOVO SALARIO PRATI FISCALI (VIA MONTE CERVIALTO)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    5.0,
+    13.4
+   ],
+   "A": [
+    5.0,
+    8.2
+   ],
+   "B": [
+    8.2,
+    11.7
+   ],
+   "C": [
+    11.7,
+    13.4
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D72",
+   "nome": "CORVIALE (VIA MARINO MAZZACURATI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.4,
+    9.1
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    8.0
+   ],
+   "C": [
+    8.0,
+    9.1
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D73",
+   "nome": "CASETTA MATTEI (VIA DEGLI ADIMARI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.4,
+    10.5
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.0
+   ],
+   "C": [
+    9.1,
+    10.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D74",
+   "nome": "TRULLO (VIA MONTE DELLE CAPRE)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    10.7
+   ],
+   "A": [
+    4.1,
+    6.1
+   ],
+   "B": [
+    6.2,
+    8.8
+   ],
+   "C": [
+    8.8,
+    10.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D75",
+   "nome": "BOSCO DEGLI ARVALI (VIA DI GENEROSA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    9.3
+   ],
+   "A": [
+    4.1,
+    6.1
+   ],
+   "B": [
+    6.2,
+    8.8
+   ],
+   "C": [
+    8.8,
+    9.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D76",
+   "nome": "PISANA - BRAVETTA (VIA DEI GONZAGA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.1,
+    10.7
+   ],
+   "A": [
+    4.1,
+    6.1
+   ],
+   "B": [
+    6.2,
+    8.8
+   ],
+   "C": [
+    8.8,
+    10.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D77",
+   "nome": "AURELIO VAL CANNUTA (VIA DI VAL CANNUTA)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    6.1,
+    13.1
+   ],
+   "A": [
+    6.1,
+    8.2
+   ],
+   "B": [
+    8.2,
+    11.8
+   ],
+   "C": [
+    11.8,
+    13.1
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D78",
+   "nome": "FERRATELLA (VIALE CESARE PAVESE)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    7.0,
+    15.0
+   ],
+   "A": [
+    7.0,
+    9.4
+   ],
+   "B": [
+    9.5,
+    13.5
+   ],
+   "C": [
+    13.5,
+    15.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D79",
+   "nome": "TORRINO SUD (VIA DEL FIUME GIALLO)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    6.1,
+    11.7
+   ],
+   "A": [
+    6.1,
+    7.9
+   ],
+   "B": [
+    7.9,
+    11.3
+   ],
+   "C": [
+    11.3,
+    11.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D80",
+   "nome": "TORRINO NORD - CITTA' D'EUROPA (VIA DELLE COSTELLAZIONI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    6.1,
+    15.2
+   ],
+   "A": [
+    6.1,
+    7.9
+   ],
+   "B": [
+    7.9,
+    11.3
+   ],
+   "C": [
+    11.3,
+    15.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D81",
+   "nome": "DECIMA (VIALE CAMILLO SABATINI)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    6.1,
+    11.3
+   ],
+   "A": [
+    6.1,
+    7.9
+   ],
+   "B": [
+    7.9,
+    10.0
+   ],
+   "C": [
+    10.0,
+    11.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "D82",
+   "nome": "MOSTACCIANO (VIALE BEATA VERGINE DEL CARMELO)",
+   "macrozona": "Semicentrale - periferica",
+   "oscillazione": [
+    4.4,
+    11.4
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    11.4
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E3",
+   "nome": "TORRE MAURA (VIA WALTER TOBAGI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    10.3
+   ],
+   "A": [
+    3.5,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E7",
+   "nome": "TORRESINA - MONTE DEL MARMO (VIA DEL PODERE DI SAN GIUSTO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    10.9
+   ],
+   "A": [
+    3.5,
+    5.7
+   ],
+   "B": [
+    5.7,
+    8.2
+   ],
+   "C": [
+    8.2,
+    10.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E8",
+   "nome": "MONTESPACCATO (VIA CORNELIA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    6.1,
+    12.0
+   ],
+   "A": [
+    6.1,
+    7.6
+   ],
+   "B": [
+    7.6,
+    10.8
+   ],
+   "C": [
+    10.8,
+    12.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E9",
+   "nome": "TOR CERVARA - PONTE MAMMOLO (VIA VANNINA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.7
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E10",
+   "nome": "MORENA-CASAL MORENA (VIA CASAL MORENA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    9.5
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    9.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E11",
+   "nome": "GIARDINETTI (VIA MARCANTONIO RAIMONDI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    9.8
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    9.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E12",
+   "nome": "CASALOTTI (PIAZZA ORMEA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    11.2
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    11.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E13",
+   "nome": "FONTE OSTIENSE (VIA IGNAZIO SILONE)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    11.4
+   ],
+   "A": [
+    3.5,
+    5.6
+   ],
+   "B": [
+    5.6,
+    8.1
+   ],
+   "C": [
+    8.1,
+    11.4
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E14",
+   "nome": "TOR SAPIENZA - ZONA INDUSTRIALE VIA DELL'OMO (VIALE GIORGIO DE CHIRICO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.9
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E15",
+   "nome": "TORRE ANGELA (VIA DEL TORRACCIO DI TORRENOVA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    9.5
+   ],
+   "A": [
+    3.5,
+    5.6
+   ],
+   "B": [
+    5.6,
+    8.1
+   ],
+   "C": [
+    8.1,
+    9.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E16",
+   "nome": "CASTEL GIUBILEO - BEL POGGIO (VIA CASTORANO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.7
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E17",
+   "nome": "OTTAVIA PALMAROLA (VIA DELLA PALMAROLA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    10.7
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    10.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E18",
+   "nome": "GROTTAROSSA - SAXA RUBRA (VIA CARLO EMERY)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    13.8
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    13.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E19",
+   "nome": "BORGHESIANA - FINOCCHIO (VIA DI BORGHESIANA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    8.8
+   ],
+   "A": [
+    3.5,
+    5.6
+   ],
+   "B": [
+    5.6,
+    8.1
+   ],
+   "C": [
+    8.1,
+    8.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E21",
+   "nome": "SPINACETO - TOR DE CENCI (VIALE DEGLI EROI DI CEFALONIA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.0
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E22",
+   "nome": "ACQUA VERGINE (PRATO FIORITO - COLLE PRENESTINO, MONFORTANI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    9.5
+   ],
+   "A": [
+    3.5,
+    5.6
+   ],
+   "B": [
+    5.6,
+    8.1
+   ],
+   "C": [
+    8.1,
+    9.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E23",
+   "nome": "SETTECAMINI CASE ROSSE (VIA DELLE CASE ROSSE)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    9.0
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    9.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E24",
+   "nome": "LA GIUSTINIANA (VIA ITALO PICCAGLI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.9
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E25",
+   "nome": "PRIMA PORTA (VIA DELLA VILLA DI LIVIA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    9.5
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    9.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E26",
+   "nome": "LA STORTA (VIA DELLA TORRE DI PIZZICHINO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.3
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E27",
+   "nome": "LABARO (VIA GEMONA DEL FRIULI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.0
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E28",
+   "nome": "TORRE GAIA - VILLAGGIO BREDA (VIA DI GROTTE CELONI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.8,
+    9.0
+   ],
+   "A": [
+    3.8,
+    5.6
+   ],
+   "B": [
+    5.6,
+    8.0
+   ],
+   "C": [
+    8.0,
+    9.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E30",
+   "nome": "CASAL PALOCCO (VIALE GORGIA DI LEONTINI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    6.1,
+    12.3
+   ],
+   "A": [
+    6.1,
+    7.9
+   ],
+   "B": [
+    7.9,
+    11.3
+   ],
+   "C": [
+    11.3,
+    12.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E31",
+   "nome": "ACILIA NORD (VIA DEI MONTI DI SAN PAOLO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.1,
+    10.0
+   ],
+   "A": [
+    4.1,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E32",
+   "nome": "OSTIA ANTICA (VIA DEL CASTELLO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.0
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.0
+   ],
+   "C": [
+    9.0,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E33",
+   "nome": "ACILIA SUD (VIA DI PRATO CORNELIO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.1,
+    10.9
+   ],
+   "A": [
+    4.1,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E34",
+   "nome": "OSTIA (VIA DELLE BALENIERE)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.5
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.5
+   ],
+   "pregio": false,
+   "sostituita_da": [
+    "E341",
+    "E342"
+   ]
+  },
+  {
+   "codice": "E38",
+   "nome": "ARDEATINA SELVOTTA - SPREGAMORE (VIA DEL FOSSO DELLA SOLFATARA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.0
+   ],
+   "A": [
+    4.4,
+    6.2
+   ],
+   "B": [
+    6.2,
+    8.8
+   ],
+   "C": [
+    8.8,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E39",
+   "nome": "CASTEL DI DECIMA - CASTEL ROMANO (VIA NAZZARENO STRAMPELLI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.0
+   ],
+   "A": [
+    4.4,
+    6.2
+   ],
+   "B": [
+    6.2,
+    8.8
+   ],
+   "C": [
+    8.8,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E40",
+   "nome": "COLLE SALARIO (VIA MONTE GIBERTO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    12.8
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    12.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E41",
+   "nome": "FIDENE - VILLA SPADA (VIA RADICOFANI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.7
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E42",
+   "nome": "SERPENTARA (VIALE LINA CAVALIERI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    5.0,
+    10.5
+   ],
+   "A": [
+    5.0,
+    7.9
+   ],
+   "B": [
+    7.9,
+    9.5
+   ],
+   "C": [
+    9.5,
+    10.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E47",
+   "nome": "VIGNE NUOVE - PORTA DI ROMA (VIA DELLE VIGNE NUOVE)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.7,
+    13.1
+   ],
+   "A": [
+    4.7,
+    6.6
+   ],
+   "B": [
+    6.6,
+    9.4
+   ],
+   "C": [
+    9.4,
+    13.1
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E49",
+   "nome": "OSTERIA DEL CURATO - LUCREZIA ROMANA (VIA DELLE CAPANNELLE)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    12.2
+   ],
+   "A": [
+    3.5,
+    5.6
+   ],
+   "B": [
+    5.6,
+    8.1
+   ],
+   "C": [
+    8.1,
+    12.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E50",
+   "nome": "SETTEBAGNI (VIA S. ANTONIO DA PADOVA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.0
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E51",
+   "nome": "CASAL BOCCONE BUFALOTTA (VIA PAOLO MONELLI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    13.1
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    13.1
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E53",
+   "nome": "PONTE DI NONA (VIA LUIGI GASTINELLI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    9.8
+   ],
+   "A": [
+    3.5,
+    5.6
+   ],
+   "B": [
+    5.6,
+    8.1
+   ],
+   "C": [
+    8.1,
+    9.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E61",
+   "nome": "TORRICOLA (VIA DI TORRICOLA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    15.5
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    15.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E62",
+   "nome": "TRIGORIA (VIA DI TRIGORIA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.9
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E64",
+   "nome": "SANTA PALOMBA - PIAN SAVELLI (VIA DELLA STAZIONE DI PAVONA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    8.0
+   ],
+   "A": [
+    3.5,
+    5.2
+   ],
+   "B": [
+    5.3,
+    7.5
+   ],
+   "C": [
+    7.5,
+    8.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E65",
+   "nome": "FIORANELLO (VIA DI FIORANELLO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.9
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E66",
+   "nome": "VALLERANO (VIA DI VALLERANELLO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    12.6
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    12.6
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E71",
+   "nome": "PIANA DEL SOLE - FIERA DI ROMA (VIA CRISTOFORO SABBADINO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    10.0
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E72",
+   "nome": "CASTEL DI GUIDO - MALAGROTTA (VIA DI CASTEL DI GUIDO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    5.1,
+    9.0
+   ],
+   "A": [
+    5.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    7.8
+   ],
+   "C": [
+    7.8,
+    9.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E73",
+   "nome": "MASSIMINA - CASAL LUMBROSO (VIA MASSIMILLA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    5.1,
+    9.5
+   ],
+   "A": [
+    5.1,
+    6.7
+   ],
+   "B": [
+    6.7,
+    8.2
+   ],
+   "C": [
+    8.2,
+    9.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E75",
+   "nome": "CECCHIGNOLA - TOR PAGNOTTA (VIA DELLA CECCHIGNOLA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    6.1,
+    12.3
+   ],
+   "A": [
+    6.1,
+    7.6
+   ],
+   "B": [
+    7.6,
+    10.8
+   ],
+   "C": [
+    10.8,
+    12.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E77",
+   "nome": "CESANO (VIA DI BACCANELLO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    9.5
+   ],
+   "A": [
+    4.4,
+    5.9
+   ],
+   "B": [
+    6.0,
+    8.5
+   ],
+   "C": [
+    8.5,
+    9.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E78",
+   "nome": "ISOLA FARNESE (VIA CERQUETTA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.3,
+    9.2
+   ],
+   "A": [
+    4.3,
+    5.7
+   ],
+   "B": [
+    5.7,
+    8.2
+   ],
+   "C": [
+    8.2,
+    9.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E79",
+   "nome": "OSTERIA NUOVA - CASACCIA (VIA ANGUILLARESE)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    7.8
+   ],
+   "A": [
+    4.4,
+    4.8
+   ],
+   "B": [
+    4.8,
+    6.8
+   ],
+   "C": [
+    6.8,
+    7.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E81",
+   "nome": "VITINIA (VIA SARSINA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    5.1,
+    10.3
+   ],
+   "A": [
+    5.1,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.2
+   ],
+   "C": [
+    9.2,
+    10.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E83",
+   "nome": "ACILIA NUOVA - MADONNETTA (VIA BEPI ROMAGNONI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    6.0,
+    10.9
+   ],
+   "A": [
+    6.0,
+    6.8
+   ],
+   "B": [
+    6.8,
+    9.8
+   ],
+   "C": [
+    9.8,
+    10.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E84",
+   "nome": "AXA (VIA ARISTOFANE)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    7.2,
+    11.2
+   ],
+   "A": [
+    7.2,
+    7.0
+   ],
+   "B": [
+    7.0,
+    10.0
+   ],
+   "C": [
+    10.0,
+    11.2
+   ],
+   "pregio": false,
+   "avviso": "Nella tabella dell'accordo la fascia A di questa zona va da 7,20 a 7,00 (minimo più alto del massimo)."
+  },
+  {
+   "codice": "E87",
+   "nome": "DRAGONCELLO (VIALE A. RUSPOLI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    5.1,
+    9.5
+   ],
+   "A": [
+    5.1,
+    5.9
+   ],
+   "B": [
+    6.0,
+    8.5
+   ],
+   "C": [
+    8.5,
+    9.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E88",
+   "nome": "DRAGONA (VIA DI DRAGONE)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    6.0,
+    11.2
+   ],
+   "A": [
+    6.0,
+    7.0
+   ],
+   "B": [
+    7.0,
+    10.0
+   ],
+   "C": [
+    10.0,
+    11.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E89",
+   "nome": "TIBERINA - MALBORGHETTO (VIA MALBORGHETTO - TIBERINA KM. 7)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.1,
+    7.6
+   ],
+   "A": [
+    4.1,
+    4.8
+   ],
+   "B": [
+    4.8,
+    6.8
+   ],
+   "C": [
+    6.8,
+    7.6
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E92",
+   "nome": "STAGNI DI OSTIA - LONGARINA (VIA FEDERICO BAZZINI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    5.5,
+    10.5
+   ],
+   "A": [
+    5.5,
+    6.8
+   ],
+   "B": [
+    6.8,
+    9.8
+   ],
+   "C": [
+    9.8,
+    10.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E94",
+   "nome": "INFERNETTO (VIA ERMANNO WOLF FERRARI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    5.5,
+    11.2
+   ],
+   "A": [
+    5.5,
+    7.1
+   ],
+   "B": [
+    7.1,
+    10.2
+   ],
+   "C": [
+    10.2,
+    11.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E96",
+   "nome": "SANTA CORNELIA (VIA DEL FOSSO DI MONTE OLIVIERO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.7,
+    9.0
+   ],
+   "A": [
+    4.7,
+    5.6
+   ],
+   "B": [
+    5.7,
+    8.1
+   ],
+   "C": [
+    8.1,
+    9.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E97",
+   "nome": "OLGIATA (LARGO DELL'OLGIATA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    7.1,
+    13.5
+   ],
+   "A": [
+    7.1,
+    8.9
+   ],
+   "B": [
+    8.9,
+    12.5
+   ],
+   "C": [
+    12.5,
+    13.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E98",
+   "nome": "MURATELLA (VIALE GAETANO ARTURO CROCCO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    6.0,
+    10.3
+   ],
+   "A": [
+    6.0,
+    6.4
+   ],
+   "B": [
+    6.4,
+    9.2
+   ],
+   "C": [
+    9.2,
+    10.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E101",
+   "nome": "CASAL MONASTERO (VIA DEL MONTE IN SABINA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.3
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E105",
+   "nome": "BOCCEA - QUARTACCIO (VIA ANDERSEN)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    11.7
+   ],
+   "A": [
+    3.5,
+    5.7
+   ],
+   "B": [
+    5.7,
+    8.2
+   ],
+   "C": [
+    8.2,
+    11.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E113",
+   "nome": "CASALOTTI - SELVA CANDIDA (VIA DI SELVA NERA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    10.7
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    10.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E114",
+   "nome": "OTTAVIA - LUCCHINA (VIA DELLA LUCCHINA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    10.3
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    10.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E115",
+   "nome": "SETTECAMINI (VIA RUBELLIA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    9.8
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    9.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E123",
+   "nome": "LA CINQUINA - BUFALOTTA (VIA FEO BELCARI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.0
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E125",
+   "nome": "CASALOTTI - PANTAN MONASTERO (VIA DI CASAL SELCE)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    9.0
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.5
+   ],
+   "C": [
+    7.8,
+    9.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E127",
+   "nome": "CASILINO - DUE TORRI - VILLAVERDE (VIA DEGAS)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.8,
+    9.0
+   ],
+   "A": [
+    3.8,
+    5.7
+   ],
+   "B": [
+    5.7,
+    8.0
+   ],
+   "C": [
+    8.0,
+    9.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E128",
+   "nome": "VERMICINO (VIA DEL CASALE ANTONIONI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.8,
+    9.8
+   ],
+   "A": [
+    3.8,
+    5.7
+   ],
+   "B": [
+    5.7,
+    8.2
+   ],
+   "C": [
+    8.2,
+    9.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E132",
+   "nome": "LA RUSTICA (VIA ACHILLE VERTUNNI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.5
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E138",
+   "nome": "TOR BELLA MONACA PEEP (VIA DELL'ARCHEOLOGIA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    9.3
+   ],
+   "A": [
+    3.5,
+    5.6
+   ],
+   "B": [
+    5.6,
+    8.1
+   ],
+   "C": [
+    8.1,
+    9.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E139",
+   "nome": "TOR BELLA MONACA - VALLE FIORITA - DUE LEONI (ACQUARONI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    9.0
+   ],
+   "A": [
+    3.5,
+    5.6
+   ],
+   "B": [
+    5.6,
+    8.1
+   ],
+   "C": [
+    8.1,
+    9.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E140",
+   "nome": "TORRENOVA (VIA DELLA TENUTA DI TORRENOVA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    9.5
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    9.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E141",
+   "nome": "CINECITTA' EST (VIALE ANTONIO CIAMARRA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    11.2
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    11.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E143",
+   "nome": "TOR VERGATA UNIVERSITA' - PASSO LOMBARDO (VIA DI PASSO LOMBARDO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.8,
+    11.4
+   ],
+   "A": [
+    3.8,
+    5.7
+   ],
+   "B": [
+    5.7,
+    8.2
+   ],
+   "C": [
+    8.2,
+    11.4
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E144",
+   "nome": "ROMANINA (VIA SCIMONELLI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    11.2
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    11.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E145",
+   "nome": "ANAGNINA VALLE MARCIANA - FOSSO SANT'ANDREA (VIA DEL FOSSO DI SANT'ANDREA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    10.5
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    8.5
+   ],
+   "C": [
+    8.5,
+    10.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E146",
+   "nome": "MORENA GASPERINA (VIA CROPANI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    10.9
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    10.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E147",
+   "nome": "GREGNA SANT'ANDREA (VIA PIETRO CROSTAROSA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    11.2
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    11.2
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E156",
+   "nome": "PISANA - PONTE GALERIA (VIA ETTORE SCANDALE, VIA USINI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    8.5
+   ],
+   "A": [
+    3.5,
+    5.2
+   ],
+   "B": [
+    5.3,
+    7.5
+   ],
+   "C": [
+    7.5,
+    8.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E157",
+   "nome": "CASTEL DI LEVA (VIA DI TOR CHIESACCIA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.9
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E158",
+   "nome": "DIVINO AMORE - FALCOGNANA (VIA DEI CASALI DI PORTA MEDAGLIA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    9.8
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.0
+   ],
+   "C": [
+    9.0,
+    9.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E159",
+   "nome": "LA STORTA CASALE SAN NICOLA (VIA G.B. PARAVIA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.0
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.0
+   ],
+   "C": [
+    9.0,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E160",
+   "nome": "TRAGLIATELLA (VIA PIOSSASCO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.2,
+    7.5
+   ],
+   "A": [
+    3.2,
+    4.2
+   ],
+   "B": [
+    4.2,
+    6.0
+   ],
+   "C": [
+    6.0,
+    7.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E162",
+   "nome": "VALLE MURICANA - MONTE PIETRA PERTUSA (VIA DI VALLE MURICANA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.0
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.0
+   ],
+   "C": [
+    9.0,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E165",
+   "nome": "LUNGHEZZA - CASTELVERDE - FOSSO SAN GIULIANO (VIA DEL FOSSO DELL'OSA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    9.5
+   ],
+   "A": [
+    3.5,
+    5.6
+   ],
+   "B": [
+    5.6,
+    8.1
+   ],
+   "C": [
+    8.1,
+    9.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E166",
+   "nome": "CORCOLLE SAN VITTORINO",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    8.5
+   ],
+   "A": [
+    3.5,
+    5.2
+   ],
+   "B": [
+    5.3,
+    7.5
+   ],
+   "C": [
+    7.5,
+    8.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E168",
+   "nome": "PRENESTINO COLLE DEL SOLE - LAGO REGILLO (VIA OLLOLAI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    8.5
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.8
+   ],
+   "C": [
+    7.8,
+    8.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E170",
+   "nome": "COLLE MATTIA - FONTANA CANDIDA (VIA DEL CASALE CIMINELLI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.3,
+    8.8
+   ],
+   "A": [
+    4.3,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    8.8
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E171",
+   "nome": "CASALOTTI - VALLE SANTA",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    8.6
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    8.6
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E179",
+   "nome": "ROMANINA TOR VERGATA (VIA BERNARDINO ALIMENA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    3.5,
+    10.7
+   ],
+   "A": [
+    3.5,
+    5.5
+   ],
+   "B": [
+    5.5,
+    7.9
+   ],
+   "C": [
+    7.9,
+    10.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E181",
+   "nome": "PARCO DI VEIO PRATO DELLA CORTE (VIA FORMELLESE)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    5.1,
+    10.0
+   ],
+   "A": [
+    5.1,
+    6.2
+   ],
+   "B": [
+    6.2,
+    8.9
+   ],
+   "C": [
+    8.9,
+    10.0
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E184",
+   "nome": "MEZZOCAMMINO (VIA DI MEZZOCAMMINO)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    6.8,
+    13.3
+   ],
+   "A": [
+    6.8,
+    8.3
+   ],
+   "B": [
+    8.3,
+    11.9
+   ],
+   "C": [
+    11.9,
+    13.3
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E185",
+   "nome": "FONTE LAURENTINA (VIA EDOARDO AMALDI)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    11.9
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    11.9
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E341",
+   "nome": "OSTIA LEVANTE",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.5
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.5
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "E342",
+   "nome": "OSTIA PONENTE",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.5
+   ],
+   "A": [
+    4.0,
+    5.7
+   ],
+   "B": [
+    5.7,
+    8.2
+   ],
+   "C": [
+    8.2,
+    9.5
+   ],
+   "pregio": false,
+   "avviso": "Nella tabella dell'accordo l'oscillazione di questa zona è 4,40 - 10,50, ma le fasce vanno da 4,00 a 9,50."
+  },
+  {
+   "codice": "R7",
+   "nome": "RISERVA DELLA MARCIGLIANA (VIA DI SANTA COLOMBA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.4,
+    10.7
+   ],
+   "A": [
+    4.4,
+    6.3
+   ],
+   "B": [
+    6.3,
+    9.1
+   ],
+   "C": [
+    9.1,
+    10.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "R9",
+   "nome": "AGRO ROMANO OVEST (VIA SANTA MARIA DI GALERIA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.1,
+    6.7
+   ],
+   "A": [
+    4.1,
+    5.4
+   ],
+   "B": [
+    5.4,
+    6.0
+   ],
+   "C": [
+    6.0,
+    6.7
+   ],
+   "pregio": false
+  },
+  {
+   "codice": "R40",
+   "nome": "SANTA MARIA DI GALERIA (VIA DI SANTA MARIA DI GALERIA)",
+   "macrozona": "Periferica - suburbana",
+   "oscillazione": [
+    4.3,
+    7.1
+   ],
+   "A": [
+    4.3,
+    5.6
+   ],
+   "B": [
+    5.6,
+    6.2
+   ],
+   "C": [
+    6.2,
+    7.1
+   ],
+   "pregio": false
+  }
+ ]
+}

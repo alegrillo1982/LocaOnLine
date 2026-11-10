@@ -1,0 +1,6 @@
+Carlito (Regular e Bold), in versione ridotta all'alfabeto latino.
+Carattere di Lukasz Dziedzic (tyPoland), con le stesse misure di Calibri.
+Distribuito con la licenza SIL Open Font License, versione 1.1:
+https://openfontlicense.org
+Il nome del carattere ridotto resta "Carlito" come consentito per le versioni
+ridotte (subset) incorporate nei documenti.

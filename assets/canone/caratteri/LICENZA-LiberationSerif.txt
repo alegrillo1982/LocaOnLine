@@ -1,0 +1,4 @@
+Liberation Serif (Regular e Bold), in versione ridotta all'alfabeto latino.
+Carattere con le stesse misure di Times New Roman, di Red Hat, Inc.
+Distribuito con la licenza SIL Open Font License, versione 1.1:
+https://openfontlicense.org
