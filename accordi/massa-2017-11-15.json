@@ -1,0 +1,139 @@
+{
+ "accordo": {
+  "codice": "massa-2017-11-15",
+  "modello": "massa-2017",
+  "comune": "Massa",
+  "provincia": "MS",
+  "titolo": "Accordo territoriale sulle locazioni abitative applicabile nel Comune di Massa",
+  "data": "2017-11-15",
+  "data_testo": "15 novembre 2017",
+  "deposito": "Comune di Massa",
+  "deposito_data": "07.12.2017",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Massa del 15 novembre 2017, depositato il 7 dicembre 2017.</strong> Durava tre anni dal deposito, ma resta in vigore fino alla firma di un nuovo accordo (art. 2): il Comune lo indica ancora come l'ultimo accordo, con nuove adesioni fino a gennaio 2026. I valori della tabella non si aggiornano con l'ISTAT. Tutto il Comune è una zona unica.",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA - Associazione della Proprietà Edilizia della Provincia di Massa Carrara",
+   "U.P.P.I. Massa Carrara"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A. Massa Carrara",
+   "S.I.C.E.T. Massa Carrara",
+   "U.N.I.A.T. Massa Carrara",
+   "Unione Inquilini Massa Carrara"
+  ],
+  "nota": "Sottoscritto il 15/11/2017 e depositato al Comune di Massa il 07/12/2017 (pagina del Comune «Accordo territoriale locazioni di immobili a canone agevolato»; il protocollo non si legge sulla copia pubblicata). Sostituisce l'accordo del 27/09/2008 (depositato il 13/10/2008). Durata tre anni dal giorno dopo il deposito, poi resta in vigore fino al nuovo accordo (art. 2). Adesioni successive comunicate dal Comune: A.N.P.U. il 19/10/2022, APPC il 02/07/2024, UNSICASA l'08/01/2026; la stessa pagina elenca fra le organizzazioni anche ASPPI, Confabitare, Confappi e Sai Cisal. Tutto il territorio comunale è una zona unica (art. 3 e 17); valori in euro al mq convenzionale al mese per tre tipologie: A da 2,00 a 9,00, B da 2,00 a 7,50, C da 2,00 a 4,50 (art. 17). Correttivi della superficie per gli alloggi piccoli e grandi (art. 6), arredo fino al 30%, durata 4/5/6 anni +5/7,5/10%, transitori +5%, studenti fino al 10%; le maggiorazioni si applicano in modo progressivo, una sopra l'altra (art. 8). Nessun aggiornamento ISTAT dei valori previsto. A ottobre 2025 il Comune ha annunciato, fra le azioni di un progetto regionale sull'abitare, un futuro aggiornamento degli accordi della Zona Apuane (agevolazioni IMU per gli enti del Terzo Settore): non ancora firmato.",
+  "fonte": "Comune di Massa, pagina «Accordo territoriale locazioni di immobili a canone agevolato» (Servizio Politiche per la Casa): testo firmato in scansione (12 pagine, caricato a febbraio 2026), attestazioni unilaterale e bilaterale di rispondenza, allegati A-E (contratti tipo, oneri accessori, negoziazione paritetica del D.M. 16/01/2017). Lo stesso testo è pubblicato da SUNIA e UPPI («COMUNE-DI-MASSA-MS-07-12-17.pdf», «Accordo-Massa-07-12-17-1.pdf»)."
+ },
+ "esempio_zona": "zona unica: tutto il Comune",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "unica",
+    "nome": "Comune di Massa - zona unica",
+    "nota": "Tutto il territorio del Comune di Massa è una zona unica (art. 3 e art. 17). Valori in euro al mq convenzionale al mese: tipologia A da 2,00 a 9,00, B da 2,00 a 7,50, C da 2,00 a 4,50.",
+    "fasce": [
+     [2.0, 4.5],
+     [2.0, 7.5],
+     [2.0, 9.0]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": ["C", "B", "A"],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [{ "da": 0, "a": 4, "n": 4 }],
+    [{ "da": 0, "a": 14, "tutti": true }]
+   ],
+   "conta": { "da": 0, "a": 4 },
+   "nota": "Tipologia B: riscaldamento, bagno, impianto idrico, impianto elettrico e infissi (1-5), oltre ad ascensore e citofono. Tipologia C: mancano almeno due fra 1-5 (ascensore e citofono non contano). Tipologia A: tutto l'elenco, da 1 a 15 (art. 5)",
+   "nota_pdf": "Tipologia B: elementi 1-7. Tipologia C: mancano almeno due fra 1-5. Tipologia A: tutti gli elementi da 1 a 15 (art. 5)."
+  },
+  "titoli_elementi": [
+   { "da": 0, "titolo": "Tipologia B: caratteristiche di base (se ne mancano due o più fra 1 e 5 è tipologia C)" },
+   { "da": 7, "titolo": "Tipologia A: servono anche tutti questi requisiti" }
+  ],
+  "elementi": [
+   { "testo": "Riscaldamento completo di tutti gli elementi radianti, efficiente e a norma" },
+   { "testo": "Bagno principale con almeno quattro apparecchi, con finestra o aerazione forzata" },
+   { "testo": "Impianto idrico idoneo ed efficiente" },
+   { "testo": "Impianto elettrico a norma e certificato" },
+   { "testo": "Infissi efficienti, a tenuta contro pioggia e vento" },
+   { "testo": "Ascensore, se l'alloggio è oltre il secondo piano (se è più in basso, segna comunque)" },
+   { "testo": "Citofono con apriporta efficiente" },
+   { "testo": "Costruito negli ultimi 15 anni con abitabilità (non edilizia sovvenzionata), oppure ristrutturato da meno di 15 anni rifacendo impianto elettrico, idrico, sanitario e infissi esterni" },
+   { "testo": "Caldaia con non più di 10 anni" },
+   { "testo": "Impianto elettrico realizzato dopo la legge 46/90, completamente a norma e certificato" },
+   { "testo": "Ambienti a norma dei regolamenti edilizi e d'igiene" },
+   { "testo": "Aria condizionata in tutti i locali, esclusi i servizi" },
+   { "testo": "Rifiniture di buona fattura o di particolare pregio, perfettamente efficienti" },
+   { "testo": "Doppi servizi, con il secondo bagno di almeno tre apparecchi" },
+   { "testo": "Parcheggio a uso esclusivo (accatastato o condominiale), effettivamente disponibile" }
+  ],
+  "superficie": {
+   "base": "Superficie utile interna calpestabile (senza muri e parti alte meno di 2,40 m)",
+   "correzioni": [
+    { "fino": 45, "incluso": true, "perc": 30, "tetto": 45 },
+    { "fino": 60, "incluso": true, "perc": 20, "tetto": 60 },
+    { "fino": 70, "incluso": true, "perc": 10, "tetto": 70 }
+   ],
+   "grandi": { "oltre": 110, "riduzione": 10 },
+   "voci": [
+    { "chiave": "box", "testo": "Autorimessa singola (box auto)", "coeff": 0.5 },
+    { "chiave": "attico", "testo": "Lastrico solare esclusivo all'attico (25% fino ai mq dell'alloggio, poi 5%)", "coeff": 0.25, "scaglione": ["base", 0.25, 0.05] },
+    { "chiave": "posto_coperto", "testo": "Posto auto assegnato in autorimessa comune coperta", "coeff": 0.25 },
+    { "chiave": "posto_scoperto", "testo": "Posto auto assegnato in spazio comune scoperto", "coeff": 0.2 },
+    { "chiave": "balconi", "testo": "Balconi, terrazze, lastrici solari non all'attico, cantine", "coeff": 0.25 },
+    { "chiave": "scoperte", "testo": "Corti e giardini a uso esclusivo (10% fino ai mq dell'alloggio, poi 2%)", "coeff": 0.1, "scaglione": ["base", 0.1, 0.02] }
+   ],
+   "nota": "Misura la superficie interna calpestabile, comprese le soglie di porte e finestre, senza muri e senza le parti alte meno di 2,40 m. Le pertinenze contano in percentuale (art. 3). Per gli alloggi piccoli la superficie dell'alloggio si può aumentare: fino a 45 mq del 30%, fino a 60 mq del 20%, fino a 70 mq del 10%, ma senza superare 45, 60 o 70 mq; dai 110 mq in su si riduce del 10%, senza scendere sotto 110 mq (art. 6)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento funzionale ed efficiente (serve un elenco degli arredi firmato e consegnato all'inquilino)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     { "valore": "tutti", "testo": "arredo idoneo in ogni vano (cucina, soggiorno, camere)", "perc": 30 },
+     { "valore": "tre_quarti", "testo": "arredati 3/4 dei vani, cucina compresa", "perc": 15 },
+     { "valore": "meta", "testo": "arredata metà dei vani", "perc": 10 }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Le percentuali sono massimi («fino a») e si applicano una sopra l'altra, non sommate (art. 8): arredo fino a +30% (3/4 dei vani +15%, metà +10%), durata 4/5/6 anni +5/7,5/10%, transitori +5% sul minimo e sul massimo, studenti fino a +10%. Per le stanze di un alloggio (porzione) il canone dell'intero si divide in proporzione alla superficie a uso esclusivo, con la quota delle parti comuni, e non si applicano altre maggiorazioni (art. 9).",
+  "durata": { "4": 5, "5": 7.5, "6": 10 },
+  "contratto": { "transitorio": 5, "studenti": 10 },
+  "combinazione": "prodotto",
+  "avvisi": [
+   {
+    "fascia": [4],
+    "testo": "Manca una sola delle caratteristiche 1-5: il testo chiede «tutte» le caratteristiche per la tipologia B, ma la C scatta solo quando ne mancano almeno due. Qui si applica la B: fai confermare all'associazione che attesta il contratto."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato all'Accordo (art. 16)",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale sulle locazioni abitative applicabile nel Comune di Massa (MS), sottoscritto il 15/11/2017 e depositato il 07/12/2017",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Accordo territoriale",
+  "titolo_elementi": "ELEMENTI E PARAMETRI OGGETTIVI",
+  "dichiarazione": "Il dichiarante, nella qualità di locatore/conduttore dell'immobile, ha presentato richiesta per l'attestazione ex D.M. 16/01/2017, dichiarando, sotto la sua responsabilità, gli elementi sopra riportati.",
+  "firme": ["Parte locatrice", "Parte conduttrice"],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "TUTTO CIÒ PREMESSO, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Massa depositato il 07/12/2017, in persona di ……………………………, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Massa, depositato in data 07/12/2017."
+  ],
+  "firme_attestazione": ["Il dichiarante", "p. l'Organizzazione"],
+  "nota_zone": "Tutto il territorio del Comune di Massa è una zona unica (art. 3 e art. 17 dell'accordo): non serve cercare la zona."
+ }
+}

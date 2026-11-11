@@ -1232,6 +1232,49 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpesaro-2025-02-26-modulo-proroga-cessazione.pdf?alt=media&token=2158f882-c1c6-4e0e-a9a9-5d234f66af81"
     }
    ]
+  },
+  {
+   "comune": "Massa",
+   "provincia": "MS",
+   "accordo": "massa-2017-11-15",
+   "sottoscritto": "15 novembre 2017",
+   "depositato": "7 dicembre 2017",
+   "zone": 1,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmassa-2017-11-15-accordo.pdf?alt=media&token=4760b48b-3761-4119-9a76-701b055a8ee9",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmassa-2017-11-15-accordo.pdf?alt=media&token=4760b48b-3761-4119-9a76-701b055a8ee9"
+    },
+    {
+     "nome": "Allegato a contratto agevolato",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmassa-2017-11-15-allegato-a-contratto-agevolato.pdf?alt=media&token=185ff063-4bdb-444d-9f96-70ad11c1239b"
+    },
+    {
+     "nome": "Allegato attestazione bilaterale",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmassa-2017-11-15-allegato-attestazione-bilaterale.pdf?alt=media&token=90f4a2b3-070c-4a3b-b631-1df36279af39"
+    },
+    {
+     "nome": "Allegato attestazione unilaterale",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmassa-2017-11-15-allegato-attestazione-unilaterale.pdf?alt=media&token=02ad9e50-9ce5-4b10-9840-103aeb4206f3"
+    },
+    {
+     "nome": "Allegato b contratto transitorio",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmassa-2017-11-15-allegato-b-contratto-transitorio.pdf?alt=media&token=04dfc34b-2d67-45f7-ab4c-0cf100894d6d"
+    },
+    {
+     "nome": "Allegato c contratto studenti",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmassa-2017-11-15-allegato-c-contratto-studenti.pdf?alt=media&token=7762db74-7551-4ae0-990e-fc6752181aab"
+    },
+    {
+     "nome": "Allegato d oneri accessori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmassa-2017-11-15-allegato-d-oneri-accessori.pdf?alt=media&token=e34bb9c8-e151-4f38-a8ca-07add2ccd5df"
+    },
+    {
+     "nome": "Allegato e negoziazione paritetica",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmassa-2017-11-15-allegato-e-negoziazione-paritetica.pdf?alt=media&token=c05bf948-1fef-4a39-9a20-64cd75ec6da1"
+    }
+   ]
   }
  ]
 }
