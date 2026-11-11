@@ -10,9 +10,9 @@
  *                          accordo, scheda, risultato) -> Promise<Uint8Array>
  */
 (function (radice, fabbrica) {
-  if (typeof module === "object" && module.exports) module.exports = fabbrica();
-  else radice.StampaGenerica = fabbrica();
-})(typeof self !== "undefined" ? self : this, function () {
+  if (typeof module === "object" && module.exports) module.exports = fabbrica(require("./canone-generico.js"));
+  else radice.StampaGenerica = fabbrica(radice.CanoneGenerico);
+})(typeof self !== "undefined" ? self : this, function (CG) {
   "use strict";
 
   const L = 595.28, H = 841.89, SX = 46, DX = 549, FONDO_PAGINA = 770;
@@ -103,7 +103,7 @@
     // elementi o parametri, su due colonne (es. Varese: nessun elemento, la sezione non si stampa)
     if (R.elementi.length) {
     sezione((P.titolo_elementi || (R.fasce.criterio === "punti" ? "PARAMETRI E PUNTEGGI" : "ELEMENTI PRESENTI")).toUpperCase());
-    const E = R.elementi, el = (s.elementi || []).map((x, k) => (E[k] && E[k].zone && !E[k].zone.includes(String(s.zona || "")) ? false : x)), met = Math.ceil(E.length / 2), w = (DX - SX) / 2 - 12;
+    const E = R.elementi, el = (s.elementi || []).map((x, k) => (CG.escluso(E[k], s.zona, s.tipo) ? false : x)), met = Math.ceil(E.length / 2), w = (DX - SX) / 2 - 12;
     const livello = (i) => { const e = E[i], val = el[i]; return e.livelli && val !== "" && val !== undefined && val !== null && val !== false ? e.livelli[Number(val)] : null; };
     const puntiEl = (i) => (E[i].mostra_punti === false ? "" : E[i].livelli ? (livello(i) ? livello(i).punti : "") : E[i].punti);
     const righeCol = (i) => aCapo(`${i + 1}) ${E[i].testo}${livello(i) ? `: ${livello(i).testo}` : ""}`, reg, 8, w - 26 - ((E[i].punti || E[i].livelli) && E[i].mostra_punti !== false ? 16 : 0));
@@ -126,7 +126,7 @@
     else if (!r.fascia.gruppi && !soglie.length) tx("Una sola fascia per zona: gli elementi indicano se avvicinarsi al minimo o al massimo.", SX, a, { sz: 7.8 });
     else if (r.fascia.prevalente) { for (const rr of aCapo(r.fascia.gruppi.map((g) => `${g.nome}: ${g.fascia.toLowerCase()}`).join("  ·  ") + `  →  livello prevalente ${r.fascia.nome.toUpperCase()}`, reg, 7.8, DX - SX)) { spazio(10); tx(rr, SX, a, { sz: 7.8, c: DATO }); a += 9.5; } a -= 9.5; }
     else if (r.fascia.gruppi) tx(r.fascia.gruppi.map((g) => `${g.nome}: ${g.n} punti, fascia ${g.fascia}`).join("   ·   "), SX, a, { sz: 7.8, c: DATO });
-    else tx(R.fasce.nomi.map((n, i) => i === 0 ? `${n}: fino a ${soglie[0]} ${cosa}` : i < soglie.length ? `${n}: da ${soglie[i - 1] + 1} a ${soglie[i]}` : `${n}: da ${soglie[i - 1] + 1}`).join("   ·   "), SX, a, { sz: 7.8 });
+    else tx(CG.testoSoglie(R.fasce, soglie, cosa, "   ·   "), SX, a, { sz: 7.8 });
     if (!r.fascia.prevalente) dx(R.fasce.criterio === "differenza" ? `${(P.etichetta_totale || "TOTALE PERCENTUALI")} ${String(r.punti).replace(".", ",")}%` : `${P.etichetta_conteggio || `TOTALE ${R.fasce.criterio === "punti" ? "PUNTEGGIO" : "ELEMENTI"}`} ${r.punti}`, DX, a, { f: bold, sz: 8.6, c: DATO });
     a += 10;
     }

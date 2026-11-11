@@ -1,0 +1,477 @@
+{
+ "accordo": {
+  "codice": "cuneo-2026-02-26",
+  "modello": "cuneo-2026",
+  "comune": "Cuneo",
+  "provincia": "CN",
+  "titolo": "Accordo territoriale per la Città di Cuneo",
+  "data": "2026-02-26",
+  "data_testo": "26 febbraio 2026",
+  "deposito": "Comune di Cuneo, protocollo n. 0020405 del 26/02/2026",
+  "deposito_data": "26.02.2026",
+  "protocollo": "0020405",
+  "ufficio": "Comune di Cuneo, Protocollo generale",
+  "ufficio_breve": "Comune di Cuneo",
+  "valido_fino": "",
+  "firmatari_proprieta": [
+   "A.P.P.C.",
+   "A.S.P.P.I.",
+   "Confabitare",
+   "Confedilizia",
+   "Federcasa",
+   "Federproprietà",
+   "Unioncasa",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "A.N.I.A.C.",
+   "Feder.Casa",
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "UGL - Assocasa",
+   "U.N.I.A.T.",
+   "Unione Inquilini"
+  ],
+  "nota": "Accordo sottoscritto il 26/02/2026 (data dell'attestazione bilaterale, allegato 5, e del contratto tipo) e protocollato lo stesso giorno dal Comune di Cuneo (n. 0020405, timbro sulla prima pagina); in vigore dal 01/03/2026 fino al successivo accordo (titoli H e O). Sostituisce l'accordo del 14/05/2019. Il testo porta l'intestazione «Provincia di Cuneo», ma le zone e i valori allegati (allegati 1A, 1B e 3) sono quelli della Città di Cuneo: qui è modellata solo la Città di Cuneo. Valori in euro al mese per mq utile, per zona (1-8) e fascia (minima, media, massima secondo i punti dell'allegato 4); ogni fascia è il valore dell'accordo con la tolleranza di 0,05 € in più o in meno. Per il Comune di Cuneo il canone non può superare 550 € al mese (allegato 3). La pagina del Comune intitola il documento «Accordo territoriale 20 febbraio 2026», ma il testo e gli allegati indicano il 26/02/2026.",
+  "fonte": "Comune di Cuneo, scheda «Contratti a canone concordato» e documento pubblico «Accordo territoriale 20 febbraio 2026» (aggiornato il 18/03/2026): accordo protocollato (scansione, 10 pagine), allegati 1A e 1B con le cartine delle zone, 2, 3, 4, 5, contratti tipo A, B e C, allegati D ed E, elenco delle associazioni."
+ },
+ "esempio_zona": "l'area dall'allegato 3 e dalle cartine 1A (altipiano) e 1B (frazioni): centro, corsi principali, Cuneo2 e San Rocco, frazioni vicine o altre frazioni",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Via Roma e piazza Galimberti",
+    "nota": "Zona 1: numeri civici di via Roma e di piazza Galimberti (allegato 3; cartina della tavola 1A, altipiano).",
+    "fasce": [
+     [
+      3.92,
+      4.02
+     ],
+     [
+      4.88,
+      4.98
+     ],
+     [
+      5.84,
+      5.94
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Centro storico",
+    "nota": "Zona 2: centro storico tra corso Kennedy e corso Papa Giovanni XXIII, più l'area Basse di Sant'Anna e discesa Bellavista (allegato 3; tavola 1A).",
+    "fasce": [
+     [
+      3.47,
+      3.57
+     ],
+     [
+      4.33,
+      4.43
+     ],
+     [
+      5.18,
+      5.28
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Corso Soleri, Garibaldi, Nizza alta",
+    "nota": "Zona 3: area tra corso Soleri, piazza Galimberti, corso Garibaldi fino a corso Galileo Ferraris e corso Vittorio Emanuele II, più i numeri civici di corso Nizza alta (dall'incrocio con corso Galileo Ferraris e corso Vittorio Emanuele II fino a corso Gramsci) (allegato 3; tavola 1A).",
+    "fasce": [
+     [
+      3.62,
+      3.72
+     ],
+     [
+      4.49,
+      4.59
+     ],
+     [
+      5.35,
+      5.45
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Viale Angeli, corsi Nizza e Dante",
+    "nota": "Zona 4: viale Angeli e numeri civici di piazza Europa, corso Nizza (fino all'incrocio con corso Galileo Ferraris e corso Vittorio Emanuele II), corso Dante, corso Giolitti (fino a via XX Settembre) e corso Brunet (allegato 3; tavola 1A).",
+    "fasce": [
+     [
+      4.0,
+      4.1
+     ],
+     [
+      4.98,
+      5.08
+     ],
+     [
+      5.95,
+      6.05
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Zona 5 - Corso Ferraris-Gramsci, Lungostura",
+    "nota": "Zona 5: area tra corso Galileo Ferraris e corso Vittorio Emanuele II fino a corso Gramsci, più l'area tra Lungostura XXIV Maggio, corso Dante, via Bassignano, via Monte Zovetto e piazzale della Libertà (allegato 3; tavola 1A).",
+    "fasce": [
+     [
+      3.39,
+      3.49
+     ],
+     [
+      4.27,
+      4.37
+     ],
+     [
+      5.15,
+      5.25
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "Zona 6 - Cuneo2, Donatello, San Rocco",
+    "nota": "Zona 6: Cuneo2, Donatello e San Rocco Castagnaretta (allegato 3; tavole 1A e 1B).",
+    "fasce": [
+     [
+      3.17,
+      3.27
+     ],
+     [
+      4.06,
+      4.16
+     ],
+     [
+      4.95,
+      5.05
+     ]
+    ]
+   },
+   {
+    "codice": "7",
+    "nome": "Zona 7 - Madonna dell'Olmo, Confreria e altre",
+    "nota": "Zona 7: Madonna dell'Olmo, Confreria, Borgo San Giuseppe, Madonna delle Grazie e Spinetta (allegato 3; tavola 1B, frazioni).",
+    "fasce": [
+     [
+      3.01,
+      3.11
+     ],
+     [
+      3.75,
+      3.85
+     ],
+     [
+      4.49,
+      4.59
+     ]
+    ]
+   },
+   {
+    "codice": "8",
+    "nome": "Zona 8 - Altre frazioni e zona agricola",
+    "nota": "Zona 8: tutte le altre frazioni e la zona agricola (allegato 3; tavola 1B, frazioni).",
+    "fasce": [
+     [
+      2.87,
+      2.97
+     ],
+     [
+      3.57,
+      3.67
+     ],
+     [
+      4.27,
+      4.37
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "minima",
+    "media",
+    "massima"
+   ],
+   "criterio": "punti",
+   "soglie": [
+    4.5,
+    9.5
+   ],
+   "passo": 0.5
+  },
+  "elementi": [
+   {
+    "testo": "Autorimessa",
+    "punti": 1
+   },
+   {
+    "testo": "Possibilità di posto auto in area condominiale",
+    "punti": 0.5
+   },
+   {
+    "testo": "Riscaldamento autonomo",
+    "punti": 1
+   },
+   {
+    "testo": "Certificazione energetica (APE)",
+    "livelli": [
+     {
+      "testo": "classe E, F, G o senza APE",
+      "punti": 0
+     },
+     {
+      "testo": "classe C o D",
+      "punti": 0.5
+     },
+     {
+      "testo": "classe A o B",
+      "punti": 1
+     }
+    ]
+   },
+   {
+    "testo": "Doppi servizi (o ulteriori)",
+    "punti": 1
+   },
+   {
+    "testo": "Doppi vetri o vetri camera in tutte le aperture con affaccio esterno",
+    "punti": 1
+   },
+   {
+    "testo": "Allacciamento alla rete del gas",
+    "punti": 0.5
+   },
+   {
+    "testo": "Cantina",
+    "punti": 1
+   },
+   {
+    "testo": "Solaio",
+    "punti": 1
+   },
+   {
+    "testo": "Stabile provvisto di ascensore",
+    "punti": 1
+   },
+   {
+    "testo": "Area verde di pertinenza esclusiva",
+    "punti": 1
+   },
+   {
+    "testo": "Area verde condominiale",
+    "punti": 0.5
+   },
+   {
+    "testo": "Porta blindata",
+    "punti": 0.5
+   },
+   {
+    "testo": "Impianto videocitofonico",
+    "punti": 0.5
+   },
+   {
+    "testo": "Impianto antifurto",
+    "punti": 0.5
+   },
+   {
+    "testo": "Condizionamento con impianto fisso",
+    "punti": 0.5
+   },
+   {
+    "testo": "Stabile raggiunto da fibra ottica",
+    "punti": 0.5
+   },
+   {
+    "testo": "Costruzione o ristrutturazione recente",
+    "livelli": [
+     {
+      "testo": "nessuna",
+      "punti": 0
+     },
+     {
+      "testo": "ristrutturazione parziale recente (senza pratica edilizia)",
+      "punti": 0.5
+     },
+     {
+      "testo": "costruzione o ristrutturazione completa entro 15 anni, con pratica edilizia",
+      "punti": 1
+     }
+    ]
+   },
+   {
+    "testo": "Fabbricato senza barriere architettoniche",
+    "punti": 1
+   },
+   {
+    "testo": "Avvolgibili elettrici",
+    "punti": 0.5
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile dell'alloggio (netta dei muri; mansarde al 100%)",
+   "correzioni": [
+    {
+     "fino": 47,
+     "incluso": true,
+     "perc": 40,
+     "tetto": 60
+    },
+    {
+     "da": 47,
+     "fino": 50,
+     "incluso": true,
+     "imposta": 60
+    },
+    {
+     "fino": 70,
+     "incluso": true,
+     "perc": 20,
+     "tetto": 75
+    },
+    {
+     "da": 70,
+     "fino": 75,
+     "imposta": 75
+    },
+    {
+     "da": 120,
+     "fino": 1000000,
+     "perc": -10,
+     "minimo": 120
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "veranda",
+     "testo": "Veranda (risultante dalla planimetria catastale)",
+     "coeff": 1
+    },
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa singola C/6 (70% zone 1-2, 60% zone 3-5, 50% zone 6-8)",
+     "coeff": 0.5,
+     "coeff_zona": {
+      "1": 0.7,
+      "2": 0.7,
+      "3": 0.6,
+      "4": 0.6,
+      "5": 0.6
+     }
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto non accatastato C/6 (autorimessa comune)",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "cantina",
+     "testo": "Cantina",
+     "coeff": 0.25,
+     "tetto_mq_base": 1
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e altri accessori",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "solaio",
+     "testo": "Solaio",
+     "coeff": 0.25,
+     "tetto_mq_base": 1
+    },
+    {
+     "chiave": "terrazzi",
+     "testo": "Terrazzi",
+     "coeff": 0.25,
+     "tetto_mq_base": 1
+    },
+    {
+     "chiave": "esterna",
+     "testo": "Area verde o cortile di pertinenza esclusiva",
+     "coeff": 0.15,
+     "tetto_mq_base": 1
+    }
+   ],
+   "nota": "Superficie utile al netto dei muri perimetrali e interni (art. 13 legge 392/78); mansarde al 100%; la scala interna di un alloggio su due livelli si conta una volta sola. Correzioni sull'alloggio (allegato 2): sotto i 47 mq x 1,40 (al massimo 60 mq); da 47,01 a 70 mq x 1,20 (minimo 60, massimo 75 mq); da 70,01 a 120 mq x 1 (minimo 75 mq); oltre 120 mq x 0,90 (minimo 120 mq). Area esclusiva, terrazzo, cantina o solaio più grandi dell'alloggio contano al massimo per i mq dell'alloggio."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredo (con l'elenco dei mobili allegato al contratto)",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato (fino a +30%)",
+      "perc": 30
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato (fino a +15%)",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "recesso",
+    "tipo": "spunta",
+    "perc": 1,
+    "testo": "Recesso dell'inquilino con preavviso di 3 mesi o meno",
+    "nome": "recesso con preavviso fino a 3 mesi"
+   }
+  ],
+  "nota_maggiorazioni": "Scostamenti dell'allegato 4: arredo fino a +30% (completo) o +15% (parziale), recesso con preavviso di 3 mesi o meno +1%, durata 4+2 +2%, 5+2 +3%, 6+2 +4%. Si sommano e poi si applicano al valore della fascia. Per l'arredo il calcolo usa la percentuale massima.",
+  "durata": {
+   "4": 2,
+   "5": 3,
+   "6": 4
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "L'accordo non si applica all'affitto di una parte dell'alloggio (titolo F3): il calcolo vale solo per l'intera unità."
+   },
+   {
+    "testo": "Per le agevolazioni fiscali serve l'attestazione bilaterale: la firmano due associazioni dell'accordo, una della proprietà e una degli inquilini (titolo L, allegato 5)."
+   }
+  ],
+  "canone_tetto": {
+   "importo": 550,
+   "testo": "Per il Comune di Cuneo il canone non può superare € 550 al mese (allegato 3): il calcolo si ferma lì."
+  }
+ },
+ "pdf": {
+  "allegato": "Allegato 5",
+  "titolo": "Attestazione bilaterale di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale per la Città di Cuneo depositato il 26/02/2026 (prot. Comune di Cuneo n. 0020405) ed in vigore dal 01/03/2026 - calcolo secondo gli allegati 2, 3 e 4",
+  "titolo_superficie": "SUPERFICI E MQ UTILI (ALLEGATO 2)",
+  "titolo_elementi": "Elementi per la determinazione della fascia del canone (allegato 4)",
+  "etichetta_conteggio": "TOTALE PUNTI",
+  "dichiarazione": "Il locatore e il conduttore hanno presentato richiesta per l'attestazione ex D.M. 16/01/2017, Legge 431/98, dichiarando ai sensi del D.P.R. 445/2000 e s.m.i., sotto la loro responsabilità, quanto contenuto nel contratto, nei calcoli e nei parametri, e dichiarano di aver preso visione e di essere stati informati sul contenuto dell'Accordo territoriale sottoscritto il 26/02/2026 ed in vigore dal 01/03/2026.",
+  "firme": [
+   "Firma del Locatore",
+   "Firma del Conduttore"
+  ],
+  "titolo_attestazione": "ATTESTANO",
+  "attestazione": [
+   "Tutto ciò premesso, le Organizzazioni …………………………… e …………………………… come sopra rappresentate, sotto la propria responsabilità e sulla base degli elementi oggettivi dichiarati dalle parti nel contratto, nei calcoli e nei parametri, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto dichiarato dal proprietario e dall'inquilino e di aver informato le parti dei criteri di applicazione del D.M. 16/01/2017 come previsto dall'Accordo territoriale vigente per la Città di Cuneo depositato in data 26/02/2026 ed in vigore dal 01/03/2026."
+  ],
+  "firme_attestazione": [
+   "p. l'Organizzazione",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "Zone dell'allegato 3 (cartine 1A altipiano e 1B frazioni): 1 via Roma e piazza Galimberti, 2 centro storico, 3 corso Soleri-corso Garibaldi e corso Nizza alta, 4 viale Angeli, piazza Europa e corsi Nizza, Dante, Giolitti, Brunet, 5 tra corso Ferraris e corso Gramsci e Lungostura, 6 Cuneo2, Donatello e San Rocco Castagnaretta, 7 Madonna dell'Olmo, Confreria, Borgo San Giuseppe, Madonna delle Grazie e Spinetta, 8 altre frazioni e zona agricola."
+ }
+}

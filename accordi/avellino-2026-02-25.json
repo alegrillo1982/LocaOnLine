@@ -1,0 +1,648 @@
+{
+ "accordo": {
+  "codice": "avellino-2026-02-25",
+  "modello": "avellino-2026",
+  "comune": "Avellino",
+  "provincia": "AV",
+  "titolo": "Accordo territoriale per il Comune di Avellino",
+  "data": "2026-02-25",
+  "data_testo": "25 febbraio 2026",
+  "deposito": "Comune di Avellino, prot. n. 0020374/2026",
+  "deposito_data": "09.03.2026",
+  "protocollo": "0020374/2026",
+  "ufficio": "Ufficio Protocollo del Comune di Avellino (via PEC)",
+  "ufficio_breve": "Ufficio Protocollo",
+  "valido_fino": "2029-03-09",
+  "nota_validita": "Art. 32: durata di tre anni dal deposito (9/03/2026), poi resta in vigore fino al nuovo accordo. Minimi e massimi si aggiornano ogni anno al 75% della variazione ISTAT: dal terzo anno dal deposito secondo l'art. 6, dopo il primo anno secondo l'allegato B. Oggi valgono i valori originali.",
+  "firmatari_proprieta": [
+   "A.P.E. Avellino - Confedilizia",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T. Campania",
+   "ASSOCASA"
+  ],
+  "nota": "Accordo firmato ad Avellino il 25/02/2026 (data sulla copertina e sulle pagine delle firme) e depositato al Comune di Avellino via PEC il 9/03/2026 (prot. n. 0020374/2026, ricevuta di protocollazione in fondo al PDF). Sostituisce l'accordo del 14/12/2017; i contratti firmati con quello restano validi. Quattro zone per foglio di mappa catastale (allegato A), valori in euro al mq al mese (allegato B), quattro fasce secondo il numero di elementi caratteristici (allegato C): fino a 3 elementi 1ª fascia, 4 la 2ª, 5 la 3ª, almeno 6 la 4ª; con classe A sempre la 4ª.",
+  "fonte": "U.N.I.A.T. Campania, pagina «Elenco aggiornato degli Accordi Territoriali della provincia di Avellino»: PDF «Accordo territoriale Comune di Avellino prot. 20374 del 9.03.2026» (23 pagine: copertina, accordo, allegati A-G, ricevuta PEC del protocollo). Lo stesso testo, senza data e protocollo, è pubblicato dal SUNIA nazionale (pagina «Accordi territoriali di Avellino», rinnovato a febbraio 2026)."
+ },
+ "esempio_zona": "la zona dal foglio di mappa catastale del fabbricato (allegato A)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centrale/residenziale",
+    "nota": "Zona 1: Centrale/residenziale. Fogli di mappa catastali 12, 13, 21, 34, 35, 36, 37, 38, 39, 42 (allegato A). Valori della zona da € 3,60 a € 5,50 al mq al mese (allegato B); la fascia è una quarta parte della differenza fra minimo e massimo.",
+    "fasce": [
+     [
+      3.619,
+      4.075
+     ],
+     [
+      4.094,
+      4.55
+     ],
+     [
+      4.569,
+      5.025
+     ],
+     [
+      5.044,
+      5.5
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Semicentrale",
+    "nota": "Zona 2: Semicentrale. Fogli di mappa catastali 2, 4, 9, 10, 11, 14, 15, 18, 22, 26, 40, 41, 43, 44 (allegato A). Valori della zona da € 3,15 a € 5,30 al mq al mese (allegato B); la fascia è una quarta parte della differenza fra minimo e massimo.",
+    "fasce": [
+     [
+      3.172,
+      3.688
+     ],
+     [
+      3.709,
+      4.225
+     ],
+     [
+      4.247,
+      4.763
+     ],
+     [
+      4.784,
+      5.3
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Periferica",
+    "nota": "Zona 3: Periferica. Fogli di mappa catastali 1, 3, 6, 16, 19, 20, 23, 24, 25, 27, 28, 29, 30, 31, 32, 33, 45 (allegato A). Valori della zona da € 2,90 a € 4,60 al mq al mese (allegato B); la fascia è una quarta parte della differenza fra minimo e massimo.",
+    "fasce": [
+     [
+      2.917,
+      3.325
+     ],
+     [
+      3.342,
+      3.75
+     ],
+     [
+      3.767,
+      4.175
+     ],
+     [
+      4.192,
+      4.6
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Esterna e industriale",
+    "nota": "Zona 4: Esterna e industriale. Fogli di mappa catastali 5, 7, 8, 17 (allegato A). Valori della zona da € 2,25 a € 3,85 al mq al mese (allegato B); la fascia è una quarta parte della differenza fra minimo e massimo.",
+    "fasce": [
+     [
+      2.266,
+      2.65
+     ],
+     [
+      2.666,
+      3.05
+     ],
+     [
+      3.066,
+      3.45
+     ],
+     [
+      3.466,
+      3.85
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "1ª fascia",
+    "2ª fascia",
+    "3ª fascia",
+    "4ª fascia"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    3,
+    4,
+    5
+   ],
+   "conta": {
+    "da": 0,
+    "a": 19
+   },
+   "basta": [
+    20
+   ],
+   "nota": "fino a 3 elementi 1ª fascia (dall'1% al 25% della differenza fra minimo e massimo della zona), 4 elementi 2ª (26-50%), 5 elementi 3ª (51-75%), almeno 6 elementi 4ª (76-100%); con classe A (APE dopo l'1/1/2013) sempre la 4ª"
+  },
+  "elementi": [
+   {
+    "testo": "Ascensore (o alloggio non oltre il 3° piano, anche senza ascensore)"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Aree e spazi liberi di uso comune"
+   },
+   {
+    "testo": "Balcone sporgente o terrazzo"
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato"
+   },
+   {
+    "testo": "Area verde di pertinenza o piano attico"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Servizio di portierato"
+   },
+   {
+    "testo": "Stabile o alloggio costruito o ristrutturato del tutto negli ultimi 10 anni"
+   },
+   {
+    "testo": "Sistema di sicurezza o allarme interno"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Antenna o impianto satellitare centralizzato"
+   },
+   {
+    "testo": "Stato di manutenzione ottimo"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Infissi con doppio vetrocamera"
+   },
+   {
+    "testo": "Classe energetica A, B, C o D"
+   },
+   {
+    "testo": "Posto auto"
+   },
+   {
+    "testo": "Cucina abitabile con finestra"
+   },
+   {
+    "testo": "Senza barriere architettoniche dentro l'alloggio"
+   },
+   {
+    "testo": "Wi-Fi (solo contratti transitori e per studenti)",
+    "contratti": [
+     "transitorio",
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Classe A, APE rilasciato dopo l'1/1/2013 (4ª fascia; segna anche il 16)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile calpestabile dell'alloggio",
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Box auto",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Superficie scoperta a uso esclusivo",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota in millesimi di proprietà)",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Superficie utile calpestabile più gli accessori in percentuale (allegato C, parte seconda). Tolleranza del 5% in più o in meno."
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "superficie sotto 30 mq",
+    "a": 29.999,
+    "perc": 50
+   },
+   {
+    "nome": "superficie da 30 a 31 mq",
+    "da": 30,
+    "a": 30.999,
+    "perc": 49
+   },
+   {
+    "nome": "superficie da 31 a 32 mq",
+    "da": 31,
+    "a": 31.999,
+    "perc": 48
+   },
+   {
+    "nome": "superficie da 32 a 33 mq",
+    "da": 32,
+    "a": 32.999,
+    "perc": 47
+   },
+   {
+    "nome": "superficie da 33 a 34 mq",
+    "da": 33,
+    "a": 33.999,
+    "perc": 46
+   },
+   {
+    "nome": "superficie da 34 a 35 mq",
+    "da": 34,
+    "a": 34.999,
+    "perc": 45
+   },
+   {
+    "nome": "superficie da 35 a 36 mq",
+    "da": 35,
+    "a": 35.999,
+    "perc": 44
+   },
+   {
+    "nome": "superficie da 36 a 37 mq",
+    "da": 36,
+    "a": 36.999,
+    "perc": 43
+   },
+   {
+    "nome": "superficie da 37 a 38 mq",
+    "da": 37,
+    "a": 37.999,
+    "perc": 42
+   },
+   {
+    "nome": "superficie da 38 a 39 mq",
+    "da": 38,
+    "a": 38.999,
+    "perc": 41
+   },
+   {
+    "nome": "superficie da 39 a 40 mq",
+    "da": 39,
+    "a": 39.999,
+    "perc": 40
+   },
+   {
+    "nome": "superficie da 40 a 41 mq",
+    "da": 40,
+    "a": 40.999,
+    "perc": 39
+   },
+   {
+    "nome": "superficie da 41 a 42 mq",
+    "da": 41,
+    "a": 41.999,
+    "perc": 38
+   },
+   {
+    "nome": "superficie da 42 a 43 mq",
+    "da": 42,
+    "a": 42.999,
+    "perc": 37
+   },
+   {
+    "nome": "superficie da 43 a 44 mq",
+    "da": 43,
+    "a": 43.999,
+    "perc": 36
+   },
+   {
+    "nome": "superficie da 44 a 45 mq",
+    "da": 44,
+    "a": 44.999,
+    "perc": 35
+   },
+   {
+    "nome": "superficie da 45 a 46 mq",
+    "da": 45,
+    "a": 45.999,
+    "perc": 34
+   },
+   {
+    "nome": "superficie da 46 a 47 mq",
+    "da": 46,
+    "a": 46.999,
+    "perc": 33
+   },
+   {
+    "nome": "superficie da 47 a 48 mq",
+    "da": 47,
+    "a": 47.999,
+    "perc": 32
+   },
+   {
+    "nome": "superficie da 48 a 49 mq",
+    "da": 48,
+    "a": 48.999,
+    "perc": 31
+   },
+   {
+    "nome": "superficie da 49 a 50 mq",
+    "da": 49,
+    "a": 49.999,
+    "perc": 30
+   },
+   {
+    "nome": "superficie da 50 a 51 mq",
+    "da": 50,
+    "a": 50.999,
+    "perc": 29
+   },
+   {
+    "nome": "superficie da 51 a 52 mq",
+    "da": 51,
+    "a": 51.999,
+    "perc": 28
+   },
+   {
+    "nome": "superficie da 52 a 53 mq",
+    "da": 52,
+    "a": 52.999,
+    "perc": 27
+   },
+   {
+    "nome": "superficie da 53 a 54 mq",
+    "da": 53,
+    "a": 53.999,
+    "perc": 26
+   },
+   {
+    "nome": "superficie da 54 a 55 mq",
+    "da": 54,
+    "a": 54.999,
+    "perc": 25
+   },
+   {
+    "nome": "superficie da 55 a 56 mq",
+    "da": 55,
+    "a": 55.999,
+    "perc": 24
+   },
+   {
+    "nome": "superficie da 56 a 57 mq",
+    "da": 56,
+    "a": 56.999,
+    "perc": 23
+   },
+   {
+    "nome": "superficie da 57 a 58 mq",
+    "da": 57,
+    "a": 57.999,
+    "perc": 22
+   },
+   {
+    "nome": "superficie da 58 a 59 mq",
+    "da": 58,
+    "a": 58.999,
+    "perc": 21
+   },
+   {
+    "nome": "superficie da 59 a 60 mq",
+    "da": 59,
+    "a": 59.999,
+    "perc": 20
+   },
+   {
+    "nome": "superficie da 60 a 61 mq",
+    "da": 60,
+    "a": 60.999,
+    "perc": 19
+   },
+   {
+    "nome": "superficie da 61 a 62 mq",
+    "da": 61,
+    "a": 61.999,
+    "perc": 18
+   },
+   {
+    "nome": "superficie da 62 a 63 mq",
+    "da": 62,
+    "a": 62.999,
+    "perc": 17
+   },
+   {
+    "nome": "superficie da 63 a 64 mq",
+    "da": 63,
+    "a": 63.999,
+    "perc": 16
+   },
+   {
+    "nome": "superficie da 64 a 65 mq",
+    "da": 64,
+    "a": 64.999,
+    "perc": 15
+   },
+   {
+    "nome": "superficie da 65 a 66 mq",
+    "da": 65,
+    "a": 65.999,
+    "perc": 14
+   },
+   {
+    "nome": "superficie da 66 a 67 mq",
+    "da": 66,
+    "a": 66.999,
+    "perc": 13
+   },
+   {
+    "nome": "superficie da 67 a 68 mq",
+    "da": 67,
+    "a": 67.999,
+    "perc": 12
+   },
+   {
+    "nome": "superficie da 68 a 69 mq",
+    "da": 68,
+    "a": 68.999,
+    "perc": 11
+   },
+   {
+    "nome": "superficie da 69 a 70 mq",
+    "da": 69,
+    "a": 69.999,
+    "perc": 10
+   },
+   {
+    "nome": "superficie da 70 a 71 mq",
+    "da": 70,
+    "a": 70.999,
+    "perc": 9
+   },
+   {
+    "nome": "superficie da 71 a 72 mq",
+    "da": 71,
+    "a": 71.999,
+    "perc": 8
+   },
+   {
+    "nome": "superficie da 72 a 73 mq",
+    "da": 72,
+    "a": 72.999,
+    "perc": 7
+   },
+   {
+    "nome": "superficie da 73 a 74 mq",
+    "da": 73,
+    "a": 73.999,
+    "perc": 6
+   },
+   {
+    "nome": "superficie da 74 a 75 mq",
+    "da": 74,
+    "a": 74.999,
+    "perc": 5
+   },
+   {
+    "nome": "superficie da 75 a 76 mq",
+    "da": 75,
+    "a": 75.999,
+    "perc": 4
+   },
+   {
+    "nome": "superficie da 76 a 77 mq",
+    "da": 76,
+    "a": 76.999,
+    "perc": 3
+   },
+   {
+    "nome": "superficie da 77 a 78 mq",
+    "da": 77,
+    "a": 77.999,
+    "perc": 2
+   },
+   {
+    "nome": "superficie da 78 a 79 mq",
+    "da": 78,
+    "a": 78.999,
+    "perc": 1
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Alloggio completamente arredato (con l'elenco dei mobili allegato al contratto)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "arredato",
+      "testo": "arredato, non ristrutturato negli ultimi 5 anni",
+      "perc": 15
+     },
+     {
+      "valore": "ristrutturato",
+      "testo": "arredato e ristrutturato negli ultimi 5 anni",
+      "perc": 20
+     }
+    ]
+   },
+   {
+    "chiave": "veduta",
+    "tipo": "spunta",
+    "testo": "Alloggio con veduta libera",
+    "nome": "veduta libera",
+    "perc": 10
+   },
+   {
+    "chiave": "concordato",
+    "tipo": "spunta",
+    "testo": "Aumento concordato fra le parti (allegato B, fino al 20%)",
+    "nome": "aumento concordato fra le parti",
+    "perc": 20
+   }
+  ],
+  "nota_maggiorazioni": "Aumenti e riduzioni si sommano fra loro (art. 4). Sono tutti \"fino a\": qui si usa il massimo. Il contratto transitorio ha il 10% in più (art. 13); oltre i 3 anni di durata +2% per ogni anno in più, fino al 12%. Per gli alloggi sotto 80 mq di superficie convenzionale l'aumento è la differenza fra 80 e i mq (fino al 50%). Non sono applicate le riduzioni facoltative: fino al 30% oltre 130 mq, fino al 30% d'intesa fra le parti, fino al 40% per le grandi proprietà (oltre 30 alloggi) e per l'alloggio sociale. L'aumento fino al 30% per le strade di maggior interesse commerciale non è calcolato: l'accordo non dice quali sono.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "contratto": {
+   "transitorio": 10
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "4ª fascia: alloggio e fabbricato devono essere almeno in buone condizioni; se manca qualche requisito, il canone si ferma al minimo della 4ª fascia.",
+    "fascia": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato G",
+  "titolo": "Scheda riepilogativa del canone concordato - Comune di Avellino",
+  "sottotitolo": "(Art. 2 comma 3 ed art. 5 commi 1-2-3 L. 9.12.98 n. 431) - Accordo territoriale per il Comune di Avellino del 25/02/2026, depositato il 09/03/2026 al prot. n. 0020374/2026",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "Elementi caratteristici (allegato C)",
+  "etichetta_conteggio": "TOTALE ELEMENTI",
+  "dichiarazione": "Le parti dichiarano sotto la propria responsabilità che i valori e le caratteristiche sopra riportate corrispondono all'effettivo stato attuale dei luoghi. Il calcolo del canone è stato effettuato sulla base dei dati forniti dalle parti.",
+  "firme": [
+   "Parte locatrice",
+   "Parte conduttrice"
+  ],
+  "titolo_attestazione": "ALLEGATO D - ATTESTAZIONE DI RISPONDENZA (D.M. 16/01/2017)",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Avellino, come sopra rappresentata, sulla base degli elementi oggettivi sopra dichiarati, visto il contratto di locazione e la scheda riepilogativa del canone concordato,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Avellino depositato in data 09/03/2026 al prot. n. 0020374/2026."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dal foglio di mappa catastale del fabbricato (allegato A): zona 1 centrale/residenziale, zona 2 semicentrale, zona 3 periferica, zona 4 esterna e industriale."
+ }
+}

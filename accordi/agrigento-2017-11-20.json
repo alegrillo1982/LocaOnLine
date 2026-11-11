@@ -1,0 +1,743 @@
+{
+ "accordo": {
+  "codice": "agrigento-2017-11-20",
+  "modello": "agrigento-2017",
+  "comune": "Agrigento",
+  "provincia": "AG",
+  "titolo": "Accordo territoriale per il territorio del Comune di Agrigento",
+  "data": "2017-11-20",
+  "data_testo": "20 novembre 2017",
+  "deposito": "Comune di Agrigento",
+  "deposito_data": "15.12.2017",
+  "protocollo": "",
+  "ufficio": "Comune di Agrigento",
+  "ufficio_breve": "Comune di Agrigento",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Agrigento del 20 novembre 2017: durava tre anni dal deposito, ormai trascorsi.</strong> Resta in vigore fino alla firma di quello nuovo (titolo G) e le associazioni firmatarie lo pubblicano ancora come vigente; nel 2023 vi ha aderito anche Confabitare. I valori minimi e massimi si possono aggiornare con l'ISTAT (fino al 75%) dal terzo anno: qui trovi quelli originali, chiedi all'associazione che attesta il contratto se ne applica di aggiornati.",
+  "firmatari_proprieta": [
+   "Associazione Proprietari di Casa - Confedilizia",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato ad Agrigento il 20/11/2017 da Confedilizia (Associazione Proprietari di Casa) e U.P.P.I. per i proprietari e da SUNIA, SICET e UNIAT per gli inquilini; sostituisce integralmente l'accordo del 9/2/2004. Depositato in Comune il 15/12/2017, secondo la dichiarazione di adesione di Confabitare Palermo (prot. 0071183 del 09/10/2023) pubblicata dal Comune: il testo pubblicato non contiene la lettera di deposito. Dura tre anni dal giorno dopo il deposito e resta in vigore fino al nuovo accordo (titolo G). Territorio diviso in 9 zone (allegato 1, con due zone di pregio: 1/A e 4/A); per ogni zona una fascia base (allegato 2) che si aumenta o riduce secondo la sub-fascia (fino a 5 elementi, da 6 a 9, da 10 in su, su 16 elementi) e l'epoca di costruzione o ristrutturazione completa (prima del 1969, 1969-2005, dal 2006): da -5% a +15%. Durata 4/5/6 anni +2/3/4%; alloggi compiutamente arredati fino a +20% (transitori e studenti +20%); immobili dell'art. 1, comma 2, lett. a, L. 431/98 +10%; transitori +20% per favorire la mobilità. Aumenti cumulabili. Valori minimi e massimi aggiornabili dal terzo anno fino al 75% dell'ISTAT (titolo A, punto 4).",
+  "fonte": "Testo firmato di 25 pagine (accordo, allegati 1, 2, 4 e 5) pubblicato da SUNIA nazionale (pagina «Accordi territoriali di Agrigento») e, identico, da Confedilizia nella pagina della sede di Agrigento (caricato nel 2025). Data di deposito dalla dichiarazione di adesione di Confabitare pubblicata dal Comune di Agrigento (comunicato del 06/02/2023, documento protocollato il 09/10/2023)."
+ },
+ "esempio_zona": "la zona dalla via (allegato 1: zona 1, 1/A e 1/B in città, 2-3 a est e nelle frazioni, 4/A e 4/B a San Leone, 5 Montaperto e Giardina Gallotti, 6 zone sparse)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "scelta",
+  "tabella_chiave": "epoca",
+  "tabella_predefinita": "1968",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "1. Via Imera, via Crispi e altre",
+    "nota": "Zona 1 (fasce da € 2,20 a € 4,50): via Imera, via XXV Aprile, via Papa Luciani, via Cicerone, Quadrivio Spinasanta, via Mazzini, contrada Madonna delle Rocche, via Gioeni, via De Gasperi, via San Vito, via Picone, via Empedocle, via Pietro Nenni, via Garibaldi, via Dante, via Manzoni, via Callicratide, via Esseneto, via Crispi, via Ugo La Malfa, via Demetra, via Caruso Lanza, via Petrarca, via Solferino, via Duomo, via Plebis Rea, via degli Angeli. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o di ristrutturazione completa, la sub-fascia dal numero di elementi.",
+    "fasce": {
+     "2006": [
+      [
+       2.31,
+       4.725
+      ],
+      [
+       2.42,
+       4.95
+      ],
+      [
+       2.53,
+       5.175
+      ]
+     ],
+     "1969": [
+      [
+       2.244,
+       4.59
+      ],
+      [
+       2.31,
+       4.725
+      ],
+      [
+       2.42,
+       4.95
+      ]
+     ],
+     "1968": [
+      [
+       2.09,
+       3.8
+      ],
+      [
+       2.244,
+       4.59
+      ],
+      [
+       2.31,
+       4.725
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "1A",
+    "nome": "1A. Via Atenea e altre (pregio)",
+    "nota": "Zona 1/A di pregio (fasce da € 2,30 a € 5,00): piazza Vittorio Emanuele, via Atenea, viale della Vittoria, via Giovanni XXIII, via Eleonora Duse, via Diodoro Siculo, via Minerva. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o di ristrutturazione completa, la sub-fascia dal numero di elementi.",
+    "fasce": {
+     "2006": [
+      [
+       2.415,
+       5.25
+      ],
+      [
+       2.53,
+       5.5
+      ],
+      [
+       2.645,
+       5.75
+      ]
+     ],
+     "1969": [
+      [
+       2.346,
+       5.1
+      ],
+      [
+       2.415,
+       5.25
+      ],
+      [
+       2.53,
+       5.5
+      ]
+     ],
+     "1968": [
+      [
+       2.185,
+       4.75
+      ],
+      [
+       2.346,
+       5.1
+      ],
+      [
+       2.415,
+       5.25
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "1B",
+    "nome": "1B. Centro storico",
+    "nota": "Zona 1/B (fasce da € 1,60 a € 4,00): tutti gli immobili del centro storico dentro l'area delimitata da via Duomo, via Gioeni, via Empedocle e via Garibaldi, esclusi quelli con accesso diretto da queste vie (zona 1) e da via Atenea (zona 1/A). Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o di ristrutturazione completa, la sub-fascia dal numero di elementi.",
+    "fasce": {
+     "2006": [
+      [
+       1.68,
+       4.2
+      ],
+      [
+       1.76,
+       4.4
+      ],
+      [
+       1.84,
+       4.6
+      ]
+     ],
+     "1969": [
+      [
+       1.632,
+       4.08
+      ],
+      [
+       1.68,
+       4.2
+      ],
+      [
+       1.76,
+       4.4
+      ]
+     ],
+     "1968": [
+      [
+       1.52,
+       3.8
+      ],
+      [
+       1.632,
+       4.08
+      ],
+      [
+       1.68,
+       4.2
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "2. San Giusippuzzo, Fontanelle",
+    "nota": "Zona 2 (fasce da € 1,70 a € 3,50): contrada San Giusippuzzo, via Unità d'Italia, frazioni di Fontanelle, Amagione e Monserrato. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o di ristrutturazione completa, la sub-fascia dal numero di elementi.",
+    "fasce": {
+     "2006": [
+      [
+       1.785,
+       3.675
+      ],
+      [
+       1.87,
+       3.85
+      ],
+      [
+       1.955,
+       4.025
+      ]
+     ],
+     "1969": [
+      [
+       1.734,
+       3.57
+      ],
+      [
+       1.785,
+       3.675
+      ],
+      [
+       1.87,
+       3.85
+      ]
+     ],
+     "1968": [
+      [
+       1.615,
+       3.325
+      ],
+      [
+       1.734,
+       3.57
+      ],
+      [
+       1.785,
+       3.675
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "3. Villaggio Mosè, Cannatello",
+    "nota": "Zona 3 (fasce da € 1,80 a € 4,00): Villaggio Mosè (via Leonardo Sciascia, via dei Fiumi, viale Cannatello, contrada Mosella, via Cavaleri Magazzeni e le vie che se ne diramano), Villaggio Peruzzo, viale Emporium, contrada Cannatello, contrada Zingarello. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o di ristrutturazione completa, la sub-fascia dal numero di elementi.",
+    "fasce": {
+     "2006": [
+      [
+       1.89,
+       4.2
+      ],
+      [
+       1.98,
+       4.4
+      ],
+      [
+       2.07,
+       4.6
+      ]
+     ],
+     "1969": [
+      [
+       1.836,
+       4.02
+      ],
+      [
+       1.89,
+       4.2
+      ],
+      [
+       1.98,
+       4.4
+      ]
+     ],
+     "1968": [
+      [
+       1.71,
+       3.8
+      ],
+      [
+       1.836,
+       4.08
+      ],
+      [
+       1.89,
+       4.2
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4A",
+    "nome": "4A. San Leone, lungomare (pregio)",
+    "nota": "Zona 4/A di pregio (fasce da € 2,30 a € 5,00), nella frazione di San Leone: viale dei Pini, lungomare Falcone Borsellino, viale Viareggio, via Maddalusa. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o di ristrutturazione completa, la sub-fascia dal numero di elementi.",
+    "fasce": {
+     "2006": [
+      [
+       2.415,
+       5.25
+      ],
+      [
+       2.53,
+       5.5
+      ],
+      [
+       2.645,
+       5.75
+      ]
+     ],
+     "1969": [
+      [
+       2.346,
+       5.1
+      ],
+      [
+       2.415,
+       5.25
+      ],
+      [
+       2.53,
+       5.5
+      ]
+     ],
+     "1968": [
+      [
+       2.185,
+       4.75
+      ],
+      [
+       2.346,
+       5.1
+      ],
+      [
+       2.415,
+       5.25
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4B",
+    "nome": "4B. San Leone (resto)",
+    "nota": "Zona 4/B (fasce da € 2,20 a € 4,50): tutta la frazione di San Leone fuori dalla zona 4/A, cioè viale dei Giardini, viale delle Dune, via Lacco Ameno, viale Magellano e le vie che se ne diramano. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o di ristrutturazione completa, la sub-fascia dal numero di elementi.",
+    "fasce": {
+     "2006": [
+      [
+       2.31,
+       4.725
+      ],
+      [
+       2.42,
+       4.95
+      ],
+      [
+       2.53,
+       5.175
+      ]
+     ],
+     "1969": [
+      [
+       2.244,
+       4.59
+      ],
+      [
+       2.31,
+       4.725
+      ],
+      [
+       2.42,
+       4.95
+      ]
+     ],
+     "1968": [
+      [
+       2.09,
+       3.8
+      ],
+      [
+       2.244,
+       4.59
+      ],
+      [
+       2.31,
+       4.725
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "5",
+    "nome": "5. Montaperto, Giardina Gallotti",
+    "nota": "Zona 5 (fasce da € 1,60 a € 3,00): frazioni di Montaperto e Giardina Gallotti. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o di ristrutturazione completa, la sub-fascia dal numero di elementi.",
+    "fasce": {
+     "2006": [
+      [
+       1.68,
+       3.15
+      ],
+      [
+       1.76,
+       3.3
+      ],
+      [
+       1.84,
+       3.45
+      ]
+     ],
+     "1969": [
+      [
+       1.632,
+       3.06
+      ],
+      [
+       1.68,
+       3.15
+      ],
+      [
+       1.76,
+       3.3
+      ]
+     ],
+     "1968": [
+      [
+       1.52,
+       2.85
+      ],
+      [
+       1.632,
+       3.06
+      ],
+      [
+       1.68,
+       3.15
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "6",
+    "nome": "6. Zone sparse",
+    "nota": "Zona 6 (fasce da € 1,50 a € 2,80): zone sparse, fuori dalle altre zone. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o di ristrutturazione completa, la sub-fascia dal numero di elementi.",
+    "fasce": {
+     "2006": [
+      [
+       1.575,
+       2.94
+      ],
+      [
+       1.65,
+       3.08
+      ],
+      [
+       1.725,
+       3.22
+      ]
+     ],
+     "1969": [
+      [
+       1.53,
+       2.856
+      ],
+      [
+       1.575,
+       2.94
+      ],
+      [
+       1.65,
+       3.08
+      ]
+     ],
+     "1968": [
+      [
+       1.425,
+       2.66
+      ],
+      [
+       1.53,
+       2.856
+      ],
+      [
+       1.575,
+       2.94
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "1",
+    "2",
+    "3"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    5,
+    9
+   ],
+   "nota": "Sub-fascia 1 (dotazioni essenziali) fino a 5 elementi, sub-fascia 2 (media dotazione) da 6 a 9, sub-fascia 3 (particolare dotazione) da 10 in su (allegato 2). Il valore dipende anche dall'epoca: prima del 1969 da -5% a +5%, dal 1969 al 2005 da +2% a +10%, dal 2006 da +5% a +15% rispetto alla fascia base della zona."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi di riferimento (allegato 2): segna quelli presenti"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Autorimessa singola o posto auto coperto"
+   },
+   {
+    "testo": "Cortile comune"
+   },
+   {
+    "testo": "Cantina, sottotetto o soffitta"
+   },
+   {
+    "testo": "Impianto d'acqua corrente"
+   },
+   {
+    "testo": "Impianto di riscaldamento"
+   },
+   {
+    "testo": "Comodità di salita (dal 3° piano in su serve l'ascensore)"
+   },
+   {
+    "testo": "Area verde di pertinenza"
+   },
+   {
+    "testo": "Posto auto scoperto"
+   },
+   {
+    "testo": "Un altro posto auto o box, oltre al primo"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Impianti sportivi di pertinenza"
+   },
+   {
+    "testo": "Dotazione di mobilio"
+   },
+   {
+    "testo": "Doppi servizi (due bagni)"
+   },
+   {
+    "testo": "Allacciamento alla rete del gas"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Doppi vetri"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'appartamento",
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa ad uso esclusivo (10%)",
+     "coeff": 0.1
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto macchina in autorimessa di uso comune (2%)",
+     "coeff": 0.02
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e altri accessori simili (3%)",
+     "coeff": 0.03
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Superficie scoperta in godimento esclusivo (2%)",
+     "coeff": 0.02
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale, quota millesimale dell'alloggio (2%)",
+     "coeff": 0.02
+    }
+   ],
+   "nota": "Superficie utile (titolo A, punto 7): l'intera superficie calpestabile; non oltre il 10% delle autorimesse ad uso esclusivo; non oltre il 2% del posto macchina in autorimesse comuni; non oltre il 3% di balconi, terrazze, cantine e accessori simili; non oltre il 2% della superficie scoperta in godimento esclusivo e del verde condominiale (per la quota millesimale). Qui si usano le percentuali massime. Sulla superficie calpestabile è ammessa una tolleranza del 5% in più o in meno. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie locata, considerando anche le parti condivise."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "epoca",
+    "tipo": "scelta",
+    "testo": "Anno di costruzione o di ristrutturazione completa (sceglie la tabella dei valori)",
+    "nome": "costruzione o ristrutturazione",
+    "nessuna": "fino al 31/12/1968",
+    "mostra_perc": false,
+    "opzioni": [
+     {
+      "valore": "1969",
+      "testo": "dal 1969 al 2005",
+      "perc": 0
+     },
+     {
+      "valore": "2006",
+      "testo": "dal 2006 in poi",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "ammobiliato": true,
+    "testo": "Alloggio completamente arredato",
+    "nome": "completamente arredato",
+    "perc": 20
+   },
+   {
+    "chiave": "storico",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato come bene storico-artistico o di categoria A/1, A/8 o A/9",
+    "nome": "immobile vincolato o A/1, A/8, A/9",
+    "perc": 10
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano e valgono sul minimo e sul massimo. Durata 4, 5 o 6 anni e più (più 2 di proroga): +2%, +3%, +4%. Alloggio completamente arredato: fino a +20% (+20% per transitori e studenti). Immobili dell'art. 1, comma 2, lettera a della legge 431/98 (vincolati o di categoria A/1, A/8, A/9): +10%. Contratti transitori: +20% per favorire la mobilità.",
+  "durata": {
+   "4": 2,
+   "5": 3,
+   "6": 4
+  },
+  "contratto": {
+   "transitorio": 20
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "zone": [
+     "1",
+     "4B"
+    ],
+    "fascia": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "testo": "Alloggio costruito prima del 1969 con fino a 5 elementi: la tabella dell'accordo indica un massimo di € 3,80 al mq, pur scrivendo «pari a meno 5%» (che darebbe € 4,275). Qui si usa € 3,80, il valore più prudente: chiedi conferma all'associazione che attesta il contratto."
+   },
+   {
+    "zone": [
+     "2"
+    ],
+    "fascia": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "testo": "Alloggio costruito o ristrutturato dal 1969 al 2005 con fino a 5 elementi: la tabella stampa un massimo di € 3,67 al mq, ma «più 2%» di € 3,50 dà € 3,57 (come nella sub-fascia 2 prima del 1969). Qui si usa € 3,57, il valore più prudente."
+   },
+   {
+    "zone": [
+     "2"
+    ],
+    "fascia": [
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "testo": "Alloggio costruito o ristrutturato dal 2006 con almeno 10 elementi: la tabella stampa un massimo di € 4,25 al mq, ma «più 15%» di € 3,50 dà € 4,025. Qui si usa € 4,025, il valore più prudente."
+   },
+   {
+    "zone": [
+     "3"
+    ],
+    "fascia": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "testo": "Alloggio costruito o ristrutturato dal 1969 al 2005 con fino a 5 elementi: la tabella indica un massimo di € 4,02 al mq, mentre «più 2%» di € 4,00 darebbe € 4,08. Qui si usa € 4,02, il valore più prudente."
+   },
+   {
+    "zone": [
+     "3"
+    ],
+    "fascia": [
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "testo": "Alloggio costruito o ristrutturato dal 2006 con almeno 10 elementi: la tabella stampa un massimo di € 4,06 al mq, più basso delle sub-fasce inferiori; è un'evidente inversione di cifre, perché «più 15%» di € 4,00 dà € 4,60. Qui si usa € 4,60: chiedi conferma all'associazione che attesta il contratto."
+   },
+   {
+    "zone": [
+     "6"
+    ],
+    "fascia": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "testo": "La tabella della zona 6 contiene errori di stampa: il massimo «più 2%» è scritto € 3,856 invece di € 2,856 (dal 1969 al 2005 fino a 5 elementi; prima del 1969 da 6 a 9 elementi) e, prima del 1969 con fino a 5 elementi, € 2,786 invece di € 2,66 («meno 5%» di € 2,80). Qui si usano € 2,856 e € 2,66, i valori più prudenti."
+   },
+   {
+    "testo": "L'accordo prevede che i valori minimi e massimi delle fasce si aggiornino dal terzo anno, per i nuovi contratti, fino al 75% della variazione ISTAT: qui trovi i valori originali del 2017. Chiedi all'associazione che attesta il contratto se applica valori aggiornati."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 4",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/1/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Agrigento del 20/11/2017, depositato il 15/12/2017",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Accordo territoriale",
+  "titolo_elementi": "ELEMENTI E PARAMETRI OGGETTIVI",
+  "etichetta_conteggio": "ELEMENTI E PARAMETRI n.",
+  "dichiarazione": "La parte richiedente ha presentato richiesta per l'attestazione ex D.M. 16/1/2017, dichiarando, sotto la sua responsabilità, gli elementi sopra riportati.",
+  "firme": [],
+  "titolo_attestazione": "ATTESTA",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Agrigento, depositato il 15/12/2017, in persona di ……………………………, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Agrigento, depositato in data 15/12/2017."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "Agrigento è divisa in 9 zone (allegato 1): 1, 1/A di pregio e 1/B (centro storico) in città; 2 (San Giusippuzzo, Fontanelle, Amagione, Monserrato); 3 (Villaggio Mosè, Villaggio Peruzzo, Cannatello); 4/A di pregio e 4/B a San Leone; 5 (Montaperto, Giardina Gallotti); 6 (zone sparse). I confini fra le zone passano a metà della strada."
+ }
+}

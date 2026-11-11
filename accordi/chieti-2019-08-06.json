@@ -1,0 +1,405 @@
+{
+ "accordo": {
+  "codice": "chieti-2019-08-06",
+  "modello": "chieti-2019",
+  "comune": "Chieti",
+  "provincia": "CH",
+  "titolo": "Accordo territoriale Città di Chieti 2019",
+  "data": "2019-08-06",
+  "data_testo": "6 agosto 2019",
+  "deposito": "Comune di Chieti",
+  "deposito_data": "06.08.2019",
+  "protocollo": "",
+  "ufficio": "Comune di Chieti",
+  "ufficio_breve": "Comune di Chieti",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Chieti del 6 agosto 2019: durata di tre anni dal deposito, ormai trascorsi.</strong> Resta in vigore fino alla firma di un nuovo accordo (titolo G), che finora non risulta: il Comune lo ha ripubblicato a marzo 2026. I valori si possono aggiornare ogni anno fino al 75% dell'ISTAT (art. 5): qui trovi i valori originali del 2019, chiedi all'associazione che attesta il contratto se ne applica di aggiornati.",
+  "firmatari_proprieta": [
+   "U.P.P.I. Chieti",
+   "A.S.P.P.I.",
+   "CONFABITARE",
+   "CONFAPPI",
+   "CONFEDILIZIA",
+   "FEDERPROPRIETÀ",
+   "UNIONCASA Chieti"
+  ],
+  "firmatari_conduttori": [
+   "A.N.I.A.",
+   "ASSOCASA",
+   "CONIA",
+   "FEDER.CASA Abruzzo",
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T. Abruzzo",
+   "UNIONE INQUILINI"
+  ],
+  "nota": "Firmato a Chieti il 06/08/2019 dalle organizzazioni della proprietà e degli inquilini e depositato al Comune lo stesso giorno (timbro di ricevimento del 6 agosto 2019; numero di protocollo scritto a mano, non leggibile con certezza). Le associazioni lo hanno firmato senza convocazione del Comune, che non aveva risposto entro 30 giorni alla richiesta del 23/05/2019; sostituisce l'accordo depositato il 16/02/2016 (prot. 8861). Dura tre anni dal giorno dopo il deposito e resta in vigore fino al nuovo accordo (titolo G): a novembre 2026 non ne risultano di più recenti e il Comune lo ha ripubblicato il 26/03/2026. Tre microzone per fogli di mappa catastale, con confini e valori diversi per i contratti agevolati e per i transitori e studenti (tabella A); valori massimi annui al mq per sub-fascia inferiore, intermedia e superiore, scelta con il numero dei 24 elementi della tabella B (da 1 a 5, da 6 a 10, da 11 in poi: tabella C). Maggiorazioni e riduzioni della tabella D: durata oltre 3 anni +5% (solo agevolati), arredo completo fino a +20% o parziale fino a +10%, classe energetica A1-A4 fino a +8% o B-E fino a +5%, attico fino a +10%, alloggi fino a 50 mq fino a +20%; garanzia del conduttore -5%, alloggi da 100 a 110 mq -5%, da 111 a 120 mq -10%, oltre 120 mq -15%. Si può pattuire un canone più basso dei minimi se il contratto è assistito o attestato. Attestazione: 60 euro (art. 2).",
+  "fonte": "Comune di Chieti, pagina «Accordo territoriale città di Chieti 2019 accordo tra le organizzazioni sindacali della proprietà edilizia» (comune.chieti.it, Documenti e dati, Atto normativo, pubblicata il 26/03/2026): scansione di 54 pagine con testo firmato, contratti tipo, allegati D-H e attestazione (allegato F). Stessa copia del testo (13 pagine, con l'allegato F) su SUNIA nazionale."
+ },
+ "esempio_zona": "la microzona dal foglio di mappa catastale (visura): per i contratti transitori e per studenti scegli una microzona «transitori/studenti»",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "1 - Centro storico (agevolati)",
+    "nota": "Contratti agevolati (3+2), microzona 1 Centro storico: foglio di mappa catastale 35 (il foglio è nella visura). Valori massimi in euro al mq all'anno (tabella A): sub-fascia inferiore, intermedia e superiore.",
+    "fasce": [
+     [
+      0,
+      60
+     ],
+     [
+      60,
+      70
+     ],
+     [
+      70,
+      80
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "2 - Centro (agevolati)",
+    "nota": "Contratti agevolati (3+2), microzona 2 Centro: fogli di mappa catastale 25, 26, 27, 28, 29, 30, 33, 34, 36, 37, 39, 40, 41, 42, 43, 44, 47, 48 (il foglio è nella visura). Valori massimi in euro al mq all'anno (tabella A): sub-fascia inferiore, intermedia e superiore.",
+    "fasce": [
+     [
+      0,
+      55
+     ],
+     [
+      55,
+      65
+     ],
+     [
+      65,
+      70
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "3 - Semicentro e periferia (agevolati)",
+    "nota": "Contratti agevolati (3+2), microzona 3 Semicentro e periferia: fogli di mappa catastale da 01 a 24, 31, 32, 38, 45, 46 e da 49 a 57 (il foglio è nella visura). Valori massimi in euro al mq all'anno (tabella A): sub-fascia inferiore, intermedia e superiore.",
+    "fasce": [
+     [
+      0,
+      45
+     ],
+     [
+      45,
+      50
+     ],
+     [
+      50,
+      60
+     ]
+    ]
+   },
+   {
+    "codice": "T1",
+    "nome": "1 - Polo universitario (transitori/studenti)",
+    "nota": "Contratti transitori e per studenti universitari, microzona 1 Polo universitario: fogli di mappa catastale 16, 17, 18, 25, 26, 27, 28 (il foglio è nella visura). Valori massimi in euro al mq all'anno (tabella A): sub-fascia inferiore, intermedia e superiore.",
+    "fasce": [
+     [
+      0,
+      75
+     ],
+     [
+      75,
+      85
+     ],
+     [
+      85,
+      90
+     ]
+    ]
+   },
+   {
+    "codice": "T2",
+    "nome": "2 - Centro (transitori/studenti)",
+    "nota": "Contratti transitori e per studenti universitari, microzona 2 Centro: fogli di mappa catastale 12, 19, 29, 30, 31, 33, 34, 35, 36, 37, 39, 40, 41, 42, 43, 44, 47, 48 (il foglio è nella visura). Valori massimi in euro al mq all'anno (tabella A): sub-fascia inferiore, intermedia e superiore.",
+    "fasce": [
+     [
+      0,
+      65
+     ],
+     [
+      65,
+      75
+     ],
+     [
+      75,
+      85
+     ]
+    ]
+   },
+   {
+    "codice": "T3",
+    "nome": "3 - Periferia (transitori/studenti)",
+    "nota": "Contratti transitori e per studenti universitari, microzona 3 Periferia: fogli di mappa catastale da 01 a 11, 13, 14, 15, da 20 a 24, 32, 38, 45, 46 e da 49 a 57 (il foglio è nella visura). Valori massimi in euro al mq all'anno (tabella A): sub-fascia inferiore, intermedia e superiore.",
+    "fasce": [
+     [
+      0,
+      45
+     ],
+     [
+      45,
+      55
+     ],
+     [
+      55,
+      65
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "Inferiore",
+    "Intermedia",
+    "Superiore"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    5,
+    10
+   ],
+   "nota": "Sub-fascia inferiore da 1 a 5 elementi, intermedia da 6 a 10, superiore da 11 elementi in su (tabella C). L'accordo fissa solo il valore massimo di ogni sub-fascia: qui il minimo è il massimo della sub-fascia più bassa (zero per la inferiore).",
+   "nota_pdf": "Sub-fascia inferiore: da 1 a 5 elementi della tabella B; intermedia: da 6 a 10; superiore: almeno 11 (tabella C)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Dotazioni dell'alloggio (tabella B): contale tutte"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Allacciamento alla rete pubblica di luce, acqua, gas e fognatura"
+   },
+   {
+    "testo": "Garage singolo o posto auto (coperto o scoperto) assegnato"
+   },
+   {
+    "testo": "Cantina o soffitta"
+   },
+   {
+    "testo": "Terrazzo o balcone"
+   },
+   {
+    "testo": "Riscaldamento a pavimento o centralizzato con termovalvole"
+   },
+   {
+    "testo": "Palazzina con meno di 9 appartamenti"
+   },
+   {
+    "testo": "Riscaldamento autonomo o climatizzazione fissa"
+   },
+   {
+    "testo": "Secondo bagno con almeno 3 sanitari"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Porta blindata o altri sistemi di sicurezza"
+   },
+   {
+    "testo": "Nessuna barriera architettonica"
+   },
+   {
+    "testo": "Impianto telefonico"
+   },
+   {
+    "testo": "Classe energetica (APE) almeno D"
+   },
+   {
+    "testo": "Doppi vetri o doppi infissi"
+   },
+   {
+    "testo": "Pavimenti o rivestimenti di pregio (cotto, parquet, marmo...)"
+   },
+   {
+    "testo": "Ultimo piano, mansarda abitabile o attico"
+   },
+   {
+    "testo": "Impianto TV satellitare"
+   },
+   {
+    "testo": "Costruito o ristrutturato negli ultimi 15 anni"
+   },
+   {
+    "testo": "Fermata di un mezzo pubblico entro 300 metri"
+   },
+   {
+    "testo": "Giardino, portico o cortile a uso esclusivo"
+   },
+   {
+    "testo": "Isolamento termico"
+   },
+   {
+    "testo": "Impianto di risparmio energetico (solare termico, fotovoltaico)"
+   },
+   {
+    "testo": "Infissi, pavimenti e muri in buono stato di manutenzione"
+   },
+   {
+    "testo": "Categoria catastale almeno A/3 (non A/4, A/5 o A/6)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale totale dell'appartamento (visura): conta il 95%",
+   "coeff_base": 0.95,
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Garage (superficie catastale, conta il 60%)",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "posto_auto",
+     "testo": "Posto auto assegnato e accatastato (superficie catastale, conta il 30%)",
+     "coeff": 0.3
+    }
+   ],
+   "nota": "Si parte dalla superficie catastale totale della visura, comprese le aree scoperte, ridotta del 5%; il garage conta il 60% e il posto auto assegnato e accatastato il 30% della superficie catastale. Senza superficie in visura si calcola dalla planimetria catastale con i criteri del D.P.R. 138/1998, sempre ridotta del 5%. Tolleranza del 10% in più o in meno (art. 4)."
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "alloggio fino a 50 mq",
+    "a": 50,
+    "perc": 20
+   },
+   {
+    "nome": "alloggio da 100 a 110 mq",
+    "da": 100,
+    "a": 110,
+    "perc": -5
+   },
+   {
+    "nome": "alloggio da 111 a 120 mq",
+    "da": 110.01,
+    "a": 120,
+    "perc": -10
+   },
+   {
+    "nome": "alloggio oltre 120 mq",
+    "da": 120.01,
+    "perc": -15
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 20
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE)",
+    "nome": "classe energetica",
+    "nessuna": "F o G, oppure senza APE",
+    "opzioni": [
+     {
+      "valore": "A",
+      "testo": "A1, A2, A3 o A4",
+      "perc": 8
+     },
+     {
+      "valore": "BE",
+      "testo": "B, C, D o E",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "attico",
+    "tipo": "spunta",
+    "testo": "Attico: appartamento all'ultimo piano del palazzo, con soffitto di altezza regolare ovunque (non mansarda né sottotetto)",
+    "nome": "attico",
+    "perc": 10
+   },
+   {
+    "chiave": "garanzia",
+    "tipo": "spunta",
+    "testo": "L'inquilino dà una garanzia reale o personale (per esempio una fideiussione; il deposito cauzionale non conta)",
+    "nome": "garanzia dell'inquilino",
+    "perc": -5
+   }
+  ],
+  "nota_maggiorazioni": "Le percentuali si sommano e si applicano ai valori della tabella A (tabella D): durata oltre 3 anni +5% (solo agevolati), completamente arredato fino a +20%, parzialmente arredato fino a +10%, classe energetica A1-A4 fino a +8%, B-E fino a +5%, attico fino a +10%, alloggio fino a 50 mq fino a +20%; garanzia reale o personale dell'inquilino -5%, alloggio da 100 a 110 mq -5%, da 111 a 120 mq -10%, oltre 120 mq -15%. Transitori e studenti: stessi aumenti e riduzioni, esclusa la durata. Per una porzione d'alloggio il canone dell'intero si divide in proporzione alla superficie locata, contando anche le parti in comune (art. 4).",
+  "durata": {
+   "4": 5,
+   "5": 5,
+   "6": 5
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Per un contratto agevolato (3+2) scegli una delle microzone «agevolati»: quelle «transitori e studenti» hanno confini e valori diversi (tabella A).",
+    "contratti": [
+     "agevolato"
+    ],
+    "zone": [
+     "T1",
+     "T2",
+     "T3"
+    ]
+   },
+   {
+    "testo": "Per un contratto transitorio o per studenti scegli una delle microzone «transitori/studenti»: confini e valori sono diversi da quelli degli agevolati (tabella A).",
+    "contratti": [
+     "transitorio",
+     "studenti"
+    ],
+    "zone": [
+     "1",
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "L'accordo fissa solo i valori massimi: si può pattuire anche un canone più basso, purché il contratto sia assistito o attestato da un'associazione firmataria (nota alla tabella A)."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato F",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale Città di Chieti 2019, firmato e depositato al Comune di Chieti il 06/08/2019",
+  "titolo_superficie": "DATI CATASTALI E SUPERFICIE (art. 4)",
+  "titolo_elementi": "TABELLA B) ELENCO DOTAZIONI",
+  "etichetta_conteggio": "NUMERO TOTALE ELEMENTI",
+  "dichiarazione": "Il dichiarante, consapevole delle sanzioni penali previste dall'art. 76 del D.P.R. 28 dicembre 2000, n. 445, per le dichiarazioni mendaci e per la formazione e per l'uso di atti falsi, afferma ed attesta, ai sensi del combinato disposto degli artt. 21 comma 2° e 47 del predetto D.P.R. n. 445/2000, che il contratto è conforme al modello ministeriale ed il possesso delle dotazioni sopra indicate.",
+  "firme": [],
+  "titolo_attestazione": "ATTESTA",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Chieti depositato il 06/08/2019, in persona di ……………………………, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Chieti depositato in data 06/08/2019."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La microzona si ricava dal foglio di mappa catastale dell'immobile (lo trovi nella visura). Attenzione: i contratti agevolati e quelli transitori e per studenti hanno microzone diverse (tabella A). Per i fogli non censiti vale la microzona più vicina (art. 1)."
+ }
+}

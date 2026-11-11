@@ -1,0 +1,243 @@
+{
+ "accordo": {
+  "codice": "matera-2019-02-15",
+  "modello": "matera-2019",
+  "comune": "Matera",
+  "provincia": "MT",
+  "titolo": "Accordo territoriale per la stipula di contratti di locazione agevolata per il Comune di Matera",
+  "data": "2019-02-15",
+  "data_testo": "15 febbraio 2019",
+  "deposito": "Comune di Matera",
+  "deposito_data": "15.02.2019",
+  "protocollo": "0013341/2019",
+  "ufficio": "Comune di Matera",
+  "ufficio_breve": "Comune di Matera",
+  "avviso_validita": "<strong>Accordo di Matera del 15 febbraio 2019.</strong> Non ha una scadenza: resta in vigore finché non ne viene firmato uno nuovo, e non risulta un accordo più recente. I valori sono quelli originali, al mq al mese. Per i contratti transitori e per studenti l'accordo prevede che i limiti delle fasce si aggiornino con l'ISTAT: chiedi all'associazione che attesta il contratto i valori aggiornati.",
+  "firmatari_proprieta": [
+   "A.P.P.C. - Associazione Piccoli Proprietari Case"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato e depositato il 15/02/2019 presso il Comune di Matera da A.P.P.C. (proprietari) e SUNIA, SICET e UNIAT (inquilini): protocollo generale n. 0013341/2019 del 15/02/2019 (timbro sulla lettera di deposito del 14/02/2019 e sulla prima pagina del testo). Sostituisce integralmente l'accordo del 30 luglio 1999. Non ha scadenza: resta in vigore fino alla firma del nuovo accordo. Territorio diviso in 3 zone (allegato 1: centro, semiperiferia, periferia); per ogni zona tre fasce in euro al mq al mese secondo quanti dei 19 elementi dell'allegato 2 sono presenti (fascia C fino a 4, B fino a 7, A oltre). Superficie calpestabile con balconi, terrazze e cantine al 25%, autorimessa singola al 50%, posto auto in autorimessa comune al 20% e in spazi comuni al 10%, vani alti fra 1 e 1,70 m al 70% (allegato 3). Fasce aumentate del 10% fino a 120 mq di superficie convenzionale, del 5% fino a 80 mq netti e del 10% fino a 50 mq netti; nuova costruzione o ristrutturazione integrale da non oltre 10 anni, oppure classe energetica C o superiore, +10% (non cumulabili); arredo completo +25%, parziale +15%; durata 4+2 +3%, 5+2 o 6+2 +5%, +1% per ogni anno oltre i 6. Transitori e studenti: stesse fasce, limiti aggiornati con l'ISTAT.",
+  "fonte": "SUNIA nazionale, pagina «Accordi territoriali di Matera» (sunia.it): scansione firmata di 45 pagine (Matera_AccordoConcordato15022019.pdf) con lettera di deposito protocollata, testo, allegati 1-5, contratti tipo del D.M. 16/01/2017 e dichiarazione a verbale del SICET. Firma e deposito del 15/02/2019 confermati dai comunicati stampa delle organizzazioni (SassiLive e Giornalemio, 15-16/02/2019). Nessun accordo più recente sul sito del Comune né altrove."
+ },
+ "esempio_zona": "la zona (allegato 1: centro, semiperiferia o periferia)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "1. Centro",
+    "nota": "Macroarea 1 (allegato 1): Piazza Vittorio Veneto, via Roma, via Spine Bianche, via del Corso, via XX Settembre, via Annunziatella, piazza Sedile, Cattedrale, via Moro, piazza Matteotti, via Lanera, via L. Protospata, via La Croce, via Einaudi, via Parri, via Saragat, via Nenni, via Ugo La Malfa, via Cappelluti, via Passarelli, via Lucana, via Ridola, via Casalnuovo, via Gattini, via Cererie, via S. Stefano, via Amendola, via S. Biagio, via Nazionale, viale Nazioni Unite, via Timmari, rione Piccianello, zona Sassi. Valori in euro al mq al mese.",
+    "fasce": [
+     [4.5, 5.0],
+     [5.5, 6.0],
+     [6.5, 7.0]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "2. Semiperiferia",
+    "nota": "Macroarea 2 (allegato 1): via Cappuccini, via Gravina, via Taranto, via Cosenza, via La Martella, rione Lanera, rione Pini, rione Serra Venerdì, rione Serra Rifusa, rione Villa Longo, rione Platani, rione San Giacomo, zona Quadrifoglio, rione Agna, contrada San Francesco, zona Palomba. L'allegato 1 elenca qui anche le zone P.A.I.P. 1 e 2 e P.E.E.P., che però il testo dell'accordo mette nella zona 3. Valori in euro al mq al mese.",
+    "fasce": [
+     [3.5, 4.0],
+     [4.5, 5.0],
+     [5.5, 6.0]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "3. Periferia",
+    "nota": "Macroarea 3 (allegato 1): La Martella, Borgo Picciano A e B, collina di Timmari, Borgo Venusio e le altre zone esterne a nord, sud, est e ovest. Secondo il testo dell'accordo (punto A.2) anche tutte le strade delle zone P.A.I.P., P.E.E.P. ed ex rurali (borghi). Valori in euro al mq al mese.",
+    "fasce": [
+     [2.5, 3.0],
+     [3.5, 4.0],
+     [4.5, 5.0]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "C",
+    "B",
+    "A"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    7
+   ],
+   "nota": "Fascia C fino a 4 elementi, fascia B fino a 7, fascia A da 8 in su (allegato 2: l'accordo scrive «fino a 12 elementi» per la fascia A, ma gli elementi sono 19)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi per la determinazione della fascia (allegato 2): segna quelli presenti"
+   }
+  ],
+  "elementi": [
+   { "testo": "Appartamento dal 1° piano fuori terra in su" },
+   { "testo": "Allacciamento al gas metano" },
+   { "testo": "Ascensore" },
+   { "testo": "Impianto elettrico interno a norma" },
+   { "testo": "Riscaldamento autonomo o centralizzato" },
+   { "testo": "Infissi interni ed esterni in buono stato o con vetrocamera" },
+   { "testo": "Servizi igienici completi" },
+   { "testo": "Doppi servizi (due bagni)" },
+   { "testo": "Verde o cortile in uso comune" },
+   { "testo": "Impianto di ricezione TV o satellitare" },
+   { "testo": "Rete internet" },
+   { "testo": "Porta blindata" },
+   { "testo": "Ripostiglio o cantina" },
+   { "testo": "Impianto di condizionamento" },
+   { "testo": "Impianti per il risparmio energetico" },
+   { "testo": "Posto auto" },
+   { "testo": "Box auto" },
+   { "testo": "Giardino privato" },
+   { "testo": "Terrazzo o balconi" }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile (netta, senza i muri), esclusi i vani alti meno di 1,70 m",
+   "voci": [
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazze a uso esclusivo",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "cantine",
+     "testo": "Cantine",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa singola (box)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto in autorimessa comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto in spazi comuni",
+     "coeff": 0.1
+    },
+    {
+     "chiave": "vani_bassi",
+     "testo": "Vani con altezza utile fra 1,00 e 1,70 m",
+     "coeff": 0.7
+    }
+   ],
+   "nota": "Superficie dell'allegato 3: la superficie calpestabile al 100%; balconi, terrazze a uso esclusivo e cantine al 25%; autorimessa singola al 50%; posto auto in autorimessa comune al 20% e in spazi comuni al 10%; vani con altezza utile fra 1,00 e 1,70 m al 70%. Per una stanza si calcola il canone dell'intero alloggio e se ne prende la parte in proporzione alla superficie, considerando anche le parti comuni."
+  },
+  "correttivi_superficie": [
+   {
+    "a": 120,
+    "perc": 10,
+    "nome": "superficie convenzionale fino a 120 mq"
+   },
+   {
+    "a": 80,
+    "su": "base",
+    "perc": 5,
+    "nome": "superficie netta fino a 80 mq"
+   },
+   {
+    "a": 50,
+    "su": "base",
+    "perc": 10,
+    "nome": "superficie netta fino a 50 mq"
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "nuovo",
+    "tipo": "scelta",
+    "testo": "Immobile nuovo o efficiente (le due voci non si sommano)",
+    "nome": "immobile nuovo o efficiente",
+    "nessuna": "nessuna delle due",
+    "opzioni": [
+     {
+      "valore": "nuovo",
+      "testo": "nuova costruzione o ristrutturato integralmente da non oltre 10 anni",
+      "perc": 10
+     },
+     {
+      "valore": "classe",
+      "testo": "classe energetica C o superiore (APE)",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato",
+      "perc": 15
+     },
+     {
+      "valore": "completo",
+      "testo": "interamente arredato",
+      "perc": 25
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Allegato 3: le fasce aumentano del 10% se la superficie convenzionale non supera 120 mq, del 5% se la superficie netta non supera 80 mq e del 10% se non supera 50 mq (qui gli aumenti si sommano: fino a 50 mq netti +25%). Nuova costruzione o ristrutturazione integrale da non oltre 10 anni, oppure classe energetica C o superiore: +10%, non cumulabili. Interamente arredato +25%, parzialmente +15%. Durata 4+2: +3%; 5+2 o 6+2: +5% (+1% per ogni anno oltre i 6). Qui tutti gli aumenti si sommano. Transitori e studenti: stesse fasce e aumenti, tranne quello per la durata.",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 5
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Gli aumenti per la superficie sono scritti in modo poco chiaro (+10% fino a 120 mq, +5% fino a 80 mq, +10% fino a 50 mq): qui si sommano, quindi fino a 50 mq netti l'aumento è del 25%. Sono facoltativi («si può applicare»): chiedi conferma all'associazione che attesta il contratto."
+   },
+   {
+    "testo": "Durata oltre 6 anni più 2: l'accordo aggiunge l'1% per ogni anno oltre i 6 (7+2: +6%, 8+2: +7%...).",
+    "contratti": ["agevolato"]
+   },
+   {
+    "testo": "Per i contratti transitori e per studenti i limiti delle fasce si aggiornano con l'ISTAT del mese prima della firma: i valori mostrati sono quelli originali del 2019.",
+    "contratti": ["transitorio", "studenti"]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegati 2 e 3",
+  "titolo": "Fasce di oscillazione ed elementi oggettivi per la determinazione del canone",
+  "sottotitolo": "Accordo territoriale del Comune di Matera del 15/02/2019, depositato il 15/02/2019 (prot. n. 0013341/2019)",
+  "titolo_superficie": "CALCOLO DEL METRO QUADRO (allegato 3)",
+  "titolo_elementi": "ELEMENTI PER LA DETERMINAZIONE DELLA FASCIA DEL CANONE DI LOCAZIONE (allegato 2)",
+  "etichetta_conteggio": "TOTALE ELEMENTI",
+  "dichiarazione": "Il locatore e il conduttore dichiarano sotto la propria responsabilità le caratteristiche dell'immobile oggetto della locazione sopra riportate, come elementi oggettivi ai fini del calcolo del canone agevolato (allegato 4).",
+  "firme": [
+   "Il Locatore",
+   "Il Conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA D.M. 16/01/2017 (allegato 4)",
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Matera, depositato il 15/02/2019, sulla base degli elementi oggettivi dichiarati, anche ai fini dell'ottenimento delle agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente del Comune di Matera depositato in data 15/02/2019."
+  ],
+  "firme_attestazione": [
+   "Luogo e data ……………………",
+   "L'Organizzazione"
+  ],
+  "nota_zone": "Matera è divisa in 3 zone (allegato 1): centro (compresi i Sassi e il rione Piccianello), semiperiferia e periferia (La Martella, i borghi e le zone esterne). Le strade nuove seguono la zona di quelle vicine e, al confine fra due zone, quella di maggior pregio; le zone P.A.I.P., P.E.E.P. e i borghi ex rurali sono nella zona 3."
+ }
+}

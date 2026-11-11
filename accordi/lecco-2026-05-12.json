@@ -1,0 +1,423 @@
+{
+ "accordo": {
+  "codice": "lecco-2026-05-12",
+  "modello": "lecco-2026",
+  "comune": "Lecco",
+  "provincia": "LC",
+  "titolo": "Accordo locale per il Comune di Lecco",
+  "data": "2026-05-12",
+  "data_testo": "12 maggio 2026",
+  "deposito": "Comune di Lecco, prot. n. 0053273 del 18/05/2026",
+  "deposito_data": "18.05.2026",
+  "protocollo": "0053273",
+  "ufficio": "Comune di Lecco, Servizi contabili e tributari",
+  "ufficio_breve": "Comune di Lecco",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Lecco: nel 2026 sono stati depositati in Comune due accordi diversi.</strong> Questo è quello firmato il 12 maggio 2026 da SUNIA, SICET, UNIAT, ASPPI e ALPE (tre zone). Un secondo accordo, firmato il 17 aprile 2026 da UPPI, Confabitare, Confappi, APPC, Assocasa e CONIA, ha due zone e valori diversi. L'attestazione deve rilasciarla un'associazione firmataria dell'accordo che si usa.",
+  "firmatari_proprieta": [
+   "A.S.P.P.I. Lecco",
+   "A.L.P.E. Lecco"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A. Lecco",
+   "S.I.C.E.T. Monza Brianza Lecco",
+   "U.N.I.A.T. Lecco"
+  ],
+  "nota": "Firmato a Lecco il 12/05/2026 alla presenza del Sindaco e depositato al Comune di Lecco il 18/05/2026 (prot. n. 0053273, PEC di SUNIA Lecco); il Comune lo pubblica come valido dal 19/05/2026. Modifica e integra l'accordo del 06/06/2018, che resta valido solo per i contratti firmati sotto la sua vigenza. Si applica dal deposito fino a un nuovo decreto ministeriale (punto 14). Tre zone e tre sub-fasce, valori annui al mq (allegato 3). Se dopo due anni dalla firma l'accordo non viene aggiornato, minimi e massimi aumentano ogni anno del 75% dell'ISTAT. Con l'assistenza di un'associazione dei proprietari e di un sindacato degli inquilini si può concordare un canone sotto il minimo della zona (punto 4.d). Al Comune è stato depositato anche un secondo accordo (17/04/2026, prot. n. 0043087) firmato da altre associazioni.",
+  "fonte": "Comune di Lecco, pagina «Accordo Territoriale 2026» (Documenti tecnici di supporto): accordo depositato con timbro di protocollo, 52 pagine in scansione (testo, elenco vie, tabelle dei canoni, richiesta e attestazione, contratti tipo, PEC di deposito). Stesso testo pubblicato dal SUNIA. L'elenco vie della copia pubblicata è incompleto (mancano alcune pagine) e la mappa delle zone non è nel PDF: il Comune rimanda al suo Geoportale."
+ },
+ "esempio_zona": "la zona dall'elenco vie dell'accordo o dal Geoportale del Comune",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro e lungolago",
+    "nota": "Zona 1: il centro e il lungolago (per esempio piazza Garibaldi, piazza Cermenati, piazza Manzoni, piazza Diaz, lungolario Isonzo, Cadorna e IV Novembre, via Cavour, via Roma). Alcune vie sono divise fra più zone: per il numero civico controlla il Geoportale del Comune di Lecco. Un edificio attraversato dal confine sta nella zona di valore più alto. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      50,
+      68
+     ],
+     [
+      62,
+      88
+     ],
+     [
+      62,
+      88
+     ],
+     [
+      78,
+      109
+     ],
+     [
+      78,
+      109
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Intorno al centro",
+    "nota": "Zona 2: i quartieri intorno al centro (per esempio piazza Cavallotti, piazza Carducci, piazza Padre Cristoforo, piazza del Bione, piazza Dell'Oro). Alcune vie sono divise fra più zone: per il numero civico controlla il Geoportale del Comune di Lecco. Un edificio attraversato dal confine sta nella zona di valore più alto. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      47,
+      62
+     ],
+     [
+      59,
+      81
+     ],
+     [
+      59,
+      81
+     ],
+     [
+      71,
+      88
+     ],
+     [
+      71,
+      88
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Rioni esterni e località collinari",
+    "nota": "Zona 3: i rioni più esterni e le località collinari (per esempio Versasio, Malnago, Neguggio, Campo de' Boi, Costa, Barco, Piani d'Erna, corso Bergamo). Alcune vie sono divise fra più zone: per il numero civico controlla il Geoportale del Comune di Lecco. Un edificio attraversato dal confine sta nella zona di valore più alto. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      39,
+      53
+     ],
+     [
+      49,
+      70
+     ],
+     [
+      49,
+      70
+     ],
+     [
+      61,
+      77
+     ],
+     [
+      61,
+      77
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "Sub-fascia 1",
+    "Sub-fascia 2",
+    "Sub-fascia 2",
+    "Sub-fascia 3",
+    "Sub-fascia 3"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 3,
+      "tutti": true
+     },
+     {
+      "da": 4,
+      "a": 12,
+      "n": 3
+     }
+    ],
+    [
+     {
+      "da": 0,
+      "a": 3,
+      "tutti": true
+     },
+     {
+      "da": 4,
+      "a": 12,
+      "n": 2
+     },
+     {
+      "da": 13,
+      "a": 21,
+      "n": 2
+     }
+    ],
+    [
+     {
+      "da": 0,
+      "a": 3,
+      "tutti": true
+     },
+     {
+      "da": 4,
+      "a": 12,
+      "n": 3
+     },
+     {
+      "da": 13,
+      "a": 21,
+      "n": 3
+     }
+    ],
+    [
+     {
+      "da": 0,
+      "a": 3,
+      "tutti": true
+     },
+     {
+      "da": 4,
+      "a": 12,
+      "n": 4
+     },
+     {
+      "da": 13,
+      "a": 21,
+      "n": 2
+     }
+    ]
+   ],
+   "conta": {
+    "da": 0,
+    "a": 3
+   },
+   "nota": "Sub-fascia 1: tutti gli elementi A. Sub-fascia 2: tutti gli A e almeno 3 elementi B, oppure tutti gli A, almeno 2 B e almeno 2 C. Sub-fascia 3: tutti gli A, almeno 3 B e almeno 3 C, oppure tutti gli A, almeno 4 B e almeno 2 C. Il numero accanto alla sub-fascia conta gli elementi A presenti (servono tutti e 4).",
+   "nota_pdf": "Sub-fascia 1: tutti gli elementi A. Sub-fascia 2: tutti gli A e almeno 3 B, oppure tutti gli A, 2 B e 2 C. Sub-fascia 3: tutti gli A, 3 B e 3 C, oppure tutti gli A, 4 B e 2 C (punto 4.b)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi di tipo A: servono tutti"
+   },
+   {
+    "da": 4,
+    "titolo": "Elementi di tipo B (sub-fascia 2: almeno 3 B, oppure 2 B e 2 C)"
+   },
+   {
+    "da": 13,
+    "titolo": "Elementi di tipo C (sub-fascia 3: almeno 3 B e 3 C, oppure 4 B e 2 C)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "A1 - Bagno interno completo (tazza, lavabo, vasca o doccia) con almeno una finestra o aerazione meccanica"
+   },
+   {
+    "testo": "A2 - Impianti essenziali funzionanti: acqua potabile, acqua calda, impianto elettrico e riscaldamento"
+   },
+   {
+    "testo": "A3 - Alloggio in buono stato in tutte le sue parti: impianti, infissi, pavimenti, pareti e soffitti"
+   },
+   {
+    "testo": "A4 - Cucina o angolo cottura"
+   },
+   {
+    "testo": "B1 - Cucina abitabile con almeno una finestra"
+   },
+   {
+    "testo": "B2 - Ascensore se l'alloggio è dal 2° piano in su, oppure alloggio fino al primo piano"
+   },
+   {
+    "testo": "B3 - Doppio bagno, di cui almeno uno completo e con finestra o aerazione meccanica"
+   },
+   {
+    "testo": "B4 - Posto auto scoperto indicato nel contratto"
+   },
+   {
+    "testo": "B5 - Giardino condominiale"
+   },
+   {
+    "testo": "B6 - Porte blindate"
+   },
+   {
+    "testo": "B7 - Doppi vetri"
+   },
+   {
+    "testo": "B8 - Trasporti, negozi e servizi essenziali (ospedale, scuole, farmacia) entro 500 metri"
+   },
+   {
+    "testo": "B9 - Almeno un balcone, terrazzo o veranda"
+   },
+   {
+    "testo": "C1 - Cantina o soffitta"
+   },
+   {
+    "testo": "C2 - Impianto fotovoltaico o solare termico"
+   },
+   {
+    "testo": "C3 - Impianto di allarme funzionante"
+   },
+   {
+    "testo": "C4 - Giardino privato o spazio aperto esclusivo"
+   },
+   {
+    "testo": "C5 - Box o posto auto coperto esclusivo"
+   },
+   {
+    "testo": "C6 - Ristrutturazione migliorativa negli ultimi 15 anni, con pratica in Comune (CILA, SCIA o simili)"
+   },
+   {
+    "testo": "C7 - Classe energetica da A a D"
+   },
+   {
+    "testo": "C8 - Impianto di condizionamento o raffrescamento funzionante"
+   },
+   {
+    "testo": "C9 - Stabile e alloggio senza barriere architettoniche, o con sistemi funzionanti per superarle"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale dell'alloggio (DPR 138/98, dalla visura)",
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Box o posto auto coperto",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto scoperto",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "cantine",
+     "testo": "Cantina, solaio o altre pertinenze (non box)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazze (30% fino a 25 mq, 10% oltre)",
+     "coeff": 0.3,
+     "scaglione": [
+      25,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "chiave": "verde",
+     "testo": "Giardino o area verde di uso esclusivo",
+     "coeff": 0.1
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 59.999,
+     "perc": 20,
+     "limite": 60
+    }
+   ],
+   "etichetta_correzione": "totale",
+   "nota": "Superficie catastale (DPR 138/98) più le pertinenze affittate insieme, solo se non sono già comprese nella superficie della visura: box o posto auto coperto 50%, balconi e terrazze 30% fino a 25 mq e 10% oltre, posto auto scoperto, cantina, solaio e altre pertinenze 25%, verde esclusivo 10%. Se il totale, pertinenze comprese, è sotto i 60 mq si può aumentare del 20%, ma non oltre 60 mq."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento (va scritto nel contratto; serve almeno la cucina o angolo cottura completa di mobili, tavolo con sedie ed elettrodomestici)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato, mobili ed elettrodomestici in perfetto stato",
+      "perc": 20
+     },
+     {
+      "valore": "3su4",
+      "testo": "arredati 3 locali su 4",
+      "perc": 15
+     },
+     {
+      "valore": "2su3",
+      "testo": "arredati 2 locali su 3",
+      "perc": 13.33
+     },
+     {
+      "valore": "meta",
+      "testo": "arredata metà dei locali (per esempio 2 su 4)",
+      "perc": 10
+     },
+     {
+      "valore": "1su3",
+      "testo": "arredato 1 locale su 3",
+      "perc": 6.67
+     },
+     {
+      "valore": "1su4",
+      "testo": "arredato 1 locale su 4",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "deposito",
+    "tipo": "spunta",
+    "testo": "Il proprietario rinuncia al deposito cauzionale (fino a +5%)",
+    "nome": "rinuncia al deposito cauzionale",
+    "perc": 5
+   },
+   {
+    "chiave": "recesso",
+    "tipo": "spunta",
+    "testo": "L'inquilino può lasciare la casa in qualsiasi momento con un preavviso di un mese al massimo, senza dare motivi (fino a +5%)",
+    "nome": "recesso con preavviso di un mese",
+    "perc": 5
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano e valgono sul minimo e sul massimo della sub-fascia: arredo fino al +20% (se arredato solo in parte, in proporzione ai locali arredati: per esempio +10% con 2 locali su 4), rinuncia al deposito cauzionale fino al +5%, recesso dell'inquilino con un mese di preavviso fino al +5%, durata di 4, 5 o 6 anni +3%, +5% o +6%. Con l'assistenza di un'associazione dei proprietari e di un sindacato degli inquilini si può concordare un canone sotto il minimo.",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 6
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "fascia": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "testo": "Manca almeno un elemento di tipo A: l'accordo colloca nelle sub-fasce solo gli alloggi con tutti e quattro gli elementi A (bagno completo, impianti, buono stato, cucina o angolo cottura). Qui si usa la sub-fascia 1: chiedi conferma all'associazione che attesta il contratto."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 4",
+  "titolo": "Richiesta di attestazione di rispondenza",
+  "sottotitolo": "Accordo locale per il Comune di Lecco del 12/05/2026, depositato il 18/05/2026 (prot. n. 0053273) - Legge 9.12.1998 n. 431 e D.M. 16.1.2017",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "Elementi di tipo A, B e C",
+  "etichetta_conteggio": "ELEMENTI A PRESENTI (SU 4)",
+  "dichiarazione": "Il sottoscritto richiede l'attestazione di rispondenza dei contenuti economici e normativi del rapporto contrattuale all'Accordo locale per il Comune di Lecco sottoscritto in data 12/05/2026. A tal fine dichiara sotto la propria responsabilità di assumersi l'integrale responsabilità della veridicità delle informazioni e dei dati forniti ai fini del calcolo, ai sensi del D.P.R. 28 dicembre 2000, n. 445.",
+  "firme": [
+   "Il Dichiarante",
+   "p. l'Associazione (timbro e firma)"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16/01/2017",
+  "attestazione": [
+   "L'Associazione …………………………………, firmataria dell'Accordo locale per il Comune di Lecco, sulla base degli elementi oggettivi e delle informazioni rilasciate dal richiedente, che con la sottoscrizione del presente atto conferma la veridicità di quanto dichiarato, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA CHE i contenuti economici e normativi del contratto sopra citato corrispondono a quanto previsto dall'Accordo Territoriale per il Comune di Lecco (LC), ai sensi dell'art. 2 comma 3 L. 431/98.",
+   "Lecco, lì ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "Il Dichiarante",
+   "p. l'Associazione (timbro e firma)"
+  ],
+  "nota_zone": "Le zone sono tre (allegati 1 e 2 dell'accordo): la zona della via si trova nell'elenco vie dell'accordo o sul Geoportale del Comune di Lecco. Un edificio attraversato dal confine sta nella zona di valore più alto."
+ }
+}

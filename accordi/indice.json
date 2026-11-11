@@ -2967,6 +2967,205 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrapani-2025-03-07-accordo.pdf?alt=media&token=399a0b88-626d-4915-9964-f8d3422692f9"
     }
    ]
+  },
+  {
+   "comune": "Avellino",
+   "provincia": "AV",
+   "accordo": "avellino-2026-02-25",
+   "sottoscritto": "25 febbraio 2026",
+   "depositato": "9 marzo 2026",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Favellino-2026-02-25-accordo.pdf?alt=media&token=8cbff992-1983-4dc1-b046-b2fd6ff574d9",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Favellino-2026-02-25-accordo.pdf?alt=media&token=8cbff992-1983-4dc1-b046-b2fd6ff574d9"
+    }
+   ]
+  },
+  {
+   "comune": "Matera",
+   "provincia": "MT",
+   "accordo": "matera-2019-02-15",
+   "sottoscritto": "15 febbraio 2019",
+   "depositato": "15 febbraio 2019",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmatera-2019-02-15-accordo.pdf?alt=media&token=727711fd-78d1-4f0d-863e-adad43e93aa3",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmatera-2019-02-15-accordo.pdf?alt=media&token=727711fd-78d1-4f0d-863e-adad43e93aa3"
+    }
+   ]
+  },
+  {
+   "comune": "Agrigento",
+   "provincia": "AG",
+   "accordo": "agrigento-2017-11-20",
+   "sottoscritto": "20 novembre 2017",
+   "depositato": "15 dicembre 2017",
+   "zone": 9,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fagrigento-2017-11-20-accordo.pdf?alt=media&token=1a8d0e60-311b-4d2d-86eb-22422b095948",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fagrigento-2017-11-20-accordo.pdf?alt=media&token=1a8d0e60-311b-4d2d-86eb-22422b095948"
+    },
+    {
+     "nome": "Adesione confabitare 2023",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fagrigento-2017-11-20-adesione-confabitare-2023.pdf?alt=media&token=f37afc5b-56a8-4155-af24-847d1c1cf7da"
+    }
+   ]
+  },
+  {
+   "comune": "Cuneo",
+   "provincia": "CN",
+   "accordo": "cuneo-2026-02-26",
+   "sottoscritto": "26 febbraio 2026",
+   "depositato": "26 febbraio 2026",
+   "zone": 8,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-accordo.pdf?alt=media&token=8fd393d3-62cc-4475-8d41-6317701f073d",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-accordo.pdf?alt=media&token=8fd393d3-62cc-4475-8d41-6317701f073d"
+    },
+    {
+     "nome": "Allegato 1a planimetria altipiano",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-1a-planimetria-altipiano.pdf?alt=media&token=62515d01-f23b-4fc2-bb4b-f132e5f8f87d"
+    },
+    {
+     "nome": "Allegato 1a zone altipiano",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-1a-zone-altipiano.pdf?alt=media&token=3d5c4fac-7cf3-47e5-bc5f-c662a8b46e4a"
+    },
+    {
+     "nome": "Allegato 1b planimetria frazioni",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-1b-planimetria-frazioni.pdf?alt=media&token=c1e364e3-d0cf-4193-be26-e0f92c8baefa"
+    },
+    {
+     "nome": "Allegato 1b zone frazioni",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-1b-zone-frazioni.pdf?alt=media&token=af2f2b98-120c-4fde-9385-fac2ad219cf6"
+    },
+    {
+     "nome": "Allegato 2 superficie",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-2-superficie.pdf?alt=media&token=c3223cb4-82a8-4873-91e9-de50fd404aaa"
+    },
+    {
+     "nome": "Allegato 3 valori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-3-valori.pdf?alt=media&token=edc6070d-7793-4e80-8239-72cc4e5a11c6"
+    },
+    {
+     "nome": "Allegato 4 elementi",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-4-elementi.pdf?alt=media&token=62d8e178-ead3-46f7-92b5-91cb0e8eb9ad"
+    },
+    {
+     "nome": "Allegato 5 attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-5-attestazione.pdf?alt=media&token=e0b68486-1086-4f88-a23d-db92b44bfac2"
+    },
+    {
+     "nome": "Allegato a contratto agevolato",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-a-contratto-agevolato.pdf?alt=media&token=1452f4e1-3af1-4a1b-a891-09e44fcbd76d"
+    },
+    {
+     "nome": "Allegato b contratto transitorio",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-b-contratto-transitorio.pdf?alt=media&token=aaca88b3-3596-4c2d-ac03-2368f3ad5429"
+    },
+    {
+     "nome": "Allegato c contratto universitari",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-c-contratto-universitari.pdf?alt=media&token=f410737e-79d3-4237-98fe-674f45fcf62a"
+    },
+    {
+     "nome": "Allegato d oneri accessori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-d-oneri-accessori.pdf?alt=media&token=687cd28e-b7a7-4033-b238-b324fec6fb5b"
+    },
+    {
+     "nome": "Allegato e negoziazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-allegato-e-negoziazione.pdf?alt=media&token=a3ec7595-06c6-487e-85c6-1f54e77802b1"
+    },
+    {
+     "nome": "Elenco associazioni",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-elenco-associazioni.pdf?alt=media&token=d84ce4ce-d1f0-40fd-a472-bd457f7208b0"
+    }
+   ]
+  },
+  {
+   "comune": "Barletta",
+   "provincia": "BT",
+   "accordo": "barletta-2024-07-05",
+   "sottoscritto": "5 luglio 2024",
+   "depositato": "5 luglio 2024",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbarletta-2024-07-05-accordo.pdf?alt=media&token=571766f9-8c73-49f4-a908-48a336044eb5",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbarletta-2024-07-05-accordo.pdf?alt=media&token=571766f9-8c73-49f4-a908-48a336044eb5"
+    }
+   ]
+  },
+  {
+   "comune": "Teramo",
+   "provincia": "TE",
+   "accordo": "teramo-2019-01-12",
+   "sottoscritto": "12 gennaio 2019",
+   "depositato": "",
+   "zone": 14,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fteramo-2019-01-12-accordo.pdf?alt=media&token=56333996-6745-40d0-821c-f39484c1a885",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fteramo-2019-01-12-accordo.pdf?alt=media&token=56333996-6745-40d0-821c-f39484c1a885"
+    }
+   ]
+  },
+  {
+   "comune": "Chieti",
+   "provincia": "CH",
+   "accordo": "chieti-2019-08-06",
+   "sottoscritto": "6 agosto 2019",
+   "depositato": "6 agosto 2019",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fchieti-2019-08-06-accordo.pdf?alt=media&token=005d8716-58c7-44ce-90bd-0932993ae0c2",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fchieti-2019-08-06-accordo.pdf?alt=media&token=005d8716-58c7-44ce-90bd-0932993ae0c2"
+    },
+    {
+     "nome": "Allegato f attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fchieti-2019-08-06-allegato-f-attestazione.pdf?alt=media&token=5cda3e10-010c-42b8-a85e-ef07ff90ec6f"
+    }
+   ]
+  },
+  {
+   "comune": "Lecco",
+   "provincia": "LC",
+   "accordo": "lecco-2026-05-12",
+   "sottoscritto": "12 maggio 2026",
+   "depositato": "18 maggio 2026",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flecco-2026-05-12-accordo.pdf?alt=media&token=e40a3194-6eaa-4e71-8bbb-fabf442ffc5f",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flecco-2026-05-12-accordo.pdf?alt=media&token=e40a3194-6eaa-4e71-8bbb-fabf442ffc5f"
+    }
+   ]
+  },
+  {
+   "comune": "Andria",
+   "provincia": "BT",
+   "accordo": "andria-2024-07-05",
+   "sottoscritto": "5 luglio 2024",
+   "depositato": "5 luglio 2024",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fandria-2024-07-05-accordo.pdf?alt=media&token=7c7aec04-43ec-4858-8eb0-461062e031b7",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fandria-2024-07-05-accordo.pdf?alt=media&token=7c7aec04-43ec-4858-8eb0-461062e031b7"
+    }
+   ]
   }
  ]
 }

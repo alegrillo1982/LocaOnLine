@@ -1,0 +1,630 @@
+{
+ "accordo": {
+  "codice": "andria-2024-07-05",
+  "modello": "andria-2024",
+  "comune": "Andria",
+  "provincia": "BT",
+  "titolo": "Accordo territoriale per il Comune di Andria",
+  "data": "2024-07-05",
+  "data_testo": "5 luglio 2024",
+  "deposito": "Comune di Andria",
+  "deposito_data": "05.07.2024",
+  "protocollo": "0062834/2024 del 05/07/2024",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2027-07-29",
+  "firmatari_proprieta": [
+   "APPC",
+   "ASSEDIL/CONFEDILIZIA",
+   "ASPPI",
+   "CONFABITARE",
+   "UPPI",
+   "UNIONCASA"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET CISL",
+   "UNIAT UIL",
+   "ASSOCASA",
+   "SAI CISAL",
+   "UNIONE INQUILINI"
+  ],
+  "nota": "Sottoscritto il 05/07/2024 nella sede comunale di Andria, alla presenza della sindaca, e depositato lo stesso giorno (nota di deposito con protocollo generale del Comune di Andria n. 0062834/2024 del 05/07/2024). Durata tre anni dal 30 luglio 2024; le fasce non si aggiornano all'ISTAT. Sostituisce l'accordo del 20/08/2007, che resta valido solo per i contratti in corso. 4 zone (fogli di mappa catastale), 28 elementi uguali in tutte le zone, fasce C, B, A (zona 2 anche D), valori mensili al mq (allegato 1).",
+  "fonte": "PDF dell'accordo firmato e protocollato (50 pagine, scansione: nota di deposito, accordo, allegato 1 con zone, elementi e fasce, contratti tipo, arredi, oneri accessori, modulo di negoziazione) pubblicato dal SUNIA nazionale (pagina 'Accordi territoriali di Barletta, Andria e Trani')."
+ },
+ "esempio_zona": "la zona dal foglio di mappa catastale (visura)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "scelta",
+  "tabella_chiave": "arredo",
+  "tabella_predefinita": "3",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1",
+    "nota": "Zona 1: fogli di mappa catastale 209, 210, 213 e 214 (il foglio è nella visura catastale). Fascia C fino a 4 elementi, B da 5 a 8, A da 9. Valori in euro al mq al mese. Zona di pregio: con ingresso dello stabile su piazza Duomo, piazza Catuna, piazza La Corte, via La Corte, via Vaglio, piazza Umberto I, via Manthonè, via Orsini, via Jannuzzi, via A. De Gasperi e piazza R. Settimo, con riscaldamento e impianto elettrico adeguati e buone condizioni, si va in fascia A.",
+    "fasce": {
+     "3": [
+      [
+       1.55,
+       2.32
+      ],
+      [
+       1.55,
+       2.32
+      ],
+      [
+       2.33,
+       3.1
+      ],
+      [
+       3.11,
+       3.87
+      ]
+     ],
+     "parz_ok": [
+      [
+       1.55,
+       2.32
+      ],
+      [
+       3.11,
+       3.87
+      ],
+      [
+       3.11,
+       3.87
+      ],
+      [
+       3.11,
+       3.87
+      ]
+     ],
+     "tot_ok": [
+      [
+       1.55,
+       2.32
+      ],
+      [
+       3.11,
+       4.257
+      ],
+      [
+       3.11,
+       4.257
+      ],
+      [
+       3.11,
+       3.87
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2",
+    "nota": "Zona 2: fogli di mappa catastale 22, 28, 29, 30, 31, 32, 36, 37, 38, 51, 52, 53, 68, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 211, 212, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226 e 227 (il foglio è nella visura catastale). Fascia D fino a 4 elementi, C da 5 a 7, B da 8 a 9, A da 10. Valori in euro al mq al mese.",
+    "fasce": {
+     "3": [
+      [
+       2.71,
+       3.47
+      ],
+      [
+       3.48,
+       3.87
+      ],
+      [
+       3.88,
+       4.65
+      ],
+      [
+       4.66,
+       5.42
+      ]
+     ],
+     "parz_ok": [
+      [
+       2.71,
+       3.47
+      ],
+      [
+       4.66,
+       5.42
+      ],
+      [
+       4.66,
+       5.42
+      ],
+      [
+       4.66,
+       5.42
+      ]
+     ],
+     "tot_ok": [
+      [
+       2.71,
+       3.47
+      ],
+      [
+       4.66,
+       5.962
+      ],
+      [
+       4.66,
+       5.962
+      ],
+      [
+       4.66,
+       5.42
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3",
+    "nota": "Zona 3: fogli di mappa catastale 118, 119, 120, 121, 146, 147, 148, 150, 151, 152, 153, 156, 157, 168, 169, 170, 178 e 185 (il foglio è nella visura catastale). Fascia C fino a 4 elementi, B da 5 a 6, A da 7. Valori in euro al mq al mese. Il foglio 185 compare sia nella zona 3 sia nella zona 4: chiedi conferma all'associazione.",
+    "fasce": {
+     "3": [
+      [
+       1.55,
+       2.32
+      ],
+      [
+       1.55,
+       2.32
+      ],
+      [
+       2.33,
+       3.47
+      ],
+      [
+       3.48,
+       4.26
+      ]
+     ],
+     "parz_ok": [
+      [
+       1.55,
+       2.32
+      ],
+      [
+       3.48,
+       4.26
+      ],
+      [
+       3.48,
+       4.26
+      ],
+      [
+       3.48,
+       4.26
+      ]
+     ],
+     "tot_ok": [
+      [
+       1.55,
+       2.32
+      ],
+      [
+       3.48,
+       4.686
+      ],
+      [
+       3.48,
+       4.686
+      ],
+      [
+       3.48,
+       4.26
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4",
+    "nota": "Zona 4: fogli di mappa catastale da 1 a 21, da 23 a 27, da 33 a 35, da 39 a 50, da 54 a 67, da 69 a 117, da 122 a 145, 149, 154, 155, da 158 a 167, da 171 a 177, da 179 a 185 e da 186 a 196 (il foglio è nella visura catastale). Fascia C fino a 8 elementi, B da 9 a 11, A da 12. Valori in euro al mq al mese. Il foglio 185 compare sia nella zona 3 sia nella zona 4: chiedi conferma all'associazione.",
+    "fasce": {
+     "3": [
+      [
+       1.55,
+       2.32
+      ],
+      [
+       1.55,
+       2.32
+      ],
+      [
+       2.33,
+       3.1
+      ],
+      [
+       3.2,
+       3.87
+      ]
+     ],
+     "parz_ok": [
+      [
+       1.55,
+       2.32
+      ],
+      [
+       3.2,
+       3.87
+      ],
+      [
+       3.2,
+       3.87
+      ],
+      [
+       3.2,
+       3.87
+      ]
+     ],
+     "tot_ok": [
+      [
+       1.55,
+       2.32
+      ],
+      [
+       3.2,
+       4.257
+      ],
+      [
+       3.2,
+       4.257
+      ],
+      [
+       3.2,
+       3.87
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "D",
+    "C",
+    "B",
+    "A"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    7,
+    9
+   ],
+   "soglie_zona": {
+    "1": [
+     -1,
+     4,
+     8
+    ],
+    "3": [
+     -1,
+     4,
+     6
+    ],
+    "4": [
+     -1,
+     8,
+     11
+    ]
+   },
+   "conta": {
+    "da": 0,
+    "a": 27
+   },
+   "basta": [
+    28
+   ],
+   "nomi_per_tabella": {
+    "parz_ok": [
+     "D",
+     "A (era C)",
+     "A (era B)",
+     "A"
+    ],
+    "tot_ok": [
+     "D",
+     "A (era C)",
+     "A (era B)",
+     "A"
+    ]
+   }
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi dell'allegato 1 (gli stessi in tutte le zone)"
+   },
+   {
+    "da": 28,
+    "titolo": "Zona 1: zona di pregio (non conta come elemento)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Appartamento dal 1° piano fuori terra in su"
+   },
+   {
+    "testo": "Allacciamento al gas metano"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Secondo servizio igienico"
+   },
+   {
+    "testo": "Spazi esterni a uso esclusivo e/o condominiale"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Cantina o soffitta o giardino privato o terrazza a livello"
+   },
+   {
+    "testo": "Posto auto di pertinenza e/o condominiale assegnato"
+   },
+   {
+    "testo": "Box auto"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Portierato"
+   },
+   {
+    "testo": "Videosorveglianza condominiale o individuale"
+   },
+   {
+    "testo": "Impianto fotovoltaico o pannelli solari per l'acqua calda"
+   },
+   {
+    "testo": "Impianto citofono"
+   },
+   {
+    "testo": "Impianto di videocitofono"
+   },
+   {
+    "testo": "Impianto di autoclave"
+   },
+   {
+    "testo": "Impianto elettrico interno adeguato al D.M. 37/2008"
+   },
+   {
+    "testo": "Attico"
+   },
+   {
+    "testo": "Ripostiglio"
+   },
+   {
+    "testo": "Parquet"
+   },
+   {
+    "testo": "Ricarica per auto elettriche nel box o nel posto auto (esclusivo o condominiale) o antenna satellitare"
+   },
+   {
+    "testo": "Cucina abitabile di almeno 9 mq con finestra"
+   },
+   {
+    "testo": "Sistemi di sicurezza, allarme"
+   },
+   {
+    "testo": "Domotica in almeno il 50% dell'alloggio"
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato o pompa di calore"
+   },
+   {
+    "testo": "Infissi interni ed esterni in buono stato"
+   },
+   {
+    "testo": "Cassaforte"
+   },
+   {
+    "testo": "Doppio ingresso o cortile/giardino recintato"
+   },
+   {
+    "testo": "Zona 1, zona di pregio (piazze e vie elencate nell'accordo), con riscaldamento e impianto elettrico adeguati e buone condizioni: fascia A",
+    "zone": [
+     "1"
+    ]
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile interna, non catastale (senza i vani alti meno di 1,70 m)",
+   "voci": [
+    {
+     "chiave": "basse",
+     "testo": "Vani con altezza inferiore a 1,70 m",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa singola a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_acc",
+     "testo": "Posto auto accatastato in area condominiale scoperta",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto non accatastato in area condominiale scoperta",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cortili, cantine, soffitte e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Superficie scoperta a uso esclusivo del conduttore",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota millesimale dell'alloggio)",
+     "coeff": 0.1
+    }
+   ],
+   "scaglioni_totale": [
+    {
+     "oltre": 130,
+     "perc": 50
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 45,
+     "perc": 20,
+     "limite": 45
+    },
+    {
+     "fino": 70,
+     "perc": 20,
+     "limite": 70
+    }
+   ],
+   "etichetta_correzione": "convenzionale",
+   "nota": "Superficie del punto 2 dell'accordo: superficie utile interna (non catastale) al 100%, vani alti meno di 1,70 m al 50%; autorimessa singola esclusiva 50%; posto auto in area condominiale scoperta 50% se accatastato, 25% se no; balconi, terrazze, cortili, cantine, soffitte e simili 25%; superficie scoperta esclusiva 15%; verde condominiale 10% della quota millesimale. Superficie convenzionale fino a 45 mq: x 1,20 ma non oltre 45 mq; da 46 a 70 mq: x 1,20 ma non oltre 70 mq; oltre 130 mq la parte in più conta il 50%. È ammessa una tolleranza del 4% in più o in meno sulla superficie convenzionale. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie della parte locata, contando anche le parti condivise."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "ape",
+    "tipo": "scelta",
+    "testo": "Classe energetica (dall'APE)",
+    "nome": "classe energetica",
+    "nessuna": "classe G o senza APE",
+    "opzioni": [
+     {
+      "valore": "A",
+      "testo": "A (A1, A2, A3, A4)",
+      "perc": 5
+     },
+     {
+      "valore": "BF",
+      "testo": "B, C, D, E o F",
+      "perc": 3
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Alloggio ammobiliato (arredi elencati nell'accordo)",
+    "nome": "Alloggio",
+    "nessuna": "non ammobiliato",
+    "nessuna_breve": "non ammobiliato",
+    "ammobiliato": true,
+    "mostra_perc": false,
+    "fasce": [
+     3
+    ],
+    "opzioni": [
+     {
+      "valore": "parz",
+      "testo": "parzialmente ammobiliato",
+      "breve": "parzialmente ammobiliato (in fascia A +10%)",
+      "perc": 10
+     },
+     {
+      "valore": "parz_ok",
+      "testo": "parzialmente ammobiliato, con riscaldamento, autoclave e infissi in buono stato",
+      "breve": "parzialmente ammobiliato, con i requisiti: da B o C in fascia A",
+      "perc": 10
+     },
+     {
+      "valore": "tot",
+      "testo": "totalmente ammobiliato",
+      "breve": "totalmente ammobiliato (in fascia A +20%)",
+      "perc": 20
+     },
+     {
+      "valore": "tot_ok",
+      "testo": "totalmente ammobiliato, con riscaldamento, autoclave e infissi in buono stato",
+      "breve": "totalmente ammobiliato, con i requisiti: da B o C in A, massimo +10%",
+      "perc": 20
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Classe energetica: A (A1-A4) +5%, B, C, D, E o F +3%, per tutti i contratti. Arredo (allegato 1): in fascia A +10% se parzialmente ammobiliato, +20% se totalmente. Un alloggio che sarebbe in fascia B o C passa in fascia A se è ammobiliato e ha riscaldamento, autoclave e infissi in buono stato: senza aumento se parzialmente ammobiliato, con un aumento massimo del 10% (sul massimo della fascia A) se totalmente. Nella zona 2 la fascia D non passa in A. Totalmente ammobiliato: cucina (pensili o credenza, frigorifero, cucina, tavolo con sedie, scolapiatti e stoviglie), camera da letto (letto con materasso, comodino, armadio, sedia), per studenti scrivania con sedia e libreria, soggiorno (tavolo con sedie, vetrinetta o mobiletto), bagno arredato; parzialmente: solo una parte di questi arredi. Durata (solo 3+2 agevolati): 4 anni +5%, 5 anni +7%, 6 anni o più +12%, anche per le proroghe. Gli aumenti si applicano uno dopo l'altro (punto 4 dell'accordo).",
+  "durata": {
+   "4": 5,
+   "5": 7,
+   "6": 12
+  },
+  "combinazione": "prodotto",
+  "avvisi": [
+   {
+    "zone": [
+     "1"
+    ],
+    "fascia": [
+     5
+    ],
+    "testo": "Zona 1: con 5 elementi l'accordo è ambiguo (fascia B «almeno cinque elementi», fascia C «fino a cinque elementi»): qui si usa la fascia B. Chiedi conferma all'associazione che attesta il contratto."
+   },
+   {
+    "zone": [
+     "3"
+    ],
+    "fascia": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "testo": "Zona 3: l'accordo scrive fascia A «almeno sette elementi», B «fino a sette», C «almeno cinque» (evidente errore di scrittura): qui si usano C fino a 4 elementi, B da 5 a 6, A da 7. Chiedi conferma all'associazione che attesta il contratto."
+   },
+   {
+    "zone": [
+     "4"
+    ],
+    "fascia": [
+     11
+    ],
+    "testo": "Zona 4: l'accordo prevede la fascia B «fino a dieci elementi» e la fascia A da «almeno dodici»: con 11 elementi qui si usa la fascia B. Chiedi conferma all'associazione che attesta il contratto."
+   },
+   {
+    "testo": "L'attestazione di rispondenza di una delle organizzazioni firmatarie è obbligatoria per le agevolazioni fiscali (punto 6 dell'accordo)."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 1",
+  "titolo": "Determinazione del canone di locazione e fasce di oscillazione",
+  "sottotitolo": "Accordo territoriale per il Comune di Andria del 05/07/2024, depositato il 05/07/2024 (prot. n. 0062834/2024), in vigore dal 30/07/2024",
+  "titolo_superficie": "SUPERFICIE CONVENZIONALE (punto 2 dell'accordo)",
+  "titolo_elementi": "Elementi per la determinazione della fascia del canone di locazione",
+  "dichiarazione": "Le parti contrattuali dichiarano, sotto la propria responsabilità, gli elementi oggettivi e i criteri sopra riportati (punto 1 dell'accordo e allegato 1).",
+  "firme": [
+   "Il Locatore",
+   "Il Conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA",
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Andria depositato il 05/07/2024, verificati la conformità e la rispondenza del contenuto economico e normativo del contratto ai parametri dell'Accordo, sulla base degli elementi dichiarati dalle parti, anche ai fini delle agevolazioni fiscali,",
+   "ATTESTA che il contratto è conforme all'Accordo territoriale vigente per il Comune di Andria (punto 6 dell'Accordo e D.M. 16/01/2017)."
+  ],
+  "firme_attestazione": [
+   "Data ……………………",
+   "P. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dal foglio di mappa catastale dell'immobile (nella visura). Zona 1: fogli 209, 210, 213, 214. Zona 2: fogli 22, 28-32, 36-38, 51-53, 68, 197-208, 211, 212, 215-227. Zona 3: fogli 118-121, 146-148, 150-153, 156, 157, 168-170, 178, 185. Zona 4: tutti gli altri fogli da 1 a 196 (il foglio 185 è indicato sia nella zona 3 sia nella zona 4)."
+ }
+}

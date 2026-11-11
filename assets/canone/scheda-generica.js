@@ -26,7 +26,7 @@
     const F = R().fasce, s = (F.soglie_zona && z && F.soglie_zona[z.codice]) || F.soglie, cosa = F.criterio === "punti" ? "punti" : "elementi";
     if (["scelta", "requisiti", "obbligatori", "differenza"].includes(F.criterio)) return F.nota || "fascia scelta in base al foglio di calcolo dell'accordo";
     if (!s.length) return "una sola fascia per zona; gli elementi indicano se avvicinarsi al minimo o al massimo";
-    return F.nomi.map((nome, i) => i === 0 ? `${nome}: fino a ${s[0]} ${cosa}` : i < s.length ? `${nome}: da ${s[i - 1] + 1} a ${s[i]}` : `${nome}: da ${s[i - 1] + 1}`).join(" · ") + (F.almeno ? ` (${F.almeno.avviso.replace(/^Per /, "per ").replace(/\.$/, "")})` : "") + (F.nota_soglie ? `; ${F.nota_soglie}` : "");
+    return CanoneGenerico.testoSoglie(F, s, cosa) + (F.almeno ? ` (${F.almeno.avviso.replace(/^Per /, "per ").replace(/\.$/, "")})` : "") + (F.nota_soglie ? `; ${F.nota_soglie}` : "");
   }
 
   function costruisci() {
@@ -114,6 +114,8 @@
       const e = R().elementi[Number(el.dataset.el)];
       el.hidden = !!(e && e.zone && s.zona && !e.zone.includes(s.zona));
       if (el.hidden) el.querySelectorAll("input").forEach((c) => { c.checked = false; });
+      // elementi validi solo per alcuni contratti (es. Avellino): nascosti, e non contati dal calcolo
+      if (e && e.contratti && !e.contratti.includes(s.tipo)) el.hidden = true;
     });
     const sup = r.superficie;
     for (const td of modulo.querySelectorAll("[data-sup]")) {

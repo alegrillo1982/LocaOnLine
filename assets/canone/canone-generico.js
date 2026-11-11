@@ -39,6 +39,20 @@
   const cent = (n) => Math.round(n * 100) / 100;
   const virgola = (n, c = 2) => (n === null || n === undefined ? "" :
     Number(n).toLocaleString("it-IT", { minimumFractionDigits: c, maximumFractionDigits: c }));
+  /** Un elemento che non vale nella zona o nel tipo di contratto scelti (es. Lecce, Avellino). */
+  const escluso = (e, zona, tipo) => !!(e && ((e.zone && !e.zone.includes(String(zona || ""))) || (e.contratti && !e.contratti.includes(tipo || "agevolato"))));
+  /** Il testo delle soglie delle fasce ("A: fino a 2 elementi · B: da 3 a 6 · C: da 7"); salta le fasce che
+   *  in una zona non esistono (soglia negativa, es. Barletta) e usa il passo dei punti (0,5 a Cuneo). */
+  function testoSoglie(F, s, cosa, sep) {
+    const passo = F.passo || 1, n = (x) => String(Math.round(x * 100) / 100).replace(".", ",");
+    const parti = [];
+    F.nomi.forEach((nome, i) => {
+      if (i < s.length && s[i] < 0) return;
+      const primo = i === 0 || s[i - 1] < 0;
+      parti.push(i < s.length ? (primo ? `${nome}: fino a ${n(s[i])}${parti.length ? "" : " " + cosa}` : s[i - 1] + passo === s[i] ? `${nome}: ${n(s[i])}` : `${nome}: da ${n(s[i - 1] + passo)} a ${n(s[i])}`) : `${nome}: da ${n(s[i - 1] + passo)}`);
+    });
+    return parti.join(sep || " · ");
+  }
   const perZona = (o, z) => !o || ((!o.zone || o.zone.includes(z)) && !(o.escluse || []).includes(z));
 
   function superficie(accordo, s) {
@@ -223,7 +237,8 @@
     r.zona = R.zone.find((z) => z.codice === String(s.zona || "")) || null;
     if (!r.zona) avvisi.push("Scegli la zona.");
     // es. Lecce: alcuni elementi valgono solo in certe zone; altrove non si contano
-    if (R.elementi && R.elementi.some((e) => e.zone)) s = { ...s, elementi: (s.elementi || []).map((x, k) => (R.elementi[k] && R.elementi[k].zone && !R.elementi[k].zone.includes(String(s.zona || "")) ? false : x)) };
+    // es. Avellino: alcuni elementi valgono solo per certi contratti (Wi-Fi per transitori e studenti)
+    if (R.elementi && R.elementi.some((e) => e.zone || e.contratti)) s = { ...s, elementi: (s.elementi || []).map((x, k) => (escluso(R.elementi[k], s.zona, tipo) ? false : x)) };
     const f = fascia(accordo, s, r.zona);
     r.fascia = f; r.punti = f.n;
     if (f.avviso) avvisi.push(f.avviso);
@@ -473,6 +488,12 @@
     }
     // es. Siena: canone minimo e massimo arrotondati all'euro (da 0,50 per eccesso)
     if (R.arrotonda_euro && r.canone_massimo !== null) for (const k of ["canone_minimo", "canone_massimo", "canone_intero", "canone"]) if (r[k] !== null) r[k] = Math.round(r[k]);
+    // es. Cuneo: tetto al canone mensile, qualunque sia il calcolo
+    const CT = R.canone_tetto;
+    if (CT && r.canone_massimo !== null && r.canone_massimo > CT.importo) {
+      for (const k of ["canone_minimo", "canone_massimo", "canone_intero", "canone"]) if (r[k] !== null) r[k] = Math.min(r[k], CT.importo);
+      avvisi.push(CT.testo || `Il canone non può superare € ${virgola(CT.importo)} al mese.`);
+    }
     const pattuito = numero(s.canone_mensile);
     if (pattuito !== null) {
       r.canone_pattuito = pattuito;
@@ -512,5 +533,5 @@
     return r;
   }
 
-  return { calcola, superficie, fascia, puntiDi, presente, numero, virgola };
+  return { calcola, superficie, fascia, puntiDi, presente, numero, virgola, escluso, testoSoglie };
 });
