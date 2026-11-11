@@ -1,0 +1,1004 @@
+{
+ "accordo": {
+  "codice": "modena-2026-10-07",
+  "modello": "modena-2026",
+  "comune": "Modena",
+  "provincia": "MO",
+  "titolo": "Accordo territoriale per il Comune di Modena (integrazione 2026 all'accordo 2023)",
+  "data": "2026-10-07",
+  "data_testo": "7 ottobre 2026",
+  "deposito": "Segreteria generale del Comune di Modena e Regione Emilia-Romagna",
+  "deposito_data": "09.10.2026",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "avviso_validita": "<strong>Modena: i canoni dell'accordo sono importi mensili per l'intero alloggio (o per stanza), non valori al mq.</strong> Valgono per i contratti che decorrono dal 1° novembre 2026; le organizzazioni li rivedono ogni anno a settembre.",
+  "firmatari_proprieta": [
+   "A.S.P.P.I.",
+   "CONFABITARE",
+   "CONFAPPI",
+   "CONFEDILIZIA-APE",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "ASSOCASA",
+   "FEDERCASA CONFSAL",
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Integrazione 2026 all'accordo del 2023 (depositato il 28/07/2023, in vigore dal 01/09/2023), in testo coordinato: firmata il 07/10/2026, depositata il 09/10/2026 presso la Segreteria generale del Comune e la Regione Emilia-Romagna, in vigore dal 01/11/2026 fino a un nuovo accordo, con verifica annuale a settembre. Canoni mensili per area, tipologia dimensionale (sei classi di superficie) e sub-fascia A-E (tabella 7.A); per le stanze tabella 7.B. Numero di protocollo del deposito non indicato.",
+  "fonte": "PDF del testo coordinato pubblicato dal SUNIA (58 pagine, scansione): accordo, tabelle 7.A e 7.B, contratti tipo A, B, C, attestato di rispondenza (allegato F), protocollo tecnico (allegato N). La pianta delle aree (allegato K) non è nel PDF."
+ },
+ "esempio_zona": "l'area dalla pianta delle aree omogenee (allegato K)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "a_corpo": {
+   "classi": {
+    "50": [
+     0,
+     50
+    ],
+    "70": [
+     51,
+     70
+    ],
+    "90": [
+     71,
+     90
+    ],
+    "120": [
+     91,
+     120
+    ],
+    "150": [
+     121,
+     150
+    ],
+    "oltre": [
+     151,
+     null
+    ]
+   },
+   "stanze": [
+    "stanza",
+    "stanza_bagno"
+   ],
+   "arrotonda": true,
+   "nota": "I valori delle tabelle sono canoni mensili interi (per l'alloggio o per una stanza), non valori al mq: la superficie serve solo a scegliere la tipologia dimensionale."
+  },
+  "tabella_per": "scelta",
+  "tabella_chiave": "dimensione",
+  "tabella_predefinita": "50",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Centro",
+    "nota": "Centro: l'area centrale, perimetrata in rosso nella pianta delle aree omogenee (allegato K). Le strade di confine appartengono, su entrambi i lati, all'area più interna. Aree di maggior pregio (+6%): via Emilia centro, corso Canalchiaro, corso Canalgrande, via Cavour, piazza Roma, via Farini, largo San Giorgio, via del Taglio (da via Farini a piazza Matteotti - via Sant'Agata), piazza Mazzini, piazza Grande, corso Duomo, viale Caduti in Guerra, viale Vittorio Veneto (entrambi i lati).",
+    "fasce": {
+     "50": [
+      [
+       290.0,
+       300.0
+      ],
+      [
+       330.0,
+       460.0
+      ],
+      [
+       385.0,
+       510.0
+      ],
+      [
+       435.0,
+       560.0
+      ],
+      [
+       540.0,
+       615.0
+      ]
+     ],
+     "70": [
+      [
+       400.0,
+       415.0
+      ],
+      [
+       460.0,
+       520.0
+      ],
+      [
+       490.0,
+       570.0
+      ],
+      [
+       540.0,
+       625.0
+      ],
+      [
+       620.0,
+       690.0
+      ]
+     ],
+     "90": [
+      [
+       430.0,
+       450.0
+      ],
+      [
+       500.0,
+       550.0
+      ],
+      [
+       550.0,
+       600.0
+      ],
+      [
+       600.0,
+       650.0
+      ],
+      [
+       660.0,
+       730.0
+      ]
+     ],
+     "120": [
+      [
+       475.0,
+       495.0
+      ],
+      [
+       550.0,
+       605.0
+      ],
+      [
+       600.0,
+       660.0
+      ],
+      [
+       650.0,
+       715.0
+      ],
+      [
+       720.0,
+       790.0
+      ]
+     ],
+     "150": [
+      [
+       540.0,
+       560.0
+      ],
+      [
+       620.0,
+       680.0
+      ],
+      [
+       670.0,
+       740.0
+      ],
+      [
+       730.0,
+       800.0
+      ],
+      [
+       800.0,
+       870.0
+      ]
+     ],
+     "oltre": [
+      [
+       570.0,
+       610.0
+      ],
+      [
+       680.0,
+       745.0
+      ],
+      [
+       740.0,
+       805.0
+      ],
+      [
+       800.0,
+       880.0
+      ],
+      [
+       870.0,
+       960.0
+      ]
+     ],
+     "stanza": [
+      [
+       200.0,
+       210.0
+      ],
+      [
+       240.0,
+       260.0
+      ],
+      [
+       260.0,
+       280.0
+      ],
+      [
+       280.0,
+       300.0
+      ],
+      [
+       310.0,
+       330.0
+      ]
+     ],
+     "stanza_bagno": [
+      [
+       250.0,
+       270.0
+      ],
+      [
+       290.0,
+       310.0
+      ],
+      [
+       310.0,
+       330.0
+      ],
+      [
+       330.0,
+       350.0
+      ],
+      [
+       360.0,
+       390.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Semicentro",
+    "nota": "Semicentro: l'area attorno al Centro, perimetrata in giallo nella pianta delle aree omogenee (allegato K). Le strade di confine appartengono, su entrambi i lati, all'area più interna. Area di maggior pregio (+6%): quella racchiusa da viale Caduti in Guerra fino a via Ricci, via Ricci fino a via Menotti, via Menotti da via Ricci alla via Emilia, viale Trento Trieste, viale Muratori (da viale Trento Trieste a via Giardini), viale Tassoni, largo A. Moro, viale Vittorio Veneto, viale delle Rimembranze, viale Martiri (compresi entrambi i lati).",
+    "fasce": {
+     "50": [
+      [
+       280.0,
+       290.0
+      ],
+      [
+       320.0,
+       430.0
+      ],
+      [
+       370.0,
+       480.0
+      ],
+      [
+       420.0,
+       530.0
+      ],
+      [
+       530.0,
+       585.0
+      ]
+     ],
+     "70": [
+      [
+       370.0,
+       390.0
+      ],
+      [
+       430.0,
+       500.0
+      ],
+      [
+       480.0,
+       550.0
+      ],
+      [
+       525.0,
+       600.0
+      ],
+      [
+       600.0,
+       660.0
+      ]
+     ],
+     "90": [
+      [
+       410.0,
+       430.0
+      ],
+      [
+       480.0,
+       540.0
+      ],
+      [
+       510.0,
+       580.0
+      ],
+      [
+       555.0,
+       630.0
+      ],
+      [
+       630.0,
+       695.0
+      ]
+     ],
+     "120": [
+      [
+       440.0,
+       460.0
+      ],
+      [
+       510.0,
+       590.0
+      ],
+      [
+       560.0,
+       640.0
+      ],
+      [
+       610.0,
+       700.0
+      ],
+      [
+       700.0,
+       770.0
+      ]
+     ],
+     "150": [
+      [
+       500.0,
+       530.0
+      ],
+      [
+       590.0,
+       650.0
+      ],
+      [
+       650.0,
+       710.0
+      ],
+      [
+       710.0,
+       770.0
+      ],
+      [
+       770.0,
+       845.0
+      ]
+     ],
+     "oltre": [
+      [
+       550.0,
+       585.0
+      ],
+      [
+       650.0,
+       715.0
+      ],
+      [
+       710.0,
+       780.0
+      ],
+      [
+       770.0,
+       850.0
+      ],
+      [
+       850.0,
+       935.0
+      ]
+     ],
+     "stanza": [
+      [
+       200.0,
+       210.0
+      ],
+      [
+       240.0,
+       260.0
+      ],
+      [
+       260.0,
+       280.0
+      ],
+      [
+       280.0,
+       300.0
+      ],
+      [
+       310.0,
+       330.0
+      ]
+     ],
+     "stanza_bagno": [
+      [
+       250.0,
+       270.0
+      ],
+      [
+       290.0,
+       310.0
+      ],
+      [
+       310.0,
+       330.0
+      ],
+      [
+       330.0,
+       350.0
+      ],
+      [
+       360.0,
+       390.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Periferia",
+    "nota": "Periferia: l'area attorno al Semicentro, perimetrata in azzurro nella pianta delle aree omogenee (allegato K). Anche l'area di Baggiovara rientra nei canoni della Periferia. Le strade di confine appartengono, su entrambi i lati, all'area più interna.",
+    "fasce": {
+     "50": [
+      [
+       250.0,
+       260.0
+      ],
+      [
+       290.0,
+       400.0
+      ],
+      [
+       340.0,
+       450.0
+      ],
+      [
+       390.0,
+       500.0
+      ],
+      [
+       500.0,
+       550.0
+      ]
+     ],
+     "70": [
+      [
+       340.0,
+       360.0
+      ],
+      [
+       400.0,
+       470.0
+      ],
+      [
+       430.0,
+       520.0
+      ],
+      [
+       490.0,
+       570.0
+      ],
+      [
+       570.0,
+       625.0
+      ]
+     ],
+     "90": [
+      [
+       375.0,
+       395.0
+      ],
+      [
+       440.0,
+       490.0
+      ],
+      [
+       470.0,
+       550.0
+      ],
+      [
+       530.0,
+       610.0
+      ],
+      [
+       610.0,
+       670.0
+      ]
+     ],
+     "120": [
+      [
+       395.0,
+       415.0
+      ],
+      [
+       460.0,
+       550.0
+      ],
+      [
+       520.0,
+       610.0
+      ],
+      [
+       580.0,
+       675.0
+      ],
+      [
+       675.0,
+       740.0
+      ]
+     ],
+     "150": [
+      [
+       475.0,
+       505.0
+      ],
+      [
+       560.0,
+       610.0
+      ],
+      [
+       620.0,
+       680.0
+      ],
+      [
+       680.0,
+       740.0
+      ],
+      [
+       740.0,
+       815.0
+      ]
+     ],
+     "oltre": [
+      [
+       520.0,
+       550.0
+      ],
+      [
+       610.0,
+       670.0
+      ],
+      [
+       680.0,
+       750.0
+      ],
+      [
+       740.0,
+       820.0
+      ],
+      [
+       815.0,
+       890.0
+      ]
+     ],
+     "stanza": [
+      [
+       190.0,
+       200.0
+      ],
+      [
+       220.0,
+       250.0
+      ],
+      [
+       240.0,
+       270.0
+      ],
+      [
+       260.0,
+       290.0
+      ],
+      [
+       290.0,
+       320.0
+      ]
+     ],
+     "stanza_bagno": [
+      [
+       240.0,
+       260.0
+      ],
+      [
+       270.0,
+       300.0
+      ],
+      [
+       290.0,
+       320.0
+      ],
+      [
+       310.0,
+       340.0
+      ],
+      [
+       340.0,
+       370.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "Suburbana e rurale",
+    "nota": "Suburbana e rurale: il resto del territorio comunale, fuori dal perimetro azzurro della Periferia (allegato K), esclusa l'area di Baggiovara che va in Periferia.",
+    "fasce": {
+     "50": [
+      [
+       230.0,
+       240.0
+      ],
+      [
+       265.0,
+       370.0
+      ],
+      [
+       315.0,
+       420.0
+      ],
+      [
+       360.0,
+       470.0
+      ],
+      [
+       470.0,
+       520.0
+      ]
+     ],
+     "70": [
+      [
+       320.0,
+       340.0
+      ],
+      [
+       370.0,
+       450.0
+      ],
+      [
+       425.0,
+       500.0
+      ],
+      [
+       480.0,
+       550.0
+      ],
+      [
+       550.0,
+       605.0
+      ]
+     ],
+     "90": [
+      [
+       360.0,
+       380.0
+      ],
+      [
+       425.0,
+       470.0
+      ],
+      [
+       455.0,
+       530.0
+      ],
+      [
+       505.0,
+       580.0
+      ],
+      [
+       580.0,
+       640.0
+      ]
+     ],
+     "120": [
+      [
+       380.0,
+       400.0
+      ],
+      [
+       440.0,
+       530.0
+      ],
+      [
+       500.0,
+       600.0
+      ],
+      [
+       560.0,
+       650.0
+      ],
+      [
+       650.0,
+       715.0
+      ]
+     ],
+     "150": [
+      [
+       455.0,
+       485.0
+      ],
+      [
+       540.0,
+       585.0
+      ],
+      [
+       600.0,
+       660.0
+      ],
+      [
+       660.0,
+       720.0
+      ],
+      [
+       720.0,
+       790.0
+      ]
+     ],
+     "oltre": [
+      [
+       485.0,
+       525.0
+      ],
+      [
+       585.0,
+       645.0
+      ],
+      [
+       660.0,
+       725.0
+      ],
+      [
+       720.0,
+       790.0
+      ],
+      [
+       790.0,
+       870.0
+      ]
+     ],
+     "stanza": [
+      [
+       160.0,
+       170.0
+      ],
+      [
+       190.0,
+       220.0
+      ],
+      [
+       210.0,
+       230.0
+      ],
+      [
+       230.0,
+       260.0
+      ],
+      [
+       260.0,
+       290.0
+      ]
+     ],
+     "stanza_bagno": [
+      [
+       210.0,
+       230.0
+      ],
+      [
+       240.0,
+       270.0
+      ],
+      [
+       260.0,
+       290.0
+      ],
+      [
+       280.0,
+       310.0
+      ],
+      [
+       310.0,
+       340.0
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "soglie_zona": {
+    "1": [
+     0,
+     2,
+     4,
+     6
+    ]
+   },
+   "nota_soglie": "in Centro bastano meno parametri: A 0, B 1-2, C 3-4, D 5-6, E da 7"
+  },
+  "elementi": [
+   {
+    "testo": "Abitazione di categoria catastale A/7 o A/8 (dalla visura)"
+   },
+   {
+    "testo": "Aria condizionata o pompa di calore fissa, indicata in contratto, in almeno metà dei vani utili"
+   },
+   {
+    "testo": "Piano terra, rialzato, mezzanino o primo piano; ai piani superiori serve l'ascensore (o il servoscala)"
+   },
+   {
+    "testo": "Cortile dello stabile, accessibile, con parcheggio auto utilizzabile dall'alloggio"
+   },
+   {
+    "testo": "Autorimessa o box auto locato con la casa, anche in un altro stabile (in Centro basta un posto auto esclusivo, anche scoperto)"
+   },
+   {
+    "testo": "Cantina o soffitta di pertinenza a uso esclusivo"
+   },
+   {
+    "testo": "Doppi servizi: secondo bagno almeno con WC e lavabo, oppure lavanderia dedicata"
+   },
+   {
+    "testo": "Giardino o area ortiva, esclusivi o condominiali (non bastano cortile e aiuole)"
+   },
+   {
+    "testo": "Balcone, terrazza, lastrico solare, loggia, veranda o portico di pertinenza esclusiva"
+   },
+   {
+    "testo": "Porta blindata o cancello di sicurezza a tutte le porte d'ingresso"
+   },
+   {
+    "testo": "Certificazione energetica in classe A, B o C"
+   },
+   {
+    "testo": "Casa nuova o ristrutturata completamente da non più di 10 anni (con rifacimento degli impianti), oppure salto di classe energetica certificato da una nuova APE"
+   },
+   {
+    "testo": "Allarme interno all'alloggio o inferriate a tutte le finestre esterne"
+   },
+   {
+    "testo": "Ascensore o servoscala accessibile a persone con disabilità motoria (DM 236/1989), anche se già contato al punto 3"
+   },
+   {
+    "testo": "Bagno accessibile a persone con disabilità motoria (DM 236/1989), anche se già contato come doppio servizio"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'alloggio (arrotondata al mq)",
+   "voci": [],
+   "nota": "Solo la superficie calpestabile, senza pertinenze, balconi e terrazzi; si arrotonda al mq più vicino (49,49 = 49; 49,50 = 50). Serve solo a scegliere la tipologia dimensionale: il canone dell'accordo è un importo mensile, non un valore al mq."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "dimensione",
+    "tipo": "scelta",
+    "testo": "Tipologia dimensionale (sceglie la tabella dei canoni)",
+    "nome": "tipologia",
+    "mostra_perc": false,
+    "nessuna": "abitazione fino a 50 mq",
+    "nessuna_breve": "fino a 50 mq",
+    "opzioni": [
+     {
+      "valore": "70",
+      "testo": "abitazione da 51 a 70 mq",
+      "breve": "da 51 a 70 mq",
+      "perc": 0
+     },
+     {
+      "valore": "90",
+      "testo": "abitazione da 71 a 90 mq",
+      "breve": "da 71 a 90 mq",
+      "perc": 0
+     },
+     {
+      "valore": "120",
+      "testo": "abitazione da 91 a 120 mq",
+      "breve": "da 91 a 120 mq",
+      "perc": 0
+     },
+     {
+      "valore": "150",
+      "testo": "abitazione da 121 a 150 mq",
+      "breve": "da 121 a 150 mq",
+      "perc": 0
+     },
+     {
+      "valore": "oltre",
+      "testo": "abitazione oltre 150 mq",
+      "breve": "oltre 150 mq",
+      "perc": 0
+     },
+     {
+      "valore": "stanza",
+      "testo": "una stanza arredata, bagno in comune (affitto parziale)",
+      "breve": "stanza (tabella 7.B)",
+      "perc": 0
+     },
+     {
+      "valore": "stanza_bagno",
+      "testo": "una stanza arredata con bagno a uso esclusivo (affitto parziale)",
+      "breve": "stanza con bagno esclusivo (tabella 7.B)",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento (non per le stanze: il loro canone comprende già l'arredo)",
+    "nome": "arredamento",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 12
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato (almeno cucina e una camera)",
+      "perc": 6
+     }
+    ]
+   },
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "testo": "Area di maggior pregio del Centro o del Semicentro (vie nella descrizione della zona)",
+    "nome": "area di maggior pregio",
+    "perc": 6,
+    "zone": [
+     "1",
+     "2"
+    ]
+   },
+   {
+    "chiave": "classe_a",
+    "tipo": "spunta",
+    "testo": "Classe energetica A o superiore",
+    "nome": "classe energetica A",
+    "perc": 10
+   }
+  ],
+  "nota_maggiorazioni": "Le maggiorazioni si sommano e si applicano una volta sola. Il minimo si può ridurre fino al 50% per condizioni sociali o di reddito del conduttore, condizioni dell'immobile, spese condominiali elevate o emergenze, con la convalida di due organizzazioni firmatarie (una per parte).",
+  "durata": {
+   "4": 2,
+   "5": 6,
+   "6": 10
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "ALLEGATO F",
+  "titolo": "Attestato di rispondenza",
+  "sottotitolo": "L. 431/98 art. 2, c. 3; DM 16 gennaio 2017 - Accordo territoriale del Comune di Modena depositato il 09/10/2026, con decorrenza dal 01/11/2026",
+  "titolo_elementi": "Parametri oggettivi (punto 5 dell'accordo)",
+  "firme": [],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "Tutto ciò premesso l'organizzazione ……………………………, firmataria dell'Accordo territoriale del Comune di Modena depositato il 09/10/2026, con decorrenza dal 01/11/2026, sulla base degli elementi oggettivi dichiarati dalle parti contrattuali con relativa assunzione di responsabilità delle parti stesse della rispondenza dei dati dichiarati,",
+   "ATTESTA che i contenuti economici e normativi del contratto suddetto corrispondono a quanto previsto nell'accordo vigente per il Comune di Modena. La presente attestazione è valida solo se accompagnata dal contratto allegato.",
+   "Verificato in data ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "L'organizzazione (timbro e firma)"
+  ],
+  "nota_zone": "L'area si ricava dalla pianta delle aree omogenee (allegato K): Centro in rosso, Semicentro in giallo, Periferia in azzurro, il resto è Suburbana e rurale.",
+  "titolo_superficie": "SUPERFICIE DELL'ALLOGGIO (PUNTI 3 E 4 DELL'ACCORDO)"
+ }
+}

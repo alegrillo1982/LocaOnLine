@@ -571,6 +571,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggiocalabria-2025-11-07-accordo.pdf?alt=media&token=4df463e3-2e58-4d9c-9e0d-c050aff61754"
     }
    ]
+  },
+  {
+   "comune": "Modena",
+   "provincia": "MO",
+   "accordo": "modena-2026-10-07",
+   "sottoscritto": "7 ottobre 2026",
+   "depositato": "9 ottobre 2026",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmodena-2026-10-07-accordo.pdf?alt=media&token=4e738819-ebc6-4539-a404-c934cad2c064",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmodena-2026-10-07-accordo.pdf?alt=media&token=4e738819-ebc6-4539-a404-c934cad2c064"
+    }
+   ]
   }
  ]
 }

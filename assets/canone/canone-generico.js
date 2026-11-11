@@ -227,6 +227,13 @@
     const sup = superficie(accordo, s);
     r.superficie = sup;
     if (sup) avvisi.push(...sup.note); else avvisi.push("Inserisci la superficie.");
+    // es. Modena: canoni a corpo per tipologia dimensionale; la superficie controlla solo la classe scelta
+    const AC = R.a_corpo;
+    if (AC && AC.classi && sup && r.tipologia && AC.classi[r.tipologia]) {
+      const U = sup.righe[0].mq, Ur = AC.arrotonda ? Math.round(U) : U, [da, a] = AC.classi[r.tipologia];
+      if (Ur < da || (a !== null && Ur > a)) avvisi.push(`La superficie (${virgola(Ur, 0)} mq) non corrisponde alla tipologia scelta: scegli quella giusta.`);
+    }
+    if (AC && AC.stanze && AC.stanze.includes(r.tipologia)) avvisi.push("Il canone è per una stanza: con più stanze si sommano i canoni di ciascuna.");
     for (const m of R.maggiorazioni || []) {
       if (m.contratti && !m.contratti.includes(tipo)) continue;
       if (!perZona(m, z)) continue;
@@ -307,10 +314,11 @@
           else avvisi.push("Porzione: indica i mq della parte locata, compresa la quota delle parti condivise.");
         }
         const mese = R.unita === "anno" ? 12 : 1;
-        r.canone_intero = cent(sup.totale * r.valore / mese);
+        const q = R.a_corpo ? 1 : sup.totale;
+        r.canone_intero = cent(q * r.valore / mese);
         r.canone = cent(r.canone_intero * k);
-        r.canone_minimo = cent(sup.totale * r.valori[0] / mese * k);
-        r.canone_massimo = cent(sup.totale * r.valori[1] / mese * k);
+        r.canone_minimo = cent(q * r.valori[0] / mese * k);
+        r.canone_massimo = cent(q * r.valori[1] / mese * k);
       }
     }
     const pattuito = numero(s.canone_mensile);
