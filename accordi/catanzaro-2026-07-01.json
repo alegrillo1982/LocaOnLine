@@ -1,0 +1,809 @@
+{
+ "accordo": {
+  "codice": "catanzaro-2026-07-01",
+  "modello": "catanzaro-2026",
+  "comune": "Catanzaro",
+  "provincia": "CZ",
+  "titolo": "Accordo territoriale per la Città di Catanzaro",
+  "data": "2026-07-01",
+  "data_testo": "1° luglio 2026",
+  "deposito": "Comune di Catanzaro",
+  "deposito_data": "01.07.2026",
+  "protocollo": "70215",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2029-07-01",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA Catanzaro",
+   "CONFEDILIZIA Calabria"
+  ],
+  "firmatari_conduttori": [
+   "CO.N.I.A. Catanzaro"
+  ],
+  "nota": "Stipulato e depositato al Comune di Catanzaro il 01/07/2026 (prot. 70215), in vigore dalla stessa data per tre anni; sostituisce l'accordo del 2021 e l'appendice integrativa del 2025. Valori mensili per zona OMI e tipologia (allegato A).",
+  "fonte": "PDF dell'accordo pubblicato da Confedilizia Catanzaro (25 pagine, scansione)."
+ },
+ "esempio_zona": "la zona OMI (GEOPOI dell'Agenzia delle Entrate)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "B8",
+    "nome": "B8 - Centro città",
+    "nota": "Fascia centrale, zona OMI B8: Centro città. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       4.9,
+       7.5
+      ],
+      [
+       5.3,
+       8.0
+      ]
+     ],
+     "villa": [
+      [
+       5.0,
+       8.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "B9",
+    "nome": "B9 - Centro storico",
+    "nota": "Fascia centrale, zona OMI B9: Centro storico. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       4.2,
+       6.2
+      ],
+      [
+       4.6,
+       8.0
+      ]
+     ],
+     "villa": [
+      [
+       5.0,
+       8.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C7",
+    "nome": "C7 - Zona ospedale - Pontepiccolo - Pontegrande",
+    "nota": "Fascia semicentrale, zona OMI C7: Zona ospedale - Pontepiccolo - Pontegrande. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.5,
+       5.0
+      ],
+      [
+       3.6,
+       5.3
+      ]
+     ],
+     "villa": [
+      [
+       4.4,
+       6.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C8",
+    "nome": "C8 - Zona Materdomini e rione De Filippis",
+    "nota": "Fascia semicentrale, zona OMI C8: Zona Materdomini e rione De Filippis. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.6,
+       5.5
+      ],
+      [
+       3.7,
+       6.0
+      ]
+     ],
+     "villa": [
+      [
+       3.8,
+       5.7
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C9",
+    "nome": "C9 - Quartieri a valle del Centro storico fra i torrenti Fiumarella e Musofalo",
+    "nota": "Fascia semicentrale, zona OMI C9: Quartieri a valle del Centro storico fra i torrenti Fiumarella e Musofalo. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.6,
+       5.3
+      ],
+      [
+       4.0,
+       5.9
+      ]
+     ],
+     "villa": [
+      [
+       4.4,
+       6.2
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D14",
+    "nome": "D14 - Zona tra Santa Maria e Centro Commerciale \"Le Fontane\" (Barone)",
+    "nota": "Fascia periferica, zona OMI D14: Zona tra Santa Maria e Centro Commerciale \"Le Fontane\" (Barone). In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.5,
+       5.5
+      ],
+      [
+       4.2,
+       6.5
+      ]
+     ],
+     "villa": [
+      [
+       4.4,
+       6.9
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D15",
+    "nome": "D15 - CZ est fra torrente Fiumarella e v. fiume Busento e da loc. Santo Janni fino a SS106/var A",
+    "nota": "Fascia periferica, zona OMI D15: CZ est fra torrente Fiumarella e v. fiume Busento e da loc. Santo Janni fino a SS106/var A. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.1,
+       4.6
+      ],
+      [
+       3.3,
+       5.5
+      ]
+     ],
+     "villa": [
+      [
+       4.3,
+       6.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D16",
+    "nome": "D16 - Catanzaro Lido - fascia litoranea",
+    "nota": "Fascia periferica, zona OMI D16: Catanzaro Lido - fascia litoranea. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.9,
+       5.8
+      ],
+      [
+       4.7,
+       7.2
+      ]
+     ],
+     "villa": [
+      [
+       5.3,
+       8.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D18",
+    "nome": "D18 - Corvo - Aranceto - Pistoia",
+    "nota": "Fascia periferica, zona OMI D18: Corvo - Aranceto - Pistoia. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.3,
+       5.0
+      ],
+      [
+       3.9,
+       5.9
+      ]
+     ],
+     "villa": [
+      [
+       4.5,
+       6.9
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D19",
+    "nome": "D19 - S. Elia - Piterà - Janò",
+    "nota": "Fascia periferica, zona OMI D19: S. Elia - Piterà - Janò. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.2,
+       3.5
+      ],
+      [
+       2.4,
+       3.9
+      ]
+     ],
+     "villa": [
+      [
+       3.5,
+       5.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D20",
+    "nome": "D20 - Lungomare Catanzaro Lido",
+    "nota": "Fascia periferica, zona OMI D20: Lungomare Catanzaro Lido. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       4.0,
+       6.5
+      ],
+      [
+       4.7,
+       7.5
+      ]
+     ],
+     "villa": [
+      [
+       5.4,
+       8.2
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D21",
+    "nome": "D21 - Catanzaro est lungo viale Ferdinando Galiani, via dei Tulipani fino a via Alli",
+    "nota": "Fascia periferica, zona OMI D21: Catanzaro est lungo viale Ferdinando Galiani, via dei Tulipani fino a via Alli. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.0,
+       4.4
+      ],
+      [
+       2.9,
+       4.5
+      ]
+     ],
+     "villa": [
+      [
+       4.5,
+       6.7
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D22",
+    "nome": "D22 - CZ est fra torrente Musofalo, Fiumarella, via Cosco, via dei Tulipani fino a loc. Santo Janni",
+    "nota": "Fascia periferica, zona OMI D22: CZ est fra torrente Musofalo, Fiumarella, via Cosco, via dei Tulipani fino a loc. Santo Janni. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.9,
+       4.2
+      ],
+      [
+       3.2,
+       4.7
+      ]
+     ],
+     "villa": [
+      [
+       4.3,
+       6.6
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D23",
+    "nome": "D23 - CZ ovest da v. Molè lungo v.le Lucrezia della Valle, v. Conti Falluc, v. Isonzo fino a SS106/var A",
+    "nota": "Fascia periferica, zona OMI D23: CZ ovest da v. Molè lungo v.le Lucrezia della Valle, v. Conti Falluc, v. Isonzo fino a SS106/var A. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.6,
+       5.5
+      ],
+      [
+       3.7,
+       6.0
+      ]
+     ],
+     "villa": [
+      [
+       4.2,
+       5.9
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D24",
+    "nome": "D24 - Catanzaro nord ovest lungo viale Tommaso Campanella - quartiere Gagliano",
+    "nota": "Fascia periferica, zona OMI D24: Catanzaro nord ovest lungo viale Tommaso Campanella - quartiere Gagliano. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.3,
+       3.6
+      ],
+      [
+       2.6,
+       4.0
+      ]
+     ],
+     "villa": [
+      [
+       3.3,
+       5.2
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E4",
+    "nome": "E4 - CZ fra fiume Corace e torrente Fiumarella, da SS106/var A fino all'ingresso di Catanzaro Lido",
+    "nota": "Fascia extraurbana, zona OMI E4: CZ fra fiume Corace e torrente Fiumarella, da SS106/var A fino all'ingresso di Catanzaro Lido. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.3,
+       5.9
+      ],
+      [
+       2.7,
+       6.9
+      ]
+     ],
+     "villa": [
+      [
+       4.2,
+       6.9
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E5",
+    "nome": "E5 - Catanzaro ovest - Centro direzionale - Università",
+    "nota": "Fascia extraurbana, zona OMI E5: Catanzaro ovest - Centro direzionale - Università. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       1.3,
+       5.8
+      ],
+      [
+       2.5,
+       6.8
+      ]
+     ],
+     "villa": [
+      [
+       3.6,
+       6.8
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "R4",
+    "nome": "R4 - Territorio rurale est",
+    "nota": "Fascia extraurbana, zona OMI R4: Territorio rurale est. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.5,
+       3.7
+      ],
+      [
+       2.6,
+       4.0
+      ]
+     ],
+     "villa": [
+      [
+       2.5,
+       4.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "R5",
+    "nome": "R5 - Territorio rurale ovest",
+    "nota": "Fascia extraurbana, zona OMI R5: Territorio rurale ovest. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.0,
+       3.2
+      ],
+      [
+       2.6,
+       3.9
+      ]
+     ],
+     "villa": [
+      [
+       2.0,
+       3.9
+      ]
+     ]
+    }
+   }
+  ],
+  "tabella_per": "scelta",
+  "tabella_chiave": "tipologia",
+  "tabella_predefinita": "abitazione",
+  "fasce": {
+   "nomi": [
+    "abitazione economica",
+    "abitazione normale"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    5
+   ],
+   "basta": [
+    30,
+    31,
+    45
+   ],
+   "nomi_tabella": {
+    "villa": "villa o villino"
+   },
+   "nota_soglie": "è normale anche con l'elemento 31, 32 o 46 (ristrutturazione negli ultimi 10 anni, APE fino alla classe E); ville e villini hanno una tabella propria"
+  },
+  "elementi": [
+   {
+    "testo": "Riscaldamento autonomo"
+   },
+   {
+    "testo": "Riscaldamento centralizzato con termoregolazione"
+   },
+   {
+    "testo": "Videosorveglianza, impianto di sicurezza o allarme"
+   },
+   {
+    "testo": "Impianto antincendio"
+   },
+   {
+    "testo": "Antenna centralizzata o impianto satellitare"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Citofono o videocitofono"
+   },
+   {
+    "testo": "Aria condizionata o climatizzazione"
+   },
+   {
+    "testo": "Pavimento riscaldato"
+   },
+   {
+    "testo": "Pavimento in parquet, gres porcellanato o materiale equivalente"
+   },
+   {
+    "testo": "Elettrodomestici efficienti o collegati in rete"
+   },
+   {
+    "testo": "Impianto fotovoltaico"
+   },
+   {
+    "testo": "Caldaia a condensazione"
+   },
+   {
+    "testo": "Autoclave con serbatoio acqua"
+   },
+   {
+    "testo": "Impianto solare termico"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Doppi infissi, vetrocamera o infissi antirumore"
+   },
+   {
+    "testo": "Tapparelle o persiane motorizzate"
+   },
+   {
+    "testo": "Box"
+   },
+   {
+    "testo": "Posto auto assegnato"
+   },
+   {
+    "testo": "Posto auto in cortile chiuso o riservato allo stabile"
+   },
+   {
+    "testo": "Doppio posto auto riservato"
+   },
+   {
+    "testo": "Cortile, corte, terrazza a piano terra o giardino a uso comune"
+   },
+   {
+    "testo": "Giardino a uso esclusivo"
+   },
+   {
+    "testo": "Doppio ingresso"
+   },
+   {
+    "testo": "Ingresso autonomo in villa o villino"
+   },
+   {
+    "testo": "Portiere"
+   },
+   {
+    "testo": "Linea telefonica, ADSL, fibra o connessione internet"
+   },
+   {
+    "testo": "Wi-Fi"
+   },
+   {
+    "testo": "Stabile ultimato, ammodernato o ristrutturato negli ultimi 15 anni"
+   },
+   {
+    "testo": "Appartamento ultimato, ammodernato o ristrutturato negli ultimi 10 anni"
+   },
+   {
+    "testo": "Certificazione energetica A4, A3, A2, A1, B, C, D o E"
+   },
+   {
+    "testo": "Porta blindata o finestre blindate"
+   },
+   {
+    "testo": "Cucina con finestra"
+   },
+   {
+    "testo": "Balconi o terrazzi"
+   },
+   {
+    "testo": "Pertinenze utilizzabili (sottotetto, magazzino, cantina, lastrico solare)"
+   },
+   {
+    "testo": "Fermate del trasporto pubblico entro 300 metri"
+   },
+   {
+    "testo": "Autorimesse o garage custoditi entro 300 metri"
+   },
+   {
+    "testo": "Palazzina fino a quattro piani, con non più di tre appartamenti per piano"
+   },
+   {
+    "testo": "Supermercati o servizi essenziali entro 300 metri"
+   },
+   {
+    "testo": "Strutture per il superamento delle barriere architettoniche"
+   },
+   {
+    "testo": "Piscina, anche condominiale"
+   },
+   {
+    "testo": "Vista mare o particolare panoramicità"
+   },
+   {
+    "testo": "Vicinanza al mare, alla montagna, a terme o impianti sciistici"
+   },
+   {
+    "testo": "Terrazzi, giardini o spazi esterni di particolare fruibilità"
+   },
+   {
+    "testo": "Recente ristrutturazione integrale"
+   },
+   {
+    "testo": "Finiture di pregio"
+   },
+   {
+    "testo": "Servizi comuni di particolare livello"
+   },
+   {
+    "testo": "Impianti domotici"
+   },
+   {
+    "testo": "Colonnina di ricarica per veicoli elettrici"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale (dalla visura)",
+   "voci": [
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazzi, cantine, soffitte, giardini e spazi esterni esclusivi, aree comuni a verde",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto scoperto, coperto o in autorimessa comune",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "box",
+     "testo": "Box auto o garage",
+     "coeff": 0.65
+    },
+    {
+     "chiave": "bassi",
+     "testo": "Vani con altezza media sotto 1,70 m",
+     "coeff": 0.2
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 49.99,
+     "perc": 20
+    },
+    {
+     "fino": 70,
+     "perc": 15
+    },
+    {
+     "fino": 90,
+     "perc": 10
+    }
+   ],
+   "nota": "Gli accessori si contano solo se non sono già compresi nella superficie catastale. Alloggi sotto 50 mq: superficie convenzionale +20%; da 51 a 70 mq +15%; da 71 a 90 mq +10%.",
+   "correzioni_totale_su": "base"
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "tipologia",
+    "tipo": "scelta",
+    "testo": "Tipologia (sceglie la tabella dei valori)",
+    "nome": "tipologia",
+    "nessuna": "Appartamento (abitazione economica o normale)",
+    "opzioni": [
+     {
+      "valore": "villa",
+      "testo": "Villa o villino (indipendente o semi-indipendente)",
+      "perc": 0,
+      "breve": "villa o villino"
+     }
+    ],
+    "nessuna_breve": "appartamento"
+   },
+   {
+    "chiave": "ammobiliato",
+    "tipo": "scelta",
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato",
+      "perc": 15
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "testo": "Caratteristiche aggiuntive di particolare pregio (piscina, vista mare, finiture di pregio...)",
+    "nome": "caratteristiche di pregio",
+    "perc": 20
+   },
+   {
+    "chiave": "seminterrato",
+    "tipo": "spunta",
+    "testo": "Alloggio al piano seminterrato abitabile",
+    "nome": "piano seminterrato",
+    "perc": -20
+   },
+   {
+    "chiave": "senza_ascensore",
+    "tipo": "spunta",
+    "testo": "Alloggio oltre il terzo piano senza ascensore",
+    "nome": "oltre il terzo piano senza ascensore",
+    "perc": -10
+   },
+   {
+    "chiave": "breve",
+    "tipo": "scelta",
+    "testo": "Transitorio sotto i sei mesi (coefficiente massimo sul canone)",
+    "nome": "transitorio breve",
+    "nessuna": "sei mesi o più",
+    "contratti": [
+     "transitorio"
+    ],
+    "dopo": true,
+    "opzioni": [
+     {
+      "valore": "30",
+      "testo": "fino a 30 giorni (x 4,00)",
+      "perc": 300
+     },
+     {
+      "valore": "60",
+      "testo": "da 31 a 60 giorni (x 3,50)",
+      "perc": 250
+     },
+     {
+      "valore": "90",
+      "testo": "da 61 a 90 giorni (x 3,00)",
+      "perc": 200
+     },
+     {
+      "valore": "120",
+      "testo": "da 91 a 120 giorni (x 2,50)",
+      "perc": 150
+     },
+     {
+      "valore": "180",
+      "testo": "da 121 a 180 giorni (x 2,00)",
+      "perc": 100
+     }
+    ],
+    "mostra_perc": false
+   }
+  ],
+  "nota_maggiorazioni": "Arredamento e pregio si sommano. Le maggiorazioni e il coefficiente dei transitori brevi vanno scritti nel contratto. L'attestazione si può rilasciare anche con un canone fino al 5% sopra il massimo.",
+  "durata": {
+   "4": 5,
+   "5": 10,
+   "6": 15
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato E",
+  "titolo": "Attestazione bilaterale di rispondenza ex D.M. 16/1/2017",
+  "sottotitolo": "Accordo territoriale per la Città di Catanzaro, depositato il 01/07/2026, prot. 70215",
+  "titolo_elementi": "Elementi oggettivi dell'immobile (allegato B)",
+  "dichiarazione": "La parte richiedente dichiara, sotto la propria responsabilità, gli elementi oggettivi sopra riportati.",
+  "firme": [],
+  "attestazione": [
+   "Tutto ciò premesso, le Organizzazioni ……………………………, come sopra rappresentate, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTANO che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Catanzaro depositato in data 01/07/2026."
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona è quella OMI dell'Agenzia delle Entrate (GEOPOI)."
+ }
+}

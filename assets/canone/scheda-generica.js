@@ -26,7 +26,7 @@
     const F = R().fasce, s = (F.soglie_zona && z && F.soglie_zona[z.codice]) || F.soglie, cosa = F.criterio === "punti" ? "punti" : "elementi";
     if (F.criterio === "scelta") return F.nota || "fascia scelta in base al foglio di calcolo dell'accordo";
     if (!s.length) return "una sola fascia per zona; gli elementi indicano se avvicinarsi al minimo o al massimo";
-    return F.nomi.map((nome, i) => i === 0 ? `${nome}: fino a ${s[0]} ${cosa}` : i < s.length ? `${nome}: da ${s[i - 1] + 1} a ${s[i]}` : `${nome}: da ${s[i - 1] + 1}`).join(" · ") + (F.almeno ? ` (${F.almeno.avviso.replace(/^Per /, "per ").replace(/\.$/, "")})` : "");
+    return F.nomi.map((nome, i) => i === 0 ? `${nome}: fino a ${s[0]} ${cosa}` : i < s.length ? `${nome}: da ${s[i - 1] + 1} a ${s[i]}` : `${nome}: da ${s[i - 1] + 1}`).join(" · ") + (F.almeno ? ` (${F.almeno.avviso.replace(/^Per /, "per ").replace(/\.$/, "")})` : "") + (F.nota_soglie ? `; ${F.nota_soglie}` : "");
   }
 
   function costruisci() {
@@ -52,7 +52,7 @@
     $("gen-maggiorazioni").innerHTML = (r.maggiorazioni || []).filter((m) => m.tipo !== "auto").map((m) => {
       const cl = m.contratti ? m.contratti.map((c) => `per-${c}`).join(" ") : "";
       if (m.tipo === "scelta") return `<div class="griglia-campi stacco ${cl}" data-m="${m.chiave}"><label class="largo">${testo(m.testo)}<select name="m_${m.chiave}">` +
-        `<option value="">${testo(m.nessuna || "no")}</option>` + m.opzioni.map((o) => `<option value="${testo(o.valore)}">${testo(o.testo)}${o.perc ? ` (${o.perc > 0 ? "+" : ""}${v(o.perc, o.perc % 1 ? 1 : 0)}%)` : ""}</option>`).join("") + `</select></label></div>`;
+        `<option value="">${testo(m.nessuna || "no")}</option>` + m.opzioni.map((o) => `<option value="${testo(o.valore)}">${testo(o.testo)}${o.perc && m.mostra_perc !== false ? ` (${o.perc > 0 ? "+" : ""}${v(o.perc, o.perc % 1 ? 1 : 0)}%)` : ""}</option>`).join("") + `</select></label></div>`;
       return `<div class="caselle colonna stacco ${cl}" data-m="${m.chiave}"><label><input type="checkbox" name="m_${m.chiave}"> ${testo(m.testo)} (${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%)</label></div>`;
     }).join("") + (r.nota_maggiorazioni ? `<p class="nota-copia stacco">${testo(r.nota_maggiorazioni)}</p>` : "");
     $("gen-valore-etichetta").textContent = `Valore al mq ${unita()} (€)`;
@@ -118,7 +118,7 @@
     $("gen-soglie").textContent = R().fasce.gruppi ? (R().fasce.nota || "") : `Fasce${r.zona ? ` (${r.zona.nome})` : ""}: ${soglieTesto(r.zona)}.`;
     $("gen-conteggio").textContent = R().fasce.criterio === "scelta" ? `· ${$("gen-elementi").querySelectorAll("input:checked").length} su ${R().elementi.length}` : R().fasce.criterio === "punti" ? `· ${virgolaN(r.punti)} punti` : R().fasce.conta ? `· ${r.punti} base${r.premium !== undefined ? `, ${r.premium} premium` : ""}` : `· ${r.punti} su ${R().elementi.length}`;
     $("gen-esito-fascia").textContent = r.base
-      ? `${r.zona.nome}, fascia ${r.fascia.nome}${R().fasce.criterio === "scelta" ? "" : ` (${virgolaN(r.punti)} ${R().fasce.criterio === "punti" ? "punti" : "elementi"})`}: da € ${v(r.base[0])} a € ${v(r.base[1])} al mq ${unita()}` : `fascia ${r.fascia.nome}`;
+      ? `${r.zona.nome}, fascia ${r.fascia.nome}${R().fasce.criterio === "scelta" ? "" : ` (${virgolaN(r.punti)} ${R().fasce.criterio === "punti" ? (r.punti === 1 ? "punto" : "punti") : (r.punti === 1 ? "elemento" : "elementi")})`}: da € ${v(r.base[0])} a € ${v(r.base[1])} al mq ${unita()}` : `fascia ${r.fascia.nome}`;
     $("gen-esito-magg").textContent = r.maggiorazioni.length
       ? r.maggiorazioni.map((m) => `${m.nome} ${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%`).join(", ") + (r.maggiorazioni.length > 1 ? ` = ${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%` : "") +
         (r.valori ? ` → da € ${v(r.valori[0])} a € ${v(r.valori[1])}` : "")

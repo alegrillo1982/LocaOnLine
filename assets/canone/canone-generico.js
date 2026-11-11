@@ -73,11 +73,11 @@
       righe.push({ chiave: v.chiave, mq, coeff: k, convenzionale: cent(conv) });
     }
     let totale = cent(righe.reduce((t, r) => t + r.convenzionale, 0));
-    const ct = (R.correzioni_totale || []).find((x) => totale <= x.fino);
+    const ct = (R.correzioni_totale || []).find((x) => (R.correzioni_totale_su === "base" ? U : totale) <= x.fino);
     if (ct && ct.perc) {
       const prima = totale;
       totale = cent(ct.perc > 0 ? Math.max(prima, Math.min(prima * (1 + ct.perc / 100), ct.limite ?? Infinity)) : Math.min(prima, Math.max(prima * (1 + ct.perc / 100), ct.limite ?? 0)));
-      if (totale !== prima) note.push(`Superficie intermedia ${virgola(prima)} mq ${ct.perc > 0 ? "aumentata" : "ridotta"} del ${Math.abs(ct.perc)}%${ct.limite ? ` (limite ${virgola(ct.limite)} mq)` : ""}.`);
+      if (totale !== prima) note.push(`Superficie ${R.correzioni_totale_su === "base" ? "convenzionale" : "intermedia"} ${virgola(prima)} mq ${ct.perc > 0 ? "aumentata" : "ridotta"} del ${Math.abs(ct.perc)}%${ct.limite ? ` (limite ${virgola(ct.limite)} mq)` : ""}.`);
     }
     return { righe, base: cent(base), totale, note };
   }
@@ -107,6 +107,8 @@
     const soglie = (F.soglie_zona && zona && F.soglie_zona[zona.codice]) || F.soglie;
     let i = soglie.findIndex((x) => n <= x);
     if (i < 0) i = soglie.length;
+    // es. Catanzaro: alcuni elementi (ristrutturazione recente, APE) bastano da soli per la fascia più alta
+    if (F.basta && F.basta.some((k) => presente(E[k], el[k]))) i = Math.max(i, soglie.length);
     const mancano = (F.obbligatori || []).filter((k) => !el[k]);
     let avviso = i > 0 && mancano.length ? `Senza ${mancano.map((k) => `l'elemento ${k + 1}`).join(" e ")} si resta nella fascia più bassa.` : "";
     if (i > 0 && F.almeno) {
@@ -144,6 +146,9 @@
         const pesi = f.gruppi.reduce((t, g) => t + g.peso, 0);
         const max = Math.round(f.gruppi.reduce((t, g) => t + tab[g.i][1] * g.peso, 0) / pesi * 100) / 100;
         r.base = [Math.round(max * R.fasce.minimo_perc) / 100, max];
+      } else if (tab.length === 1 && (R.fasce.nomi_tabella || {})[chiave.replace(/^stud_/, "")]) {
+        // es. Catanzaro: le ville hanno una fascia sola, qualunque sia il numero di elementi
+        r.base = tab[0]; f.i = 0; f.nome = R.fasce.nomi_tabella[chiave.replace(/^stud_/, "")];
       } else r.base = tab[f.i];
       const P = R.fasce.proporzionale && R.fasce.proporzionale[f.i];
       if (P && r.base) {

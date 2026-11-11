@@ -419,6 +419,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrento-2024-12-13-regolamento-unico.pdf?alt=media&token=fd55ae52-23b4-45f8-9819-250716e148b7"
     }
    ]
+  },
+  {
+   "comune": "Catanzaro",
+   "provincia": "CZ",
+   "accordo": "catanzaro-2026-07-01",
+   "sottoscritto": "1° luglio 2026",
+   "depositato": "1° luglio 2026",
+   "zone": 19,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcatanzaro-2026-07-01-accordo.pdf?alt=media&token=cc2037e4-a912-444d-a1d8-c787f235d025",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcatanzaro-2026-07-01-accordo.pdf?alt=media&token=cc2037e4-a912-444d-a1d8-c787f235d025"
+    }
+   ]
   }
  ]
 }

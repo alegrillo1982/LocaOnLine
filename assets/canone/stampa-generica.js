@@ -132,7 +132,8 @@
 
     sezione("CALCOLO DEL CANONE");
     const mt = R.tabella_per === "scelta" ? (R.maggiorazioni || []).find((m) => m.chiave === R.tabella_chiave) : null;
-    const tabella = mt ? (((mt.opzioni || []).find((o) => o.valore === ((s.maggiorazioni_scelte || {})[R.tabella_chiave] || R.tabella_predefinita)) || {}).testo || mt.nessuna) : null;
+    const op = mt ? (mt.opzioni || []).find((o) => o.valore === ((s.maggiorazioni_scelte || {})[R.tabella_chiave] || R.tabella_predefinita)) : null;
+    const tabella = mt ? (op ? op.breve || op.testo : mt.nessuna_breve || mt.nessuna) : null;
     const tab = [
       ...(mt ? [["Tabella dei valori", `${mt.nome} ${tabella}${String(r.tipologia || "").startsWith("stud_") ? ", studenti universitari" : ""}`]] : []),
       ["Valori base al mq/" + per, r.base ? `minimo € ${v(r.base[0])}   massimo € ${v(r.base[1])}` : ""],
@@ -161,7 +162,8 @@
       for (const par of P.attestazione) { paragrafo(par, { sz: 8.6 }); a += 3; }
       spazio(30, 14); a += 10;
       const fo = P.firme_attestazione || ["p. l'Organizzazione"];
-      fo.forEach((f, i) => { const x0 = SX + i * ((DX - SX) / fo.length); tx(f, x0, a, { sz: 8.8 }); p.drawLine({ start: { x: x0, y: Y(a + 14) }, end: { x: x0 + 190, y: Y(a + 14) }, thickness: 0.5, color: NERO }); });
+      const lf = Math.min(190, (DX - SX) / fo.length - 16);
+      fo.forEach((f, i) => { const x0 = SX + i * ((DX - SX) / fo.length); tx(f, x0, a, { sz: 8.8 }); p.drawLine({ start: { x: x0, y: Y(a + 14) }, end: { x: x0 + lf, y: Y(a + 14) }, thickness: 0.5, color: NERO }); });
       a += 24;
     }
     spazio(12, 16);
