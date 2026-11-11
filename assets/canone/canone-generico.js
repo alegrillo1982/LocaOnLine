@@ -195,8 +195,19 @@
       }
       if (R.tabella_per === "superficie") {
         const U = numero((s.superfici || {}).base);
-        chiave = (s.maggiorazioni_scelte || {}).casa ? "casa" : U === null ? "70" : U <= 45 ? "45" : U <= 70 ? "70" : U <= 120 ? "120" : "oltre";
+        // es. Parma: soglie proprie dell'accordo, [[40,"40"],[60,"60"],...] e la tabella per le superfici oltre
+        const TS = R.tabella_soglie;
+        chiave = (s.maggiorazioni_scelte || {}).casa ? "casa"
+          : TS ? (U === null ? TS[0][1] : ((TS.find((x) => U <= x[0]) || [])[1] || R.tabella_oltre))
+          : U === null ? "70" : U <= 45 ? "45" : U <= 70 ? "70" : U <= 120 ? "120" : "oltre";
         r.tipologia = chiave;
+      }
+      if (R.tabella_per === "conteggio") {
+        // es. Taranto: la tabella dipende da quanti elementi di un gruppo sono presenti (stato dello stabile)
+        const TC = R.tabella_conta, el = s.elementi || [];
+        const n = R.elementi.filter((e, k) => k >= TC.da && k <= TC.a && presente(e, el[k])).length;
+        let k = TC.soglie.findIndex((x) => n <= x); if (k < 0) k = TC.soglie.length;
+        chiave = TC.valori[k]; r.tipologia = chiave; r.conteggio_tabella = n;
       }
       const tab = Array.isArray(r.zona.fasce) ? r.zona.fasce : r.zona.fasce[chiave] || r.zona.fasce["3"];
       if (f.gruppi && !f.prevalente) {
@@ -293,6 +304,12 @@
       if (r.valori[1] > r.massimo_fascia) { r.valori = [r.valori[0], r.massimo_fascia]; avvisi.push("Il valore si ferma al massimo della microzona (art. 3)."); }
       const SR = R.senza_riscaldamento;
       if (SR && (s.maggiorazioni_scelte || {})[SR.chiave] && r.valori[1] >= r.massimo_fascia - 0.0005) { r.valori = [r.valori[0], Math.round(r.massimo_fascia * (1 - SR.perc / 100) * 1000) / 1000]; avvisi.push(SR.avviso); }
+    }
+    // es. Parma: alloggi senza servizi essenziali, al massimo il minimo della fascia più una percentuale
+    const TM = R.tetto_minimo;
+    if (TM && r.valori && r.base && (s.maggiorazioni_scelte || {})[TM.chiave]) {
+      r.valori = [r.base[0], Math.round(r.base[0] * (1 + TM.perc / 100) * 1000) / 1000];
+      avvisi.push(TM.avviso);
     }
     // es. Brescia: con uno di questi elementi si applica il solo valore minimo
     if (R.solo_minimo && r.valori && R.elementi.some((e, k) => k >= R.solo_minimo.da && k <= R.solo_minimo.a && presente(e, (s.elementi || [])[k]))) {

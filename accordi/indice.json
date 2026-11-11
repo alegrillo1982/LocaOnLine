@@ -601,6 +601,64 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsalerno-2019-07-08-accordo.pdf?alt=media&token=8c3dec28-0068-472d-9835-40fb3fbbbc2f"
     }
    ]
+  },
+  {
+   "comune": "Parma",
+   "provincia": "PR",
+   "accordo": "parma-2019-03-26",
+   "sottoscritto": "26 marzo 2019",
+   "depositato": "27 marzo 2019",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fparma-2019-03-26-accordo.pdf?alt=media&token=9cf7f7bc-be48-4799-9182-d80769106b1f",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fparma-2019-03-26-accordo.pdf?alt=media&token=9cf7f7bc-be48-4799-9182-d80769106b1f"
+    },
+    {
+     "nome": "Allegato 1 zone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fparma-2019-03-26-allegato-1-zone.pdf?alt=media&token=26bb1890-c8c2-4f27-9505-2f14d6dd0575"
+    },
+    {
+     "nome": "Allegato 2 valori ott2026 set2027",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fparma-2019-03-26-allegato-2-valori-ott2026-set2027.pdf?alt=media&token=4f9908d5-9729-4762-83f9-5b4378a133c3"
+    }
+   ]
+  },
+  {
+   "comune": "Taranto",
+   "provincia": "TA",
+   "accordo": "taranto-2018-05-29",
+   "sottoscritto": "29 maggio 2018",
+   "depositato": "29 maggio 2018",
+   "zone": 11,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftaranto-2018-05-29-accordo.pdf?alt=media&token=efafc430-9df1-48f2-ad12-28b64ba67f0d",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftaranto-2018-05-29-accordo.pdf?alt=media&token=efafc430-9df1-48f2-ad12-28b64ba67f0d"
+    },
+    {
+     "nome": "Allegato 1 valori aree omogenee",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftaranto-2018-05-29-allegato-1-valori-aree-omogenee.pdf?alt=media&token=7134a66b-2c31-40bc-925f-272d43dc355e"
+    },
+    {
+     "nome": "Allegato 3 attestazione unilaterale",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftaranto-2018-05-29-allegato-3-attestazione-unilaterale.pdf?alt=media&token=082ffeba-3bde-4615-a182-59c260222808"
+    },
+    {
+     "nome": "Allegato 4 attestazione bilaterale",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftaranto-2018-05-29-allegato-4-attestazione-bilaterale.pdf?alt=media&token=8c71eeeb-c5b5-4762-9466-1d104475a656"
+    },
+    {
+     "nome": "Allegato 5 richiesta attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftaranto-2018-05-29-allegato-5-richiesta-attestazione.pdf?alt=media&token=f97de3bd-8493-43db-810b-6533e898cc08"
+    },
+    {
+     "nome": "Allegato 6 richiesta commissione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftaranto-2018-05-29-allegato-6-richiesta-commissione.pdf?alt=media&token=a3e74b66-3092-4de9-9845-a6c9a6264e8e"
+    }
+   ]
   }
  ]
 }

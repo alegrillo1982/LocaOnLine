@@ -1,0 +1,479 @@
+{
+ "accordo": {
+  "codice": "parma-2019-03-26",
+  "modello": "parma-2019",
+  "comune": "Parma",
+  "provincia": "PR",
+  "titolo": "Accordo territoriale per il territorio del Comune di Parma",
+  "data": "2019-03-26",
+  "data_testo": "26 marzo 2019",
+  "deposito": "P.G. n. 63560",
+  "deposito_data": "27.03.2019",
+  "protocollo": "63560",
+  "ufficio": "Comune di Parma, Protocollo generale",
+  "ufficio_breve": "Comune di Parma",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Parma del 26 marzo 2019, in vigore dal 1° aprile 2019:</strong> durava cinque anni dal deposito ma resta valido finché non viene firmato quello nuovo, e il Comune lo indica ancora come vigente. Qui trovi i valori <strong>aggiornati dal Comune per i contratti stipulati da ottobre 2026 a settembre 2027</strong> (75% dell'ISTAT di settembre).",
+  "firmatari_proprieta": [
+   "APE - Confedilizia",
+   "ADEPI",
+   "APPC",
+   "ASPPI"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET CISL",
+   "UNIAT UIL",
+   "ASSOCASA",
+   "APIA Confconsumatori"
+  ],
+  "nota": "Firmato a Parma il 26/03/2019, protocollato dal Comune il 27/03/2019 (P.G. n. 63560, timbro sulla prima pagina e cartina dell'allegato 1), valido dal 01/04/2019; sostituisce l'accordo del 29/10/2003 e la prima versione firmata il 29/01/2019. Durata cinque anni dal giorno dopo il deposito, poi resta in vigore fino al nuovo accordo (titolo G). Valori minimi e massimi aggiornati ogni anno al 75% dell'ISTAT di settembre: qui la tabella del Comune ott. 2026 - sett. 2027 (minimo 1,18 euro/mq). Zone: cartina dell'allegato 1 (versione del Comune di novembre 2025).",
+  "fonte": "Comune di Parma, Settore Politiche abitative, pagina Canone concordato (testo dell'accordo con allegati in scansione, cartina delle zone, tabelle dei canoni aggiornate ott. 2026 - sett. 2027)."
+ },
+ "esempio_zona": "centrale, intermedia o periferia (cartina dell'allegato 1)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "superficie",
+  "zone": [
+   {
+    "codice": "centrale",
+    "nome": "Zona centrale",
+    "nota": "Zona centrale (in rosso nella cartina dell'allegato 1): centro storico e Oltretorrente, fino alla Cittadella (viale Duca Alessandro, via Pizzi), più il Campus universitario di Parco Area delle Scienze. Le strade di confine si considerano all'interno della zona delimitata (punto A.2).",
+    "fasce": {
+     "40": [
+      [
+       1.18,
+       8.98
+      ],
+      [
+       1.18,
+       10.13
+      ],
+      [
+       1.18,
+       11.97
+      ]
+     ],
+     "60": [
+      [
+       1.18,
+       7.96
+      ],
+      [
+       1.18,
+       9.12
+      ],
+      [
+       1.18,
+       10.68
+      ]
+     ],
+     "80": [
+      [
+       1.18,
+       7.1
+      ],
+      [
+       1.18,
+       7.96
+      ],
+      [
+       1.18,
+       9.38
+      ]
+     ],
+     "100": [
+      [
+       1.18,
+       5.75
+      ],
+      [
+       1.18,
+       6.6
+      ],
+      [
+       1.18,
+       7.72
+      ]
+     ],
+     "oltre": [
+      [
+       1.18,
+       5.32
+      ],
+      [
+       1.18,
+       6.02
+      ],
+      [
+       1.18,
+       7.01
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "intermedia",
+    "nome": "Zona intermedia",
+    "nota": "Zona intermedia (in blu nella cartina dell'allegato 1): la fascia di quartieri intorno alla zona centrale. Le strade di confine si considerano all'interno della zona delimitata (punto A.2).",
+    "fasce": {
+     "40": [
+      [
+       1.18,
+       7.96
+      ],
+      [
+       1.18,
+       9.12
+      ],
+      [
+       1.18,
+       10.68
+      ]
+     ],
+     "60": [
+      [
+       1.18,
+       7.23
+      ],
+      [
+       1.18,
+       8.25
+      ],
+      [
+       1.18,
+       9.68
+      ]
+     ],
+     "80": [
+      [
+       1.18,
+       6.4
+      ],
+      [
+       1.18,
+       7.23
+      ],
+      [
+       1.18,
+       8.53
+      ]
+     ],
+     "100": [
+      [
+       1.18,
+       5.47
+      ],
+      [
+       1.18,
+       6.18
+      ],
+      [
+       1.18,
+       7.17
+      ]
+     ],
+     "oltre": [
+      [
+       1.18,
+       5.2
+      ],
+      [
+       1.18,
+       5.88
+      ],
+      [
+       1.18,
+       6.87
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "periferia",
+    "nome": "Periferia",
+    "nota": "Periferia: tutto il resto del territorio comunale, fuori dalle zone centrale e intermedia (cartina dell'allegato 1).",
+    "fasce": {
+     "40": [
+      [
+       1.18,
+       7.54
+      ],
+      [
+       1.18,
+       8.53
+      ],
+      [
+       1.18,
+       9.97
+      ]
+     ],
+     "60": [
+      [
+       1.18,
+       6.69
+      ],
+      [
+       1.18,
+       7.69
+      ],
+      [
+       1.18,
+       8.98
+      ]
+     ],
+     "80": [
+      [
+       1.18,
+       5.83
+      ],
+      [
+       1.18,
+       6.69
+      ],
+      [
+       1.18,
+       7.82
+      ]
+     ],
+     "100": [
+      [
+       1.18,
+       5.32
+      ],
+      [
+       1.18,
+       6.02
+      ],
+      [
+       1.18,
+       7.01
+      ]
+     ],
+     "oltre": [
+      [
+       1.18,
+       5.05
+      ],
+      [
+       1.18,
+       5.62
+      ],
+      [
+       1.18,
+       6.6
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "1ª",
+    "2ª",
+    "3ª"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    7
+   ]
+  },
+  "elementi": [
+   {
+    "testo": "Riscaldamento autonomo o teleriscaldamento con contacalorie, e/o condizionatore (se fornito dal proprietario)"
+   },
+   {
+    "testo": "Autorimessa o posto auto coperto"
+   },
+   {
+    "testo": "Posto auto scoperto e/o giardino privato"
+   },
+   {
+    "testo": "Sicurezza: cancello automatico, videocitofono, recinzione, porta blindata o antifurto"
+   },
+   {
+    "testo": "Alloggio al piano terra o primo (o rialzato e primo), oppure con ascensore"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Doppi vetri o doppie finestre"
+   },
+   {
+    "testo": "Balcone o terrazzo"
+   },
+   {
+    "testo": "Cantina o solaio"
+   },
+   {
+    "testo": "Costruito o ristrutturato integralmente dopo il 1° gennaio 2005"
+   },
+   {
+    "testo": "Edificio con non più di 9 unità immobiliari per scala"
+   },
+   {
+    "testo": "Verde e/o cortile"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile (dall'APE o dalla planimetria catastale)",
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa esclusiva o posto auto in autorimessa comune",
+     "coeff": 0.5
+    }
+   ],
+   "nota": "Si conta tutta la superficie calpestabile (dall'APE o, se manca, dalla planimetria catastale, con tolleranza del 5%) più metà dell'autorimessa o del posto auto in autorimessa comune. La tabella dei valori si sceglie dai mq dell'alloggio: fino a 40, da 41 a 60, da 61 a 80, da 81 a 100, oltre 100."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredo",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 10
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato, con almeno la cucina completa e funzionante",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "arredo_studenti",
+    "tipo": "scelta",
+    "testo": "Arredo (contratto per studenti)",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "contratti": [
+     "studenti"
+    ],
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 20
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato, con almeno la cucina completa e funzionante",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "vincolato",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato (beni culturali) o di categoria A/1, A/8, A/9",
+    "nome": "immobile vincolato",
+    "perc": 10
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE; non vale per gli alloggi pubblici o finanziati con fondi pubblici)",
+    "nome": "classe energetica",
+    "nessuna": "E, F, G o senza APE",
+    "opzioni": [
+     {
+      "valore": "A",
+      "testo": "A",
+      "perc": 10
+     },
+     {
+      "valore": "B",
+      "testo": "B",
+      "perc": 7.5
+     },
+     {
+      "valore": "C",
+      "testo": "C",
+      "perc": 5
+     },
+     {
+      "valore": "D",
+      "testo": "D",
+      "perc": 1.5
+     }
+    ]
+   },
+   {
+    "chiave": "carenze",
+    "tipo": "spunta",
+    "testo": "Alloggio senza bagno interno, impianto idrico o riscaldamento (solo stufe), oppure al seminterrato",
+    "nome": "servizi essenziali mancanti",
+    "perc": 0,
+    "mostra_perc": false
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano e valgono sia sul minimo sia sul massimo. Attenzione: se manca il bagno interno, l'impianto idrico o il riscaldamento (solo stufe), oppure l'alloggio è al seminterrato, il canone non può superare il minimo aumentato del 30% (circa € 1,53 al mq al mese), qualunque siano gli altri elementi.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "contratto": {
+   "studenti": 5
+  },
+  "combinazione": "somma",
+  "avvisi": [],
+  "tabella_soglie": [
+   [
+    40,
+    "40"
+   ],
+   [
+    60,
+    "60"
+   ],
+   [
+    80,
+    "80"
+   ],
+   [
+    100,
+    "100"
+   ]
+  ],
+  "tabella_oltre": "oltre",
+  "tetto_minimo": {
+   "chiave": "carenze",
+   "perc": 30,
+   "avviso": "Senza bagno interno, impianto idrico o riscaldamento, o al seminterrato: il canone non supera il minimo aumentato del 30% (punto 8), qualunque siano gli altri elementi."
+  }
+ },
+ "pdf": {
+  "allegato": "Allegati 3 e 4",
+  "titolo": "Richiesta e attestazione di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Parma del 26/03/2019, depositato il 27/03/2019 (P.G. n. 63560) - valori per i contratti da ottobre 2026 a settembre 2027",
+  "titolo_elementi": "Elementi dichiarati (allegato 3)",
+  "dichiarazione": "Il locatore chiede l'attestazione ex D.M. 16/01/2017 di rispondenza del contratto all'Accordo locale per il Comune di Parma sottoscritto il 26/03/2019 e dichiara sotto la propria responsabilità che il contratto è stato stipulato con il tipo di contratto allegato al D.M. 16/01/2017. Allegati: APE e/o planimetria, contratto di locazione.",
+  "firme": [
+   "Il richiedente"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16/01/2017",
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Parma depositato il 27/03/2019, sulla base degli elementi oggettivi dichiarati dal richiedente sotto la sua responsabilità (allegato 3), anche ai fini dell'ottenimento di eventuali agevolazioni fiscali, ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Parma."
+  ],
+  "firme_attestazione": [
+   "P. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla cartina dell'allegato 1: zona centrale in rosso, intermedia in blu, il resto è periferia."
+ }
+}
