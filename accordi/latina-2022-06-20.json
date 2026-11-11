@@ -1,0 +1,366 @@
+{
+ "accordo": {
+  "codice": "latina-2022-06-20",
+  "modello": "latina-2022",
+  "comune": "Latina",
+  "provincia": "LT",
+  "titolo": "Accordo territoriale per il territorio del Comune di Latina",
+  "data": "2022-06-20",
+  "data_testo": "20 giugno 2022",
+  "deposito": "Comune di Latina",
+  "deposito_data": "20.06.2022",
+  "protocollo": "116782 del 21/06/2022",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Latina del 20 giugno 2022: durata di quattro anni dal deposito, trascorsi a giugno 2026.</strong> Resta in vigore finché non viene firmato quello nuovo (titolo H), e il Comune lo pubblica ancora. I valori si aggiornano ogni anno al 75% dell'ISTAT (allegato 2): qui trovi quelli originali, chiedi all'associazione che attesta il contratto quelli aggiornati.",
+  "firmatari_proprieta": [
+   "APE CONFEDILIZIA",
+   "A.S.P.P.I.",
+   "FEDERPROPRIETÀ",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T.",
+   "SAI CISAL",
+   "UNIONE INQUILINI"
+  ],
+  "nota": "Stipulato il 20/06/2022 e depositato al Comune di Latina il 20/06/2022, prot. n. 116782 del 21/06/2022 (timbro di arrivo e protocollo sulla copia del Comune; confermato dal protocollo d'intesa Comune-OO.SS. prot. n. 156630 del 04/10/2023 sull'aliquota IMU agevolata). Quattro anni dal giorno dopo il deposito, poi in vigore fino al nuovo accordo. Sostituisce l'accordo del 28/11/2017. Sei aree omogenee, tre subfasce (bassa, media, alta) secondo quanti dei 16 parametri sono presenti; valori mensili al mq di superficie convenzionale, aggiornati ogni anno al 75% dell'ISTAT. Vale per contratti agevolati, transitori e per studenti universitari (Latina è sede universitaria).",
+  "fonte": "Comune di Latina, Documenti e dati - Accordo tra enti: 'Accordo territoriale per il territorio del Comune di Latina e protocollo d'intesa' (scansione protocollata, 16 pagine); stessa copia anche sul sito SUNIA."
+ },
+ "esempio_zona": "la zona dall'indirizzo (elenco delle aree omogenee dell'accordo)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro urbano",
+    "nota": "Zona 1 - Centro urbano, racchiuso dalle vie: Via Milazzo, Via Ezio, Via Terenzio, parte di Via Petrarca, Via Alfieri, Via Botticelli, Via Michelangelo, parte di Via Rossetti, Via Tucci, Via Quarto, Via Albiola, Via Aspromonte, Via Villafranca, Viale Giulio Cesare (allegato 1). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.1,
+      4.5
+     ],
+     [
+      4.2,
+      6.0
+     ],
+     [
+      4.7,
+      6.4
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Intermedia",
+    "nota": "Zona 2 - Intermedia: fuori dal centro urbano, fino alle vie Via dei Cappuccini, Via Don Torello, Via Rossetti, Via Minturno, Via Roccagorga, Via Sezze, Via Don Luigi Sturzo, Via Isonzo fino alla SS 148 Pontina, ex Mediana fino a Viale Le Corbusier, Via Dublino, Via Praga, Via Oslo, Via Belgrado, Via Zani, Via Bucarest, Via Budapest, Via Mosca, Via Stoccolma, Via Copenaghen, Via Vienna, Via Ticino, Via Sarco, Via Kennedy, Via Persicara, Via Piattella, Fosso del Gionco e Canale delle Acque Medie; comprende i quartieri Giochetto (R10) e Pantanaccio (R11) (allegato 1). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.3,
+      4.7
+     ],
+     [
+      3.6,
+      5.8
+     ],
+     [
+      4.2,
+      6.1
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Quartieri Q4 e Q5",
+    "nota": "Zona 3 - Quartieri Q4 e Q5, come delimitati dai piani particolareggiati (P.P.E.). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.8,
+      4.4
+     ],
+     [
+      3.3,
+      5.3
+     ],
+     [
+      3.6,
+      5.8
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Latina Scalo",
+    "nota": "Zona 4 - Latina Scalo, come delimitata dal piano particolareggiato (P.P.E.). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.4,
+      3.6
+     ],
+     [
+      3.1,
+      4.8
+     ],
+     [
+      3.6,
+      5.4
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Zona 5 - Borghi",
+    "nota": "Zona 5 - Borghi: Borgo Piave e quartiere Torre La Felce, Borgo San Michele, Borgo Faiti, Borgo Sabotino, Borgo Grappa, Borgo Podgora, Borgo Carso, Borgo Santa Maria, Borgo Montello, Borgo Bainsizza, come delimitati dai P.P.E. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.3,
+      3.5
+     ],
+     [
+      3.1,
+      4.6
+     ],
+     [
+      3.4,
+      5.1
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "Zona 6 - Altre zone e borghi",
+    "nota": "Zona 6 - Altre zone e borghi: tutto il resto del territorio comunale. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.8,
+      2.9
+     ],
+     [
+      2.6,
+      4.2
+     ],
+     [
+      3.1,
+      4.7
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "bassa",
+    "media",
+    "alta"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    2,
+    8
+   ]
+  },
+  "elementi": [
+   {
+    "testo": "Immobile costruito da non più di 15 anni, o completamente ristrutturato negli ultimi 15 anni"
+   },
+   {
+    "testo": "Edificio isolato, villino singolo o villino a schiera"
+   },
+   {
+    "testo": "Piano rialzato o primo piano; ai piani più alti, con ascensore"
+   },
+   {
+    "testo": "Servizi igienici doppi se l'alloggio supera 70 mq (fino a 70 mq basta un bagno)"
+   },
+   {
+    "testo": "Cantina, balcone, terrazzo, loggia o porticato a uso esclusivo"
+   },
+   {
+    "testo": "Riscaldamento autonomo, o centralizzato con contabilizzazione del calore per ogni alloggio"
+   },
+   {
+    "testo": "Condizionatore d'aria"
+   },
+   {
+    "testo": "Allaccio funzionante all'acquedotto pubblico"
+   },
+   {
+    "testo": "Allaccio funzionante al gas metano o ad altro impianto del gas a norma"
+   },
+   {
+    "testo": "Portineria, videocitofono o videosorveglianza condominiale"
+   },
+   {
+    "testo": "Porta d'ingresso blindata"
+   },
+   {
+    "testo": "Finestre con doppi vetri o vetri atermici"
+   },
+   {
+    "testo": "Autorimessa singola"
+   },
+   {
+    "testo": "Posto auto a uso esclusivo"
+   },
+   {
+    "testo": "Area esterna a uso esclusivo"
+   },
+   {
+    "testo": "Area verde, cortile o spazio esterno condominiale"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie interna netta dell'abitazione (senza i vani alti meno di 1,80 m)",
+   "correzioni": [
+    {
+     "fino": 45,
+     "incluso": true,
+     "perc": 22,
+     "tetto": 50
+    },
+    {
+     "fino": 60,
+     "incluso": true,
+     "perc": 16,
+     "tetto": 65
+    },
+    {
+     "fino": 70,
+     "incluso": true,
+     "perc": 10,
+     "tetto": 70
+    }
+   ],
+   "grandi": {
+    "oltre": 130,
+    "perc": 90
+   },
+   "voci": [
+    {
+     "chiave": "vani_bassi",
+     "testo": "Vani alti meno di 1,80 m",
+     "coeff": 0.7,
+     "abitazione": true
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazzi, logge, porticati, cantine",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "garage",
+     "testo": "Garage o box auto a uso esclusivo",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto a uso esclusivo",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "area_esclusiva",
+     "testo": "Area scoperta a uso esclusivo (15%, fino ai mq dell'abitazione)",
+     "coeff": 0.15,
+     "scaglione": [
+      "base",
+      0.15,
+      0
+     ]
+    },
+    {
+     "chiave": "area_comune",
+     "testo": "Area o verde condominiale, quota millesimale (10%, fino ai mq dell'abitazione)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0
+     ]
+    }
+   ],
+   "nota": "Misura la superficie interna netta (tolleranza del 5% in più o in meno). Fino a 45 mq la superficie aumenta del 22% (al massimo 50 mq), da 45 a 60 mq del 16% (al massimo 65 mq), da 60 a 70 mq del 10% (al massimo 70 mq); oltre 130 mq la parte in più conta il 90%. Per l'area condominiale scrivi la tua quota: mq dell'area x millesimi / 1000."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE)",
+    "nome": "classe energetica",
+    "nessuna": "classe E, F, G o senza APE",
+    "opzioni": [
+     {
+      "valore": "AB",
+      "testo": "classe A o B",
+      "perc": 8
+     },
+     {
+      "valore": "CD",
+      "testo": "classe C o D",
+      "perc": 5
+     }
+    ],
+    "solo_base": true
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "arredato",
+      "perc": 15
+     },
+     {
+      "valore": "completo",
+      "testo": "arredamento completo con elettrodomestici (piano cottura o forno, frigorifero, lavatrice)",
+      "perc": 25
+     }
+    ],
+    "solo_base": true
+   }
+  ],
+  "nota_maggiorazioni": "Classe energetica e arredo si sommano e valgono solo sulla superficie dell'abitazione, non su balconi, garage e aree esterne. Per durate oltre 3 anni +3% per ogni anno in più (fino a 6 anni), in modo composto: +3%, +6,09%, +9,27%.",
+  "durata": {
+   "4": 3,
+   "5": 6.09,
+   "6": 9.2727
+  },
+  "durata_dopo": true,
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato 3",
+  "titolo": "Contratti di affitto a canone concordato - Attestazione di rispondenza ex D.M. 16.01.2017",
+  "sottotitolo": "Accordo territoriale per il territorio del Comune di Latina stipulato il 20/06/2022, depositato il 20/06/2022 con prot. n. 116782 del 21/06/2022",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "Parametri di qualità dell'alloggio",
+  "dichiarazione": "La presente scheda ATTESTANTE il valore minimo e massimo applicabile per l'immobile oggetto della locazione è stata redatta secondo le dichiarazioni rese dal locatore, che a conferma sottoscrive la presente scheda.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "Le OO.SS. della proprietà e dei conduttori, firmatarie dell'Accordo territoriale per il Comune di Latina depositato il 20/06/2022 con Prot. n. 116782 del 21/06/2022, visto le dichiarazioni delle parti, ATTESTANO che il contenuto economico del contratto corrisponde a quanto previsto dal citato Accordo Territoriale tuttora vigente.",
+   "Per prestata assistenza"
+  ],
+  "firme_attestazione": [
+   "OO.SS. Proprietà",
+   "OO.SS. Inquilini"
+  ],
+  "nota_zone": "La zona (area omogenea) si ricava dall'indirizzo: l'accordo elenca le vie che delimitano il centro urbano e la zona intermedia, poi quartieri Q4 e Q5, Latina Scalo, i borghi e il resto del territorio (allegato 1)."
+ }
+}

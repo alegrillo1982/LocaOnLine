@@ -247,7 +247,7 @@
       }
     }
     const z = r.zona ? r.zona.codice : "";
-    const add = (nome, perc, dopo) => { if (perc) r.maggiorazioni.push({ nome, perc, dopo: !!dopo }); };
+    const add = (nome, perc, dopo, solo_base) => { if (perc) r.maggiorazioni.push({ nome, perc, dopo: !!dopo, ...(solo_base ? { solo_base: true } : {}) }); };
     const sup = superficie(accordo, s);
     r.superficie = sup;
     if (sup) avvisi.push(...sup.note); else avvisi.push("Inserisci la superficie.");
@@ -263,8 +263,8 @@
       if (!perZona(m, z)) continue;
       const val = (s.maggiorazioni_scelte || {})[m.chiave];
       if (m.tipo === "auto") { add(m.nome || m.testo, m.perc, m.dopo); continue; }
-      if (m.tipo === "scelta") { const o = (m.opzioni || []).find((x) => x.valore === val); if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc, m.dopo); }
-      else if (val) add(m.nome || m.testo, m.perc, m.dopo);
+      if (m.tipo === "scelta") { const o = (m.opzioni || []).find((x) => x.valore === val); if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc, m.dopo, m.solo_base); }
+      else if (val) add(m.nome || m.testo, m.perc, m.dopo, m.solo_base);
     }
     if (R.alternativa) {
       const A = R.alternativa, el = s.elementi || [];
@@ -306,7 +306,10 @@
     const DU = R.durata_piccoli && sup && sup.righe[0].mq < R.durata_piccoli.soglia ? R.durata_piccoli : R.durata;
     if (tipo === "agevolato" && DU) add(`durata ${s.durata_anni} + 2 anni`, DU[String(anni)] || 0, R.durata_dopo);
     if (R.contratto && R.contratto[tipo]) { add(tipo === "studenti" ? "contratto per studenti" : "contratto transitorio", R.contratto[tipo], R.durata_dopo); if (R.contratto.anche_minimo) r.maggiorazioni[r.maggiorazioni.length - 1].minimo = true; }
-    const prima = r.maggiorazioni.filter((m) => !m.dopo), dopo = r.maggiorazioni.filter((m) => m.dopo);
+    // es. Latina: alcune maggiorazioni valgono solo per la superficie dell'abitazione, non per le pertinenze
+    const sb = r.maggiorazioni.filter((m) => m.solo_base);
+    r.fattore_base = R.combinazione === "prodotto" ? sb.reduce((k, m) => k * (1 + m.perc / 100), 1) : 1 + sb.reduce((t, m) => t + m.perc, 0) / 100;
+    const prima = r.maggiorazioni.filter((m) => !m.dopo && !m.solo_base), dopo = r.maggiorazioni.filter((m) => m.dopo && !m.solo_base);
     r.fattore = (R.combinazione === "prodotto"
       ? prima.reduce((k, m) => k * (1 + m.perc / 100), 1)
       : 1 + prima.reduce((t, m) => t + m.perc, 0) / 100) * dopo.reduce((k, m) => k * (1 + m.perc / 100), 1);
@@ -344,7 +347,13 @@
           else avvisi.push("Porzione: indica i mq della parte locata, compresa la quota delle parti condivise.");
         }
         const mese = R.unita === "anno" ? 12 : 1;
-        const q = R.a_corpo ? 1 : sup.totale;
+        let q = R.a_corpo ? 1 : sup.totale;
+        if (!R.a_corpo && r.fattore_base !== 1) {
+          const ab = (R.superficie.voci || []).filter((v) => v.abitazione).map((v) => v.chiave);
+          const Sab = sup.righe.filter((x) => x.chiave === "base" || ab.includes(x.chiave)).reduce((t, x) => t + x.convenzionale, 0);
+          q = cent(sup.totale + Sab * (r.fattore_base - 1));
+          r.superficie_maggiorata = q;
+        }
         r.canone_intero = cent(q * r.valore / mese);
         r.canone = cent(r.canone_intero * k);
         r.canone_minimo = cent(q * r.valori[0] / mese * k);

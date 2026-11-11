@@ -716,6 +716,37 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffoggia-2020-03-06-accordo.pdf?alt=media&token=bc3fb252-b99a-4f53-b4dd-7cd264760239"
     }
    ]
+  },
+  {
+   "comune": "Latina",
+   "provincia": "LT",
+   "accordo": "latina-2022-06-20",
+   "sottoscritto": "20 giugno 2022",
+   "depositato": "20 giugno 2022",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flatina-2022-06-20-accordo.pdf?alt=media&token=6dd8d306-6a1b-4064-bb3c-dc12f7982de3",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flatina-2022-06-20-accordo.pdf?alt=media&token=6dd8d306-6a1b-4064-bb3c-dc12f7982de3"
+    },
+    {
+     "nome": "Allegato 1 aree omogenee",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flatina-2022-06-20-allegato-1-aree-omogenee.pdf?alt=media&token=d94694c0-7023-4629-a1a5-c4a3bab773f9"
+    },
+    {
+     "nome": "Allegato 2 valori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flatina-2022-06-20-allegato-2-valori.pdf?alt=media&token=cd2e52da-7fa4-4753-846b-86c405b89e05"
+    },
+    {
+     "nome": "Allegato 3 attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flatina-2022-06-20-allegato-3-attestazione.pdf?alt=media&token=386788a7-fb00-4b3a-82b8-501f96b4b993"
+    },
+    {
+     "nome": "Protocollo intesa imu 2023",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flatina-2022-06-20-protocollo-intesa-imu-2023.pdf?alt=media&token=b66e1fbf-e3f8-4f9f-a3a6-185e59e3a557"
+    }
+   ]
   }
  ]
 }

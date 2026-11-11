@@ -147,7 +147,8 @@
         ["Canone con le maggiorazioni al " + per, r.valori ? `minimo € ${v(r.valori[0])}   massimo € ${v(r.valori[1])}` : ""]] : [
       ["Valori base al mq/" + per, r.base ? `minimo € ${v(r.base[0])}   massimo € ${v(r.base[1])}` : ""],
       ["Valori rettificati al mq/" + per, r.valori ? `minimo € ${v(r.valori[0], 3)}   massimo € ${v(r.valori[1], 3)}` : ""],
-      ["Superficie convenzionale", sup ? `${v(sup.totale)} mq` : ""]]),
+      ["Superficie convenzionale", sup ? `${v(sup.totale)} mq` : ""],
+      ...(r.superficie_maggiorata ? [["Superficie con le maggiorazioni sulla sola abitazione", `${v(r.superficie_maggiorata)} mq`]] : [])]),
       ...(r.quota !== null ? [["Quota della porzione locata", `${v(r.quota * 100)}%`]] : []),
       ["Canone mensile", r.canone_massimo !== null ? `minimo € ${v(r.canone_minimo)}   massimo € ${v(r.canone_massimo)}` : ""],
       ["CANONE MENSILE CONCORDATO TRA LE PARTI", r.canone_pattuito !== null ? `€ ${v(r.canone_pattuito)}  (annuo € ${v(r.canone_pattuito * 12)})` : ""]];
