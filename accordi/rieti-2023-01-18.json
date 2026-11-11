@@ -1,0 +1,579 @@
+{
+ "accordo": {
+  "codice": "rieti-2023-01-18",
+  "modello": "rieti-2023",
+  "comune": "Rieti",
+  "provincia": "RI",
+  "titolo": "Accordo territoriale per il territorio del Comune di Rieti",
+  "data": "2023-01-18",
+  "data_testo": "18 gennaio 2023",
+  "deposito": "Comune di Rieti, 18/01/2023, prot. 4183; integrazioni e rettifiche (e accordo per studenti universitari) prot. 36292 del 18/05/2023",
+  "deposito_data": "18.01.2023",
+  "protocollo": "4183",
+  "ufficio": "Comune di Rieti",
+  "ufficio_breve": "Comune di Rieti",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Rieti depositato il 18 gennaio 2023, con le rettifiche dell'11 maggio 2023: la durata di tre anni è trascorsa a gennaio 2026.</strong> Resta in vigore finché non viene firmato quello nuovo (titolo F); a novembre 2026 non ne risultano. Senza rinnovo le fasce si rivalutano con la variazione ISTAT: qui trovi i valori originali, chiedi all'associazione che attesta il contratto quelli aggiornati.",
+  "firmatari_proprieta": [
+   "A.P.P.C.",
+   "A.S.P.P.I.",
+   "CONFAPPI",
+   "CONFEDILIZIA",
+   "FEDERPROPRIETÀ",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "FEDER.CASA",
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T.-APS Lazio"
+  ],
+  "nota": "Accordo trasmesso al Comune di Rieti da UNIAT APS Lazio e protocollato il 18/01/2023 (n. 4183); il testo non riporta una data di firma, per questo il codice usa la data del protocollo. Sostituisce integralmente l'accordo precedente. Il 11/05/2023 le stesse organizzazioni hanno firmato integrazioni e rettifiche (titolo B dei transitori e nuova tabella dell'allegato 1, con fasce A, B, C ridefinite) e il 12/05/2023 l'accordo per studenti universitari fuori sede, protocollati insieme il 18/05/2023 (n. 36292): qui si usano i valori rettificati. Stesso modello degli accordi di Roma e provincia (fasce A, B, C, 4 caratteristiche dell'alloggio «normale» e 20 parametri). Il canone si aggiorna ogni anno al massimo del 75% della variazione ISTAT (non con la cedolare secca).",
+  "fonte": "SUNIA, pagina «Accordi territoriali di Rieti»: «Accordo-Territoriale-Rieti_gennaio-2023.pdf» (scansione con ricevuta di protocollo, testo, allegati 1, 2/A, 2/B, 3/A, 3/B, 5 e contratti tipo, 33 pagine) e «INTEGRAZIONI-E-RETTIFICHE-ACCORDO-RIETI-e-accordo-studenti.pdf» (ricevuta prot. 36292 del 18/05/2023, rettifiche, allegato 1 rettificato e accordo studenti, 16 pagine)."
+ },
+ "esempio_zona": "la zona OMI (allegato 1)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tetto_zona": true,
+  "fasce": {
+   "nomi": [
+    "A",
+    "B",
+    "C"
+   ],
+   "criterio": "conta",
+   "conta": {
+    "da": 4,
+    "a": 23
+   },
+   "soglie": [
+    2,
+    6
+   ],
+   "obbligatori": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "avviso_obbligatori": "Senza tutte e 4 le caratteristiche dell'alloggio «normale» (acqua, gas o induzione, fognatura, riscaldamento) si resta in fascia A.",
+   "proporzionale": [
+    null,
+    {
+     "da": 3,
+     "passi": 3
+    },
+    {
+     "da": 7,
+     "passi": 2,
+     "max_con_aumenti": true
+    }
+   ],
+   "nota_soglie": "fascia A anche senza una sola delle 4 caratteristiche dell'alloggio «normale»; in fascia B il massimo con 6 parametri, in fascia C con 9 o con almeno un aumento",
+   "nota": "Fascia A: alloggio senza anche una sola delle 4 caratteristiche essenziali, o con meno di 3 parametri. Fascia B: da 3 parametri (il massimo della fascia con 6). Fascia C: da 7 parametri (il massimo con 9, o con un aumento percentuale), in proporzione al numero dei parametri (allegato 2/A)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Alloggio «normale» (allegato 2/A): senza anche una sola di queste caratteristiche si resta in fascia A"
+   },
+   {
+    "da": 4,
+    "titolo": "Parametri (allegato 2/B): fascia B da 3, fascia C da 7"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Allaccio alla rete idrica"
+   },
+   {
+    "testo": "Gas (anche da deposito a norma) o cucina a induzione"
+   },
+   {
+    "testo": "Allaccio alla rete fognante"
+   },
+   {
+    "testo": "Idoneo impianto di riscaldamento"
+   },
+   {
+    "testo": "Posto auto"
+   },
+   {
+    "testo": "Cortile d'uso comune, area verde o impianto sportivo"
+   },
+   {
+    "testo": "Cantina"
+   },
+   {
+    "testo": "Terrazzo o balcone"
+   },
+   {
+    "testo": "Area verde di pertinenza o giardino"
+   },
+   {
+    "testo": "Aria condizionata"
+   },
+   {
+    "testo": "Stabile con ascensore"
+   },
+   {
+    "testo": "Bagno con finestra o doppi servizi"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Doppi vetri"
+   },
+   {
+    "testo": "Stabile con servizio di portierato"
+   },
+   {
+    "testo": "Stabile o alloggio ultimati o completamente ristrutturati negli ultimi 10 anni"
+   },
+   {
+    "testo": "Sistema di sicurezza o sistema di allarme"
+   },
+   {
+    "testo": "Cucina abitabile con finestra"
+   },
+   {
+    "testo": "Videocitofono o videosorveglianza"
+   },
+   {
+    "testo": "Antenna centralizzata o impianto satellitare"
+   },
+   {
+    "testo": "Riscaldamento autonomo"
+   },
+   {
+    "testo": "Stabile non superiore a 4 piani"
+   },
+   {
+    "testo": "Strutture per il superamento delle barriere architettoniche"
+   },
+   {
+    "testo": "Terrazzo o locale condominiale a uso comune"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'appartamento",
+   "correzioni": [
+    {
+     "fino": 46,
+     "perc": 30,
+     "tetto": 52.9
+    },
+    {
+     "da": 46,
+     "fino": 70,
+     "incluso": true,
+     "perc": 15,
+     "tetto": 70
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Autorimessa a uso esclusivo (box)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto auto o autorimessa di uso comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Area scoperta in godimento esclusivo",
+     "coeff": 0.15,
+     "scaglione": [
+      "base",
+      0.15,
+      0
+     ]
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota millesimale)",
+     "coeff": 0.1
+    },
+    {
+     "chiave": "basse",
+     "testo": "Vani con altezza inferiore a 1,70 m",
+     "coeff": 0.7
+    }
+   ],
+   "nota": "Superficie calpestabile al netto dei muri. Si aggiungono il box al 50%, il posto auto o l'autorimessa comune al 20%, balconi, terrazze e cantine al 25%, l'area scoperta esclusiva al 15% (fino a tanti mq quanti quelli dell'appartamento), il verde condominiale della propria quota millesimale al 10% e i vani alti meno di 1,70 m al 70%. Alloggi fino a 46 mq: +30% fino a 52,90 mq; oltre 46 e fino a 70 mq: +15% fino a 70 mq. Da 120 mq in su la superficie si può ridurre fino al 15% (facoltativo: qui non è ridotta). Tolleranza del 5% in più o in meno."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "ammobiliato": true,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "testo": "Alloggio completamente arredato (fino a +15%)",
+    "nome": "arredato",
+    "perc": 15
+   },
+   {
+    "chiave": "arredo_s",
+    "tipo": "spunta",
+    "ammobiliato": true,
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Alloggio arredato in ogni stanza per ciascuno studente, con connessione wifi (+15%)",
+    "nome": "arredato con wifi (studenti)",
+    "perc": 15
+   },
+   {
+    "chiave": "seminterrato",
+    "tipo": "spunta",
+    "testo": "Alloggio al piano seminterrato",
+    "nome": "seminterrato",
+    "perc": -10
+   },
+   {
+    "chiave": "ascensore",
+    "tipo": "spunta",
+    "testo": "Alloggio oltre il terzo piano senza ascensore",
+    "nome": "oltre il 3° piano senza ascensore",
+    "perc": -10
+   },
+   {
+    "chiave": "attico",
+    "tipo": "spunta",
+    "testo": "Alloggio al piano attico",
+    "nome": "attico",
+    "perc": 10
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (dall'APE)",
+    "nome": "classe energetica",
+    "nessuna": "classe G o senza APE",
+    "opzioni": [
+     {
+      "valore": "ABC",
+      "testo": "classe A, B o C",
+      "perc": 10
+     },
+     {
+      "valore": "DEF",
+      "testo": "classe D, E o F",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "eco",
+    "tipo": "spunta",
+    "testo": "Interventi documentati Eco Bonus",
+    "nome": "Eco Bonus",
+    "perc": 5
+   },
+   {
+    "chiave": "sisma",
+    "tipo": "spunta",
+    "testo": "Interventi documentati Sisma Bonus",
+    "nome": "Sisma Bonus",
+    "perc": 10
+   },
+   {
+    "chiave": "villa",
+    "tipo": "spunta",
+    "sulle_fasce": true,
+    "testo": "Villa o villino: le fasce della zona aumentano fino al 10%",
+    "nome": "villa o villino (fasce)",
+    "perc": 10
+   },
+   {
+    "chiave": "storico",
+    "tipo": "spunta",
+    "sulle_fasce": true,
+    "testo": "Immobile storico o vincolato (art. 1, c. 2, lett. a, L. 431/98 o D.Lgs. 42/2004): fasce +15%",
+    "nome": "immobile storico o vincolato (fasce)",
+    "perc": 15
+   }
+  ],
+  "nota_maggiorazioni": "Arredamento completo fino a +15% (per gli studenti +15% con arredo adeguato in ogni stanza e wifi); seminterrato o oltre il terzo piano senza ascensore -10%; attico +10%; classe energetica A, B o C +10%, D, E o F +5%; Eco Bonus documentato +5%; Sisma Bonus documentato +10%. Le percentuali si sommano e non portano oltre il massimo della zona (né sotto il minimo). Fuori da questo limite la durata più lunga (4+2 +7%, 5+2 +8%, 6+2 o più +9%) e il transitorio (+10%). Ville e villini: fasce della zona fino a +10%; immobili storici o vincolati: fasce +15%.",
+  "durata": {
+   "4": 7,
+   "5": 8,
+   "6": 9
+  },
+  "durata_dopo": true,
+  "contratto": {
+   "transitorio": 10
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Accordo per studenti universitari fuori sede del 12 maggio 2023: il canone si calcola con le regole dei contratti 3+2, senza aumento per il tipo di contratto. Durata da 6 a 36 mesi, deposito cauzionale al massimo di due mensilità."
+   },
+   {
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Contratto transitorio: durata fino a 18 mesi, con una delle esigenze previste dall'accordo (titolo B, art. 13, come rettificato l'11 maggio 2023)."
+   }
+  ],
+  "zone": [
+   {
+    "codice": "B1",
+    "nome": "B1 - Centro storico",
+    "nota": "Zona B1 (Centro: Centro storico), microzona OMI dell'Agenzia delle Entrate (allegato 1 rettificato l'11/05/2023). I confini fra le zone passano sulla mezzeria delle strade.",
+    "fasce": [
+     [
+      3.2,
+      4.03
+     ],
+     [
+      4.04,
+      4.83
+     ],
+     [
+      4.84,
+      5.6
+     ]
+    ]
+   },
+   {
+    "codice": "C1",
+    "nome": "C1 - Viale Morroni, Viale Maraini, Regina Pacis, Molino Salce, Città Giardino",
+    "nota": "Zona C1 (Semicentro: Viale Morroni, Viale Maraini, Regina Pacis, Molino Salce, Città Giardino), microzona OMI dell'Agenzia delle Entrate (allegato 1 rettificato l'11/05/2023). I confini fra le zone passano sulla mezzeria delle strade.",
+    "fasce": [
+     [
+      3.2,
+      4.7
+     ],
+     [
+      4.71,
+      6.2
+     ],
+     [
+      6.21,
+      7.7
+     ]
+    ]
+   },
+   {
+    "codice": "C2",
+    "nome": "C2 - Quartiere Porta Romana, Campo Moro",
+    "nota": "Zona C2 (Semicentro: Quartiere Porta Romana, Campo Moro), microzona OMI dell'Agenzia delle Entrate (allegato 1 rettificato l'11/05/2023). I confini fra le zone passano sulla mezzeria delle strade.",
+    "fasce": [
+     [
+      3.2,
+      3.7
+     ],
+     [
+      3.71,
+      4.2
+     ],
+     [
+      4.21,
+      4.7
+     ]
+    ]
+   },
+   {
+    "codice": "C3",
+    "nome": "C3 - Madonna del Cuore, Micioccoli, De Juliis",
+    "nota": "Zona C3 (Semicentro: Madonna del Cuore, Micioccoli, De Juliis), microzona OMI dell'Agenzia delle Entrate (allegato 1 rettificato l'11/05/2023). I confini fra le zone passano sulla mezzeria delle strade.",
+    "fasce": [
+     [
+      2.9,
+      4.3
+     ],
+     [
+      4.31,
+      5.7
+     ],
+     [
+      5.71,
+      7.1
+     ]
+    ]
+   },
+   {
+    "codice": "C4",
+    "nome": "C4 - Tevere, Via Salaria per L'Aquila, Villa Reatina",
+    "nota": "Zona C4 (Semicentro: Tevere, Via Salaria per L'Aquila, Villa Reatina), microzona OMI dell'Agenzia delle Entrate (allegato 1 rettificato l'11/05/2023). I confini fra le zone passano sulla mezzeria delle strade.",
+    "fasce": [
+     [
+      2.9,
+      3.7
+     ],
+     [
+      3.71,
+      4.2
+     ],
+     [
+      4.21,
+      4.7
+     ]
+    ]
+   },
+   {
+    "codice": "D1",
+    "nome": "D1 - Quattro Strade",
+    "nota": "Zona D1 (Periferia: Quattro Strade), microzona OMI dell'Agenzia delle Entrate (allegato 1 rettificato l'11/05/2023). I confini fra le zone passano sulla mezzeria delle strade.",
+    "fasce": [
+     [
+      2.9,
+      3.4
+     ],
+     [
+      3.41,
+      3.8
+     ],
+     [
+      3.81,
+      4.4
+     ]
+    ]
+   },
+   {
+    "codice": "D2",
+    "nome": "D2 - Campoloniano, Zona Residenziale, Vazia",
+    "nota": "Zona D2 (Periferia: Campoloniano, Zona Residenziale, Vazia), microzona OMI dell'Agenzia delle Entrate (allegato 1 rettificato l'11/05/2023). I confini fra le zone passano sulla mezzeria delle strade.",
+    "fasce": [
+     [
+      2.9,
+      3.45
+     ],
+     [
+      3.46,
+      4.0
+     ],
+     [
+      4.01,
+      5.0
+     ]
+    ]
+   },
+   {
+    "codice": "E2",
+    "nome": "E2 - Monte Terminillo, località Pian de' Valli",
+    "nota": "Zona E2 (Suburbana: Monte Terminillo, località Pian de' Valli), microzona OMI dell'Agenzia delle Entrate (allegato 1 rettificato l'11/05/2023). I confini fra le zone passano sulla mezzeria delle strade.",
+    "fasce": [
+     [
+      4.1,
+      5.0
+     ],
+     [
+      5.01,
+      6.0
+     ],
+     [
+      6.01,
+      6.8
+     ]
+    ]
+   },
+   {
+    "codice": "E3",
+    "nome": "E3 - Piani di Poggio Fidoni, Poggio Fidoni, Moggio, Piè di Moggio",
+    "nota": "Zona E3 (Suburbana: Piani di Poggio Fidoni, Poggio Fidoni, Moggio, Piè di Moggio), microzona OMI dell'Agenzia delle Entrate (allegato 1 rettificato l'11/05/2023). I confini fra le zone passano sulla mezzeria delle strade.",
+    "fasce": [
+     [
+      2.9,
+      3.4
+     ],
+     [
+      3.41,
+      3.9
+     ],
+     [
+      3.91,
+      4.4
+     ]
+    ]
+   },
+   {
+    "codice": "E4",
+    "nome": "E4 - Casette",
+    "nota": "Zona E4 (Suburbana: Casette), microzona OMI dell'Agenzia delle Entrate (allegato 1 rettificato l'11/05/2023). I confini fra le zone passano sulla mezzeria delle strade.",
+    "fasce": [
+     [
+      2.3,
+      2.6
+     ],
+     [
+      2.61,
+      2.8
+     ],
+     [
+      2.81,
+      3.5
+     ]
+    ]
+   },
+   {
+    "codice": "E5",
+    "nome": "E5 - San Giovanni Reatino",
+    "nota": "Zona E5 (Suburbana: San Giovanni Reatino), microzona OMI dell'Agenzia delle Entrate (allegato 1 rettificato l'11/05/2023). I confini fra le zone passano sulla mezzeria delle strade.",
+    "fasce": [
+     [
+      2.3,
+      2.7
+     ],
+     [
+      2.71,
+      3.0
+     ],
+     [
+      3.01,
+      3.8
+     ]
+    ]
+   },
+   {
+    "codice": "E6",
+    "nome": "E6 - Piani di Sant'Elia, Sant'Elia",
+    "nota": "Zona E6 (Suburbana: Piani di Sant'Elia, Sant'Elia), microzona OMI dell'Agenzia delle Entrate (allegato 1 rettificato l'11/05/2023). I confini fra le zone passano sulla mezzeria delle strade.",
+    "fasce": [
+     [
+      2.5,
+      2.9
+     ],
+     [
+      2.91,
+      3.27
+     ],
+     [
+      3.28,
+      3.7
+     ]
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "All. 2/B",
+  "titolo": "Scheda per la determinazione del canone concordato",
+  "sottotitolo": "Accordo territoriale per il territorio del Comune di Rieti, depositato il 18/01/2023 (prot. n. 4183), con integrazioni e rettifiche prot. n. 36292 del 18/05/2023",
+  "titolo_elementi": "Caratteristiche e parametri (allegati 2/A e 2/B)",
+  "dichiarazione": "Tutte le informazioni necessarie per determinare il calcolo del canone sono state fornite dalle parti.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore",
+   "Per prestata assistenza"
+  ],
+  "nota_zone": "La zona è la microzona OMI dell'Agenzia delle Entrate in cui si trova l'immobile (allegato 1, come rettificato l'11/05/2023). I confini passano sulla mezzeria delle strade."
+ }
+}

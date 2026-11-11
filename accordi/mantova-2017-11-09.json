@@ -1,0 +1,329 @@
+{
+ "accordo": {
+  "codice": "mantova-2017-11-09",
+  "modello": "mantova-2017",
+  "comune": "Mantova",
+  "provincia": "MN",
+  "titolo": "Accordo territoriale per il Comune di Mantova",
+  "data": "2017-11-09",
+  "data_testo": "9 novembre 2017",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Mantova del 9 novembre 2017:</strong> durava tre anni dal deposito in Comune, ma non è stato sostituito: il Piano triennale dell'offerta abitativa 2026-2028 dell'Ambito di Mantova lo indica ancora come accordo vigente per il capoluogo. I valori della tabella <strong>si aggiornano con il 75% della variazione ISTAT</strong> (la prima volta dopo due anni da novembre 2017, poi ogni anno, punto 4), ma tabelle aggiornate non sono pubblicate: qui trovi i valori originali. <strong>Chiedi i valori aggiornati all'associazione che attesta il contratto.</strong>",
+  "firmatari_proprieta": [
+   "U.P.P.I.",
+   "A.P.E. - Confedilizia",
+   "A.N.P.E.",
+   "A.S.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato a Mantova il 9/11/2017 da SUNIA e UNIAT per gli inquilini e da UPPI, APE - Confedilizia, ANPE e ASPPI (nel testo «ASSPI») per i proprietari, con la presa d'atto dell'Assessore alla casa del Comune di Mantova. Sostituisce l'accordo del 27/06/2016. Durata tre anni dal deposito in Comune (punto 18): data e protocollo di deposito non sono riportati nella copia pubblicata. Vale solo per il Comune di Mantova: gli altri comuni della provincia hanno l'accordo provinciale del 12/07/2019, che esclude il capoluogo. Quattro zone (allegati A e C), tre fasce secondo il numero di elementi caratteristici (35, allegato B): fino a 3 prima fascia, da 4 a 7 seconda, 8 o più terza. Valori in euro al mq all'anno, da aggiornare al 75% dell'ISTAT (punto 4). Durata 4 anni +2%, 5 anni +4%, 6 anni +6% (punto 6).",
+  "fonte": "Testo dell'accordo con allegati A, B, C e 1-7 (PDF di 33 pagine) pubblicato da SUNIA (sunia.it, accordi territoriali Lombardia - Mantova) e, identico, da UPPI (uppi.it, sede di Mantova). Vigenza confermata dal Piano triennale dei servizi abitativi 2023-2025 e dal Piano triennale dell'offerta abitativa 2026-2028 dell'Ambito di Mantova (pubblicato dal Comune di Borgo Virgilio, gennaio 2026)."
+ },
+ "esempio_zona": "1 centro storico, 2 semicentrale, 3 semiperiferica, 4 periferica (mappa dell'allegato C)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro storico",
+    "nota": "Zona 1 - Centro storico, zona di pregio: il centro della città, dentro il confine rosso della mappa (allegato C).",
+    "fasce": [
+     [
+      53.82,
+      60.84
+     ],
+     [
+      60.85,
+      67.86
+     ],
+     [
+      67.87,
+      72.54
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Semicentrale",
+    "nota": "Zona 2 - Semicentrale: Valletta Valsecchi, Valletta Paiolo, Pompilio, Te Brunetti, Belfiore (confine blu della mappa, allegato C).",
+    "fasce": [
+     [
+      46.74,
+      52.44
+     ],
+     [
+      52.45,
+      58.14
+     ],
+     [
+      58.15,
+      62.7
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Semiperiferica",
+    "nota": "Zona 3 - Semiperiferica: Cittadella, Angeli, Dosso del Corso, Borgo Chiesanuova, Ponte Rosso, Colle Aperto (confine verde della mappa, allegato C).",
+    "fasce": [
+     [
+      42.9,
+      47.3
+     ],
+     [
+      47.31,
+      51.7
+     ],
+     [
+      51.71,
+      56.1
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Periferica",
+    "nota": "Zona 4 - Periferica: Lunetta, Frassino, Virgiliana, Castelletto Borgo, Formigosa, Rabin, Residenza Castiona, Boccabusa; è il resto del territorio comunale (confine arancione della mappa, allegato C).",
+    "fasce": [
+     [
+      38.88,
+      43.2
+     ],
+     [
+      43.21,
+      46.44
+     ],
+     [
+      46.44,
+      49.68
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "1ª - minima",
+    "2ª - media",
+    "3ª - massima"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    3,
+    7
+   ],
+   "nota": "Si contano gli elementi caratteristici presenti: fino a 3 prima fascia (minima), da 4 a 7 seconda (media), 8 o più terza (massima)."
+  },
+  "elementi": [
+   {
+    "testo": "Immobile arredato (spunta anche l'arredo più sotto)"
+   },
+   {
+    "testo": "Assenza di spese condominiali"
+   },
+   {
+    "testo": "Ascensore, per gli alloggi oltre il secondo piano"
+   },
+   {
+    "testo": "Serramenti con vetrocamera"
+   },
+   {
+    "testo": "Doppi serramenti"
+   },
+   {
+    "testo": "Sistema d'allarme"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Ingresso indipendente"
+   },
+   {
+    "testo": "Antenna satellitare condominiale"
+   },
+   {
+    "testo": "Area verde condominiale"
+   },
+   {
+    "testo": "Area verde esclusiva"
+   },
+   {
+    "testo": "Stenditoio comune"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Lavanderia (oltre ai bagni)"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Pavimenti in legno pregiato"
+   },
+   {
+    "testo": "Pavimenti in marmo"
+   },
+   {
+    "testo": "Cantina o soffitta esclusiva"
+   },
+   {
+    "testo": "Balcone, terrazza o lastrico solare a uso esclusivo"
+   },
+   {
+    "testo": "Cortile con possibilità di parcheggio nell'area condominiale"
+   },
+   {
+    "testo": "Servizio di portineria"
+   },
+   {
+    "testo": "Autorimessa (garage) singola"
+   },
+   {
+    "testo": "Posto auto esclusivo, anche scoperto"
+   },
+   {
+    "testo": "Posto auto condominiale a rotazione"
+   },
+   {
+    "testo": "Riscaldamento autonomo"
+   },
+   {
+    "testo": "Riscaldamento centralizzato con contacalorie"
+   },
+   {
+    "testo": "Riscaldamento a pavimento"
+   },
+   {
+    "testo": "Impianto di climatizzazione caldo-freddo automatizzato"
+   },
+   {
+    "testo": "Aria condizionata"
+   },
+   {
+    "testo": "Classe energetica A, B o C"
+   },
+   {
+    "testo": "Fonti di energia rinnovabile (solare termico, fotovoltaico ecc.)"
+   },
+   {
+    "testo": "Edificio ultimato da non più di dieci anni"
+   },
+   {
+    "testo": "Edificio interamente ristrutturato"
+   },
+   {
+    "testo": "Piano attico"
+   },
+   {
+    "testo": "Edificio vincolato come bene culturale (D.Lgs. 42/2004)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile netta dell'appartamento",
+   "correzioni": [
+    {
+     "fino": 65,
+     "perc": 40,
+     "tetto": 65
+    }
+   ],
+   "grandi": {
+    "oltre": 100,
+    "riduzione": 20
+   },
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa (garage) chiusa a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine, soffitte e simili",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto, esclusivo e di pertinenza",
+     "coeff": 0.3
+    }
+   ],
+   "nota": "Si parte dalla superficie calpestabile netta (dichiarata dal proprietario, da un tecnico o presa dall'APE), con una tolleranza del 3%. Gli alloggi piccoli aumentano del 40%, ma senza superare 65 mq; quelli oltre 100 mq si riducono del 20%, ma non sotto 100 mq. Si aggiungono garage, cantine, soffitte, balconi e terrazze al 50%, il posto auto coperto al 40% e quello scoperto al 30%. Se l'alloggio è arredato, la superficie dell'abitazione aumenta fino al 15%."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "ammobiliato": true,
+    "solo_base": true,
+    "testo": "Alloggio arredato, con arredo completo, funzionale ed efficiente ed elenco degli arredi: superficie dell'abitazione aumentata",
+    "nome": "arredo (superficie dell'abitazione)",
+    "perc": 15
+   }
+  ],
+  "nota_maggiorazioni": "Arredo: la superficie dell'abitazione aumenta fino al 15% (allegato B, punto 4). Durata: 4 anni +2%, 5 anni +4%, 6 anni +6% sui valori della tabella (punto 6), solo per i contratti agevolati.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "L'alloggio deve avere un impianto adatto a riscaldare tutta la superficie abitata; gli alloggi non conformi alle norme igienico-sanitarie non rientrano nel canone concordato."
+   },
+   {
+    "testo": "Si può pattuire un canone più basso del minimo della prima fascia solo con l'assistenza delle associazioni dei proprietari e degli inquilini firmatarie, scritta in una clausola del contratto (punto 3)."
+   },
+   {
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Contratto transitorio: da 1 a 18 mesi, con il motivo scritto nel contratto e documentato (punto 14). Il canone segue la stessa tabella, senza aumenti."
+   },
+   {
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Contratto per studenti universitari fuori sede: da 6 mesi a 3 anni, per iscritti a università o conservatori con sede nel Comune di Mantova (punto 15). Il canone segue la stessa tabella, senza aumenti."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 6",
+  "titolo": "Attestazione di rispondenza ex D.M. 16.01.2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Mantova sottoscritto il 9.11.2017 da SUNIA, UNIAT, UPPI, APE - Confedilizia, ANPE e ASPPI",
+  "titolo_superficie": "Superficie dell'immobile",
+  "titolo_elementi": "Elementi caratteristici dell'immobile",
+  "etichetta_conteggio": "Elementi caratteristici n.",
+  "dichiarazione": "Il sottoscritto, nella sua qualità di locatore / conduttore, ha presentato richiesta per l'attestazione ex D.M. 16.01.2017 e dichiara, assumendosene ogni responsabilità, la corrispondenza alla realtà degli elementi di fatto descritti nel presente documento.",
+  "firme": [
+   "Il dichiarante"
+  ],
+  "titolo_attestazione": "TUTTO CIÒ PREMESSO",
+  "attestazione": [
+   "L'Organizzazione ………………………………, firmataria dell'Accordo territoriale per il Comune di Mantova sottoscritto il 9.11.2017, in persona del/della sig./sig.ra ………………………………, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati,",
+   "ATTESTA, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali, che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Mantova sottoscritto in data 9.11.2017."
+  ],
+  "firme_attestazione": [
+   "Per l'organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla mappa dell'allegato C: zona 1 centro storico (confine rosso); zona 2 semicentrale, cioè Valletta Valsecchi, Valletta Paiolo, Pompilio, Te Brunetti, Belfiore (blu); zona 3 semiperiferica, cioè Cittadella, Angeli, Dosso del Corso, Borgo Chiesanuova, Ponte Rosso, Colle Aperto (verde); zona 4 periferica, cioè Lunetta, Frassino, Virgiliana, Castelletto Borgo, Formigosa, Rabin, Residenza Castiona, Boccabusa e il resto del territorio comunale (arancione)."
+ }
+}

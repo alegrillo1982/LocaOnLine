@@ -1,0 +1,904 @@
+{
+ "accordo": {
+  "codice": "savona-2018-10-01",
+  "modello": "savona-2018",
+  "comune": "Savona",
+  "provincia": "SV",
+  "titolo": "Accordo territoriale per il Comune di Savona",
+  "data": "2018-10-01",
+  "data_testo": "1° ottobre 2018",
+  "deposito": "Comune di Savona, 31/10/2018, prot. 0078827",
+  "deposito_data": "31.10.2018",
+  "protocollo": "0078827",
+  "ufficio": "Comune di Savona",
+  "ufficio_breve": "Comune di Savona",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Savona del 1° ottobre 2018 (depositato il 31 ottobre 2018, in vigore dal 1° novembre 2018).</strong> Non ha una scadenza ed è ancora quello in vigore: a novembre 2026 non risultano accordi più recenti. Le tariffe si aggiornano ogni 1° ottobre al 75% dell'ISTAT, se le associazioni non decidono diversamente: qui trovi i valori originali del 2018, chiedi all'associazione quelli aggiornati.",
+  "firmatari_proprieta": [
+   "A.P.E.",
+   "A.P.P.C.",
+   "A.S.P.P.I.",
+   "CONFABITARE",
+   "U.P.P.I.",
+   "CONFAPPI"
+  ],
+  "firmatari_conduttori": [
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Accordo firmato il 01/10/2018 dalle associazioni della proprietà e degli inquilini, depositato al Comune di Savona il 31/10/2018 (protocollo n. 0078827 del 31/10/2018) ed efficace dal 01/11/2018; sostituisce l'accordo depositato il 02/07/2012. Non indica una scadenza. Art. 10: le tariffe dell'allegato G si aggiornano automaticamente ogni 1° ottobre al 75% dell'ISTAT FOI maturato ad agosto, salvo diversa decisione della conferenza annuale delle associazioni: qui ci sono i valori originali. Dieci zone (mappa dell'allegato F, la stessa dell'accordo del 1999) divise in 25 sottozone o tipologie, ognuna con tre subfasce (A, B, C) in euro al mq al mese. La subfascia si ricava dalla somma dei punti di 23 elementi (fino a 2 punti A, da 3 a 5 B, da 6 a 9 C, oltre 9 punti fino al 10% in più del massimo di C); senza servizi igienici interni si resta in subfascia A. Aumenti: edificio costruito dopo il 1985 o ristrutturato completamente +20%; restauro completo dopo il 01/01/2009 fino al 15% in più sul canone finale; arredo completo fino al 30% (parziale in proporzione); durata oltre tre anni +2,5% per ogni anno in più. Il canone si aggiorna ogni anno al massimo del 75% dell'ISTAT.",
+  "fonte": "Testo depositato con protocollo del Comune e allegati A-L (50 pagine in scansione) pubblicato da Confedilizia nella pagina di Confedilizia Savona (file caricato a ottobre 2025) e, identico, da SUNIA nella pagina «Accordi territoriali di Savona». Il Comune di Savona non pubblica il testo. A giugno 2025 Unioncasa chiedeva di rivedere l'accordo, indicando come ultimo aggiornamento quello del 31/10/2018 (stampa locale)."
+ },
+ "esempio_zona": "la zona e la sottozona o tipologia dell'edificio (mappa dell'allegato F), es. 2b Centro città - intermedio",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1a",
+    "nome": "1 Centro storico - vecchio e fatiscente",
+    "nota": "Zona 1 (Centro storico), sottozona o tipologia «vecchio e fatiscente». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      2.3,
+      2.54
+     ],
+     [
+      2.55,
+      2.87
+     ],
+     [
+      2.88,
+      3.11
+     ],
+     [
+      2.88,
+      3.421
+     ]
+    ]
+   },
+   {
+    "codice": "1b",
+    "nome": "1 Centro storico - vecchio restaurato",
+    "nota": "Zona 1 (Centro storico), sottozona o tipologia «vecchio restaurato». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.29,
+      4.72
+     ],
+     [
+      4.73,
+      5.31
+     ],
+     [
+      5.32,
+      5.72
+     ],
+     [
+      5.32,
+      6.292
+     ]
+    ]
+   },
+   {
+    "codice": "1c",
+    "nome": "1 Centro storico - ristrutturato, ricostruito o nuovo",
+    "nota": "Zona 1 (Centro storico), sottozona o tipologia «ristrutturato, ricostruito o nuovo». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      5.0,
+      5.52
+     ],
+     [
+      5.53,
+      6.24
+     ],
+     [
+      6.25,
+      6.75
+     ],
+     [
+      6.25,
+      7.425
+     ]
+    ]
+   },
+   {
+    "codice": "2a",
+    "nome": "2 Centro città - centrale",
+    "nota": "Zona 2 (Centro città), sottozona o tipologia «centrale». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      5.57,
+      6.16
+     ],
+     [
+      6.17,
+      6.96
+     ],
+     [
+      6.97,
+      7.54
+     ],
+     [
+      6.97,
+      8.294
+     ]
+    ]
+   },
+   {
+    "codice": "2b",
+    "nome": "2 Centro città - intermedio",
+    "nota": "Zona 2 (Centro città), sottozona o tipologia «intermedio». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.71,
+      5.21
+     ],
+     [
+      5.22,
+      5.87
+     ],
+     [
+      5.88,
+      6.36
+     ],
+     [
+      5.88,
+      6.996
+     ]
+    ]
+   },
+   {
+    "codice": "2c",
+    "nome": "2 Centro città - fronte mare",
+    "nota": "Zona 2 (Centro città), sottozona o tipologia «fronte mare». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      5.64,
+      6.24
+     ],
+     [
+      6.25,
+      7.05
+     ],
+     [
+      7.06,
+      7.63
+     ],
+     [
+      7.06,
+      8.393
+     ]
+    ]
+   },
+   {
+    "codice": "3a",
+    "nome": "3 Villetta, Valloria - Villetta e Valloria",
+    "nota": "Zona 3 (Villetta, Valloria), sottozona o tipologia «Villetta e Valloria». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      5.1,
+      5.64
+     ],
+     [
+      5.65,
+      6.37
+     ],
+     [
+      6.38,
+      6.9
+     ],
+     [
+      6.38,
+      7.59
+     ]
+    ]
+   },
+   {
+    "codice": "3b",
+    "nome": "3 Villetta, Valloria - via Turati",
+    "nota": "Zona 3 (Villetta, Valloria), sottozona o tipologia «via Turati». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.37,
+      4.8
+     ],
+     [
+      4.81,
+      5.39
+     ],
+     [
+      5.4,
+      5.8
+     ],
+     [
+      5.4,
+      6.38
+     ]
+    ]
+   },
+   {
+    "codice": "4a",
+    "nome": "4 La Rusca - vecchio, costruito prima del 1945",
+    "nota": "Zona 4 (La Rusca), sottozona o tipologia «vecchio, costruito prima del 1945». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.5,
+      4.96
+     ],
+     [
+      4.97,
+      5.57
+     ],
+     [
+      5.58,
+      6.0
+     ],
+     [
+      5.58,
+      6.6
+     ]
+    ]
+   },
+   {
+    "codice": "4b",
+    "nome": "4 La Rusca - nuovo, costruito dopo il 1945",
+    "nota": "Zona 4 (La Rusca), sottozona o tipologia «nuovo, costruito dopo il 1945». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.86,
+      5.38
+     ],
+     [
+      5.39,
+      6.08
+     ],
+     [
+      6.09,
+      6.58
+     ],
+     [
+      6.09,
+      7.238
+     ]
+    ]
+   },
+   {
+    "codice": "5a",
+    "nome": "5 Villapiana, via Mignone - vecchio, costruito prima del 1945",
+    "nota": "Zona 5 (Villapiana, via Mignone), sottozona o tipologia «vecchio, costruito prima del 1945». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.5,
+      4.96
+     ],
+     [
+      4.97,
+      5.57
+     ],
+     [
+      5.58,
+      6.0
+     ],
+     [
+      5.58,
+      6.6
+     ]
+    ]
+   },
+   {
+    "codice": "5b",
+    "nome": "5 Villapiana, via Mignone - nuovo, costruito dopo il 1945",
+    "nota": "Zona 5 (Villapiana, via Mignone), sottozona o tipologia «nuovo, costruito dopo il 1945». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.73,
+      5.21
+     ],
+     [
+      5.22,
+      5.87
+     ],
+     [
+      5.88,
+      6.34
+     ],
+     [
+      5.88,
+      6.974
+     ]
+    ]
+   },
+   {
+    "codice": "6a",
+    "nome": "6 Lavagnola, San Bernardo, Santuario, Montemoro, Ciantagalletto, Marmorassi, San Nazario - vecchio e fatiscente",
+    "nota": "Zona 6 (Lavagnola, San Bernardo, Santuario, Montemoro, Ciantagalletto, Marmorassi, San Nazario), sottozona o tipologia «vecchio e fatiscente». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      2.26,
+      2.49
+     ],
+     [
+      2.5,
+      2.82
+     ],
+     [
+      2.83,
+      3.05
+     ],
+     [
+      2.83,
+      3.355
+     ]
+    ]
+   },
+   {
+    "codice": "6b",
+    "nome": "6 Lavagnola, San Bernardo, Santuario, Montemoro, Ciantagalletto, Marmorassi, San Nazario - vecchio, costruito prima del 1945",
+    "nota": "Zona 6 (Lavagnola, San Bernardo, Santuario, Montemoro, Ciantagalletto, Marmorassi, San Nazario), sottozona o tipologia «vecchio, costruito prima del 1945». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.43,
+      4.87
+     ],
+     [
+      4.88,
+      5.46
+     ],
+     [
+      5.47,
+      5.89
+     ],
+     [
+      5.47,
+      6.479
+     ]
+    ]
+   },
+   {
+    "codice": "6c",
+    "nome": "6 Lavagnola, San Bernardo, Santuario, Montemoro, Ciantagalletto, Marmorassi, San Nazario - ristrutturato o nuovo, costruito dopo il 1945",
+    "nota": "Zona 6 (Lavagnola, San Bernardo, Santuario, Montemoro, Ciantagalletto, Marmorassi, San Nazario), sottozona o tipologia «ristrutturato o nuovo, costruito dopo il 1945». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.62,
+      5.1
+     ],
+     [
+      5.11,
+      5.75
+     ],
+     [
+      5.76,
+      6.22
+     ],
+     [
+      5.76,
+      6.842
+     ]
+    ]
+   },
+   {
+    "codice": "7a",
+    "nome": "7 Oltreletimbro, Santa Rita - vecchio, costruito prima del 1945",
+    "nota": "Zona 7 (Oltreletimbro, Santa Rita), sottozona o tipologia «vecchio, costruito prima del 1945». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.57,
+      5.01
+     ],
+     [
+      5.02,
+      5.64
+     ],
+     [
+      5.65,
+      6.09
+     ],
+     [
+      5.65,
+      6.699
+     ]
+    ]
+   },
+   {
+    "codice": "7b",
+    "nome": "7 Oltreletimbro, Santa Rita - nuovo, costruito dopo il 1945",
+    "nota": "Zona 7 (Oltreletimbro, Santa Rita), sottozona o tipologia «nuovo, costruito dopo il 1945». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      5.14,
+      5.7
+     ],
+     [
+      5.71,
+      6.45
+     ],
+     [
+      6.46,
+      6.97
+     ],
+     [
+      6.46,
+      7.667
+     ]
+    ]
+   },
+   {
+    "codice": "8a",
+    "nome": "8 Mongrifone, Savona Ponente - vecchio, costruito prima del 1945",
+    "nota": "Zona 8 (Mongrifone, Savona Ponente), sottozona o tipologia «vecchio, costruito prima del 1945». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.5,
+      4.96
+     ],
+     [
+      4.97,
+      5.57
+     ],
+     [
+      5.58,
+      6.0
+     ],
+     [
+      5.58,
+      6.6
+     ]
+    ]
+   },
+   {
+    "codice": "8b",
+    "nome": "8 Mongrifone, Savona Ponente - nuovo, costruito dopo il 1945",
+    "nota": "Zona 8 (Mongrifone, Savona Ponente), sottozona o tipologia «nuovo, costruito dopo il 1945». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      5.06,
+      5.59
+     ],
+     [
+      5.6,
+      6.31
+     ],
+     [
+      6.32,
+      6.84
+     ],
+     [
+      6.32,
+      7.524
+     ]
+    ]
+   },
+   {
+    "codice": "9a",
+    "nome": "9 Fornaci - vecchio, costruito prima del 1945",
+    "nota": "Zona 9 (Fornaci), sottozona o tipologia «vecchio, costruito prima del 1945». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.32,
+      4.75
+     ],
+     [
+      4.76,
+      5.34
+     ],
+     [
+      5.35,
+      5.76
+     ],
+     [
+      5.35,
+      6.336
+     ]
+    ]
+   },
+   {
+    "codice": "9b",
+    "nome": "9 Fornaci - fronte mare",
+    "nota": "Zona 9 (Fornaci), sottozona o tipologia «fronte mare». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      5.56,
+      6.15
+     ],
+     [
+      6.16,
+      6.95
+     ],
+     [
+      6.96,
+      7.53
+     ],
+     [
+      6.96,
+      8.283
+     ]
+    ]
+   },
+   {
+    "codice": "9c",
+    "nome": "9 Fornaci - non fronte mare",
+    "nota": "Zona 9 (Fornaci), sottozona o tipologia «non fronte mare». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.78,
+      5.3
+     ],
+     [
+      5.31,
+      5.98
+     ],
+     [
+      5.99,
+      6.48
+     ],
+     [
+      5.99,
+      7.128
+     ]
+    ]
+   },
+   {
+    "codice": "10a",
+    "nome": "10 Legino, Zinola - vecchio, costruito prima del 1945, non fronte mare",
+    "nota": "Zona 10 (Legino, Zinola), sottozona o tipologia «vecchio, costruito prima del 1945, non fronte mare». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      3.9,
+      4.28
+     ],
+     [
+      4.29,
+      4.82
+     ],
+     [
+      4.83,
+      5.2
+     ],
+     [
+      4.83,
+      5.72
+     ]
+    ]
+   },
+   {
+    "codice": "10b",
+    "nome": "10 Legino, Zinola - nuovo, costruito dopo il 1945, non fronte mare",
+    "nota": "Zona 10 (Legino, Zinola), sottozona o tipologia «nuovo, costruito dopo il 1945, non fronte mare». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      4.71,
+      5.2
+     ],
+     [
+      5.21,
+      5.87
+     ],
+     [
+      5.88,
+      6.36
+     ],
+     [
+      5.88,
+      6.996
+     ]
+    ]
+   },
+   {
+    "codice": "10c",
+    "nome": "10 Legino, Zinola - fronte mare",
+    "nota": "Zona 10 (Legino, Zinola), sottozona o tipologia «fronte mare». Valori in euro al mq al mese della tabella dell'accordo del 2018 (allegato G), senza gli aggiornamenti ISTAT previsti ogni 1° ottobre. Oltre 9 punti si può arrivare al massimo della subfascia C aumentato del 10%. Se l'edificio è attraversato dal confine di zona, vale la zona su cui si affaccia il prospetto principale o la maggior parte delle finestre dell'alloggio.",
+    "fasce": [
+     [
+      5.49,
+      6.07
+     ],
+     [
+      6.08,
+      6.85
+     ],
+     [
+      6.86,
+      7.43
+     ],
+     [
+      6.86,
+      8.173
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "A",
+    "B",
+    "C",
+    "C +10%"
+   ],
+   "criterio": "punti",
+   "soglie": [
+    2,
+    5,
+    9
+   ],
+   "obbligatori": [
+    0
+   ],
+   "avviso_obbligatori": "Senza servizi igienici interni o verandati l'alloggio resta nella subfascia A, qualunque sia il punteggio (punto 5.C).",
+   "nota": "Si sommano i punti degli elementi presenti: fino a 2 punti subfascia A, da 3 a 5 B, da 6 a 9 C. Oltre 9 punti il canone può superare di non più del 10% il massimo della subfascia C. Riscaldamento con pompa di calore ad alto rendimento (2 punti) e ascensore senza barriere (2 punti) sono in alternativa a riscaldamento normale e ascensore normale (1 punto). Senza servizi igienici interni l'alloggio resta in subfascia A.",
+   "nota_pdf": "Fino a 2 punti subfascia A, da 3 a 5 B, da 6 a 9 C; oltre 9 punti fino al 10% in più del massimo di C. Senza servizi igienici interni sempre subfascia A (punto 5.C)."
+  },
+  "elementi": [
+   {
+    "testo": "Servizi igienici interni o verandati (almeno WC, lavabo, vasca o doccia)",
+    "punti": 1
+   },
+   {
+    "testo": "Riscaldamento",
+    "livelli": [
+     {
+      "testo": "nessuno",
+      "punti": 0
+     },
+     {
+      "testo": "centrale o autonomo",
+      "punti": 1
+     },
+     {
+      "testo": "pompa di calore ad alto rendimento (riscaldamento o raffrescamento)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Ascensore o piano",
+    "livelli": [
+     {
+      "testo": "nessun ascensore, oltre il 2° piano",
+      "punti": 0
+     },
+     {
+      "testo": "ascensore o montacarichi, oppure alloggio entro il 2° piano",
+      "punti": 1
+     },
+     {
+      "testo": "ascensore senza barriere architettoniche (legge 13/89)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Doppie finestre o doppi vetri in almeno metà delle finestre",
+    "punti": 1
+   },
+   {
+    "testo": "Doppi servizi, almeno un bagno completo",
+    "punti": 1
+   },
+   {
+    "testo": "Impianto di condizionamento",
+    "punti": 1
+   },
+   {
+    "testo": "Impianti a energia rinnovabile (solare termico, fotovoltaico, eolico o altro)",
+    "punti": 1
+   },
+   {
+    "testo": "Impianto antifurto",
+    "punti": 1
+   },
+   {
+    "testo": "Porta blindata o portoncino rinforzato con serratura di sicurezza ad almeno tre punti di chiusura",
+    "punti": 1
+   },
+   {
+    "testo": "Portineria",
+    "punti": 1
+   },
+   {
+    "testo": "Area verde condominiale di almeno 50 mq",
+    "punti": 1
+   },
+   {
+    "testo": "Vista aperta su piazza, giardini o panoramica",
+    "punti": 1
+   },
+   {
+    "testo": "Restauro interno visibile, fatto da non più di 10 anni",
+    "punti": 1
+   },
+   {
+    "testo": "Restauro esterno visibile, fatto da non più di 10 anni",
+    "punti": 1
+   },
+   {
+    "testo": "Impianto elettrico certificato, linea telefonica e presa TV almeno in un vano",
+    "punti": 1
+   },
+   {
+    "testo": "Attestato di prestazione energetica (APE) almeno in classe D",
+    "punti": 1
+   },
+   {
+    "testo": "Nessun inquinamento significativo (acustico, atmosferico, elettromagnetico), dichiarato da un professionista o con verbale assistito da due associazioni",
+    "punti": 1
+   },
+   {
+    "testo": "Persiane blindate, inferriate di sicurezza o altro mezzo con la stessa funzione",
+    "punti": 1
+   },
+   {
+    "testo": "Spazio carrabile comune, non delimitato, per parcheggiare moto, bici e auto",
+    "punti": 1
+   },
+   {
+    "testo": "Spazio comune recintato e attrezzato per sport e giochi dei bambini",
+    "punti": 1
+   },
+   {
+    "testo": "Sedile montascale per arrivare all'alloggio",
+    "punti": 1
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'alloggio, al netto dei muri",
+   "correzioni": [
+    {
+     "fino": 50,
+     "incluso": true,
+     "perc": 25,
+     "tetto": 57.5
+    },
+    {
+     "fino": 70,
+     "incluso": true,
+     "perc": 15,
+     "tetto": 70
+    }
+   ],
+   "grandi": {
+    "oltre": 90,
+    "perc": 50
+   },
+   "voci": [
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e poggioli",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantine",
+     "testo": "Cantine e soffitte",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "terrazzi",
+     "testo": "Terrazzi e lastrici solari (30% fino a 50 mq, 15% oltre)",
+     "coeff": 0.3,
+     "scaglione": [
+      50,
+      0.3,
+      0.15
+     ]
+    },
+    {
+     "chiave": "giardini",
+     "testo": "Giardini privati e cortili (15%, al massimo 15 mq)",
+     "coeff": 0.15,
+     "scaglione": [
+      100,
+      0.15,
+      0
+     ]
+    },
+    {
+     "chiave": "posti_scoperti",
+     "testo": "Posti auto scoperti (1/3)",
+     "coeff": 0.3333333333
+    },
+    {
+     "chiave": "posti_coperti",
+     "testo": "Posti auto coperti (2/3)",
+     "coeff": 0.6666666667
+    },
+    {
+     "chiave": "box",
+     "testo": "Box auto singoli (100%)",
+     "coeff": 1
+    },
+    {
+     "chiave": "tettoie",
+     "testo": "Tettoie aperte (1/3)",
+     "coeff": 0.3333333333
+    },
+    {
+     "chiave": "ripostigli",
+     "testo": "Ripostigli, magazzini e simili fuori dall'alloggio",
+     "coeff": 0.5
+    }
+   ],
+   "nota": "Si parte dalla superficie calpestabile dell'alloggio al netto dei muri (misurata direttamente o sulla planimetria in scala firmata da un tecnico). Fino a 50 mq si aumenta del 25% (al massimo 57,50 mq), da 50,1 a 70 mq del 15% (al massimo 70 mq); oltre 90 mq la parte eccedente conta per metà. Poi si aggiungono le pertinenze: balconi, poggioli, cantine e soffitte 50%; terrazzi e lastrici solari 30% fino a 50 mq e 15% per la parte oltre; posti auto scoperti 1/3, coperti 2/3, box singoli per intero; giardini privati e cortili 15% (al massimo 15 mq); tettoie aperte 1/3; ripostigli e magazzini esterni 50%."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "dopo1985",
+    "tipo": "spunta",
+    "testo": "Edificio costruito dopo il 1985, o ristrutturato completamente (art. 31, lettera d, legge 457/78)",
+    "nome": "costruito dopo il 1985 o ristrutturato",
+    "perc": 20
+   },
+   {
+    "chiave": "restauro2009",
+    "tipo": "spunta",
+    "testo": "Alloggio restaurato completamente dopo il 1° gennaio 2009, con DIA o titolo equivalente e impianti certificati (fino al 15% sul canone finale)",
+    "nome": "restauro completo dopo il 2009",
+    "perc": 15,
+    "dopo": true
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato, mobili efficienti ed elettrodomestici funzionanti (fino al 30%)",
+      "perc": 30
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato (aumento ridotto in proporzione, da concordare: non calcolato)",
+      "perc": 0
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti sono il massimo consentito. Edificio costruito dopo il 1985 o ristrutturato completamente: +20%. Alloggio restaurato completamente dopo il 1° gennaio 2009 (DIA o titolo equivalente, impianti certificati): ulteriore aumento del canone finale fino al 15%. Arredo completo con mobili efficienti ed elettrodomestici funzionanti: fino al 30%; con arredo parziale la percentuale si riduce in proporzione, d'accordo fra le parti (i mobili dati in comodato non danno aumento). Contratti agevolati con il primo periodo più lungo di tre anni: +2,5% per ogni anno in più (4+2 +2,5%, 5+2 +5%, 6+2 +7,5%). Qui gli aumenti si sommano fra loro, e il restauro dopo il 2009 si applica sul risultato. Il minimo delle subfasce si può eccezionalmente ridurre per motivi umanitari, di reddito, familiari o per parenti fino al secondo grado, con approvazione specifica delle parti (punto 5.F).",
+  "durata": {
+   "4": 2.5,
+   "5": 5,
+   "6": 7.5
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Il minimo della subfascia si può eccezionalmente ridurre su iniziativa del locatore per motivi umanitari, di reddito, familiari, per parenti fino al secondo grado o altri giustificati motivi, con una clausola approvata specificamente dalle parti (punto 5.F)."
+   },
+   {
+    "testo": "Contratti transitori e per studenti universitari: stessi valori e stesso calcolo dei contratti agevolati, senza l'aumento per la durata.",
+    "contratti": [
+     "transitorio",
+     "studenti"
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "ALLEGATO I",
+  "titolo": "Scheda determinazione del canone per contratto da redigere o attestare",
+  "sottotitolo": "Accordo territoriale e tabella valori zone per il Comune di Savona (firmato il 01/10/2018, depositato il 31/10/2018, prot. 0078827)",
+  "titolo_superficie": "SUPERFICIE CONVENZIONALE DI CALCOLO (punto 5.D)",
+  "titolo_elementi": "Elementi differenziatori e punteggio (punto 5.C)",
+  "dichiarazione": "Le parti contraenti dichiarano, sotto la loro personale responsabilità civile e/o penale, che i dati sopraindicati sono obiettivi e veritieri e sono stati forniti da loro. Manlevano pertanto l'Organizzazione sindacale attestatrice da ogni responsabilità per eventuale erroneità dei dati forniti.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "TUTTO CIÒ PREMESSO",
+  "attestazione": [
+   "l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Savona, sulla base degli elementi anagrafici, fiscali, metrici e qualitativi presenti nel contratto e dichiarati come obiettivi e veritieri sotto la propria personale responsabilità civile e/o penale dal dichiarante, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che il contratto sopra descritto è rispondente, quanto al contenuto economico e normativo, a quanto previsto dall'Accordo territoriale intersindacale per il Comune di Savona depositato in data 31/10/2018 (allegato L)."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "L'Organizzazione"
+  ],
+  "nota_zone": "Le dieci zone sono quelle della mappa dell'allegato F (la stessa dell'accordo del 1999); dentro ogni zona si sceglie la sottozona o la tipologia dell'edificio (vecchio o nuovo, prima o dopo il 1945, fronte mare). La mappa non indica le vie né i confini delle sottozone: nel dubbio chiedi a un'associazione firmataria."
+ }
+}

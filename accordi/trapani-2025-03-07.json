@@ -1,0 +1,677 @@
+{
+ "accordo": {
+  "codice": "trapani-2025-03-07",
+  "modello": "trapani-2025",
+  "comune": "Trapani",
+  "provincia": "TP",
+  "titolo": "Accordo territoriale per il Comune di Trapani",
+  "data": "2025-03-07",
+  "data_testo": "7 marzo 2025",
+  "deposito": "Comune di Trapani",
+  "deposito_data": "07.03.2025",
+  "protocollo": "20515",
+  "ufficio": "Comune di Trapani",
+  "ufficio_breve": "Comune di Trapani",
+  "valido_fino": "2028-03-07",
+  "firmatari_proprieta": [
+   "A.P.E.T. Confedilizia",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato il 07/03/2025 nella sede del Comune di Trapani da A.P.E.T. Confedilizia e U.P.P.I. (proprietari) e SUNIA, SICET e UNIAT (inquilini); depositato in Comune lo stesso giorno (protocollo n. 20515 del 07/03/2025, come indica la pagina del Comune). Sostituisce integralmente l'accordo depositato il 30/07/2019 (firmato il 26/07/2019), fatti salvi i contratti già firmati. Dura tre anni dal giorno dopo il deposito e resta in vigore fino al nuovo accordo (punto H). Territorio diviso in 3 macroaree e 8 microzone (allegato 1); valori al mq al mese per microzona, epoca di costruzione o ultima ristrutturazione (prima del 1980, 1980-2014, dal 2015) e sub-fascia (allegato 2); sub-fascia secondo il numero dei 21 elementi dell'allegato 3 (fino a 3, da 4 a 8, da 9 in poi; le intestazioni delle tabelle dell'allegato 2 dicono invece «da 4 a 7» e «oltre 7»). Fasce aumentate del 25% per gli immobili riconosciuti di interesse storico, del 20% sotto i 50 mq; arredo completo fino a +15%, durata 4/5/6 anni +2/4/6%, classe energetica A1-A4 +15% (arredo, durata e classe insieme al massimo +30%). Transitori e studenti: stessi valori e aumenti, esclusa la durata. Alloggio sociale: massimo ridotto del 20%. Nessun aggiornamento ISTAT delle fasce; il canone si aggiorna al 75% dell'ISTAT salvo cedolare secca.",
+  "fonte": "Comune di Trapani, pagina «Accordo Territoriale per i contratti di locazione agevolati di immobili ad uso abitativo 7-3-2025» (comune.trapani.it, Documenti e dati, Accordo tra enti): scansione firmata di 74 pagine con lettera di deposito, testo, allegati 1-7 e contratti tipo del D.M. 16/01/2017. SUNIA nazionale pubblica ancora solo l'accordo del 2019."
+ },
+ "esempio_zona": "la microzona (allegato 1: centro storico, zona intermedia o frazioni)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "scelta",
+  "tabella_chiave": "epoca",
+  "tabella_predefinita": "1979",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "1. Centro storico A",
+    "nota": "Macroarea 1 (centro storico), microzona 1: via Torrearsa, corso Vittorio Emanuele, via Libertà, via Garibaldi, via Cuba, corso Italia, piazza Scarlatti, piazza Generale Scio, piazza Sant'Agostino, viale Regina Elena, via Ammiraglio Staiti e zone vicine. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1979": [
+      [
+       2.19,
+       3.5
+      ],
+      [
+       2.36,
+       4.59
+      ],
+      [
+       2.55,
+       4.68
+      ]
+     ],
+     "2014": [
+      [
+       2.4,
+       4.1
+      ],
+      [
+       2.6,
+       4.82
+      ],
+      [
+       2.8,
+       5.2
+      ]
+     ],
+     "2015": [
+      [
+       2.56,
+       4.77
+      ],
+      [
+       2.85,
+       5.25
+      ],
+      [
+       3.08,
+       5.77
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "2. Centro storico B",
+    "nota": "Macroarea 1 (centro storico), microzona 2: il resto del centro storico, fuori dalle microzone 1 e 3. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1979": [
+      [
+       1.7,
+       2.82
+      ],
+      [
+       1.89,
+       2.92
+      ],
+      [
+       2.0,
+       3.39
+      ]
+     ],
+     "2014": [
+      [
+       1.9,
+       3.72
+      ],
+      [
+       2.08,
+       3.92
+      ],
+      [
+       2.2,
+       3.94
+      ]
+     ],
+     "2015": [
+      [
+       2.1,
+       3.92
+      ],
+      [
+       2.29,
+       4.24
+      ],
+      [
+       2.4,
+       4.52
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "3. Centro storico C",
+    "nota": "Macroarea 1 (centro storico), microzona 3: via Catito, via San Pietro, via Botteghelle. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1979": [
+      [
+       1.3,
+       2.3
+      ],
+      [
+       1.42,
+       2.53
+      ],
+      [
+       1.52,
+       2.78
+      ]
+     ],
+     "2014": [
+      [
+       1.45,
+       2.55
+      ],
+      [
+       1.55,
+       2.81
+      ],
+      [
+       1.68,
+       3.09
+      ]
+     ],
+     "2015": [
+      [
+       1.55,
+       2.84
+      ],
+      [
+       1.7,
+       3.12
+      ],
+      [
+       1.84,
+       3.43
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "4. Centrale",
+    "nota": "Macroarea 2 (intermedia), microzona 4: via Giovan Battista Fardella, corso Piersanti Mattarella e zone vicine. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1979": [
+      [
+       2.31,
+       3.84
+      ],
+      [
+       2.38,
+       4.56
+      ],
+      [
+       2.8,
+       5.96
+      ]
+     ],
+     "2014": [
+      [
+       2.56,
+       4.44
+      ],
+      [
+       2.63,
+       5.16
+      ],
+      [
+       3.1,
+       6.18
+      ]
+     ],
+     "2015": [
+      [
+       2.85,
+       5.04
+      ],
+      [
+       3.01,
+       6.0
+      ],
+      [
+       3.45,
+       6.9
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "5",
+    "nome": "5. Semicentrale / periferia",
+    "nota": "Macroarea 2 (intermedia), microzona 5: il resto della città fuori dal centro storico, esclusi la zona centrale (microzona 4) e i quartieri Fontanelle Sud e Cappuccinelli (microzona 6). Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1979": [
+      [
+       2.07,
+       3.66
+      ],
+      [
+       2.27,
+       4.13
+      ],
+      [
+       2.51,
+       4.54
+      ]
+     ],
+     "2014": [
+      [
+       2.3,
+       4.84
+      ],
+      [
+       2.53,
+       4.34
+      ],
+      [
+       2.77,
+       4.79
+      ]
+     ],
+     "2015": [
+      [
+       2.56,
+       4.86
+      ],
+      [
+       2.8,
+       5.1
+      ],
+      [
+       3.06,
+       5.36
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "6",
+    "nome": "6. Quartieri (Fontanelle Sud, Cappuccinelli)",
+    "nota": "Macroarea 2 (intermedia), microzona 6: quartieri Fontanelle Sud e Cappuccinelli. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1979": [
+      [
+       1.72,
+       2.39
+      ],
+      [
+       1.83,
+       2.89
+      ],
+      [
+       1.98,
+       3.58
+      ]
+     ],
+     "2014": [
+      [
+       1.83,
+       2.92
+      ],
+      [
+       1.99,
+       3.23
+      ],
+      [
+       2.09,
+       3.9
+      ]
+     ],
+     "2015": [
+      [
+       1.87,
+       3.31
+      ],
+      [
+       2.19,
+       3.59
+      ],
+      [
+       2.43,
+       4.16
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "7",
+    "nome": "7. Xitta",
+    "nota": "Macroarea 3 (frazioni), microzona 7: Xitta. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1979": [
+      [
+       1.43,
+       2.36
+      ],
+      [
+       1.49,
+       2.52
+      ],
+      [
+       1.99,
+       2.73
+      ]
+     ],
+     "2014": [
+      [
+       1.54,
+       2.57
+      ],
+      [
+       1.6,
+       2.84
+      ],
+      [
+       2.21,
+       3.03
+      ]
+     ],
+     "2015": [
+      [
+       1.72,
+       2.9
+      ],
+      [
+       1.87,
+       3.15
+      ],
+      [
+       2.45,
+       3.37
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "8",
+    "nome": "8. Fulgatore",
+    "nota": "Macroarea 3 (frazioni), microzona 8: Fulgatore. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1979": [
+      [
+       1.32,
+       1.84
+      ],
+      [
+       1.45,
+       2.02
+      ],
+      [
+       1.61,
+       2.23
+      ]
+     ],
+     "2014": [
+      [
+       1.47,
+       2.04
+      ],
+      [
+       1.62,
+       2.25
+      ],
+      [
+       1.78,
+       2.47
+      ]
+     ],
+     "2015": [
+      [
+       1.64,
+       2.27
+      ],
+      [
+       1.79,
+       2.5
+      ],
+      [
+       1.98,
+       2.74
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "1",
+    "2",
+    "3"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    3,
+    8
+   ],
+   "nota": "Sub-fascia 1 (dotazioni elementari) fino a 3 elementi, sub-fascia 2 (medie dotazioni) da 4 a 8, sub-fascia 3 (particolari dotazioni) da 9 in poi (allegato 3)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi che caratterizzano l'immobile (allegato 3): segna quelli presenti"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Autorimessa singola o posto auto coperto"
+   },
+   {
+    "testo": "Posto auto scoperto"
+   },
+   {
+    "testo": "Un altro posto auto o box oltre il primo"
+   },
+   {
+    "testo": "Cortile comune o area verde di pertinenza"
+   },
+   {
+    "testo": "Cantina, sottotetto o soffitta"
+   },
+   {
+    "testo": "Videosorveglianza condominiale o allarme privato"
+   },
+   {
+    "testo": "Allacciamento alla rete del gas"
+   },
+   {
+    "testo": "Riscaldamento con caldaia a condensazione"
+   },
+   {
+    "testo": "Condizionatori (impianto di condizionamento d'aria)"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Antenna centralizzata o internet condominiale"
+   },
+   {
+    "testo": "Vicino a servizi pubblici (trasporti, scuole, strutture sanitarie...)"
+   },
+   {
+    "testo": "Facciata dell'edificio rifatta negli ultimi 10 anni"
+   },
+   {
+    "testo": "Impianti a energia rinnovabile o colonnine per la ricarica delle auto"
+   },
+   {
+    "testo": "Impianti e strutture per superare le barriere architettoniche"
+   },
+   {
+    "testo": "Alloggio arredato in parte"
+   },
+   {
+    "testo": "Doppi servizi (due bagni)"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Infissi con doppi vetri"
+   },
+   {
+    "testo": "Infissi a taglio termico"
+   },
+   {
+    "testo": "Scorta d'acqua (serbatoio o autoclave)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile (con vani accessori e verande chiuse)",
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa, box o posto auto coperto o scoperto",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantine",
+     "testo": "Soffitte, cantine, mezzanini e simili comunicanti con l'alloggio",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantine_nc",
+     "testo": "Soffitte, cantine, mezzanini e simili non comunicanti",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazze comunicanti (30% fino a 25 mq, poi 10%)",
+     "coeff": 0.3,
+     "scaglione": [
+      25,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "chiave": "balconi_nc",
+     "testo": "Balconi e terrazze non comunicanti (15% fino a 25 mq, poi 5%)",
+     "coeff": 0.15,
+     "scaglione": [
+      25,
+      0.15,
+      0.05
+     ]
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta esclusiva (10% fino alla superficie dell'alloggio, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    }
+   ],
+   "nota": "Superficie dell'allegato 4 bis: l'alloggio al 100%; autorimessa o posto auto al 50%; soffitte e cantine al 50% se comunicanti, al 25% se no; balconi e terrazze al 30% fino a 25 mq e al 10% per il resto (15% e 5% se non comunicanti); area scoperta esclusiva al 10% fino alla superficie dell'alloggio e al 2% oltre. Si può arrotondare al metro quadro. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie locata, considerando anche le parti condivise."
+  },
+  "correttivi_superficie": [
+   {
+    "a": 49.99,
+    "su": "base",
+    "perc": 20,
+    "nome": "alloggio sotto i 50 mq"
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "epoca",
+    "tipo": "scelta",
+    "testo": "Anno di costruzione o dell'ultima ristrutturazione (sceglie la tabella dei valori)",
+    "nome": "costruzione o ristrutturazione",
+    "nessuna": "fino al 1979",
+    "mostra_perc": false,
+    "opzioni": [
+     {
+      "valore": "2014",
+      "testo": "dal 1980 al 2014",
+      "perc": 0
+     },
+     {
+      "valore": "2015",
+      "testo": "dal 2015 in poi",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "storico",
+    "tipo": "spunta",
+    "testo": "Immobile riconosciuto di interesse storico, nel centro storico o fuori",
+    "nome": "immobile di interesse storico",
+    "perc": 25
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "ammobiliato": true,
+    "testo": "Alloggio completamente arredato",
+    "nome": "completamente arredato",
+    "perc": 15
+   },
+   {
+    "chiave": "classe_a",
+    "tipo": "spunta",
+    "testo": "Classe energetica A1, A2, A3 o A4 (APE)",
+    "nome": "classe energetica A",
+    "perc": 15
+   },
+   {
+    "chiave": "sociale",
+    "tipo": "spunta",
+    "testo": "Alloggio sociale (social housing) con agevolazioni pubbliche al locatore: massimo ridotto",
+    "nome": "alloggio sociale",
+    "perc": -20,
+    "solo_max": true
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano e valgono sul minimo e sul massimo. Immobili riconosciuti di interesse storico: +25%. Alloggio sotto i 50 mq (solo l'abitazione, senza pertinenze): +20%. Completamente arredato: fino a +15%. Durata 4, 5 o 6 anni (più 2 di proroga): +2%, +4%, +6%. Classe energetica A1-A4: +15%. Arredo, durata e classe energetica insieme non superano il 30%. Transitori e studenti: stessi valori e aumenti, tranne quello per la durata. Alloggio sociale: massimo ridotto del 20%.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Con 8 elementi l'accordo è ambiguo: l'allegato 3 li mette nella sub-fascia 2 (da 4 a 8 elementi), mentre le tabelle dell'allegato 2 indicano la terza fascia per «oltre 7 elementi». Qui si usa la sub-fascia 2, la più prudente: chiedi conferma all'associazione che attesta il contratto.",
+    "fascia": [
+     8
+    ]
+   },
+   {
+    "testo": "Le parti possono scegliere una sub-fascia più bassa della stessa microzona, ma non scendere sotto il minimo della prima fascia (fino a 3 elementi, costruzione prima del 1980)."
+   }
+  ],
+  "tetto_somma": [
+   {
+    "chiavi": [
+     "arredo",
+     "classe_a"
+    ],
+    "durata": true,
+    "perc": 30,
+    "testo": "limite: arredo, durata e classe A insieme al massimo +30%"
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 4",
+  "titolo": "Dichiarazione del locatore e del conduttore con attestazione - contratti assistiti",
+  "sottotitolo": "Accordo territoriale del Comune di Trapani del 07/03/2025, depositato il 07/03/2025 (prot. n. 20515)",
+  "titolo_superficie": "SUPERFICIE (allegato 4 bis, calcolo dei metri quadrati utili)",
+  "titolo_elementi": "ELEMENTI CHE CARATTERIZZANO L'IMMOBILE (allegato 3)",
+  "etichetta_conteggio": "TOTALE ELEMENTI",
+  "dichiarazione": "Il locatore e il conduttore, consapevoli che chiunque rilascia dichiarazioni mendaci è punito ai sensi del codice penale e delle leggi speciali in materia (art. 46 D.P.R. n. 445/2000), dichiarano i dati sopra riportati.",
+  "firme": [
+   "Il Locatore",
+   "Il Conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI CONFORMITÀ",
+  "attestazione": [
+   "La sottoscritta Organizzazione sindacale ……………………………, firmataria dell'Accordo territoriale del Comune di Trapani depositato in data 07/03/2025, accertati i dati riferiti dalla sopraindicata dichiarazione,",
+   "ATTESTA la conformità del canone concordato e del contratto al vigente Accordo territoriale del Comune di Trapani depositato in data 07/03/2025."
+  ],
+  "firme_attestazione": [
+   "Data ……………………",
+   "Per l'Organizzazione Sindacale"
+  ],
+  "nota_zone": "Trapani è divisa in 3 macroaree e 8 microzone (allegato 1): centro storico (microzone 1, 2, 3), zona intermedia (4 centrale, 5 semicentrale e periferia, 6 Fontanelle Sud e Cappuccinelli) e frazioni (7 Xitta, 8 Fulgatore). L'accordo non ha mappe: nei casi dubbi chiedi all'associazione che attesta il contratto."
+ }
+}

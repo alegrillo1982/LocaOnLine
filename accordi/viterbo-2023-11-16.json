@@ -1,0 +1,463 @@
+{
+ "accordo": {
+  "codice": "viterbo-2023-11-16",
+  "modello": "viterbo-2024",
+  "comune": "Viterbo",
+  "provincia": "VT",
+  "titolo": "Accordo territoriale per il Comune di Viterbo",
+  "data": "2023-11-16",
+  "data_testo": "16 novembre 2023",
+  "deposito": "Comune di Viterbo",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2026-12-31",
+  "nota_validita": "Titolo G: durata di tre anni dal 1° gennaio 2024; resta comunque in vigore fino alla firma di un nuovo accordo. Per il triennio niente adeguamento ISTAT dei valori: l'eventuale aumento decorre dal 1° gennaio 2027 (al massimo il 75% della variazione ISTAT).",
+  "firmatari_proprieta": [
+   "A.S.P.P.I.",
+   "CONFEDILIZIA",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "FEDER.CASA",
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Accordo firmato a Viterbo il 16/11/2023 dalle federazioni provinciali della proprietà e degli inquilini e trasmesso al Sindaco per il deposito con lettera dello stesso giorno; in vigore dal 01/01/2024, sostituisce l'accordo del 01/03/2018 (contratti stipulati dal 2024 con il vecchio accordo non sono riconosciuti). Sulla copia pubblicata non compaiono timbro né protocollo del Comune. Sei zone (A-F), tre fasce (minima, media, massima) secondo quanti dei 21 parametri dell'allegato C sono presenti; valori mensili al mq (allegato B).",
+  "fonte": "SUNIA, pagina «Accordi territoriali di Viterbo»: «accordo-territoriale-Viterbo-2024.pdf» (scansione firmata, 40 pagine: lettera di trasmissione, testo, allegati A, B, C, D e schemi di contratto F, G, H; l'allegato E, modello di richiesta, non è nella copia)."
+ },
+ "esempio_zona": "la zona dell'allegato A (A centro storico … F frazioni e campagna)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "fasce": {
+   "nomi": [
+    "minima",
+    "media",
+    "massima"
+   ],
+   "criterio": "conta",
+   "conta": {
+    "da": 0,
+    "a": 20
+   },
+   "soglie": [
+    2,
+    7
+   ],
+   "obbligatori": [
+    21,
+    22,
+    23,
+    24
+   ],
+   "avviso_obbligatori": "Senza tutte e 4 le dotazioni dell'alloggio «normale» (acqua, gas o sistema alternativo, fognatura, impianto elettrico) si resta nella fascia minima.",
+   "proporzionale": [
+    null,
+    null,
+    {
+     "da": 7,
+     "passi": 2
+    }
+   ],
+   "nota": "Fascia minima: alloggio «normale» (acqua, gas o sistema alternativo, fognatura, impianto elettrico). Fascia media: da 3 parametri. Fascia massima: da 8 parametri, ma con 8 soli parametri non si può applicare il valore massimo (allegato C). Gli elementi 2 e 11 non si sommano.",
+   "non_cumulabili": [
+    [
+     1,
+     10
+    ]
+   ]
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Parametri (allegato C): fascia media da 3, fascia massima da 8"
+   },
+   {
+    "da": 21,
+    "titolo": "Alloggio «normale» (allegato C): senza anche una sola di queste dotazioni si resta nella fascia minima"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Impianto di riscaldamento autonomo"
+   },
+   {
+    "testo": "Appartamento servito da ascensore o servoscala"
+   },
+   {
+    "testo": "Posto auto riservato"
+   },
+   {
+    "testo": "Ristrutturato o costruito negli ultimi 10 anni"
+   },
+   {
+    "testo": "Appartamento fornito di parabola satellitare"
+   },
+   {
+    "testo": "Cantina o soffitta esclusiva"
+   },
+   {
+    "testo": "Balconi, terrazzi o portici"
+   },
+   {
+    "testo": "Aree o locali condominiali"
+   },
+   {
+    "testo": "Classe energetica dall'APE da D ad A"
+   },
+   {
+    "testo": "Impianto di climatizzazione"
+   },
+   {
+    "testo": "Attico con ascensore (non si somma all'ascensore: conta una volta sola)"
+   },
+   {
+    "testo": "Categoria catastale A/7 o superiore"
+   },
+   {
+    "testo": "Giardino privato di almeno 40 mq"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Citofono o videocitofono"
+   },
+   {
+    "testo": "Allarme di sicurezza"
+   },
+   {
+    "testo": "Muro di cinta con cancello attorno al fabbricato"
+   },
+   {
+    "testo": "Superamento delle barriere architettoniche (interne ed esterne)"
+   },
+   {
+    "testo": "Doppie finestre o vetrocamera"
+   },
+   {
+    "testo": "Ingresso indipendente"
+   },
+   {
+    "testo": "Allaccio (o predisposizione) alla rete idrica"
+   },
+   {
+    "testo": "Gas, anche da deposito a norma, o sistema alternativo (induzione, pompa di calore)"
+   },
+   {
+    "testo": "Allaccio alla rete fognante"
+   },
+   {
+    "testo": "Impianto elettrico funzionante"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'appartamento",
+   "correzioni": [
+    {
+     "fino": 35,
+     "perc": 40,
+     "tetto": 42
+    },
+    {
+     "da": 35,
+     "fino": 46,
+     "incluso": true,
+     "perc": 30,
+     "tetto": 56
+    },
+    {
+     "da": 46,
+     "fino": 65,
+     "incluso": true,
+     "perc": 15,
+     "tetto": 65
+    },
+    {
+     "da": 105.01,
+     "fino": 120,
+     "incluso": true,
+     "perc": -15,
+     "minimo": 105
+    },
+    {
+     "da": 120.01,
+     "fino": 140,
+     "incluso": true,
+     "perc": -20,
+     "minimo": 115
+    },
+    {
+     "da": 140.01,
+     "fino": 1000000,
+     "perc": -25,
+     "minimo": 120
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Autorimessa a uso esclusivo (garage)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto in autorimessa di uso comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e simili, vani alti meno di 1,70 m",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Area scoperta in godimento esclusivo",
+     "coeff": 0.15,
+     "scaglione": [
+      "base",
+      0.15,
+      0
+     ]
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota millesimale)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0
+     ]
+    },
+    {
+     "chiave": "portico",
+     "testo": "Porticato coperto",
+     "coeff": 0.3
+    }
+   ],
+   "nota": "Superficie calpestabile (dall'APE, da un tecnico o dalla planimetria catastale), tolleranza del 2% in più o in meno. Si aggiungono il garage al 50%, il posto auto in autorimessa comune al 20%, balconi, terrazze, cantine e vani alti meno di 1,70 m al 25%, l'area scoperta esclusiva al 15% e il verde condominiale della propria quota al 10% (ognuno fino a tanti mq quanti quelli dell'appartamento), il porticato coperto al 30%. Appartamenti sotto i 35 mq: +40% fino a 42 mq; da 35,01 a 46 mq: +30% fino a 56 mq; da 46,01 a 65 mq: +15% fino a 65 mq. Da 105 a 120 mq: -15% (non sotto 105 mq); da 120,01 a 140 mq: -20% (non sotto 115 mq); oltre 140 mq: -25% (non sotto 120 mq)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Alloggio arredato (percentuale massima)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "arredato",
+      "testo": "completamente arredato",
+      "perc": 25
+     },
+     {
+      "valore": "nuovo",
+      "testo": "arredato con mobili nuovi o di prestigio",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "seminterrato",
+    "tipo": "spunta",
+    "testo": "Alloggio al piano seminterrato",
+    "nome": "seminterrato",
+    "perc": -10
+   },
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "testo": "Immobile di pregio: vincolato o in categoria A/1, A/8, A/9 (art. 1, comma 2, lett. a, L. 431/98)",
+    "nome": "immobile di pregio",
+    "perc": 20
+   },
+   {
+    "chiave": "transitorio",
+    "tipo": "spunta",
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Esigenza transitoria del solo inquilino e contratto di meno di 12 mesi",
+    "nome": "transitorio",
+    "perc": 10
+   },
+   {
+    "chiave": "studenti",
+    "tipo": "spunta",
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Esigenza transitoria dello studente e contratto di non più di 12 mesi",
+    "nome": "studenti",
+    "perc": 5
+   },
+   {
+    "chiave": "wifi",
+    "tipo": "spunta",
+    "contratti": [
+     "transitorio",
+     "studenti"
+    ],
+    "testo": "Rete wi-fi fornita dal proprietario, gratuita per l'inquilino",
+    "nome": "wi-fi",
+    "perc": 2
+   }
+  ],
+  "nota_maggiorazioni": "Le percentuali si sommano e si applicano ai valori della fascia (allegato D). Arredamento completo fino a +25% (fino a +30% con mobili nuovi o di prestigio); piano seminterrato -10%; immobili vincolati o in categoria A/1, A/8, A/9 +20%. Contratti 3+2 più lunghi: 4+2 +2%, 5+2 +4%, 6+2 o più +6%. Transitori: +10% solo per esigenza del solo inquilino e durata inferiore a 12 mesi; studenti: +5% per contratti fino a 12 mesi; per entrambi, wi-fi gratuito fornito dal proprietario +2% sul massimo.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "fascia": [
+     8
+    ],
+    "testo": "Con 8 parametri, il minimo per la fascia massima, non si può applicare il valore massimo della fascia (allegato C): qui il valore proposto si ferma a metà fra minimo e massimo. Dal 9° parametro si arriva al massimo."
+   },
+   {
+    "testo": "È consentito concordare un canone inferiore a quello che risulta dalla tabella (allegato B)."
+   }
+  ],
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "A - Centro storico (dentro le mura)",
+    "nota": "Zona A: tutte le abitazioni dentro le mura castellane della città di Viterbo. I confini fra le zone passano sulla mezzeria delle strade (allegato A).",
+    "fasce": [
+     [
+      2.3,
+      3.6
+     ],
+     [
+      3.7,
+      5.3
+     ],
+     [
+      5.4,
+      6.2
+     ]
+    ]
+   },
+   {
+    "codice": "B",
+    "nome": "B - Riello, Pilastro, Carmine, Ponte dell'Elce",
+    "nota": "Zona B: dalla Cassia Nord all'altezza della superstrada fino alla Cassia Sud delimitata da viale Armando Diaz, comprese Riello, Occhi Bianchi, Pilastro, Salamaro, Carmine e Ponte dell'Elce. I confini fra le zone passano sulla mezzeria delle strade (allegato A).",
+    "fasce": [
+     [
+      2.3,
+      3.6
+     ],
+     [
+      3.7,
+      4.7
+     ],
+     [
+      4.8,
+      5.5
+     ]
+    ]
+   },
+   {
+    "codice": "C",
+    "nome": "C - Villanova, Palazzina, Santa Barbara",
+    "nota": "Zona C: dalla Cassia Nord fino alla ferrovia Roma-Civita Castellana-Viterbo, comprese Villanova, Palazzina, Santa Barbara e Santa Lucia. I confini fra le zone passano sulla mezzeria delle strade (allegato A).",
+    "fasce": [
+     [
+      2.4,
+      3.7
+     ],
+     [
+      3.8,
+      5.0
+     ],
+     [
+      5.1,
+      5.8
+     ]
+    ]
+   },
+   {
+    "codice": "D",
+    "nome": "D - Ellera, Cappuccini, La Pila, La Quercia",
+    "nota": "Zona D: quartieri Ellera, Paradiso, Cappuccini, Grotticella, Murialdo, Barco, La Pila, Mazzetta, Pietrare e La Quercia, dalla ferrovia Roma-Civita Castellana-Viterbo alla Cassia Sud delimitata da viale Armando Diaz. I confini fra le zone passano sulla mezzeria delle strade (allegato A).",
+    "fasce": [
+     [
+      3.0,
+      3.7
+     ],
+     [
+      3.8,
+      5.1
+     ],
+     [
+      5.2,
+      6.0
+     ]
+    ]
+   },
+   {
+    "codice": "E",
+    "nome": "E - Bagnaia e San Martino al Cimino",
+    "nota": "Zona E: Bagnaia e San Martino al Cimino, solo i centri abitati. I confini fra le zone passano sulla mezzeria delle strade (allegato A).",
+    "fasce": [
+     [
+      2.4,
+      3.6
+     ],
+     [
+      3.7,
+      4.8
+     ],
+     [
+      4.9,
+      5.4
+     ]
+    ]
+   },
+   {
+    "codice": "F",
+    "nome": "F - Frazioni e zone agricole",
+    "nota": "Zona F: Monterazzano, Bullicame, Tobia, Carcarelle, Ponte di Cetti, Ponte San Martino, Le Farine, Grotte Santo Stefano, Mugnano, Monte Calvello, Roccalvecce, Pratoleva, Fastello, Sant'Angelo di Roccalvecce e tutte le abitazioni fuori dalle altre zone (zona agricola). I confini fra le zone passano sulla mezzeria delle strade (allegato A).",
+    "fasce": [
+     [
+      1.9,
+      2.5
+     ],
+     [
+      2.6,
+      3.7
+     ],
+     [
+      3.8,
+      4.7
+     ]
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato D",
+  "titolo": "Scheda determinazione e attestazione canone concordato Comune di Viterbo",
+  "sottotitolo": "Accordo territoriale per il Comune di Viterbo del 16/11/2023, in vigore dal 01/01/2024 (Accordo Territoriale 2024)",
+  "titolo_superficie": "CALCOLO SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "Elementi che concorrono al calcolo del canone (allegato C)",
+  "dichiarazione": "Il locatore dichiara la veridicità dei dati sopra riportati e il conduttore li approva; l'organizzazione firmataria dell'accordo attesta la rispondenza del canone, calcolato sui dati, elementi e valori forniti da locatore e conduttore.",
+  "firme": [
+   "Locatore/i",
+   "Categoria sottoscrittrice accordo",
+   "Conduttore/i"
+  ],
+  "nota_zone": "La zona si ricava dall'allegato A dell'accordo: A centro storico dentro le mura, B-D quartieri della città, E Bagnaia e San Martino al Cimino, F frazioni e zone agricole. I confini passano sulla mezzeria delle strade."
+ }
+}

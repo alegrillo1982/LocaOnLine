@@ -1,0 +1,347 @@
+{
+ "accordo": {
+  "codice": "pordenone-2018-02-02",
+  "modello": "pordenone-2018",
+  "comune": "Pordenone",
+  "provincia": "PN",
+  "titolo": "Accordo territoriale per il Comune di Pordenone",
+  "data": "2018-02-02",
+  "data_testo": "2 febbraio 2018",
+  "deposito": "Comune di Pordenone",
+  "deposito_data": "07.02.2018",
+  "protocollo": "",
+  "ufficio": "Comune di Pordenone",
+  "ufficio_breve": "Comune di Pordenone",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Pordenone ha ancora l'accordo territoriale firmato il 2 febbraio 2018</strong> e depositato il 7 febbraio 2018: durava tre anni, ma resta in vigore finché non ne viene firmato uno nuovo, e il Comune lo indica ancora come accordo vigente. I valori minimi e massimi possono essere aggiornati ogni anno, per i nuovi contratti, al 75% della variazione ISTAT: qui trovi i valori originali dell'accordo, <strong>chiedi all'associazione che attesta il contratto se applica l'aggiornamento</strong>.",
+  "firmatari_proprieta": [
+   "A.S.P.P.I. (sede provinciale di Treviso e Centro Servizi ASPPI di Pordenone)",
+   "CONFAPPI (delegazione di Treviso)",
+   "CONFEDILIZIA Pordenone",
+   "U.P.P.I. Pordenone"
+  ],
+  "firmatari_conduttori": [
+   "S.I.C.E.T. F.V.G. (area territoriale di Pordenone)",
+   "S.U.N.I.A. Pordenone",
+   "U.N.I.A.T. Pordenone",
+   "FEDERCASA - CONF.SAL Pordenone"
+  ],
+  "nota": "Firmato a Pordenone il 02/02/2018 (D.M. 16/01/2017), sostituisce l'accordo dell'11/12/2003; depositato il 07/02/2018 (fonte: UPPI Pordenone). Durata tre anni dal giorno dopo il deposito, poi resta in vigore fino a un nuovo accordo: nessun accordo successivo per il capoluogo (verificato novembre 2026; il Comune lo richiama come vigente nel protocollo studenti del 2023). Valori mensili al mq per tre zone (art. 4 del titolo A), correttivi del valore massimo (allegato 2), zone per foglio catastale (allegato 1). Il SICET firma con riserva sui transitori dell'art. 8 del titolo B. Per gli altri comuni della provincia c'è un accordo separato, con la stessa data.",
+  "fonte": "Scansione firmata dell'accordo con gli allegati 1-4 pubblicata da UPPI Pordenone (12 pagine); testo identico in versione digitale su SUNIA e UPPI nazionale."
+ },
+ "esempio_zona": "la zona dal numero di foglio catastale (lo trovi nella visura catastale o nel rogito)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "solo_massimo": true,
+  "durata_anche_minimo": true,
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Zona A - Centro storico",
+    "nota": "Zona A - Centro storico (rossa nella planimetria dell'allegato 1): foglio catastale 20. Il foglio catastale lo trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.0,
+      8.0
+     ]
+    ]
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B - Intermedia",
+    "nota": "Zona B - Intermedia, semicentro (verde nella planimetria dell'allegato 1): fogli catastali da 11 a 19, da 21 a 24, 27, 28 e 34. Il foglio catastale lo trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.0,
+      7.5
+     ]
+    ]
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C - Periferica",
+    "nota": "Zona C - Periferica (gialla nella planimetria dell'allegato 1): fogli catastali da 1 a 10, 25, 26, da 29 a 33 e da 35 a 50. Il foglio catastale lo trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.0,
+      7.0
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "unica"
+   ],
+   "criterio": "conta",
+   "soglie": []
+  },
+  "elementi": [],
+  "superficie": {
+   "base": "Superficie dell'appartamento al netto dei muri",
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa singola",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto macchina in autorimessa comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "cantina",
+     "testo": "Cantina e soffitta",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Terrazzi e balconi",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Superficie scoperta a uso esclusivo dell'inquilino",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (in base ai millesimi di proprietà)",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Superficie dell'appartamento al netto dei muri: tutti i vani (ingresso, soggiorno, cucina, camere, bagni, ripostigli, corridoi, veranda chiusa). Si calcola come nell'art. 13 della legge 392/1978 (allegato 4 dell'accordo): l'appartamento più le pertinenze con i loro coefficienti (autorimessa 50%, posto macchina in autorimessa comune 20%, cantina, soffitta, terrazzi e balconi 25%, scoperto esclusivo 15%, verde condominiale 10%). È ammessa una tolleranza del 5% in più o in meno. Alloggi piccoli: il valore massimo aumenta fino al 60% fino a 25 mq e fino al 40% da 25 a 55 mq (qui l'aumento è applicato per intero)."
+  },
+  "correttivi_superficie": [
+   {
+    "a": 25,
+    "perc": 60,
+    "nome": "alloggio fino a 25 mq",
+    "su": "base"
+   },
+   {
+    "da": 25.01,
+    "a": 55,
+    "perc": 40,
+    "nome": "alloggio da 25 a 55 mq",
+    "su": "base"
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (dall'APE)",
+    "nome": "classe energetica",
+    "nessuna": "D, E, F, G o non indicata",
+    "nessuna_breve": "nessuna variazione",
+    "opzioni": [
+     {
+      "valore": "A",
+      "testo": "A (qualsiasi A)",
+      "perc": 15
+     },
+     {
+      "valore": "B",
+      "testo": "B",
+      "perc": 10
+     },
+     {
+      "valore": "C",
+      "testo": "C",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "nuovo",
+    "tipo": "spunta",
+    "testo": "Edificio con agibilità da non più di dieci anni",
+    "nome": "agibilità da non più di 10 anni",
+    "perc": 5
+   },
+   {
+    "chiave": "posto_auto",
+    "tipo": "scelta",
+    "testo": "Posto auto",
+    "nome": "posto auto",
+    "nessuna": "box o posto auto singolo chiuso",
+    "nessuna_breve": "nessuna riduzione",
+    "superficie": {
+     "su": "base",
+     "da": 25.01
+    },
+    "opzioni": [
+     {
+      "valore": "coperto",
+      "testo": "posto auto coperto",
+      "perc": -2
+     },
+     {
+      "valore": "scoperto",
+      "testo": "posto auto scoperto",
+      "perc": -5
+     },
+     {
+      "valore": "nessuno",
+      "testo": "nessun posto auto",
+      "perc": -10
+     }
+    ]
+   },
+   {
+    "chiave": "ascensore",
+    "tipo": "scelta",
+    "testo": "Edificio senza ascensore: a che piano è l'alloggio?",
+    "nome": "senza ascensore",
+    "nessuna": "c'è l'ascensore, oppure piano terra, primo o secondo",
+    "nessuna_breve": "nessuna riduzione",
+    "opzioni": [
+     {
+      "valore": "3",
+      "testo": "terzo piano",
+      "perc": -3
+     },
+     {
+      "valore": "4",
+      "testo": "quarto piano",
+      "perc": -5
+     },
+     {
+      "valore": "5",
+      "testo": "quinto piano",
+      "perc": -7
+     },
+     {
+      "valore": "6",
+      "testo": "sesto piano",
+      "perc": -9
+     },
+     {
+      "valore": "7",
+      "testo": "settimo piano o più in alto",
+      "perc": -10
+     }
+    ]
+   },
+   {
+    "chiave": "senza_cantina",
+    "tipo": "spunta",
+    "testo": "Senza cantina, ripostiglio o soffitta",
+    "nome": "senza cantina o soffitta",
+    "perc": -2,
+    "superficie": {
+     "su": "base",
+     "da": 25.01
+    }
+   },
+   {
+    "chiave": "riscaldamento",
+    "tipo": "scelta",
+    "testo": "Riscaldamento",
+    "nome": "riscaldamento",
+    "nessuna": "autonomo",
+    "nessuna_breve": "nessuna riduzione",
+    "opzioni": [
+     {
+      "valore": "centralizzato",
+      "testo": "centralizzato",
+      "perc": -2
+     },
+     {
+      "valore": "assente",
+      "testo": "nessun impianto di riscaldamento",
+      "perc": -13
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredamento",
+    "nome": "arredamento",
+    "nessuna": "arredato in modo sufficiente",
+    "nessuna_breve": "nessuna riduzione",
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "arredato solo in parte",
+      "perc": -5
+     },
+     {
+      "valore": "vuoto",
+      "testo": "senza arredamento",
+      "perc": -10
+     }
+    ]
+   },
+   {
+    "chiave": "signorile",
+    "tipo": "spunta",
+    "testo": "Immobile di pregio: categoria catastale A/1, A/8 o A/9 (art. 1, comma 2, lett. a, L. 431/98)",
+    "nome": "categoria A/1, A/8, A/9",
+    "perc": 20,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "minimo": true
+   },
+   {
+    "chiave": "signorile_studenti",
+    "tipo": "spunta",
+    "testo": "Immobile di pregio: categoria catastale A/1, A/8 o A/9 (art. 1, comma 2, lett. a, L. 431/98)",
+    "nome": "categoria A/1, A/8, A/9",
+    "perc": 10,
+    "contratti": [
+     "studenti"
+    ],
+    "minimo": true
+   }
+  ],
+  "nota_maggiorazioni": "Le variazioni dell'allegato 2 riguardano solo il valore massimo e si sommano: classe energetica A fino a +15%, B fino a +10%, C fino a +5%; agibilità da non più di dieci anni fino a +5%; alloggi fino a 25 mq fino a +60%, da 25 a 55 mq fino a +40%. Riduzioni: nessun posto auto -10%, posto auto scoperto -5%, coperto -2%; senza ascensore dal terzo piano -3%, poi -2% per ogni piano in più fino a -10%; senza cantina, ripostiglio o soffitta -2%; senza riscaldamento -13%, riscaldamento centralizzato fino a -2%; arredato solo in parte fino a -5%, senza arredamento -10%. Per gli alloggi fino a 25 mq non si applicano le riduzioni per la mancanza di pertinenze (posto auto, cantina). Dove l'accordo prevede un intervallo, qui si usa l'aumento intero e la riduzione intera. Durata 4+2 anni +5%, 5+2 +7%, 6+2 o più +9% (minimo e massimo); transitori e studenti +15% (minimo e massimo); categorie A/1, A/8 e A/9 +20% (+10% per gli studenti). Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie locata, considerando anche le parti condivise.",
+  "durata": {
+   "4": 5,
+   "5": 7,
+   "6": 9
+  },
+  "contratto": {
+   "transitorio": 15,
+   "studenti": 15,
+   "anche_minimo": true
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "I contratti transitori fino a 30 giorni hanno canone libero.",
+    "contratti": [
+     "transitorio"
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 4",
+  "titolo": "Richiesta di attestazione di rispondenza ex D.M. 16.1.2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Pordenone sottoscritto il 02/02/2018 e depositato il 07/02/2018",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "DETERMINAZIONE LIVELLO MASSIMO DELLA FASCIA DI OSCILLAZIONE",
+  "dichiarazione": "Il sottoscritto, nella qualità di locatore/conduttore dell'immobile o porzione di immobile sopra indicato, chiede l'attestazione ex D.M. 16/1/2017 di rispondenza dei contenuti economici e normativi del contratto all'Accordo locale per il Comune di Pordenone sottoscritto il 02/02/2018, e dichiara sotto la propria responsabilità che il contratto è stato stipulato utilizzando il tipo di contratto allegato al D.M. 16/1/2017 e che i dati sopra riportati sono veri.",
+  "firme": [
+   "Il richiedente"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16/1/2017 (ALLEGATO 3)",
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Pordenone stipulato il 02/02/2018, in persona di ……………………………, sulla base degli elementi oggettivi dichiarati dal richiedente, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Pordenone, stipulato in data 02/02/2018.",
+   "Pordenone, lì ……………………"
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dal foglio catastale dell'immobile (allegato 1): zona A foglio 20; zona B fogli da 11 a 19, da 21 a 24, 27, 28 e 34; zona C tutti gli altri (da 1 a 10, 25, 26, da 29 a 33, da 35 a 50)."
+ }
+}

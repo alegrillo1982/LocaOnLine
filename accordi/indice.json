@@ -2827,6 +2827,146 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvalmontone-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=5aa566fb-8ef7-4403-84eb-1f215b2550de"
     }
    ]
+  },
+  {
+   "comune": "Rieti",
+   "provincia": "RI",
+   "accordo": "rieti-2023-01-18",
+   "sottoscritto": "18 gennaio 2023",
+   "depositato": "18 gennaio 2023",
+   "zone": 12,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frieti-2023-01-18-accordo.pdf?alt=media&token=aa752dd3-771f-47bd-a061-62a833f767c2",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frieti-2023-01-18-accordo.pdf?alt=media&token=aa752dd3-771f-47bd-a061-62a833f767c2"
+    },
+    {
+     "nome": "Integrazioni rettifiche e accordo studenti",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frieti-2023-01-18-integrazioni-rettifiche-e-accordo-studenti.pdf?alt=media&token=1f1a8785-1ae9-4bc8-8ff7-e727e0724a31"
+    }
+   ]
+  },
+  {
+   "comune": "Mantova",
+   "provincia": "MN",
+   "accordo": "mantova-2017-11-09",
+   "sottoscritto": "9 novembre 2017",
+   "depositato": "",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmantova-2017-11-09-accordo.pdf?alt=media&token=cc12c835-1f49-42fc-b5fc-5561a573c4ce",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmantova-2017-11-09-accordo.pdf?alt=media&token=cc12c835-1f49-42fc-b5fc-5561a573c4ce"
+    }
+   ]
+  },
+  {
+   "comune": "Viterbo",
+   "provincia": "VT",
+   "accordo": "viterbo-2023-11-16",
+   "sottoscritto": "16 novembre 2023",
+   "depositato": "",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fviterbo-2023-11-16-accordo.pdf?alt=media&token=10f7c5d2-df65-4a9b-8a28-24b30dab9945",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fviterbo-2023-11-16-accordo.pdf?alt=media&token=10f7c5d2-df65-4a9b-8a28-24b30dab9945"
+    },
+    {
+     "nome": "Allegato abc zone fasce elementi",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fviterbo-2023-11-16-allegato-abc-zone-fasce-elementi.pdf?alt=media&token=ce3b3e03-134e-4fcc-8469-066ac8532c7a"
+    },
+    {
+     "nome": "Allegato d scheda attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fviterbo-2023-11-16-allegato-d-scheda-attestazione.pdf?alt=media&token=96c4ce33-dc79-43b4-bc63-a835f3b704fa"
+    }
+   ]
+  },
+  {
+   "comune": "Pordenone",
+   "provincia": "PN",
+   "accordo": "pordenone-2018-02-02",
+   "sottoscritto": "2 febbraio 2018",
+   "depositato": "7 febbraio 2018",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpordenone-2018-02-02-accordo.pdf?alt=media&token=56cb0bd9-e465-4e41-a109-d9a017d089c6",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpordenone-2018-02-02-accordo.pdf?alt=media&token=56cb0bd9-e465-4e41-a109-d9a017d089c6"
+    },
+    {
+     "nome": "Allegato 1 zone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpordenone-2018-02-02-allegato-1-zone.pdf?alt=media&token=9c183075-c9cf-4944-b1a3-f269a2b7681c"
+    }
+   ]
+  },
+  {
+   "comune": "Frosinone",
+   "provincia": "FR",
+   "accordo": "frosinone-2026-09-10",
+   "sottoscritto": "10 settembre 2026",
+   "depositato": "",
+   "zone": 14,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffrosinone-2026-09-10-accordo.pdf?alt=media&token=762c1d7a-0553-44a1-8088-85653627ad03",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffrosinone-2026-09-10-accordo.pdf?alt=media&token=762c1d7a-0553-44a1-8088-85653627ad03"
+    }
+   ]
+  },
+  {
+   "comune": "Siena",
+   "provincia": "SI",
+   "accordo": "siena-2026-04-07",
+   "sottoscritto": "7 aprile 2026",
+   "depositato": "14 aprile 2026",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsiena-2026-04-07-accordo.pdf?alt=media&token=023b49fa-1502-49d0-a3b8-f17e291d177b",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsiena-2026-04-07-accordo.pdf?alt=media&token=023b49fa-1502-49d0-a3b8-f17e291d177b"
+    },
+    {
+     "nome": "Delibera giunta 148 2026 04 21",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsiena-2026-04-07-delibera-giunta-148-2026-04-21.pdf?alt=media&token=ad6e3579-50b7-47ad-a56f-d3f5245ec5ff"
+    }
+   ]
+  },
+  {
+   "comune": "Savona",
+   "provincia": "SV",
+   "accordo": "savona-2018-10-01",
+   "sottoscritto": "1° ottobre 2018",
+   "depositato": "31 ottobre 2018",
+   "zone": 25,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsavona-2018-10-01-accordo.pdf?alt=media&token=b18f1092-9817-42ab-9908-49cc13fb198b",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsavona-2018-10-01-accordo.pdf?alt=media&token=b18f1092-9817-42ab-9908-49cc13fb198b"
+    }
+   ]
+  },
+  {
+   "comune": "Trapani",
+   "provincia": "TP",
+   "accordo": "trapani-2025-03-07",
+   "sottoscritto": "7 marzo 2025",
+   "depositato": "7 marzo 2025",
+   "zone": 8,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrapani-2025-03-07-accordo.pdf?alt=media&token=399a0b88-626d-4915-9964-f8d3422692f9",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrapani-2025-03-07-accordo.pdf?alt=media&token=399a0b88-626d-4915-9964-f8d3422692f9"
+    }
+   ]
   }
  ]
 }

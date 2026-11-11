@@ -1,0 +1,361 @@
+{
+ "accordo": {
+  "codice": "siena-2026-04-07",
+  "modello": "siena-2026",
+  "comune": "Siena",
+  "provincia": "SI",
+  "titolo": "Accordo territoriale sulle locazioni abitative applicabile nel Comune di Siena",
+  "data": "2026-04-07",
+  "data_testo": "7 aprile 2026",
+  "deposito": "Comune di Siena, prot. n. 32073 del 14/04/2026",
+  "deposito_data": "14.04.2026",
+  "protocollo": "32073",
+  "ufficio": "Comune di Siena, Politiche abitative",
+  "ufficio_breve": "Comune di Siena",
+  "valido_fino": "",
+  "firmatari_proprieta": [
+   "A.P.E. - Confedilizia Siena",
+   "A.S.P.P.I.",
+   "Federproprietà",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato a Siena il 07/04/2026 e depositato al Comune di Siena il 14/04/2026 (prot. n. 32073) da Confedilizia, con gli allegati A-D e i moduli di attestazione; in vigore dal 01/05/2026. Sostituisce l'accordo del 28/07/2023, che resta valido per i contratti stipulati sotto la sua vigenza. La Giunta ne ha preso atto con la delibera n. 148 del 21/04/2026 (validità annuale dal 01/05/2026). Dura un anno, poi resta in vigore fino alla firma di un nuovo accordo (art. 2); non prevede l'aggiornamento ISTAT delle fasce. Vale solo per il Comune di Siena: per gli altri comuni della provincia ci sono accordi separati (area senese, Val d'Elsa, Val d'Orcia e Val di Chiana). Valori in euro al mese per mq di superficie convenzionale, per 3 zone e 3 tipologie (A, B, C); minimo 2,50 ovunque. Aumenti (arredo, immobili recenti o storici, durata) sommati e applicati al canone base (art. 11).",
+  "fonte": "Comune di Siena, portale Siena Famiglia, pagina «Accordi Territoriali»: accordo firmato con lettera di deposito protocollata, allegati A-D e moduli di attestazione (33 pagine, scansione), e delibera di Giunta n. 148 del 21/04/2026. Stesso testo dell'accordo (9 pagine, scansione) sulla pagina SUNIA «Accordi territoriali Siena»."
+ },
+ "esempio_zona": "la zona dell'indirizzo (art. 4: centro storico dentro le mura, zona semicentrale o zona periferica)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro storico",
+    "nota": "Tutta l'area dentro le mura della città. Valori in euro al mq al mese: tipologia A da 2,50 a 10,84, B da 2,50 a 9,22, C da 2,50 a 8,13.",
+    "fasce": [
+     [
+      2.5,
+      8.13
+     ],
+     [
+      2.5,
+      9.22
+     ],
+     [
+      2.5,
+      9.22
+     ],
+     [
+      2.5,
+      10.84
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Semicentrale",
+    "nota": "Fra le mura e l'immediato suburbio, ad esempio: San Prospero, Saragino, Cappuccini, Marciano, Uncinello, Stazione, Vico Alto, Viale Bracci, Scacciapensieri, Malizia, Ravacciano, Madonnina Rossa, Due Ponti, Strada di Busseto, Derna, Valli, Coroncina, Massetana Romana, Colonna San Marco, Pescaia, Via Ricasoli, Via Vittorio Emanuele, Viale Cavour, Palazzo dei Diavoli, Via Celso Cittadini, Via Quinto Settano, Via Sansedoni, Via Bernardo Tolomei, Petriccio, Acquacalda, Policlinico, San Miniato, Stellino, Montarioso. Valori in euro al mq al mese: tipologia A da 2,50 a 9,76, B da 2,50 a 8,29, C da 2,50 a 7,32.",
+    "fasce": [
+     [
+      2.5,
+      7.32
+     ],
+     [
+      2.5,
+      8.29
+     ],
+     [
+      2.5,
+      8.29
+     ],
+     [
+      2.5,
+      9.76
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Periferica",
+    "nota": "Bottega Nuova, Malafrasca, Ponte a Bozzone, Vico d'Arbia, Pieve al Bozzone, Presciano, Taverne d'Arbia, Ruffolo, l'Abbadia, Isola d'Arbia, Costafabbri, Costalpino, Volte Basse, S. Andrea, S. Rocco a Pilli, Terrenzano, Montalbuccio, Casciano delle Masse. Valori in euro al mq al mese: tipologia A da 2,50 a 8,68, B da 2,50 a 5,71, C da 2,50 a 5,04.",
+    "fasce": [
+     [
+      2.5,
+      5.04
+     ],
+     [
+      2.5,
+      5.71
+     ],
+     [
+      2.5,
+      5.71
+     ],
+     [
+      2.5,
+      8.68
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "C",
+    "B",
+    "B",
+    "A"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 1,
+      "n": 1
+     }
+    ],
+    [
+     {
+      "da": 4,
+      "a": 7,
+      "n": 3
+     }
+    ],
+    [
+     {
+      "da": 0,
+      "a": 0,
+      "n": 1
+     },
+     {
+      "da": 2,
+      "a": 2,
+      "n": 1
+     },
+     {
+      "da": 3,
+      "a": 4,
+      "n": 1
+     }
+    ]
+   ],
+   "conta": {
+    "da": 0,
+    "a": 7
+   },
+   "nota": "Tipologia A: lavori finiti da non più di 30 anni, bagno completo e cantina, garage o posto auto (nel centro storico non servono). Tipologia C: lavori finiti da più di 50 anni e almeno due mancanze fra riscaldamento, cantina/garage/posto auto, bagno dentro l'alloggio e infissi efficienti. Tutti gli altri alloggi sono di tipologia B (art. 8).",
+   "nota_pdf": "A: lavori ultimati entro 30 anni, bagno completo con 4 apparecchi e finestra o aerazione, cantina/garage/posto auto (non necessari nel centro storico). C: lavori ultimati oltre 50 anni e almeno due mancanze fra riscaldamento, garage/posto auto/cantina, bagno nell'alloggio, infissi efficienti. B: tutti gli altri (art. 8)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Ultimi lavori importanti: costruzione, ristrutturazione, risanamento o manutenzione straordinaria con impianti elettrico, idrico e sanitario rinnovati (fa fede la fine lavori o l'abitabilità). Se sono più vecchi di 50 anni, non spuntare nulla"
+   },
+   {
+    "da": 2,
+    "titolo": "Dotazioni dell'alloggio"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Lavori finiti da non più di 30 anni"
+   },
+   {
+    "testo": "Lavori finiti da più di 30 anni, ma non più di 50"
+   },
+   {
+    "testo": "Bagno completo con almeno 4 sanitari (wc, bidet, doccia o vasca, lavandino), con finestra o aerazione forzata"
+   },
+   {
+    "testo": "Alloggio nel centro storico, dentro le mura (per la tipologia A cantina, garage o posto auto non servono)",
+    "zone": [
+     "1"
+    ]
+   },
+   {
+    "testo": "Cantina, garage o posto auto"
+   },
+   {
+    "testo": "Impianto di riscaldamento"
+   },
+   {
+    "testo": "Bagno dentro l'alloggio, anche incompleto"
+   },
+   {
+    "testo": "Infissi efficienti, che chiudono bene e riparano da pioggia e vento"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie interna utile (calpestabile, senza muri e parti alte meno di 1,70 m)",
+   "correzioni_totale": [
+    {
+     "fino": 60,
+     "perc": 25,
+     "limite": 60
+    }
+   ],
+   "etichetta_correzione": "convenzionale",
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Autorimessa singola o box auto (50%)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "lastrico_attico",
+     "testo": "Lastrici solari in uso esclusivo all'attico (25% fino ai mq dell'alloggio, 5% oltre)",
+     "coeff": 0.25,
+     "scaglione": [
+      "base",
+      0.25,
+      0.05
+     ]
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto in autorimessa comune coperta (30%)",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto in spazi comuni scoperti (20%)",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, lastrici solari non all'attico, cantine, soffitte (30%)",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "corte",
+     "testo": "Corti e giardini in uso esclusivo (20%, al massimo i mq dell'alloggio)",
+     "coeff": 0.2,
+     "tetto": "base"
+    },
+    {
+     "chiave": "condominio",
+     "testo": "Area scoperta condominiale (2%)",
+     "coeff": 0.02
+    },
+    {
+     "chiave": "vani_bassi",
+     "testo": "Vani con altezza utile sotto 1,70 m (si toglie il 30%)",
+     "coeff": -0.3
+    }
+   ],
+   "nota": "Misura la superficie calpestabile, senza i muri. Se la superficie convenzionale arriva a 60 mq, si aumenta del 25%, ma senza superare 60 mq (art. 6). Per i vani con altezza sotto 1,70 m il modulo di attestazione toglie il 30% della loro superficie."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "testo": "Arredo (art. 9)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "arredo completo (mobili in ogni stanza affittata)",
+      "perc": 15
+     },
+     {
+      "valore": "parziale",
+      "testo": "arredo parziale",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "arredo_stud",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Arredo per studenti (art. 16). Completo vuol dire: in camera letto, armadio, scrivania e sedia, lampada da tavolo, libreria; in cucina mobili, tavolo e sedie, angolo cottura; lavatrice, lavastoviglie, attrezzature da cucina, televisore; bagno con servizi",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "arredo completo",
+      "perc": 25
+     },
+     {
+      "valore": "parziale",
+      "testo": "arredo parziale",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "pregio",
+    "tipo": "scelta",
+    "testo": "Immobile recente o di interesse storico (art. 9). Recente vuol dire che ha tutte e tre queste cose: lavori finiti da non più di 10 anni con impianti elettrico, idrico e sanitario rinnovati; classe energetica da A a E; ascensore, se l'alloggio è dal 3° piano in su",
+    "nome": "immobile",
+    "nessuna": "nessuno dei due",
+    "opzioni": [
+     {
+      "valore": "recente",
+      "testo": "recente (lavori entro 10 anni, classe A-E, ascensore dal 3° piano)",
+      "perc": 15
+     },
+     {
+      "valore": "storico",
+      "testo": "vincolato di interesse storico-artistico",
+      "perc": 15
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano e si applicano sul canone base (art. 11): arredo completo +15% o parziale +10% (studenti +25% o +15%), immobile recente o di interesse storico +15%, durata 4+2 anni +4%, 5+2 anni +5%, 6+2 anni o più +10%. I contratti transitori non hanno aumenti per la durata.",
+  "durata": {
+   "4": 4,
+   "5": 5,
+   "6": 10
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Se affitti solo alcune stanze: il canone dell'intero alloggio si divide per la somma delle superfici delle stanze in uso esclusivo e si moltiplica per la superficie di ogni stanza; l'aumento per l'arredo non si applica alle singole stanze (art. 12)."
+   },
+   {
+    "testo": "Canone minimo e massimo arrotondati all'euro, per eccesso da 50 centesimi (art. 20)."
+   }
+  ],
+  "arrotonda_euro": true
+ },
+ "pdf": {
+  "allegato": "",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale sulle locazioni abitative applicabile nel Comune di Siena, sottoscritto il 07/04/2026 e depositato presso il Comune di Siena il 14/04/2026, prot. n. 32073 (in vigore dal 01/05/2026)",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "Tipologia dell'immobile (art. 8)",
+  "etichetta_conteggio": "ELEMENTI PRESENTI",
+  "dichiarazione": "Il dichiarante, nella qualità di locatore/conduttore, dichiara che i dati sopra comunicati sono stati da lui rilevati e verificati. Pertanto, riconoscendo che la presente Attestazione è rilasciata, secondo quanto previsto dal D.M. 16/1/2017, sulla base di quanto dichiarato, solleva espressamente l'Organizzazione da qualsiasi responsabilità derivante da errori, omissioni o asserzioni non veritiere relative ai dati dichiarati nel presente atto.",
+  "firme": [
+   "Il dichiarante"
+  ],
+  "titolo_attestazione": "ATTESTA",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Siena, come sopra rappresentata, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Siena, depositato in data 14/04/2026 (prot. n. 32073).",
+   "Siena, ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "L'Organizzazione"
+  ],
+  "nota_zone": "Le zone sono descritte nell'art. 4 dell'accordo: centro storico (dentro le mura), zona semicentrale (fra le mura e l'immediato suburbio) e zona periferica (frazioni e località esterne)."
+ }
+}

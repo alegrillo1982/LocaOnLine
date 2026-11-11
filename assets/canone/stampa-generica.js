@@ -136,7 +136,7 @@
     if (!r.maggiorazioni.length && !(r.importi || []).length) { spazio(12); tx("nessuna", SX, a, { c: DATO }); a += 12; }
     for (const im of r.importi || []) { spazio(12); tx(`${im.nome} (quota fissa mensile)`, SX, a, { sz: 8.8, c: DATO }); dx(`+ € ${v(im.importo)}`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
     for (const m of r.maggiorazioni) { spazio(12); tx(m.nome, SX, a, { sz: 8.8, c: DATO }); dx(`${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
-    if (r.maggiorazioni.length > 1) { spazio(12); tx(R.tetto_zona ? "totale (fino al massimo della zona; durata e transitorio anche oltre)" : r.maggiorazioni.some((m) => m.dopo) || R.combinazione === "prodotto" ? "totale (in parte applicate una sull'altra)" : "totale (sommate)", SX, a, { sz: 8.8 }); dx(`${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
+    if (r.maggiorazioni.length > 1) { spazio(12); tx(R.tetto_zona ? P.etichetta_totale_tetto || "totale (fino al massimo della zona; durata e transitorio anche oltre)" : r.maggiorazioni.some((m) => m.dopo) || R.combinazione === "prodotto" ? "totale (in parte applicate una sull'altra)" : "totale (sommate)", SX, a, { sz: 8.8 }); dx(`${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
 
     sezione("CALCOLO DEL CANONE");
     const mt = R.tabella_per === "scelta" ? (R.maggiorazioni || []).find((m) => m.chiave === R.tabella_chiave) : null;

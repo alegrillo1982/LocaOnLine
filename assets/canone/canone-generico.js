@@ -56,6 +56,10 @@
     } else if (c && c.proporzionale) {
       base = U + U * (c.fino - U) / c.fino;
       note.push(`Da ${c.da} a ${c.fino} mq: aumento proporzionale, superficie x (${c.fino} - mq) / ${c.fino}.`);
+    } else if (c && c.perc < 0) {
+      // es. Viterbo: gli alloggi grandi si riducono (solo l'appartamento), ma non sotto un minimo di mq
+      base = Math.max(c.minimo ?? 0, Math.min(Uc, Uc * (1 + c.perc / 100)));
+      if (base < Uc) note.push(`Superficie dell'appartamento ridotta del ${Math.abs(c.perc)}%${c.minimo ? ` (non sotto ${virgola(c.minimo, 0)} mq)` : ""}.`);
     } else if (c) {
       base = Math.max(Uc, Math.min(Uc * (1 + c.perc / 100), c.tetto ?? Infinity));
       if (base > Uc) note.push(`Superficie ${c.perc > 0 ? "aumentata" : "ridotta"} del ${Math.abs(c.perc)}%${c.tetto ? ` (al massimo ${virgola(c.tetto)} mq)` : ""}.`);
@@ -190,7 +194,9 @@
       return { n: 0, i, nome: F.nomi[i], avviso: val ? "" : F.avviso || "" };
     }
     const [da, a] = F.conta ? [F.conta.da, F.conta.a] : [0, E.length - 1];
-    const n = F.criterio === "punti" ? E.reduce((t, e, i) => t + (i >= da && i <= a ? puntiDi(e, el[i]) : 0), 0) : E.filter((e, i) => i >= da && i <= a && presente(e, el[i])).length;
+    let n = F.criterio === "punti" ? E.reduce((t, e, i) => t + (i >= da && i <= a ? puntiDi(e, el[i]) : 0), 0) : E.filter((e, i) => i >= da && i <= a && presente(e, el[i])).length;
+    // es. Viterbo: elementi alternativi (ascensore / attico con ascensore) contano una volta sola
+    if (F.criterio !== "punti") for (const g of F.non_cumulabili || []) n -= Math.max(0, g.filter((k) => presente(E[k], el[k])).length - 1);
     // es. Rimini: soglie diverse per gli alloggi piccoli (superficie totale fino a soglie_sotto.mq)
     const piccolo = F.soglie_sotto && ((superficie(accordo, s) || {}).totale ?? Infinity) <= F.soglie_sotto.mq;
     const soglie = (F.soglie_zona && zona && F.soglie_zona[zona.codice]) || (piccolo ? F.soglie_sotto.soglie : null) || F.soglie;
@@ -282,7 +288,10 @@
       }
     }
     const z = r.zona ? r.zona.codice : "";
-    const add = (nome, perc, dopo, solo_base, solo_max, extra) => { if (perc) r.maggiorazioni.push({ nome, perc, dopo: !!dopo, ...(solo_base ? { solo_base: true } : {}), ...(solo_max ? { solo_max: true } : {}), ...(extra || {}) }); };
+    // es. Pordenone: con solo_massimo, alcune maggiorazioni (A/1, A/8, A/9) aumentano anche il minimo
+    const extraM = (m) => (m.sulle_fasce || m.minimo ? { ...(m.sulle_fasce ? { sulle_fasce: true } : {}), ...(m.minimo ? { minimo: true } : {}) } : null);
+    const fonti = []; let corrente = null;   // la chiave da cui viene ogni maggiorazione (per tetto_somma)
+    const add = (nome, perc, dopo, solo_base, solo_max, extra) => { if (perc) fonti.push(corrente), r.maggiorazioni.push({ nome, perc, dopo: !!dopo, ...(solo_base ? { solo_base: true } : {}), ...(solo_max ? { solo_max: true } : {}), ...(extra || {}) }); };
     const sup = superficie(accordo, s);
     r.superficie = sup;
     if (sup) avvisi.push(...sup.note); else avvisi.push("Inserisci la superficie.");
@@ -301,18 +310,20 @@
       // es. Pistoia: la maggiorazione vale solo da una certa superficie in su (non cumulabile con quella dei piccoli)
       if (m.superficie && sup) { const mq = m.superficie.su === "base" ? sup.righe[0].mq : sup.totale; if ((m.superficie.da !== undefined && mq < m.superficie.da) || (m.superficie.a !== undefined && mq > m.superficie.a)) continue; }
       const val = (s.maggiorazioni_scelte || {})[m.chiave];
+      corrente = m.chiave;
       if (m.tipo === "auto") { add(m.nome || m.testo, m.perc, m.dopo); continue; }
       if (m.tipo === "scelta") { const o = (m.opzioni || []).find((x) => x.valore === val);
         // es. Ferrara: quota fissa mensile per zona (garage), da sommare al canone
         if (o && o.importo_zona && o.importo_zona[z]) (r.importi = r.importi || []).push({ nome: `${m.nome || m.testo}: ${o.testo}`, importo: o.importo_zona[z] });
-        if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc, m.dopo, m.solo_base, m.solo_max, m.sulle_fasce ? { sulle_fasce: true } : null); }
+        if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc, m.dopo, m.solo_base, m.solo_max, extraM(m)); }
       else if (val) {
         // es. provincia di Roma: elettrodomestici e APE in classe A o B insieme al massimo +7% (qui +2% in più)
         const SE = m.se, M2 = SE && (R.maggiorazioni || []).find((x) => x.chiave === SE.chiave);
         const conAltra = SE && (!M2 || !M2.contratti || M2.contratti.includes(tipo)) && SE.valori.includes((s.maggiorazioni_scelte || {})[SE.chiave]);
-        add(conAltra ? `${m.nome || m.testo} (${SE.testo})` : m.nome || m.testo, conAltra ? SE.perc : m.perc, m.dopo, m.solo_base, m.solo_max, m.sulle_fasce ? { sulle_fasce: true } : null);
+        add(conAltra ? `${m.nome || m.testo} (${SE.testo})` : m.nome || m.testo, conAltra ? SE.perc : m.perc, m.dopo, m.solo_base, m.solo_max, extraM(m));
       }
     }
+    corrente = null;
     if (R.alternativa) {
       const A = R.alternativa, el = s.elementi || [];
       const n = R.elementi.filter((e, i) => presente(e, el[i])).length;
@@ -351,10 +362,18 @@
       if (si && tot) add(`arredo (${virgola(si, 1)} su ${virgola(tot, 1)} punti)`, Math.round(si / tot * A.perc * 100) / 100);
     }
     const DU = R.durata_piccoli && sup && sup.righe[0].mq < R.durata_piccoli.soglia ? R.durata_piccoli : R.durata;
+    corrente = "durata";
     if (tipo === "agevolato" && DU) { const n0 = r.maggiorazioni.length; add(`durata ${s.durata_anni} + 2 anni`, DU[String(anni)] || 0, R.durata_dopo);
       // es. Treviso: con solo_massimo, la durata aumenta comunque anche il minimo
       if (R.durata_anche_minimo && r.maggiorazioni.length > n0) r.maggiorazioni[n0].minimo = true; }
+    corrente = "contratto";
     if (R.contratto && R.contratto[tipo]) { add(tipo === "studenti" ? "contratto per studenti" : "contratto transitorio", R.contratto[tipo], R.durata_dopo); if (R.contratto.anche_minimo) r.maggiorazioni[r.maggiorazioni.length - 1].minimo = true; }
+    corrente = null;
+    // es. Trapani: alcune maggiorazioni (con la durata) insieme non superano una percentuale
+    for (const T of R.tetto_somma || []) {
+      const somma = r.maggiorazioni.reduce((tt, m, k) => tt + (T.chiavi.includes(fonti[k]) || (T.durata && fonti[k] === "durata") ? m.perc : 0), 0);
+      if (somma > T.perc) add(T.testo, Math.round((T.perc - somma) * 100) / 100);
+    }
     // es. Latina: alcune maggiorazioni valgono solo per la superficie dell'abitazione, non per le pertinenze
     const sb = r.maggiorazioni.filter((m) => m.solo_base && !m.solo_max);
     r.fattore_base = R.combinazione === "prodotto" ? sb.reduce((k, m) => k * (1 + m.perc / 100), 1) : 1 + sb.reduce((t, m) => t + m.perc, 0) / 100;
@@ -452,6 +471,8 @@
       r.canone_intero = cent(r.canone_intero + tot); r.canone = cent(r.canone + tot);
       avvisi.push(r.importi.map((x) => `${x.nome}: + € ${virgola(x.importo)} al mese`).join("; ") + (R.importo_solo_massimo ? " (fino a questa quota, compresa nel canone massimo)." : " (quota fissa compresa nel canone)."));
     }
+    // es. Siena: canone minimo e massimo arrotondati all'euro (da 0,50 per eccesso)
+    if (R.arrotonda_euro && r.canone_massimo !== null) for (const k of ["canone_minimo", "canone_massimo", "canone_intero", "canone"]) if (r[k] !== null) r[k] = Math.round(r[k]);
     const pattuito = numero(s.canone_mensile);
     if (pattuito !== null) {
       r.canone_pattuito = pattuito;
