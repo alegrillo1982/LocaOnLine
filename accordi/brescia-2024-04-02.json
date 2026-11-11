@@ -1,0 +1,467 @@
+{
+ "accordo": {
+  "codice": "brescia-2024-04-02",
+  "modello": "brescia-2024",
+  "comune": "Brescia",
+  "provincia": "BS",
+  "titolo": "Accordo territoriale per il Comune di Brescia",
+  "data": "2024-04-02",
+  "data_testo": "2 aprile 2024",
+  "deposito": "Comune di Brescia",
+  "deposito_data": "30.05.2024",
+  "protocollo": "180152/24",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2027-05-30",
+  "firmatari_proprieta": [
+   "APEBS (Confedilizia)",
+   "A.P.P.C.",
+   "A.S.P.P.I.",
+   "CONFAPPI",
+   "UNIONCASA",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "CONIA",
+   "FEDER.CASA Lombardia",
+   "SICET",
+   "SUNIA",
+   "UNIAT"
+  ],
+  "nota": "Firmato il 02/04/2024, depositato al Comune il 30/05/2024 (prot. 180152/24), durata tre anni. Con l'appendice del 18/09/2026 la tabella per gli A/3 è stata eliminata: per tutte le categorie vale la tabella A/2 (allegato 2). Valori annui al mq.",
+  "fonte": "Pagina del Comune di Brescia \"Accordo contratti a canone concordato\" (accordo, appendice 18/09/2026, stradario)."
+ },
+ "esempio_zona": "la zona dallo stradario (allegato A_1)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro",
+    "nota": "Zona 1 (Centro): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      33.1,
+      72.5
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Panoramica",
+    "nota": "Zona 2 (Panoramica): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      53.1,
+      92.7
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Via Crocifissa",
+    "nota": "Zona 3 (Via Crocifissa): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      47.4,
+      71.1
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Via Veneto",
+    "nota": "Zona 4 (Via Veneto): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      49.8,
+      72.5
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Zona 5 - Brescia Due",
+    "nota": "Zona 5 (Brescia Due): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      46.0,
+      70.1
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "Zona 6 - Viale Piave",
+    "nota": "Zona 6 (Viale Piave): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      38.9,
+      69.2
+     ]
+    ]
+   },
+   {
+    "codice": "7",
+    "nome": "Zona 7 - Quartiere Abba/S. Anna",
+    "nota": "Zona 7 (Quartiere Abba/S. Anna): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      36.5,
+      61.2
+     ]
+    ]
+   },
+   {
+    "codice": "8",
+    "nome": "Zona 8 - Fiumicello",
+    "nota": "Zona 8 (Fiumicello): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      40.5,
+      61.3
+     ]
+    ]
+   },
+   {
+    "codice": "9",
+    "nome": "Zona 9 - Noce/Folzano",
+    "nota": "Zona 9 (Noce/Folzano): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      32.8,
+      56.9
+     ]
+    ]
+   },
+   {
+    "codice": "10",
+    "nome": "Zona 10 - Villaggio Prealpino",
+    "nota": "Zona 10 (Villaggio Prealpino): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      43.0,
+      59.0
+     ]
+    ]
+   },
+   {
+    "codice": "11",
+    "nome": "Zona 11 - Villaggio Badia/Violino",
+    "nota": "Zona 11 (Villaggio Badia/Violino): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      30.5,
+      59.9
+     ]
+    ]
+   },
+   {
+    "codice": "12",
+    "nome": "Zona 12 - S. Eufemia",
+    "nota": "Zona 12 (S. Eufemia): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      43.1,
+      62.7
+     ]
+    ]
+   },
+   {
+    "codice": "13",
+    "nome": "Zona 13 - San Polo",
+    "nota": "Zona 13 (San Polo): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      37.6,
+      61.9
+     ]
+    ]
+   },
+   {
+    "codice": "14",
+    "nome": "Zona 14 - Casazza",
+    "nota": "Zona 14 (Casazza): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      41.7,
+      58.6
+     ]
+    ]
+   },
+   {
+    "codice": "15",
+    "nome": "Zona 15 - San Polino (zone 15-20)",
+    "nota": "Zona 15 (San Polino (zone 15-20)): la via si cerca nello stradario del Comune (allegato A_1, 742 pagine). Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      37.2,
+      57.4
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "unica"
+   ],
+   "soglie": [],
+   "conta": {
+    "da": 0,
+    "a": 6
+   }
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi per il valore massimo (allegato 4, lett. a): servono tutti"
+   },
+   {
+    "da": 7,
+    "titolo": "Elementi che portano al valore minimo (punto A.8)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Impianto di riscaldamento (autonomo o centralizzato)"
+   },
+   {
+    "testo": "Box o posto auto"
+   },
+   {
+    "testo": "Cantina o soffitta/solaio a uso esclusivo e agevolmente fruibile"
+   },
+   {
+    "testo": "Giardino privato o condominiale, terrazza condominiale attrezzata o area di parcheggio per bici e motocicli"
+   },
+   {
+    "testo": "Immobile ultimato, ristrutturato o sottoposto a manutenzione costante negli ultimi 10 anni"
+   },
+   {
+    "testo": "Classe energetica non inferiore alla D (APE)"
+   },
+   {
+    "testo": "Ascensore (per edifici oltre due piani fuori terra e unità oltre il secondo piano)"
+   },
+   {
+    "testo": "Stabile e alloggio con ristrutturazione più vecchia di 30 anni, o senza alcuna manutenzione in questo periodo"
+   },
+   {
+    "testo": "Manca l'impianto di riscaldamento"
+   },
+   {
+    "testo": "Manca l'acqua corrente"
+   },
+   {
+    "testo": "Mancano il bagno e i servizi igienici"
+   }
+  ],
+  "solo_minimo": {
+   "da": 7,
+   "a": 10,
+   "avviso": "Con uno degli elementi del punto A.8 (alloggio non mantenuto da 30 anni, senza riscaldamento, acqua o bagno) si applica il valore minimo della zona."
+  },
+  "avvisi": [
+   {
+    "testo": "Il valore massimo spetta solo con tutti e 7 gli elementi della lettera a): senza, il canone va concordato sotto il massimo.",
+    "fascia": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile riscaldata (dall'APE), aumentata del 12,5%",
+   "coeff_base": 1.125,
+   "correzioni": [
+    {
+     "fino": 60,
+     "incluso": true,
+     "perc": 20,
+     "tetto": 72.59
+    },
+    {
+     "fino": 65.99,
+     "incluso": true,
+     "perc": 10,
+     "tetto": 72.59
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Autorimessa a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto in autorimessa di uso comune",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazze, cantine e solai",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "giardino",
+     "testo": "Giardino o cortile esclusivo (solo se oltre 10 mq)",
+     "coeff": 0.1,
+     "oltre_mq": 10
+    }
+   ],
+   "nota": "La superficie utile si aumenta del 12,5% (le pertinenze no). Poi, fino a 60 mq +20%, fino a 65,99 mq +10%, senza superare 72,59 mq."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "ammobiliato",
+    "tipo": "scelta",
+    "testo": "Arredamento (nuovo o in ottime condizioni, elettrodomestici funzionanti)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato (cucina e almeno un altro vano)",
+      "perc": 10
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 20
+     }
+    ]
+   },
+   {
+    "chiave": "classe_a",
+    "tipo": "scelta",
+    "testo": "Classe energetica A",
+    "nome": "classe energetica",
+    "nessuna": "inferiore alla A1",
+    "opzioni": [
+     {
+      "valore": "A1",
+      "testo": "A1",
+      "perc": 2.5
+     },
+     {
+      "valore": "A2",
+      "testo": "A2",
+      "perc": 5
+     },
+     {
+      "valore": "A3",
+      "testo": "A3",
+      "perc": 7.5
+     },
+     {
+      "valore": "A4",
+      "testo": "A4",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "lavori",
+    "tipo": "scelta",
+    "testo": "Costruzione o ristrutturazione",
+    "nome": "lavori",
+    "nessuna": "nessuna delle seguenti",
+    "opzioni": [
+     {
+      "valore": "rist2011",
+      "testo": "completamente ristrutturato dopo il 2011, anche nell'isolamento, in classe D o superiore",
+      "perc": 10
+     },
+     {
+      "valore": "nuovo2011",
+      "testo": "costruito dopo il 2011 con isolamento in classe D o superiore",
+      "perc": 10
+     },
+     {
+      "valore": "rist1968",
+      "testo": "completamente ristrutturato dopo il 1968, senza efficientamento",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "metro",
+    "tipo": "spunta",
+    "testo": "Fermata della metropolitana entro 600 metri a piedi",
+    "nome": "vicinanza alla metropolitana",
+    "perc": 5
+   },
+   {
+    "chiave": "clima",
+    "tipo": "spunta",
+    "testo": "Condizionamento fisso o pompa di calore in almeno metà dei vani",
+    "nome": "condizionamento",
+    "perc": 2
+   },
+   {
+    "chiave": "barriere",
+    "tipo": "spunta",
+    "testo": "Stabile senza barriere architettoniche (montascale funzionante, nessuna barriera)",
+    "nome": "superamento barriere",
+    "perc": 2
+   },
+   {
+    "chiave": "solare",
+    "tipo": "spunta",
+    "testo": "Fotovoltaico o solare termico che copre l'acqua calda (solo se non ristrutturato/costruito dopo il 2011)",
+    "nome": "fotovoltaico o solare",
+    "perc": 1
+   },
+   {
+    "chiave": "sport",
+    "tipo": "spunta",
+    "testo": "Impianti sportivi, piscina o palestra",
+    "nome": "impianti sportivi",
+    "perc": 5
+   },
+   {
+    "chiave": "vincolato",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato (art. 1, c. 2, lett. a, L. 431/98)",
+    "nome": "immobile vincolato",
+    "perc": 20,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Le maggiorazioni sono quelle massime dell'allegato 4. In casi di disagio del conduttore, di immobile in cattive condizioni o di emergenza le parti possono scendere fino al 30% sotto il minimo, scrivendolo nel contratto (punto H.2).",
+  "durata": {
+   "4": 3,
+   "5": 5.5,
+   "6": 8
+  },
+  "combinazione": "somma"
+ },
+ "pdf": {
+  "allegato": "Allegato 5",
+  "titolo": "Attestazione di rispondenza ex D.M. 16 gennaio 2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Brescia, depositato il 30/05/2024 (prot. 180152/24), con l'appendice del 18/09/2026",
+  "titolo_elementi": "Elementi oggettivi per la determinazione della fascia di oscillazione",
+  "dichiarazione": "Il sottoscritto dichiara che i dati forniti corrispondono allo stato di fatto e di diritto dell'immobile.",
+  "firme": [],
+  "attestazione": [
+   "TUTTO CIÒ PREMESSO, l'Organizzazione ……………………………, come sopra rappresentata, sulla base degli elementi oggettivi sopra dichiarati e sotto la propria responsabilità, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'accordo territoriale vigente per il Comune di Brescia depositato in data 30/05/2024."
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "firme_attestazione": [
+   "Il/la dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dallo stradario del Comune (allegato A_1)."
+ }
+}

@@ -92,7 +92,7 @@
       let t = vo.testo; while (largo(t, reg, 8.6) > 300) t = t.slice(0, -1);
       tx(t, SX, a, { sz: 8.6 });
       const k = rr ? rr.coeff : vo.coeff;
-      if (k !== undefined) tx(v(k, 2), 405, a, { sz: 8.6 });
+      if (k !== undefined) tx(v(k, Math.round(k * 1000) % 10 ? 3 : 2), 405, a, { sz: 8.6 });
       if (rr && rr.mq) { dx(v(rr.mq), 385, a, { sz: 8.6, c: DATO }); dx(v(rr.convenzionale), DX, a, { sz: 8.6, c: DATO }); }
       a += 11.5;
     }

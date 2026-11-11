@@ -464,6 +464,53 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fverona-2017-06-08-accordo.pdf?alt=media&token=0524cf70-74d9-4fb6-a4a2-78ff12d6762c"
     }
    ]
+  },
+  {
+   "comune": "Brescia",
+   "provincia": "BS",
+   "accordo": "brescia-2024-04-02",
+   "sottoscritto": "2 aprile 2024",
+   "depositato": "30 maggio 2024",
+   "zone": 15,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrescia-2024-04-02-accordo.pdf?alt=media&token=b588d1f1-aa6e-427a-a126-bf4869af56d9",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrescia-2024-04-02-accordo.pdf?alt=media&token=b588d1f1-aa6e-427a-a126-bf4869af56d9"
+    },
+    {
+     "nome": "Allegato a1 stradario",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrescia-2024-04-02-allegato-a1-stradario.pdf?alt=media&token=0b4b15a6-56bb-424b-91e4-9e777a477eed"
+    },
+    {
+     "nome": "Appendice 2026 09 18",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrescia-2024-04-02-appendice-2026-09-18.pdf?alt=media&token=151386be-e5ac-4d3e-9ad4-04524efb9def"
+    },
+    {
+     "nome": "Associazioni proprietari",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrescia-2024-04-02-associazioni-proprietari.pdf?alt=media&token=539f16a1-c9dc-41b7-bc4f-d333bd47f90d"
+    },
+    {
+     "nome": "Contratto tipo concordato",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrescia-2024-04-02-contratto-tipo-concordato.pdf?alt=media&token=96378e3c-5ebd-4364-8506-38625420746f"
+    },
+    {
+     "nome": "Contratto tipo studenti universitari",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrescia-2024-04-02-contratto-tipo-studenti-universitari.pdf?alt=media&token=c3c557ba-5618-455a-83a3-29bcf200ca47"
+    },
+    {
+     "nome": "Contratto tipo transitorio",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrescia-2024-04-02-contratto-tipo-transitorio.pdf?alt=media&token=b6b05110-8bcb-4cb2-9f73-21c8f515a816"
+    },
+    {
+     "nome": "Regolamento attuativo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrescia-2024-04-02-regolamento-attuativo.pdf?alt=media&token=d27e4581-79a1-40a7-add6-72ae36033bfb"
+    },
+    {
+     "nome": "Sindacati inquilini",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrescia-2024-04-02-sindacati-inquilini.pdf?alt=media&token=7ef8c857-f3dc-40b5-8e67-e04eb21c31dc"
+    }
+   ]
   }
  ]
 }

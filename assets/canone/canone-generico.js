@@ -46,8 +46,10 @@
     const U = numero(sup.base);
     if (U === null) return null;
     const note = [];
-    let base = U;
-    const c = (R.correzioni || []).find((x) => (x.incluso ? U <= x.fino : U < x.fino) && (x.da === undefined || U >= x.da) && (!x.zone || x.zone.includes(z)));
+    // es. Brescia: la superficie utile si aumenta prima (12,5%) e le correzioni guardano il risultato
+    const Uc = R.coeff_base ? cent(U * R.coeff_base) : U;
+    let base = Uc;
+    const c = (R.correzioni || []).find((x) => (x.incluso ? Uc <= x.fino : Uc < x.fino) && (x.da === undefined || Uc >= x.da) && (!x.zone || x.zone.includes(z)));
     if (c && c.imposta !== undefined) {
       base = Math.max(U, c.imposta);
       note.push(`Alloggio da ${virgola(c.da, 0)} a ${virgola(c.fino, 0)} mq: superficie portata a ${virgola(c.imposta, 0)} mq.`);
@@ -55,8 +57,8 @@
       base = U + U * (c.fino - U) / c.fino;
       note.push(`Da ${c.da} a ${c.fino} mq: aumento proporzionale, superficie x (${c.fino} - mq) / ${c.fino}.`);
     } else if (c) {
-      base = Math.max(U, Math.min(U * (1 + c.perc / 100), c.tetto ?? Infinity));
-      if (base > U) note.push(`Superficie ${c.perc > 0 ? "aumentata" : "ridotta"} del ${Math.abs(c.perc)}%${c.tetto ? ` (al massimo ${virgola(c.tetto)} mq)` : ""}.`);
+      base = Math.max(Uc, Math.min(Uc * (1 + c.perc / 100), c.tetto ?? Infinity));
+      if (base > Uc) note.push(`Superficie ${c.perc > 0 ? "aumentata" : "ridotta"} del ${Math.abs(c.perc)}%${c.tetto ? ` (al massimo ${virgola(c.tetto)} mq)` : ""}.`);
     } else if (R.grandi && U > R.grandi.oltre && R.grandi.riduzione) {
       base = Math.max(R.grandi.oltre, U * (1 - R.grandi.riduzione / 100));
       note.push(`Oltre ${R.grandi.oltre} mq la superficie si riduce del ${R.grandi.riduzione}% (non sotto ${R.grandi.oltre} mq).`);
@@ -64,12 +66,13 @@
       base = R.grandi.oltre + (U - R.grandi.oltre) * R.grandi.perc / 100;
       note.push(`Oltre ${R.grandi.oltre} mq la parte eccedente conta il ${R.grandi.perc}%.`);
     }
-    const righe = [{ chiave: "base", mq: U, coeff: 1, convenzionale: cent(base) }];
+    const righe = [{ chiave: "base", mq: U, coeff: R.coeff_base || 1, convenzionale: cent(base) }];
     for (const v of R.voci || []) {
       const mq = numero(sup[v.chiave]) || 0;
       const k = v.coeff_zona && v.coeff_zona[z] !== undefined ? v.coeff_zona[z] : v.coeff;
       const lim = v.scaglione && v.scaglione[0] === "base" ? U : v.scaglione && v.scaglione[0];
       let conv = v.scaglione ? Math.min(mq, lim) * v.scaglione[1] + Math.max(0, mq - lim) * v.scaglione[2] : mq * k;
+      if (v.oltre_mq !== undefined && mq <= v.oltre_mq) conv = 0;
       if (v.tetto === "base" && conv > U) { conv = U; note.push(`${v.testo}: al massimo la superficie dell'alloggio.`); }
       righe.push({ chiave: v.chiave, mq, coeff: k, convenzionale: cent(conv) });
     }
@@ -227,6 +230,11 @@
       : 1 + prima.reduce((t, m) => t + m.perc, 0) / 100) * dopo.reduce((k, m) => k * (1 + m.perc / 100), 1);
     const kMin = r.maggiorazioni.filter((m) => m.minimo).reduce((k, m) => k * (1 + m.perc / 100), 1);
     if (r.base) r.valori = r.base.map((x, i) => (R.solo_massimo && i === 0 ? Math.round(x * kMin * 1000) / 1000 : Math.round(x * r.fattore * 1000) / 1000));
+    // es. Brescia: con uno di questi elementi si applica il solo valore minimo
+    if (R.solo_minimo && r.valori && R.elementi.some((e, k) => k >= R.solo_minimo.da && k <= R.solo_minimo.a && presente(e, (s.elementi || [])[k]))) {
+      r.valori = [r.valori[0], r.valori[0]];
+      avvisi.push(R.solo_minimo.avviso);
+    }
     if (r.valori) {
       r.valore_proposto = r.valori[1];
       const scritto = numero(s.valore_mq);

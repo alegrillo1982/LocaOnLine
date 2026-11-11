@@ -116,7 +116,7 @@
     $("gen-sup-nota").textContent = (R().superficie || {}).nota || "";
     $("gen-zona-nota").textContent = r.zona ? (r.zona.nota || "") : ((accordo.pdf && accordo.pdf.nota_zone) || "");
     $("gen-soglie").textContent = R().fasce.gruppi ? (R().fasce.nota || "") : `Fasce${r.zona ? ` (${r.zona.nome})` : ""}: ${soglieTesto(r.zona)}.`;
-    $("gen-conteggio").textContent = r.fascia.prevalente ? `· livello ${r.fascia.nome.toLowerCase()}` : R().fasce.criterio === "scelta" ? `· ${$("gen-elementi").querySelectorAll("input:checked").length} su ${R().elementi.length}` : R().fasce.criterio === "punti" ? `· ${virgolaN(r.punti)} punti` : R().fasce.conta ? `· ${r.punti} base${r.premium !== undefined ? `, ${r.premium} premium` : ""}` : `· ${r.punti} su ${R().elementi.length}`;
+    $("gen-conteggio").textContent = r.fascia.prevalente ? `· livello ${r.fascia.nome.toLowerCase()}` : R().fasce.criterio === "scelta" ? `· ${$("gen-elementi").querySelectorAll("input:checked").length} su ${R().elementi.length}` : R().fasce.criterio === "punti" ? `· ${virgolaN(r.punti)} punti` : R().fasce.conta ? `· ${r.punti}${r.premium !== undefined ? ` base, ${r.premium} premium` : ` su ${R().fasce.conta.a - R().fasce.conta.da + 1}`}` : `· ${r.punti} su ${R().elementi.length}`;
     $("gen-esito-fascia").textContent = r.base
       ? `${r.zona.nome}, fascia ${r.fascia.nome}${R().fasce.criterio === "scelta" || r.fascia.prevalente ? "" : ` (${virgolaN(r.punti)} ${R().fasce.criterio === "punti" ? (r.punti === 1 ? "punto" : "punti") : (r.punti === 1 ? "elemento" : "elementi")})`}: da € ${v(r.base[0])} a € ${v(r.base[1])} al mq ${unita()}` : `fascia ${r.fascia.nome}`;
     $("gen-esito-magg").textContent = r.maggiorazioni.length
