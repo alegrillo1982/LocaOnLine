@@ -81,7 +81,7 @@
     if (R.fasce.criterio === "differenza") riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, `  ${P.etichetta_somma || "Somma delle percentuali A-G"} `, { w: 60, v: `${String(r.punti).replace(".", ",")}%` }]);
     else if (r.fascia.prevalente) riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, "  Subfascia (livello di qualità) ", { w: 90, v: r.zona ? r.fascia.nome : "" }]);
     else if (r.fascia.gruppi) { riga(["Zona ", { w: 200, v: r.zona ? r.zona.nome : "" }, "  Punteggio ", { w: 40, v: String(r.punti) }]); riga(["Fasce ", { w: 360, v: r.zona ? r.fascia.nome : "" }]); }
-    else riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, "  Fascia ", { w: 70, v: r.zona ? r.fascia.nome : "" }, R.fasce.criterio === "punti" ? "  Punteggio " : "  Elementi n. ", { w: 40, v: String(r.punti) }]);
+    else riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, "  Fascia ", { w: 70, v: r.zona ? r.fascia.nome : "" }, ...(R.elementi.length ? [R.fasce.criterio === "punti" ? "  Punteggio " : "  Elementi n. ", { w: 40, v: String(r.punti) }] : [])]);
 
     // superficie
     sezione(P.titolo_superficie || "CALCOLO DELLA SUPERFICIE CONVENZIONALE");
@@ -100,7 +100,8 @@
     if (sup && sup.note.length) for (const n of sup.note) { spazio(11); tx(n, SX, a, { sz: 7.8, c: DATO }); a += 10.5; }
     spazio(14); tx("SUPERFICIE CONVENZIONALE COMPLESSIVA mq", 300, a, { f: bold, sz: 9 }); if (sup) dx(v(sup.totale), DX, a, { f: bold, sz: 9, c: DATO }); a += 8;
 
-    // elementi o parametri, su due colonne
+    // elementi o parametri, su due colonne (es. Varese: nessun elemento, la sezione non si stampa)
+    if (R.elementi.length) {
     sezione((P.titolo_elementi || (R.fasce.criterio === "punti" ? "PARAMETRI E PUNTEGGI" : "ELEMENTI PRESENTI")).toUpperCase());
     const el = s.elementi || [], E = R.elementi, met = Math.ceil(E.length / 2), w = (DX - SX) / 2 - 12;
     const livello = (i) => { const e = E[i], val = el[i]; return e.livelli && val !== "" && val !== undefined && val !== null && val !== false ? e.livelli[Number(val)] : null; };
@@ -128,6 +129,7 @@
     else tx(R.fasce.nomi.map((n, i) => i === 0 ? `${n}: fino a ${soglie[0]} ${cosa}` : i < soglie.length ? `${n}: da ${soglie[i - 1] + 1} a ${soglie[i]}` : `${n}: da ${soglie[i - 1] + 1}`).join("   ·   "), SX, a, { sz: 7.8 });
     if (!r.fascia.prevalente) dx(R.fasce.criterio === "differenza" ? `${(P.etichetta_totale || "TOTALE PERCENTUALI")} ${String(r.punti).replace(".", ",")}%` : `${P.etichetta_conteggio || `TOTALE ${R.fasce.criterio === "punti" ? "PUNTEGGIO" : "ELEMENTI"}`} ${r.punti}`, DX, a, { f: bold, sz: 8.6, c: DATO });
     a += 10;
+    }
 
     // maggiorazioni e calcolo
     sezione("MAGGIORAZIONI E RIDUZIONI");

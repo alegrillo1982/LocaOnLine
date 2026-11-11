@@ -36,6 +36,7 @@
     const pd = (n) => (r.durata && r.durata[String(n)] ? ` (+${v(r.durata[String(n)], r.durata[String(n)] % 1 ? 1 : 0)}%)` : "");
     $("gen-durata").innerHTML = durate.map((n) => `<option value="${n}">${n} + 2 anni${n === 6 ? " o più" : ""}${pd(n)}</option>`).join("");
     $("gen-titolo-elementi").textContent = (accordo.pdf && accordo.pdf.titolo_elementi) || (r.fasce.criterio === "punti" ? "Parametri e punteggi" : "Elementi");
+    $("gen-elementi").closest("section").hidden = !r.elementi.length;
     $("gen-elementi").innerHTML = r.elementi.map((e, i) => {
       const g = [...(r.fasce.gruppi || []), ...(r.titoli_elementi || [])].find((x) => x.da === i);
       const titolo = g ? `<h3 class="stacco">${testo(g.titolo || g.nome)}</h3>` : "";
