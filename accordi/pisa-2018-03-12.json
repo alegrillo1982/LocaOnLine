@@ -1,0 +1,778 @@
+{
+ "accordo": {
+  "codice": "pisa-2018-03-12",
+  "modello": "pisa-2018",
+  "comune": "Pisa",
+  "provincia": "PI",
+  "titolo": "Accordo territoriale per i contratti di locazione agevolati e transitori nel Comune di Pisa",
+  "data": "2018-03-12",
+  "data_testo": "12 marzo 2018",
+  "deposito": "Comune di Pisa, prot. n. 23836 del 13/03/2018",
+  "deposito_data": "13.03.2018",
+  "protocollo": "23836",
+  "ufficio": "Comune di Pisa",
+  "ufficio_breve": "Comune di Pisa",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Pisa del 12 marzo 2018 (depositato il 13 marzo 2018), con la nota integrativa del 16 ottobre 2018:</strong> durava tre anni ma resta in vigore finché non ne viene firmato uno nuovo, e il Comune di Pisa lo pubblica ancora come vigente. I valori minimi e massimi si possono aggiornare ogni anno fino al 75% dell'aumento ISTAT di marzo (art. 3, comma 4), ma il Comune e le associazioni non pubblicano tabelle aggiornate: qui trovi i valori originali del 2018. <strong>Chiedi all'associazione che attesta il contratto l'aggiornamento ISTAT da applicare.</strong>",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "UNIONE INQUILINI",
+   "S.A.I. CISAL (adesione del 16/10/2018)"
+  ],
+  "nota": "Firmato a Pisa il 12/03/2018 e depositato al Comune di Pisa con prot. n. 23836 del 13/03/2018; sostituisce l'accordo del 23/05/2013 (prot. 27369 del 03/06/2013). Durata tre anni dal deposito, poi resta in vigore fino al nuovo accordo (cap. VII): a novembre 2026 il Comune (pagina aggiornata a ottobre 2024), SUNIA, UPPI e Confedilizia pubblicano ancora questo testo e non risulta un accordo più recente. Nota esplicativa/integrativa del 16/10/2018 (prot. 96388, numero scritto a mano) firmata da tutte le associazioni: corregge le regole sull'età degli alloggi (art. 5), la cumulabilità degli aumenti (art. 8), il calcolo per le porzioni di alloggio e le zone lontane dall'università per gli studenti. Nello stesso giorno ha aderito S.A.I. CISAL. Firmano anche le organizzazioni studentesche Sinistra per e Diritti a sinistra; U.N.I.A.T. è nell'elenco ma senza firma. Il SICET ha messo a verbale il proprio dissenso sulle attestazioni di conformità. Valori mensili al mq per 5 zone (pregio, A, B, C, D), 3 tipi di alloggio (A, B, C) e due età per tipo; edifici popolari -20%; aggiornamento ISTAT annuale delle fasce fino al 75% (non pubblicato).",
+  "fonte": "Comune di Pisa, pagina «CASA - Accordi territoriali» (Documenti tecnici di supporto): accordo firmato con gli allegati A-G e la nota a verbale del SICET (52 pagine, scansione), nota integrativa del 16/10/2018 e adesione S.A.I. CISAL. Stesso testo dell'accordo (12 pagine, senza allegati) pubblicato da SUNIA, UPPI e Confedilizia."
+ },
+ "esempio_zona": "la zona dalla via (elenco dell'art. 2; mappa consultabile, non ufficiale, sul S.I.T. del Comune di Pisa)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "pregio",
+    "nome": "Zona di pregio (lungarni, lungomare)",
+    "nota": "Zona di pregio: alloggi con oltre metà delle finestre sui lungarni Simonelli, Pacinotti, Mediceo, Buozzi, Sonnino, Gambacorti, Galilei e Fibonacci, sul lungomare o su una piazza affacciata sul mare di Marina di Pisa, sul viale del Tirreno a Tirrenia e Calambrone. Valori in euro al mq al mese (art. 3), secondo il tipo dell'alloggio e gli anni dalla costruzione o dalla ristrutturazione. Le vie di confine fra due zone stanno nella zona con il valore più alto.",
+    "fasce": {
+     "e10": [
+      [
+       3.0,
+       3.0
+      ],
+      [
+       6.0,
+       6.9
+      ],
+      [
+       7.6,
+       8.5
+      ],
+      [
+       8.0,
+       10.0
+      ]
+     ],
+     "e25": [
+      [
+       3.0,
+       3.0
+      ],
+      [
+       6.0,
+       6.9
+      ],
+      [
+       7.6,
+       8.5
+      ],
+      [
+       7.0,
+       8.0
+      ]
+     ],
+     "e50": [
+      [
+       3.0,
+       3.0
+      ],
+      [
+       6.0,
+       6.9
+      ],
+      [
+       6.5,
+       7.6
+      ],
+      [
+       7.0,
+       8.0
+      ]
+     ],
+     "oltre50": [
+      [
+       2.5,
+       2.5
+      ],
+      [
+       5.0,
+       6.0
+      ],
+      [
+       6.5,
+       7.6
+      ],
+      [
+       7.0,
+       8.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "A",
+    "nome": "Zona A - Centro, Marina, Tirrenia",
+    "nota": "Zona A: quartieri storici di S. Antonio e S. Maria fino alla ferrovia, S. Martino, S. Francesco (fino a via di Pratale, via Battelli e via De Amicis); Porta a Lucca fra via di Gello, via Tino da Camaino, via Contessa Matilde, via del Brennero e via G. Falcone (esclusa la zona Piazzali); viale delle Piagge fino al tondo; Barbaricina fra via Aurelia, via del Capannone, via T. Rook, via F. Tesio e via delle Cascine; Marina di Pisa (non lungomare), Tirrenia, Calambrone. Valori in euro al mq al mese (art. 3), secondo il tipo dell'alloggio e gli anni dalla costruzione o dalla ristrutturazione. Le vie di confine fra due zone stanno nella zona con il valore più alto.",
+    "fasce": {
+     "e10": [
+      [
+       2.6,
+       2.6
+      ],
+      [
+       5.2,
+       6.1
+      ],
+      [
+       6.7,
+       7.6
+      ],
+      [
+       7.5,
+       8.5
+      ]
+     ],
+     "e25": [
+      [
+       2.6,
+       2.6
+      ],
+      [
+       5.2,
+       6.1
+      ],
+      [
+       6.7,
+       7.6
+      ],
+      [
+       6.5,
+       7.5
+      ]
+     ],
+     "e50": [
+      [
+       2.6,
+       2.6
+      ],
+      [
+       5.2,
+       6.1
+      ],
+      [
+       5.8,
+       6.7
+      ],
+      [
+       6.5,
+       7.5
+      ]
+     ],
+     "oltre50": [
+      [
+       2.1,
+       2.1
+      ],
+      [
+       4.2,
+       5.2
+      ],
+      [
+       5.8,
+       6.7
+      ],
+      [
+       6.5,
+       7.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B - S. Marco, Cisanello, Pratale",
+    "nota": "Zona B: S. Marco; S. Giusto fra ferrovia e FI-PI-LI; Porta Fiorentina (esclusa la zona da via Catalani a via Colombo); Porta a Mare fra via A. Moro, via Livornese fino al ponte del CEP e l'Arno; Barbaricina fra via delle Cascine e l'Arno (escluso quanto in zona A); zona Impianti sportivi; zona Piazzali; zona fra via di Gello, via Lucchese, via Paparelli e via Chiarugi; Pratale e Don Bosco; S. Michele, Porta a Piagge, Cisanello e Pisanova (esclusa via Paolo VI) fino alle vie Mons. Manghi e Padre Pio; La Vettola e S. Piero (dalla superstrada a via E. Scauro, via Castagnolo e via Livornese). Valori in euro al mq al mese (art. 3), secondo il tipo dell'alloggio e gli anni dalla costruzione o dalla ristrutturazione. Le vie di confine fra due zone stanno nella zona con il valore più alto.",
+    "fasce": {
+     "e10": [
+      [
+       2.35,
+       2.35
+      ],
+      [
+       4.7,
+       5.5
+      ],
+      [
+       5.7,
+       6.7
+      ],
+      [
+       5.8,
+       6.8
+      ]
+     ],
+     "e25": [
+      [
+       2.35,
+       2.35
+      ],
+      [
+       4.7,
+       5.5
+      ],
+      [
+       5.7,
+       6.7
+      ],
+      [
+       4.8,
+       5.8
+      ]
+     ],
+     "e50": [
+      [
+       2.35,
+       2.35
+      ],
+      [
+       4.7,
+       5.5
+      ],
+      [
+       4.7,
+       5.7
+      ],
+      [
+       4.8,
+       5.8
+      ]
+     ],
+     "oltre50": [
+      [
+       2.0,
+       2.0
+      ],
+      [
+       4.0,
+       4.7
+      ],
+      [
+       4.7,
+       5.7
+      ],
+      [
+       4.8,
+       5.8
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C - Gagno, Riglione, CEP",
+    "nota": "Zona C: Gagno, I Passi, Pisanova limitatamente a via Paolo VI, S. Biagio; Riglione, Oratoio, Putignano, S. Ermete; S. Giusto a sud della FI-PI-LI; Porta a Mare (escluso quanto in zona B); CEP fra via Pergolesi-Pierin del Vaga, via Tiziano Vecellio e via Boccherini; zona stazione da via Colombo a via Catalani. Valori in euro al mq al mese (art. 3), secondo il tipo dell'alloggio e gli anni dalla costruzione o dalla ristrutturazione. Le vie di confine fra due zone stanno nella zona con il valore più alto.",
+    "fasce": {
+     "e10": [
+      [
+       2.05,
+       2.05
+      ],
+      [
+       4.1,
+       4.7
+      ],
+      [
+       5.0,
+       6.0
+      ],
+      [
+       5.5,
+       6.5
+      ]
+     ],
+     "e25": [
+      [
+       2.05,
+       2.05
+      ],
+      [
+       4.1,
+       4.7
+      ],
+      [
+       5.0,
+       6.0
+      ],
+      [
+       4.5,
+       5.5
+      ]
+     ],
+     "e50": [
+      [
+       2.05,
+       2.05
+      ],
+      [
+       4.1,
+       4.7
+      ],
+      [
+       4.0,
+       5.0
+      ],
+      [
+       4.5,
+       5.5
+      ]
+     ],
+     "oltre50": [
+      [
+       1.75,
+       1.75
+      ],
+      [
+       3.5,
+       4.1
+      ],
+      [
+       4.0,
+       5.0
+      ],
+      [
+       4.5,
+       5.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D",
+    "nome": "Zona D - Ospedaletto, Coltano",
+    "nota": "Zona D: zone artigianali e agricole, compresi Ospedaletto e Coltano. Valori in euro al mq al mese (art. 3), secondo il tipo dell'alloggio e gli anni dalla costruzione o dalla ristrutturazione. Le vie di confine fra due zone stanno nella zona con il valore più alto.",
+    "fasce": {
+     "e10": [
+      [
+       2.05,
+       2.05
+      ],
+      [
+       4.1,
+       4.7
+      ],
+      [
+       4.5,
+       5.4
+      ],
+      [
+       5.0,
+       6.1
+      ]
+     ],
+     "e25": [
+      [
+       2.05,
+       2.05
+      ],
+      [
+       4.1,
+       4.7
+      ],
+      [
+       4.5,
+       5.4
+      ],
+      [
+       4.0,
+       5.0
+      ]
+     ],
+     "e50": [
+      [
+       2.05,
+       2.05
+      ],
+      [
+       4.1,
+       4.7
+      ],
+      [
+       3.5,
+       4.5
+      ],
+      [
+       4.0,
+       5.0
+      ]
+     ],
+     "oltre50": [
+      [
+       1.75,
+       1.75
+      ],
+      [
+       3.5,
+       4.1
+      ],
+      [
+       3.5,
+       4.5
+      ],
+      [
+       4.0,
+       5.0
+      ]
+     ]
+    }
+   }
+  ],
+  "tabella_per": "scelta",
+  "tabella_chiave": "eta",
+  "tabella_predefinita": "oltre50",
+  "fasce": {
+   "nomi": [
+    "sotto C (-50%)",
+    "C",
+    "B",
+    "A"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 1,
+      "n": 1
+     }
+    ],
+    [
+     {
+      "da": 1,
+      "a": 4,
+      "tutti": true
+     }
+    ],
+    [
+     {
+      "da": 12,
+      "a": 12,
+      "tutti": true
+     },
+     {
+      "da": 3,
+      "a": 5,
+      "tutti": true
+     },
+     {
+      "da": 3,
+      "a": 11,
+      "n": 6
+     }
+    ]
+   ],
+   "conta": {
+    "da": 3,
+    "a": 11
+   },
+   "nota": "Tipo A: categoria A/2, A/3 o A/7 (punto 13) e almeno 6 caratteristiche fra la 4 e la 12, comprese 4, 5 e 6. Tipo B: tutti i punti da 2 a 5. Tipo C: bagno interno con almeno 3 elementi (punto 1). Senza neanche questo, o alloggio antigienico: metà del minimo del Tipo C (art. 5).",
+   "nota_pdf": "Tipo A: categoria A/2, A/3 o A/7 (punto 13) e almeno 6 caratteristiche fra la 4 e la 12, comprese 4, 5 e 6. Tipo B: tutti i punti da 2 a 5. Tipo C: bagno interno con almeno 3 elementi (punto 1). Senza neanche questo, o alloggio antigienico: metà del minimo del Tipo C (art. 5)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Tipo C: il requisito minimo"
+   },
+   {
+    "da": 1,
+    "titolo": "Tipo B: servono tutti i punti da 2 a 5"
+   },
+   {
+    "da": 5,
+    "titolo": "Tipo A: almeno 6 caratteristiche fra la 4 e la 12 (4, 5 e 6 obbligatorie)…"
+   },
+   {
+    "da": 12,
+    "titolo": "…e la categoria catastale"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Bagno dentro l'alloggio con almeno 3 elementi sanitari, con finestra o aerazione forzata (e alloggio non dichiarato antigienico)"
+   },
+   {
+    "testo": "Bagno dentro l'alloggio con almeno 4 elementi sanitari, con finestra o aerazione forzata"
+   },
+   {
+    "testo": "Riscaldamento efficiente e a norma di legge"
+   },
+   {
+    "testo": "Impianto idrico idoneo ed efficiente"
+   },
+   {
+    "testo": "Impianto elettrico a norma"
+   },
+   {
+    "testo": "Riscaldamento in tutti i vani utili, efficiente e a norma"
+   },
+   {
+    "testo": "Doppi servizi (il secondo con almeno 3 elementi), oppure un solo bagno con antibagno, almeno 4 elementi sanitari e finestra"
+   },
+   {
+    "testo": "Spazi esterni a uso esclusivo (garage, terrazze, logge, cantine…) oltre il 15% della superficie utile dell'alloggio"
+   },
+   {
+    "testo": "Posto auto con effettiva disponibilità"
+   },
+   {
+    "testo": "Giardino a uso esclusivo più grande del 40% della superficie utile dell'alloggio"
+   },
+   {
+    "testo": "Condizionamento d'aria funzionante"
+   },
+   {
+    "testo": "Ascensore, per gli alloggi oltre il 3° piano fuori terra"
+   },
+   {
+    "testo": "Categoria catastale A/2 o A/3, oppure villa o villetta A/7 (in visura)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie interna utile dell'alloggio (calpestabile)",
+   "correzioni": [
+    {
+     "fino": 45,
+     "incluso": true,
+     "perc": 20,
+     "tetto": 49.6
+    },
+    {
+     "fino": 70,
+     "incluso": true,
+     "perc": 10,
+     "tetto": 70
+    }
+   ],
+   "grandi": {
+    "oltre": 110,
+    "riduzione": 10
+   },
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa singola",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "pa_coperto",
+     "testo": "Posto auto coperto di proprietà esclusiva",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "pa_comune",
+     "testo": "Posto auto in area comune, di effettiva disponibilità",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "pa_scoperto",
+     "testo": "Posto auto scoperto di proprietà esclusiva",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e accessori simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "giardino100",
+     "testo": "Giardino a uso esclusivo fino a 100 mq",
+     "coeff": 0.1
+    },
+    {
+     "chiave": "giardino200",
+     "testo": "Giardino a uso esclusivo da 101 a 200 mq",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "giardino_oltre",
+     "testo": "Giardino a uso esclusivo oltre 200 mq",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Area scoperta esclusiva non a giardino (conta solo da 100 mq in su)",
+     "coeff": 0.1,
+     "oltre_mq": 99.99
+    }
+   ],
+   "nota": "Superficie interna utile: fino a 45 mq +20% (al massimo 49,60 mq), da 45,1 a 70 mq +10% (al massimo 70 mq), oltre 110 mq -10% (non sotto 110 mq). Il giardino conta per intero con la percentuale della sua misura: scrivi i mq solo nella riga giusta. Stanze o porzioni di alloggio (nota del 16/10/2018): si calcola il canone dell'intero alloggio, lo si divide per la somma delle superfici a uso esclusivo (le camere, comprese quelle che il proprietario tiene per sé) e lo si moltiplica per i mq di ciascuna camera; un bagno privato si aggiunge per intero alla camera, un balcone in percentuale. Alle singole stanze non si applicano altre maggiorazioni."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "eta",
+    "tipo": "scelta",
+    "testo": "Anni dalla costruzione o dalla ristrutturazione (da documentare, art. 5)",
+    "nome": "Età:",
+    "nessuna": "oltre 50 anni, o età non documentata",
+    "nessuna_breve": "oltre 50 anni",
+    "opzioni": [
+     {
+      "valore": "e10",
+      "testo": "fino a 10 anni",
+      "breve": "fino a 10 anni (colonne «meno di» di A, B e C)",
+      "perc": 0
+     },
+     {
+      "valore": "e25",
+      "testo": "da 10 a 25 anni",
+      "breve": "da 10 a 25 anni (A «più di 10», B e C «meno di»)",
+      "perc": 0
+     },
+     {
+      "valore": "e50",
+      "testo": "da 25 a 50 anni",
+      "breve": "da 25 a 50 anni (A e B «più di», C «meno di 50»)",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "popolare",
+    "tipo": "spunta",
+    "testo": "Edificio popolare (ex ATER o simili), costruito con piani PEEP o con agevolazioni di enti pubblici o previdenziali",
+    "nome": "edificio popolare (art. 3, comma 2)",
+    "perc": -20,
+    "dopo": true
+   },
+   {
+    "chiave": "pregio_b",
+    "tipo": "spunta",
+    "testo": "Solo per gli alloggi di Tipo B: almeno una finitura di pregio (giardino esclusivo più grande dell'alloggio, doppi servizi, condizionamento d'aria, ascensore)",
+    "nome": "Tipo B con finitura di pregio (art. 5)",
+    "perc": 5,
+    "fasce": [
+     2
+    ]
+   },
+   {
+    "chiave": "energia",
+    "tipo": "spunta",
+    "testo": "Classe energetica A, B o C",
+    "nome": "classe energetica A, B o C (art. 7)",
+    "perc": 5
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "testo": "Alloggio arredato: aumento secondo quantità e qualità dei mobili (fino al 20%)",
+    "nome": "arredato (art. 6)",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "20",
+      "testo": "aumento del 20% (il massimo)",
+      "perc": 20
+     },
+     {
+      "valore": "15",
+      "testo": "aumento del 15%",
+      "perc": 15
+     },
+     {
+      "valore": "10",
+      "testo": "aumento del 10%",
+      "perc": 10
+     },
+     {
+      "valore": "5",
+      "testo": "aumento del 5%",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "arredo_stud",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Alloggio arredato per studenti (cap. III, art. 6)",
+    "nome": "arredato",
+    "nessuna": "non arredato, o senza tutti gli arredi di base",
+    "opzioni": [
+     {
+      "valore": "base",
+      "testo": "arredi di base: in cucina tavolo e sedie, stoviglie, frigorifero, lavatrice, cucina; per ogni studente letto, comodino, armadio, scrivania con sedia, libreria e lampada",
+      "perc": 10
+     },
+     {
+      "valore": "completo",
+      "testo": "arredi di base più almeno due fra divano o due poltrone, televisore, wi-fi, lavastoviglie, condizionatore",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "lontano",
+    "tipo": "spunta",
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Alloggio lontano dalle sedi universitarie: Putignano, Riglione, Oratoio, San Piero, Marina, Tirrenia, Calambrone, La Vettola fino alla FI-PI-LI",
+    "nome": "zona lontana dall'università (coefficiente 0,9)",
+    "perc": -10,
+    "dopo": true
+   },
+   {
+    "chiave": "breve",
+    "tipo": "spunta",
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Contratto per studenti di durata inferiore a 12 mesi",
+    "nome": "durata inferiore a 12 mesi",
+    "perc": -10,
+    "dopo": true
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti (durata, Tipo B con finiture di pregio, arredo, classe energetica) si sommano e si calcolano sul canone base (art. 8 come corretto dalla nota del 16/10/2018). Durata 4, 5 o 6 anni + 2: +2%, +4%, +6%. Transitori: valori aumentati del 5%. Studenti: niente aumento per la durata; arredo +10% o +15%; -10% nelle zone lontane dall'università e per contratti sotto i 12 mesi. Edifici popolari: -20% sui valori della zona.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "contratto": {
+   "transitorio": 5
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato G",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/1/2017",
+  "sottotitolo": "Accordo territoriale per i contratti di locazione agevolati e transitori nel Comune di Pisa, firmato il 12/03/2018 e depositato presso il Comune di Pisa il 13/03/2018 al n. 23836 di protocollo, con la nota integrativa del 16/10/2018",
+  "titolo_superficie": "COMPOSIZIONE DELLA SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "Tipologia dell'unità immobiliare (art. 5)",
+  "etichetta_conteggio": "CARATTERISTICHE TIPO A (4-12)",
+  "dichiarazione": "Il dichiarante, nella qualità di locatore/conduttore, ha presentato richiesta per l'attestazione ex D.M. 16/1/2017, dichiarando sotto la sua responsabilità gli elementi sopra indicati.",
+  "firme": [],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Pisa, come sopra rappresentata, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Pisa, depositato presso la casa comunale il 13/03/2018 al n. 23836 di protocollo dell'Archivio Generale."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla via: l'elenco delle zone (pregio, A, B, C, D) è nell'art. 2 dell'accordo; le vie di confine stanno nella zona con il valore più alto. Una mappa di consultazione, non ufficiale, è sul S.I.T. del Comune di Pisa."
+ }
+}
