@@ -1,0 +1,543 @@
+{
+ "accordo": {
+  "codice": "como-2020-10-05",
+  "modello": "como-2020",
+  "comune": "Como",
+  "provincia": "CO",
+  "titolo": "Accordo territoriale per il Comune di Como",
+  "data": "2020-10-05",
+  "data_testo": "5 ottobre 2020",
+  "deposito": "Comune di Como, prot. 0054324 del 06/10/2020 (inviato lo stesso giorno anche a Regione Lombardia)",
+  "deposito_data": "06.10.2020",
+  "protocollo": "0054324-06/10/2020-COMCOMO",
+  "ufficio": "Comune di Como",
+  "ufficio_breve": "Comune di Como",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Como del 5 ottobre 2020, depositato il 6 ottobre 2020:</strong> durava tre anni ma resta in vigore finché non ne viene firmato uno nuovo, e dalla scadenza (ottobre 2023) i valori delle fasce si aggiornano al 100% dell'ISTAT (art. 1, punto 5). Qui trovi i valori <strong>aggiornati a ottobre 2023</strong> pubblicati da Confedilizia Como (coefficiente 1,168): per un contratto firmato oggi l'aggiornamento arriva fino al mese prima della firma, quindi i valori sono un po' più alti. <strong>Chiedi all'associazione che attesta il contratto i valori esatti.</strong> L'attestazione serve per le agevolazioni fiscali (registro e IMU).",
+  "firmatari_proprieta": [
+   "A.P.E. - CONFEDILIZIA",
+   "U.P.P.I.",
+   "A.C.P.E. - FEDERPROPRIETÀ",
+   "A.P.P.C.",
+   "A.S.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.e T. (con nota di riserva)",
+   "U.N.I.A.T.",
+   "C.O.N.I.A."
+  ],
+  "nota": "Firmato a Como (Palazzo Cernezzi) il 05/10/2020 e protocollato dal Comune di Como il 06/10/2020 (segnatura 0054324-06/10/2020-COMCOMO); inviato via PEC lo stesso giorno a Regione Lombardia. Durata tre anni dal giorno dopo il deposito, poi resta in vigore fino al nuovo accordo con i valori aggiornati al 100% dell'ISTAT dal mese dopo la firma al mese prima del contratto (art. 1, punti 1 e 5). Sostituisce il precedente accordo del 16/11/2009 (da cui riprende la suddivisione per mappali e la planimetria delle microzone). A novembre 2026 non risulta un accordo più recente: Confedilizia Como lo pubblica come vigente (nota sulle agevolazioni aggiornata al 18/02/2026). Sei microzone catastali (viario e mappali negli allegati 1 e 2); tre fasce (minima, media, massima) secondo lo stato di manutenzione e i 13 parametri dell'allegato 4, con soglie che cambiano con la misura dell'alloggio (sotto 60, 60-100, oltre 100 mq calpestabili) e con il piano (fino al terzo o dal quarto in su); tabella dei valori per superficie convenzionale complessiva fino a 60 mq (all. 5) od oltre (all. 6). Valori in euro al mq al mese: qui quelli con l'aggiornamento ISTAT di ottobre 2023 (coefficiente 1,168) pubblicati da A.P.E.-Confedilizia Como; originali del 2020 = valori / 1,168. Il SICeT dei Laghi ha firmato con una nota di riserva sui transitori in deroga e sull'attestazione.",
+  "fonte": "Testo firmato con allegati 1-12, nota SICeT, delega A.C.P.E. e ricevute di deposito (63 pagine, scansione) pubblicato da SUNIA (sunia.info); stesso accordo e allegati separati, e tabella «Canoni con aggiornamento ISTAT ottobre 2023», pubblicati da A.P.E.-Confedilizia Como (confediliziacomo.it, pagina Normativa)."
+ },
+ "esempio_zona": "la microzona dal viario delle microzone (allegato 1), cercando la via",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Microzona 1",
+    "nota": "Microzona 1 (ad esempio Salita Aprica, via Cairoli, via Crespi, via Museo Giovio, viale Masia (in parte)): cerca la via nel viario delle microzone (allegato 1); se la via è divisa fra più microzone vale la suddivisione per mappali (allegato 2). Valori in euro al mq al mese, con l'aggiornamento ISTAT di ottobre 2023.",
+    "fasce": {
+     "fino60": [
+      [
+       4.67,
+       10.16
+      ],
+      [
+       7.01,
+       13.14
+      ],
+      [
+       9.34,
+       17.64
+      ]
+     ],
+     "oltre60": [
+      [
+       4.67,
+       9.93
+      ],
+      [
+       6.42,
+       13.08
+      ],
+      [
+       9.34,
+       17.29
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Microzona 2",
+    "nota": "Microzona 2 (ad esempio piazza Amendola, via Ambrosoli, via Anzani, via Brambilla, via Cadorna, piazza Cacciatori delle Alpi): cerca la via nel viario delle microzone (allegato 1); se la via è divisa fra più microzone vale la suddivisione per mappali (allegato 2). Valori in euro al mq al mese, con l'aggiornamento ISTAT di ottobre 2023.",
+    "fasce": {
+     "fino60": [
+      [
+       3.5,
+       7.94
+      ],
+      [
+       5.26,
+       10.86
+      ],
+      [
+       7.59,
+       13.14
+      ]
+     ],
+     "oltre60": [
+      [
+       3.5,
+       7.83
+      ],
+      [
+       4.67,
+       10.86
+      ],
+      [
+       7.01,
+       12.96
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Microzona 3",
+    "nota": "Microzona 3 (ad esempio via Albricci, salita degli Alpini (in parte), Castel Baradello, via Pedemonte, via Selva Fiorita): cerca la via nel viario delle microzone (allegato 1); se la via è divisa fra più microzone vale la suddivisione per mappali (allegato 2). Valori in euro al mq al mese, con l'aggiornamento ISTAT di ottobre 2023.",
+    "fasce": {
+     "fino60": [
+      [
+       3.5,
+       5.26
+      ],
+      [
+       3.5,
+       7.94
+      ],
+      [
+       5.26,
+       9.81
+      ]
+     ],
+     "oltre60": [
+      [
+       2.92,
+       5.72
+      ],
+      [
+       3.5,
+       7.59
+      ],
+      [
+       5.26,
+       9.69
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "Microzona 4",
+    "nota": "Microzona 4 (ad esempio via Appiani, via Aquileia, via Ca' Rotta, via Camnago Volta): cerca la via nel viario delle microzone (allegato 1); se la via è divisa fra più microzone vale la suddivisione per mappali (allegato 2). Valori in euro al mq al mese, con l'aggiornamento ISTAT di ottobre 2023.",
+    "fasce": {
+     "fino60": [
+      [
+       3.5,
+       6.42
+      ],
+      [
+       4.67,
+       7.94
+      ],
+      [
+       5.37,
+       10.28
+      ]
+     ],
+     "oltre60": [
+      [
+       3.5,
+       6.19
+      ],
+      [
+       4.67,
+       8.06
+      ],
+      [
+       7.01,
+       10.04
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "5",
+    "nome": "Microzona 5",
+    "nota": "Microzona 5 (ad esempio via Bronzetti, Cascina Viola, via Massardi): cerca la via nel viario delle microzone (allegato 1); se la via è divisa fra più microzone vale la suddivisione per mappali (allegato 2). Valori in euro al mq al mese, con l'aggiornamento ISTAT di ottobre 2023.",
+    "fasce": {
+     "fino60": [
+      [
+       3.5,
+       7.24
+      ],
+      [
+       4.67,
+       11.1
+      ],
+      [
+       7.01,
+       13.2
+      ]
+     ],
+     "oltre60": [
+      [
+       3.5,
+       6.89
+      ],
+      [
+       4.67,
+       10.86
+      ],
+      [
+       7.01,
+       13.32
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "6",
+    "nome": "Microzona 6",
+    "nota": "Microzona 6 (ad esempio via Acquanera, via Adamello, via Asiago, via Brennero, via Caduti Albatesi): cerca la via nel viario delle microzone (allegato 1); se la via è divisa fra più microzone vale la suddivisione per mappali (allegato 2). Valori in euro al mq al mese, con l'aggiornamento ISTAT di ottobre 2023.",
+    "fasce": {
+     "fino60": [
+      [
+       3.5,
+       7.01
+      ],
+      [
+       4.67,
+       9.23
+      ],
+      [
+       5.84,
+       10.04
+      ]
+     ],
+     "oltre60": [
+      [
+       3.5,
+       7.01
+      ],
+      [
+       4.67,
+       9.23
+      ],
+      [
+       5.84,
+       10.04
+      ]
+     ]
+    }
+   }
+  ],
+  "tabella_per": "superficie",
+  "tabella_su": "totale",
+  "tabella_soglie": [
+   [
+    60,
+    "fino60"
+   ]
+  ],
+  "tabella_oltre": "oltre60",
+  "fasce": {
+   "nomi": [
+    "minima",
+    "media",
+    "massima"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 15,
+      "n": 8
+     },
+     {
+      "da": 16,
+      "a": 17,
+      "n": 1
+     }
+    ],
+    [
+     {
+      "da": 0,
+      "a": 9,
+      "n": 6
+     },
+     {
+      "da": 10,
+      "a": 15,
+      "n": 1
+     },
+     {
+      "da": 17,
+      "a": 17,
+      "tutti": true
+     }
+    ]
+   ],
+   "conta": {
+    "da": 3,
+    "a": 15
+   },
+   "nota": "Fascia massima: ottimo stato e, dei parametri 1-7, almeno 3 sotto i 60 mq calpestabili, 4 da 60 a 100 mq, 5 oltre 100 mq (uno in più dal quarto piano in su), più almeno 1 dei parametri 8-13. Fascia media: normale stato e almeno 5, 6 o 7 parametri sui 13 (uno in più dal quarto piano). Fascia minima: gli altri, e sempre senza bagno interno. Le prime tre caselle (piano e misura) servono solo a contare le soglie. Valori della tabella fino a 60 mq o oltre 60 mq di superficie convenzionale complessiva.",
+   "nota_pdf": "Caselle 1-3: piano e misura. Massima: ottimo stato, 3/4/5 parametri fra 1-7 (<60, 60-100, >100 mq; +1 dal 4° piano) e 1 fra 8-13. Media: normale stato e 5/6/7 parametri su 13 (+1 dal 4° piano)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Piano e misura dell'alloggio, pertinenze escluse (servono per le soglie: non segnare il piano dal quarto in su)"
+   },
+   {
+    "da": 3,
+    "titolo": "Parametri da 1 a 7 dell'accordo"
+   },
+   {
+    "da": 10,
+    "titolo": "Parametri da 8 a 13 dell'accordo"
+   },
+   {
+    "da": 16,
+    "titolo": "Stato dell'alloggio (segnane uno solo)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Alloggio al piano terreno, primo, secondo o terzo"
+   },
+   {
+    "testo": "Alloggio fino a 100 mq calpestabili (anche se sotto i 60)"
+   },
+   {
+    "testo": "Alloggio sotto i 60 mq calpestabili"
+   },
+   {
+    "testo": "(1) Autorimessa e/o posto auto coperto e/o posto auto scoperto"
+   },
+   {
+    "testo": "(2) Sottotetto e/o soffitta e/o cantina in uso esclusivo"
+   },
+   {
+    "testo": "(3) Sanitari e accessori integri e in buono stato alla firma"
+   },
+   {
+    "testo": "(4) Impianto TV canalizzato"
+   },
+   {
+    "testo": "(5) Porta blindata"
+   },
+   {
+    "testo": "(6) Ascensore"
+   },
+   {
+    "testo": "(7) Doppi servizi"
+   },
+   {
+    "testo": "(8) Area verde e/o cortile comune di almeno 30 mq"
+   },
+   {
+    "testo": "(9) Climatizzazione estiva o raffrescamento"
+   },
+   {
+    "testo": "(10) Sistema di allarme o inferriate di sicurezza"
+   },
+   {
+    "testo": "(11) Edificio con non più di 6 unità"
+   },
+   {
+    "testo": "(12) Terrazza / balcone"
+   },
+   {
+    "testo": "(13) Pompa di calore, geotermico o fotovoltaico"
+   },
+   {
+    "testo": "Normale stato di manutenzione, con bagno interno"
+   },
+   {
+    "testo": "Ottimo stato di manutenzione, con bagno interno"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie netta calpestabile dell'appartamento",
+   "correzioni": [
+    {
+     "fino": 30,
+     "incluso": true,
+     "perc": 35,
+     "tetto": 62,
+     "zone": [
+      "2"
+     ]
+    },
+    {
+     "fino": 30,
+     "incluso": true,
+     "perc": 30,
+     "tetto": 62
+    },
+    {
+     "fino": 45,
+     "incluso": true,
+     "perc": 25,
+     "tetto": 62
+    },
+    {
+     "fino": 60,
+     "incluso": true,
+     "perc": 15,
+     "tetto": 62
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa singola",
+     "coeff": 0.7
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto auto in autorimessa comune",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Cantine, solai, balconi, terrazzi e posti auto scoperti in uso esclusivo",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Area scoperta di pertinenza esclusiva",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Si misura la superficie netta calpestabile: l'appartamento conta per intero, le pertinenze in percentuale (autorimessa singola 70%, posto auto in autorimessa comune 50%, cantine, solai, balconi, terrazzi e posti auto scoperti 25%, area scoperta esclusiva 10%). La sola superficie dell'appartamento aumenta del 30% fino a 30 mq (35% in microzona 2), del 25% fino a 45 mq e del 15% fino a 60 mq, ma non oltre 62 mq. Un errore entro il 5% non è motivo di contestazione."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "storico",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato come bene storico-artistico o di categoria A/1, A/8 o A/9 (art. 1, c. 2, lett. a, L. 431/98)",
+    "nome": "immobile storico",
+    "perc": 10
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento sufficiente per viverci (almeno cucina per preparare e conservare il cibo con un piano per mangiare, letto e armadio a due ante)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "fino55",
+      "testo": "arredato, alloggio fino a 55 mq calpestabili",
+      "perc": 20
+     },
+     {
+      "valore": "oltre55",
+      "testo": "arredato, alloggio oltre 55 mq calpestabili",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica dell'APE",
+    "nome": "classe energetica",
+    "nessuna": "F, G o senza APE",
+    "opzioni": [
+     {
+      "valore": "ABC",
+      "testo": "classe A, B o C",
+      "perc": 10
+     },
+     {
+      "valore": "DE",
+      "testo": "classe D o E",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "stufe",
+    "tipo": "spunta",
+    "testo": "Riscaldamento solo con stufette elettriche portatili o stufe a combustibile liquido",
+    "nome": "riscaldamento solo con stufe",
+    "perc": -10
+   },
+   {
+    "chiave": "senza_bagno",
+    "tipo": "spunta",
+    "testo": "Alloggio senza servizi igienici interni",
+    "nome": "senza servizi igienici interni",
+    "perc": 0,
+    "mostra_perc": false
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti valgono sul minimo e sul massimo e si sommano fra loro. Durata oltre i 3 anni (solo contratti agevolati): +5% per 4 anni, +8% per 5, +10% per 6 o più. Senza bagno interno si applica la fascia minima e il canone sta fra il minimo e il minimo più il 5%. Si può affittare una porzione: il canone dell'intero alloggio si divide in proporzione ai mq, contando anche le parti condivise.",
+  "durata": {
+   "4": 5,
+   "5": 8,
+   "6": 10
+  },
+  "combinazione": "somma",
+  "tetto_minimo": {
+   "chiave": "senza_bagno",
+   "perc": 5,
+   "avviso": "Senza servizi igienici interni si applica sempre la fascia minima e il canone sta fra il minimo e il minimo più il 5% (allegato 4)."
+  },
+  "avvisi": [
+   {
+    "testo": "Transitorio: durata fino a 18 mesi, con un'esigenza del proprietario o dell'inquilino prevista dall'accordo, scritta nel contratto e documentata. Fino a 30 giorni il canone è libero.",
+    "contratti": [
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Studenti: solo per iscritti a un corso universitario (laurea, perfezionamento o specializzazione) in provincia di Como o in una provincia confinante, residenti in un altro comune; durata da 6 mesi a 3 anni.",
+    "contratti": [
+     "studenti"
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "All. 12",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/1/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Como del 05/10/2020, depositato il 06/10/2020 - valori ISTAT ottobre 2023",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE AI SENSI DELL'ART. 2 DELL'ACCORDO TERRITORIALE",
+  "titolo_elementi": "Elementi oggettivi di classificazione (all. 4)",
+  "etichetta_conteggio": "PARAMETRI 1-13 N.",
+  "dichiarazione": "Il richiedente DICHIARA: 1) che i dati sovresposti sono stati dallo stesso rilevati e verificati; 2) di essere consapevole che la presente Attestazione viene rilasciata sulla base di tali dati; 3) di sollevare espressamente l'Organizzazione attestante da qualsivoglia responsabilità eventualmente derivante da errori, omissioni o indicazioni non veritiere in relazione a tali dati.",
+  "firme": [],
+  "titolo_attestazione": "ATTESTA",
+  "attestazione": [
+   "L'Organizzazione ……………………………, in persona di ……………………………, firmataria dell'Accordo territoriale per il Comune di Como depositato il 06/10/2020, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo Territoriale vigente per il Comune di Como, depositato in data 06/10/2020."
+  ],
+  "firme_attestazione": [
+   "Il richiedente/dichiarante",
+   "L'Organizzazione"
+  ],
+  "nota_zone": "La microzona si trova nel viario delle microzone (allegato 1 dell'accordo) cercando la via; se una via è divisa fra più microzone vale la suddivisione per mappali (allegato 2)."
+ }
+}
