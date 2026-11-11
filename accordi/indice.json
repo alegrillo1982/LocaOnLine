@@ -263,6 +263,44 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrieste-2025-12-15-accordo.pdf?alt=media&token=ddc15bb4-7ae6-4821-b52c-e2fdc6629ed0"
     }
    ]
+  },
+  {
+   "comune": "Ancona",
+   "provincia": "AN",
+   "accordo": "ancona-2019-04-23",
+   "sottoscritto": "23 aprile 2019",
+   "depositato": "23 aprile 2019",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fancona-2019-04-23-accordo.pdf?alt=media&token=ab3d1bfb-bd52-4c6c-8f47-a66f04f43794",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fancona-2019-04-23-accordo.pdf?alt=media&token=ab3d1bfb-bd52-4c6c-8f47-a66f04f43794"
+    },
+    {
+     "nome": "Attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fancona-2019-04-23-attestazione.pdf?alt=media&token=aa1abfb3-3216-4bd3-aee4-febba2f021b4"
+    },
+    {
+     "nome": "Errata corrige 2019 05 14",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fancona-2019-04-23-errata-corrige-2019-05-14.pdf?alt=media&token=acd8e4f0-ffc5-4db4-bee3-9188e3a1d38a"
+    }
+   ]
+  },
+  {
+   "comune": "Perugia",
+   "provincia": "PG",
+   "accordo": "perugia-2024-10-10",
+   "sottoscritto": "10 ottobre 2024",
+   "depositato": "14 ottobre 2024",
+   "zone": 5,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fperugia-2024-10-10-accordo.pdf?alt=media&token=3f6859f1-96df-457c-a735-44f23f270dd1",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fperugia-2024-10-10-accordo.pdf?alt=media&token=3f6859f1-96df-457c-a735-44f23f270dd1"
+    }
+   ]
   }
  ]
 }

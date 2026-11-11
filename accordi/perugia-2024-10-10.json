@@ -1,0 +1,424 @@
+{
+ "accordo": {
+  "codice": "perugia-2024-10-10",
+  "modello": "perugia-2024",
+  "comune": "Perugia",
+  "provincia": "PG",
+  "titolo": "Accordo per la stipula dei contratti a canone concordato valido per il territorio del Comune di Perugia",
+  "data": "2024-10-10",
+  "data_testo": "10 ottobre 2024",
+  "deposito": "prot. GE/2024/0242536",
+  "deposito_data": "14.10.2024",
+  "protocollo": "GE/2024/0242536",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2027-12-31",
+  "firmatari_proprieta": [
+   "ASPPI Perugia",
+   "UPPI Perugia"
+  ],
+  "firmatari_conduttori": [
+   "SAI CISAL",
+   "ASSOCASA",
+   "S.E.I.A.S.S."
+  ],
+  "nota": "Firmato il 10/10/2024, trasmesso al Comune via PEC e protocollato il 14/10/2024 (GE/2024/0242536); vale dal giorno dopo la trasmissione fino al 31/12/2027 e comunque fino al nuovo. A Perugia vale anche l'accordo del 26/02/2024 (prot. 2024/52128, Confedilizia, APPC, SUNIA, SICET e altri): non implementato.",
+  "fonte": "Comune di Perugia, pagina dei contratti a canone concordato."
+ },
+ "esempio_zona": "la zona dalla zona OMI dell'indirizzo",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "CS",
+    "nome": "Centro storico (OMI B1, B5, B6)",
+    "nota": "Zona Centro storico (OMI B1, B5, B6): zone OMI dell'Agenzia delle Entrate, anno 2023, secondo semestre. Minimo assoluto € 40.00 al mq l'anno.",
+    "fasce": [
+     [
+      40,
+      90
+     ],
+     [
+      40,
+      100
+     ]
+    ]
+   },
+   {
+    "codice": "CE",
+    "nome": "Centrale (OMI B2, B7)",
+    "nota": "Zona Centrale (OMI B2, B7): zone OMI dell'Agenzia delle Entrate, anno 2023, secondo semestre. Minimo assoluto € 40.00 al mq l'anno.",
+    "fasce": [
+     [
+      40,
+      85
+     ],
+     [
+      40,
+      95
+     ]
+    ]
+   },
+   {
+    "codice": "SC",
+    "nome": "Semicentro (OMI B3, B8)",
+    "nota": "Zona Semicentro (OMI B3, B8): zone OMI dell'Agenzia delle Entrate, anno 2023, secondo semestre. Minimo assoluto € 35.00 al mq l'anno.",
+    "fasce": [
+     [
+      35,
+      70
+     ],
+     [
+      35,
+      80
+     ],
+     [
+      35,
+      85
+     ]
+    ]
+   },
+   {
+    "codice": "PE",
+    "nome": "Periferica (OMI C1, C2, D1, D2)",
+    "nota": "Zona Periferica (OMI C1, C2, D1, D2): zone OMI dell'Agenzia delle Entrate, anno 2023, secondo semestre. Minimo assoluto € 35.00 al mq l'anno.",
+    "fasce": [
+     [
+      35,
+      65
+     ],
+     [
+      35,
+      75
+     ],
+     [
+      35,
+      80
+     ]
+    ]
+   },
+   {
+    "codice": "FR",
+    "nome": "Frazioni (tutte le altre zone)",
+    "nota": "Zona Frazioni (tutte le altre zone): zone OMI dell'Agenzia delle Entrate, anno 2023, secondo semestre. Minimo assoluto € 30.00 al mq l'anno.",
+    "fasce": [
+     [
+      30,
+      60
+     ],
+     [
+      30,
+      70
+     ],
+     [
+      30,
+      75
+     ]
+    ]
+   }
+  ],
+  "solo_massimo": true,
+  "fasce": {
+   "nomi": [
+    "1",
+    "2",
+    "3"
+   ],
+   "criterio": "conta",
+   "conta": {
+    "da": 0,
+    "a": 13
+   },
+   "soglie": [
+    3,
+    5
+   ],
+   "soglie_zona": {
+    "CS": [
+     3
+    ],
+    "CE": [
+     3
+    ]
+   }
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "A) Elementi oggettivi base"
+   },
+   {
+    "da": 14,
+    "titolo": "Elementi oggettivi premium"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Cucina abitabile con almeno una finestra"
+   },
+   {
+    "testo": "Edificio servito da ascensore"
+   },
+   {
+    "testo": "Impianti conformi alle norme vigenti alla data di costruzione"
+   },
+   {
+    "testo": "Riscaldamento centralizzato o autonomo"
+   },
+   {
+    "testo": "Doppio bagno, almeno uno con finestra"
+   },
+   {
+    "testo": "Ultimato o ristrutturato negli ultimi 15 anni, o con interventi Superbonus 110%"
+   },
+   {
+    "testo": "Immobile unifamiliare (cielo terra, anche a schiera)"
+   },
+   {
+    "testo": "Porta blindata o rinforzata con meccanismi antieffrazione"
+   },
+   {
+    "testo": "Doppi vetri, vetri termici o doppi infissi"
+   },
+   {
+    "testo": "Vicino a servizi pubblici o commerciali"
+   },
+   {
+    "testo": "Strutture di superamento delle barriere architettoniche"
+   },
+   {
+    "testo": "Edificio conforme alla normativa antisismica (dell'epoca di costruzione o di adeguamento)"
+   },
+   {
+    "testo": "Climatizzazione per almeno il 50% degli ambienti"
+   },
+   {
+    "testo": "Conferma dello stesso conduttore con un nuovo contratto"
+   },
+   {
+    "testo": "Mobili nuovi di fabbricazione per almeno il 50% degli ambienti"
+   },
+   {
+    "testo": "Illuminazione a LED in tutti gli ambienti"
+   },
+   {
+    "testo": "Locato a studenti entro circa 3 km dalla facoltà o struttura di specializzazione"
+   },
+   {
+    "testo": "Vicino a zone per famiglie: verde, giochi, piscine, palestre"
+   },
+   {
+    "testo": "In zona storica o centrale, con autorimessa singola o in comune"
+   },
+   {
+    "testo": "In zona storica o centrale, con terrazza panoramica"
+   },
+   {
+    "testo": "Parcheggio condominiale interno o esterno"
+   },
+   {
+    "testo": "Area verde condominiale"
+   },
+   {
+    "testo": "Solare termico per l'acqua calda"
+   },
+   {
+    "testo": "Fotovoltaico"
+   },
+   {
+    "testo": "Piscina, anche in uso comune"
+   },
+   {
+    "testo": "Ascensore per disabili o montascale"
+   },
+   {
+    "testo": "Connessione internet in fibra ottica"
+   },
+   {
+    "testo": "Videosorveglianza, anche condominiale, e/o allarme"
+   },
+   {
+    "testo": "Locato a studenti con almeno due bagni e contratti individuali"
+   }
+  ],
+  "premium": {
+   "da": 14,
+   "a": 28,
+   "scaglioni": [
+    {
+     "da": 1,
+     "perc": {
+      "CS": 20,
+      "CE": 15,
+      "SC": 15,
+      "PE": 15,
+      "FR": 15
+     }
+    },
+    {
+     "da": 3,
+     "perc": {
+      "CS": 30,
+      "CE": 25,
+      "SC": 25,
+      "PE": 25,
+      "FR": 25
+     }
+    }
+   ],
+   "dopo": true
+  },
+  "superficie": {
+   "base": "Superficie calpestabile (al netto dei muri perimetrali, con tramezzi e soppalchi abitabili)",
+   "correzioni": [
+    {
+     "fino": 46,
+     "perc": 20
+    },
+    {
+     "fino": 70,
+     "incluso": true,
+     "perc": 10
+    }
+   ],
+   "grandi": {
+    "oltre": 140,
+    "riduzione": 10
+   },
+   "voci": [
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, portici, lastrici solari, cantine, soffitte e simili",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "verande",
+     "testo": "Serre solari, verande chiuse",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "garage",
+     "testo": "Garage",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto macchina esclusivo C/6 o tettoia C/7",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Superficie scoperta in godimento esclusivo",
+     "coeff": 0.15,
+     "tetto": "base"
+    }
+   ],
+   "nota": "Le superfici con altezza sotto 1,50 m non si contano."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredo a cura del locatore, con elenco sottoscritto",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "dopo": true,
+    "opzioni": [
+     {
+      "valore": "totale",
+      "testo": "totalmente arredato",
+      "perc": 25
+     },
+     {
+      "valore": "meta",
+      "testo": "arredato per oltre metà dei vani",
+      "perc": 20
+     },
+     {
+      "valore": "cucina",
+      "testo": "arredata la sola cucina",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "recesso",
+    "tipo": "spunta",
+    "testo": "Preavviso di recesso fino a 3 mesi, senza i \"gravi motivi\"",
+    "nome": "recesso libero",
+    "perc": 4,
+    "contratti": [
+     "agevolato"
+    ],
+    "dopo": true
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE)",
+    "nome": "classe energetica",
+    "nessuna": "senza APE",
+    "dopo": true,
+    "opzioni": [
+     {
+      "valore": "A4",
+      "testo": "A4 o A3",
+      "perc": 15
+     },
+     {
+      "valore": "A2",
+      "testo": "A2, A1 o A",
+      "perc": 12
+     },
+     {
+      "valore": "BC",
+      "testo": "B o C",
+      "perc": 7
+     },
+     {
+      "valore": "DE",
+      "testo": "D o E",
+      "perc": 5
+     },
+     {
+      "valore": "F",
+      "testo": "F",
+      "perc": 3
+     },
+     {
+      "valore": "G",
+      "testo": "G",
+      "perc": -2
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Le maggiorazioni si applicano al valore massimo della sub fascia, una dopo l'altra (100 +10% = 110 +10% = 121). Il minimo assoluto della zona resta il canone minimo.",
+  "durata": {
+   "4": 4,
+   "5": 8,
+   "6": 12
+  },
+  "durata_dopo": true,
+  "combinazione": "prodotto",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato 1)",
+  "titolo": "Attestazione unilaterale ex D.M. 16/01/2017 - elementi per il calcolo del canone",
+  "sottotitolo": "Accordo per il Comune di Perugia sottoscritto il 10/10/2024 da ASPPI, UPPI, SAI CISAL, ASSOCASA, S.E.I.A.S.S. (prot. GE/2024/0242536 del 14/10/2024)",
+  "titolo_elementi": "Elementi oggettivi base (1-14) e premium (15-29)",
+  "dichiarazione": "Il locatore e il conduttore dichiarano, sotto la propria responsabilità, la superficie convenzionale, la zona omogenea, gli elementi oggettivi e le maggiorazioni sopra indicati, da riportare nel contratto.",
+  "attestazione": [
+   "L'Organizzazione …………………………, firmataria dell'Accordo territoriale per il Comune di Perugia, sulla base degli elementi oggettivi dichiarati dalle parti contrattuali, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale per il Comune di Perugia sottoscritto il 10/10/2024."
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "firme_attestazione": [
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "Zone omogenee per zone OMI (Agenzia delle Entrate, 2023, secondo semestre)."
+ }
+}

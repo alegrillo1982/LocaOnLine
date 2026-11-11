@@ -220,6 +220,8 @@
 /* scheda per gli accordi descritti con i dati (scheda-generica.js) */
 .cc .scheda-generica:not(.tipo-agevolato) .solo-agevolato, .cc .scheda-generica:not(.porzione) .solo-porzione { display: none; }
 .cc .superfici-generica .risultato { font-family: var(--dati); font-size: 14px; white-space: nowrap; }
+.cc .scheda-generica .caselle label.livello { display: grid; grid-template-columns: 1fr; gap: 6px; }
+.cc .scheda-generica h3 { font: 600 15px/1.3 Inter, sans-serif; color: var(--testo); margin: 14px 0 6px; }
 .cc .griglia-campi .cerca-via { position: relative; min-width: 0; }
 .cc .griglia-campi .cerca-via .risultati-zona { top: 100%; margin-top: 4px; }
 

@@ -33,8 +33,12 @@
     const pd = (n) => (r.durata && r.durata[String(n)] ? ` (+${v(r.durata[String(n)], r.durata[String(n)] % 1 ? 1 : 0)}%)` : "");
     $("gen-durata").innerHTML = durate.map((n) => `<option value="${n}">${n} + 2 anni${n === 6 ? " o più" : ""}${pd(n)}</option>`).join("");
     $("gen-titolo-elementi").textContent = (accordo.pdf && accordo.pdf.titolo_elementi) || (r.fasce.criterio === "punti" ? "Parametri e punteggi" : "Elementi");
-    $("gen-elementi").innerHTML = r.elementi.map((e, i) =>
-      `<label><input type="checkbox" name="el" value="${i}"> <span><b class="codice">${i + 1}</b> ${testo(e.testo)}${e.punti ? ` <small>(${e.punti} ${e.punti === 1 ? "punto" : "punti"})</small>` : ""}</span></label>`).join("");
+    $("gen-elementi").innerHTML = r.elementi.map((e, i) => {
+      const g = [...(r.fasce.gruppi || []), ...(r.titoli_elementi || [])].find((x) => x.da === i);
+      const titolo = g ? `<h3 class="stacco">${testo(g.titolo || g.nome)}</h3>` : "";
+      if (e.livelli) return `${titolo}<label class="livello"><span><b class="codice">${i + 1}</b> ${testo(e.testo)}</span><select name="el" data-i="${i}"><option value="">scegli…</option>${e.livelli.map((l, k) => `<option value="${k}">${testo(l.testo)} (${l.punti} ${l.punti === 1 ? "punto" : "punti"})</option>`).join("")}</select></label>`;
+      return `${titolo}<label><input type="checkbox" name="el" value="${i}"> <span><b class="codice">${i + 1}</b> ${testo(e.testo)}${e.punti ? ` <small>(${e.punti} ${e.punti === 1 ? "punto" : "punti"})</small>` : ""}</span></label>`;
+    }).join("");
     const S = r.superficie || {};
     $("gen-superfici").innerHTML = [{ chiave: "base", testo: S.base || "Superficie dell'alloggio" }, ...(S.voci || [])].map((x) => `
       <tr data-riga="${x.chiave}">
@@ -59,7 +63,7 @@
     s.valore_mq = valore.dataset.modificato ? valore.value.trim() : "";
     s.superfici = {};
     for (const x of [{ chiave: "base" }, ...((r.superficie || {}).voci || [])]) s.superfici[x.chiave] = campo("sup_" + x.chiave).value.trim();
-    s.elementi = [...modulo.querySelectorAll("input[name=el]")].map((c) => c.checked);
+    s.elementi = [...modulo.querySelectorAll("[name=el]")].map((c) => (c.tagName === "SELECT" ? c.value : c.checked));
     s.maggiorazioni_scelte = {};
     for (const m of r.maggiorazioni || []) { const c = campo("m_" + m.chiave); s.maggiorazioni_scelte[m.chiave] = m.tipo === "scelta" ? c.value : c.checked; }
     s.catasto = { foglio: s.foglio, particella: s.particella, subalterno: s.subalterno };
@@ -79,7 +83,7 @@
     campo("porzione").checked = !!d.porzione;
     for (const k of TESTI) if (d[k] !== undefined && d[k] !== null) campo(k).value = d[k];
     for (const [k, val] of Object.entries(d.superfici || {})) if (campo("sup_" + k)) campo("sup_" + k).value = val;
-    modulo.querySelectorAll("input[name=el]").forEach((x, i) => { x.checked = !!(d.elementi || [])[i]; });
+    modulo.querySelectorAll("[name=el]").forEach((x, i) => { const val = (d.elementi || [])[i]; if (x.tagName === "SELECT") x.value = val === undefined || val === null || val === false ? "" : String(val); else x.checked = !!val; });
     for (const m of R().maggiorazioni || []) {
       const el = campo("m_" + m.chiave), val = (d.maggiorazioni_scelte || {})[m.chiave];
       if (m.tipo === "scelta") el.value = val || ""; else el.checked = !!val;
@@ -107,8 +111,8 @@
     $("gen-totale").textContent = sup ? v(sup.totale) : "—";
     $("gen-sup-nota").textContent = (R().superficie || {}).nota || "";
     $("gen-zona-nota").textContent = r.zona ? (r.zona.nota || "") : ((accordo.pdf && accordo.pdf.nota_zone) || "");
-    $("gen-soglie").textContent = `Fasce${r.zona ? ` (${r.zona.nome})` : ""}: ${soglieTesto(r.zona)}.`;
-    $("gen-conteggio").textContent = R().fasce.criterio === "punti" ? `· ${r.punti} punti` : `· ${r.punti} su ${R().elementi.length}`;
+    $("gen-soglie").textContent = R().fasce.gruppi ? (R().fasce.nota || "") : `Fasce${r.zona ? ` (${r.zona.nome})` : ""}: ${soglieTesto(r.zona)}.`;
+    $("gen-conteggio").textContent = R().fasce.criterio === "punti" ? `· ${r.punti} punti` : R().fasce.conta ? `· ${r.punti} base${r.premium !== undefined ? `, ${r.premium} premium` : ""}` : `· ${r.punti} su ${R().elementi.length}`;
     $("gen-esito-fascia").textContent = r.base
       ? `${r.zona.nome}, fascia ${r.fascia.nome} (${r.punti} ${R().fasce.criterio === "punti" ? "punti" : "elementi"}): da € ${v(r.base[0])} a € ${v(r.base[1])} al mq ${unita()}` : `fascia ${r.fascia.nome}`;
     $("gen-esito-magg").textContent = r.maggiorazioni.length

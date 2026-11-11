@@ -48,9 +48,15 @@
     const note = [];
     let base = U;
     const c = (R.correzioni || []).find((x) => (x.incluso ? U <= x.fino : U < x.fino));
-    if (c) {
+    if (c && c.proporzionale) {
+      base = U + U * (c.fino - U) / c.fino;
+      note.push(`Da ${c.da} a ${c.fino} mq: aumento proporzionale, superficie x (${c.fino} - mq) / ${c.fino}.`);
+    } else if (c) {
       base = Math.max(U, Math.min(U * (1 + c.perc / 100), c.tetto ?? Infinity));
       if (base > U) note.push(`Superficie ${c.perc > 0 ? "aumentata" : "ridotta"} del ${Math.abs(c.perc)}%${c.tetto ? ` (al massimo ${virgola(c.tetto)} mq)` : ""}.`);
+    } else if (R.grandi && U > R.grandi.oltre && R.grandi.riduzione) {
+      base = Math.max(R.grandi.oltre, U * (1 - R.grandi.riduzione / 100));
+      note.push(`Oltre ${R.grandi.oltre} mq la superficie si riduce del ${R.grandi.riduzione}% (non sotto ${R.grandi.oltre} mq).`);
     } else if (R.grandi && U > R.grandi.oltre) {
       base = R.grandi.oltre + (U - R.grandi.oltre) * R.grandi.perc / 100;
       note.push(`Oltre ${R.grandi.oltre} mq la parte eccedente conta il ${R.grandi.perc}%.`);
@@ -66,9 +72,23 @@
     return { righe, base: cent(base), totale: cent(righe.reduce((t, r) => t + r.convenzionale, 0)), note };
   }
 
+  /** I punti di un elemento: casella (punti se segnata) o livello scelto (es. stato 0/1/2). */
+  const puntiDi = (e, val) => (e.livelli ? (val === "" || val === undefined || val === null || val === false ? 0 : (e.livelli[Number(val)] || {}).punti || 0) : val ? e.punti || 0 : 0);
+  const presente = (e, val) => (e.livelli ? val !== "" && val !== undefined && val !== null && val !== false : !!val);
+
   function fascia(accordo, s, zona) {
     const F = accordo.regole.fasce, el = s.elementi || [], E = accordo.regole.elementi;
-    const n = F.criterio === "punti" ? E.reduce((t, e, i) => t + (el[i] ? e.punti || 0 : 0), 0) : el.filter(Boolean).length;
+    if (F.gruppi) {
+      // es. Ancona: ogni gruppo di elementi dà una fascia; il massimo è la media pesata dei massimi
+      const gruppi = F.gruppi.map((g) => {
+        const n = E.slice(g.da, g.a + 1).reduce((t, e, k) => t + puntiDi(e, el[g.da + k]), 0);
+        let i = g.soglie.findIndex((x) => n <= x); if (i < 0) i = g.soglie.length;
+        return { nome: g.nome, n, i, fascia: F.nomi[i], peso: g.peso };
+      });
+      return { n: gruppi.reduce((t, g) => t + g.n, 0), i: null, nome: gruppi.map((g) => `${g.nome} ${g.fascia}`).join(", "), gruppi, avviso: "" };
+    }
+    const [da, a] = F.conta ? [F.conta.da, F.conta.a] : [0, E.length - 1];
+    const n = F.criterio === "punti" ? E.reduce((t, e, i) => t + (i >= da && i <= a ? puntiDi(e, el[i]) : 0), 0) : E.filter((e, i) => i >= da && i <= a && presente(e, el[i])).length;
     const soglie = (F.soglie_zona && zona && F.soglie_zona[zona.codice]) || F.soglie;
     let i = soglie.findIndex((x) => n <= x);
     if (i < 0) i = soglie.length;
@@ -91,10 +111,14 @@
     if (f.avviso) avvisi.push(f.avviso);
     if (r.zona) {
       const tab = Array.isArray(r.zona.fasce) ? r.zona.fasce : r.zona.fasce[tipo === "agevolato" ? String(anni) : "3"] || r.zona.fasce["3"];
-      r.base = tab[f.i];
+      if (f.gruppi) {
+        const pesi = f.gruppi.reduce((t, g) => t + g.peso, 0);
+        const max = Math.round(f.gruppi.reduce((t, g) => t + tab[g.i][1] * g.peso, 0) / pesi * 100) / 100;
+        r.base = [Math.round(max * R.fasce.minimo_perc) / 100, max];
+      } else r.base = tab[f.i];
     }
     const z = r.zona ? r.zona.codice : "";
-    const add = (nome, perc) => { if (perc) r.maggiorazioni.push({ nome, perc }); };
+    const add = (nome, perc, dopo) => { if (perc) r.maggiorazioni.push({ nome, perc, dopo: !!dopo }); };
     const sup = superficie(accordo, s);
     r.superficie = sup;
     if (sup) avvisi.push(...sup.note); else avvisi.push("Inserisci la superficie.");
@@ -102,19 +126,28 @@
       if (m.contratti && !m.contratti.includes(tipo)) continue;
       if (!perZona(m, z)) continue;
       const val = (s.maggiorazioni_scelte || {})[m.chiave];
-      if (m.tipo === "scelta") { const o = (m.opzioni || []).find((x) => x.valore === val); if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc); }
-      else if (val) add(m.nome || m.testo, m.perc);
+      if (m.tipo === "scelta") { const o = (m.opzioni || []).find((x) => x.valore === val); if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc, m.dopo); }
+      else if (val) add(m.nome || m.testo, m.perc, m.dopo);
     }
     if (sup) for (const c of R.correttivi_superficie || []) {
       if (!perZona(c, z)) continue;
       if ((c.da === undefined || sup.totale >= c.da) && (c.a === undefined || sup.totale <= c.a)) add(c.nome, c.perc);
     }
-    if (tipo === "agevolato" && R.durata) add(`durata ${s.durata_anni} + 2 anni`, R.durata[String(anni)] || 0);
-    if (R.contratto && R.contratto[tipo]) add(tipo === "studenti" ? "contratto per studenti" : "contratto transitorio", R.contratto[tipo]);
-    r.fattore = R.combinazione === "prodotto"
-      ? r.maggiorazioni.reduce((k, m) => k * (1 + m.perc / 100), 1)
-      : 1 + r.maggiorazioni.reduce((t, m) => t + m.perc, 0) / 100;
-    if (r.base) r.valori = r.base.map((x) => Math.round(x * r.fattore * 1000) / 1000);
+    if (R.premium && r.zona) {
+      // es. Perugia: elementi "premium" contati a parte, maggiorazione secondo la zona
+      const P = R.premium, el = s.elementi || [];
+      const np = R.elementi.filter((e, i) => i >= P.da && i <= P.a && presente(e, el[i])).length;
+      const sc = P.scaglioni.filter((x) => np >= x.da).pop();
+      r.premium = np;
+      if (sc) add(`${np} elementi premium`, sc.perc[z] ?? sc.perc.altre ?? 0, P.dopo);
+    }
+    if (tipo === "agevolato" && R.durata) add(`durata ${s.durata_anni} + 2 anni`, R.durata[String(anni)] || 0, R.durata_dopo);
+    if (R.contratto && R.contratto[tipo]) add(tipo === "studenti" ? "contratto per studenti" : "contratto transitorio", R.contratto[tipo], R.durata_dopo);
+    const prima = r.maggiorazioni.filter((m) => !m.dopo), dopo = r.maggiorazioni.filter((m) => m.dopo);
+    r.fattore = (R.combinazione === "prodotto"
+      ? prima.reduce((k, m) => k * (1 + m.perc / 100), 1)
+      : 1 + prima.reduce((t, m) => t + m.perc, 0) / 100) * dopo.reduce((k, m) => k * (1 + m.perc / 100), 1);
+    if (r.base) r.valori = r.base.map((x, i) => (R.solo_massimo && i === 0 ? x : Math.round(x * r.fattore * 1000) / 1000));
     if (r.valori) {
       r.valore_proposto = r.valori[1];
       const scritto = numero(s.valore_mq);
@@ -146,5 +179,5 @@
     return r;
   }
 
-  return { calcola, superficie, fascia, numero, virgola };
+  return { calcola, superficie, fascia, puntiDi, presente, numero, virgola };
 });

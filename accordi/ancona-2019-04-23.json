@@ -1,0 +1,747 @@
+{
+ "accordo": {
+  "codice": "ancona-2019-04-23",
+  "modello": "ancona-2019",
+  "comune": "Ancona",
+  "provincia": "AN",
+  "titolo": "Accordo per il Comune di Ancona per la stipula dei contratti a canone convenzionato",
+  "data": "2019-04-23",
+  "data_testo": "23 aprile 2019",
+  "deposito": "prot. 0065957",
+  "deposito_data": "23.04.2019",
+  "protocollo": "0065957",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Ancona del 23 aprile 2019: scadenza prevista il 31 maggio 2022.</strong> Il Comune lo indica ancora come vigente, in attesa del nuovo. Dalla scadenza i valori possono essere aggiornati con l'ISTAT: qui trovi quelli originali, chiedi all'associazione che attesta il contratto quelli aggiornati.",
+  "firmatari_proprieta": [
+   "APE CONFEDILIZIA",
+   "APPC",
+   "ASPPI",
+   "CONFABITARE",
+   "CONFAPPI",
+   "FEDERPROPRIETÀ",
+   "UPPI"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET",
+   "UNIAT",
+   "UNIONE INQUILINI",
+   "ASSOCASA"
+  ],
+  "nota": "Firmato e depositato il 23/04/2019 (prot. 0065957), in vigore dal 01/06/2019, scadenza 31/05/2022 salvo proroga; errata corrige del 13-14/05/2019 (studenti in zone universitarie +10%). Comune di Ancona: delibera 290 del 28/05/2019.",
+  "fonte": "Comune di Ancona, pagina dell'accordo locale (testo, errata corrige, attestazione)."
+ },
+ "esempio_zona": "la zona dal quartiere (zone OMI)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "CENTRO",
+    "nome": "Centro e pregio",
+    "nota": "Centro e pregio: Passetto, Rione Adriatico, C.so Garibaldi, C.so Matteotti, S. Margherita, V.le Vittoria (B1); Rione San Pietro, Cardeto, Capodimonte (B2); Santo Stefano, Borgo Rodi (B3); Pietralacroce (D4). Le sigle sono le zone OMI dell'Agenzia delle Entrate.",
+    "fasce": [
+     [
+      48.0,
+      80
+     ],
+     [
+      54.0,
+      90
+     ],
+     [
+      60.0,
+      100
+     ]
+    ]
+   },
+   {
+    "codice": "SEMI1",
+    "nome": "Semicentro (C3, D1, D2, C4)",
+    "nota": "Semicentro (C3, D1, D2, C4): Palombare, Pinocchio, Posatora (C3); Brecce Bianche, Monte Dago, Ponterosso, Passo Varano, Q1, Q2 (D1); Torrette, Palombina, Collemarino (D2); Grazie, Tavernelle (C4). Le sigle sono le zone OMI dell'Agenzia delle Entrate.",
+    "fasce": [
+     [
+      42.0,
+      70
+     ],
+     [
+      48.0,
+      80
+     ],
+     [
+      54.0,
+      90
+     ]
+    ]
+   },
+   {
+    "codice": "SEMI2",
+    "nome": "Semicentro (C1, C2, B7)",
+    "nota": "Semicentro (C1, C2, B7): Piano S. Lazzaro, M. della Resistenza, Rione Archi (C1-C2); Rione Monte Marino, Rione Montirozzo (B7). Le sigle sono le zone OMI dell'Agenzia delle Entrate.",
+    "fasce": [
+     [
+      39.0,
+      65
+     ],
+     [
+      45.0,
+      75
+     ],
+     [
+      51.0,
+      85
+     ]
+    ]
+   },
+   {
+    "codice": "PERIF",
+    "nome": "Periferica-suburbana (D5, E5)",
+    "nota": "Periferica-suburbana (D5, E5): Località Candia, Baraccola (D5-E5). Le sigle sono le zone OMI dell'Agenzia delle Entrate.",
+    "fasce": [
+     [
+      36.0,
+      60
+     ],
+     [
+      42.0,
+      70
+     ],
+     [
+      48.0,
+      80
+     ]
+    ]
+   },
+   {
+    "codice": "AGREST",
+    "nome": "Agricola est (R1)",
+    "nota": "Agricola est (R1): Frazioni del Parco del Conero: Varano, Montacuto, Poggio, Massignano (R1). Le sigle sono le zone OMI dell'Agenzia delle Entrate.",
+    "fasce": [
+     [
+      30.0,
+      50
+     ],
+     [
+      36.0,
+      60
+     ],
+     [
+      42.0,
+      70
+     ]
+    ]
+   },
+   {
+    "codice": "AGROVEST",
+    "nome": "Agricola ovest (R2)",
+    "nota": "Agricola ovest (R2): Altre frazioni: Aspio, Montesicuro, Sappanico, Paterno, Gallignano (R2). Le sigle sono le zone OMI dell'Agenzia delle Entrate.",
+    "fasce": [
+     [
+      24.0,
+      40
+     ],
+     [
+      30.0,
+      50
+     ],
+     [
+      36.0,
+      60
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "inferiore",
+    "media",
+    "superiore"
+   ],
+   "criterio": "punti",
+   "minimo_perc": 60,
+   "gruppi": [
+    {
+     "nome": "pertinenze",
+     "titolo": "a) Dotazione di pertinenze",
+     "da": 0,
+     "a": 9,
+     "soglie": [
+      5,
+      10
+     ],
+     "peso": 2
+    },
+    {
+     "nome": "conservazione",
+     "titolo": "b) Stato di conservazione dell'immobile e degli impianti",
+     "da": 10,
+     "a": 15,
+     "soglie": [
+      5,
+      9
+     ],
+     "peso": 1
+    },
+    {
+     "nome": "servizi",
+     "titolo": "c) Dotazione di servizi e accessori",
+     "da": 16,
+     "a": 33,
+     "soglie": [
+      7,
+      15
+     ],
+     "peso": 2
+    }
+   ],
+   "nota": "Ogni gruppo dà una fascia (pertinenze: fino a 5 inferiore, 6-10 media, oltre superiore; conservazione: fino a 5, 6-9, 10-12; servizi: fino a 7, 8-15, 16-28). Massimo = (2 x pertinenze + conservazione + 2 x servizi) / 5; minimo = 60% del massimo."
+  },
+  "elementi": [
+   {
+    "testo": "Garage in uso esclusivo",
+    "punti": 5
+   },
+   {
+    "testo": "Posto auto coperto riservato",
+    "punti": 3
+   },
+   {
+    "testo": "Posto auto scoperto riservato",
+    "punti": 2
+   },
+   {
+    "testo": "Cantina di almeno 4 mq",
+    "punti": 3
+   },
+   {
+    "testo": "Soffitta praticabile di almeno 4 mq",
+    "punti": 2
+   },
+   {
+    "testo": "Ripostiglio esterno, sottoscala, soffitta o cantina sotto i 4 mq",
+    "punti": 1
+   },
+   {
+    "testo": "Balconi, terrazzi o lastrico solare esclusivi sotto i 10 mq complessivi",
+    "punti": 1
+   },
+   {
+    "testo": "Terrazza, lastrico solare o più balconi esclusivi oltre 10 mq",
+    "punti": 2
+   },
+   {
+    "testo": "Area a verde in godimento esclusivo",
+    "punti": 2
+   },
+   {
+    "testo": "Lavatoio o stenditoio in godimento esclusivo",
+    "punti": 1
+   },
+   {
+    "testo": "Pavimenti",
+    "livelli": [
+     {
+      "testo": "mediocre o scadente",
+      "punti": 0
+     },
+     {
+      "testo": "normale o discreto",
+      "punti": 1
+     },
+     {
+      "testo": "buono o nuovo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Pareti, soffitti e tinteggiatura",
+    "livelli": [
+     {
+      "testo": "mediocre o scadente",
+      "punti": 0
+     },
+     {
+      "testo": "normale o discreto",
+      "punti": 1
+     },
+     {
+      "testo": "buono o nuovo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Infissi",
+    "livelli": [
+     {
+      "testo": "mediocre o scadente",
+      "punti": 0
+     },
+     {
+      "testo": "normale o discreto",
+      "punti": 1
+     },
+     {
+      "testo": "buono o nuovo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Impianto idrico e servizi igienici e sanitari",
+    "livelli": [
+     {
+      "testo": "mediocre o scadente",
+      "punti": 0
+     },
+     {
+      "testo": "normale o discreto",
+      "punti": 1
+     },
+     {
+      "testo": "buono o nuovo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Accessi, scale, ascensore",
+    "livelli": [
+     {
+      "testo": "mediocre o scadente",
+      "punti": 0
+     },
+     {
+      "testo": "normale o discreto",
+      "punti": 1
+     },
+     {
+      "testo": "buono o nuovo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Facciate, coperture e parti comuni in genere",
+    "livelli": [
+     {
+      "testo": "mediocre o scadente",
+      "punti": 0
+     },
+     {
+      "testo": "normale o discreto",
+      "punti": 1
+     },
+     {
+      "testo": "buono o nuovo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Ascensore",
+    "punti": 2
+   },
+   {
+    "testo": "Assenza di barriere architettoniche nell'edificio (L. 13/1989)",
+    "punti": 2
+   },
+   {
+    "testo": "Assenza di barriere architettoniche nell'abitazione (L. 13/1989)",
+    "punti": 1
+   },
+   {
+    "testo": "Riscaldamento autonomo o contabilizzato",
+    "punti": 1
+   },
+   {
+    "testo": "Doppi vetri, vetri termici o doppie finestre su almeno il 50% degli infissi",
+    "punti": 1
+   },
+   {
+    "testo": "Cucina abitabile (almeno 9 mq con finestra)",
+    "punti": 2
+   },
+   {
+    "testo": "Doppi servizi",
+    "punti": 3
+   },
+   {
+    "testo": "Porta blindata e/o barre anti-intrusione agli infissi",
+    "punti": 1
+   },
+   {
+    "testo": "Allarme singolo, videocamera, impianti di sicurezza o domotica",
+    "punti": 2
+   },
+   {
+    "testo": "Allarme condominiale, videocamera, impianti di sicurezza o domotica",
+    "punti": 1
+   },
+   {
+    "testo": "Citofono",
+    "punti": 1
+   },
+   {
+    "testo": "Videocitofono",
+    "punti": 2
+   },
+   {
+    "testo": "Portiere",
+    "punti": 1
+   },
+   {
+    "testo": "Condizionamento su almeno il 50% dei vani",
+    "punti": 1
+   },
+   {
+    "testo": "Impianto TV autonomo o centralizzato",
+    "punti": 1
+   },
+   {
+    "testo": "Antenna parabolica e/o collegamento in rete",
+    "punti": 1
+   },
+   {
+    "testo": "Classe energetica (APE)",
+    "livelli": [
+     {
+      "testo": "F o G",
+      "punti": 0
+     },
+     {
+      "testo": "C, D o E",
+      "punti": 2
+     },
+     {
+      "testo": "A o B",
+      "punti": 4
+     }
+    ]
+   },
+   {
+    "testo": "Fonti energetiche rinnovabili",
+    "punti": 2
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile netta (vani principali e accessori diretti)",
+   "correzioni": [
+    {
+     "fino": 46,
+     "perc": 30
+    },
+    {
+     "fino": 65,
+     "da": 46,
+     "incluso": true,
+     "proporzionale": true
+    }
+   ],
+   "grandi": {
+    "oltre": 95,
+    "perc": 50
+   },
+   "voci": [
+    {
+     "chiave": "accessori_com",
+     "testo": "Soffitte, cantine e simili comunicanti (sotto 1,70 m: 30%)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "accessori_non",
+     "testo": "Soffitte, cantine e simili non comunicanti",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi_com",
+     "testo": "Balconi e terrazze esclusivi comunicanti",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi_non",
+     "testo": "Balconi e terrazze esclusivi non comunicanti",
+     "coeff": 0.1
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde esclusivo fino ai mq dell'alloggio (oltre: 2%)",
+     "coeff": 0.1
+    },
+    {
+     "chiave": "garage",
+     "testo": "Garage o posto auto coperto esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto condominiale assegnato",
+     "coeff": 0.2
+    }
+   ],
+   "nota": "Il verde esclusivo oltre la superficie dell'alloggio conta il 2%: inserisci a parte solo la quota fino a quella superficie."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "intensivo",
+    "tipo": "spunta",
+    "testo": "Alloggio in immobile intensivo (oltre 8 alloggi nello stesso fabbricato)",
+    "nome": "immobile intensivo",
+    "perc": -10
+   },
+   {
+    "chiave": "cortili",
+    "tipo": "spunta",
+    "testo": "Cortili con piantumazione e/o parcheggio in uso comune",
+    "nome": "cortili comuni",
+    "perc": 1
+   },
+   {
+    "chiave": "verde_comune",
+    "tipo": "spunta",
+    "testo": "Aree verdi (giardino, orto) in uso comune",
+    "nome": "verde comune",
+    "perc": 2
+   },
+   {
+    "chiave": "stenditoi",
+    "tipo": "spunta",
+    "testo": "Stenditoi o lavatoi comuni",
+    "nome": "stenditoi comuni",
+    "perc": 1
+   },
+   {
+    "chiave": "lastrici",
+    "tipo": "spunta",
+    "testo": "Lastrici solari agibili in uso comune",
+    "nome": "lastrici comuni",
+    "perc": 1
+   },
+   {
+    "chiave": "androni",
+    "tipo": "spunta",
+    "testo": "Aree condominiali comuni, androni o ripostigli",
+    "nome": "aree condominiali",
+    "perc": 1
+   },
+   {
+    "chiave": "autonoma",
+    "tipo": "spunta",
+    "testo": "Abitazione autonoma (alloggio singolo o con ingresso indipendente, a schiera...)",
+    "nome": "abitazione autonoma",
+    "perc": 5
+   },
+   {
+    "chiave": "categoria",
+    "tipo": "scelta",
+    "testo": "Categoria catastale",
+    "nome": "categoria",
+    "nessuna": "A/2",
+    "opzioni": [
+     {
+      "valore": "A7",
+      "testo": "A/7 villino, o A/1, A/8, A/9",
+      "perc": 10
+     },
+     {
+      "valore": "A3",
+      "testo": "A/3",
+      "perc": -2
+     },
+     {
+      "valore": "A4",
+      "testo": "A/4, A/5, A/6",
+      "perc": -4
+     }
+    ]
+   },
+   {
+    "chiave": "vetusta",
+    "tipo": "scelta",
+    "testo": "Anno di costruzione o di ristrutturazione completa (con manutenzione straordinaria dopo il 2000 la riduzione si dimezza)",
+    "nome": "vetustà",
+    "nessuna": "dal 2000 in poi",
+    "opzioni": [
+     {
+      "valore": "1955d",
+      "testo": "fino al 1955, in condizioni di degrado",
+      "perc": -20
+     },
+     {
+      "valore": "1955",
+      "testo": "fino al 1955",
+      "perc": -10
+     },
+     {
+      "valore": "1955m",
+      "testo": "fino al 1955, con manutenzione straordinaria dopo il 2000",
+      "perc": -5
+     },
+     {
+      "valore": "1974",
+      "testo": "dal 1955 al 1974",
+      "perc": -8
+     },
+     {
+      "valore": "1974m",
+      "testo": "dal 1955 al 1974, con manutenzione straordinaria dopo il 2000",
+      "perc": -4
+     },
+     {
+      "valore": "1999",
+      "testo": "dal 1975 al 1999",
+      "perc": -4
+     },
+     {
+      "valore": "1999m",
+      "testo": "dal 1975 al 1999, con manutenzione straordinaria dopo il 2000",
+      "perc": -2
+     }
+    ]
+   },
+   {
+    "chiave": "senza_bagno",
+    "tipo": "spunta",
+    "testo": "Senza servizi igienici interni all'abitazione",
+    "nome": "senza bagno interno",
+    "perc": -15
+   },
+   {
+    "chiave": "senza_risc",
+    "tipo": "spunta",
+    "testo": "Senza riscaldamento esteso a tutti i vani",
+    "nome": "riscaldamento non in tutti i vani",
+    "perc": -12
+   },
+   {
+    "chiave": "senza_fogna",
+    "tipo": "spunta",
+    "testo": "Senza allacciamento alla rete fognaria",
+    "nome": "senza fognatura",
+    "perc": -4
+   },
+   {
+    "chiave": "piano",
+    "tipo": "scelta",
+    "testo": "Piano",
+    "nome": "piano",
+    "nessuna": "terra, 1° o 2° senza ascensore",
+    "opzioni": [
+     {
+      "valore": "seminterrato",
+      "testo": "seminterrato",
+      "perc": -4
+     },
+     {
+      "valore": "ascensore",
+      "testo": "intermedio o ultimo con ascensore",
+      "perc": 2
+     },
+     {
+      "valore": "terzo",
+      "testo": "3° piano senza ascensore",
+      "perc": -4
+     },
+     {
+      "valore": "oltre",
+      "testo": "oltre il 3° piano senza ascensore",
+      "perc": -6
+     }
+    ]
+   },
+   {
+    "chiave": "mobilio",
+    "tipo": "scelta",
+    "testo": "Mobilio (se scadente, la percentuale si riduce del 20%)",
+    "nome": "mobilio",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "dopo": true,
+    "opzioni": [
+     {
+      "valore": "tutto",
+      "testo": "alloggio ammobiliato",
+      "perc": 25
+     },
+     {
+      "valore": "parziale20",
+      "testo": "parzialmente ammobiliato, mobilio abbondante",
+      "perc": 20
+     },
+     {
+      "valore": "parziale10",
+      "testo": "parzialmente ammobiliato (es. solo cucina, bagno, elettrodomestici)",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "studenti_durata",
+    "tipo": "scelta",
+    "testo": "Studenti fuori sede: durata",
+    "nome": "studenti, durata",
+    "nessuna": "fino a 9 mesi",
+    "contratti": [
+     "studenti"
+    ],
+    "dopo": true,
+    "opzioni": [
+     {
+      "valore": "12",
+      "testo": "da 10 a 12 mesi",
+      "perc": 5
+     },
+     {
+      "valore": "24",
+      "testo": "da 13 a 24 mesi",
+      "perc": 8
+     },
+     {
+      "valore": "36",
+      "testo": "da 25 a 36 mesi",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "studenti_zona",
+    "tipo": "spunta",
+    "testo": "Studenti: alloggio in zona universitaria o vicina alle sedi (non zone OMI R1, R2, D4, D5)",
+    "nome": "zona universitaria",
+    "perc": 10,
+    "contratti": [
+     "studenti"
+    ],
+    "dopo": true
+   }
+  ],
+  "nota_maggiorazioni": "I correttivi del punto 4 si sommano e si applicano a minimo e massimo; mobilio, durata e studenti si aggiungono dopo.",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 7
+  },
+  "durata_dopo": true,
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "titolo": "Attestazione di rispondenza (D.M. 16/01/2017) - elementi per il calcolo del canone",
+  "sottotitolo": "Accordo per il Comune di Ancona per la stipula dei contratti a canone convenzionato (firmato e depositato il 23/04/2019, in vigore dal 01/06/2019)",
+  "titolo_elementi": "Elementi qualificanti (punto B3)",
+  "dichiarazione": "Il locatore e il conduttore dichiarano, sotto la propria responsabilità, gli elementi sopra riportati, che con la copia del contratto sottoscritto costituiscono parte integrante dell'attestazione.",
+  "attestazione": [
+   "TUTTO CIÒ PREMESSO, l'Organizzazione …………………………, firmataria dell'Accordo territoriale per il Comune di Ancona sottoscritto e depositato il 23/04/2019, come sopra rappresentata, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra citati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Ancona depositato in data 23/04/2019."
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "firme_attestazione": [
+   "Il dichiarante/richiedente",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "Zone del territorio comunale con le zone OMI tra parentesi (punto B1)."
+ }
+}

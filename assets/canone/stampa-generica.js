@@ -78,7 +78,8 @@
     riga(["Locatore ", { w: 180, v: s.locatore }, "  C.F. ", { w: 130, v: (s.locatore_cf || "").toUpperCase() }]);
     riga(["Conduttore ", { w: 170, v: s.conduttore }, "  C.F. ", { w: 130, v: (s.conduttore_cf || "").toUpperCase() }]);
     riga([`Immobile in ${A.comune}, `, { w: 170, v: s.indirizzo }, " piano ", { w: 26, v: s.piano }, " Fg. ", { w: 30, v: s.foglio }, " Part. ", { w: 36, v: s.particella }, " Sub. ", { w: 26, v: s.subalterno }]);
-    riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, "  Fascia ", { w: 70, v: r.zona ? r.fascia.nome : "" }, R.fasce.criterio === "punti" ? "  Punteggio " : "  Elementi n. ", { w: 40, v: String(r.punti) }]);
+    if (r.fascia.gruppi) { riga(["Zona ", { w: 200, v: r.zona ? r.zona.nome : "" }, "  Punteggio ", { w: 40, v: String(r.punti) }]); riga(["Fasce ", { w: 360, v: r.zona ? r.fascia.nome : "" }]); }
+    else riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, "  Fascia ", { w: 70, v: r.zona ? r.fascia.nome : "" }, R.fasce.criterio === "punti" ? "  Punteggio " : "  Elementi n. ", { w: 40, v: String(r.punti) }]);
 
     // superficie
     sezione(P.titolo_superficie || "CALCOLO DELLA SUPERFICIE CONVENZIONALE");
@@ -100,29 +101,32 @@
     // elementi o parametri, su due colonne
     sezione((P.titolo_elementi || (R.fasce.criterio === "punti" ? "PARAMETRI E PUNTEGGI" : "ELEMENTI PRESENTI")).toUpperCase());
     const el = s.elementi || [], E = R.elementi, met = Math.ceil(E.length / 2), w = (DX - SX) / 2 - 12;
-    const righeCol = (i) => aCapo(`${i + 1}) ${E[i].testo}`, reg, 8, w - 26 - (E[i].punti ? 16 : 0));
+    const livello = (i) => { const e = E[i], val = el[i]; return e.livelli && val !== "" && val !== undefined && val !== null && val !== false ? e.livelli[Number(val)] : null; };
+    const puntiEl = (i) => (E[i].livelli ? (livello(i) ? livello(i).punti : "") : E[i].punti);
+    const righeCol = (i) => aCapo(`${i + 1}) ${E[i].testo}${livello(i) ? `: ${livello(i).testo}` : ""}`, reg, 8, w - 26 - (E[i].punti || E[i].livelli ? 16 : 0));
     for (let k = 0; k < met; k++) {
       const coppia = [k, k + met].filter((i) => i < E.length), alto = Math.max(...coppia.map((i) => righeCol(i).length)) * 9.6 + 2.5;
       spazio(alto);
       coppia.forEach((i, c) => {
-        const x0 = SX + c * ((DX - SX) / 2 + 6), si = !!el[i];
+        const x0 = SX + c * ((DX - SX) / 2 + 6), si = E[i].livelli ? !!livello(i) : !!el[i];
         casella(x0, a, si);
         righeCol(i).forEach((rr, z) => tx(rr, x0 + 11, a + z * 9.6, { sz: 8, c: si ? DATO : NERO, f: si ? bold : reg }));
-        if (E[i].punti) dx(String(E[i].punti), x0 + w, a, { sz: 8 });
+        if (puntiEl(i) !== "" && puntiEl(i) !== undefined) dx(String(puntiEl(i)), x0 + w, a, { sz: 8, c: E[i].livelli ? DATO : NERO });
       });
       a += alto;
     }
     spazio(14); a += 2;
     const soglie = (R.fasce.soglie_zona && r.zona && R.fasce.soglie_zona[r.zona.codice]) || R.fasce.soglie;
     const cosa = R.fasce.criterio === "punti" ? "punti" : "elementi";
-    tx(R.fasce.nomi.map((n, i) => i === 0 ? `${n}: fino a ${soglie[0]} ${cosa}` : i < soglie.length ? `${n}: da ${soglie[i - 1] + 1} a ${soglie[i]}` : `${n}: da ${soglie[i - 1] + 1}`).join("   ·   "), SX, a, { sz: 7.8 });
-    dx(`TOTALE ${R.fasce.criterio === "punti" ? "PUNTEGGIO" : "ELEMENTI"} ${r.punti}`, DX, a, { f: bold, sz: 8.6, c: DATO }); a += 6;
+    if (r.fascia.gruppi) tx(r.fascia.gruppi.map((g) => `${g.nome}: ${g.n} punti, fascia ${g.fascia}`).join("   ·   "), SX, a, { sz: 7.8, c: DATO });
+    else tx(R.fasce.nomi.map((n, i) => i === 0 ? `${n}: fino a ${soglie[0]} ${cosa}` : i < soglie.length ? `${n}: da ${soglie[i - 1] + 1} a ${soglie[i]}` : `${n}: da ${soglie[i - 1] + 1}`).join("   ·   "), SX, a, { sz: 7.8 });
+    dx(`TOTALE ${R.fasce.criterio === "punti" ? "PUNTEGGIO" : "ELEMENTI"} ${r.punti}`, DX, a, { f: bold, sz: 8.6, c: DATO }); a += 10;
 
     // maggiorazioni e calcolo
     sezione("MAGGIORAZIONI E RIDUZIONI");
     if (!r.maggiorazioni.length) { spazio(12); tx("nessuna", SX, a, { c: DATO }); a += 12; }
     for (const m of r.maggiorazioni) { spazio(12); tx(m.nome, SX, a, { sz: 8.8, c: DATO }); dx(`${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
-    if (r.maggiorazioni.length > 1) { spazio(12); tx(`totale (${R.combinazione === "prodotto" ? "applicate una sull'altra" : "sommate"})`, SX, a, { sz: 8.8 }); dx(`${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
+    if (r.maggiorazioni.length > 1) { spazio(12); tx(r.maggiorazioni.some((m) => m.dopo) || R.combinazione === "prodotto" ? "totale (in parte applicate una sull'altra)" : "totale (sommate)", SX, a, { sz: 8.8 }); dx(`${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
 
     sezione("CALCOLO DEL CANONE");
     const tab = [
