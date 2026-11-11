@@ -346,6 +346,79 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpotenza-1999-07-28-accordo.pdf?alt=media&token=9742de82-4b7f-4501-b3f9-e9a2dd7d8ef2"
     }
    ]
+  },
+  {
+   "comune": "Aosta",
+   "provincia": "AO",
+   "accordo": "aosta-2026-05-27",
+   "sottoscritto": "27 maggio 2026",
+   "depositato": "",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Faosta-2026-05-27-accordo.pdf?alt=media&token=43ff1fe4-7b67-4049-a4b5-c73ecf1e18b6",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Faosta-2026-05-27-accordo.pdf?alt=media&token=43ff1fe4-7b67-4049-a4b5-c73ecf1e18b6"
+    }
+   ]
+  },
+  {
+   "comune": "Bolzano",
+   "provincia": "BZ",
+   "accordo": "bolzano-2018-11-27",
+   "sottoscritto": "27 novembre 2018",
+   "depositato": "",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbolzano-2018-11-27-accordo.pdf?alt=media&token=8b453bd4-fdb3-4615-a2c7-accf3b192b7c",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbolzano-2018-11-27-accordo.pdf?alt=media&token=8b453bd4-fdb3-4615-a2c7-accf3b192b7c"
+    },
+    {
+     "nome": "Allegato 1 planimetria",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbolzano-2018-11-27-allegato-1-planimetria.pdf?alt=media&token=2c7fa183-3fec-47a5-a921-36ab43bda173"
+    },
+    {
+     "nome": "Allegato 2 fasce",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbolzano-2018-11-27-allegato-2-fasce.pdf?alt=media&token=887afaec-c31e-416b-9771-3d89cb85aa14"
+    },
+    {
+     "nome": "Allegato 8a attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbolzano-2018-11-27-allegato-8a-attestazione.pdf?alt=media&token=14a39fe7-f647-4afd-bcf4-e77cf24a7c31"
+    }
+   ]
+  },
+  {
+   "comune": "Trento",
+   "provincia": "TN",
+   "accordo": "trento-2024-12-13",
+   "sottoscritto": "13 dicembre 2024",
+   "depositato": "",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrento-2024-12-13-accordo.pdf?alt=media&token=b4752f96-62b2-4c7d-a949-5a6c6d1e35e3",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrento-2024-12-13-accordo.pdf?alt=media&token=b4752f96-62b2-4c7d-a949-5a6c6d1e35e3"
+    },
+    {
+     "nome": "Allegato a zone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrento-2024-12-13-allegato-a-zone.pdf?alt=media&token=f4a12b68-4650-4a3b-b2dc-aed0b35d7f8e"
+    },
+    {
+     "nome": "Allegato b tabelle",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrento-2024-12-13-allegato-b-tabelle.pdf?alt=media&token=c147df8b-07b1-45f6-93e0-3a6976acb312"
+    },
+    {
+     "nome": "Allegato g attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrento-2024-12-13-allegato-g-attestazione.pdf?alt=media&token=faecd5ae-6bad-4d2d-8599-ee76903d840f"
+    },
+    {
+     "nome": "Regolamento unico",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrento-2024-12-13-regolamento-unico.pdf?alt=media&token=fd55ae52-23b4-45f8-9819-250716e148b7"
+    }
+   ]
   }
  ]
 }

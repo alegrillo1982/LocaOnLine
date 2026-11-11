@@ -1,0 +1,417 @@
+{
+ "accordo": {
+  "codice": "trento-2024-12-13",
+  "modello": "trento-2024",
+  "comune": "Trento",
+  "provincia": "TN",
+  "titolo": "Canone concordato - Accordo territoriale per il Comune di Trento",
+  "data": "2024-12-13",
+  "data_testo": "13 dicembre 2024",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2027-12-31",
+  "firmatari_proprieta": [
+   "CONF.A.P.P.I.",
+   "FEDERPROPRIETÀ",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Accordo sottoscritto il 13/12/2024, in vigore dal 01/01/2025 al 31/12/2027 (pubblicato dal Comune il 30/12/2024), con il Regolamento unico dei comuni ad alta tensione abitativa del Trentino. Tabelle dell'allegato B aumentate del 4% dal 1/1/2025. La fascia si determina con il foglio di calcolo comune alle organizzazioni (allegato G).",
+  "fonte": "Comune di Trento, pagina dell'accordo territoriale 2025-2027 (accordo, allegati A, B, G, regolamento unico)."
+ },
+ "esempio_zona": "l'area dalla pianta della città (allegato A)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Area A (maggior pregio)",
+    "nota": "Area A: delimitata nella pianta della città (allegato A dell'accordo, aggiornato dal 1/1/2025). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      5.2,
+      9.36
+     ],
+     [
+      5.72,
+      10.4
+     ],
+     [
+      6.24,
+      11.96
+     ]
+    ]
+   },
+   {
+    "codice": "B",
+    "nome": "Area B",
+    "nota": "Area B: delimitata nella pianta della città (allegato A dell'accordo, aggiornato dal 1/1/2025). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      4.16,
+      8.84
+     ],
+     [
+      5.2,
+      9.88
+     ],
+     [
+      5.72,
+      11.44
+     ]
+    ]
+   },
+   {
+    "codice": "C",
+    "nome": "Area C",
+    "nota": "Area C: delimitata nella pianta della città (allegato A dell'accordo, aggiornato dal 1/1/2025). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      4.16,
+      8.32
+     ],
+     [
+      4.68,
+      9.36
+     ],
+     [
+      5.2,
+      10.92
+     ]
+    ]
+   },
+   {
+    "codice": "D",
+    "nome": "Area D",
+    "nota": "Area D: delimitata nella pianta della città (allegato A dell'accordo, aggiornato dal 1/1/2025). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.64,
+      7.8
+     ],
+     [
+      4.16,
+      8.84
+     ],
+     [
+      5.2,
+      9.88
+     ]
+    ]
+   },
+   {
+    "codice": "E",
+    "nome": "Area E",
+    "nota": "Area E: delimitata nella pianta della città (allegato A dell'accordo, aggiornato dal 1/1/2025). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.12,
+      6.24
+     ],
+     [
+      4.16,
+      7.28
+     ],
+     [
+      4.68,
+      8.84
+     ]
+    ]
+   },
+   {
+    "codice": "F",
+    "nome": "Area F",
+    "nota": "Area F: delimitata nella pianta della città (allegato A dell'accordo, aggiornato dal 1/1/2025). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.12,
+      5.72
+     ],
+     [
+      3.64,
+      6.76
+     ],
+     [
+      4.16,
+      7.8
+     ]
+    ]
+   }
+  ],
+  "solo_massimo": true,
+  "fasce": {
+   "nomi": [
+    "BASSA",
+    "MEDIA",
+    "ALTA"
+   ],
+   "criterio": "scelta",
+   "chiave": "fascia",
+   "valori": [
+    "bassa",
+    "media",
+    "alta"
+   ],
+   "avviso": "Scegli la fascia: la classificazione (tipologia edilizia e catastale, classe energetica, accessori, servizi, esposizione) si fa con il foglio di calcolo dell'allegato G.",
+   "nota": "la fascia (bassa, media o alta) risulta dal foglio di calcolo dell'allegato G: tipologia edilizia e catastale, classe energetica, accessori, servizi tecnici, esposizione"
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Accessori in dotazione"
+   },
+   {
+    "da": 7,
+    "titolo": "Dotazione servizi tecnici"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Posto auto interno o esterno (esclusivo)"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Cantina"
+   },
+   {
+    "testo": "Soffitta"
+   },
+   {
+    "testo": "Taverna"
+   },
+   {
+    "testo": "Ripostiglio esterno"
+   },
+   {
+    "testo": "Terrazza o balcone oltre 3 mq"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Riscaldamento autonomo"
+   },
+   {
+    "testo": "Doppi vetri"
+   },
+   {
+    "testo": "Condizionamento"
+   },
+   {
+    "testo": "Verde e/o scoperto condominiale"
+   },
+   {
+    "testo": "Portoncino blindato"
+   },
+   {
+    "testo": "Sistema di sicurezza (antifurto, videosorveglianza, barriere, vetri blindati)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie reale dall'APE (utile e/o riscaldata)",
+   "correzioni": [
+    {
+     "fino": 46,
+     "perc": 20,
+     "tetto": 50.6
+    },
+    {
+     "fino": 70,
+     "perc": 10,
+     "tetto": 70
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "bassi",
+     "testo": "Locali con soffitto sotto 1,70 m",
+     "coeff": 0.7
+    },
+    {
+     "chiave": "box",
+     "testo": "Box auto (C/6)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posti auto (C/6)",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, cantine, soffitte, taverne",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Scoperto esclusivo",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "comune",
+     "testo": "Scoperto comune, quota millesimale",
+     "coeff": 0.1
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 40.99,
+     "perc": 40,
+     "limite": 53.3
+    },
+    {
+     "fino": 50.99,
+     "perc": 30,
+     "limite": 61.2
+    },
+    {
+     "fino": 60.99,
+     "perc": 20,
+     "limite": 67.1
+    },
+    {
+     "fino": 70.99,
+     "perc": 10,
+     "limite": 74.55
+    },
+    {
+     "fino": 80.99,
+     "perc": 5,
+     "limite": 81.0
+    },
+    {
+     "fino": 90.99,
+     "perc": 0
+    },
+    {
+     "fino": 120.0,
+     "perc": -5,
+     "limite": 90.99
+    },
+    {
+     "fino": 100000,
+     "perc": -10,
+     "limite": 114.0
+    }
+   ],
+   "nota": "Prima l'APE corretto (sotto 46 mq +20% fino a 50,60; da 46 a 69,99 mq +10% fino a 70), poi gli accessori; la superficie intermedia si corregge con la tabella del regolamento unico (da +40% a -10%)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "fascia",
+    "tipo": "scelta",
+    "testo": "Fascia dell'immobile (dal foglio di calcolo, allegato G)",
+    "nome": "fascia",
+    "nessuna": "scegli…",
+    "opzioni": [
+     {
+      "valore": "bassa",
+      "testo": "bassa",
+      "perc": 0
+     },
+     {
+      "valore": "media",
+      "testo": "media",
+      "perc": 0
+     },
+     {
+      "valore": "alta",
+      "testo": "alta",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "vincolo",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato (Beni culturali) o A/1, A/8, A/9",
+    "nome": "immobile vincolato",
+    "perc": 15
+   },
+   {
+    "chiave": "tr_a",
+    "tipo": "auto",
+    "nome": "transitorio (area A)",
+    "perc": 15,
+    "contratti": [
+     "transitorio"
+    ],
+    "zone": [
+     "A"
+    ]
+   },
+   {
+    "chiave": "tr",
+    "tipo": "auto",
+    "nome": "transitorio",
+    "perc": 20,
+    "contratti": [
+     "transitorio"
+    ],
+    "escluse": [
+     "A"
+    ]
+   },
+   {
+    "chiave": "st_a",
+    "tipo": "auto",
+    "nome": "studenti (area A)",
+    "perc": 15,
+    "contratti": [
+     "studenti"
+    ],
+    "zone": [
+     "A"
+    ]
+   },
+   {
+    "chiave": "st",
+    "tipo": "auto",
+    "nome": "studenti",
+    "perc": 20,
+    "contratti": [
+     "studenti"
+    ],
+    "escluse": [
+     "A"
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Le maggiorazioni valgono sui valori massimi, una sull'altra. Transitori e studenti: fino a +20% (area A fino a +15%).",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "combinazione": "prodotto",
+  "avvisi": []
+ },
+ "pdf": {
+  "titolo": "Attestazione conformità canone ex D.M. 16.1.17",
+  "sottotitolo": "Accordo territoriale ex D.M. 16.01.2017 dd. 13.12.2024 vigente per il Comune di Trento e Regolamento unico provinciale",
+  "titolo_elementi": "Accessori e servizi tecnici in dotazione",
+  "dichiarazione": "Il proprietario dichiara che i dati relativi all'unità immobiliare sono stati dallo stesso rilevati, verificati e comunicati, e solleva l'organizzazione da ogni responsabilità per errori o omissioni nei dati dichiarati.",
+  "firme": [
+   "Firma del locatore dichiarante",
+   "Firma del conduttore"
+  ],
+  "attestazione": [
+   "L'Organizzazione ……………………………, sulla base degli elementi oggettivi dichiarati, anche al fine dell'ottenimento di eventuali agevolazioni fiscali, attesta che i contenuti economici e normativi del contratto a cui si riferisce corrispondono a quanto previsto nell'Accordo territoriale ex D.M. 16.01.2017 dd. 13.12.2024 vigente per il Comune di Trento."
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "firme_attestazione": [
+   "Timbro e firma dell'Organizzazione"
+  ],
+  "nota_zone": "L'area si ricava dalla pianta della città (allegato A)."
+ }
+}

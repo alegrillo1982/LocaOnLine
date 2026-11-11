@@ -1,0 +1,734 @@
+{
+ "accordo": {
+  "codice": "aosta-2026-05-27",
+  "modello": "aosta-2026",
+  "comune": "Aosta",
+  "provincia": "AO",
+  "titolo": "Accordo territoriale per il Comune di Aosta",
+  "data": "2026-05-27",
+  "data_testo": "27 maggio 2026",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2029-06-30",
+  "firmatari_proprieta": [
+   "U.P.P.I. Valle d'Aosta",
+   "CONFEDILIZIA Valle d'Aosta"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET",
+   "SAVT-CASA",
+   "UNIAT"
+  ],
+  "nota": "Firmato il 27/05/2026 alla presenza del Sindaco, in vigore dal 01/07/2026 per tre anni con rinnovo tacito; sostituisce l'accordo del 17/01/2020 (in vigore fino al 30/06/2026). Valori mensili per zona, sub-fascia e classe energetica (allegati 3 e 3-bis).",
+  "fonte": "PDF dell'accordo pubblicato dal SUNIA (64 pagine, scansione)."
+ },
+ "esempio_zona": "la zona dall'elenco vie (allegato 2)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro storico",
+    "nota": "Zona 1 - Centro storico: le vie di ogni zona sono nell'allegato 2 dell'accordo. Se il fabbricato ha due ingressi in zone diverse vale la zona di maggior pregio.",
+    "fasce": {
+     "G": [
+      [
+       3.6,
+       5.4
+      ],
+      [
+       4.9,
+       6.5
+      ],
+      [
+       5.8,
+       8.4
+      ]
+     ],
+     "F": [
+      [
+       3.7,
+       5.5
+      ],
+      [
+       5.0,
+       6.7
+      ],
+      [
+       6.0,
+       8.5
+      ]
+     ],
+     "DE": [
+      [
+       3.8,
+       5.6
+      ],
+      [
+       5.1,
+       6.9
+      ],
+      [
+       6.1,
+       8.6
+      ]
+     ],
+     "ABC": [
+      [
+       3.9,
+       5.9
+      ],
+      [
+       5.3,
+       7.0
+      ],
+      [
+       6.3,
+       8.9
+      ]
+     ],
+     "stud_G": [
+      [
+       3.6,
+       6.8
+      ],
+      [
+       4.9,
+       8.1
+      ],
+      [
+       5.8,
+       10.5
+      ]
+     ],
+     "stud_F": [
+      [
+       3.7,
+       6.9
+      ],
+      [
+       5.0,
+       8.3
+      ],
+      [
+       6.0,
+       10.6
+      ]
+     ],
+     "stud_DE": [
+      [
+       3.8,
+       7.0
+      ],
+      [
+       5.1,
+       8.5
+      ],
+      [
+       6.1,
+       10.8
+      ]
+     ],
+     "stud_ABC": [
+      [
+       3.9,
+       7.2
+      ],
+      [
+       5.3,
+       8.9
+      ],
+      [
+       6.3,
+       11.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Centrale e bassa collinare",
+    "nota": "Zona 2 - Centrale e bassa collinare: le vie di ogni zona sono nell'allegato 2 dell'accordo. Se il fabbricato ha due ingressi in zone diverse vale la zona di maggior pregio.",
+    "fasce": {
+     "G": [
+      [
+       3.5,
+       5.2
+      ],
+      [
+       4.7,
+       6.3
+      ],
+      [
+       5.6,
+       8.2
+      ]
+     ],
+     "F": [
+      [
+       3.5,
+       5.3
+      ],
+      [
+       4.8,
+       6.4
+      ],
+      [
+       5.7,
+       8.3
+      ]
+     ],
+     "DE": [
+      [
+       3.6,
+       5.4
+      ],
+      [
+       4.9,
+       6.6
+      ],
+      [
+       5.9,
+       8.5
+      ]
+     ],
+     "ABC": [
+      [
+       3.7,
+       5.6
+      ],
+      [
+       5.1,
+       6.9
+      ],
+      [
+       6.1,
+       8.7
+      ]
+     ],
+     "stud_G": [
+      [
+       3.6,
+       6.8
+      ],
+      [
+       4.9,
+       8.1
+      ],
+      [
+       5.8,
+       10.5
+      ]
+     ],
+     "stud_F": [
+      [
+       3.7,
+       6.9
+      ],
+      [
+       5.0,
+       8.3
+      ],
+      [
+       6.0,
+       10.6
+      ]
+     ],
+     "stud_DE": [
+      [
+       3.8,
+       7.0
+      ],
+      [
+       5.1,
+       8.5
+      ],
+      [
+       6.1,
+       10.8
+      ]
+     ],
+     "stud_ABC": [
+      [
+       3.9,
+       7.2
+      ],
+      [
+       5.3,
+       8.9
+      ],
+      [
+       6.3,
+       11.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Semicentrale e collinare media",
+    "nota": "Zona 3 - Semicentrale e collinare media: le vie di ogni zona sono nell'allegato 2 dell'accordo. Se il fabbricato ha due ingressi in zone diverse vale la zona di maggior pregio.",
+    "fasce": {
+     "G": [
+      [
+       2.5,
+       4.0
+      ],
+      [
+       3.3,
+       5.6
+      ],
+      [
+       4.7,
+       6.8
+      ]
+     ],
+     "F": [
+      [
+       2.6,
+       4.1
+      ],
+      [
+       3.4,
+       5.7
+      ],
+      [
+       4.8,
+       6.9
+      ]
+     ],
+     "DE": [
+      [
+       2.7,
+       4.2
+      ],
+      [
+       3.5,
+       5.8
+      ],
+      [
+       4.9,
+       7.1
+      ]
+     ],
+     "ABC": [
+      [
+       2.8,
+       4.4
+      ],
+      [
+       3.6,
+       6.0
+      ],
+      [
+       5.1,
+       7.4
+      ]
+     ],
+     "stud_G": [
+      [
+       2.5,
+       5.0
+      ],
+      [
+       3.3,
+       7.0
+      ],
+      [
+       4.7,
+       8.5
+      ]
+     ],
+     "stud_F": [
+      [
+       2.6,
+       5.1
+      ],
+      [
+       3.4,
+       7.2
+      ],
+      [
+       4.8,
+       8.7
+      ]
+     ],
+     "stud_DE": [
+      [
+       2.7,
+       5.3
+      ],
+      [
+       3.5,
+       7.4
+      ],
+      [
+       4.9,
+       9.0
+      ]
+     ],
+     "stud_ABC": [
+      [
+       2.8,
+       5.5
+      ],
+      [
+       3.6,
+       7.6
+      ],
+      [
+       5.1,
+       9.2
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Periferiche e collinari",
+    "nota": "Zona 4 - Periferiche e collinari: le vie di ogni zona sono nell'allegato 2 dell'accordo. Se il fabbricato ha due ingressi in zone diverse vale la zona di maggior pregio.",
+    "fasce": {
+     "G": [
+      [
+       2.3,
+       4.0
+      ],
+      [
+       3.3,
+       5.2
+      ],
+      [
+       4.3,
+       6.0
+      ]
+     ],
+     "F": [
+      [
+       2.4,
+       4.1
+      ],
+      [
+       3.4,
+       5.3
+      ],
+      [
+       4.4,
+       6.1
+      ]
+     ],
+     "DE": [
+      [
+       2.5,
+       4.2
+      ],
+      [
+       3.5,
+       5.4
+      ],
+      [
+       4.5,
+       6.2
+      ]
+     ],
+     "ABC": [
+      [
+       2.6,
+       4.4
+      ],
+      [
+       3.6,
+       5.6
+      ],
+      [
+       4.6,
+       6.5
+      ]
+     ],
+     "stud_G": [
+      [
+       2.3,
+       5.0
+      ],
+      [
+       3.3,
+       6.5
+      ],
+      [
+       4.3,
+       7.5
+      ]
+     ],
+     "stud_F": [
+      [
+       2.4,
+       5.1
+      ],
+      [
+       3.4,
+       6.6
+      ],
+      [
+       4.4,
+       7.7
+      ]
+     ],
+     "stud_DE": [
+      [
+       2.5,
+       5.2
+      ],
+      [
+       3.5,
+       6.7
+      ],
+      [
+       4.5,
+       7.9
+      ]
+     ],
+     "stud_ABC": [
+      [
+       2.6,
+       5.4
+      ],
+      [
+       3.6,
+       6.9
+      ],
+      [
+       4.6,
+       8.1
+      ]
+     ]
+    }
+   }
+  ],
+  "tabella_per": "scelta",
+  "tabella_chiave": "energia",
+  "tabella_predefinita": "G",
+  "tabella_studenti": true,
+  "fasce": {
+   "nomi": [
+    "3ª",
+    "2ª",
+    "1ª"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    6
+   ]
+  },
+  "elementi": [
+   {
+    "testo": "Riscaldamento (autonomo, condominiale o teleriscaldamento)"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Serramenti con doppi o tripli vetri termici (almeno il 50%)"
+   },
+   {
+    "testo": "Doppi servizi igienici"
+   },
+   {
+    "testo": "Cantina a uso esclusivo"
+   },
+   {
+    "testo": "Soffitta a uso esclusivo"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Autorimessa singola"
+   },
+   {
+    "testo": "Posto auto coperto o scoperto assegnato"
+   },
+   {
+    "testo": "Allacciamento gas metano per cucina o acqua calda"
+   },
+   {
+    "testo": "Area verde comune o cortile comune"
+   },
+   {
+    "testo": "Area verde di pertinenza di almeno 6 mq"
+   },
+   {
+    "testo": "Arredo (almeno cucina con piano cottura e frigorifero)"
+   },
+   {
+    "testo": "Condizionamento o raffrescamento per almeno il 60% della superficie"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Categoria catastale A/1"
+   },
+   {
+    "testo": "Pannelli solari o fotovoltaico"
+   },
+   {
+    "testo": "Cappotto isolante o insufflaggio"
+   },
+   {
+    "testo": "Ventilazione meccanica per almeno il 60% della superficie"
+   },
+   {
+    "testo": "Colonnina di ricarica esclusiva o condominiale"
+   },
+   {
+    "testo": "Pompa di calore per acqua calda o riscaldamento"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie interna al netto dei muri perimetrali",
+   "correzioni": [
+    {
+     "da": 28,
+     "fino": 34,
+     "incluso": true,
+     "imposta": 35,
+     "zone": [
+      "1",
+      "2"
+     ]
+    },
+    {
+     "da": 35,
+     "fino": 39,
+     "incluso": true,
+     "imposta": 40,
+     "zone": [
+      "1",
+      "2"
+     ]
+    },
+    {
+     "da": 40.01,
+     "fino": 49,
+     "incluso": true,
+     "imposta": 50
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa singola o box (80%, zona 1: 90%)",
+     "coeff": 0.8,
+     "coeff_zona": {
+      "1": 0.9
+     }
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto esclusivo (40%, zona 1: 80%, zona 2: 50%)",
+     "coeff": 0.4,
+     "coeff_zona": {
+      "1": 0.8,
+      "2": 0.5
+     }
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto esclusivo (20%, zona 1: 70%, zona 2: 40%)",
+     "coeff": 0.2,
+     "coeff_zona": {
+      "1": 0.7,
+      "2": 0.4
+     }
+    },
+    {
+     "chiave": "cantina",
+     "testo": "Cantine a uso esclusivo",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "cantina_comune",
+     "testo": "Cantine in uso comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "soffitta",
+     "testo": "Soffitte a uso esclusivo",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazzi, lastrici solari",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde esclusivo di almeno 6 mq (15%, zona 1: 35%, zona 2: 25%, zona 3: 20%)",
+     "coeff": 0.15,
+     "coeff_zona": {
+      "1": 0.35,
+      "2": 0.25,
+      "3": 0.2
+     }
+    }
+   ],
+   "nota": "Da 40 a 49 mq la superficie si porta a 50 mq; nelle zone 1 e 2 da 28 a 34 mq a 35 e da 35 a 39 mq a 40."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (sceglie la tabella dei valori)",
+    "nome": "classe energetica",
+    "nessuna": "G o senza APE",
+    "opzioni": [
+     {
+      "valore": "F",
+      "testo": "F",
+      "perc": 0
+     },
+     {
+      "valore": "DE",
+      "testo": "D o E",
+      "perc": 0
+     },
+     {
+      "valore": "ABC",
+      "testo": "A, B o C",
+      "perc": 0
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "La classe energetica sceglie la tabella dei valori. Il canone può scendere sotto il minimo della sub-fascia ma non sotto il minimo della 3ª sub-fascia della zona.",
+  "durata": {
+   "4": 2,
+   "5": 3,
+   "6": 5
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato n. 8",
+  "titolo": "Attestazione di rispondenza ex DM 16.01.2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Aosta del 27/05/2026, in vigore dal 01/07/2026",
+  "titolo_elementi": "Elementi qualificanti l'unità immobiliare (allegato 3)",
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Aosta, sulla base degli elementi oggettivi sopra riportati, dichiarati dalla parte contrattuale richiedente sotto la propria responsabilità, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA la rispondenza del contenuto economico e normativo del contratto all'Accordo territoriale vigente per il Comune di Aosta."
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dall'elenco delle vie (allegato 2 dell'accordo).",
+  "firme": []
+ }
+}

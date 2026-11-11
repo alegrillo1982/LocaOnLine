@@ -1,0 +1,351 @@
+{
+ "accordo": {
+  "codice": "bolzano-2018-11-27",
+  "modello": "bolzano-2018",
+  "comune": "Bolzano",
+  "provincia": "BZ",
+  "titolo": "Accordo territoriale per il Comune di Bolzano",
+  "data": "2018-11-27",
+  "data_testo": "27 novembre 2018",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Bolzano del 27 novembre 2018, in vigore dal 1° gennaio 2019.</strong> I valori massimi si aggiornano ogni 1° gennaio al 75% dell'ISTAT dalla firma: qui trovi quelli originali dell'allegato 2, chiedi all'associazione quelli aggiornati.",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA APE Bolzano",
+   "FEDERPROPRIETÀ (adesione)",
+   "CONFPROPRIETÀ (adesione 2026)"
+  ],
+  "firmatari_conduttori": [
+   "CENTRO CASA - SÜDTIROLER MIETERSCHUTZ",
+   "AI ASGB (adesione)"
+  ],
+  "nota": "Firmato il 27/11/2018 da Confedilizia e Centro Casa, sostituisce dal 01/01/2019 l'accordo del 30/05/2003; adesioni di Federproprietà e AI ASGB (27/11/2018) e Confproprietà (15/05/2026). Testo bilingue.",
+  "fonte": "Comune di Bolzano, pagina dell'accordo territoriale sulle locazioni abitative."
+ },
+ "esempio_zona": "l'area dalla planimetria (allegato 1)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Area 1",
+    "nota": "Area 1: delimitata nella planimetria dell'allegato 1 del Comune di Bolzano. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      4.5,
+      8.55
+     ],
+     [
+      4.5,
+      12.05
+     ],
+     [
+      4.5,
+      13.25
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2",
+    "nota": "Area 2: delimitata nella planimetria dell'allegato 1 del Comune di Bolzano. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.5,
+      7.65
+     ],
+     [
+      3.5,
+      11.15
+     ],
+     [
+      3.5,
+      12.25
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3",
+    "nota": "Area 3: delimitata nella planimetria dell'allegato 1 del Comune di Bolzano. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.5,
+      6.75
+     ],
+     [
+      2.5,
+      10.15
+     ],
+     [
+      2.5,
+      11.15
+     ]
+    ]
+   }
+  ],
+  "solo_massimo": true,
+  "fasce": {
+   "nomi": [
+    "1ª",
+    "2ª",
+    "3ª"
+   ],
+   "criterio": "punti",
+   "soglie": [
+    3,
+    8
+   ]
+  },
+  "elementi": [
+   {
+    "testo": "Posto auto in comune",
+    "punti": 1.0
+   },
+   {
+    "testo": "Autorimessa o posto auto esclusivo",
+    "punti": 1.5
+   },
+   {
+    "testo": "Ulteriore autorimessa o posto auto esclusivo",
+    "punti": 1.5
+   },
+   {
+    "testo": "Cortile e/o giardino condominiale non adibito a parcheggio",
+    "punti": 0.5
+   },
+   {
+    "testo": "Cantina o soffitta",
+    "punti": 0.5
+   },
+   {
+    "testo": "Balcone o terrazza sotto i 10 mq",
+    "punti": 1.0
+   },
+   {
+    "testo": "Balcone o terrazza di almeno 10 mq",
+    "punti": 1.5
+   },
+   {
+    "testo": "Ascensore",
+    "punti": 1.0
+   },
+   {
+    "testo": "Cucina abitabile di almeno 10 mq",
+    "punti": 1.0
+   },
+   {
+    "testo": "Area verde esclusiva",
+    "punti": 1.0
+   },
+   {
+    "testo": "Doppi servizi",
+    "punti": 1.0
+   },
+   {
+    "testo": "Collegamento antenna satellitare",
+    "punti": 0.5
+   },
+   {
+    "testo": "Condizionamento fisso o ventilazione controllata",
+    "punti": 1.5
+   },
+   {
+    "testo": "Immobile con meno di 9 unità per scala",
+    "punti": 1.0
+   },
+   {
+    "testo": "Finestre con vetri isolanti",
+    "punti": 1.0
+   },
+   {
+    "testo": "Porta di sicurezza e/o antifurto",
+    "punti": 1.0
+   }
+  ],
+  "superficie": {
+   "base": "Superficie interna dell'appartamento",
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Garage",
+     "coeff": 0.75
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto esclusivo",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde esclusivo",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazze",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "cantine",
+     "testo": "Cantine e soffitte",
+     "coeff": 0.25
+    }
+   ]
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "superficie interna fino a 40 mq",
+    "a": 40,
+    "perc": 25,
+    "su": "base"
+   },
+   {
+    "nome": "superficie interna da 40,01 a 55 mq",
+    "da": 40.01,
+    "a": 55,
+    "perc": 20,
+    "su": "base"
+   },
+   {
+    "nome": "superficie interna da 55,01 a 70 mq",
+    "da": 55.01,
+    "a": 70,
+    "perc": 15,
+    "su": "base"
+   },
+   {
+    "nome": "superficie interna da 120,01 a 150 mq",
+    "da": 120.01,
+    "a": 150,
+    "perc": -5,
+    "su": "base"
+   },
+   {
+    "nome": "superficie interna oltre 150 mq",
+    "da": 150.01,
+    "perc": -10,
+    "su": "base"
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "vetusta",
+    "tipo": "spunta",
+    "testo": "Abitazione mai integralmente restaurata nei 40 anni precedenti il contratto",
+    "nome": "vetustà",
+    "perc": -10
+   },
+   {
+    "chiave": "no_risc",
+    "tipo": "spunta",
+    "testo": "Mancanza assoluta di riscaldamento",
+    "nome": "senza riscaldamento",
+    "perc": -10
+   },
+   {
+    "chiave": "pianoterra",
+    "tipo": "spunta",
+    "testo": "Piano terra senza giardino in uso esclusivo",
+    "nome": "piano terra senza giardino",
+    "perc": -5
+   },
+   {
+    "chiave": "seminterrato",
+    "tipo": "spunta",
+    "testo": "Piano seminterrato",
+    "nome": "seminterrato",
+    "perc": -15
+   },
+   {
+    "chiave": "senza_asc",
+    "tipo": "spunta",
+    "testo": "Oltre il 2° piano senza ascensore",
+    "nome": "oltre il 2° piano senza ascensore",
+    "perc": -5
+   },
+   {
+    "chiave": "no_cantina",
+    "tipo": "spunta",
+    "testo": "Assenza di soffitta e cantina",
+    "nome": "senza soffitta e cantina",
+    "perc": -3
+   },
+   {
+    "chiave": "casaclima",
+    "tipo": "scelta",
+    "testo": "Edificio CasaClima",
+    "nome": "CasaClima",
+    "nessuna": "no",
+    "opzioni": [
+     {
+      "valore": "A",
+      "testo": "CasaClima A o superiore",
+      "perc": 15
+     },
+     {
+      "valore": "B",
+      "testo": "CasaClima B",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "mobilio",
+    "tipo": "scelta",
+    "testo": "Mobilio",
+    "nome": "mobilio",
+    "nessuna": "alloggio vuoto",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato (fino a +20%)",
+      "perc": 20
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato (fino a +10%)",
+      "perc": 10
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Correttivi, superficie, durata e mobilio si sommano e valgono sui valori massimi delle fasce. Per transitori e studenti i valori sono aumentati del 20% (allegato 2).",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "contratto": {
+   "transitorio": 20,
+   "studenti": 20,
+   "anche_minimo": true
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato 8a",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/1/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Bolzano del 27/11/2018, in vigore dal 01/01/2019 (Confedilizia APE, Centro Casa - Südtiroler Mieterschutz)",
+  "titolo_elementi": "Elementi e parametri oggettivi (punti)",
+  "dichiarazione": "Il richiedente dichiara di aver utilizzato il tipo di contratto allegato all'Accordo territoriale, senza modifiche, e dichiara sotto la sua responsabilità gli elementi sopra riportati.",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione …………………………, come sopra rappresentata, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di BOLZANO, depositato in data ……………",
+   "Bolzano, lì ……………"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "L'area si ricava dalla planimetria dell'allegato 1 (Aree 1, 2 e 3)."
+ }
+}

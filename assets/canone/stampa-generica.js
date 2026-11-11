@@ -36,7 +36,7 @@
     let p, a;
     const pagine = [];
     const nuova = () => { p = doc.addPage([L, H]); pagine.push(p); a = 50; };
-    const spazio = (h) => { if (a + h > FONDO_PAGINA) nuova(); };
+    const spazio = (h, oltre = 0) => { if (a + h > FONDO_PAGINA + oltre) nuova(); };
     const tx = (t, x, aa, { f = reg, sz = 9, c = NERO } = {}) => { p.drawText(String(t), { x, y: Y(aa), size: sz, font: f, color: c }); return x + largo(t, f, sz); };
     const dx = (t, x, aa, o = {}) => tx(t, x - largo(t, o.f || reg, o.sz || 9), aa, o);
     const aCapo = (t, f, sz, w) => {
@@ -118,7 +118,8 @@
     spazio(14); a += 2;
     const soglie = (R.fasce.soglie_zona && r.zona && R.fasce.soglie_zona[r.zona.codice]) || R.fasce.soglie;
     const cosa = R.fasce.criterio === "punti" ? "punti" : "elementi";
-    if (!r.fascia.gruppi && !soglie.length) tx("Una sola fascia per zona: gli elementi indicano se avvicinarsi al minimo o al massimo.", SX, a, { sz: 7.8 });
+    if (R.fasce.criterio === "scelta") tx(`Fascia ${r.fascia.nome} (scelta in base al foglio di calcolo dell'accordo).`, SX, a, { sz: 7.8, c: DATO });
+    else if (!r.fascia.gruppi && !soglie.length) tx("Una sola fascia per zona: gli elementi indicano se avvicinarsi al minimo o al massimo.", SX, a, { sz: 7.8 });
     else if (r.fascia.gruppi) tx(r.fascia.gruppi.map((g) => `${g.nome}: ${g.n} punti, fascia ${g.fascia}`).join("   ·   "), SX, a, { sz: 7.8, c: DATO });
     else tx(R.fasce.nomi.map((n, i) => i === 0 ? `${n}: fino a ${soglie[0]} ${cosa}` : i < soglie.length ? `${n}: da ${soglie[i - 1] + 1} a ${soglie[i]}` : `${n}: da ${soglie[i - 1] + 1}`).join("   ·   "), SX, a, { sz: 7.8 });
     dx(`TOTALE ${R.fasce.criterio === "punti" ? "PUNTEGGIO" : "ELEMENTI"} ${r.punti}`, DX, a, { f: bold, sz: 8.6, c: DATO }); a += 10;
@@ -130,7 +131,10 @@
     if (r.maggiorazioni.length > 1) { spazio(12); tx(r.maggiorazioni.some((m) => m.dopo) || R.combinazione === "prodotto" ? "totale (in parte applicate una sull'altra)" : "totale (sommate)", SX, a, { sz: 8.8 }); dx(`${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
 
     sezione("CALCOLO DEL CANONE");
+    const mt = R.tabella_per === "scelta" ? (R.maggiorazioni || []).find((m) => m.chiave === R.tabella_chiave) : null;
+    const tabella = mt ? (((mt.opzioni || []).find((o) => o.valore === ((s.maggiorazioni_scelte || {})[R.tabella_chiave] || R.tabella_predefinita)) || {}).testo || mt.nessuna) : null;
     const tab = [
+      ...(mt ? [["Tabella dei valori", `${mt.nome} ${tabella}${String(r.tipologia || "").startsWith("stud_") ? ", studenti universitari" : ""}`]] : []),
       ["Valori base al mq/" + per, r.base ? `minimo € ${v(r.base[0])}   massimo € ${v(r.base[1])}` : ""],
       ["Valori rettificati al mq/" + per, r.valori ? `minimo € ${v(r.valori[0], 3)}   massimo € ${v(r.valori[1], 3)}` : ""],
       ["Superficie convenzionale", sup ? `${v(sup.totale)} mq` : ""],
@@ -147,20 +151,20 @@
     a += 8;
     if (P.dichiarazione) { paragrafo(P.dichiarazione, { sz: 8.6 }); a += 4; }
     const firme = P.firme || ["Il locatore", "Il conduttore"];
-    spazio(26); a += 10;
+    if (firme.length) { spazio(26); a += 10; }
     firme.forEach((f, i) => { const x0 = SX + i * ((DX - SX) / firme.length); tx(f, x0, a, { sz: 8.8 }); p.drawLine({ start: { x: x0, y: Y(a + 14) }, end: { x: x0 + 190, y: Y(a + 14) }, thickness: 0.5, color: NERO }); });
-    a += 26;
+    if (firme.length) a += 26;
     if (P.attestazione) {
       spazio(60); a += 6;
       const t0 = P.titolo_attestazione || "ATTESTAZIONE DI RISPONDENZA";
       tx(t0, (L - largo(t0, bold, 10)) / 2, a, { f: bold, sz: 10 }); a += 16;
       for (const par of P.attestazione) { paragrafo(par, { sz: 8.6 }); a += 3; }
-      spazio(30); a += 10;
+      spazio(30, 14); a += 10;
       const fo = P.firme_attestazione || ["p. l'Organizzazione"];
       fo.forEach((f, i) => { const x0 = SX + i * ((DX - SX) / fo.length); tx(f, x0, a, { sz: 8.8 }); p.drawLine({ start: { x: x0, y: Y(a + 14) }, end: { x: x0 + 190, y: Y(a + 14) }, thickness: 0.5, color: NERO }); });
       a += 24;
     }
-    spazio(12);
+    spazio(12, 16);
     tx("Calcolo di LocaOnLine: il modulo segue le voci del modello dell'accordo; i dati dell'organizzazione e della registrazione restano da compilare.", SX, a, { sz: 6.8, c: GRIGIO });
 
     const piede = P.piede || `${P.allegato ? P.allegato + " dell'" : ""}Accordo territoriale per il Comune di ${A.comune} (${A.deposito_data ? `depositato il ${A.deposito_data.replace(/\./g, "/")}` : `sottoscritto il ${A.data_testo}`}), compilato con LocaOnLine`;

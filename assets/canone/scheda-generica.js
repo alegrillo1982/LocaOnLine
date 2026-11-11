@@ -12,6 +12,7 @@
   const campo = (nome) => modulo.elements[nome];
   const $ = (id) => document.getElementById(id);
   const v = (n, c = 2) => CanoneGenerico.virgola(n, c);
+  const virgolaN = (n) => String(n).replace(".", ",");
   const euro = (n) => (n === null || n === undefined ? "—" : "€ " + v(n));
   const testo = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   let accordo = null, ultimo = null;
@@ -23,6 +24,7 @@
 
   function soglieTesto(z) {
     const F = R().fasce, s = (F.soglie_zona && z && F.soglie_zona[z.codice]) || F.soglie, cosa = F.criterio === "punti" ? "punti" : "elementi";
+    if (F.criterio === "scelta") return F.nota || "fascia scelta in base al foglio di calcolo dell'accordo";
     if (!s.length) return "una sola fascia per zona; gli elementi indicano se avvicinarsi al minimo o al massimo";
     return F.nomi.map((nome, i) => i === 0 ? `${nome}: fino a ${s[0]} ${cosa}` : i < s.length ? `${nome}: da ${s[i - 1] + 1} a ${s[i]}` : `${nome}: da ${s[i - 1] + 1}`).join(" · ") + (F.almeno ? ` (${F.almeno.avviso.replace(/^Per /, "per ").replace(/\.$/, "")})` : "");
   }
@@ -43,14 +45,14 @@
     const S = r.superficie || {};
     $("gen-superfici").innerHTML = [{ chiave: "base", testo: S.base || "Superficie dell'alloggio" }, ...(S.voci || [])].map((x) => `
       <tr data-riga="${x.chiave}">
-        <th scope="row">${testo(x.testo)}${x.coeff !== undefined ? ` (${v(x.coeff * 100, 0)}%)` : ""}</th>
+        <th scope="row">${testo(x.testo)}${x.coeff !== undefined && !String(x.testo).includes("%") ? ` (${v(x.coeff * 100, 0)}%)` : ""}</th>
         <td><input type="text" class="campo-numero" name="sup_${x.chiave}" inputmode="decimal" aria-label="${testo(x.testo)}, mq"></td>
         <td class="risultato" data-sup="${x.chiave}">—</td>
       </tr>`).join("");
-    $("gen-maggiorazioni").innerHTML = (r.maggiorazioni || []).map((m) => {
+    $("gen-maggiorazioni").innerHTML = (r.maggiorazioni || []).filter((m) => m.tipo !== "auto").map((m) => {
       const cl = m.contratti ? m.contratti.map((c) => `per-${c}`).join(" ") : "";
       if (m.tipo === "scelta") return `<div class="griglia-campi stacco ${cl}" data-m="${m.chiave}"><label class="largo">${testo(m.testo)}<select name="m_${m.chiave}">` +
-        `<option value="">${testo(m.nessuna || "no")}</option>` + m.opzioni.map((o) => `<option value="${testo(o.valore)}">${testo(o.testo)} (${o.perc > 0 ? "+" : ""}${v(o.perc, o.perc % 1 ? 1 : 0)}%)</option>`).join("") + `</select></label></div>`;
+        `<option value="">${testo(m.nessuna || "no")}</option>` + m.opzioni.map((o) => `<option value="${testo(o.valore)}">${testo(o.testo)}${o.perc ? ` (${o.perc > 0 ? "+" : ""}${v(o.perc, o.perc % 1 ? 1 : 0)}%)` : ""}</option>`).join("") + `</select></label></div>`;
       return `<div class="caselle colonna stacco ${cl}" data-m="${m.chiave}"><label><input type="checkbox" name="m_${m.chiave}"> ${testo(m.testo)} (${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%)</label></div>`;
     }).join("") + (r.nota_maggiorazioni ? `<p class="nota-copia stacco">${testo(r.nota_maggiorazioni)}</p>` : "");
     $("gen-valore-etichetta").textContent = `Valore al mq ${unita()} (€)`;
@@ -66,7 +68,7 @@
     for (const x of [{ chiave: "base" }, ...((r.superficie || {}).voci || [])]) s.superfici[x.chiave] = campo("sup_" + x.chiave).value.trim();
     s.elementi = [...modulo.querySelectorAll("[name=el]")].map((c) => (c.tagName === "SELECT" ? c.value : c.checked));
     s.maggiorazioni_scelte = {};
-    for (const m of r.maggiorazioni || []) { const c = campo("m_" + m.chiave); s.maggiorazioni_scelte[m.chiave] = m.tipo === "scelta" ? c.value : c.checked; }
+    for (const m of r.maggiorazioni || []) { if (m.tipo === "auto") continue; const c = campo("m_" + m.chiave); s.maggiorazioni_scelte[m.chiave] = m.tipo === "scelta" ? c.value : c.checked; }
     s.catasto = { foglio: s.foglio, particella: s.particella, subalterno: s.subalterno };
     const arr = (r.maggiorazioni || []).find((m) => m.ammobiliato);
     let ammob = "";
@@ -86,6 +88,7 @@
     for (const [k, val] of Object.entries(d.superfici || {})) if (campo("sup_" + k)) campo("sup_" + k).value = val;
     modulo.querySelectorAll("[name=el]").forEach((x, i) => { const val = (d.elementi || [])[i]; if (x.tagName === "SELECT") x.value = val === undefined || val === null || val === false ? "" : String(val); else x.checked = !!val; });
     for (const m of R().maggiorazioni || []) {
+      if (m.tipo === "auto") continue;
       const el = campo("m_" + m.chiave), val = (d.maggiorazioni_scelte || {})[m.chiave];
       if (m.tipo === "scelta") el.value = val || ""; else el.checked = !!val;
     }
@@ -113,9 +116,9 @@
     $("gen-sup-nota").textContent = (R().superficie || {}).nota || "";
     $("gen-zona-nota").textContent = r.zona ? (r.zona.nota || "") : ((accordo.pdf && accordo.pdf.nota_zone) || "");
     $("gen-soglie").textContent = R().fasce.gruppi ? (R().fasce.nota || "") : `Fasce${r.zona ? ` (${r.zona.nome})` : ""}: ${soglieTesto(r.zona)}.`;
-    $("gen-conteggio").textContent = R().fasce.criterio === "punti" ? `· ${r.punti} punti` : R().fasce.conta ? `· ${r.punti} base${r.premium !== undefined ? `, ${r.premium} premium` : ""}` : `· ${r.punti} su ${R().elementi.length}`;
+    $("gen-conteggio").textContent = R().fasce.criterio === "scelta" ? `· ${$("gen-elementi").querySelectorAll("input:checked").length} su ${R().elementi.length}` : R().fasce.criterio === "punti" ? `· ${virgolaN(r.punti)} punti` : R().fasce.conta ? `· ${r.punti} base${r.premium !== undefined ? `, ${r.premium} premium` : ""}` : `· ${r.punti} su ${R().elementi.length}`;
     $("gen-esito-fascia").textContent = r.base
-      ? `${r.zona.nome}, fascia ${r.fascia.nome} (${r.punti} ${R().fasce.criterio === "punti" ? "punti" : "elementi"}): da € ${v(r.base[0])} a € ${v(r.base[1])} al mq ${unita()}` : `fascia ${r.fascia.nome}`;
+      ? `${r.zona.nome}, fascia ${r.fascia.nome}${R().fasce.criterio === "scelta" ? "" : ` (${virgolaN(r.punti)} ${R().fasce.criterio === "punti" ? "punti" : "elementi"})`}: da € ${v(r.base[0])} a € ${v(r.base[1])} al mq ${unita()}` : `fascia ${r.fascia.nome}`;
     $("gen-esito-magg").textContent = r.maggiorazioni.length
       ? r.maggiorazioni.map((m) => `${m.nome} ${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%`).join(", ") + (r.maggiorazioni.length > 1 ? ` = ${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%` : "") +
         (r.valori ? ` → da € ${v(r.valori[0])} a € ${v(r.valori[1])}` : "")
