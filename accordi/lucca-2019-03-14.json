@@ -1,0 +1,552 @@
+{
+ "accordo": {
+  "codice": "lucca-2019-03-14",
+  "modello": "lucca-2019",
+  "comune": "Lucca",
+  "provincia": "LU",
+  "titolo": "Accordo territoriale per i canoni concordati del Comune di Lucca",
+  "data": "2019-03-14",
+  "data_testo": "14 marzo 2019",
+  "deposito": "Comune di Lucca",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Lucca del 14 marzo 2019, in vigore dal 1° aprile 2019.</strong> La durata di tre anni è trascorsa, ma il Comune lo pubblica ancora come accordo vigente e altre associazioni vi hanno aderito fino a giugno 2026. I valori massimi si aggiornano ogni anno, per i nuovi contratti, fino al 75% dell'ISTAT dal 1° aprile 2019 (art. 5): qui trovi quelli originali dell'allegato 3, chiedi all'associazione che attesta il contratto quelli aggiornati.",
+  "firmatari_proprieta": [
+   "A.S.P.P.I. Lucca",
+   "Associazione proprietà edilizia - Confedilizia della provincia di Lucca",
+   "CONFAPPI",
+   "U.P.P.I. Lucca",
+   "A.N.P.U. (adesione 2022)",
+   "A.P.P.C. (adesione 2024)",
+   "A.T.I. (adesione 2025)",
+   "Confproprietà (adesione 2026)"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA Provinciale di Lucca",
+   "SICET Lucca",
+   "UGL CASA Lucca",
+   "UNIAT Provinciale di Lucca",
+   "FEDER.CASA CONFSAL (adesione 2019)"
+  ],
+  "nota": "Firmato a Lucca il 14/03/2019, in vigore dal 01/04/2019 (piè di pagina del testo; per l'art. 62 entra in vigore con il deposito all'Ufficio Protocollo del Comune, ma data e numero di protocollo del deposito non sono riportati nella copia pubblicata). Durata tre anni dal giorno dopo il deposito (art. 60), nessuna proroga scritta; il Comune lo indica ancora come vigente (pagina «Accordi Territoriali», con le adesioni di Feder.Casa Confsal prot. 144086/2019, A.N.P.U. prot. 175128/2022, A.P.P.C. prot. 79265/2024, A.T.I. prot. 78964/2025 e Confproprietà prot. 96048/2026). Sostituisce l'accordo del 29/09/2003 e l'integrazione dell'11/03/2005. Cinque zone per fogli di mappa catastale, con valori più alti fino al 10% dentro le Mura e nelle aree di pregio della zona 2; tre tipi di immobile (A, B, C) secondo gli elementi dell'allegato 2; valori in euro al mq al mese (allegato 3), massimi aggiornabili al 75% dell'ISTAT. Vale anche per transitori e studenti universitari, con gli stessi valori.",
+  "fonte": "Comune di Lucca, «Accordo territoriale per i canoni concordati – in vigore dal 1 aprile 2019» (PDF di 51 pagine: accordo, allegati 1a-10; identico a quello pubblicato da SUNIA) e pagina «Accordi Territoriali» con le lettere di adesione."
+ },
+ "esempio_zona": "la zona dal foglio di mappa catastale (visura)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1M",
+    "nome": "Zona 1 - centro storico dentro le Mura",
+    "nota": "Zona 1 dentro le Mura urbane: immobili dei fogli di mappa 129, 130, 131, 196, 197 e 198 che stanno dentro le Mura (allegato 1b, tratteggio giallo). Qui i massimi sono più alti fino al 10%, per il tipo A bastano 8 elementi e per il tipo B 5, e il garage conta il 65%. Valori in euro al mq al mese (allegato 3): minimo 1,00 per tutti i tipi.",
+    "fasce": {
+     "completi": [
+      [
+       1.0,
+       5.81
+      ],
+      [
+       1.0,
+       6.99
+      ],
+      [
+       1.0,
+       7.98
+      ]
+     ],
+     "incompleti": [
+      [
+       1.0,
+       5.81
+      ],
+      [
+       1.0,
+       6.99
+      ],
+      [
+       1.0,
+       6.99
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "1",
+    "nome": "Zona 1 - fuori dalle Mura",
+    "nota": "Zona 1 (gialla nell'allegato 1a, microzona catastale 1) fuori dalle Mura: fogli di mappa 104, 105 (solo la parte a sud di Via dei Salicchi), 111, 125, 126, 128, 132, 164, 165, e la parte fuori dalle Mura dei fogli 129, 130, 131, 196, 197 e 198. Valori in euro al mq al mese (allegato 3): minimo 1,00 per tutti i tipi.",
+    "fasce": {
+     "completi": [
+      [
+       1.0,
+       5.28
+      ],
+      [
+       1.0,
+       6.35
+      ],
+      [
+       1.0,
+       7.25
+      ]
+     ],
+     "incompleti": [
+      [
+       1.0,
+       5.28
+      ],
+      [
+       1.0,
+       6.35
+      ],
+      [
+       1.0,
+       6.35
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2P",
+    "nome": "Zona 2 - aree di pregio",
+    "nota": "Zona 2, aree di pregio (allegato 1b, tratteggio rosso): fogli di mappa con l'asterisco 91, 103, 105 (parte a nord di Via dei Salicchi), 108, 109, 110, 112, 113, 121, 122, 123, 124, 127, 133, 134, 163, 166, e i fogli 158 e 159 solo a nord dell'autostrada. Massimi più alti fino al 10%. Valori in euro al mq al mese (allegato 3): minimo 1,00 per tutti i tipi.",
+    "fasce": {
+     "completi": [
+      [
+       1.0,
+       4.79
+      ],
+      [
+       1.0,
+       5.56
+      ],
+      [
+       1.0,
+       6.55
+      ]
+     ],
+     "incompleti": [
+      [
+       1.0,
+       4.79
+      ],
+      [
+       1.0,
+       5.56
+      ],
+      [
+       1.0,
+       5.56
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2",
+    "nota": "Zona 2 (arancione nell'allegato 1a, microzona catastale 2): fogli di mappa 53-56, 64-67, 76-81, 92, 93, 94, 106, 107, 114, 119, 120, 135-139, 153-157, 160, 161, 170, 173, 174, e la parte a sud dell'autostrada dei fogli 158 e 159. Valori in euro al mq al mese (allegato 3): minimo 1,00 per tutti i tipi.",
+    "fasce": {
+     "completi": [
+      [
+       1.0,
+       4.35
+      ],
+      [
+       1.0,
+       5.05
+      ],
+      [
+       1.0,
+       5.95
+      ]
+     ],
+     "incompleti": [
+      [
+       1.0,
+       4.35
+      ],
+      [
+       1.0,
+       5.05
+      ],
+      [
+       1.0,
+       5.05
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3",
+    "nota": "Zona 3 (verde chiaro nell'allegato 1a, microzona catastale 3): fogli di mappa 63, 75, 88, 89, 90 e 102. Valori in euro al mq al mese (allegato 3): minimo 1,00 per tutti i tipi.",
+    "fasce": {
+     "completi": [
+      [
+       1.0,
+       4.75
+      ],
+      [
+       1.0,
+       5.65
+      ],
+      [
+       1.0,
+       6.6
+      ]
+     ],
+     "incompleti": [
+      [
+       1.0,
+       4.75
+      ],
+      [
+       1.0,
+       5.65
+      ],
+      [
+       1.0,
+       5.65
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4",
+    "nota": "Zona 4 (verde scuro nell'allegato 1a, microzone catastali 4, 5 e 7): fogli di mappa 24-28, 40-43, 57, 58, 68, 85, 86, 87, 97-101, 115-118, 140-152, 162, 167, 168, 169, 171, 172, 175-195. Valori in euro al mq al mese (allegato 3): minimo 1,00 per tutti i tipi.",
+    "fasce": {
+     "completi": [
+      [
+       1.0,
+       3.7
+      ],
+      [
+       1.0,
+       4.65
+      ],
+      [
+       1.0,
+       5.65
+      ]
+     ],
+     "incompleti": [
+      [
+       1.0,
+       3.7
+      ],
+      [
+       1.0,
+       4.65
+      ],
+      [
+       1.0,
+       4.65
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "5",
+    "nome": "Zona 5",
+    "nota": "Zona 5 (viola chiaro nell'allegato 1a, microzona catastale 6): fogli di mappa 1-23, 29-39, 44-52, 59, 60, 61, 62 (nel testo è scritto «52», ripetuto), 69-74, 82, 83, 84, 95, 96. Valori in euro al mq al mese (allegato 3): minimo 1,00 per tutti i tipi.",
+    "fasce": {
+     "completi": [
+      [
+       1.0,
+       3.35
+      ],
+      [
+       1.0,
+       4.0
+      ],
+      [
+       1.0,
+       4.75
+      ]
+     ],
+     "incompleti": [
+      [
+       1.0,
+       3.35
+      ],
+      [
+       1.0,
+       4.0
+      ],
+      [
+       1.0,
+       4.0
+      ]
+     ]
+    }
+   }
+  ],
+  "tabella_per": "conteggio",
+  "tabella_conta": {
+   "da": 2,
+   "a": 4,
+   "soglie": [
+    2
+   ],
+   "valori": [
+    "incompleti",
+    "completi"
+   ],
+   "titolo": "Elementi obbligatori per il tipo A (3, 4 e 5)",
+   "testi": {
+    "incompleti": "ne manca almeno uno, al massimo valori del tipo B",
+    "completi": "presenti tutti"
+   }
+  },
+  "fasce": {
+   "nomi": [
+    "C",
+    "B",
+    "A"
+   ],
+   "criterio": "conta",
+   "conta": {
+    "da": 0,
+    "a": 21
+   },
+   "soglie": [
+    5,
+    9
+   ],
+   "soglie_zona": {
+    "1M": [
+     4,
+     7
+    ]
+   },
+   "basta": [
+    22
+   ],
+   "nomi_per_tabella": {
+    "incompleti": [
+     "C",
+     "B",
+     "B (manca 3, 4 o 5)"
+    ]
+   },
+   "nota_soglie": "per il tipo A servono anche gli elementi 3, 4 e 5; dentro le Mura bastano 8 elementi per il tipo A e 5 per il B; l'elemento 23 porta al tipo A"
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi oggettivi (allegato 2)"
+   },
+   {
+    "da": 22,
+    "titolo": "Ristrutturazione con nuova abitabilità (non conta fra gli elementi)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Abitazione costruita, completamente ristrutturata o restaurata da non più di 10 anni, con impianti rifatti o messi a norma"
+   },
+   {
+    "testo": "Edificio isolato o villetta a schiera"
+   },
+   {
+    "testo": "Impianto di riscaldamento a norma (obbligatorio per il tipo A)"
+   },
+   {
+    "testo": "Impianto elettrico a norma (obbligatorio per il tipo A)"
+   },
+   {
+    "testo": "Allaccio alla fognatura comunale o altro scarico a norma (obbligatorio per il tipo A; n. 10 nell'accordo)"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Persiane o avvolgibili (dentro le Mura anche gli scuroli)"
+   },
+   {
+    "testo": "Secondo bagno con almeno tre sanitari"
+   },
+   {
+    "testo": "Allaccio al gas, o altra alimentazione a norma per riscaldamento, cucina e acqua calda"
+   },
+   {
+    "testo": "Infissi con doppi vetri (n. 5 nell'accordo)"
+   },
+   {
+    "testo": "Allaccio all'acquedotto pubblico"
+   },
+   {
+    "testo": "Posto auto scoperto in uso esclusivo"
+   },
+   {
+    "testo": "Spazi esterni in uso esclusivo (terrazze, logge, giardino, cortile) oltre il 30% della superficie dell'alloggio e di almeno 20 mq"
+   },
+   {
+    "testo": "Spazi comuni (terrazze, lastrici, logge, verde, impianti sportivi) pari ad almeno 20 mq secondo i millesimi"
+   },
+   {
+    "testo": "Classe energetica (APE) D o migliore; dentro le Mura F o migliore"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Impianto di allarme"
+   },
+   {
+    "testo": "Citofono o videocitofono"
+   },
+   {
+    "testo": "Ventilazione meccanica controllata"
+   },
+   {
+    "testo": "Ascensore o elevatore"
+   },
+   {
+    "testo": "Mobilio sufficiente per abitarci"
+   },
+   {
+    "testo": "Linea telefonica predisposta e funzionante"
+   },
+   {
+    "testo": "I lavori dell'elemento 1 hanno portato a un nuovo certificato di abitabilità: basta per il tipo A (segna anche 3, 4 e 5)"
+   }
+  ],
+  "riduzione_max": {
+   "chiave": "vincolato",
+   "perc": -10,
+   "fasce": [
+    2
+   ],
+   "avviso": "Immobile vincolato o di categoria A/1, A/8, A/9 e di tipo A: il massimo aumenta del 10% (art. 9)."
+  },
+  "superficie": {
+   "base": "Superficie calpestabile dell'alloggio, senza muri",
+   "correzioni": [
+    {
+     "fino": 45,
+     "incluso": true,
+     "perc": 20
+    },
+    {
+     "da": 45,
+     "fino": 56.25,
+     "incluso": true,
+     "perc": 19,
+     "tetto": 70
+    },
+    {
+     "da": 45,
+     "fino": 70,
+     "incluso": true,
+     "perc": 18,
+     "tetto": 70
+    }
+   ],
+   "grandi": {
+    "oltre": 110,
+    "perc": 85
+   },
+   "scaglioni_totale": [
+    {
+     "oltre": 144,
+     "perc": 94.1176
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Garage in uso esclusivo (50%, 65% dentro le Mura)",
+     "coeff": 0.5,
+     "coeff_zona": {
+      "1M": 0.65
+     }
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto in uso esclusivo, anche in spazi comuni",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazzi, cantine e accessori simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Giardino o cortile in uso esclusivo (15%, con un tetto)",
+     "coeff": 0.15,
+     "scaglione": [
+      "base",
+      0.15,
+      0
+     ]
+    }
+   ],
+   "nota": "Superfici al netto dei muri e degli sguanci di porte e finestre; le parti alte meno di 1,70 m si riducono del 30%; tolleranza del 5%. Alloggio sotto i 45 mq: +20%. Da 45 a 70 mq: +20% sui primi 45 mq e +15% sul resto, al massimo 70 mq (il calcolatore usa il 19% fino a 56,25 mq e il 18% oltre, che non superano mai il conto esatto). Da 70 a 110 mq: nessuna correzione. Oltre 110 mq: la parte da 110 a 150 mq conta l'85%, quella oltre 150 mq l'80%. Il giardino conta il 15% ma non oltre il 20% della superficie dell'alloggio: il calcolatore lo conta fino alla superficie dell'alloggio."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento (art. 8)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "arredato in modo sufficiente per abitarci",
+      "perc": 20
+     },
+     {
+      "valore": "cucina",
+      "testo": "solo cucina completa di elettrodomestici",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "vincolato",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato (beni culturali) o di categoria catastale A/1, A/8 o A/9: solo per il tipo A il massimo aumenta del 10% (art. 9)",
+    "nome": "immobile vincolato o A/1, A/8, A/9",
+    "perc": 0,
+    "mostra_perc": false
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti sono il massimo consentito e si applicano uno sull'altro (incremento composto, art. 10): durata 4 anni +2%, 5 anni +4%, 6 anni o più +6% (solo contratti agevolati); arredo completo fino a +20%, solo cucina con elettrodomestici fino a +10%; immobile vincolato o A/1, A/8, A/9 di tipo A +10%. Valgono sul massimo, il minimo resta 1,00 euro al mq. Per una porzione d'alloggio il canone dell'intero si divide in proporzione alla superficie usata in esclusiva.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "combinazione": "prodotto",
+  "solo_massimo": true,
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 4 (Lucca)",
+  "titolo": "Attestazione unilaterale di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale per i canoni concordati del Comune di Lucca, firmato il 14/03/2019 e in vigore dal 01/04/2019 (Legge 431/1998 e D.M. 16/01/2017)",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Accordo territoriale",
+  "titolo_elementi": "Elementi e parametri oggettivi (allegato 2)",
+  "etichetta_conteggio": "ELEMENTI E PARAMETRI N.",
+  "dichiarazione": "Il locatore / conduttore dell'immobile ha presentato richiesta per l'attestazione ex D.M. 16/01/2017, dichiarando, sotto la sua responsabilità, gli elementi sopra riportati.",
+  "firme": [],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "TUTTO CIÒ PREMESSO, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Lucca, in persona di ……………………………, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Lucca depositato in data ……………… 2019."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dal foglio di mappa catastale dell'immobile (lo trovi nella visura): l'allegato 3 dell'accordo elenca i fogli delle cinque zone e l'allegato 1a ha la cartina. Dentro le Mura (zona 1) e nelle aree di pregio della zona 2 (allegato 1b) i massimi sono più alti fino al 10%."
+ }
+}
