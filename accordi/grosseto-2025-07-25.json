@@ -1,0 +1,882 @@
+{
+ "accordo": {
+  "codice": "grosseto-2025-07-25",
+  "modello": "grosseto-2025",
+  "comune": "Grosseto",
+  "provincia": "GR",
+  "titolo": "Accordo territoriale per il territorio del Comune di Grosseto",
+  "data": "2025-07-25",
+  "data_testo": "25 luglio 2025",
+  "deposito": "Comune di Grosseto, prot. n. 0102807 del 30/07/2025; modifiche del 20/01/2026 depositate il 26/01/2026, prot. n. 0011287, e rettifica del 02/02/2026",
+  "deposito_data": "30.07.2025",
+  "protocollo": "0102807",
+  "ufficio": "Comune di Grosseto, Ufficio casa",
+  "ufficio_breve": "Comune di Grosseto",
+  "valido_fino": "",
+  "firmatari_proprieta": [
+   "APC - Confedilizia Grosseto",
+   "A.S.P.P.I. Grosseto",
+   "U.P.P.I. Grosseto"
+  ],
+  "firmatari_conduttori": [
+   "S.I.C.E.T. Grosseto",
+   "S.U.N.I.A. Grosseto",
+   "U.N.I.A.T. Grosseto"
+  ],
+  "nota": "Stipulato il 25/07/2025 e depositato al Comune di Grosseto il 30/07/2025 (prot. n. 0102807), in vigore dal 01/10/2025; sostituisce l'accordo del 14/06/2017. Modificato con atto del 20/01/2026 (deposito del 26/01/2026, prot. n. 0011287) e rettificato il 02/02/2026: il testo modificato, in vigore dal 01/02/2026, ha 16 aree omogenee (aggiunta la D.16 Aurelia Nord), massimi più bassi e l'aggiornamento ISTAT al 75%. Qui sono usati i valori del testo modificato. Vale fino a un nuovo decreto ministeriale (art. 38). Valori in euro al mese per mq di superficie convenzionale, per area omogenea OMI e tipologia A, B, C; il minimo e il massimo si moltiplicano per il coefficiente correttivo globale (catasto, classe energetica, manutenzione, arredo) e per l'aumento per durata. I valori non si aggiornano fino a settembre 2027; dal 1° ottobre 2027 si aggiornano ogni anno al 75% dell'ISTAT (base agosto 2025). Hanno poi aderito Confproprietà (prot. 74335/2026 del 07/06/2026) e A.N.P.U. (prot. 150474/2026 del 03/11/2026), non firmatarie.",
+  "fonte": "SUNIA, pagina «Accordi territoriali Grosseto»: testo coordinato con le rettifiche (18 pagine, scansione) e accordo del 30/07/2025; Comune di Grosseto, documento pubblico «Accordo territoriale» (pubblica ancora solo il testo del 25/07/2025)."
+ },
+ "esempio_zona": "l'area omogenea OMI dell'indirizzo (si verifica con GEOPOI dell'Agenzia delle Entrate)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "B1",
+    "nome": "B.1 - Centro storico",
+    "nota": "Area omogenea OMI B.1: Centro storico, dentro la cinta muraria. Valori in euro al mq al mese: tipologia A da 4,00 a 10,00, B da 3,00 a 8,00, C da 2,00 a 6,50.",
+    "fasce": [
+     [
+      2,
+      6.5
+     ],
+     [
+      3,
+      8.0
+     ],
+     [
+      4,
+      10.0
+     ],
+     [
+      4,
+      10.0
+     ]
+    ]
+   },
+   {
+    "codice": "C1",
+    "nome": "C.1 - Semicentrale",
+    "nota": "Area omogenea OMI C.1: Semicentrale, intorno alla cinta muraria. Valori in euro al mq al mese: tipologia A da 4,00 a 9,50, B da 3,00 a 7,50, C da 2,00 a 6,00.",
+    "fasce": [
+     [
+      2,
+      6.0
+     ],
+     [
+      3,
+      7.5
+     ],
+     [
+      4,
+      9.5
+     ],
+     [
+      4,
+      9.5
+     ]
+    ]
+   },
+   {
+    "codice": "D12",
+    "nome": "D.12 - Barbanella, Tiro a segno, Stadio, Gorarella",
+    "nota": "Area omogenea OMI D.12: Barbanella, Tiro a segno, Stadio, Gorarella. Valori in euro al mq al mese: tipologia A da 4,00 a 9,00, B da 3,00 a 7,00, C da 2,00 a 5,60.",
+    "fasce": [
+     [
+      2,
+      5.6
+     ],
+     [
+      3,
+      7.0
+     ],
+     [
+      4,
+      9.0
+     ],
+     [
+      4,
+      9.0
+     ]
+    ]
+   },
+   {
+    "codice": "D13",
+    "nome": "D.13 - Crespi, Alberino, Sterpeto",
+    "nota": "Area omogenea OMI D.13: Periferia: Crespi, Alberino, Sterpeto. Valori in euro al mq al mese: tipologia A da 4,00 a 8,50, B da 3,00 a 6,50, C da 2,00 a 5,50.",
+    "fasce": [
+     [
+      2,
+      5.5
+     ],
+     [
+      3,
+      6.5
+     ],
+     [
+      4,
+      8.5
+     ],
+     [
+      4,
+      8.5
+     ]
+    ]
+   },
+   {
+    "codice": "D14",
+    "nome": "D.14 - Cittadella, Sugherella, Regioni e altre",
+    "nota": "Area omogenea OMI D.14: Periferia: Cittadella, Sugherella, Regioni, Borgo, Curiel. Valori in euro al mq al mese: tipologia A da 4,00 a 8,50, B da 3,00 a 7,50, C da 2,00 a 6,40.",
+    "fasce": [
+     [
+      2,
+      6.4
+     ],
+     [
+      3,
+      7.5
+     ],
+     [
+      4,
+      8.5
+     ],
+     [
+      4,
+      8.5
+     ]
+    ]
+   },
+   {
+    "codice": "D15",
+    "nome": "D.15 - Verde Maremma, Vignaccio e altre",
+    "nota": "Area omogenea OMI D.15: Periferia: Verde Maremma, Vignaccio, Pizzetti, Oliveto, Casalone. Valori in euro al mq al mese: tipologia A da 4,00 a 9,00, B da 3,00 a 7,50, C da 2,00 a 6,00.",
+    "fasce": [
+     [
+      2,
+      6.0
+     ],
+     [
+      3,
+      7.5
+     ],
+     [
+      4,
+      9.0
+     ],
+     [
+      4,
+      9.0
+     ]
+    ]
+   },
+   {
+    "codice": "D16",
+    "nome": "D.16 - Aurelia Nord",
+    "nota": "Area omogenea OMI D.16: Periferia Aurelia Nord, zona soprattutto commerciale, artigianale e produttiva. Valori in euro al mq al mese: tipologia A da 4,00 a 7,50, B da 3,00 a 6,50, C da 2,00 a 5,50.",
+    "fasce": [
+     [
+      2,
+      5.5
+     ],
+     [
+      3,
+      6.5
+     ],
+     [
+      4,
+      7.5
+     ],
+     [
+      4,
+      7.5
+     ]
+    ]
+   },
+   {
+    "codice": "E5",
+    "nome": "E.5 - Rispescia",
+    "nota": "Area omogenea OMI E.5: Suburbana: Rispescia e zone circostanti. Valori in euro al mq al mese: tipologia A da 4,00 a 7,50, B da 3,00 a 6,00, C da 2,00 a 5,00.",
+    "fasce": [
+     [
+      2,
+      5.0
+     ],
+     [
+      3,
+      6.0
+     ],
+     [
+      4,
+      7.5
+     ],
+     [
+      4,
+      7.5
+     ]
+    ]
+   },
+   {
+    "codice": "E3",
+    "nome": "E.3 - Marina e Principina Mare",
+    "nota": "Area omogenea OMI E.3: Suburbana: Marina di Grosseto, Principina a Mare e zone circostanti. Valori in euro al mq al mese: tipologia A da 4,00 a 10,00, B da 3,00 a 8,50, C da 2,00 a 7,00.",
+    "fasce": [
+     [
+      2,
+      7.0
+     ],
+     [
+      3,
+      8.5
+     ],
+     [
+      4,
+      10.0
+     ],
+     [
+      4,
+      10.0
+     ]
+    ]
+   },
+   {
+    "codice": "E7",
+    "nome": "E.7 - Roselle",
+    "nota": "Area omogenea OMI E.7: Suburbana: Roselle e zone circostanti. Valori in euro al mq al mese: tipologia A da 4,00 a 7,50, B da 3,00 a 6,00, C da 2,00 a 5,50.",
+    "fasce": [
+     [
+      2,
+      5.5
+     ],
+     [
+      3,
+      6.0
+     ],
+     [
+      4,
+      7.5
+     ],
+     [
+      4,
+      7.5
+     ]
+    ]
+   },
+   {
+    "codice": "E11",
+    "nome": "E.11 - Batignano",
+    "nota": "Area omogenea OMI E.11: Suburbana: Batignano e zone circostanti. Valori in euro al mq al mese: tipologia A da 4,00 a 7,50, B da 3,00 a 6,00, C da 2,00 a 4,50.",
+    "fasce": [
+     [
+      2,
+      4.5
+     ],
+     [
+      3,
+      6.0
+     ],
+     [
+      4,
+      7.5
+     ],
+     [
+      4,
+      7.5
+     ]
+    ]
+   },
+   {
+    "codice": "E12",
+    "nome": "E.12 - Braccagni",
+    "nota": "Area omogenea OMI E.12: Suburbana: Braccagni e zone circostanti. Valori in euro al mq al mese: tipologia A da 4,00 a 7,50, B da 3,00 a 6,00, C da 2,00 a 5,00.",
+    "fasce": [
+     [
+      2,
+      5.0
+     ],
+     [
+      3,
+      6.0
+     ],
+     [
+      4,
+      7.5
+     ],
+     [
+      4,
+      7.5
+     ]
+    ]
+   },
+   {
+    "codice": "E18",
+    "nome": "E.18 - Casalecci, Stiacciole, Istia, San Martino",
+    "nota": "Area omogenea OMI E.18: Suburbana: Casalecci, Stiacciole, Istia d'Ombrone, San Martino. Valori in euro al mq al mese: tipologia A da 4,00 a 8,00, B da 3,00 a 7,00, C da 2,00 a 5,50.",
+    "fasce": [
+     [
+      2,
+      5.5
+     ],
+     [
+      3,
+      7.0
+     ],
+     [
+      4,
+      8.0
+     ],
+     [
+      4,
+      8.0
+     ]
+    ]
+   },
+   {
+    "codice": "R3",
+    "nome": "R.3 - Zona rurale costiera",
+    "nota": "Area omogenea OMI R.3: Extraurbana: zona rurale costiera e piccoli centri. Valori in euro al mq al mese: tipologia A da 4,00 a 7,50, B da 3,00 a 6,00, C da 2,00 a 5,00.",
+    "fasce": [
+     [
+      2,
+      5.0
+     ],
+     [
+      3,
+      6.0
+     ],
+     [
+      4,
+      7.5
+     ],
+     [
+      4,
+      7.5
+     ]
+    ]
+   },
+   {
+    "codice": "R4",
+    "nome": "R.4 - Zona rurale interna",
+    "nota": "Area omogenea OMI R.4: Extraurbana: zona rurale interna e piccoli centri. Valori in euro al mq al mese: tipologia A da 4,00 a 7,50, B da 3,00 a 5,00, C da 2,00 a 4,00.",
+    "fasce": [
+     [
+      2,
+      4.0
+     ],
+     [
+      3,
+      5.0
+     ],
+     [
+      4,
+      7.5
+     ],
+     [
+      4,
+      7.5
+     ]
+    ]
+   },
+   {
+    "codice": "R5",
+    "nome": "R.5 - Zona rurale collinare",
+    "nota": "Area omogenea OMI R.5: Extraurbana: zona rurale collinare e piccoli centri. Valori in euro al mq al mese: tipologia A da 4,00 a 7,00, B da 3,00 a 4,50, C da 2,00 a 3,00.",
+    "fasce": [
+     [
+      2,
+      3.0
+     ],
+     [
+      3,
+      4.5
+     ],
+     [
+      4,
+      7.0
+     ],
+     [
+      4,
+      7.0
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "C",
+    "B",
+    "A",
+    "A"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 13,
+      "a": 25,
+      "n": 5
+     }
+    ],
+    [
+     {
+      "da": 13,
+      "a": 25,
+      "n": 5
+     },
+     {
+      "da": 0,
+      "a": 2,
+      "n": 1
+     }
+    ],
+    [
+     {
+      "da": 13,
+      "a": 25,
+      "n": 5
+     },
+     {
+      "da": 3,
+      "a": 12,
+      "n": 3
+     }
+    ]
+   ],
+   "conta": {
+    "da": 0,
+    "a": 25
+   },
+   "nota": "Tipologia C: meno di 5 elementi B. Tipologia B: almeno 5 elementi B. Tipologia A: almeno 5 elementi B e, in più, almeno uno fra A1, A2 e A3, oppure almeno 3 fra A4 e A13 (allegato 3).",
+   "nota_pdf": "Tipologia C: meno di 5 elementi B. Tipologia B: almeno 5 elementi B. Tipologia A: almeno 5 elementi B e, in più, almeno uno fra A1, A2 e A3, oppure almeno 3 fra A4 e A13 (allegato 3)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi della tipologia A (servono anche 5 elementi B)"
+   },
+   {
+    "da": 13,
+    "titolo": "Elementi della tipologia B (almeno 5)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "A1 Costruito negli ultimi 10 anni prima del contratto (dichiarazione di fine lavori, con permesso di costruire)"
+   },
+   {
+    "testo": "A2 Restauro, risanamento o ristrutturazione negli ultimi 10 anni (con SCIA, o CILA per i lavori interni)"
+   },
+   {
+    "testo": "A3 Impianto fotovoltaico di almeno 1,5 kW"
+   },
+   {
+    "testo": "A4 Facciata completamente restaurata negli ultimi 3 anni"
+   },
+   {
+    "testo": "A5 Palazzina con meno di 7 appartamenti"
+   },
+   {
+    "testo": "A6 Casa a schiera con al massimo 2 appartamenti per ingresso"
+   },
+   {
+    "testo": "A7 Due bagni, uno con almeno 3 sanitari"
+   },
+   {
+    "testo": "A8 Terrazzi, balconi, logge, giardini o cortili pari ad almeno il 20% della superficie dell'alloggio"
+   },
+   {
+    "testo": "A9 Box o posto auto in uso esclusivo (in più rispetto a quello contato fra gli elementi B)"
+   },
+   {
+    "testo": "A10 Un ulteriore posto auto in uso esclusivo, oltre il primo"
+   },
+   {
+    "testo": "A11 Condizionatore, oppure riscaldamento autonomo a metano o a pannelli solari"
+   },
+   {
+    "testo": "A12 Porta blindata o impianto di allarme"
+   },
+   {
+    "testo": "A13 Doppi vetri, vetrocamera o controfinestre in almeno metà delle finestre"
+   },
+   {
+    "testo": "B1 Palazzo con meno di 11 appartamenti per scala"
+   },
+   {
+    "testo": "B2 Casa a schiera con al massimo 4 appartamenti per ingresso"
+   },
+   {
+    "testo": "B3 Impianto di riscaldamento efficiente e a norma"
+   },
+   {
+    "testo": "B4 Bagno con finestra o aerazione forzata e almeno 4 sanitari"
+   },
+   {
+    "testo": "B5 Acqua corrente"
+   },
+   {
+    "testo": "B6 Impianto elettrico a norma (o consentito dalle leggi vigenti)"
+   },
+   {
+    "testo": "B7 Ascensore, oppure alloggio al primo o secondo piano sopra il piano terra"
+   },
+   {
+    "testo": "B8 Terrazzi, balconi, logge, giardini o cortili pari ad almeno il 10% della superficie dell'alloggio"
+   },
+   {
+    "testo": "B9 Cantina o soffitta"
+   },
+   {
+    "testo": "B10 Garage o posto auto coperto in uso esclusivo"
+   },
+   {
+    "testo": "B11 Posto auto, anche scoperto, in uso esclusivo"
+   },
+   {
+    "testo": "B12 Cortile o terrazzo condominiale"
+   },
+   {
+    "testo": "B13 Pannelli fotovoltaici di qualsiasi potenza"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile netta dell'alloggio (stanze e accessori diretti)",
+   "correzioni": [
+    {
+     "fino": 46,
+     "perc": 20,
+     "tetto": 50.6
+    },
+    {
+     "da": 46,
+     "fino": 70,
+     "incluso": true,
+     "perc": 10,
+     "tetto": 70
+    }
+   ],
+   "correzioni_totale_su": "base",
+   "correzioni_totale": [
+    {
+     "fino": 120,
+     "perc": 0
+    },
+    {
+     "fino": 140,
+     "perc": -10
+    },
+    {
+     "fino": 1000000,
+     "perc": -15
+    }
+   ],
+   "etichetta_correzione": "totale",
+   "voci": [
+    {
+     "chiave": "cantina_com",
+     "testo": "Cantine, soffitte e simili comunicanti con l'alloggio",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantina",
+     "testo": "Cantine, soffitte e simili non comunicanti",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "garage",
+     "testo": "Garage in uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto in uso esclusivo in autorimessa comune",
+     "coeff": 0.35
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto in uso esclusivo",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazze (30% fino a 25 mq, 10% oltre)",
+     "coeff": 0.3,
+     "scaglione": [
+      25,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "chiave": "corte",
+     "testo": "Corte o area scoperta esclusiva (15% fino ai mq dell'alloggio, 5% oltre)",
+     "coeff": 0.15,
+     "scaglione": [
+      "base",
+      0.15,
+      0.05
+     ]
+    },
+    {
+     "chiave": "parco",
+     "testo": "Parco di villa A/7-A/8, mq oltre 5 volte l'alloggio (10%, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    },
+    {
+     "chiave": "condominio",
+     "testo": "Superficie condominiale, quota dei millesimi di proprietà",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Misura la superficie netta calpestabile (tolleranza del 5%). Se parti dalla superficie catastale, riducila del 15% per gli edifici in muratura e del 10% per quelli in cemento armato. Sotto i 46 mq la superficie aumenta del 20% (al massimo 50,60 mq), da 46 a 70 mq del 10% (al massimo 70 mq); da 121 a 140 mq conta il 90%, oltre 140 mq l'85%. Per i parchi e i giardini delle ville scrivi solo i mq oltre 5 volte la superficie dell'alloggio (la prima parte non conta). Per la superficie condominiale scrivi la tua quota: mq x millesimi / 1000."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "catasto",
+    "tipo": "scelta",
+    "testo": "Categoria catastale (dalla visura)",
+    "nome": "categoria catastale",
+    "nessuna": "scegli…",
+    "opzioni": [
+     {
+      "valore": "A1",
+      "testo": "A/1 abitazione signorile",
+      "perc": 15
+     },
+     {
+      "valore": "A2",
+      "testo": "A/2 abitazione civile",
+      "perc": 0
+     },
+     {
+      "valore": "A3",
+      "testo": "A/3 abitazione economica",
+      "perc": -5
+     },
+     {
+      "valore": "A4",
+      "testo": "A/4 abitazione popolare",
+      "perc": -10
+     },
+     {
+      "valore": "A5",
+      "testo": "A/5 abitazione ultrapopolare",
+      "perc": -15
+     },
+     {
+      "valore": "A6",
+      "testo": "A/6 abitazione rurale",
+      "perc": -20
+     },
+     {
+      "valore": "A7",
+      "testo": "A/7 villino",
+      "perc": 15
+     },
+     {
+      "valore": "A8",
+      "testo": "A/8 villa",
+      "perc": 15
+     },
+     {
+      "valore": "A9",
+      "testo": "A/9 castello o palazzo di pregio",
+      "perc": 15
+     },
+     {
+      "valore": "A11",
+      "testo": "A/11 abitazione tipica dei luoghi",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "ape",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE)",
+    "nome": "classe energetica",
+    "nessuna": "scegli…",
+    "opzioni": [
+     {
+      "valore": "A4",
+      "testo": "A4",
+      "perc": 50
+     },
+     {
+      "valore": "A3",
+      "testo": "A3",
+      "perc": 45
+     },
+     {
+      "valore": "A2",
+      "testo": "A2",
+      "perc": 40
+     },
+     {
+      "valore": "A1",
+      "testo": "A1",
+      "perc": 35
+     },
+     {
+      "valore": "A",
+      "testo": "A (attestato senza sottoclasse)",
+      "perc": 30
+     },
+     {
+      "valore": "B",
+      "testo": "B",
+      "perc": 20
+     },
+     {
+      "valore": "C",
+      "testo": "C",
+      "perc": 10
+     },
+     {
+      "valore": "DE",
+      "testo": "D o E",
+      "perc": 0
+     },
+     {
+      "valore": "FG",
+      "testo": "F o G",
+      "perc": -5
+     }
+    ]
+   },
+   {
+    "chiave": "manutenzione",
+    "tipo": "scelta",
+    "testo": "Stato di manutenzione: somma dei voti da 1 a 3 a pavimenti, pareti e soffitti, infissi, impianto elettrico, impianto idrico, riscaldamento, androne e scale, facciata e tetto",
+    "nome": "stato di manutenzione",
+    "nessuna": "scegli…",
+    "opzioni": [
+     {
+      "valore": "ottimo",
+      "testo": "ottimo (almeno 20)",
+      "perc": 20
+     },
+     {
+      "valore": "buono",
+      "testo": "buono (da 16 a 19)",
+      "perc": 10
+     },
+     {
+      "valore": "normale",
+      "testo": "normale (da 12 a 15)",
+      "perc": 0
+     },
+     {
+      "valore": "scadente",
+      "testo": "scadente (fino a 11, oppure senza impianto elettrico, acqua corrente o bagno privato)",
+      "perc": -40
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredo",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "nuovo",
+      "testo": "arredo completo e nuovo",
+      "perc": 20
+     },
+     {
+      "valore": "completo",
+      "testo": "arredo completo in normali condizioni",
+      "perc": 15
+     },
+     {
+      "valore": "meta",
+      "testo": "arredo al 50% in normali condizioni",
+      "perc": 10
+     },
+     {
+      "valore": "parziale",
+      "testo": "arredo inferiore al 50% in normali condizioni",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "durata_studenti",
+    "tipo": "scelta",
+    "testo": "Durata del contratto per studenti",
+    "nome": "durata",
+    "nessuna": "da 6 mesi a meno di 1 anno",
+    "contratti": [
+     "studenti"
+    ],
+    "opzioni": [
+     {
+      "valore": "12",
+      "testo": "almeno 1 anno",
+      "perc": 5
+     },
+     {
+      "valore": "18",
+      "testo": "almeno 18 mesi",
+      "perc": 7.5
+     },
+     {
+      "valore": "24",
+      "testo": "almeno 2 anni",
+      "perc": 10
+     },
+     {
+      "valore": "36",
+      "testo": "3 anni",
+      "perc": 15
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Il minimo e il massimo della tipologia si moltiplicano per il coefficiente correttivo globale, cioè il prodotto dei quattro coefficienti: categoria catastale, classe energetica, manutenzione e arredo (allegato 4). Poi si applica l'aumento per la durata: 4 anni +5%, 5 anni +6%, 6 anni o più +7%; per gli studenti da +5% (1 anno) a +15% (3 anni). I transitori non hanno aumenti. Per gli alloggi sociali (realizzati con contributi o agevolazioni pubbliche) il massimo si riduce del 10% (art. 34).",
+  "durata": {
+   "4": 5,
+   "5": 6,
+   "6": 7
+  },
+  "combinazione": "prodotto",
+  "avvisi": [
+   {
+    "testo": "I valori dell'accordo non si aggiornano fino a settembre 2027. Dal 1° ottobre 2027 si aggiornano ogni anno al 75% dell'ISTAT, partendo da agosto 2025 (art. 4)."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 6",
+  "titolo": "Scheda per la determinazione del canone effettivo",
+  "sottotitolo": "Legge 9.12.1998 n. 431 e D.M. 16.1.2017 - Accordo territoriale per il Comune di Grosseto del 25.07.2025, depositato presso il Comune di Grosseto il 30.07.2025, prot. n. 0102807, come modificato con atti del 20 gennaio 2026 e del 2 febbraio 2026",
+  "titolo_superficie": "SUPERFICIE UTILE DELL'IMMOBILE AI FINI DEL CANONE (ALLEGATO 5)",
+  "titolo_elementi": "Elementi oggettivi per la tipologia dell'immobile (allegato 3)",
+  "etichetta_conteggio": "ELEMENTI PRESENTI",
+  "dichiarazione": "I sottoscritti contraenti, sulla base dei dati ed elementi oggettivi riportati nei vari allegati e nella presente scheda di calcolo che, con la relativa sottoscrizione, vengono riconosciuti corrispondenti a quelli propri dell'immobile sopra descritto, definiscono il canone effettivo secondo quanto sopra descritto. Parte conduttrice dichiara di aver ricevuto da parte locatrice tutte le informazioni inerenti le prestazioni energetiche dell'immobile locato.",
+  "firme": [
+   "Il/i locatore/i",
+   "Il/i conduttore/i"
+  ],
+  "titolo_attestazione": "ATTESTA",
+  "attestazione": [
+   "L'Associazione …………………………………, firmataria del vigente Accordo territoriale per il Comune di Grosseto, depositato il 30.07.2025 con prot. n. 0102807 (Allegato 7, Attestazione di rispondenza ex D.M. 16.01.2017), in persona del proprio legale rappresentante …………………………………, sulla base dei dati ed elementi oggettivi come sopra forniti a cura e con assunzione di responsabilità dalle parti, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "che il contenuto economico e normativo del contratto sopraindicato corrisponde a quanto previsto dall'Accordo territoriale vigente per il Comune di Grosseto.",
+   "Il/la dichiarante, nella qualità di locatore/conduttore, dichiara che i dati sopra trascritti corrispondono a quelli forniti nell'Allegato 6 e solleva l'Organizzazione firmataria da qualsiasi responsabilità derivante da errori, omissioni o asserzioni non veritiere.",
+   "Grosseto, lì ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "Il/la dichiarante",
+   "Per l'Organizzazione"
+  ],
+  "nota_zone": "L'area omogenea corrisponde alla zona OMI dell'Agenzia delle Entrate (allegato 1): per trovarla si usa il servizio GEOPOI. Sono 16 aree: centro storico (B.1), semicentro (C.1), periferie (D.12-D.16), zone suburbane (E.3, E.5, E.7, E.11, E.12, E.18) e rurali (R.3-R.5)."
+ }
+}
