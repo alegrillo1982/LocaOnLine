@@ -65,7 +65,7 @@
     for (const v of R.voci || []) {
       const mq = numero(sup[v.chiave]) || 0;
       const k = v.coeff_zona && v.coeff_zona[z] !== undefined ? v.coeff_zona[z] : v.coeff;
-      let conv = mq * k;
+      let conv = v.scaglione ? Math.min(mq, v.scaglione[0]) * v.scaglione[1] + Math.max(0, mq - v.scaglione[0]) * v.scaglione[2] : mq * k;
       if (v.tetto === "base" && conv > U) { conv = U; note.push(`${v.testo}: al massimo la superficie dell'alloggio.`); }
       righe.push({ chiave: v.chiave, mq, coeff: k, convenzionale: cent(conv) });
     }
@@ -93,7 +93,11 @@
     let i = soglie.findIndex((x) => n <= x);
     if (i < 0) i = soglie.length;
     const mancano = (F.obbligatori || []).filter((k) => !el[k]);
-    const avviso = i > 0 && mancano.length ? `Senza ${mancano.map((k) => `l'elemento ${k + 1}`).join(" e ")} si resta nella fascia più bassa.` : "";
+    let avviso = i > 0 && mancano.length ? `Senza ${mancano.map((k) => `l'elemento ${k + 1}`).join(" e ")} si resta nella fascia più bassa.` : "";
+    if (i > 0 && F.almeno) {
+      const nb = E.filter((e, k) => k >= F.almeno.da && k <= F.almeno.a && presente(e, el[k])).length;
+      if (nb < F.almeno.n) avviso = F.almeno.avviso;
+    }
     if (avviso) i = 0;
     return { n, i, nome: F.nomi[i], avviso };
   }
@@ -110,12 +114,24 @@
     r.fascia = f; r.punti = f.n;
     if (f.avviso) avvisi.push(f.avviso);
     if (r.zona) {
-      const tab = Array.isArray(r.zona.fasce) ? r.zona.fasce : r.zona.fasce[tipo === "agevolato" ? String(anni) : "3"] || r.zona.fasce["3"];
+      let chiave = tipo === "agevolato" ? String(anni) : "3";
+      if (R.tabella_per === "superficie") {
+        const U = numero((s.superfici || {}).base);
+        chiave = (s.maggiorazioni_scelte || {}).casa ? "casa" : U === null ? "70" : U <= 45 ? "45" : U <= 70 ? "70" : U <= 120 ? "120" : "oltre";
+        r.tipologia = chiave;
+      }
+      const tab = Array.isArray(r.zona.fasce) ? r.zona.fasce : r.zona.fasce[chiave] || r.zona.fasce["3"];
       if (f.gruppi) {
         const pesi = f.gruppi.reduce((t, g) => t + g.peso, 0);
         const max = Math.round(f.gruppi.reduce((t, g) => t + tab[g.i][1] * g.peso, 0) / pesi * 100) / 100;
         r.base = [Math.round(max * R.fasce.minimo_perc) / 100, max];
       } else r.base = tab[f.i];
+      const P = R.fasce.proporzionale && R.fasce.proporzionale[f.i];
+      if (P && r.base) {
+        const passi = Math.max(0, Math.min(f.n - P.da, P.passi));
+        r.base = [r.base[0], Math.round((r.base[0] + (r.base[1] - r.base[0]) / P.passi * passi) * 100) / 100];
+        r.massimo_fascia = tab[f.i][1];
+      }
     }
     const z = r.zona ? r.zona.codice : "";
     const add = (nome, perc, dopo) => { if (perc) r.maggiorazioni.push({ nome, perc, dopo: !!dopo }); };
@@ -128,6 +144,17 @@
       const val = (s.maggiorazioni_scelte || {})[m.chiave];
       if (m.tipo === "scelta") { const o = (m.opzioni || []).find((x) => x.valore === val); if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc, m.dopo); }
       else if (val) add(m.nome || m.testo, m.perc, m.dopo);
+    }
+    if (R.alternativa) {
+      const A = R.alternativa, el = s.elementi || [];
+      const n = R.elementi.filter((e, i) => presente(e, el[i])).length;
+      const nb = R.elementi.filter((e, i) => i >= A.b.da && i <= A.b.a && presente(e, el[i])).length;
+      const sc = A.scaglioni.filter((x) => n >= x.da && nb >= (x.b || 0)).pop();
+      const idx = r.maggiorazioni.findIndex((m) => m.nome.startsWith(A.contro));
+      if (sc && (idx < 0 || r.maggiorazioni[idx].perc < sc.perc)) {
+        if (idx >= 0) r.maggiorazioni.splice(idx, 1);
+        add(`${n} elementi (in alternativa alla classe energetica)`, sc.perc);
+      }
     }
     if (sup) for (const c of R.correttivi_superficie || []) {
       if (!perZona(c, z)) continue;

@@ -1,0 +1,698 @@
+{
+ "accordo": {
+  "codice": "laquila-2025-09-26",
+  "modello": "laquila-2025",
+  "comune": "L'Aquila",
+  "provincia": "AQ",
+  "titolo": "Accordo territoriale per il Comune dell'Aquila",
+  "data": "2025-09-26",
+  "data_testo": "26 settembre 2025",
+  "deposito": "prot. 0109441",
+  "deposito_data": "26.09.2025",
+  "protocollo": "0109441",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2028-09-26",
+  "firmatari_proprieta": [],
+  "firmatari_conduttori": [],
+  "nota": "Accordo depositato al Comune dell'Aquila il 26/09/2025 (protocollo 0109441), in vigore da quella data per tre anni; sostituisce l'accordo del 03/09/2019. Firmatari: organizzazioni della proprietà, degli inquilini e degli studenti (copia firmata, nomi non leggibili con certezza). Dopo il 31/12/2028 i valori si possono aggiornare al 75% ISTAT.",
+  "fonte": "Copia protocollata pubblicata da Confabitare L'Aquila (48 pagine, scansione) e testo pubblicato da ASPPI."
+ },
+ "esempio_zona": "la microzona dal foglio catastale",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Microzona 1 - Centro",
+    "nota": "Microzona 1 - Centro: fogli 93-102. La tabella dipende dalla superficie netta (fino a 45, 45-70, 70-120, oltre 120 mq) o dalla casa singola.",
+    "fasce": {
+     "45": [
+      [
+       52,
+       98.7
+      ],
+      [
+       98.71,
+       136.5
+      ]
+     ],
+     "70": [
+      [
+       44,
+       79.8
+      ],
+      [
+       79.81,
+       105.0
+      ]
+     ],
+     "120": [
+      [
+       36,
+       67.2
+      ],
+      [
+       67.21,
+       96.6
+      ]
+     ],
+     "oltre": [
+      [
+       35,
+       61.95
+      ],
+      [
+       61.96,
+       82.95
+      ]
+     ],
+     "casa": [
+      [
+       37,
+       71.4
+      ],
+      [
+       71.41,
+       92.4
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Microzona 2 - Periferia urbana",
+    "nota": "Microzona 2 - Periferia urbana: fogli 47, 50-53, 60-92; sez. 5 fogli 1-5; sez. 6 fogli 1, 2, 7. La tabella dipende dalla superficie netta (fino a 45, 45-70, 70-120, oltre 120 mq) o dalla casa singola.",
+    "fasce": {
+     "45": [
+      [
+       44,
+       90.3
+      ],
+      [
+       90.31,
+       115.5
+      ]
+     ],
+     "70": [
+      [
+       39,
+       76.65
+      ],
+      [
+       76.66,
+       99.75
+      ]
+     ],
+     "120": [
+      [
+       33,
+       64.05
+      ],
+      [
+       64.06,
+       89.25
+      ]
+     ],
+     "oltre": [
+      [
+       31,
+       61.95
+      ],
+      [
+       61.95,
+       78.75
+      ]
+     ],
+     "casa": [
+      [
+       33,
+       66.15
+      ],
+      [
+       66.15,
+       89.25
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Microzona 3 - Assergi - Camarda - Paganica",
+    "nota": "Microzona 3 - Assergi - Camarda - Paganica: sez. 3, 4, 5, 6 (vedi allegato 1). La tabella dipende dalla superficie netta (fino a 45, 45-70, 70-120, oltre 120 mq) o dalla casa singola.",
+    "fasce": {
+     "45": [
+      [
+       39,
+       70.35
+      ],
+      [
+       70.36,
+       93.45
+      ]
+     ],
+     "70": [
+      [
+       35,
+       66.15
+      ],
+      [
+       66.15,
+       78.75
+      ]
+     ],
+     "120": [
+      [
+       29,
+       59.85
+      ],
+      [
+       59.86,
+       72.45
+      ]
+     ],
+     "oltre": [
+      [
+       28,
+       55.65
+      ],
+      [
+       55.66,
+       70.35
+      ]
+     ],
+     "casa": [
+      [
+       29,
+       57.75
+      ],
+      [
+       57.76,
+       74.55
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "Microzona 4 - Sassa - Preturo - Arischia",
+    "nota": "Microzona 4 - Sassa - Preturo - Arischia: fogli 103-111; sez. 7 fogli 1-5; sez. 8 fogli 26-38; sez. 9 fogli 14, 19, 20, 26. La tabella dipende dalla superficie netta (fino a 45, 45-70, 70-120, oltre 120 mq) o dalla casa singola.",
+    "fasce": {
+     "45": [
+      [
+       34,
+       69.3
+      ],
+      [
+       69.31,
+       90.3
+      ]
+     ],
+     "70": [
+      [
+       29,
+       64.05
+      ],
+      [
+       64.06,
+       78.75
+      ]
+     ],
+     "120": [
+      [
+       26,
+       57.75
+      ],
+      [
+       57.76,
+       72.45
+      ]
+     ],
+     "oltre": [
+      [
+       25,
+       49.35
+      ],
+      [
+       49.36,
+       64.05
+      ]
+     ],
+     "casa": [
+      [
+       28,
+       56.7
+      ],
+      [
+       56.71,
+       73.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "5",
+    "nome": "Microzona 5 - Collebrincioni - Camarda - Pescomaggiore",
+    "nota": "Microzona 5 - Collebrincioni - Camarda - Pescomaggiore: sez. 3, 4, 9 (vedi allegato 1). La tabella dipende dalla superficie netta (fino a 45, 45-70, 70-120, oltre 120 mq) o dalla casa singola.",
+    "fasce": {
+     "45": [
+      [
+       26,
+       56.7
+      ],
+      [
+       56.71,
+       78.75
+      ]
+     ],
+     "70": [
+      [
+       21,
+       47.25
+      ],
+      [
+       47.26,
+       66.15
+      ]
+     ],
+     "120": [
+      [
+       18,
+       42.0
+      ],
+      [
+       42.01,
+       60.9
+      ]
+     ],
+     "oltre": [
+      [
+       16,
+       37.8
+      ],
+      [
+       37.81,
+       58.8
+      ]
+     ],
+     "casa": [
+      [
+       24,
+       44.1
+      ],
+      [
+       44.11,
+       60.9
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "6",
+    "nome": "Microzona 6 - Bagno - Roio - Sassa",
+    "nota": "Microzona 6 - Bagno - Roio - Sassa: sez. 5 fogli 16, 20-27; sez. 6 fogli 3, 8, 12, 14, 17-25; sez. 7 fogli 6-20. La tabella dipende dalla superficie netta (fino a 45, 45-70, 70-120, oltre 120 mq) o dalla casa singola.",
+    "fasce": {
+     "45": [
+      [
+       26,
+       56.7
+      ],
+      [
+       56.71,
+       78.75
+      ]
+     ],
+     "70": [
+      [
+       21,
+       47.25
+      ],
+      [
+       47.26,
+       66.15
+      ]
+     ],
+     "120": [
+      [
+       18,
+       42.0
+      ],
+      [
+       42.01,
+       60.9
+      ]
+     ],
+     "oltre": [
+      [
+       16,
+       37.8
+      ],
+      [
+       37.81,
+       58.8
+      ]
+     ],
+     "casa": [
+      [
+       24,
+       44.1
+      ],
+      [
+       44.11,
+       60.9
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "7",
+    "nome": "Microzona 7 - Santi - Casaline - Menzano",
+    "nota": "Microzona 7 - Santi - Casaline - Menzano: sezione 8, fogli 1-25. La tabella dipende dalla superficie netta (fino a 45, 45-70, 70-120, oltre 120 mq) o dalla casa singola.",
+    "fasce": {
+     "45": [
+      [
+       25,
+       52.5
+      ],
+      [
+       52.51,
+       73.5
+      ]
+     ],
+     "70": [
+      [
+       20,
+       44.1
+      ],
+      [
+       44.11,
+       63.0
+      ]
+     ],
+     "120": [
+      [
+       18,
+       39.9
+      ],
+      [
+       39.91,
+       56.7
+      ]
+     ],
+     "oltre": [
+      [
+       15,
+       35.7
+      ],
+      [
+       35.71,
+       54.6
+      ]
+     ],
+     "casa": [
+      [
+       21,
+       43.05
+      ],
+      [
+       43.06,
+       57.75
+      ]
+     ]
+    }
+   }
+  ],
+  "tabella_per": "superficie",
+  "fasce": {
+   "nomi": [
+    "1",
+    "2"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    6
+   ],
+   "almeno": {
+    "da": 20,
+    "a": 29,
+    "n": 1,
+    "avviso": "Per la fascia 2 servono almeno 7 elementi, di cui almeno uno di tipo B."
+   },
+   "proporzionale": [
+    {
+     "passi": 7,
+     "da": 0
+    },
+    {
+     "passi": 4,
+     "da": 7
+    }
+   ]
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi di tipo A"
+   },
+   {
+    "da": 20,
+    "titolo": "Elementi di tipo B"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "A1 Autorimessa singola o posto auto"
+   },
+   {
+    "testo": "A2 Doppio vetro"
+   },
+   {
+    "testo": "A3 Terrazza o balcone"
+   },
+   {
+    "testo": "A4 Appartamento in immobile con meno di otto unità abitative"
+   },
+   {
+    "testo": "A5 Cucina abitabile"
+   },
+   {
+    "testo": "A6 Riscaldamento autonomo o centralizzato con contabilizzatori"
+   },
+   {
+    "testo": "A7 Ascensore"
+   },
+   {
+    "testo": "A8 Doppi servizi, almeno uno con finestra"
+   },
+   {
+    "testo": "A9 Porta blindata e/o serratura di sicurezza"
+   },
+   {
+    "testo": "A10 Impianto d'emergenza d'illuminazione"
+   },
+   {
+    "testo": "A11 Cancello automatico"
+   },
+   {
+    "testo": "A12 Impianto di videocitofono"
+   },
+   {
+    "testo": "A13 Giardino privato o spazio esclusivo"
+   },
+   {
+    "testo": "A14 Dotazione di lavatrice"
+   },
+   {
+    "testo": "A15 Dotazione di lavastoviglie"
+   },
+   {
+    "testo": "A16 Vicinanza ai servizi: autobus, negozi, servizi sociali"
+   },
+   {
+    "testo": "A17 Cantina e/o soffitta"
+   },
+   {
+    "testo": "A18 Costruzione o completa ristrutturazione negli ultimi 15 anni"
+   },
+   {
+    "testo": "A19 Predisposizione linea internet / fibra"
+   },
+   {
+    "testo": "A20 Arredamento parziale"
+   },
+   {
+    "testo": "B1 Domotica"
+   },
+   {
+    "testo": "B2 Impianto fotovoltaico attivo"
+   },
+   {
+    "testo": "B3 Impianto solare termico attivo"
+   },
+   {
+    "testo": "B4 Collegamento internet attivo a carico del locatore"
+   },
+   {
+    "testo": "B5 Impianto di allarme"
+   },
+   {
+    "testo": "B6 Impianto di condizionamento"
+   },
+   {
+    "testo": "B7 Asciugatrice o lavasciuga"
+   },
+   {
+    "testo": "B8 Vincolo diretto della Soprintendenza"
+   },
+   {
+    "testo": "B9 Accessibilità, abbattimento barriere architettoniche"
+   },
+   {
+    "testo": "B10 Arredamento completo"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie netta calpestabile dell'abitazione (senza pertinenze e parti comuni)",
+   "correzioni": [
+    {
+     "fino": 45,
+     "perc": 30,
+     "tetto": 45
+    },
+    {
+     "fino": 70,
+     "incluso": true,
+     "perc": 10,
+     "tetto": 70
+    }
+   ],
+   "grandi": {
+    "oltre": 120,
+    "perc": 90
+   },
+   "voci": [
+    {
+     "chiave": "basse",
+     "testo": "Vani con altezza sotto 1,70 m",
+     "coeff": 0.7
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazzi (25% fino a 30 mq, 10% oltre)",
+     "coeff": 0.25,
+     "scaglione": [
+      30,
+      0.25,
+      0.1
+     ]
+    },
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa C/6 (100% in microzona 1, 50% altrove)",
+     "coeff": 0.5,
+     "coeff_zona": {
+      "1": 1.0
+     }
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto scoperto esclusivo",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "verde",
+     "testo": "Area verde esclusiva (5% fino a 300 mq, 2% oltre)",
+     "coeff": 0.05,
+     "scaglione": [
+      300,
+      0.05,
+      0.02
+     ]
+    }
+   ],
+   "nota": "Sotto i 45 mq +30% (massimo 45), da 45 a 70 mq +10% (massimo 70), oltre 120 mq l'eccedenza ridotta del 10%."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "casa",
+    "tipo": "spunta",
+    "testo": "Casa singola: unico subalterno cielo terra, quattro mura esterne libere, senza aree condominiali (usa la tabella casa singola)",
+    "nome": "casa singola",
+    "perc": 0
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (anche oltre il massimo)",
+    "nome": "classe energetica",
+    "nessuna": "E, F, G o senza APE",
+    "opzioni": [
+     {
+      "valore": "AB",
+      "testo": "A o B",
+      "perc": 10
+     },
+     {
+      "valore": "CD",
+      "testo": "C o D",
+      "perc": 8
+     }
+    ]
+   },
+   {
+    "chiave": "seminterrato",
+    "tipo": "spunta",
+    "testo": "Seminterrato (almeno una parete seminterrata, finestre oltre 1,50 m) o sottotetto",
+    "nome": "seminterrato o sottotetto",
+    "perc": -10
+   }
+  ],
+  "alternativa": {
+   "contro": "classe energetica",
+   "b": {
+    "da": 20,
+    "a": 29
+   },
+   "scaglioni": [
+    {
+     "da": 13,
+     "perc": 4
+    },
+    {
+     "da": 16,
+     "b": 2,
+     "perc": 8
+    }
+   ]
+  },
+  "nota_maggiorazioni": "L'aumento per numero di elementi (13-15: +4%; oltre 15 con almeno 2 di tipo B: +8%) è alternativo a quello per la classe energetica: vale il maggiore.",
+  "durata": {
+   "4": 6,
+   "5": 8,
+   "6": 10
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "All. 7",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale per il Comune dell'Aquila (depositato il 26/09/2025, prot. 0109441)",
+  "titolo_elementi": "Elementi qualitativi in dotazione dell'immobile (all. 3)",
+  "dichiarazione": "I calcoli sono eseguiti su dati, valori ed elementi oggettivi dichiarati con la sottoscrizione dell'attestazione dal locatore. Il locatore dichiarante:",
+  "firme": [
+   "Il locatore dichiarante"
+  ],
+  "attestazione": [
+   "Sulla base di dati, valori ed elementi dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali, l'Organizzazione ……………………………",
+   "ATTESTA che i contenuti economici e normativi del contratto allegato corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di L'Aquila depositato in data 26/09/2025.",
+   "L'Aquila, lì ……………"
+  ],
+  "titolo_attestazione": "ATTESTA",
+  "firme_attestazione": [
+   "L'Organizzazione"
+  ],
+  "nota_zone": "La microzona si ricava dal foglio catastale (allegato 1)."
+ }
+}

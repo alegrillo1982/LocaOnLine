@@ -23,7 +23,8 @@
 
   function soglieTesto(z) {
     const F = R().fasce, s = (F.soglie_zona && z && F.soglie_zona[z.codice]) || F.soglie, cosa = F.criterio === "punti" ? "punti" : "elementi";
-    return F.nomi.map((nome, i) => i === 0 ? `${nome}: fino a ${s[0]} ${cosa}` : i < s.length ? `${nome}: da ${s[i - 1] + 1} a ${s[i]}` : `${nome}: da ${s[i - 1] + 1}`).join(" · ");
+    if (!s.length) return "una sola fascia per zona; gli elementi indicano se avvicinarsi al minimo o al massimo";
+    return F.nomi.map((nome, i) => i === 0 ? `${nome}: fino a ${s[0]} ${cosa}` : i < s.length ? `${nome}: da ${s[i - 1] + 1} a ${s[i]}` : `${nome}: da ${s[i - 1] + 1}`).join(" · ") + (F.almeno ? ` (${F.almeno.avviso.replace(/^Per /, "per ").replace(/\.$/, "")})` : "");
   }
 
   function costruisci() {

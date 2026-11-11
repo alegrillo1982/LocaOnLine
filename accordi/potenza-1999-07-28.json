@@ -1,0 +1,208 @@
+{
+ "accordo": {
+  "codice": "potenza-1999-07-28",
+  "modello": "potenza-1999",
+  "comune": "Potenza",
+  "provincia": "PZ",
+  "titolo": "Accordo territoriale per il Comune di Potenza",
+  "data": "1999-07-28",
+  "data_testo": "28 luglio 1999",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "Segreteria Generale",
+  "ufficio_breve": "Segreteria Generale",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Potenza ha ancora l'accordo territoriale del 28 luglio 1999</strong>, firmato da Confedilizia, SUNIA, SICET e UNIAT in base al vecchio D.M. 5 marzo 1999: non ne è stato depositato uno nuovo. I valori sono quelli originali (convertiti in euro) e possono essere aggiornati al 75% dell'ISTAT: fatti confermare il canone da un'associazione firmataria.",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Accordo sottoscritto il 28/07/1999 (D.M. 5/3/1999), in vigore fino a un nuovo accordo; nessun accordo successivo per il capoluogo (verificato novembre 2026). Fasce dell'allegato B, elementi dell'allegato C.",
+  "fonte": "Testo dell'accordo nell'archivio SUNIA (acc_potenza.pdf)."
+ },
+ "esempio_zona": "la zona omogenea (allegato A)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro storico",
+    "nota": "Zona 1 - Centro storico (allegato A). Le zone di pregio usano i valori della zona centrale.",
+    "fasce": [
+     [
+      32.54,
+      46.48
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Centrale",
+    "nota": "Zona 2 - Centrale (allegato A). Le zone di pregio usano i valori della zona centrale.",
+    "fasce": [
+     [
+      26.03,
+      37.18
+     ]
+    ]
+   },
+   {
+    "codice": "2P",
+    "nome": "Zona di pregio (Parco Aurora, zona C5/C6, via Vienna, via Maratea, via Pienza)",
+    "nota": "Zona di pregio (Parco Aurora, zona C5/C6, via Vienna, via Maratea, via Pienza) (allegato A). Le zone di pregio usano i valori della zona centrale.",
+    "fasce": [
+     [
+      26.03,
+      37.18
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Semicentrale",
+    "nota": "Zona 3 - Semicentrale (allegato A). Le zone di pregio usano i valori della zona centrale.",
+    "fasce": [
+     [
+      23.86,
+      34.09
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Artigianale",
+    "nota": "Zona 4 - Artigianale (allegato A). Le zone di pregio usano i valori della zona centrale.",
+    "fasce": [
+     [
+      21.69,
+      30.99
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Zona 5 - Periferica",
+    "nota": "Zona 5 - Periferica (allegato A). Le zone di pregio usano i valori della zona centrale.",
+    "fasce": [
+     [
+      21.69,
+      30.99
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "Zona 6 - Rurale",
+    "nota": "Zona 6 - Rurale (allegato A). Le zone di pregio usano i valori della zona centrale.",
+    "fasce": [
+     [
+      18.08,
+      25.82
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "unica"
+   ],
+   "criterio": "conta",
+   "soglie": []
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi che portano verso il massimo"
+   },
+   {
+    "da": 5,
+    "titolo": "Elementi che portano verso il minimo"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Posto auto (escluso il centro storico)"
+   },
+   {
+    "testo": "Abitazione ristrutturata o con vetustà inferiore a 20 anni"
+   },
+   {
+    "testo": "Impianti adeguati alle normative vigenti"
+   },
+   {
+    "testo": "Cantina o soffitta"
+   },
+   {
+    "testo": "Ascensore (oltre il 3° piano)"
+   },
+   {
+    "testo": "Tipologia intensiva (verso il minimo)"
+   },
+   {
+    "testo": "Assenza di impianto di riscaldamento (verso il minimo)"
+   },
+   {
+    "testo": "Assenza di ascensore oltre il 3° piano (verso il minimo)"
+   },
+   {
+    "testo": "Vetustà superiore ai 30 anni (verso il minimo)"
+   },
+   {
+    "testo": "Assenza di acqua corrente (verso il minimo)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie dell'immobile secondo il D.P.R. 138/1998 (superficie catastale)",
+   "correzioni": [
+    {
+     "fino": 50,
+     "perc": 20
+    }
+   ],
+   "voci": [],
+   "nota": "Sotto i 50 mq la superficie aumenta del 20%."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "vincolo",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato (art. 1, comma 2, lett. a, L. 431/98)",
+    "nome": "immobile vincolato",
+    "perc": 10
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "testo": "Immobile adeguatamente arredato (transitori e studenti)",
+    "nome": "arredato",
+    "perc": 20,
+    "contratti": [
+     "transitorio",
+     "studenti"
+    ],
+    "ammobiliato": true
+   }
+  ],
+  "nota_maggiorazioni": "Il canone va tra minimo e massimo della zona: verso il massimo se ci sono gli elementi della prima lista (massimo se ci sono tutti), verso il minimo con quelli della seconda.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "titolo": "Scheda per la determinazione del canone (accordo del 28 luglio 1999)",
+  "sottotitolo": "Accordo territoriale per il Comune di Potenza in attuazione della L. 431/1998 e del D.M. 5 marzo 1999, sottoscritto il 28/07/1999 da CONFEDILIZIA, S.U.N.I.A., S.I.C.E.T., U.N.I.A.T.",
+  "titolo_elementi": "Elementi oggettivi (allegato C)",
+  "dichiarazione": "Le parti dichiarano che gli elementi sopra indicati corrispondono allo stato dell'immobile.",
+  "nota_zone": "Zone omogenee dell'allegato A (planimetria non pubblicata)."
+ }
+}

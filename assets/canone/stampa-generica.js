@@ -118,7 +118,8 @@
     spazio(14); a += 2;
     const soglie = (R.fasce.soglie_zona && r.zona && R.fasce.soglie_zona[r.zona.codice]) || R.fasce.soglie;
     const cosa = R.fasce.criterio === "punti" ? "punti" : "elementi";
-    if (r.fascia.gruppi) tx(r.fascia.gruppi.map((g) => `${g.nome}: ${g.n} punti, fascia ${g.fascia}`).join("   ·   "), SX, a, { sz: 7.8, c: DATO });
+    if (!r.fascia.gruppi && !soglie.length) tx("Una sola fascia per zona: gli elementi indicano se avvicinarsi al minimo o al massimo.", SX, a, { sz: 7.8 });
+    else if (r.fascia.gruppi) tx(r.fascia.gruppi.map((g) => `${g.nome}: ${g.n} punti, fascia ${g.fascia}`).join("   ·   "), SX, a, { sz: 7.8, c: DATO });
     else tx(R.fasce.nomi.map((n, i) => i === 0 ? `${n}: fino a ${soglie[0]} ${cosa}` : i < soglie.length ? `${n}: da ${soglie[i - 1] + 1} a ${soglie[i]}` : `${n}: da ${soglie[i - 1] + 1}`).join("   ·   "), SX, a, { sz: 7.8 });
     dx(`TOTALE ${R.fasce.criterio === "punti" ? "PUNTEGGIO" : "ELEMENTI"} ${r.punti}`, DX, a, { f: bold, sz: 8.6, c: DATO }); a += 10;
 

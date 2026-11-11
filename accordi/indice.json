@@ -301,6 +301,51 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fperugia-2024-10-10-accordo.pdf?alt=media&token=3f6859f1-96df-457c-a735-44f23f270dd1"
     }
    ]
+  },
+  {
+   "comune": "L'Aquila",
+   "provincia": "AQ",
+   "accordo": "laquila-2025-09-26",
+   "sottoscritto": "26 settembre 2025",
+   "depositato": "26 settembre 2025",
+   "zone": 7,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flaquila-2025-09-26-accordo.pdf?alt=media&token=f9aa2bec-3744-43cc-9f1f-88f75cb88cf5",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flaquila-2025-09-26-accordo.pdf?alt=media&token=f9aa2bec-3744-43cc-9f1f-88f75cb88cf5"
+    }
+   ]
+  },
+  {
+   "comune": "Campobasso",
+   "provincia": "CB",
+   "accordo": "campobasso-2020-06-30",
+   "sottoscritto": "30 giugno 2020",
+   "depositato": "",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcampobasso-2020-06-30-accordo.pdf?alt=media&token=94a07885-1ab5-48cd-bd61-4bb540f98d8a",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcampobasso-2020-06-30-accordo.pdf?alt=media&token=94a07885-1ab5-48cd-bd61-4bb540f98d8a"
+    }
+   ]
+  },
+  {
+   "comune": "Potenza",
+   "provincia": "PZ",
+   "accordo": "potenza-1999-07-28",
+   "sottoscritto": "28 luglio 1999",
+   "depositato": "",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpotenza-1999-07-28-accordo.pdf?alt=media&token=9742de82-4b7f-4501-b3f9-e9a2dd7d8ef2",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpotenza-1999-07-28-accordo.pdf?alt=media&token=9742de82-4b7f-4501-b3f9-e9a2dd7d8ef2"
+    }
+   ]
   }
  ]
 }

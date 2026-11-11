@@ -1,0 +1,330 @@
+{
+ "accordo": {
+  "codice": "campobasso-2020-06-30",
+  "modello": "campobasso-2020",
+  "comune": "Campobasso",
+  "provincia": "CB",
+  "titolo": "Accordo per la città di Campobasso",
+  "data": "2020-06-30",
+  "data_testo": "30 giugno 2020",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Campobasso del 30 giugno 2020: durata di tre anni dal deposito, ormai trascorsi.</strong> Resta in vigore fino al nuovo, e alla scadenza i valori possono essere aggiornati al 75% dell'ISTAT (punto 11.5): qui trovi quelli originali, chiedi all'associazione che attesta il contratto quelli aggiornati.",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA MOLISE",
+   "CONFAPPI MOLISE",
+   "FEDERPROPRIETÀ",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "UNIAT APS MOLISE",
+   "SICET-CISL",
+   "SUNIA-MOLISE",
+   "FEDER.CASA"
+  ],
+  "nota": "Accordo firmato il 30/06/2020 (Comune di Campobasso), sostituisce quello del 19/04/2019; tre anni dal giorno dopo il deposito e comunque fino al nuovo. Data di deposito non indicata nella copia pubblicata.",
+  "fonte": "Comune di Campobasso, pagina dei canoni concordati (testo dell'accordo 2020)."
+ },
+ "esempio_zona": "l'area dal foglio catastale",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Area 1 - Centro storico",
+    "nota": "Area 1 - Centro storico: immobili censiti in catasto ai fogli 56, 118, 119, 129.",
+    "fasce": [
+     [
+      33.0,
+      44.55
+     ],
+     [
+      44.56,
+      56.7
+     ],
+     [
+      56.71,
+      61.0
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2 - Centro",
+    "nota": "Area 2 - Centro: immobili censiti in catasto ai fogli 120, 122, 126.",
+    "fasce": [
+     [
+      45.0,
+      67.5
+     ],
+     [
+      67.51,
+      78.3
+     ],
+     [
+      78.31,
+      88.0
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3 - Semicentro",
+    "nota": "Area 3 - Semicentro: immobili censiti in catasto ai fogli 51, 66, 67, 70, 121, 134.",
+    "fasce": [
+     [
+      42.0,
+      60.75
+     ],
+     [
+      60.76,
+      70.2
+     ],
+     [
+      70.21,
+      74.0
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Area 4 - Semiperiferia",
+    "nota": "Area 4 - Semiperiferia: immobili censiti in catasto ai fogli 33, 34, 45, 48, 55, 57, 60, 61, 62, 125, 127, 128, 130, 131, 132, 133, 135.",
+    "fasce": [
+     [
+      34.0,
+      51.3
+     ],
+     [
+      51.31,
+      59.4
+     ],
+     [
+      59.41,
+      62.0
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Area 5 - Periferia",
+    "nota": "Area 5 - Periferia: immobili censiti in catasto ai fogli da 1 a 11.",
+    "fasce": [
+     [
+      25.0,
+      37.8
+     ],
+     [
+      37.81,
+      43.2
+     ],
+     [
+      43.21,
+      51.0
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "Area 6 - Extraurbana",
+    "nota": "Area 6 - Extraurbana: immobili censiti in catasto ai fogli 29-32, 35-44, 46, 47, 49, 50, 52-54, 58, 59, 63-65, 68, 69, 71-73, 79-84, 123.",
+    "fasce": [
+     [
+      34.0,
+      51.3
+     ],
+     [
+      51.31,
+      58.05
+     ],
+     [
+      58.06,
+      62.0
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "inferiore",
+    "intermedia",
+    "superiore"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    3,
+    6
+   ]
+  },
+  "elementi": [
+   {
+    "testo": "A1 bagno interno completo (tazza, bidet, vasca o doccia) con almeno una finestra o aerazione meccanica"
+   },
+   {
+    "testo": "B1 cucina abitabile con almeno una finestra"
+   },
+   {
+    "testo": "B2 ascensore per unità al piano terzo o superiore"
+   },
+   {
+    "testo": "B3 riscaldamento autonomo"
+   },
+   {
+    "testo": "C1 doppi servizi (almeno uno come A1)"
+   },
+   {
+    "testo": "C2 posto auto coperto"
+   },
+   {
+    "testo": "C3 giardino condominiale"
+   },
+   {
+    "testo": "C4 porte blindate e/o doppi infissi"
+   },
+   {
+    "testo": "C5 isolamento termico-acustico"
+   },
+   {
+    "testo": "C6 adeguamento impianto energetico a norma"
+   },
+   {
+    "testo": "C7 adeguamento termico a norma"
+   },
+   {
+    "testo": "C8 adeguamento barriere architettoniche"
+   },
+   {
+    "testo": "C9 videocitofono"
+   },
+   {
+    "testo": "C10 classe energetica (APE) A, B, C, D o E"
+   },
+   {
+    "testo": "D1 balconi o terrazzo"
+   },
+   {
+    "testo": "D2 cantina o soffitta"
+   },
+   {
+    "testo": "D3 vetustà inferiore a 25 anni (salvo immobile di pregio non vincolato)"
+   },
+   {
+    "testo": "D4 giardino e/o spazio aperto esclusivo"
+   },
+   {
+    "testo": "D5 intervento edilizio manutentivo negli ultimi 10 anni con D.I.A."
+   },
+   {
+    "testo": "D6 posto auto scoperto"
+   },
+   {
+    "testo": "D7 fermata dei mezzi pubblici urbani a meno di 300 metri"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'appartamento",
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa a uso esclusivo",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto macchina in autorimessa comune",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazze, cantine e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Superficie scoperta in godimento esclusivo",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale, quota millesimale",
+     "coeff": 0.1
+    }
+   ]
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "vincolo",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato (art. 1, comma 2, lett. a, L. 431/98)",
+    "nome": "immobile vincolato",
+    "perc": 20
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Alloggio completamente arredato, con mobili efficienti ed elettrodomestici funzionanti",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "55",
+      "testo": "alloggio fino a 55 mq",
+      "perc": 25
+     },
+     {
+      "valore": "95",
+      "testo": "alloggio da 55,01 a 95 mq",
+      "perc": 20
+     },
+     {
+      "valore": "oltre",
+      "testo": "alloggio oltre 95 mq",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "cauzione",
+    "tipo": "spunta",
+    "testo": "Il locatore rinuncia al deposito cauzionale",
+    "nome": "rinuncia alla cauzione",
+    "perc": 5,
+    "contratti": [
+     "agevolato"
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Le maggiorazioni si sommano ai valori della sub-fascia.",
+  "durata": {
+   "4": 4,
+   "5": 6,
+   "6": 10
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato 2",
+  "titolo": "Attestazione unilaterale di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo per la città di Campobasso sottoscritto il 30/06/2020 (CONFEDILIZIA, CONFAPPI, FEDERPROPRIETÀ, UPPI; UNIAT, SICET, SUNIA, FEDER.CASA)",
+  "titolo_elementi": "Elementi e parametri oggettivi ai sensi dell'Accordo territoriale",
+  "dichiarazione": "Il richiedente dichiara, sotto la sua responsabilità, gli elementi sopra riportati.",
+  "attestazione": [
+   "TUTTO CIÒ PREMESSO, l'Organizzazione …………………………, come sopra rappresentata, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Campobasso depositato in data ……………",
+   "Campobasso, ……………"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "L'area si ricava dal foglio catastale (è nella visura)."
+ }
+}
