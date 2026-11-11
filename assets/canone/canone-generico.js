@@ -199,7 +199,7 @@
     // es. Catanzaro: alcuni elementi (ristrutturazione recente, APE) bastano da soli per la fascia più alta
     if (F.basta && F.basta.some((k) => presente(E[k], el[k]))) i = Math.max(i, soglie.length);
     const mancano = (F.obbligatori || []).filter((k) => !el[k]);
-    let avviso = i > 0 && mancano.length ? `Senza ${mancano.map((k) => `l'elemento ${k + 1}`).join(" e ")} si resta nella fascia più bassa.` : "";
+    let avviso = i > 0 && mancano.length ? F.avviso_obbligatori || `Senza ${mancano.map((k) => `l'elemento ${k + 1}`).join(" e ")} si resta nella fascia più bassa.` : "";
     if (i > 0 && F.almeno) {
       const nb = E.filter((e, k) => k >= F.almeno.da && k <= F.almeno.a && presente(e, el[k])).length;
       if (nb < F.almeno.n) avviso = F.almeno.avviso;
@@ -246,6 +246,7 @@
         chiave = TC.valori[k]; r.tipologia = chiave; r.conteggio_tabella = n;
       }
       const tab = Array.isArray(r.zona.fasce) ? r.zona.fasce : r.zona.fasce[chiave] || r.zona.fasce["3"];
+      r.tab = tab;
       if (f.gruppi && !f.prevalente) {
         const pesi = f.gruppi.reduce((t, g) => t + g.peso, 0);
         const max = Math.round(f.gruppi.reduce((t, g) => t + tab[g.i][1] * g.peso, 0) / pesi * 100) / 100;
@@ -281,7 +282,7 @@
       }
     }
     const z = r.zona ? r.zona.codice : "";
-    const add = (nome, perc, dopo, solo_base, solo_max) => { if (perc) r.maggiorazioni.push({ nome, perc, dopo: !!dopo, ...(solo_base ? { solo_base: true } : {}), ...(solo_max ? { solo_max: true } : {}) }); };
+    const add = (nome, perc, dopo, solo_base, solo_max, extra) => { if (perc) r.maggiorazioni.push({ nome, perc, dopo: !!dopo, ...(solo_base ? { solo_base: true } : {}), ...(solo_max ? { solo_max: true } : {}), ...(extra || {}) }); };
     const sup = superficie(accordo, s);
     r.superficie = sup;
     if (sup) avvisi.push(...sup.note); else avvisi.push("Inserisci la superficie.");
@@ -304,8 +305,13 @@
       if (m.tipo === "scelta") { const o = (m.opzioni || []).find((x) => x.valore === val);
         // es. Ferrara: quota fissa mensile per zona (garage), da sommare al canone
         if (o && o.importo_zona && o.importo_zona[z]) (r.importi = r.importi || []).push({ nome: `${m.nome || m.testo}: ${o.testo}`, importo: o.importo_zona[z] });
-        if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc, m.dopo, m.solo_base, m.solo_max); }
-      else if (val) add(m.nome || m.testo, m.perc, m.dopo, m.solo_base, m.solo_max);
+        if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc, m.dopo, m.solo_base, m.solo_max, m.sulle_fasce ? { sulle_fasce: true } : null); }
+      else if (val) {
+        // es. provincia di Roma: elettrodomestici e APE in classe A o B insieme al massimo +7% (qui +2% in più)
+        const SE = m.se, M2 = SE && (R.maggiorazioni || []).find((x) => x.chiave === SE.chiave);
+        const conAltra = SE && (!M2 || !M2.contratti || M2.contratti.includes(tipo)) && SE.valori.includes((s.maggiorazioni_scelte || {})[SE.chiave]);
+        add(conAltra ? `${m.nome || m.testo} (${SE.testo})` : m.nome || m.testo, conAltra ? SE.perc : m.perc, m.dopo, m.solo_base, m.solo_max, m.sulle_fasce ? { sulle_fasce: true } : null);
+      }
     }
     if (R.alternativa) {
       const A = R.alternativa, el = s.elementi || [];
@@ -352,12 +358,32 @@
     // es. Latina: alcune maggiorazioni valgono solo per la superficie dell'abitazione, non per le pertinenze
     const sb = r.maggiorazioni.filter((m) => m.solo_base && !m.solo_max);
     r.fattore_base = R.combinazione === "prodotto" ? sb.reduce((k, m) => k * (1 + m.perc / 100), 1) : 1 + sb.reduce((t, m) => t + m.perc, 0) / 100;
-    const prima = r.maggiorazioni.filter((m) => !m.dopo && !m.solo_base && !m.solo_max), dopo = r.maggiorazioni.filter((m) => m.dopo && !m.solo_base && !m.solo_max);
+    const prima = r.maggiorazioni.filter((m) => !m.dopo && !m.solo_base && !m.solo_max && !m.sulle_fasce), dopo = r.maggiorazioni.filter((m) => m.dopo && !m.solo_base && !m.solo_max && !m.sulle_fasce);
     r.fattore = (R.combinazione === "prodotto"
       ? prima.reduce((k, m) => k * (1 + m.perc / 100), 1)
       : 1 + prima.reduce((t, m) => t + m.perc, 0) / 100) * dopo.reduce((k, m) => k * (1 + m.perc / 100), 1);
     const kMin = r.maggiorazioni.filter((m) => m.minimo).reduce((k, m) => k * (1 + m.perc / 100), 1);
     if (r.base) r.valori = r.base.map((x, i) => (R.solo_massimo && i === 0 ? Math.round(x * kMin * 1000) / 1000 : Math.round(x * r.fattore * 1000) / 1000));
+    if (r.base && R.tetto_zona && r.tab) {
+      // es. provincia di Roma: alcune maggiorazioni aumentano le fasce della zona (ville, immobili storici);
+      // le altre non portano oltre il massimo della zona (né sotto il minimo), salvo durata e transitorio (dopo)
+      const kf = r.maggiorazioni.filter((m) => m.sulle_fasce).reduce((k, m) => k * (1 + m.perc / 100), 1);
+      // in fascia C con almeno un aumento si arriva al massimo della fascia
+      const P = R.fasce.proporzionale && R.fasce.proporzionale[f.i];
+      if (P && P.max_con_aumenti && prima.some((m) => m.perc > 0) && r.massimo_fascia !== undefined) r.base = [r.base[0], r.massimo_fascia];
+      const kp = R.combinazione === "prodotto" ? prima.reduce((k, m) => k * (1 + m.perc / 100), 1) : 1 + prima.reduce((t, m) => t + m.perc, 0) / 100;
+      const kd = dopo.reduce((k, m) => k * (1 + m.perc / 100), 1);
+      const zmin = Math.min(...r.tab.map((x) => x[0])) * kf, zmax = Math.max(...r.tab.map((x) => x[1])) * kf;
+      let fermo = "";
+      r.valori = r.base.map((x) => {
+        const y = x * kf * kp, c = Math.max(zmin, Math.min(zmax, y));
+        if (c < y - 0.0005) fermo = `Con le maggiorazioni il valore si ferma al massimo della zona (€ ${virgola(zmax)} al mq).`;
+        if (c > y + 0.0005) fermo = `Con le riduzioni il valore non scende sotto il minimo della zona (€ ${virgola(zmin)} al mq).`;
+        return Math.round(c * kd * 1000) / 1000;
+      });
+      if (fermo) avvisi.push(fermo);
+      r.fattore = kf * kp * kd;
+    }
     // es. Ragusa: alcune riduzioni valgono solo sul massimo; se scende sotto il minimo, il minimo lo segue
     const SM = r.maggiorazioni.filter((m) => m.solo_max);
     if (SM.length && r.valori) {

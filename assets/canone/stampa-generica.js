@@ -136,7 +136,7 @@
     if (!r.maggiorazioni.length && !(r.importi || []).length) { spazio(12); tx("nessuna", SX, a, { c: DATO }); a += 12; }
     for (const im of r.importi || []) { spazio(12); tx(`${im.nome} (quota fissa mensile)`, SX, a, { sz: 8.8, c: DATO }); dx(`+ € ${v(im.importo)}`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
     for (const m of r.maggiorazioni) { spazio(12); tx(m.nome, SX, a, { sz: 8.8, c: DATO }); dx(`${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
-    if (r.maggiorazioni.length > 1) { spazio(12); tx(r.maggiorazioni.some((m) => m.dopo) || R.combinazione === "prodotto" ? "totale (in parte applicate una sull'altra)" : "totale (sommate)", SX, a, { sz: 8.8 }); dx(`${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
+    if (r.maggiorazioni.length > 1) { spazio(12); tx(R.tetto_zona ? "totale (fino al massimo della zona; durata e transitorio anche oltre)" : r.maggiorazioni.some((m) => m.dopo) || R.combinazione === "prodotto" ? "totale (in parte applicate una sull'altra)" : "totale (sommate)", SX, a, { sz: 8.8 }); dx(`${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
 
     sezione("CALCOLO DEL CANONE");
     const mt = R.tabella_per === "scelta" ? (R.maggiorazioni || []).find((m) => m.chiave === R.tabella_chiave) : null;
@@ -166,7 +166,8 @@
     if (P.dichiarazione) { paragrafo(P.dichiarazione, { sz: 8.6 }); a += 4; }
     const firme = P.firme || ["Il locatore", "Il conduttore"];
     if (firme.length) { spazio(26); a += 10; }
-    firme.forEach((f, i) => { const x0 = SX + i * ((DX - SX) / firme.length); tx(f, x0, a, { sz: 8.8 }); p.drawLine({ start: { x: x0, y: Y(a + 14) }, end: { x: x0 + 190, y: Y(a + 14) }, thickness: 0.5, color: NERO }); });
+    const lfi = Math.min(190, (DX - SX) / Math.max(1, firme.length) - 16);
+    firme.forEach((f, i) => { const x0 = SX + i * ((DX - SX) / firme.length); tx(f, x0, a, { sz: 8.8 }); p.drawLine({ start: { x: x0, y: Y(a + 14) }, end: { x: x0 + lfi, y: Y(a + 14) }, thickness: 0.5, color: NERO }); });
     if (firme.length) a += 26;
     if (P.attestazione) {
       spazio(60); a += 6;
