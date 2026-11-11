@@ -933,11 +933,13 @@
     const prot = new RegExp(`,?\\s*(?:con\\s+)?(?:n°\\s*)?(?:Protocollo|Prot\\.)\\s*(?:n[°.]?\\s*)?${PROT}`, "gi");
     const pulisci = (t) => {
       if (typeof t !== "string" || (!t.includes(PROT) && !t.includes(DEP))) return t;   // gli altri testi restano come sono
-      return t.replace(prot, "")
+      const fuori = t.replace(prot, "")
         .replace(new RegExp(`^Depositato presso il Comune di (.+?) il ${DEP}`), `Accordo per il Comune di $1 ${firma}`)
         .replace(new RegExp(`depositato il ${DEP} presso il Comune di`, "g"), `${firma}, per il Comune di`)
         .replace(new RegExp(`depositato il ${DEP}`, "g"), firma)
         .replace(/\s+,/g, ",").replace(/\s{2,}/g, " ").trim();
+      // gli spazi ai bordi restano: "è convenuto in " + "€ …" (altrimenti "in€")
+      return fuori ? t.match(/^\s*/)[0] + fuori + t.match(/\s*$/)[0] : "";
     };
     const toglie = (e) => e && typeof e === "object" && typeof e.testo === "string" &&
       ((e.testo.includes(PROT) && pulisci(e.testo) === "") || /^quale allegato dell'accordo sottoscritto il /.test(e.testo));

@@ -192,6 +192,10 @@
 .cc .scheda-palermo:not(.tipo-agevolato) .solo-agevolato, .cc .scheda-palermo:not(.con-arredato) .se-arredato,
 .cc .scheda-palermo:not(.con-storico) .se-storico { display: none; }
 .cc .superfici-palermo .risultato { font-family: var(--dati); font-size: 14px; white-space: nowrap; }
+/* scheda di Genova (scheda-genova.js) */
+.cc .scheda-genova:not(.tipo-agevolato) .solo-agevolato, .cc .scheda-genova.tipo-agevolato .no-agevolato,
+.cc .scheda-genova:not(.porzione) .solo-porzione, .cc .scheda-genova.porzione .no-porzione,
+.cc .scheda-genova:not(.da-ape) .se-ape, .cc .scheda-genova.porzione .se-ape { display: none; }
 .cc .griglia-campi .cerca-via { position: relative; min-width: 0; }
 .cc .griglia-campi .cerca-via .risultati-zona { top: 100%; margin-top: 4px; }
 

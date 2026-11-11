@@ -118,6 +118,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpalermo-2020-01-23-accordo.pdf?alt=media&token=5a8c7a65-c0ca-4fcf-bb68-cfa1667b6b66"
     }
    ]
+  },
+  {
+   "comune": "Genova",
+   "provincia": "GE",
+   "accordo": "genova-2025-06-03",
+   "sottoscritto": "29 maggio 2025",
+   "depositato": "3 giugno 2025",
+   "zone": 85,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgenova-2025-06-03-accordo.pdf?alt=media&token=862ee9fb-be57-4c78-a636-27b6fb94d2f4",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgenova-2025-06-03-accordo.pdf?alt=media&token=862ee9fb-be57-4c78-a636-27b6fb94d2f4"
+    }
+   ]
   }
  ]
 }

@@ -13,14 +13,14 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Canone concordato: calcolo e contratto, Roma e grandi città</title>
-  <meta name="description" content="Calcola il canone concordato con gli accordi di Roma, Milano, Napoli, Torino e Palermo e compila il contratto 3+2 o transitorio, in PDF o Word."/>
+  <meta name="description" content="Calcola il canone concordato con gli accordi di Roma, Milano, Napoli, Torino, Palermo e Genova e compila il contratto 3+2 o transitorio, in PDF o Word."/>
   <link rel="canonical" href="https://locaonline.it/canone-concordato.html"/>
   <meta name="robots" content="index, follow"/>
 
   <meta property="og:type"        content="website"/>
   <meta property="og:url"         content="https://locaonline.it/canone-concordato.html"/>
   <meta property="og:title"       content="Canone concordato: calcolo e contratto, Roma e grandi città"/>
-  <meta property="og:description" content="Calcola il canone concordato con gli accordi di Roma, Milano, Napoli, Torino e Palermo e compila il contratto 3+2 o transitorio, in PDF o Word."/>
+  <meta property="og:description" content="Calcola il canone concordato con gli accordi di Roma, Milano, Napoli, Torino, Palermo e Genova e compila il contratto 3+2 o transitorio, in PDF o Word."/>
   <meta property="og:locale"      content="it_IT"/>
   <meta name="twitter:card"       content="summary"/>
   <meta name="twitter:title"      content="Canone concordato: calcolo e contratto, Roma e grandi città"/>
@@ -52,7 +52,7 @@
           {
             "@type": "Question",
             "name": "Cos'è la scheda di calcolo del canone concordato?",
-            "acceptedAnswer": { "@type": "Answer", "text": "È il modulo previsto dall'accordo territoriale del Comune (per Roma l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024, per Palermo l'attestazione di rispondenza dell'accordo del 23 gennaio 2020): parte dalla zona, dalla superficie convenzionale e dalle dotazioni dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato." }
+            "acceptedAnswer": { "@type": "Answer", "text": "È il modulo previsto dall'accordo territoriale del Comune (per Roma l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024, per Palermo l'attestazione di rispondenza dell'accordo del 23 gennaio 2020, per Genova la scheda per la determinazione del canone dell'accordo del 29 maggio 2025): parte dalla zona, dalla superficie convenzionale e dalle dotazioni dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato." }
           },
           {
             "@type": "Question",
@@ -700,6 +700,97 @@
       <ul id="palermo-avvisi" class="avvisi-canone" aria-live="polite"></ul>
     </section>
   </form>
+  <!-- Scheda per l'accordo di Genova (2025): riproduce la "Scheda per la
+       determinazione del canone" (allegato 4). Visibile solo con l'accordo di Genova. -->
+  <form id="scheda-genova" class="scheda-genova" autocomplete="off" onsubmit="return false" hidden>
+
+    <section class="sezione-canone">
+      <h2>Contratto</h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Tipo di contratto">
+        <label><input type="radio" name="tipo" value="agevolato" checked> Agevolato (3 + 2)</label>
+        <label><input type="radio" name="tipo" value="transitorio"> Transitorio</label>
+        <label><input type="radio" name="tipo" value="studenti"> Studenti universitari</label>
+      </div>
+      <div class="griglia-campi">
+        <label class="solo-agevolato">Durata<select name="durata_anni">
+          <option value="3">3 + 2 anni</option><option value="4">4 + 2 anni (+2%)</option><option value="5">5 + 2 anni (+4%)</option><option value="6">6 + 2 anni (+6%)</option></select></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Parti e immobile</h2>
+      <div class="griglia-campi">
+        <label class="largo">Locatore<input type="text" name="locatore"></label>
+        <label>C.F. locatore<input type="text" name="locatore_cf" class="maiuscolo"></label>
+        <label class="largo">Conduttore<input type="text" name="conduttore"></label>
+        <label>C.F. conduttore<input type="text" name="conduttore_cf" class="maiuscolo"></label>
+        <label>Comune<input type="text" name="citta"></label>
+        <label class="largo">Via e numero civico<input type="text" name="indirizzo"></label>
+        <label>Piano<input type="text" name="piano"></label>
+        <label>Interno<input type="text" name="interno"></label>
+      </div>
+      <div class="griglia-campi stacco">
+        <label class="largo">Zona OMI<select name="zona"><option value="">scegli…</option></select></label>
+      </div>
+      <p class="nota-copia stacco">Le zone sono quelle OMI dell'Agenzia delle Entrate (allegato 1 dell'accordo). Per trovare quella dell'immobile apri la
+        <a href="https://www1.agenziaentrate.gov.it/servizi/geopoi_omi/index.php" target="_blank" rel="noopener" class="text-[#2E7CF6] underline">mappa delle zone OMI</a>,
+        cerca l'indirizzo e leggi il codice (es. C5 = C05).</p>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Superficie</h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Cosa si affitta">
+        <label><input type="radio" name="porzione" value="" checked> Intera unità immobiliare</label>
+        <label><input type="radio" name="porzione" value="1"> Porzione (es. una stanza)</label>
+      </div>
+      <div class="griglia-campi no-porzione">
+        <label class="largo">Superficie da<select name="fonte_sup">
+          <option value="catasto">visura catastale</option><option value="ape">APE, attestato energetico (+20%)</option></select></label>
+        <label>Mq<input type="text" name="mq" class="campo-numero" inputmode="decimal"></label>
+        <label class="se-ape">Aree esterne e pertinenze, mq<input type="text" name="pertinenze" class="campo-numero" inputmode="decimal"></label>
+      </div>
+      <div class="griglia-campi solo-porzione">
+        <label>Mq porzione locata<input type="text" name="mq_porzione" class="campo-numero" inputmode="decimal"></label>
+        <label>Mq quota parti comuni<input type="text" name="mq_comuni" class="campo-numero" inputmode="decimal"></label>
+      </div>
+      <p class="nota-copia se-ape stacco">Aree esterne e pertinenze già ridotte secondo l'allegato 3: cantine e soffitte 50% se comunicanti, 25% se no; balconi e terrazze 30% fino a 25 mq e 10% oltre (15% e 5% se non comunicanti); area scoperta 10% fino alla superficie dei vani, 2% oltre.</p>
+      <p class="stacco">Mq per il calcolo: <b id="genova-mq">—</b></p>
+      <p class="nota-copia" id="genova-sup-nota"></p>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Elementi caratteristici <small id="genova-conteggio"></small></h2>
+      <p class="nota-copia">Gli elementi 2 e 4 sono obbligatori per salire oltre la 1^ sottofascia.</p>
+      <div id="genova-elementi" class="caselle colonna elementi"></div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Maggiorazioni <small>si sommano</small></h2>
+      <div class="griglia-campi">
+        <label class="largo">Arredo<select name="arredo">
+          <option value="">non arredato</option><option value="totale">arredato completamente (+12%)</option><option value="parziale">arredato in parte: cucina e metà dei vani (+6%)</option></select></label>
+        <label class="largo">Vincolo storico (L. 1089/39) o categoria A/1, A/8, A/9<select name="vincolo">
+          <option value="">nessuno</option><option value="immobile">sull'appartamento (+30%)</option><option value="fabbricato">solo sul fabbricato (+15%)</option></select></label>
+      </div>
+      <p class="nota-copia no-agevolato stacco">Transitorio ordinario: +10%, con l'arredo al massimo +16% in tutto. Per transitori e studenti la durata non dà aumenti.</p>
+    </section>
+
+    <section class="sezione-canone calcolo">
+      <h2>Calcolo del canone</h2>
+      <dl class="righe-calcolo">
+        <dt>Zona</dt><dd id="genova-esito-zona">—</dd>
+        <dt>Sottofascia</dt><dd id="genova-esito-fascia">—</dd>
+        <dt>Maggiorazioni</dt><dd id="genova-esito-magg">—</dd>
+        <dt><label for="genova-valore">Valore al mq all'anno (€)</label></dt>
+        <dd><input type="text" id="genova-valore" name="valore_mq" inputmode="decimal" class="campo-numero"> <small id="genova-valore-nota"></small></dd>
+        <dt>Canone annuo</dt><dd id="genova-esito-annuo">—</dd>
+        <dt>Canone mensile massimo</dt><dd><b id="genova-esito-massimo">—</b></dd>
+        <dt><label for="genova-pattuito">Canone mensile pattuito (€)</label></dt>
+        <dd><input type="text" id="genova-pattuito" name="canone_mensile" inputmode="decimal" class="campo-numero"></dd>
+      </dl>
+      <ul id="genova-avvisi" class="avvisi-canone" aria-live="polite"></ul>
+    </section>
+  </form>
   <div class="barra-canone" role="region" aria-label="Riepilogo del canone">
     <span>Canone massimo <b id="barra-massimo">—</b><span class="solo-largo"> al mese</span></span>
     <span id="stato-salvataggio" class="stato-salvataggio" aria-live="polite"></span>
@@ -945,7 +1036,7 @@
             <summary class="font-semibold cursor-pointer">Cos'è la scheda di calcolo del canone concordato?</summary>
             <p class="text-sm text-[#4A5568] leading-relaxed mt-2">È il modulo previsto dall'accordo territoriale del Comune (per Roma
               l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo
-              del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024, per Palermo l'attestazione di rispondenza dell'accordo del 23 gennaio 2020): parte dalla zona, dalla superficie convenzionale e dalle dotazioni
+              del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024, per Palermo l'attestazione di rispondenza dell'accordo del 23 gennaio 2020, per Genova la scheda per la determinazione del canone dell'accordo del 29 maggio 2025): parte dalla zona, dalla superficie convenzionale e dalle dotazioni
               dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato.</p>
           </details>
           <details class="bg-white border border-slate-200 rounded-xl p-4">
@@ -1107,6 +1198,9 @@
   <script src="assets/canone/canone-palermo.js"></script>
   <script src="assets/canone/stampa-palermo.js"></script>
   <script src="assets/canone/scheda-palermo.js"></script>
+  <script src="assets/canone/canone-genova.js"></script>
+  <script src="assets/canone/stampa-genova.js"></script>
+  <script src="assets/canone/scheda-genova.js"></script>
   <script src="assets/canone/modulo-contratto.js"></script>
   <script src="assets/canone/pagina-canone.js"></script>
   <script type="module" src="assets/canone/salva-canone.js"></script>

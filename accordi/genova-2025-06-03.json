@@ -1,0 +1,541 @@
+{
+ "accordo": {
+  "codice": "genova-2025-06-03",
+  "modello": "genova-2025",
+  "comune": "Genova",
+  "provincia": "GE",
+  "titolo": "Accordo territoriale per il Comune di Genova",
+  "data": "2025-05-29",
+  "data_testo": "29 maggio 2025",
+  "deposito": "",
+  "deposito_data": "03.06.2025",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2028-06-16",
+  "firmatari_proprieta": [
+   "APE CONFEDILIZIA",
+   "APPC",
+   "ASPPI",
+   "UNIONCASA",
+   "UPPI"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET",
+   "UNIAT",
+   "AN.I.A.G.",
+   "FEDER.CASA CONFSAL"
+  ],
+  "nota": "Accordo firmato a Genova il 29/05/2025, depositato presso il Comune di Genova il 03/06/2025 (senza numero di protocollo nel testo), in vigore dal 16/06/2025 per tre anni e comunque fino al nuovo (titolo G). Sostituisce l'accordo depositato il 28/12/2017. Zone: le 85 zone OMI del Geoportale del Comune (allegato 1), valori annui al mq utile (allegato 2).",
+  "fonte": "Testo depositato pubblicato dal SUNIA (36 pagine con allegati 1-12)."
+ },
+ "esempio_zona": "il codice della zona OMI, es. C05",
+ "regole": {
+  "unita": "euro annui al mq utile",
+  "zone": [
+   [
+    "B01",
+    34.56,
+    143.61
+   ],
+   [
+    "B02",
+    34.56,
+    143.61
+   ],
+   [
+    "B03",
+    26.78,
+    101.94
+   ],
+   [
+    "B04",
+    35.19,
+    146.22
+   ],
+   [
+    "B05",
+    26.78,
+    101.94
+   ],
+   [
+    "B06",
+    30.98,
+    124.07
+   ],
+   [
+    "C01",
+    43.95,
+    100.07
+   ],
+   [
+    "C02",
+    37.2,
+    117.15
+   ],
+   [
+    "C03",
+    37.31,
+    105.9
+   ],
+   [
+    "C04",
+    37.2,
+    121.36
+   ],
+   [
+    "C05",
+    34.46,
+    131.76
+   ],
+   [
+    "C05A",
+    40.63,
+    162.21
+   ],
+   [
+    "C06",
+    42.15,
+    168.65
+   ],
+   [
+    "C09",
+    37.2,
+    105.9
+   ],
+   [
+    "C11",
+    32.74,
+    133.08
+   ],
+   [
+    "C12",
+    32.74,
+    133.08
+   ],
+   [
+    "C13",
+    30.87,
+    100.62
+   ],
+   [
+    "C13A",
+    36.8,
+    136.83
+   ],
+   [
+    "C14",
+    43.88,
+    100.07
+   ],
+   [
+    "C15",
+    37.9,
+    92.77
+   ],
+   [
+    "C16",
+    37.9,
+    92.77
+   ],
+   [
+    "C17",
+    37.9,
+    92.77
+   ],
+   [
+    "C18",
+    36.01,
+    92.77
+   ],
+   [
+    "C19",
+    37.82,
+    98.39
+   ],
+   [
+    "C20",
+    37.2,
+    98.97
+   ],
+   [
+    "C20A",
+    36.69,
+    117.15
+   ],
+   [
+    "C21",
+    36.01,
+    92.77
+   ],
+   [
+    "C22",
+    39.62,
+    103.99
+   ],
+   [
+    "C23",
+    36.01,
+    92.77
+   ],
+   [
+    "C24",
+    39.62,
+    103.99
+   ],
+   [
+    "D01",
+    41.2,
+    97.95
+   ],
+   [
+    "D02",
+    33.29,
+    82.75
+   ],
+   [
+    "D03",
+    37.0,
+    93.45
+   ],
+   [
+    "D04",
+    37.0,
+    93.45
+   ],
+   [
+    "D05",
+    37.0,
+    93.45
+   ],
+   [
+    "D06",
+    37.0,
+    93.45
+   ],
+   [
+    "D07",
+    37.0,
+    93.45
+   ],
+   [
+    "D08",
+    37.0,
+    93.45
+   ],
+   [
+    "D09",
+    37.0,
+    83.17
+   ],
+   [
+    "D10",
+    37.0,
+    83.17
+   ],
+   [
+    "D11",
+    37.0,
+    83.17
+   ],
+   [
+    "D12",
+    37.0,
+    93.45
+   ],
+   [
+    "D13",
+    37.2,
+    116.68
+   ],
+   [
+    "D14",
+    37.31,
+    97.95
+   ],
+   [
+    "D15",
+    41.2,
+    97.95
+   ],
+   [
+    "D16",
+    37.2,
+    116.68
+   ],
+   [
+    "D17",
+    37.2,
+    116.68
+   ],
+   [
+    "D18",
+    34.46,
+    131.76
+   ],
+   [
+    "D20",
+    34.46,
+    162.21
+   ],
+   [
+    "D21",
+    34.46,
+    137.02
+   ],
+   [
+    "D22",
+    42.16,
+    176.44
+   ],
+   [
+    "D23",
+    36.01,
+    92.77
+   ],
+   [
+    "D24",
+    42.16,
+    176.44
+   ],
+   [
+    "D25",
+    37.9,
+    88.25
+   ],
+   [
+    "D26",
+    37.9,
+    88.25
+   ],
+   [
+    "D27",
+    36.0,
+    75.71
+   ],
+   [
+    "D28",
+    37.9,
+    88.25
+   ],
+   [
+    "D29",
+    37.9,
+    88.25
+   ],
+   [
+    "D30",
+    36.0,
+    75.71
+   ],
+   [
+    "D31",
+    37.9,
+    88.25
+   ],
+   [
+    "D32",
+    37.9,
+    88.25
+   ],
+   [
+    "D33",
+    41.2,
+    91.64
+   ],
+   [
+    "D34",
+    41.2,
+    91.64
+   ],
+   [
+    "D35",
+    41.2,
+    91.64
+   ],
+   [
+    "D36",
+    41.2,
+    91.64
+   ],
+   [
+    "D37",
+    41.2,
+    91.64
+   ],
+   [
+    "D38",
+    41.2,
+    91.64
+   ],
+   [
+    "D39",
+    41.2,
+    91.64
+   ],
+   [
+    "D40",
+    39.14,
+    109.61
+   ],
+   [
+    "D41",
+    39.14,
+    99.06
+   ],
+   [
+    "D41A",
+    39.14,
+    119.64
+   ],
+   [
+    "D42",
+    39.14,
+    109.61
+   ],
+   [
+    "D43",
+    39.14,
+    99.54
+   ],
+   [
+    "D44",
+    31.32,
+    85.2
+   ],
+   [
+    "D45",
+    39.14,
+    95.6
+   ],
+   [
+    "D46",
+    31.32,
+    85.2
+   ],
+   [
+    "D47",
+    36.41,
+    89.28
+   ],
+   [
+    "D48",
+    37.9,
+    88.25
+   ],
+   [
+    "D49",
+    39.14,
+    95.6
+   ],
+   [
+    "E1",
+    37.9,
+    88.25
+   ],
+   [
+    "R1",
+    33.29,
+    82.75
+   ],
+   [
+    "R2",
+    31.32,
+    92.23
+   ],
+   [
+    "R3",
+    39.0,
+    82.49
+   ],
+   [
+    "R5",
+    34.95,
+    79.33
+   ],
+   [
+    "R6",
+    39.0,
+    82.49
+   ]
+  ],
+  "sottofasce": {
+   "elementi": [
+    2,
+    8
+   ],
+   "obbligatori": [
+    2,
+    4
+   ],
+   "quote": [
+    0.25,
+    0.75
+   ],
+   "nota": "L'accordo 2025 non dice come dividere la fascia: si usa la regola dell'accordo precedente (2017), 25% inferiore, 50% intermedio, 25% superiore."
+  },
+  "superficie": {
+   "ape": 0.2,
+   "piccoli": [
+    [
+     45,
+     0.3,
+     54
+    ],
+    [
+     60,
+     0.2,
+     67
+    ],
+    [
+     70,
+     0.1,
+     70
+    ]
+   ],
+   "grandi": [
+    100,
+    0.3
+   ]
+  },
+  "arredo": {
+   "totale": 12,
+   "parziale": 6
+  },
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "transitorio": 10,
+  "transitorio_con_arredo_max": 16,
+  "vincolo": {
+   "immobile": 30,
+   "fabbricato": 15
+  }
+ },
+ "elementi": [
+  "Impianto di ascensore (la caratteristica si intende comunque presente per alloggi ubicati non oltre il primo piano)",
+  "Impianto riscaldamento (centralizzato, autonomo a piastre radianti, pompa di calore)",
+  "Impianto di raffrescamento",
+  "Servizio igienico con doccia o vasca da bagno",
+  "Balcone (con profondità minima di m. 0,80) o terrazzo o giardino pertinenziale (con superficie almeno m. 10)",
+  "Doppi servizi igienici",
+  "Doppi vetri ad almeno il 90% delle finestre e/o porta blindata",
+  "Cantina e/o soffitta",
+  "Servizio di portineria",
+  "Area verde di uso comune di superficie almeno pari al triplo della superficie coperta dell’immobile principale in cui è situato l’appartamento oggetto della locazione o impianto sportivo",
+  "Strutture/interventi atti al superamento delle barriere architettoniche nel condominio",
+  "Spazio scoperto condominiale per posteggio di uso comune (in numero pari ad almeno 50% delle unità immobiliari del condominio)",
+  "Box pertinenziale e/o posto auto esclusivo",
+  "Classe energetica (da certificazione APE) da A sino a D comprese",
+  "Edificio ultimato da non oltre 10 anni",
+  "Edificio oggetto di integrale ristrutturazione, come da L. 457/78 - art. 31 lett. c), ultimato da non oltre 10 anni",
+  "Intervento di manutenzione straordinaria del fabbricato, come da L. 457/78 - art. 31 lett. b), ultimato da non oltre 10 anni",
+  "Ristrutturazione interna come definita dalla L. 457/78 - art. 31 lett. b) o rifacimento integrale di bagno e cucina (esclusi impianti) ultimati da non oltre 10 anni",
+  "Esposizione a levante/mezzogiorno o mezzogiorno/ponente di almeno la metà dei vani, esclusi i servizi e cavedi",
+  "Vista mare da almeno due finestre",
+  "Distanza dal mare inferiore a m. 300"
+ ]
+}
