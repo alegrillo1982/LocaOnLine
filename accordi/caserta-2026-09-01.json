@@ -1,0 +1,754 @@
+{
+ "accordo": {
+  "codice": "caserta-2026-09-01",
+  "modello": "caserta-2026",
+  "comune": "Caserta",
+  "provincia": "CE",
+  "titolo": "Accordo territoriale per il Comune di Caserta",
+  "data": "2026-09-01",
+  "data_testo": "1° settembre 2026",
+  "deposito": "Comune di Caserta, prot. n. 0100799",
+  "deposito_data": "03.09.2026",
+  "protocollo": "0100799",
+  "ufficio": "Protocollo Generale del Comune di Caserta (via PEC)",
+  "ufficio_breve": "Protocollo Generale",
+  "valido_fino": "2029-09-03",
+  "firmatari_proprieta": [
+   "Confedilizia Caserta",
+   "A.P.P.C.",
+   "Federproprietà Caserta",
+   "U.P.P.I.",
+   "Confappi",
+   "Confabitare",
+   "Unioncasa",
+   "A.S.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T. Campania",
+   "Assocasa",
+   "A.N.I.A."
+  ],
+  "nota": "Accordo firmato a Caserta il 01/09/2026 (data a timbro sulla pagina delle firme) e depositato al Comune di Caserta il 03/09/2026 via PEC (Protocollo Generale n. 0100799, ricevuta di protocollo in testa al PDF). La lettera di trasmissione precisa che questo testo sostituisce completamente quello inviato in precedenza. Dura tre anni dal deposito (fino al 03/09/2029) e poi resta in vigore fino al nuovo accordo (art. 34). Sei aree omogenee (allegato A, mappa nell'allegato A-bis), valori in euro al mq l'anno; quattro fasce secondo il numero di elementi caratteristici (allegato B). I correttivi dell'allegato A possono superare il minimo e il massimo dell'area. Dall'inizio del terzo anno (settembre 2028) minimi e massimi si aggiornano ogni anno al 75% della variazione ISTAT (art. 7 e allegato A): oggi valgono i valori originali.",
+  "fonte": "SUNIA nazionale, pagina «Accordi territoriali di Caserta» (aggiornata a settembre 2026): PDF «Accordo territoriale di Caserta del 01.09.2026 dep. il 03.09.2026 al prot. n. 100799» (26 pagine: ricevuta di protocollo, lettera di trasmissione, accordo e allegati A, A-bis, B, C, D, E, F, G, firme)."
+ },
+ "esempio_zona": "l'area dalla mappa dell'allegato A-bis (Centro, Ospedale, Petrarelle, Caserta 2, Caserta sud o Frazioni)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Area 1 - Caserta centro",
+    "nota": "Area 1: Caserta centro. Valori dell'area da € 50,00 a € 74,00 al mq l'anno (allegato A). L'area si ricava dalla mappa dell'allegato A-bis, costruita sulle zone OMI dell'Agenzia delle Entrate: per una strada che non compare, si guarda la strada vicina nella stessa zona.",
+    "fasce": [
+     [
+      50.24,
+      56.0
+     ],
+     [
+      56.24,
+      62.0
+     ],
+     [
+      62.24,
+      68.0
+     ],
+     [
+      68.24,
+      74.0
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2 - Caserta ospedale",
+    "nota": "Area 2: Caserta ospedale. Valori dell'area da € 41,00 a € 65,00 al mq l'anno (allegato A). L'area si ricava dalla mappa dell'allegato A-bis, costruita sulle zone OMI dell'Agenzia delle Entrate: per una strada che non compare, si guarda la strada vicina nella stessa zona.",
+    "fasce": [
+     [
+      41.24,
+      47.0
+     ],
+     [
+      47.24,
+      53.0
+     ],
+     [
+      53.24,
+      59.0
+     ],
+     [
+      59.24,
+      65.0
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3 - Caserta Petrarelle",
+    "nota": "Area 3: Caserta Petrarelle. Valori dell'area da € 41,00 a € 65,00 al mq l'anno (allegato A). L'area si ricava dalla mappa dell'allegato A-bis, costruita sulle zone OMI dell'Agenzia delle Entrate: per una strada che non compare, si guarda la strada vicina nella stessa zona.",
+    "fasce": [
+     [
+      41.24,
+      47.0
+     ],
+     [
+      47.24,
+      53.0
+     ],
+     [
+      53.24,
+      59.0
+     ],
+     [
+      59.24,
+      65.0
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Area 4 - Caserta 2 (Centurano, Cerasola, 167)",
+    "nota": "Area 4: Caserta 2: Centurano, Cerasola, 167. Valori dell'area da € 38,00 a € 62,00 al mq l'anno (allegato A). L'area si ricava dalla mappa dell'allegato A-bis, costruita sulle zone OMI dell'Agenzia delle Entrate: per una strada che non compare, si guarda la strada vicina nella stessa zona.",
+    "fasce": [
+     [
+      38.24,
+      44.0
+     ],
+     [
+      44.24,
+      50.0
+     ],
+     [
+      50.24,
+      56.0
+     ],
+     [
+      56.24,
+      62.0
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Area 5 - Caserta sud (Ferrarecce, Acquaviva, Lincoln)",
+    "nota": "Area 5: Caserta sud: Ferrarecce, Acquaviva, Lincoln. Valori dell'area da € 36,00 a € 60,00 al mq l'anno (allegato A). L'area si ricava dalla mappa dell'allegato A-bis, costruita sulle zone OMI dell'Agenzia delle Entrate: per una strada che non compare, si guarda la strada vicina nella stessa zona.",
+    "fasce": [
+     [
+      36.24,
+      42.0
+     ],
+     [
+      42.24,
+      48.0
+     ],
+     [
+      48.24,
+      54.0
+     ],
+     [
+      54.24,
+      60.0
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "Area 6 - Frazioni",
+    "nota": "Area 6: Frazioni. Valori dell'area da € 36,00 a € 60,00 al mq l'anno (allegato A). L'area si ricava dalla mappa dell'allegato A-bis, costruita sulle zone OMI dell'Agenzia delle Entrate: per una strada che non compare, si guarda la strada vicina nella stessa zona.",
+    "fasce": [
+     [
+      36.24,
+      42.0
+     ],
+     [
+      42.24,
+      48.0
+     ],
+     [
+      48.24,
+      54.0
+     ],
+     [
+      54.24,
+      60.0
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "1ª fascia",
+    "2ª fascia",
+    "3ª fascia",
+    "4ª fascia"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    3,
+    4,
+    5
+   ],
+   "conta": {
+    "da": 0,
+    "a": 21
+   },
+   "basta": [
+    22
+   ],
+   "nota": "fino a 3 elementi 1ª fascia (dall'1% al 25% della differenza fra minimo e massimo dell'area), 4 elementi 2ª (26-50%), 5 elementi 3ª (51-75%), almeno 6 elementi 4ª (76-100%); con classe A (APE dopo l'1/1/2013) sempre la 4ª"
+  },
+  "elementi": [
+   {
+    "testo": "Ascensore (o alloggio non oltre il 2° piano)"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Aree e spazi liberi di uso comune"
+   },
+   {
+    "testo": "Balcone sporgente o terrazzo"
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato"
+   },
+   {
+    "testo": "Area verde di pertinenza o piano attico"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Servizio di portierato o guardiania"
+   },
+   {
+    "testo": "Stabile o alloggio costruito o ristrutturato del tutto negli ultimi 10 anni"
+   },
+   {
+    "testo": "Sistema di sicurezza o allarme interno"
+   },
+   {
+    "testo": "Attico"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Antenna o impianto satellitare centralizzato"
+   },
+   {
+    "testo": "Stato di manutenzione ottimo"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Infissi con doppio vetrocamera"
+   },
+   {
+    "testo": "Classe energetica A, B, C o D"
+   },
+   {
+    "testo": "Posto auto"
+   },
+   {
+    "testo": "Cucina abitabile"
+   },
+   {
+    "testo": "Senza barriere architettoniche nell'alloggio"
+   },
+   {
+    "testo": "Wi-Fi (solo contratti transitori e per studenti)"
+   },
+   {
+    "testo": "Edificio con impianti a risparmio energetico"
+   },
+   {
+    "testo": "Classe A, APE rilasciato dopo l'1/1/2013 (4ª fascia; segna anche il 17)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile calpestabile dell'alloggio",
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Box auto",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Superficie scoperta a uso esclusivo",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota in millesimi di proprietà)",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Superficie utile calpestabile più gli accessori in percentuale (allegato B, parte seconda). Tolleranza del 5% in più o in meno."
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "superficie sotto 29 mq",
+    "a": 28.999,
+    "perc": 50,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 29 a 30 mq",
+    "da": 29,
+    "a": 29.999,
+    "perc": 50,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 30 a 31 mq",
+    "da": 30,
+    "a": 30.999,
+    "perc": 49,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 31 a 32 mq",
+    "da": 31,
+    "a": 31.999,
+    "perc": 48,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 32 a 33 mq",
+    "da": 32,
+    "a": 32.999,
+    "perc": 47,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 33 a 34 mq",
+    "da": 33,
+    "a": 33.999,
+    "perc": 46,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 34 a 35 mq",
+    "da": 34,
+    "a": 34.999,
+    "perc": 45,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 35 a 36 mq",
+    "da": 35,
+    "a": 35.999,
+    "perc": 44,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 36 a 37 mq",
+    "da": 36,
+    "a": 36.999,
+    "perc": 43,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 37 a 38 mq",
+    "da": 37,
+    "a": 37.999,
+    "perc": 42,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 38 a 39 mq",
+    "da": 38,
+    "a": 38.999,
+    "perc": 41,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 39 a 40 mq",
+    "da": 39,
+    "a": 39.999,
+    "perc": 40,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 40 a 41 mq",
+    "da": 40,
+    "a": 40.999,
+    "perc": 39,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 41 a 42 mq",
+    "da": 41,
+    "a": 41.999,
+    "perc": 38,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 42 a 43 mq",
+    "da": 42,
+    "a": 42.999,
+    "perc": 37,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 43 a 44 mq",
+    "da": 43,
+    "a": 43.999,
+    "perc": 36,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 44 a 45 mq",
+    "da": 44,
+    "a": 44.999,
+    "perc": 35,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 45 a 46 mq",
+    "da": 45,
+    "a": 45.999,
+    "perc": 34,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 46 a 47 mq",
+    "da": 46,
+    "a": 46.999,
+    "perc": 33,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 47 a 48 mq",
+    "da": 47,
+    "a": 47.999,
+    "perc": 32,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 48 a 49 mq",
+    "da": 48,
+    "a": 48.999,
+    "perc": 31,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 49 a 50 mq",
+    "da": 49,
+    "a": 49.999,
+    "perc": 30,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 50 a 51 mq",
+    "da": 50,
+    "a": 50.999,
+    "perc": 29,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 51 a 52 mq",
+    "da": 51,
+    "a": 51.999,
+    "perc": 28,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 52 a 53 mq",
+    "da": 52,
+    "a": 52.999,
+    "perc": 27,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 53 a 54 mq",
+    "da": 53,
+    "a": 53.999,
+    "perc": 26,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 54 a 55 mq",
+    "da": 54,
+    "a": 54.999,
+    "perc": 25,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 55 a 56 mq",
+    "da": 55,
+    "a": 55.999,
+    "perc": 24,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 56 a 57 mq",
+    "da": 56,
+    "a": 56.999,
+    "perc": 23,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 57 a 58 mq",
+    "da": 57,
+    "a": 57.999,
+    "perc": 22,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 58 a 59 mq",
+    "da": 58,
+    "a": 58.999,
+    "perc": 21,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 59 a 60 mq",
+    "da": 59,
+    "a": 59.999,
+    "perc": 20,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 60 a 61 mq",
+    "da": 60,
+    "a": 60.999,
+    "perc": 19,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 61 a 62 mq",
+    "da": 61,
+    "a": 61.999,
+    "perc": 18,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 62 a 63 mq",
+    "da": 62,
+    "a": 62.999,
+    "perc": 17,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 63 a 64 mq",
+    "da": 63,
+    "a": 63.999,
+    "perc": 16,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 64 a 65 mq",
+    "da": 64,
+    "a": 64.999,
+    "perc": 15,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 65 a 66 mq",
+    "da": 65,
+    "a": 65.999,
+    "perc": 14,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 66 a 67 mq",
+    "da": 66,
+    "a": 66.999,
+    "perc": 13,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 67 a 68 mq",
+    "da": 67,
+    "a": 67.999,
+    "perc": 12,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 68 a 69 mq",
+    "da": 68,
+    "a": 68.999,
+    "perc": 11,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 69 a 70 mq",
+    "da": 69,
+    "a": 69.999,
+    "perc": 10,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 70 a 71 mq",
+    "da": 70,
+    "a": 70.999,
+    "perc": 9,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 71 a 72 mq",
+    "da": 71,
+    "a": 71.999,
+    "perc": 8,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 72 a 73 mq",
+    "da": 72,
+    "a": 72.999,
+    "perc": 7,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 73 a 74 mq",
+    "da": 73,
+    "a": 73.999,
+    "perc": 6,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 74 a 75 mq",
+    "da": 74,
+    "a": 74.999,
+    "perc": 5,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 75 a 76 mq",
+    "da": 75,
+    "a": 75.999,
+    "perc": 4,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 76 a 77 mq",
+    "da": 76,
+    "a": 76.999,
+    "perc": 3,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 77 a 78 mq",
+    "da": 77,
+    "a": 77.999,
+    "perc": 2,
+    "su": "base"
+   },
+   {
+    "nome": "superficie da 78 a 79 mq",
+    "da": 78,
+    "a": 78.999,
+    "perc": 1,
+    "su": "base"
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "contratti": [
+     "agevolato",
+     "studenti"
+    ],
+    "ammobiliato": true,
+    "testo": "Completamente arredato, con l'elenco dei mobili allegato al contratto",
+    "nome": "arredato",
+    "perc": 15
+   },
+   {
+    "chiave": "arredo_tr",
+    "tipo": "spunta",
+    "contratti": [
+     "transitorio"
+    ],
+    "ammobiliato": true,
+    "testo": "Completamente arredato, con l'elenco dei mobili allegato al contratto",
+    "nome": "arredato (transitorio)",
+    "perc": 20
+   },
+   {
+    "chiave": "veduta",
+    "tipo": "spunta",
+    "testo": "Ampia e libera veduta, oppure piscina o campi attrezzati per lo sport",
+    "nome": "veduta libera o piscina, campi sportivi",
+    "perc": 10
+   }
+  ],
+  "nota_maggiorazioni": "I correttivi si sommano fra loro (scheda riepilogativa, allegato C) e possono superare il minimo e il massimo dell'area (allegato A, punto 0). Sono tutti \"fino a\": qui si usa il massimo. L'aumento per gli alloggi sotto 80 mq è la differenza fra 80 e i mq calpestabili (fino al 50%). Non sono applicati: l'aumento fino al 30% per le zone di maggior interesse commerciale (l'accordo non le individua), la riduzione fino al 30% oltre 130 mq, la riduzione generica fino al 30% e quella fino al 40% per le grandi proprietà, tutte facoltative.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "4ª fascia: alloggio e fabbricato devono essere almeno in buone condizioni; se manca qualche requisito, il canone si ferma al minimo della 4ª fascia.",
+    "fascia": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato C",
+  "titolo": "Scheda riepilogativa del canone concordato - Comune di Caserta",
+  "sottotitolo": "(Art. 2 comma 3 ed art. 5 commi 1-2-3 legge 9.12.98 n. 431) - Accordo territoriale per il Comune di Caserta del 01/09/2026, depositato il 03/09/2026 al prot. n. 0100799",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "Elementi caratteristici (allegato B)",
+  "etichetta_conteggio": "TOTALE ELEMENTI",
+  "dichiarazione": "Le parti, con la sottoscrizione della presente scheda, dichiarano sotto la propria responsabilità civile e penale la veridicità di tutti i dati sopra riportati; riconoscono inoltre l'effettiva presenza degli elementi caratteristici dichiarati, e che le misure su cui è stata computata la superficie convenzionale sono conformi all'effettivo stato dei luoghi; pertanto riconoscono che il canone annuo pattuito è stato determinato con l'applicazione a tali dati dei parametri di cui all'Accordo Territoriale.",
+  "firme": [
+   "Parte locatrice",
+   "Parte conduttrice"
+  ],
+  "titolo_attestazione": "ALLEGATO D - ATTESTAZIONE DI RISPONDENZA (D.M. 16/01/2017)",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Caserta del 01/09/2026, sulla base degli elementi oggettivi sopra dichiarati, visto il contratto di locazione e la scheda riepilogativa del canone concordato,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Caserta depositato in data 03/09/2026 al protocollo numero 0100799."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "l'Organizzazione"
+  ],
+  "nota_zone": "L'area si ricava dalla mappa dell'allegato A-bis (zone OMI): 1 Caserta centro, 2 Caserta ospedale, 3 Caserta Petrarelle, 4 Caserta 2 (Centurano, Cerasola, 167), 5 Caserta sud (Ferrarecce, Acquaviva, Lincoln), 6 Frazioni."
+ }
+}
