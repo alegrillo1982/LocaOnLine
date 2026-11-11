@@ -1,0 +1,631 @@
+{
+ "accordo": {
+  "codice": "pesaro-2025-02-26",
+  "modello": "pesaro-2025",
+  "comune": "Pesaro",
+  "provincia": "PU",
+  "titolo": "Accordo per il Comune di Pesaro per la stipula dei contratti a canone convenzionato",
+  "data": "2025-02-26",
+  "data_testo": "26 febbraio 2025",
+  "deposito": "Comune di Pesaro",
+  "deposito_data": "28.02.2025",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2028-02-29",
+  "firmatari_proprieta": [
+   "U.P.P.I.",
+   "Union Casa",
+   "A.S.P.P.I.",
+   "Confabitare",
+   "Confedilizia"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato a Pesaro il 26/02/2025 e depositato in Comune il 28/02/2025 (protocollo non pubblicato). Vale per i nuovi contratti stipulati dal 01/03/2025 al 29/02/2028; poi può essere aggiornato o prorogato di anno in anno, salvo disdetta. Per proroghe e subentri di contratti precedenti valgono gli accordi precedenti (Comune di Pesaro). Sostituisce l'accordo del 2019 (in vigore dal 01/03/2019). Nove zone (mappa allegata), tre fasce secondo i punti degli elementi qualificanti (inferiore fino a 12, media da 13 a 30, superiore oltre 30), valori in euro al mq al mese con minimo pari al 60% del massimo. Superficie convenzionale corretta in base alla taglia (K = 10 sotto i 90 mq, 40% oltre i 90 mq). Maggiorazioni: mobilio +15% o +7%, durata 4/5/6 + 2 anni +2/3/4%, studenti 12-24 mesi +3%, 25-36 mesi +5%. I valori della tabella non si aggiornano con l'ISTAT durante l'accordo (al punto B8 il testo riporta ancora, per un refuso, la scadenza «28.02.2022» dell'accordo precedente); il canone del singolo contratto si aggiorna dal 4° anno al massimo del 75% dell'indice FOI. Per le agevolazioni comunali il Comune chiede il deposito del contratto registrato con il verbale di conformità.",
+  "fonte": "Comune di Pesaro, pagina «Canoni concordati» (Servizi sociali, Casa): «Accordo canone concordato Pesaro dal 1 marzo 2025», allegati A-H, mappa «Zone Canoni Concordati 2025», estratti (tabella valori, elementi qualificanti, superficie convenzionale, contatti dei sindacati) e modulistica."
+ },
+ "esempio_zona": "la zona dalla mappa del Comune di Pesaro (ricerca per indirizzo)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Zona mare (mare centro)",
+    "nota": "Zona 1 - Zona mare (mare centro): la fascia sul mare davanti al centro (nell'accordo del 2019: «zona mare centrale»). Per trovare la zona di un indirizzo: mappa allegata all'accordo, oppure ricerca per indirizzo o dati catastali sul sito dei canoni concordati del Comune (map.comune.pesaro.pu.it/canoniconcordati). Valori in euro al mq al mese; il minimo è il 60% del massimo.",
+    "fasce": [
+     [
+      4.23,
+      7.06
+     ],
+     [
+      4.7,
+      7.84
+     ],
+     [
+      5.08,
+      8.47
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Centro storico",
+    "nota": "Zona 2 - Centro storico: il centro storico (nell'accordo del 2019: centro storico e fuori le mura fino a Viale della Vittoria). Per trovare la zona di un indirizzo: mappa allegata all'accordo, oppure ricerca per indirizzo o dati catastali sul sito dei canoni concordati del Comune (map.comune.pesaro.pu.it/canoniconcordati). Valori in euro al mq al mese; il minimo è il 60% del massimo.",
+    "fasce": [
+     [
+      4.23,
+      7.06
+     ],
+     [
+      4.7,
+      7.84
+     ],
+     [
+      5.08,
+      8.47
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Semicentro (edificata centrale)",
+    "nota": "Zona 3 - Semicentro (edificata centrale): la città intorno al centro (nell'accordo del 2019: Loreto, Soria, Pantano basso, Montegranaro). Per trovare la zona di un indirizzo: mappa allegata all'accordo, oppure ricerca per indirizzo o dati catastali sul sito dei canoni concordati del Comune (map.comune.pesaro.pu.it/canoniconcordati). Valori in euro al mq al mese; il minimo è il 60% del massimo.",
+    "fasce": [
+     [
+      3.54,
+      5.9
+     ],
+     [
+      4.17,
+      6.94
+     ],
+     [
+      4.71,
+      7.84
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Edificata urbana",
+    "nota": "Zona 4 - Edificata urbana: i quartieri urbani più esterni (nell'accordo del 2019: Muraglia, Tombaccia, Pantano alta). Per trovare la zona di un indirizzo: mappa allegata all'accordo, oppure ricerca per indirizzo o dati catastali sul sito dei canoni concordati del Comune (map.comune.pesaro.pu.it/canoniconcordati). Valori in euro al mq al mese; il minimo è il 60% del massimo.",
+    "fasce": [
+     [
+      3.54,
+      5.9
+     ],
+     [
+      4.17,
+      6.94
+     ],
+     [
+      4.71,
+      7.84
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Zona 5 - Espansione residenziale (edificata esterna)",
+    "nota": "Zona 5 - Espansione residenziale (edificata esterna): le zone residenziali di espansione (nell'accordo del 2019: Colle Ardizio, Torraccia, Santa Veneranda, Cattabrighe). Per trovare la zona di un indirizzo: mappa allegata all'accordo, oppure ricerca per indirizzo o dati catastali sul sito dei canoni concordati del Comune (map.comune.pesaro.pu.it/canoniconcordati). Valori in euro al mq al mese; il minimo è il 60% del massimo.",
+    "fasce": [
+     [
+      3.06,
+      5.1
+     ],
+     [
+      3.6,
+      6.0
+     ],
+     [
+      4.03,
+      6.71
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "Zona 6 - Edificata borghi e frazioni",
+    "nota": "Zona 6 - Edificata borghi e frazioni: i borghi e le frazioni (nell'accordo del 2019: Villa Fastiggi, Case Bruciate, zona Pica). Per trovare la zona di un indirizzo: mappa allegata all'accordo, oppure ricerca per indirizzo o dati catastali sul sito dei canoni concordati del Comune (map.comune.pesaro.pu.it/canoniconcordati). Valori in euro al mq al mese; il minimo è il 60% del massimo. Nella fascia superiore l'accordo scrive come minimo 3,66 (non 3,88, che sarebbe il 60% di 6,47): qui si usa il valore scritto.",
+    "fasce": [
+     [
+      2.87,
+      4.78
+     ],
+     [
+      3.37,
+      5.62
+     ],
+     [
+      3.66,
+      6.47
+     ]
+    ]
+   },
+   {
+    "codice": "7",
+    "nome": "Zona 7 - Agricola costiera",
+    "nota": "Zona 7 - Agricola costiera: la campagna verso il mare, a nord e a sud della città. Per trovare la zona di un indirizzo: mappa allegata all'accordo, oppure ricerca per indirizzo o dati catastali sul sito dei canoni concordati del Comune (map.comune.pesaro.pu.it/canoniconcordati). Valori in euro al mq al mese; il minimo è il 60% del massimo.",
+    "fasce": [
+     [
+      2.7,
+      4.51
+     ],
+     [
+      3.18,
+      5.3
+     ],
+     [
+      3.66,
+      6.1
+     ]
+    ]
+   },
+   {
+    "codice": "8",
+    "nome": "Zona 8 - Agricola collinare",
+    "nota": "Zona 8 - Agricola collinare: la campagna collinare (nell'accordo del 2019: Pozzo Alto, Ginestreto, Santa Maria delle Fabbrecce, Villa Ceccolini, Santa Maria dell'Arzilla, Candelara). Per trovare la zona di un indirizzo: mappa allegata all'accordo, oppure ricerca per indirizzo o dati catastali sul sito dei canoni concordati del Comune (map.comune.pesaro.pu.it/canoniconcordati). Valori in euro al mq al mese; il minimo è il 60% del massimo.",
+    "fasce": [
+     [
+      2.55,
+      4.25
+     ],
+     [
+      3.0,
+      5.0
+     ],
+     [
+      3.45,
+      5.75
+     ]
+    ]
+   },
+   {
+    "codice": "9",
+    "nome": "Zona 9 - Frazione Monteciccardo (zona agricola)",
+    "nota": "Zona 9 - Frazione Monteciccardo (zona agricola): il territorio dell'ex Comune di Monteciccardo, unito a Pesaro. Per trovare la zona di un indirizzo: mappa allegata all'accordo, oppure ricerca per indirizzo o dati catastali sul sito dei canoni concordati del Comune (map.comune.pesaro.pu.it/canoniconcordati). Valori in euro al mq al mese; il minimo è il 60% del massimo.",
+    "fasce": [
+     [
+      2.43,
+      4.05
+     ],
+     [
+      2.7,
+      4.5
+     ],
+     [
+      2.97,
+      4.95
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "inferiore",
+    "media",
+    "superiore"
+   ],
+   "criterio": "punti",
+   "soglie": [
+    12,
+    30
+   ]
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Pertinenze e spazi comuni"
+   },
+   {
+    "da": 13,
+    "titolo": "Impianti e dotazioni"
+   },
+   {
+    "da": 26,
+    "titolo": "Tipo di edificio, età e classe energetica"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Garage in uso esclusivo",
+    "punti": 4
+   },
+   {
+    "testo": "Posto auto coperto riservato",
+    "punti": 3
+   },
+   {
+    "testo": "Posto auto scoperto riservato, con tettoia",
+    "punti": 2
+   },
+   {
+    "testo": "Posto auto scoperto riservato",
+    "punti": 1
+   },
+   {
+    "testo": "Cantina di almeno 4 mq",
+    "punti": 2
+   },
+   {
+    "testo": "Soffitta praticabile di almeno 4 mq",
+    "punti": 2
+   },
+   {
+    "testo": "Ripostiglio esterno, sottoscala, soffitta o cantina sotto i 4 mq",
+    "punti": 1
+   },
+   {
+    "testo": "Balconi del tipo a loggia",
+    "punti": 2
+   },
+   {
+    "testo": "Balconi, terrazza o lastrico scoperto",
+    "punti": 1
+   },
+   {
+    "testo": "Area scoperta in uso esclusivo (giardino, orto, porticato…)",
+    "punti": 2
+   },
+   {
+    "testo": "Parcheggio auto, moto o bici in uso comune",
+    "punti": 1
+   },
+   {
+    "testo": "Area verde in uso comune",
+    "punti": 1
+   },
+   {
+    "testo": "Lavatoio o stenditoio in uso comune",
+    "punti": 1
+   },
+   {
+    "testo": "Ascensore, montacarichi o servoscala",
+    "punti": 2
+   },
+   {
+    "testo": "Accessibilità dello stabile e dell'alloggio (legge 13/1989)",
+    "livelli": [
+     {
+      "testo": "totale (stabile e alloggio)",
+      "punti": 4
+     },
+     {
+      "testo": "parziale (stabile o alloggio)",
+      "punti": 1
+     }
+    ]
+   },
+   {
+    "testo": "Riscaldamento",
+    "livelli": [
+     {
+      "testo": "autonomo",
+      "punti": 2
+     },
+     {
+      "testo": "centralizzato con contabilizzatore",
+      "punti": 1
+     }
+    ]
+   },
+   {
+    "testo": "Condizionatore, climatizzatore o pompa di calore in almeno metà dei vani",
+    "punti": 3
+   },
+   {
+    "testo": "Fonti energetiche rinnovabili private (es. pannelli solari)",
+    "punti": 4
+   },
+   {
+    "testo": "Fonti energetiche rinnovabili condominiali",
+    "punti": 2
+   },
+   {
+    "testo": "Porta blindata e/o barre anti-intrusione agli infissi",
+    "punti": 1
+   },
+   {
+    "testo": "Inferriate a tutti gli infissi (finestre e porte finestre)",
+    "punti": 1
+   },
+   {
+    "testo": "Antifurto, allarme o videocamera",
+    "punti": 1
+   },
+   {
+    "testo": "Domotica",
+    "livelli": [
+     {
+      "testo": "gestione da remoto di riscaldamento e raffrescamento",
+      "punti": 3
+     },
+     {
+      "testo": "altra automazione di apparecchi e impianti, anche parziale",
+      "punti": 1
+     }
+    ]
+   },
+   {
+    "testo": "Citofono",
+    "livelli": [
+     {
+      "testo": "videocitofono",
+      "punti": 2
+     },
+     {
+      "testo": "citofono",
+      "punti": 1
+     }
+    ]
+   },
+   {
+    "testo": "TV con antenna parabolica o collegamento in rete",
+    "punti": 1
+   },
+   {
+    "testo": "Impianti a norma (luce, gas, acqua, scarichi…)",
+    "punti": 1
+   },
+   {
+    "testo": "Doppi servizi (due bagni)",
+    "livelli": [
+     {
+      "testo": "di cui almeno uno completo e con finestra",
+      "punti": 2
+     },
+     {
+      "testo": "altri doppi servizi",
+      "punti": 1
+     }
+    ]
+   },
+   {
+    "testo": "Tipo di abitazione",
+    "livelli": [
+     {
+      "testo": "unifamiliare o a schiera",
+      "punti": 3
+     },
+     {
+      "testo": "bifamiliare (con ingresso comune)",
+      "punti": 2
+     },
+     {
+      "testo": "ingresso autonomo (negli altri casi)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Fabbricato con meno di 9 abitazioni",
+    "punti": 1
+   },
+   {
+    "testo": "Categoria catastale A/7 (villino)",
+    "punti": 3
+   },
+   {
+    "testo": "Anno di costruzione o ristrutturazione",
+    "livelli": [
+     {
+      "testo": "dopo il 2010, antisismica",
+      "punti": 5
+     },
+     {
+      "testo": "dopo il 2010, non antisismica",
+      "punti": 4
+     },
+     {
+      "testo": "costruzione o ristrutturazione antisismica dopo il 2000",
+      "punti": 2
+     },
+     {
+      "testo": "costruzione tra il 1° settembre 1967 e il 31 dicembre 2000",
+      "punti": 1
+     }
+    ]
+   },
+   {
+    "testo": "Classe energetica (APE)",
+    "livelli": [
+     {
+      "testo": "A o superiore",
+      "punti": 8
+     },
+     {
+      "testo": "B",
+      "punti": 6
+     },
+     {
+      "testo": "C",
+      "punti": 5
+     },
+     {
+      "testo": "D",
+      "punti": 4
+     },
+     {
+      "testo": "E",
+      "punti": 3
+     },
+     {
+      "testo": "F",
+      "punti": 2
+     },
+     {
+      "testo": "G",
+      "punti": 0
+     }
+    ]
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'alloggio, senza i muri",
+   "voci": [
+    {
+     "chiave": "accessori_com",
+     "testo": "Soffitte, cantine, verande, ripostigli, soppalchi comunicanti con l'alloggio (55%)",
+     "coeff": 0.55
+    },
+    {
+     "chiave": "accessori_non",
+     "testo": "Soffitte, cantine, verande, ripostigli, soppalchi non comunicanti (30%)",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "logge",
+     "testo": "Logge, aperte su un solo lato (35%)",
+     "coeff": 0.35
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi aperti, terrazzi, lastrici (25%)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "giardino",
+     "testo": "Cortile, giardino, orto esclusivi (15%)",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "porticato",
+     "testo": "Area scoperta porticata esclusiva (20%)",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "garage",
+     "testo": "Garage o box esclusivo (50%)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "pa_coperto",
+     "testo": "Posto auto coperto assegnato (35%)",
+     "coeff": 0.35
+    },
+    {
+     "chiave": "pa_tettoia",
+     "testo": "Posto auto scoperto con tettoia (25%)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "pa_scoperto",
+     "testo": "Posto auto scoperto (20%)",
+     "coeff": 0.2
+    }
+   ],
+   "tetto_voci": 1,
+   "correzioni_formula": [
+    {
+     "fino": 55,
+     "limite": 65,
+     "divisore": 55
+    },
+    {
+     "fino": 90,
+     "incluso": true,
+     "k": 10,
+     "limite": 90,
+     "divisore": 35
+    }
+   ],
+   "scaglioni_totale": [
+    {
+     "oltre": 90,
+     "perc": 40
+    }
+   ],
+   "nota": "Si misura la superficie calpestabile, senza i muri. I vani (dell'alloggio, accessori o garage) con altezza media sotto 1,70 m contano il 70%: inserisci solo il 70% dei loro mq. Le pertinenze contano in percentuale (accessori 55% o 30%, logge 35%, balconi e terrazzi 25%, giardino 15%, porticato 20%, garage 50%, posti auto 35%, 25% o 20%) e in tutto non oltre la superficie dell'alloggio; giardino e porticato insieme non oltre metà dell'alloggio. Poi la superficie totale si corregge: sotto i 55 mq aumenta (totale + totale × (65 − totale) / 55), da 55 a 90 mq aumenta di 10 × (90 − totale) / 35, oltre 90 mq la parte in più conta il 40%.",
+   "tetto_gruppi": [
+    {
+     "chiavi": [
+      "giardino",
+      "porticato"
+     ],
+     "frazione": 0.5,
+     "testo": "Giardino e porticato"
+    }
+   ]
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Mobilio",
+    "nome": "mobilio",
+    "nessuna": "non ammobiliato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente ammobiliato, con gli elettrodomestici essenziali",
+      "perc": 15
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente ammobiliato (ad es. solo cucina, bagno ed elettrodomestici essenziali)",
+      "perc": 7
+     }
+    ]
+   },
+   {
+    "chiave": "durata_studenti",
+    "tipo": "scelta",
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Durata del contratto per studenti universitari fuori sede",
+    "nome": "studenti",
+    "nessuna": "da 6 a 11 mesi",
+    "opzioni": [
+     {
+      "valore": "12-24",
+      "testo": "da 12 a 24 mesi",
+      "perc": 3
+     },
+     {
+      "valore": "25-36",
+      "testo": "da 25 a 36 mesi",
+      "perc": 5
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Le percentuali si sommano e valgono sia per il minimo sia per il massimo della fascia: mobilio completo +15% o parziale +7%; durata oltre 3 + 2 anni: 4 + 2 anni +2%, 5 + 2 anni +3%, 6 + 2 anni +4%; studenti universitari fuori sede: da 12 a 24 mesi +3%, da 25 a 36 mesi +5% (da 6 a 11 mesi nulla). Per i contratti transitori nessuna maggiorazione. Per una porzione di alloggio la superficie è quella in uso esclusivo più la quota delle parti in comune; la somma delle porzioni non può superare il canone dell'intero alloggio.",
+  "durata": {
+   "4": 2,
+   "5": 3,
+   "6": 4
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "ALLEGATO H (Pesaro)",
+  "titolo": "Verbale di conformità del canone",
+  "sottotitolo": "Accordo per il Comune di Pesaro del 26/02/2025 tra UPPI, Confedilizia, Union Casa, ASPPI, Confabitare e SUNIA, SICET, UNIAT (depositato il 28/02/2025, in vigore dal 01/03/2025), per attestare lo stato dell'immobile e beneficiare delle agevolazioni di cui all'art. 8 L. 431/1998 e all'art. 3 c. 2 D.Lgs. 23/2011",
+  "titolo_superficie": "3. SUPERFICIE CONVENZIONALE DI RIFERIMENTO PER IL CALCOLO DEL CANONE",
+  "titolo_elementi": "4. Elementi qualificanti per margini di oscillazione tra valori massimi e minimi",
+  "etichetta_conteggio": "Numero totale elementi qualificanti (punti)",
+  "dichiarazione": "La valutazione dell'alloggio viene effettuata su dati forniti direttamente dalle parti contraenti le quali, firmando il presente verbale, se ne assumono la totale responsabilità, esonerandone le Organizzazioni Sindacali intervenute.",
+  "firme": [
+   "Il/I locatore/i",
+   "Il/I conduttore/i"
+  ],
+  "titolo_attestazione": "ALLEGATO G - ATTESTAZIONE DI RISPONDENZA (D.M. 16/01/2017)",
+  "attestazione": [
+   "TUTTO CIÒ PREMESSO, l'Organizzazione ……………………………………, firmataria dell'Accordo territoriale per il Comune di Pesaro sottoscritto il 26/02/2025 e depositato il 28/02/2025, come sopra rappresentata, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra citati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Pesaro depositato in data 28/02/2025."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante/richiedente",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "Nove zone (mappa allegata all'accordo): 1 mare centro, 2 centro storico, 3 semicentro (edificata centrale), 4 edificata urbana, 5 espansione residenziale (edificata esterna), 6 borghi e frazioni, 7 agricola costiera, 8 agricola collinare, 9 frazione Monteciccardo. La zona di un indirizzo si trova sul sito dei canoni concordati del Comune (map.comune.pesaro.pu.it/canoniconcordati)."
+ }
+}
