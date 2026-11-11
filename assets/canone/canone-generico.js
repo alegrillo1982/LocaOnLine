@@ -167,7 +167,8 @@
     }
     if (F.criterio === "differenza") {
       // es. Messina: le percentuali degli elementi si applicano alla differenza fra minimo e massimo
-      const n = Math.round(E.reduce((t, e, k) => t + puntiDi(e, el[k]), 0) * 100) / 100;
+      // es. Oristano: con voci negative la somma non scende sotto un minimo (0: si resta al minimo della fascia)
+      const n = Math.max(F.somma_minima ?? -Infinity, Math.round(E.reduce((t, e, k) => t + puntiDi(e, el[k]), 0) * 100) / 100);
       return { n, i: 0, nome: `${virgola(Math.min(n, 100), 0)}% della differenza`, avviso: "" };
     }
     if (F.criterio === "obbligatori") {
@@ -230,7 +231,7 @@
 
   function calcola(accordo, s) {
     const R = accordo.regole, avvisi = [];
-    const tipo = s.tipo || "agevolato", anni = Math.min(6, Number(s.durata_anni) || 3);
+    const tipo = s.tipo || "agevolato", anni = Math.min(R.durata_max || 6, Number(s.durata_anni) || 3);   // es. Vibo Valentia: fino a 7 + 2
     const r = { avvisi, zona: null, fascia: null, base: null, maggiorazioni: [], fattore: 1, valori: null, superficie: null,
       valore: null, valore_proposto: null, canone_intero: null, canone_minimo: null, canone: null, canone_massimo: null,
       canone_pattuito: null, quota: null, punti: 0 };
@@ -326,6 +327,13 @@
       if (m.superficie && sup) { const mq = m.superficie.su === "base" ? sup.righe[0].mq : sup.totale; if ((m.superficie.da !== undefined && mq < m.superficie.da) || (m.superficie.a !== undefined && mq > m.superficie.a)) continue; }
       const val = (s.maggiorazioni_scelte || {})[m.chiave];
       corrente = m.chiave;
+      // es. Enna: importi fissi in euro al mq (allegato D), sommati al valore al mq dopo le percentuali
+      if (m.importo_mq !== undefined || (m.opzioni || []).some((o) => o.importo_mq !== undefined)) {
+        const o = m.tipo === "scelta" ? (m.opzioni || []).find((x) => x.valore === val) : null;
+        const imp = m.tipo === "scelta" ? (o ? o.importo_mq : 0) : val ? m.importo_mq : 0;
+        if (imp) (r.importi_mq = r.importi_mq || []).push({ nome: o ? `${m.nome || m.testo}: ${o.testo}` : m.nome || m.testo, importo: imp });
+        continue;
+      }
       if (m.tipo === "auto") { add(m.nome || m.testo, m.perc, m.dopo); continue; }
       if (m.tipo === "scelta") { const o = (m.opzioni || []).find((x) => x.valore === val);
         // es. Ferrara: quota fissa mensile per zona (garage), da sommare al canone
@@ -440,6 +448,12 @@
     if (R.solo_minimo && r.valori && R.elementi.some((e, k) => k >= R.solo_minimo.da && k <= R.solo_minimo.a && presente(e, (s.elementi || [])[k]))) {
       r.valori = [r.valori[0], r.valori[0]];
       avvisi.push(R.solo_minimo.avviso);
+    }
+    if (r.valori && r.importi_mq) {
+      const tot = r.importi_mq.reduce((t, x) => t + x.importo, 0), div = R.unita_importi_mq === "anno" && R.unita !== "anno" ? 12 : 1;
+      r.valori = r.valori.map((x) => Math.round((x + tot / div) * 1000) / 1000);
+      r.importo_mq_totale = tot;
+      avvisi.push(`Elementi aggiuntivi: + € ${virgola(tot)} al mq ${R.unita_importi_mq === "anno" ? "all'anno" : "al mese"}${div === 12 ? ` (€ ${virgola(tot / 12, 3)} al mese)` : ""}, sommati al valore al mq.`);
     }
     if (r.valori) {
       r.valore_proposto = r.valori[1];

@@ -1,0 +1,348 @@
+{
+ "accordo": {
+  "codice": "isernia-2023-02-08",
+  "modello": "isernia-2023",
+  "comune": "Isernia",
+  "provincia": "IS",
+  "titolo": "Accordo per la città di Isernia",
+  "data": "2023-02-08",
+  "data_testo": "8 febbraio 2023",
+  "deposito": "Comune di Isernia, 13/02/2023, prot. 6392",
+  "deposito_data": "13.02.2023",
+  "protocollo": "6392",
+  "ufficio": "Protocollo del Comune di Isernia",
+  "ufficio_breve": "Comune di Isernia",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Isernia dell'8 febbraio 2023: durata di tre anni dal deposito (13 febbraio 2023), ormai trascorsi.</strong> Resta in vigore fino al nuovo, e alla scadenza i valori possono essere aggiornati al 75% dell'ISTAT (punto 11.5): qui trovi quelli originali, chiedi all'associazione che attesta il contratto quelli aggiornati.",
+  "firmatari_proprieta": [
+   "A.P.P.C. MOLISE",
+   "CONFAPPI MOLISE",
+   "CONFEDILIZIA",
+   "FEDERPROPRIETÀ",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "FEDER.CASA",
+   "FE.N.I.T.",
+   "SICET-CISL",
+   "SUNIA ABRUZZO-MOLISE",
+   "UNIAT APS MOLISE"
+  ],
+  "nota": "Accordo firmato a Isernia l'08/02/2023 e protocollato dal Comune di Isernia il 13/02/2023 (timbro «Comune di Isernia - Protocollo 13 feb. 2023», prot. n. 6392 scritto a mano). Sostituisce integralmente l'accordo del 19/02/2021. Dura tre anni dal giorno dopo il deposito e resta in vigore fino al nuovo accordo (punti 3, 11.1 e 11.4); alla scadenza i valori si possono aggiornare al 75% dell'ISTAT (11.5). Cinque aree per fogli catastali (il punto 4.1 dice «n. 6 Aree» ma ne elenca cinque), valori annui al mq in tre sub-fasce secondo il numero dei 23 elementi del punto 4.2 (fino a 3, da 4 a 6, da 7, la superiore in proporzione al numero degli elementi). Nell'area 3 la sub-fascia inferiore (da 33,00 €) parte sotto il minimo dell'area nella tabella delle fasce (36,00 €): si usano i valori delle sub-fasce. Il foglio 56 è elencato sia nell'area 3 sia nell'area 4. Coefficienti della superficie dal punto 4.5 (garage 50%, posto in autorimessa comune 30%, balconi e cantine 20%); il modulo di attestazione allegato riporta invece 0,60, 0,40 e 0,25 ed elenca solo 21 elementi (senza A2 e A3, con «giardino condominiale» al posto di C3). La parte sugli studenti (punto 6) cita per errore il Comune di Campobasso. Il canone si aggiorna ogni anno al 75% dell'ISTAT (non con la cedolare secca).",
+  "fonte": "Comune di Isernia, pagina «Canoni di locazione» (accordo_territoriale_isernia.pdf, scansione firmata di 50 pagine con allegati e contratti tipo; lo stesso file è pubblicato da SUNIA nella pagina degli accordi di Isernia)."
+ },
+ "esempio_zona": "l'area dal foglio catastale",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "tetto_zona": true,
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Area 1 - Centro storico",
+    "nota": "Area 1 - Centro storico (zona OMI B3, es. Corso Marcelli, Via Occidentale, Via Roma): fogli catastali 51, 52, 53, 54, 55, 76 (parte).",
+    "fasce": [
+     [
+      36.0,
+      41.4
+     ],
+     [
+      41.4,
+      52.0
+     ],
+     [
+      52.01,
+      60.0
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2 - Centro",
+    "nota": "Area 2 - Centro, zona centrale nuova (zona OMI B4, es. Corso Garibaldi, Via XXIV Maggio, Corso Risorgimento, Via Bellini): fogli 40, 41, 42 (parte), 43, 44, 75, 77, 78 (parte).",
+    "fasce": [
+     [
+      36.0,
+      41.4
+     ],
+     [
+      41.4,
+      52.0
+     ],
+     [
+      52.01,
+      60.0
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3 - Semicentro",
+    "nota": "Area 3 - Semicentro, zona di recente sviluppo (zona OMI C2, es. San Leucio, Nunziatella sud, San Lazzaro, Le Piane in parte): fogli 42 (parte), 56, 78 (parte), 79, 81, 82, 84. Il foglio 56 è elencato anche nell'area 4.",
+    "fasce": [
+     [
+      33.0,
+      36.3
+     ],
+     [
+      36.31,
+      55.1
+     ],
+     [
+      55.11,
+      61.0
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Area 4 - Periferia",
+    "nota": "Area 4 - Periferia (zone OMI D2 ed E4, es. Castagna, Marini, Nunziatella nord, Le Piane in parte): fogli 20, 22, 23, 24, 25, 26, 30, 31, 32, 33, 34, 36, 37, 38, 39, 40 (parte), 41 (parte), 45, 46, 47, 48, 49, 50, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 68, 80, 83, 85.",
+    "fasce": [
+     [
+      33.0,
+      36.1
+     ],
+     [
+      36.11,
+      42.7
+     ],
+     [
+      42.71,
+      59.0
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Area 5 - Suburbana ed extraurbana",
+    "nota": "Area 5 - Suburbana ed extraurbana (zona OMI R1): fogli da 1 a 19, 21, 27, 28, 29, 35, 66, 67, da 69 a 74.",
+    "fasce": [
+     [
+      31.0,
+      34.1
+     ],
+     [
+      34.11,
+      42.7
+     ],
+     [
+      42.71,
+      56.0
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "inferiore",
+    "intermedia",
+    "superiore"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    3,
+    6
+   ],
+   "proporzionale": [
+    null,
+    null,
+    {
+     "da": 6,
+     "passi": 17
+    }
+   ],
+   "nota": "Sub-fascia inferiore fino a 3 elementi, intermedia da 4, superiore da 7 (punto 4.2). Nella sub-fascia superiore il massimo cresce in proporzione al numero degli elementi: si raggiunge con tutti i 23."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi oggettivi (punto 4.2): segna quelli presenti"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "A1 bagno completo (tazza, bidet, vasca o doccia) con finestra o aerazione"
+   },
+   {
+    "testo": "A2 sistema di sicurezza o allarme interno"
+   },
+   {
+    "testo": "A3 impianto di condizionamento per tutto l'appartamento"
+   },
+   {
+    "testo": "B1 cucina abitabile con almeno una finestra"
+   },
+   {
+    "testo": "B2 ascensore per unità al piano terzo o superiore"
+   },
+   {
+    "testo": "B3 riscaldamento autonomo"
+   },
+   {
+    "testo": "C1 doppi servizi (almeno uno come A1)"
+   },
+   {
+    "testo": "C2 posto auto coperto"
+   },
+   {
+    "testo": "C3 area verde di pertinenza o piano attico"
+   },
+   {
+    "testo": "C4 porte blindate e/o doppi infissi"
+   },
+   {
+    "testo": "C5 isolamento termico-acustico"
+   },
+   {
+    "testo": "C6 impianto energetico a norma di legge"
+   },
+   {
+    "testo": "C7 impianto termico a norma di legge"
+   },
+   {
+    "testo": "C8 abbattimento delle barriere architettoniche"
+   },
+   {
+    "testo": "C9 videocitofono"
+   },
+   {
+    "testo": "C10 classe energetica (APE) A, B, C, D o E"
+   },
+   {
+    "testo": "D1 balconi o terrazzo"
+   },
+   {
+    "testo": "D2 cantina o soffitta"
+   },
+   {
+    "testo": "D3 edificio con meno di 25 anni (salvo immobili di pregio)"
+   },
+   {
+    "testo": "D4 giardino e/o spazio aperto esclusivo"
+   },
+   {
+    "testo": "D5 lavori di manutenzione con D.I.A. negli ultimi 10 anni"
+   },
+   {
+    "testo": "D6 posto auto scoperto"
+   },
+   {
+    "testo": "D7 fermata dei mezzi pubblici urbani a meno di 300 metri"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'appartamento",
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa (garage) a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto macchina in autorimessa di uso comune",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazze, cantine, posto auto esterno e simili",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Superficie scoperta in godimento esclusivo",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale, quota millesimale",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Superficie del punto 4.5: superficie calpestabile al 100%; garage a uso esclusivo al 50%; posto macchina in autorimessa comune al 30%; balconi, terrazze, cantine, posto auto esterno e simili al 20%; area scoperta esclusiva al 15%; verde condominiale della propria quota millesimale al 10%. Tolleranza del 10% in più o in meno. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie della parte locata, considerando anche le parti condivise."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "vincolo",
+    "tipo": "spunta",
+    "sulle_fasce": true,
+    "testo": "Immobile vincolato (art. 1, comma 2, lett. a, L. 431/98): fasce +20%",
+    "nome": "immobile vincolato (fasce)",
+    "perc": 20
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Alloggio completamente arredato, con mobili efficienti ed elettrodomestici funzionanti",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "55",
+      "testo": "alloggio fino a 55 mq",
+      "perc": 25
+     },
+     {
+      "valore": "95",
+      "testo": "alloggio da 55,01 a 95 mq",
+      "perc": 20
+     },
+     {
+      "valore": "oltre",
+      "testo": "alloggio oltre 95 mq",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "cauzione",
+    "tipo": "spunta",
+    "sulle_fasce": true,
+    "testo": "Il locatore rinuncia al deposito cauzionale: fasce +5%",
+    "nome": "rinuncia alla cauzione (fasce)",
+    "perc": 5
+   }
+  ],
+  "nota_maggiorazioni": "Arredo completo: fino a +25% per alloggi fino a 55 mq, +20% da 55,01 a 95 mq, +15% oltre, ma senza superare il massimo dell'area. Immobile vincolato: fasce dell'area +20%. Rinuncia al deposito cauzionale: fasce +5%. Durata 4, 5, 6 anni o più (più 2 di proroga): +4%, +6%, +10% sul minimo e sul massimo, anche oltre il massimo dell'area (solo contratti 3+2). Transitori e studenti: stessi valori e aumenti, esclusa la durata.",
+  "durata": {
+   "4": 4,
+   "5": 6,
+   "6": 10
+  },
+  "durata_dopo": true,
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "L'accordo (punto 10.1) consente di attestare canoni più bassi della sub-fascia, ma mai sotto il minimo della sub-fascia inferiore dell'area."
+   },
+   {
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "La parte dell'accordo sui contratti per studenti universitari (punto 6) cita per errore il Comune di Campobasso: chiedi conferma all'associazione che attesta il contratto."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 2",
+  "titolo": "Attestazione unilaterale di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo per la città di Isernia sottoscritto l'08/02/2023, depositato il 13/02/2023 (prot. n. 6392)",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Accordo territoriale (punto 4.5)",
+  "titolo_elementi": "ELEMENTI E PARAMETRI OGGETTIVI ai sensi dell'Accordo territoriale",
+  "etichetta_conteggio": "TOT. ELEMENTI",
+  "dichiarazione": "Il richiedente dichiara, sotto la sua responsabilità, gli elementi sopra riportati.",
+  "firme": [
+   "Il dichiarante"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "TUTTO CIÒ PREMESSO, l'Organizzazione …………………………, come sopra rappresentata, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali, ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Isernia depositato in data 13/02/2023."
+  ],
+  "firme_attestazione": [
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "L'area si ricava dal foglio catastale (è nella visura): area 1 fogli 51-55 e 76 in parte; area 2 fogli 40, 41, 43, 44, 75, 77 e in parte 42 e 78; area 3 fogli 56, 79, 81, 82, 84 e in parte 42 e 78; area 4 fogli 20, 22-26, 30-34, 36-39, 45-50, 56-65, 68, 80, 83, 85 e in parte 40 e 41; area 5 fogli 1-19, 21, 27-29, 35, 66, 67, 69-74. Il foglio 56 è in due aree e per i fogli divisi serve la mappa dell'allegato 1: nei casi dubbi chiedi all'associazione che attesta il contratto."
+ }
+}

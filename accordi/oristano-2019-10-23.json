@@ -1,0 +1,431 @@
+{
+ "accordo": {
+  "codice": "oristano-2019-10-23",
+  "modello": "oristano-2019",
+  "comune": "Oristano",
+  "provincia": "OR",
+  "titolo": "Accordo sulle locazioni ad uso abitativo per la Città di Oristano e per i comuni limitrofi",
+  "data": "2019-10-23",
+  "data_testo": "23 ottobre 2019",
+  "deposito": "Comune di Oristano",
+  "deposito_data": "23.10.2019",
+  "protocollo": "",
+  "ufficio": "Comune di Oristano",
+  "ufficio_breve": "Comune di Oristano",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Oristano del 23 ottobre 2019:</strong> durava tre anni dal deposito in Comune (23/10/2019), ma resta in vigore finché non ne viene firmato uno nuovo (art. 3) e non risultano accordi più recenti. Gli allegati (cartina delle aree, tabella dell'arredo, modulo di attestazione) non sono pubblicati: <strong>per l'area dell'alloggio e l'attestazione rivolgiti a un'associazione firmataria.</strong>",
+  "firmatari_proprieta": [
+   "A.P.P.C.",
+   "CONFABITARE",
+   "CONFEDILIZIA",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato a Oristano il 23/10/2019, presso la sede del SICET, da SUNIA, SICET e UNIAT per gli inquilini e da APPC, Confabitare, Confedilizia e UPPI per i proprietari; consegnato a mano al Comune di Oristano lo stesso giorno (timbro «pervenuto il 23 ott 2019», numero di protocollo non riportato). Sostituisce gli accordi del 29/03/2002, 29/07/2019 e 30/07/2019. Durata tre anni dal deposito, poi resta in vigore fino a un nuovo accordo (art. 3). Vale anche per Baratili San Pietro, Nurachi, Palmas Arborea, Siamaggiore, Simaxis, Siamanna, Solarussa, Villaurbana e Zeddiani (tutti in Area 3): qui è modellata solo Oristano. Tre aree, valori in euro al mq all'anno (art. 9); il valore parte dal minimo e sale della somma delle percentuali degli elementi presenti, calcolata sulla differenza fra minimo e massimo. Pregio fino a +20%, arredo fino a +20%, durata 4/5/6 anni +4/5/6%, sommati (artt. 11-13). Studenti fino a +10% (art. 27). Aggiornamento al 75% ISTAT senza cedolare secca (art. 15).",
+  "fonte": "Testo dell'accordo firmato e timbrato dal Comune (19 pagine in scansione, senza allegati) pubblicato da UPPI (uppi.it, sede di Oristano)."
+ },
+ "esempio_zona": "l'area (1 città, 2 frazioni e periferie, 3 agro e borgate)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Area 1 - nucleo urbano di Oristano",
+    "nota": "Area 1: tutta la città, escluse le aree oltre la ferrovia verso est e le zone industriali, artigianali e commerciali (planimetria dell'allegato 1, non pubblicata). Vale anche per gli alloggi sotto i 50 mq delle aree 2 e 3.",
+    "fasce": [
+     [
+      35,
+      70
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2 - frazioni e periferie",
+    "nota": "Area 2: frazioni di Donigala Fenughedu, Massama, Nuraxinieddu, Silì e Torregrande, zone industriali, artigianali e commerciali, aree oltre la ferrovia verso est. Sotto i 50 mq si usano i valori dell'Area 1.",
+    "fasce": [
+     [
+      30,
+      60
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3 - agro e borgate",
+    "nota": "Area 3: zone agricole e borgate del Comune di Oristano (e i comuni limitrofi). Sotto i 50 mq si usano i valori dell'Area 1.",
+    "fasce": [
+     [
+      25,
+      50
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "unica"
+   ],
+   "criterio": "differenza",
+   "somma_minima": 0,
+   "nota": "Si parte dal minimo dell'area e si aggiunge la somma delle percentuali degli elementi presenti (anche negative), calcolata sulla differenza fra minimo e massimo, senza superare il massimo (art. 9).",
+   "nota_pdf": "Valore al mq: minimo dell'area più la somma delle percentuali sulla differenza fra minimo e massimo (art. 9)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Pertinenze e spazi esterni"
+   },
+   {
+    "da": 9,
+    "titolo": "Impianti e dotazioni"
+   },
+   {
+    "da": 25,
+    "titolo": "Categoria, stato di manutenzione e classe energetica"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Autorimessa singola",
+    "punti": 10
+   },
+   {
+    "testo": "Posto auto coperto",
+    "punti": 8
+   },
+   {
+    "testo": "Posto auto scoperto ad uso esclusivo",
+    "punti": 4
+   },
+   {
+    "testo": "Ulteriore posto auto oltre il primo, ad uso esclusivo",
+    "punti": 15
+   },
+   {
+    "testo": "Area verde di pertinenza, fruibile",
+    "punti": 10
+   },
+   {
+    "testo": "Cortile comune",
+    "punti": 4
+   },
+   {
+    "testo": "Cantina",
+    "punti": 5
+   },
+   {
+    "testo": "Soffitta (sottotetto praticabile non abitabile)",
+    "punti": 8
+   },
+   {
+    "testo": "Terrazza e/o balcone",
+    "punti": 15
+   },
+   {
+    "testo": "Ascensore",
+    "punti": 10
+   },
+   {
+    "testo": "Antenna TV indipendente",
+    "punti": 3
+   },
+   {
+    "testo": "Antenna TV satellitare indipendente",
+    "punti": 3
+   },
+   {
+    "testo": "Contatore dell'acqua indipendente",
+    "punti": 5
+   },
+   {
+    "testo": "Allaccio alla rete del gas, in regola e con manutenzioni certificate",
+    "punti": 3
+   },
+   {
+    "testo": "Riscaldamento e condizionamento (non si sommano)",
+    "livelli": [
+     {
+      "testo": "riscaldamento in tutto l'alloggio (+10%)",
+      "punti": 10
+     },
+     {
+      "testo": "condizionamento in tutto l'alloggio (+15%)",
+      "punti": 15
+     },
+     {
+      "testo": "nessun impianto di riscaldamento o condizionamento (-15%)",
+      "punti": -15
+     }
+    ],
+    "mostra_punti": false
+   },
+   {
+    "testo": "Caminetto, oltre a riscaldamento o condizionamento",
+    "punti": 5
+   },
+   {
+    "testo": "Fotovoltaico e/o solare termico",
+    "punti": 15
+   },
+   {
+    "testo": "Doppi vetri",
+    "punti": 8
+   },
+   {
+    "testo": "Doppi servizi",
+    "punti": 8
+   },
+   {
+    "testo": "Porta blindata e/o sistemi di sicurezza",
+    "punti": 3
+   },
+   {
+    "testo": "Videocitofono",
+    "punti": 3
+   },
+   {
+    "testo": "Videosorveglianza",
+    "punti": 5
+   },
+   {
+    "testo": "Infissi esterni certificati a basso emissivo",
+    "punti": 10
+   },
+   {
+    "testo": "Barriere architettoniche abbattute",
+    "punti": 5
+   },
+   {
+    "testo": "Servizi igienici esterni all'alloggio",
+    "punti": -30
+   },
+   {
+    "testo": "Categoria catastale",
+    "livelli": [
+     {
+      "testo": "A/2 (+10%)",
+      "punti": 10
+     },
+     {
+      "testo": "A/3 (+5%)",
+      "punti": 5
+     },
+     {
+      "testo": "A/4 (0%)",
+      "punti": 0
+     },
+     {
+      "testo": "A/5 (-10%)",
+      "punti": -10
+     }
+    ],
+    "mostra_punti": false
+   },
+   {
+    "testo": "Stato di manutenzione interna",
+    "livelli": [
+     {
+      "testo": "ottimo, migliore del normale (+20%)",
+      "punti": 20
+     },
+     {
+      "testo": "normale (+10%)",
+      "punti": 10
+     },
+     {
+      "testo": "mediocre (-10%)",
+      "punti": -10
+     },
+     {
+      "testo": "scadente (-15%)",
+      "punti": -15
+     }
+    ],
+    "mostra_punti": false
+   },
+   {
+    "testo": "Stato di manutenzione esterna (edificio)",
+    "livelli": [
+     {
+      "testo": "ottimo, migliore del normale (+15%)",
+      "punti": 15
+     },
+     {
+      "testo": "normale (+8%)",
+      "punti": 8
+     },
+     {
+      "testo": "mediocre (-10%)",
+      "punti": -10
+     },
+     {
+      "testo": "scadente (-15%)",
+      "punti": -15
+     }
+    ],
+    "mostra_punti": false
+   },
+   {
+    "testo": "Classe energetica (APE)",
+    "livelli": [
+     {
+      "testo": "da A a D (+10%)",
+      "punti": 10
+     },
+     {
+      "testo": "da E a G (-10%)",
+      "punti": -10
+     }
+    ],
+    "mostra_punti": false
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile dell'alloggio, al netto dei muri",
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Autorimessa singola o box auto",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto in autorimessa comune coperta",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e accessori simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Area scoperta di uso esclusivo (giardino, cortile)",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "comune",
+     "testo": "Superficie condominiale ad uso comune (quota)",
+     "coeff": 0.1
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 40.99,
+     "perc": 45,
+     "limite": 41
+    },
+    {
+     "fino": 55.99,
+     "perc": 30,
+     "limite": 55
+    },
+    {
+     "fino": 99.99,
+     "perc": 0
+    },
+    {
+     "fino": 119.99,
+     "perc": -10,
+     "limite": 100
+    },
+    {
+     "fino": 139.99,
+     "perc": -25,
+     "limite": 120
+    },
+    {
+     "fino": 1000000,
+     "perc": -30,
+     "limite": 140
+    }
+   ],
+   "etichetta_correzione": "convenzionale",
+   "nota": "Superficie utile: vani, bagni, ripostigli, ingressi e corridoi, al netto dei muri, esclusi gli spazi alti meno di 1,80 m. Sotto 41 mq la superficie aumenta del 45% (fino a 41 mq); da 41 a 55 mq del 30% (fino a 55 mq); da 100 a 119 mq si riduce del 10% (non sotto 100 mq), da 120 a 139 mq del 25% (non sotto 120), da 140 mq del 30% (non sotto 140) (art. 10)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "testo": "Villa o abitazione di pregio (fino a +20%)",
+    "nome": "villa o abitazione di pregio",
+    "perc": 20
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "testo": "Alloggio arredato (fino a +20%, secondo i mobili e la loro qualità)",
+    "nome": "arredato",
+    "perc": 20,
+    "ammobiliato": true
+   }
+  ],
+  "nota_maggiorazioni": "Pregio, arredo e durata si sommano e si applicano al valore al mq (art. 13). Durata 4 anni +4%, 5 anni +5%, 6 anni +6% (art. 12).",
+  "durate": [
+   3,
+   4,
+   5,
+   6
+  ],
+  "durata": {
+   "4": 4,
+   "5": 5,
+   "6": 6
+  },
+  "contratto": {
+   "studenti": 10
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "zone": [
+     "2",
+     "3"
+    ],
+    "testo": "Alloggio sotto i 50 mq nell'Area 2 o 3? Si usano i valori dell'Area 1 (art. 9, comma 3): scegli l'Area 1."
+   },
+   {
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Contratto transitorio: da 1 a 18 mesi, con il motivo scritto nel contratto e documentato (artt. 23-24). Stessi valori, senza aumenti."
+   },
+   {
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Contratto per studenti universitari fuori sede: da 6 a 36 mesi (art. 27). Il canone può aumentare fino al 10%."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "",
+  "titolo": "Calcolo del canone concordato (artt. 9-13 dell'Accordo)",
+  "sottotitolo": "Accordo sulle locazioni ad uso abitativo per la Città di Oristano, sottoscritto e depositato al Comune di Oristano il 23/10/2019",
+  "titolo_superficie": "Superficie convenzionale (art. 10)",
+  "titolo_elementi": "Elementi dell'immobile (art. 9, comma 2)",
+  "etichetta_somma": "Somma delle percentuali",
+  "dichiarazione": "Il locatore e il conduttore dichiarano, sotto la propria responsabilità, che i dati e gli elementi sopra indicati corrispondono all'immobile locato e chiedono la certificazione di conformità del contratto all'Accordo territoriale (art. 21).",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "CERTIFICAZIONE DI CONFORMITÀ DEL CONTRATTO ALL'ACCORDO TERRITORIALE",
+  "attestazione": [
+   "L'Organizzazione della proprietà edilizia …………………………… e l'Organizzazione dei conduttori ……………………………, firmatarie dell'Accordo territoriale per la Città di Oristano del 23/10/2019, sulla base degli elementi oggettivi sopra dichiarati,",
+   "ATTESTANO, ai sensi dell'art. 1, comma 8, del D.M. 16/01/2017, che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per la Città di Oristano.",
+   "Oristano, ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "Per l'Organizzazione della proprietà (timbro e firma)",
+   "Per l'Organizzazione dei conduttori (timbro e firma)"
+  ],
+  "nota_zone": "L'area si ricava dalla planimetria dell'allegato 1 (non pubblicata): Area 1 la città, Area 2 frazioni (Donigala Fenughedu, Massama, Nuraxinieddu, Silì, Torregrande), zone produttive e aree oltre la ferrovia verso est, Area 3 agro e borgate. Sotto i 50 mq valgono i valori dell'Area 1."
+ }
+}

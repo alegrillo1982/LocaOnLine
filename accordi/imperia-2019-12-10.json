@@ -1,0 +1,501 @@
+{
+ "accordo": {
+  "codice": "imperia-2019-12-10",
+  "modello": "imperia-2019",
+  "comune": "Imperia",
+  "provincia": "IM",
+  "titolo": "Nuovo accordo territoriale per il territorio del Comune di Imperia",
+  "data": "2019-12-10",
+  "data_testo": "10 dicembre 2019",
+  "deposito": "Segreteria generale del Comune di Imperia",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "Comune di Imperia",
+  "ufficio_breve": "Comune di Imperia",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Imperia ha ancora l'accordo territoriale firmato il 10 dicembre 2019.</strong> Le associazioni dovevano rivederlo dopo tre anni, ma resta in vigore finché non viene depositato un aggiornamento: a novembre 2026 non risultano accordi più recenti, e le associazioni firmatarie lo pubblicano ancora come vigente. I valori sono quelli originali dell'accordo (non prevede aggiornamenti ISTAT dei valori al mq).",
+  "firmatari_proprieta": [
+   "A.P.E. Confedilizia Imperia",
+   "A.P.E. Confedilizia Sanremo",
+   "U.P.P.I. Imperia",
+   "A.P.P.C. Imperia",
+   "CONFABITARE Imperia"
+  ],
+  "firmatari_conduttori": [
+   "S.I.C.E.T.-CISL Imperia",
+   "S.U.N.I.A.-CGIL Imperia",
+   "FEDERCASA",
+   "U.N.I.A.T.-UIL",
+   "ASSOCASA"
+  ],
+  "nota": "Firmato a Imperia il 10/12/2019 (D.M. 16/01/2017), sostituisce gli accordi di fine dicembre 2016; da depositare presso la Segreteria generale del Comune (art. 9): la copia pubblicata non riporta data né protocollo di deposito (secondo la stampa locale è stato depositato il giorno stesso della firma). Revisione prevista dopo tre anni dal deposito, ma resta in vigore fino al deposito dell'aggiornamento: nessun accordo successivo per il capoluogo (verificato novembre 2026; Confedilizia lo ripubblica nel 2025 come accordo vigente). Due zone (a valle e a monte dell'autostrada) con un solo valore massimo al mq al mese: 7,00 euro zona 1, 6,00 euro zona 2. Il canone massimo è valore della zona x superficie convenzionale (art. 13 L. 392/78, aumentata del 30% sotto i 46 mq, del 20% fino a 56 mq, del 10% fino a 66 mq), modificato dalla somma algebrica dei coefficienti dell'allegato 1; il minimo è il massimo ridotto del 70%. Poi arredo (+40% completo, +15% parziale), durata (+3% per ogni anno oltre i tre), immobili storici o A/1, A/8, A/9 (+15%), transitori fino a +20%. Lo stesso giorno sono stati firmati accordi separati per altri 28 comuni della provincia.",
+  "fonte": "Scansione firmata dell'accordo con gli allegati 1-5 (16 pagine) pubblicata da SUNIA (pagina «Accordi territoriali Imperia»), da UPPI nazionale (pagina della sede di Imperia) e da Confedilizia (pagina della sede di Imperia, caricata nel 2025): i tre file sono la stessa scansione."
+ },
+ "esempio_zona": "la zona rispetto all'autostrada: 1 se l'immobile è a valle (verso il mare), 2 se è a monte",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - A valle dell'autostrada",
+    "nota": "Zona 1: la parte del territorio comunale a valle del tracciato autostradale, verso il mare (art. 1). Valore massimo 7,00 euro al mq al mese, da modificare con i coefficienti dell'allegato 1; il minimo è il massimo ridotto del 70%.",
+    "fasce": [
+     [
+      2.1,
+      7.0
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - A monte dell'autostrada",
+    "nota": "Zona 2: la parte del territorio comunale a monte del tracciato autostradale (art. 1). Valore massimo 6,00 euro al mq al mese, da modificare con i coefficienti dell'allegato 1; il minimo è il massimo ridotto del 70%.",
+    "fasce": [
+     [
+      1.8,
+      6.0
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "unica"
+   ],
+   "criterio": "conta",
+   "soglie": [],
+   "nota": "Ogni zona ha un solo valore al mq (il massimo); il minimo è sempre il massimo ridotto del 70%, cioè il 30% del massimo."
+  },
+  "elementi": [],
+  "superficie": {
+   "base": "Superficie interna dell'alloggio, al netto dei muri",
+   "voci": [
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazzi e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto auto in autorimessa comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "cantina",
+     "testo": "Cantina, soffitta e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "giardino",
+     "testo": "Giardino esclusivo",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "giardino_cond",
+     "testo": "Giardino condominiale (la tua quota)",
+     "coeff": 0.1
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 46,
+     "perc": 30
+    },
+    {
+     "fino": 56,
+     "perc": 20
+    },
+    {
+     "fino": 66,
+     "perc": 10
+    }
+   ],
+   "etichetta_correzione": "convenzionale",
+   "nota": "Si calcola come nell'art. 13 della legge 392/1978 (scheda dell'allegato 2): superficie interna dell'alloggio al netto dei muri, più balconi e terrazzi 25%, autorimessa 50%, posto auto in autorimessa comune 20%, cantina e soffitta 25%, giardino esclusivo 15%, giardino condominiale 10%. È ammessa una tolleranza del 5% in più o in meno. Per la vocazione turistica della zona la superficie convenzionale così ottenuta si aumenta del 30% se è sotto i 46 mq, del 20% da 46,01 a 56 mq e del 10% da 56,01 a 66 mq (art. 2)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "servizi",
+    "tipo": "spunta",
+    "testo": "Entro 200 metri (in linea d'aria) da almeno tre di questi servizi: negozi, uffici pubblici, banche, verde pubblico, servizi sociali o di aggregazione, trasporti",
+    "nome": "vicino ai servizi",
+    "perc": 3
+   },
+   {
+    "chiave": "stabile",
+    "tipo": "scelta",
+    "testo": "Stato di manutenzione dell'intero edificio",
+    "nome": "stato dell'edificio",
+    "nessuna": "normale",
+    "nessuna_breve": "nessuna variazione",
+    "opzioni": [
+     {
+      "valore": "ottimo",
+      "testo": "ottimo",
+      "perc": 2
+     },
+     {
+      "valore": "scadente",
+      "testo": "scadente",
+      "perc": -2
+     }
+    ]
+   },
+   {
+    "chiave": "alloggio",
+    "tipo": "scelta",
+    "testo": "Stato di manutenzione dell'alloggio",
+    "nome": "stato dell'alloggio",
+    "nessuna": "normale",
+    "nessuna_breve": "nessuna variazione",
+    "opzioni": [
+     {
+      "valore": "ottimo",
+      "testo": "ottimo",
+      "perc": 5
+     },
+     {
+      "valore": "mediocre",
+      "testo": "mediocre (tre elementi in cattive condizioni, di cui due dell'alloggio)",
+      "perc": -2
+     },
+     {
+      "valore": "scadente",
+      "testo": "scadente (almeno quattro elementi in cattive condizioni, di cui tre dell'alloggio, oppure senza impianto elettrico, acqua corrente o bagno privato)",
+      "perc": -8
+     }
+    ]
+   },
+   {
+    "chiave": "cantina",
+    "tipo": "spunta",
+    "testo": "Cantina, soffitta o sottotetto",
+    "nome": "cantina, soffitta o sottotetto",
+    "perc": 3
+   },
+   {
+    "chiave": "giardino",
+    "tipo": "spunta",
+    "testo": "Giardino esclusivo",
+    "nome": "giardino esclusivo",
+    "perc": 3
+   },
+   {
+    "chiave": "rotazione",
+    "tipo": "spunta",
+    "testo": "Possibilità di parcheggiare a rotazione nell'area del condominio",
+    "nome": "parcheggio a rotazione nel condominio",
+    "perc": 5
+   },
+   {
+    "chiave": "posto_scoperto",
+    "tipo": "spunta",
+    "testo": "Posto auto scoperto a uso esclusivo",
+    "nome": "posto auto scoperto esclusivo",
+    "perc": 12
+   },
+   {
+    "chiave": "posto_coperto",
+    "tipo": "spunta",
+    "testo": "Posto auto coperto a uso esclusivo",
+    "nome": "posto auto coperto esclusivo",
+    "perc": 15
+   },
+   {
+    "chiave": "box",
+    "tipo": "spunta",
+    "testo": "Garage o box",
+    "nome": "garage o box",
+    "perc": 20
+   },
+   {
+    "chiave": "verde",
+    "tipo": "spunta",
+    "testo": "Aree verdi comuni",
+    "nome": "aree verdi comuni",
+    "perc": 2
+   },
+   {
+    "chiave": "portineria",
+    "tipo": "spunta",
+    "testo": "Portineria",
+    "nome": "portineria",
+    "perc": 3
+   },
+   {
+    "chiave": "piscina",
+    "tipo": "spunta",
+    "testo": "Piscina (anche condominiale)",
+    "nome": "piscina",
+    "perc": 5
+   },
+   {
+    "chiave": "ascensore",
+    "tipo": "spunta",
+    "testo": "Senza ascensore, alloggio oltre il 2° piano",
+    "nome": "senza ascensore oltre il 2° piano",
+    "perc": -3
+   },
+   {
+    "chiave": "riscaldamento",
+    "tipo": "scelta",
+    "testo": "Riscaldamento",
+    "nome": "riscaldamento",
+    "nessuna": "centralizzato senza contabilizzazione del calore",
+    "nessuna_breve": "nessuna variazione",
+    "opzioni": [
+     {
+      "valore": "autonomo",
+      "testo": "autonomo (caldaia, pompa di calore o stufa a pellet, con diffusori in ogni vano)",
+      "perc": 3
+     },
+     {
+      "valore": "contabilizzato",
+      "testo": "centralizzato con termoregolazione e contabilizzazione del calore",
+      "perc": 3
+     },
+     {
+      "valore": "parziale",
+      "testo": "manca in alcune stanze",
+      "perc": -3
+     },
+     {
+      "valore": "assente",
+      "testo": "nessun riscaldamento",
+      "perc": -10
+     }
+    ]
+   },
+   {
+    "chiave": "condizionatore",
+    "tipo": "spunta",
+    "testo": "Aria condizionata in tutte le stanze",
+    "nome": "aria condizionata in tutte le stanze",
+    "perc": 10
+   },
+   {
+    "chiave": "piano",
+    "tipo": "scelta",
+    "testo": "Piano",
+    "nome": "piano",
+    "nessuna": "piano intermedio, oppure piano terra con giardino esclusivo",
+    "nessuna_breve": "nessuna variazione",
+    "opzioni": [
+     {
+      "valore": "sottostrada",
+      "testo": "sottostrada",
+      "perc": -4
+     },
+     {
+      "valore": "terreno",
+      "testo": "piano terra o rialzato, senza giardino esclusivo attiguo",
+      "perc": -2
+     },
+     {
+      "valore": "attico",
+      "testo": "attico",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "spiaggia",
+    "tipo": "spunta",
+    "testo": "A meno di 150 metri (in linea d'aria) dalla spiaggia",
+    "nome": "a meno di 150 m dalla spiaggia",
+    "perc": 4
+   },
+   {
+    "chiave": "vista_mare",
+    "tipo": "spunta",
+    "testo": "A meno di 500 metri (in linea d'aria) dal mare, con vista mare aperta",
+    "nome": "vista mare entro 500 m",
+    "perc": 8
+   },
+   {
+    "chiave": "blindata",
+    "tipo": "spunta",
+    "testo": "Porta blindata",
+    "nome": "porta blindata",
+    "perc": 3
+   },
+   {
+    "chiave": "allarme",
+    "tipo": "spunta",
+    "testo": "Impianto di allarme",
+    "nome": "allarme",
+    "perc": 3
+   },
+   {
+    "chiave": "vetrocamera",
+    "tipo": "spunta",
+    "testo": "Finestre con vetrocamera",
+    "nome": "vetrocamera",
+    "perc": 3
+   },
+   {
+    "chiave": "doppi_servizi",
+    "tipo": "spunta",
+    "testo": "Doppi servizi (due bagni)",
+    "nome": "doppi servizi",
+    "perc": 5
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (dall'APE)",
+    "nome": "classe energetica",
+    "nessuna": "E",
+    "nessuna_breve": "nessuna variazione",
+    "opzioni": [
+     {
+      "valore": "A",
+      "testo": "A",
+      "perc": 20
+     },
+     {
+      "valore": "B",
+      "testo": "B",
+      "perc": 15
+     },
+     {
+      "valore": "C",
+      "testo": "C",
+      "perc": 10
+     },
+     {
+      "valore": "D",
+      "testo": "D",
+      "perc": 5
+     },
+     {
+      "valore": "F",
+      "testo": "F",
+      "perc": -1
+     },
+     {
+      "valore": "G",
+      "testo": "G",
+      "perc": -2
+     }
+    ]
+   },
+   {
+    "chiave": "unifamiliare",
+    "tipo": "spunta",
+    "testo": "Casa unifamiliare o villetta a schiera",
+    "nome": "casa unifamiliare o villetta a schiera",
+    "perc": 30
+   },
+   {
+    "chiave": "anno",
+    "tipo": "scelta",
+    "testo": "Anno di costruzione o di ristrutturazione completa",
+    "nome": "età dell'edificio",
+    "nessuna": "da 10 a 30 anni",
+    "nessuna_breve": "nessuna variazione",
+    "opzioni": [
+     {
+      "valore": "nuova",
+      "testo": "nuova costruzione (anche dopo una ristrutturazione completa)",
+      "perc": 10
+     },
+     {
+      "valore": "10",
+      "testo": "fino a 10 anni",
+      "perc": 2
+     },
+     {
+      "valore": "30",
+      "testo": "più di 30 anni",
+      "perc": -2
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "nessuna_breve": "nessun aumento",
+    "dopo": true,
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato (con almeno piano cottura, frigorifero e lavatrice)",
+      "perc": 40
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "storico",
+    "tipo": "spunta",
+    "testo": "Immobile storico (vincolato per legge) o di categoria catastale A/1, A/8 o A/9",
+    "nome": "immobile storico o A/1, A/8, A/9",
+    "perc": 15,
+    "dopo": true
+   }
+  ],
+  "nota_maggiorazioni": "Le percentuali dell'allegato 1 si sommano fra loro (somma algebrica di aumenti e riduzioni) e modificano il valore al mq della zona: così si ottiene il canone massimo; il minimo è il massimo ridotto del 70%. Le distanze si misurano in linea d'aria. Sul canone così calcolato si applicano poi, una dopo l'altra, sia sul minimo sia sul massimo: arredo completo con almeno piano cottura, frigorifero e lavatrice +40%, arredo parziale +15%; durata oltre i tre anni +3% per ogni anno in più (4+2 +3%, 5+2 +6%, 6+2 +9%); immobili storici o di categoria A/1, A/8, A/9 +15% (art. 5); contratti transitori fino a +20% (art. 3). Per una porzione di alloggio il canone si calcola in proporzione alla superficie della porzione, considerando anche le parti condivise.",
+  "durata": {
+   "4": 3,
+   "5": 6,
+   "6": 9
+  },
+  "durata_dopo": true,
+  "contratto": {
+   "transitorio": 20
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "L'accordo tollera un errore di calcolo fino al 5% del canone mensile massimo, e una tolleranza del 5% sulla superficie (art. 2)."
+   },
+   {
+    "testo": "I contratti transitori fino a 30 giorni hanno canone libero; per durate più lunghe l'esigenza transitoria va documentata e allegata al contratto (art. 3).",
+    "contratti": [
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Contratti per studenti universitari: per studenti iscritti a un corso universitario o post laurea a Imperia o Sanremo, residenti in un altro comune (non limitrofo); stessi valori e stesso calcolo degli agevolati, senza aumento per la durata (art. 4).",
+    "contratti": [
+     "studenti"
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 2",
+  "titolo": "Scheda di calcolo contratto agevolato ai sensi dell'art. 2, III comma, Legge 431/1998",
+  "sottotitolo": "Nuovo accordo territoriale per il territorio del Comune di Imperia, sottoscritto il 10/12/2019",
+  "titolo_superficie": "Calcolo superficie convenzionale a norma art. 13 legge 392/1978 e art. 2 dell'Accordo territoriale",
+  "titolo_elementi": "Coefficienti parametrali (allegato 1)",
+  "dichiarazione": "Le parti dichiarano la veridicità di quanto riportato nella seguente scheda, manlevando da ogni responsabilità in merito le OO.SS. firmatarie.",
+  "firme": [
+   "Il Conduttore",
+   "Il Locatore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16/01/2017 (allegato 4)",
+  "attestazione": [
+   "Si attesta che i contenuti economici e normativi del contratto che precede con relativa allegata scheda di calcolo formata sulla base degli elementi oggettivi dichiarati dalle parti contrattuali corrispondono a quanto previsto dall'accordo locale stipulato tra le organizzazioni dei proprietari e dei conduttori in data 10/12/2019 e depositato il ………… per il Comune in cui trovasi ubicato l'immobile oggetto di locazione."
+  ],
+  "firme_attestazione": [
+   "(data e firma dell'organizzazione)"
+  ],
+  "nota_zone": "Il territorio comunale è diviso in due zone dal tracciato dell'autostrada: zona 1 a valle (verso il mare), zona 2 a monte (art. 1). L'accordo non ha una mappa né un elenco di vie: nel dubbio chiedi a un'associazione firmataria."
+ }
+}

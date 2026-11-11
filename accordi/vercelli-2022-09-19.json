@@ -1,0 +1,881 @@
+{
+ "accordo": {
+  "codice": "vercelli-2022-09-19",
+  "modello": "vercelli-2022",
+  "comune": "Vercelli",
+  "provincia": "VC",
+  "titolo": "Accordo territoriale per il territorio del Comune di Vercelli",
+  "data": "2022-09-19",
+  "data_testo": "19 settembre 2022",
+  "deposito": "Comune di Vercelli, protocollo n. 0057700 del 19/09/2022 (Tit. VII Cl. 14)",
+  "deposito_data": "19.09.2022",
+  "protocollo": "0057700",
+  "ufficio": "Comune di Vercelli, Protocollo generale",
+  "ufficio_breve": "Comune di Vercelli",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Vercelli del 19 settembre 2022: durava tre anni (art. 4, lettera A), cioè fino a settembre 2025.</strong> Alla scadenza erano previste trattative per un accordo nuovo, che però non risulta firmato: le associazioni lo pubblicano ancora come accordo di Vercelli. Le fasce non prevedono aggiornamenti ISTAT (il canone del singolo contratto si aggiorna ogni anno al massimo del 75% dell'indice FOI). Prima di firmare chiedi a un'associazione firmataria se è stato sottoscritto un accordo nuovo.",
+  "firmatari_proprieta": [
+   "A.P.E. - Confedilizia",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T."
+  ],
+  "nota": "Firmato a Vercelli il 19/09/2022 e protocollato lo stesso giorno dal Comune di Vercelli (n. 0057700, Tit. VII Cl. 14, timbro su ogni pagina). Per i soli contratti per studenti intervengono anche l'Università del Piemonte Orientale «Amedeo Avogadro» e l'EDISU Piemonte; per gli studenti l'accordo vale anche nei Comuni confinanti (qui è modellato solo il Comune di Vercelli). Sostituisce l'accordo del 22/05/2018 (firmato anche da CONFAPPI, Federproprietà e UNIAT, che non compaiono nel 2022). Durata tre anni (art. 4, lettera A). Tre zone (centro, semicentro, periferia: cartina dell'allegato 1); valori in euro all'anno per mq utile, per zona, durata (3+2, 4+2, 5+2, 6+2) e fascia secondo il numero di dotazioni dell'allegato 2 (fino a 3, 4-5, 6-7, 8-10, oltre 10; riscaldamento autonomo e ristrutturazione completa valgono 2 elementi), allegato 3; transitori con i valori del 3+2; studenti con l'allegato 4 (13 dotazioni) e l'allegato 5 (tre, quattro o sei elementi). Mq utili: abitazione 100%, box 80%, cantine, soffitte, balconi e terrazzi 25%, misure nette dai muri (art. 1 c. 4). La pagina di Confedilizia Vercelli rimanda ancora al testo del 2018.",
+  "fonte": "UPPI, «Elenco degli accordi territoriali per le locazioni a canone concordato»: accordo firmato e protocollato dal Comune di Vercelli (scansione di 26 pagine con allegati 1-10, file «Accordo-VERCELLI-firmato-definitivo-1.pdf», caricato a giugno 2024). L'Università del Piemonte Orientale ha pubblicato lo stesso accordo a novembre 2022 (file non più raggiungibile). Il testo precedente del 22/05/2018 è ancora pubblicato da SUNIA, UNIAT e Confedilizia Vercelli."
+ },
+ "esempio_zona": "la zona dalla cartina dell'allegato 1: centro storico, semicentro o periferia (per gli studenti le zone «studenti universitari»)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "C",
+    "nome": "Centro",
+    "nota": "Centro: il centro storico, la zona più scura della cartina (allegato 1). La strada che divide due zone appartiene, su entrambi i lati, alla zona di maggior pregio. Valori dell'allegato 3 (agevolati per durata; transitori: valori del 3+2).",
+    "fasce": {
+     "6": [
+      [
+       36,
+       55
+      ],
+      [
+       48,
+       67
+      ],
+      [
+       63,
+       77
+      ],
+      [
+       65,
+       81
+      ],
+      [
+       66,
+       85
+      ]
+     ],
+     "5": [
+      [
+       35,
+       53
+      ],
+      [
+       47,
+       65
+      ],
+      [
+       61,
+       75
+      ],
+      [
+       63,
+       79
+      ],
+      [
+       64,
+       83
+      ]
+     ],
+     "4": [
+      [
+       34,
+       51
+      ],
+      [
+       46,
+       63
+      ],
+      [
+       59,
+       73
+      ],
+      [
+       61,
+       77
+      ],
+      [
+       62,
+       81
+      ]
+     ],
+     "3": [
+      [
+       30,
+       49
+      ],
+      [
+       40,
+       61
+      ],
+      [
+       50,
+       71
+      ],
+      [
+       55,
+       75
+      ],
+      [
+       60,
+       79
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "S",
+    "nome": "Semicentro",
+    "nota": "Semicentro: la fascia di quartieri intorno al centro, la zona punteggiata della cartina (allegato 1). La strada che divide due zone appartiene, su entrambi i lati, alla zona di maggior pregio. Valori dell'allegato 3 (agevolati per durata; transitori: valori del 3+2).",
+    "fasce": {
+     "6": [
+      [
+       33,
+       51
+      ],
+      [
+       40,
+       63
+      ],
+      [
+       52,
+       74
+      ],
+      [
+       54,
+       78
+      ],
+      [
+       63,
+       83
+      ]
+     ],
+     "5": [
+      [
+       32,
+       49
+      ],
+      [
+       39,
+       61
+      ],
+      [
+       50,
+       72
+      ],
+      [
+       52,
+       76
+      ],
+      [
+       61,
+       81
+      ]
+     ],
+     "4": [
+      [
+       31,
+       47
+      ],
+      [
+       38,
+       59
+      ],
+      [
+       49,
+       70
+      ],
+      [
+       50,
+       74
+      ],
+      [
+       59,
+       79
+      ]
+     ],
+     "3": [
+      [
+       27,
+       45
+      ],
+      [
+       35,
+       57
+      ],
+      [
+       45,
+       68
+      ],
+      [
+       46,
+       72
+      ],
+      [
+       57,
+       77
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "P",
+    "nome": "Periferia",
+    "nota": "Periferia: il resto del territorio comunale, la zona bianca della cartina (allegato 1). La strada che divide due zone appartiene, su entrambi i lati, alla zona di maggior pregio. Valori dell'allegato 3 (agevolati per durata; transitori: valori del 3+2).",
+    "fasce": {
+     "6": [
+      [
+       29,
+       47
+      ],
+      [
+       39,
+       59
+      ],
+      [
+       45,
+       70
+      ],
+      [
+       50,
+       75
+      ],
+      [
+       60,
+       81
+      ]
+     ],
+     "5": [
+      [
+       28,
+       46
+      ],
+      [
+       38,
+       57
+      ],
+      [
+       44,
+       68
+      ],
+      [
+       48,
+       73
+      ],
+      [
+       58,
+       79
+      ]
+     ],
+     "4": [
+      [
+       27,
+       45
+      ],
+      [
+       37,
+       55
+      ],
+      [
+       43,
+       66
+      ],
+      [
+       46,
+       71
+      ],
+      [
+       56,
+       77
+      ]
+     ],
+     "3": [
+      [
+       22,
+       44
+      ],
+      [
+       30,
+       53
+      ],
+      [
+       42,
+       64
+      ],
+      [
+       45,
+       69
+      ],
+      [
+       54,
+       75
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "SC",
+    "nome": "Centro - studenti universitari",
+    "nota": "Centro: il centro storico, la zona più scura della cartina (allegato 1). La strada che divide due zone appartiene, su entrambi i lati, alla zona di maggior pregio. Valori dell'allegato 5, solo per i contratti per studenti universitari.",
+    "fasce": [
+     [
+      30,
+      45
+     ],
+     [
+      40,
+      57
+     ],
+     [
+      50,
+      68
+     ],
+     [
+      50,
+      68
+     ],
+     [
+      50,
+      68
+     ]
+    ]
+   },
+   {
+    "codice": "SS",
+    "nome": "Semicentro - studenti universitari",
+    "nota": "Semicentro: la fascia di quartieri intorno al centro, la zona punteggiata della cartina (allegato 1). La strada che divide due zone appartiene, su entrambi i lati, alla zona di maggior pregio. Valori dell'allegato 5, solo per i contratti per studenti universitari.",
+    "fasce": [
+     [
+      27,
+      37
+     ],
+     [
+      35,
+      48
+     ],
+     [
+      45,
+      54
+     ],
+     [
+      45,
+      54
+     ],
+     [
+      45,
+      54
+     ]
+    ]
+   },
+   {
+    "codice": "SP",
+    "nome": "Periferia - studenti universitari",
+    "nota": "Periferia: il resto del territorio comunale, la zona bianca della cartina (allegato 1). La strada che divide due zone appartiene, su entrambi i lati, alla zona di maggior pregio. Valori dell'allegato 5, solo per i contratti per studenti universitari.",
+    "fasce": [
+     [
+      22,
+      36
+     ],
+     [
+      30,
+      42
+     ],
+     [
+      42,
+      48
+     ],
+     [
+      42,
+      48
+     ],
+     [
+      42,
+      48
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "bassa",
+    "medio-bassa",
+    "media",
+    "medio-alta",
+    "alta"
+   ],
+   "criterio": "punti",
+   "soglie": [
+    3,
+    5,
+    7,
+    10
+   ]
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Dotazioni per i contratti agevolati e transitori (allegato 2)",
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "da": 22,
+    "titolo": "Dotazioni per i contratti per studenti universitari (allegato 4)",
+    "contratti": [
+     "studenti"
+    ]
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Autorimessa o posto auto coperto",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Cantina o soffitta",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Infissi con doppi vetri",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Riscaldamento centralizzato",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Riscaldamento autonomo (vale 2 elementi)",
+    "punti": 2,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Condizionamento (aria condizionata)",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Altra autorimessa o altro posto auto coperto, oltre il primo",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Doppi servizi (due bagni)",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Allacciamento alla rete del gas",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Porta blindata",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Impianto di allarme e/o videosorveglianza",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Comodità di salita: ascensore, per gli alloggi oltre il primo piano",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Area verde, cortile, orto o simili di pertinenza del condominio",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Area verde o giardino a uso esclusivo",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Posto auto scoperto",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Posto auto all'interno della ZTL con autorizzazione del Comune",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Possibilità di allacciamento alla fibra",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Completamente ristrutturato e/o con lavori del 110% (vale 2 elementi)",
+    "punti": 2,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Parzialmente ristrutturato (bagno e cucina) entro 5 anni dalla protocollazione dell'accordo (19/09/2022)",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Accesso per disabili, con documentazione valida",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Categoria catastale A/2 o A/7",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Classe energetica (APE) A+, A, B, C o D",
+    "punti": 1,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Cantina o soffitta",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Infissi con doppi vetri",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Riscaldamento centralizzato e/o condizionamento",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Riscaldamento autonomo",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Doppi servizi (due bagni)",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Allacciamento alla rete del gas",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Porta blindata o allarme",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Comodità di salita: ascensore, per gli alloggi oltre il primo piano",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Area verde, cortile, orto o giardino di pertinenza del condominio",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Classe energetica (APE) A+, A, B, C o D",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Stanza singola per ogni studente",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Rete telefonica con collegamento a internet",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Dotazione di mobilio (almeno l'arredo minimo indicato per l'aumento dell'arredo)",
+    "punti": 1,
+    "contratti": [
+     "studenti"
+    ]
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile dell'abitazione, al netto dei muri",
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Box o autorimessa",
+     "coeff": 0.8
+    },
+    {
+     "chiave": "cantina",
+     "testo": "Cantina o soffitta",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazzi",
+     "coeff": 0.25
+    }
+   ],
+   "nota": "Metri quadri utili (art. 1, comma 4): abitazione al 100%, box all'80%, cantine, soffitte, balconi e terrazzi al 25%, misurati al netto dei muri. Una differenza di superficie entro il 4% in più o in meno rispetto a quella scritta nel contratto non cambia il canone."
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "alloggio fino a 50 mq utili",
+    "a": 50,
+    "perc": 10
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "aumento",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "testo": "Arredo o immobile di pregio",
+    "nome": "arredo o pregio",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "cucina_camera",
+      "testo": "cucina e camera da letto arredate",
+      "perc": 15
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 30
+     },
+     {
+      "valore": "pregio",
+      "testo": "immobile A/1, A/8, A/9 o vincolato, arredato o no",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "costruzione",
+    "tipo": "scelta",
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "testo": "Immobile di nuova costruzione",
+    "nome": "nuova costruzione",
+    "nessuna": "no (ultimato prima del 2000)",
+    "opzioni": [
+     {
+      "valore": "2000",
+      "testo": "ultimato dal 1/1/2000 al 31/12/2004",
+      "perc": 10
+     },
+     {
+      "valore": "2005",
+      "testo": "ultimato dal 1/1/2005",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "arredo_studenti",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Arredo (studenti): almeno angolo cottura con lavello, piano cottura, frigorifero, tavolo e sedie, lampadari, bagno arredato e, per ogni studente, letto, armadio, scrivania con sedia e lampada",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "pregio_studenti",
+    "tipo": "spunta",
+    "perc": 20,
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Immobile A/1, A/8, A/9 o vincolato (contratto per studenti)",
+    "nome": "immobile di pregio"
+   }
+  ],
+  "nota_maggiorazioni": "Agevolati e transitori (allegato 3): alloggi fino a 50 mq utili +10%; cucina e camera da letto arredate +15%; completamente arredato +30%; immobili A/1, A/8, A/9 o vincolati +30% (con l'arredo completo l'aumento resta al massimo del 30%, art. 1 c. 9); nuova costruzione ultimata dal 2000 +10%, dal 2005 +15%. Studenti (allegato 5 e art. 3): fino a 50 mq +10%, completamente arredato +30%, immobili A/1, A/8, A/9 o vincolati +20%. Gli aumenti valgono sul minimo e sul massimo e si applicano uno sull'altro, come nel modello di attestazione (allegato 7). La durata oltre i 3 anni ha valori propri nella tabella; i transitori usano quelli del 3+2.",
+  "combinazione": "prodotto",
+  "avvisi": [
+   {
+    "testo": "Per un contratto agevolato o transitorio scegli Centro, Semicentro o Periferia: le zone «studenti universitari» hanno altri valori (allegato 5).",
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "zone": [
+     "SC",
+     "SS",
+     "SP"
+    ]
+   },
+   {
+    "testo": "Per un contratto per studenti scegli una zona «studenti universitari»: valori e dotazioni sono quelli degli allegati 4 e 5.",
+    "contratti": [
+     "studenti"
+    ],
+    "zone": [
+     "C",
+     "S",
+     "P"
+    ]
+   },
+   {
+    "testo": "Contratti transitori: durata fino a 18 mesi, con un'esigenza del locatore o dell'inquilino indicata nel contratto (art. 2); si usano i valori del 3+2.",
+    "contratti": [
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Contratti per studenti: durata da 6 a 36 mesi e almeno 18 mq per ogni studente, calcolati sull'intero alloggio (art. 3). Se affitti solo una parte dell'alloggio (con il proprietario convivente) contano i mq della parte affittata più il 50% delle parti in comune, senza gli aumenti per i piccoli alloggi e per l'arredo.",
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Un canone più basso del minimo calcolato è ammesso solo con l'attestazione congiunta di un'associazione della proprietà e di una degli inquilini (art. 4, lettera E, e note degli allegati 3 e 5)."
+   },
+   {
+    "testo": "L'attestazione di rispondenza la rilasciano insieme un'organizzazione della proprietà e una degli inquilini firmatarie dell'accordo (art. 4, lettera G; modello dell'allegato 7)."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 7",
+  "titolo": "Attestazione di applicazione dei parametri di cui all'Accordo territoriale",
+  "sottotitolo": "Accordo territoriale per il territorio del Comune di Vercelli, firmato e depositato il 19/09/2022 (prot. Comune di Vercelli n. 0057700) - calcolo secondo gli allegati 2, 3, 4 e 5",
+  "titolo_superficie": "METRI QUADRI UTILI (ART. 1, COMMA 4)",
+  "titolo_elementi": "Particolari dotazioni dell'alloggio (allegato 2; studenti: allegato 4)",
+  "etichetta_conteggio": "TOTALE DOTAZIONI",
+  "dichiarazione": "In riferimento al contratto di locazione ai sensi della Legge 431/98 e del D.M. 16/01/2017 stipulato tra i sottoscritti per l'unità immobiliare sopra indicata, il canone annuo, determinato sui metri quadri utili, con la maggiorazione del 10% per le unità fino a 50 mq, con la presenza delle dotazioni indicate e con le maggiorazioni applicate, risulta conforme all'accordo depositato presso il Comune di Vercelli in data 19/09/2022.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI APPLICAZIONE DEI PARAMETRI DI CUI ALL'ACCORDO TERRITORIALE",
+  "attestazione": [
+   "L'associazione della proprietà …………………………… e l'associazione sindacale dell'inquilino …………………………… attestano che il canone di locazione pattuito, sulla base delle dotazioni e degli elementi oggettivi dichiarati dalle parti contrattuali e della documentazione presentata, rientra nei parametri e nei criteri previsti dall'accordo territoriale depositato in data 19/09/2022 presso il Comune di Vercelli e limitatamente ai Comuni limitrofi per quanto attiene ai contratti per studenti universitari ed assimilati.",
+   "Vercelli, lì ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "Associazione proprietà",
+   "Sindacato inquilini"
+  ],
+  "nota_zone": "Zone della cartina dell'allegato 1: centro (centro storico), semicentro (quartieri intorno al centro) e periferia (resto del Comune). La strada di confine appartiene, su entrambi i lati, alla zona di maggior pregio. Per i contratti per studenti si usano gli stessi confini con i valori dell'allegato 5."
+ }
+}

@@ -1,0 +1,763 @@
+{
+ "accordo": {
+  "codice": "gela-2025-11-21",
+  "modello": "gela-2025",
+  "comune": "Gela",
+  "provincia": "CL",
+  "titolo": "Accordo territoriale per il territorio del Comune di Gela",
+  "data": "2025-11-21",
+  "data_testo": "21 novembre 2025",
+  "deposito": "Comune di Gela",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "Comune di Gela",
+  "ufficio_breve": "Comune di Gela",
+  "valido_fino": "2028-11-21",
+  "firmatari_proprieta": [
+   "U.P.P.I.",
+   "UNIONCASA"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Sottoscritto a Gela da U.P.P.I. e UNIONCASA (proprietari) e SUNIA, SICET e UNIAT (inquilini); la firma è stata annunciata dalle organizzazioni il 21/11/2025. Sostituisce integralmente l'accordo depositato il 06/10/2000. Dura tre anni dal giorno dopo il deposito presso il Comune (data e protocollo non pubblicati) e resta in vigore fino al nuovo accordo (punto G). Territorio diviso in 4 aree (centro, semicentro, periferia, zone rurali) e 15 zone OMI (allegato A e cartine); valori in euro al mq al mese per zona OMI e sub-fascia (allegato B); sub-fascia secondo la somma dei punti degli elementi dell'allegato C (da 8 a 18 inferiore, da 19 a 30 media, da 31 a 50 alta). Superficie interna da muro a muro con autorimessa all'80%, posto auto e balconi, terrazze e cantine al 50%; alloggi fino a 40, 50 e 60 mq aumentati del 25%, 20% e 15% (al massimo 40, 50 e 60 mq). Immobili dell'art. 1, comma 2, lett. a) della legge 431/98: massimo +10%; completamente arredato: massimo +20%; contratti transitori: fasce +10%; alloggio sociale: massimo -40%. Elementi aggiuntivi dell'allegato D in euro al mq all'anno, sommati al valore al mq. Canone aggiornato ogni anno al massimo al 75% dell'ISTAT.",
+  "fonte": "PDF dell'accordo pubblicato da SUNIA nazionale (sunia.info, pagina \"Accordi territoriali di Gela e Caltanissetta\", 36 pagine: testo, allegati A con cartine OMI, B, C, D, E, F1 e F2). La copia pubblicata non riporta data né firme; la data di firma viene dalla stampa locale (Quotidiano di Gela, 21/11/2025: \"firma odierna\"; Caltanissetta 401, 22/11/2025)."
+ },
+ "esempio_zona": "la zona OMI (allegato A e cartine: B1, B3, B4 centro; C1-C4 semicentro; D2-D8 periferia; R1 rurale)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "B1",
+    "nome": "B1 - Zona centro",
+    "nota": "Zona OMI B1, area A - zona centro (via Vittorio Emanuele in parte, via Cairoli, via Aldisio, piazza Umberto I, piazza San Francesco, lungomare Marconi e Mediterraneo, piazza Roma, piazza Vittorio Veneto, via Bonanno e via Martorana in parte, via Bandiera, via Navarra). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      1.7,
+      2.7
+     ],
+     [
+      2.71,
+      3.7
+     ],
+     [
+      3.71,
+      5.0
+     ]
+    ]
+   },
+   {
+    "codice": "B3",
+    "nome": "B3 - Zona centro",
+    "nota": "Zona OMI B3, area A - zona centro (via Vittorio Emanuele in parte, via Cairoli, via Aldisio, piazza Umberto I, piazza San Francesco, lungomare Marconi e Mediterraneo, piazza Roma, piazza Vittorio Veneto, via Bonanno e via Martorana in parte, via Bandiera, via Navarra). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      1.4,
+      2.4
+     ],
+     [
+      2.41,
+      3.4
+     ],
+     [
+      3.41,
+      4.6
+     ]
+    ]
+   },
+   {
+    "codice": "B4",
+    "nome": "B4 - Zona centro",
+    "nota": "Zona OMI B4, area A - zona centro (via Vittorio Emanuele in parte, via Cairoli, via Aldisio, piazza Umberto I, piazza San Francesco, lungomare Marconi e Mediterraneo, piazza Roma, piazza Vittorio Veneto, via Bonanno e via Martorana in parte, via Bandiera, via Navarra). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      1.1,
+      2.1
+     ],
+     [
+      2.11,
+      3.1
+     ],
+     [
+      3.11,
+      4.2
+     ]
+    ]
+   },
+   {
+    "codice": "C1",
+    "nome": "C1 - Zona semicentrale",
+    "nota": "Zona OMI C1, area B - zona semicentrale (piazza Ungheria, via E. Romagnoli, via Ugo Foscolo, viale Europa, via Palazzi, quartiere Costa Zampogna, via Plinio, via Fazello, via Feace, via Crispi, lungomare). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      2.4,
+      3.4
+     ],
+     [
+      3.41,
+      4.4
+     ],
+     [
+      4.41,
+      5.2
+     ]
+    ]
+   },
+   {
+    "codice": "C2",
+    "nome": "C2 - Zona semicentrale",
+    "nota": "Zona OMI C2, area B - zona semicentrale (piazza Ungheria, via E. Romagnoli, via Ugo Foscolo, viale Europa, via Palazzi, quartiere Costa Zampogna, via Plinio, via Fazello, via Feace, via Crispi, lungomare). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      1.6,
+      2.6
+     ],
+     [
+      2.61,
+      3.6
+     ],
+     [
+      3.61,
+      4.9
+     ]
+    ]
+   },
+   {
+    "codice": "C3",
+    "nome": "C3 - Zona semicentrale",
+    "nota": "Zona OMI C3, area B - zona semicentrale (piazza Ungheria, via E. Romagnoli, via Ugo Foscolo, viale Europa, via Palazzi, quartiere Costa Zampogna, via Plinio, via Fazello, via Feace, via Crispi, lungomare). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      1.6,
+      2.6
+     ],
+     [
+      2.61,
+      3.6
+     ],
+     [
+      3.61,
+      4.8
+     ]
+    ]
+   },
+   {
+    "codice": "C4",
+    "nome": "C4 - Zona semicentrale",
+    "nota": "Zona OMI C4, area B - zona semicentrale (piazza Ungheria, via E. Romagnoli, via Ugo Foscolo, viale Europa, via Palazzi, quartiere Costa Zampogna, via Plinio, via Fazello, via Feace, via Crispi, lungomare). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      1.4,
+      2.4
+     ],
+     [
+      2.41,
+      3.4
+     ],
+     [
+      3.41,
+      4.5
+     ]
+    ]
+   },
+   {
+    "codice": "D2",
+    "nome": "D2 - Zona periferica",
+    "nota": "Zona OMI D2, area C - zona periferica (via Venezia in parte, via Butera, via Juvara, via Madonna del Rosario, via B. Croce, via Portuense, via Licata, via Danimarca, via Francia, via Olanda, Settefarine, Blasco, Macchitella, Zuppardo; contrade Femmina Morta, Manfria, Roccazzelle, Monte Lungo; zona industriale Brucazzi, polo petrolchimico). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      2.1,
+      3.1
+     ],
+     [
+      3.11,
+      4.1
+     ],
+     [
+      4.11,
+      5.6
+     ]
+    ]
+   },
+   {
+    "codice": "D3",
+    "nome": "D3 - Zona periferica",
+    "nota": "Zona OMI D3, area C - zona periferica (via Venezia in parte, via Butera, via Juvara, via Madonna del Rosario, via B. Croce, via Portuense, via Licata, via Danimarca, via Francia, via Olanda, Settefarine, Blasco, Macchitella, Zuppardo; contrade Femmina Morta, Manfria, Roccazzelle, Monte Lungo; zona industriale Brucazzi, polo petrolchimico). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      1.9,
+      2.9
+     ],
+     [
+      2.91,
+      3.9
+     ],
+     [
+      3.91,
+      5.3
+     ]
+    ]
+   },
+   {
+    "codice": "D4",
+    "nome": "D4 - Zona periferica",
+    "nota": "Zona OMI D4, area C - zona periferica (via Venezia in parte, via Butera, via Juvara, via Madonna del Rosario, via B. Croce, via Portuense, via Licata, via Danimarca, via Francia, via Olanda, Settefarine, Blasco, Macchitella, Zuppardo; contrade Femmina Morta, Manfria, Roccazzelle, Monte Lungo; zona industriale Brucazzi, polo petrolchimico). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      1.6,
+      2.6
+     ],
+     [
+      2.61,
+      3.6
+     ],
+     [
+      3.61,
+      4.9
+     ]
+    ]
+   },
+   {
+    "codice": "D5",
+    "nome": "D5 - Zona periferica",
+    "nota": "Zona OMI D5, area C - zona periferica (via Venezia in parte, via Butera, via Juvara, via Madonna del Rosario, via B. Croce, via Portuense, via Licata, via Danimarca, via Francia, via Olanda, Settefarine, Blasco, Macchitella, Zuppardo; contrade Femmina Morta, Manfria, Roccazzelle, Monte Lungo; zona industriale Brucazzi, polo petrolchimico). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      1.8,
+      2.8
+     ],
+     [
+      2.81,
+      3.8
+     ],
+     [
+      3.81,
+      5.2
+     ]
+    ]
+   },
+   {
+    "codice": "D6",
+    "nome": "D6 - Zona periferica",
+    "nota": "Zona OMI D6, area C - zona periferica (via Venezia in parte, via Butera, via Juvara, via Madonna del Rosario, via B. Croce, via Portuense, via Licata, via Danimarca, via Francia, via Olanda, Settefarine, Blasco, Macchitella, Zuppardo; contrade Femmina Morta, Manfria, Roccazzelle, Monte Lungo; zona industriale Brucazzi, polo petrolchimico). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      1.4,
+      2.4
+     ],
+     [
+      2.41,
+      3.4
+     ],
+     [
+      3.41,
+      4.4
+     ]
+    ]
+   },
+   {
+    "codice": "D7",
+    "nome": "D7 - Zona periferica",
+    "nota": "Zona OMI D7, area C - zona periferica (via Venezia in parte, via Butera, via Juvara, via Madonna del Rosario, via B. Croce, via Portuense, via Licata, via Danimarca, via Francia, via Olanda, Settefarine, Blasco, Macchitella, Zuppardo; contrade Femmina Morta, Manfria, Roccazzelle, Monte Lungo; zona industriale Brucazzi, polo petrolchimico). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      1.2,
+      2.0
+     ],
+     [
+      2.3,
+      3.0
+     ],
+     [
+      3.2,
+      3.6
+     ]
+    ]
+   },
+   {
+    "codice": "D8",
+    "nome": "D8 - Zona periferica",
+    "nota": "Zona OMI D8, area C - zona periferica (via Venezia in parte, via Butera, via Juvara, via Madonna del Rosario, via B. Croce, via Portuense, via Licata, via Danimarca, via Francia, via Olanda, Settefarine, Blasco, Macchitella, Zuppardo; contrade Femmina Morta, Manfria, Roccazzelle, Monte Lungo; zona industriale Brucazzi, polo petrolchimico). L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      0.8,
+      1.5
+     ],
+     [
+      1.8,
+      2.5
+     ],
+     [
+      2.9,
+      3.0
+     ]
+    ]
+   },
+   {
+    "codice": "R1",
+    "nome": "R1 - Zona rurale",
+    "nota": "Zona OMI R1, area D - zone rurali. L'allegato A elenca le vie per l'intera area, non per la singola zona OMI: la zona esatta si vede sulle cartine OMI allegate all'accordo. Il confine fra due zone passa a metà della strada. Valori in euro al mq al mese (allegato B).",
+    "fasce": [
+     [
+      0.4,
+      0.8
+     ],
+     [
+      0.81,
+      1.3
+     ],
+     [
+      1.31,
+      2.0
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "inferiore",
+    "media",
+    "alta"
+   ],
+   "criterio": "punti",
+   "soglie": [
+    18,
+    30
+   ],
+   "nota": "Sub-fascia inferiore da 8 a 18 punti, media da 19 a 30, alta da 31 a 50 (allegato C). Sotto gli 8 punti si resta nella sub-fascia inferiore."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Anno di costruzione, categoria catastale e stato (allegato C): scegli una voce per riga"
+   },
+   {
+    "da": 3,
+    "titolo": "Zona servita da"
+   },
+   {
+    "da": 11,
+    "titolo": "Dotazioni dell'alloggio"
+   },
+   {
+    "da": 17,
+    "titolo": "Dotazioni particolari"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Anno di costruzione o ristrutturazione",
+    "livelli": [
+     {
+      "testo": "costruito fino al 1990",
+      "punti": 1
+     },
+     {
+      "testo": "costruito dal 1991 al 1999",
+      "punti": 2
+     },
+     {
+      "testo": "costruito dal 2000 al 2019",
+      "punti": 4
+     },
+     {
+      "testo": "ristrutturato negli ultimi 5 anni",
+      "punti": 6
+     },
+     {
+      "testo": "ristrutturato fra 10 e 5 anni fa",
+      "punti": 3
+     }
+    ]
+   },
+   {
+    "testo": "Categoria catastale",
+    "livelli": [
+     {
+      "testo": "villino (A/7)",
+      "punti": 5
+     },
+     {
+      "testo": "abitazione di tipo civile (A/2)",
+      "punti": 4
+     },
+     {
+      "testo": "categoria A/3",
+      "punti": 3
+     },
+     {
+      "testo": "categoria A/4",
+      "punti": 2
+     },
+     {
+      "testo": "altre categorie catastali",
+      "punti": 1
+     }
+    ]
+   },
+   {
+    "testo": "Stato di manutenzione",
+    "livelli": [
+     {
+      "testo": "ottimo",
+      "punti": 4
+     },
+     {
+      "testo": "buono",
+      "punti": 3
+     },
+     {
+      "testo": "discreto",
+      "punti": 1
+     }
+    ]
+   },
+   {
+    "testo": "Fermata dell'autobus",
+    "punti": 2
+   },
+   {
+    "testo": "Farmacia",
+    "punti": 3
+   },
+   {
+    "testo": "Negozi",
+    "punti": 2
+   },
+   {
+    "testo": "Impianti sportivi",
+    "punti": 1
+   },
+   {
+    "testo": "Parcheggio pubblico",
+    "punti": 2
+   },
+   {
+    "testo": "Ospedale o guardia medica",
+    "punti": 2
+   },
+   {
+    "testo": "Scuole",
+    "punti": 2
+   },
+   {
+    "testo": "Chiese o altri edifici religiosi",
+    "punti": 2
+   },
+   {
+    "testo": "Doppi infissi",
+    "punti": 2
+   },
+   {
+    "testo": "Doppio bagno o lavanderia",
+    "punti": 3
+   },
+   {
+    "testo": "Porta blindata",
+    "punti": 1
+   },
+   {
+    "testo": "Ascensore",
+    "punti": 2
+   },
+   {
+    "testo": "Scorta d'acqua (serbatoio o autoclave)",
+    "punti": 2
+   },
+   {
+    "testo": "Condizionatori",
+    "punti": 3
+   },
+   {
+    "testo": "Cancello automatico o sistema di allarme",
+    "punti": 2
+   },
+   {
+    "testo": "Piscina o area attrezzata per bambini",
+    "punti": 2
+   },
+   {
+    "testo": "Area verde privata",
+    "punti": 2
+   },
+   {
+    "testo": "Parcheggio privato",
+    "punti": 2
+   }
+  ],
+  "superficie": {
+   "base": "Superficie interna dell'alloggio (muro a muro, senza muri esterni)",
+   "correzioni": [
+    {
+     "fino": 40,
+     "incluso": true,
+     "perc": 25,
+     "tetto": 40
+    },
+    {
+     "fino": 50,
+     "incluso": true,
+     "perc": 20,
+     "tetto": 50
+    },
+    {
+     "fino": 60,
+     "incluso": true,
+     "perc": 15,
+     "tetto": 60
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa in uso esclusivo, accatastata C/6",
+     "coeff": 0.8
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto in uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e altri accessori simili",
+     "coeff": 0.5
+    }
+   ],
+   "nota": "Superficie interna misurata sulla pianta catastale (o su altri documenti), da muro a muro, esclusi i muri esterni e compresi i tramezzi, con una tolleranza del 10% in più o in meno. Alloggio al 100%; autorimessa C/6 in uso esclusivo fino all'80%; posto auto esclusivo fino al 50%; balconi, terrazze, cantine e accessori fino al 50%. Alloggi fino a 40 mq: +25% (al massimo 40 mq); fino a 50 mq: +20% (al massimo 50 mq); fino a 60 mq: +15% (al massimo 60 mq). Per una porzione di alloggio il canone si calcola in proporzione alla superficie locata, considerando anche le parti condivise."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "lusso",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato come storico o di categoria A/1, A/8 o A/9 (art. 1, comma 2, lett. a, legge 431/98): massimo aumentato",
+    "nome": "immobile art. 1, c. 2, lett. a) L. 431/98",
+    "perc": 10,
+    "solo_max": true
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "ammobiliato": true,
+    "testo": "Alloggio completamente arredato: massimo aumentato",
+    "nome": "completamente arredato",
+    "perc": 20,
+    "solo_max": true
+   },
+   {
+    "chiave": "transitorio",
+    "tipo": "spunta",
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Contratto transitorio: fasce aumentate",
+    "nome": "contratto transitorio",
+    "perc": 10
+   },
+   {
+    "chiave": "sociale",
+    "tipo": "spunta",
+    "testo": "Alloggio sociale con agevolazioni pubbliche al locatore: massimo ridotto",
+    "nome": "alloggio sociale",
+    "perc": -40,
+    "solo_max": true
+   },
+   {
+    "chiave": "d_luminosita",
+    "tipo": "spunta",
+    "testo": "Luminosità (allegato D: + € 0,8 al mq all'anno)",
+    "nome": "Luminosità",
+    "mostra_perc": false,
+    "importo_mq": 0.8
+   },
+   {
+    "chiave": "d_silenzio_giorno",
+    "tipo": "spunta",
+    "testo": "Silenziosità diurna (allegato D: + € 0,5 al mq all'anno)",
+    "nome": "Silenziosità diurna",
+    "mostra_perc": false,
+    "importo_mq": 0.5
+   },
+   {
+    "chiave": "d_silenzio_notte",
+    "tipo": "spunta",
+    "testo": "Silenziosità notturna (allegato D: + € 0,3 al mq all'anno)",
+    "nome": "Silenziosità notturna",
+    "mostra_perc": false,
+    "importo_mq": 0.3
+   },
+   {
+    "chiave": "d_panorama",
+    "tipo": "spunta",
+    "testo": "Panoramicità (allegato D: + € 1 al mq all'anno)",
+    "nome": "Panoramicità",
+    "mostra_perc": false,
+    "importo_mq": 1
+   },
+   {
+    "chiave": "d_ape",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE) (allegato D, € al mq all'anno)",
+    "nome": "Classe energetica (APE)",
+    "nessuna": "nessuna o classe G",
+    "mostra_perc": false,
+    "opzioni": [
+     {
+      "valore": "A",
+      "testo": "classe A (+ € 3/mq anno)",
+      "importo_mq": 3
+     },
+     {
+      "valore": "B",
+      "testo": "classe B (+ € 2/mq anno)",
+      "importo_mq": 2
+     },
+     {
+      "valore": "C",
+      "testo": "classe C (+ € 1/mq anno)",
+      "importo_mq": 1
+     },
+     {
+      "valore": "D",
+      "testo": "classe D (+ € 0,8/mq anno)",
+      "importo_mq": 0.8
+     },
+     {
+      "valore": "EF",
+      "testo": "classe E o F (+ € 0,4/mq anno)",
+      "importo_mq": 0.4
+     }
+    ]
+   },
+   {
+    "chiave": "d_cappotto",
+    "tipo": "spunta",
+    "testo": "Cappotto esterno (allegato D: + € 1,5 al mq all'anno)",
+    "nome": "Cappotto esterno",
+    "mostra_perc": false,
+    "importo_mq": 1.5
+   },
+   {
+    "chiave": "d_chiller",
+    "tipo": "spunta",
+    "testo": "Chiller di raffreddamento (allegato D: + € 2 al mq all'anno)",
+    "nome": "Chiller di raffreddamento",
+    "mostra_perc": false,
+    "importo_mq": 2
+   },
+   {
+    "chiave": "d_solare",
+    "tipo": "spunta",
+    "testo": "Solare termico (allegato D: + € 0,5 al mq all'anno)",
+    "nome": "Solare termico",
+    "mostra_perc": false,
+    "importo_mq": 0.5
+   },
+   {
+    "chiave": "d_fotovoltaico",
+    "tipo": "spunta",
+    "testo": "Fotovoltaico (allegato D: + € 2 al mq all'anno)",
+    "nome": "Fotovoltaico",
+    "mostra_perc": false,
+    "importo_mq": 2
+   },
+   {
+    "chiave": "d_payperview",
+    "tipo": "spunta",
+    "testo": "Pay per view (allegato D: + € 0,8 al mq all'anno)",
+    "nome": "Pay per view",
+    "mostra_perc": false,
+    "importo_mq": 0.8
+   },
+   {
+    "chiave": "d_domotica",
+    "tipo": "spunta",
+    "testo": "Domotica (allegato D: + € 1 al mq all'anno)",
+    "nome": "Domotica",
+    "mostra_perc": false,
+    "importo_mq": 1
+   },
+   {
+    "chiave": "d_wifi",
+    "tipo": "spunta",
+    "testo": "Wi-Fi (allegato D: + € 1 al mq all'anno)",
+    "nome": "Wi-Fi",
+    "mostra_perc": false,
+    "importo_mq": 1
+   },
+   {
+    "chiave": "d_antintrusione",
+    "tipo": "spunta",
+    "testo": "Sistemi antintrusione (allegato D: + € 0,6 al mq all'anno)",
+    "nome": "Sistemi antintrusione",
+    "mostra_perc": false,
+    "importo_mq": 0.6
+   },
+   {
+    "chiave": "d_barriere",
+    "tipo": "spunta",
+    "testo": "Senza barriere architettoniche (allegato D: + € 1 al mq all'anno)",
+    "nome": "Senza barriere architettoniche",
+    "mostra_perc": false,
+    "importo_mq": 1
+   },
+   {
+    "chiave": "d_wc_disabili",
+    "tipo": "spunta",
+    "testo": "Bagno per disabili (allegato D: + € 0,6 al mq all'anno)",
+    "nome": "Bagno per disabili",
+    "mostra_perc": false,
+    "importo_mq": 0.6
+   },
+   {
+    "chiave": "d_ascensore_disabili",
+    "tipo": "spunta",
+    "testo": "Ascensore per disabili (allegato D: + € 0,8 al mq all'anno)",
+    "nome": "Ascensore per disabili",
+    "mostra_perc": false,
+    "importo_mq": 0.8
+   }
+  ],
+  "nota_maggiorazioni": "Immobili vincolati o di categoria A/1, A/8, A/9: massimo +10% (punto 7). Alloggio completamente arredato: massimo fino a +20% (punto 8). Contratti transitori: fasce fino a +10% (punto 9). Alloggio sociale: massimo ridotto del 40% (titolo D). La durata più lunga non dà aumenti. Il calcolo usa le percentuali massime. Gli elementi aggiuntivi dell'allegato D si sommano in euro al mq all'anno.",
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Zone D7 e D8: le sub-fasce dell'accordo non sono contigue (D7: 1,20-2,00 / 2,30-3,00 / 3,20-3,60; D8: 0,80-1,50 / 1,80-2,50 / 2,90-3,00 euro al mq). Il calcolo usa i valori così come sono scritti.",
+    "zone": [
+     "D7",
+     "D8"
+    ]
+   },
+   {
+    "testo": "Il canone si aggiorna ogni anno nella misura concordata, al massimo il 75% della variazione ISTAT."
+   }
+  ],
+  "unita_importi_mq": "anno"
+ },
+ "pdf": {
+  "allegato": "Allegato F1",
+  "titolo": "Attestazione di rispondenza - calcolo del canone concordato",
+  "sottotitolo": "Accordo territoriale del Comune di Gela del 21/11/2025 - calcolo secondo gli allegati A, B, C e D",
+  "titolo_superficie": "SUPERFICIE CONVENZIONALE (punto 6 delle norme generali)",
+  "titolo_elementi": "ELEMENTI PER LA DEFINIZIONE DELLE FASCE DI OSCILLAZIONE (allegato C)",
+  "etichetta_conteggio": "TOTALE PUNTI",
+  "dichiarazione": "Il locatore e il conduttore, consapevoli che chiunque rilascia dichiarazioni mendaci è punito ai sensi del codice penale e delle leggi speciali in materia (art. 76 D.P.R. n. 445/2000), dichiarano i dati sopra riportati sulla dotazione dell'unità immobiliare.",
+  "firme": [
+   "Il Locatore",
+   "Il Conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA",
+  "attestazione": [
+   "La sottoscritta Organizzazione ……………………………, firmataria dell'Accordo territoriale del Comune di Gela, sulla base degli elementi oggettivi dichiarati dalle parti,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente nel Comune di Gela, anche ai fini delle agevolazioni fiscali (D.M. 16/01/2017)."
+  ],
+  "firme_attestazione": [
+   "Gela, ……………………   prot. n. ……",
+   "Per l'Organizzazione"
+  ],
+  "nota_zone": "Gela è divisa in 4 aree e 15 zone OMI (allegato A e cartine): B1, B3, B4 zona centro; C1, C2, C3, C4 zona semicentrale; D2, D3, D4, D5, D6, D7, D8 zona periferica; R1 zone rurali. Nei casi dubbi chiedi all'associazione che attesta il contratto."
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "accordo": {
+  "codice": "gorizia-2018-04-18",
+  "modello": "gorizia-2018",
+  "comune": "Gorizia",
+  "provincia": "GO",
+  "titolo": "Accordo territoriale per il territorio del Comune di Gorizia",
+  "data": "2018-04-18",
+  "data_testo": "18 aprile 2018",
+  "deposito": "Comune di Gorizia",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "Comune di Gorizia",
+  "ufficio_breve": "Comune di Gorizia",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Gorizia ha ancora l'accordo territoriale firmato il 18 aprile 2018</strong>: durava tre anni dal deposito, ma resta in vigore finché non ne viene firmato uno nuovo (titolo G), che finora non risulta. Le associazioni firmatarie (SUNIA e UPPI) lo pubblicano ancora come accordo vigente. Dal terzo anno i valori minimi e massimi si aggiornano ogni anno, per i nuovi contratti, fino al 100% della variazione ISTAT: qui trovi i valori originali del 2018, <strong>chiedi all'associazione che attesta il contratto se applica valori aggiornati</strong>.",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA Gorizia - Monfalcone (Associazione della Proprietà Edilizia del Friuli orientale e Terre bisiache)",
+   "U.P.P.I. Unione Piccoli Proprietari Immobiliari"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato a Gorizia il 18/04/2018 (D.M. 16/01/2017) da Confedilizia Gorizia-Monfalcone, UPPI, SUNIA, SICET e UNIAT; sostituisce l'accordo precedente (D.M. 30/12/2002). Depositato al Comune di Gorizia: secondo Il Piccolo del 15/05/2018 il deposito è avvenuto il 19 aprile 2018 (data non riportata sul testo, qui lasciata vuota). Durata tre anni dal giorno dopo il deposito, poi resta in vigore fino a un nuovo accordo (titolo G, punto 6): nessun accordo successivo trovato (verificato novembre 2026). Tre zone per vie (allegato 1), una fascia per zona in euro al mq al mese (allegato 2), maggiorazioni e riduzioni del massimo (allegato 3), modelli di attestazione bilaterale e unilaterale (allegati 4 e 5). Vale solo per il Comune di Gorizia: Destra Isonzo, Sinistra Isonzo, Grado, Monfalcone e Ronchi dei Legionari hanno accordi propri.",
+  "fonte": "Scansione firmata dell'accordo con gli allegati 1-6 (20 pagine) pubblicata da SUNIA (sunia.it, accordi territoriali di Gorizia) e, identica, dalla sede UPPI di Gorizia su uppi.it."
+ },
+ "esempio_zona": "la zona dalla via e dal numero civico (elenco delle vie dell'allegato 1)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro, San Rocco, Montesanto",
+    "nota": "Zona 1: quartieri Centro, San Rocco-Sant'Anna e Montesanto-Piazzutta (vie elencate nell'allegato 1, secondo il regolamento delle circoscrizioni del Comune). Vie divise fra più zone: via Aquileia fino al n. 26; via Brigata Casale fino ai civici 46 e 53; Lungo Isonzo Argentina fino al 101 escluso; via Trieste fino al civico 273 (dal 156 e 279 in poi è zona 3); via Ristori e via Puccini per intero. Valori in euro al mq al mese.",
+    "fasce": [[1.5, 7.0]]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Campagnuzza, Straccis, Piuma e altri",
+    "nota": "Zona 2: quartieri Campagnuzza, Madonnina del Fante, Straccis, Piedimonte del Calvario e Piuma-San Mauro-Oslavia (vie elencate nell'allegato 1). Vie divise fra più zone: via Aquileia dal civico 26 e 35 in poi; via del Carso fino ai civici 32 e 43; via San Michele fino ai civici 42 e 71; Lungo Isonzo Argentina dal 101 in poi; via Brigata Casale dal 46 e 53 in poi; via Brigata Re fino al 30; Stradone della Mainizza fino al 111. Valori in euro al mq al mese.",
+    "fasce": [[1.2, 6.5]]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Lucinico, Sant'Andrea",
+    "nota": "Zona 3: quartieri Lucinico e Sant'Andrea (vie elencate nell'allegato 1). Vie divise fra più zone: via Brigata Re dal civico 31 e 32 in poi; Stradone della Mainizza dal 112 in poi; via del Carso dal civico 44 e 52 in poi; via San Michele dal civico 44 e 73 in poi; via Trieste dal civico 156 e 279 in poi; via Cecotti in parte (Lucinico e Sant'Andrea). Valori in euro al mq al mese.",
+    "fasce": [[1.0, 6.0]]
+   }
+  ],
+  "fasce": {
+   "nomi": ["unica"],
+   "criterio": "conta",
+   "soglie": []
+  },
+  "elementi": [],
+  "superficie": {
+   "base": "Superficie calpestabile interna dell'appartamento (mq)",
+   "voci": [
+    {
+     "chiave": "pertinenze",
+     "testo": "Accessori e pertinenze calpestabili (garage, cantine, ripostigli esterni, terrazze, balconi)",
+     "coeff": 1
+    },
+    {
+     "chiave": "giardino",
+     "testo": "Corti e giardini in uso esclusivo (oltre 50 mq contano il 15%)",
+     "coeff": 1,
+     "scaglione": [50, 1, 0.15]
+    }
+   ],
+   "nota": "Si conta tutta la superficie calpestabile data in locazione, compresi accessori e pertinenze (garage, cantine, ripostigli, terrazze) per intero. Corti e giardini in uso esclusivo contano per intero fino a 50 mq; la parte oltre i 50 mq conta il 15%. Per una porzione di alloggio si contano anche le parti usate in comune. È ammesso un margine di errore del 5% in più o in meno."
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "superficie interna inferiore a 50 mq",
+    "a": 49.99,
+    "perc": 10,
+    "su": "base"
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "testo": "Alloggio completamente arredato (almeno lavello, frigorifero, cucina, tavolo con sedie, armadio-dispensa, letto con comodino e armadio o cassettiera)",
+    "nome": "alloggio completamente arredato",
+    "perc": 20,
+    "ammobiliato": true
+   },
+   {
+    "chiave": "categoria",
+    "tipo": "scelta",
+    "testo": "Categoria catastale (dalla visura)",
+    "nome": "categoria catastale (solo sul massimo)",
+    "nessuna": "A/3, A/4 o altra categoria",
+    "nessuna_breve": "nessuna variazione",
+    "solo_max": true,
+    "opzioni": [
+     {
+      "valore": "pregio",
+      "testo": "A/1, A/8 o A/9, oppure immobile vincolato come bene culturale",
+      "perc": 30
+     },
+     {
+      "valore": "A2",
+      "testo": "A/2",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (dall'APE)",
+    "nome": "classe energetica (solo sul massimo)",
+    "nessuna": "E o F, o APE non indicata",
+    "nessuna_breve": "nessuna variazione",
+    "solo_max": true,
+    "opzioni": [
+     {
+      "valore": "AD",
+      "testo": "da A a D",
+      "perc": 10
+     },
+     {
+      "valore": "G",
+      "testo": "G",
+      "perc": -10
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti e le riduzioni si cumulano (titolo A, punto 13). Su minimo e massimo: alloggio sotto i 50 mq interni +10%, alloggio completamente arredato fino a +20%, durata 4 anni +4%, 5 anni +7%, 6 anni o più +8%, contratti transitori e per studenti fino a +10%. Solo sul massimo (allegato 3): categorie A/1, A/8, A/9 e immobili vincolati fino a +30%, categoria A/2 fino a +10%, classe energetica da A a D fino a +10%, classe G -10%. Qui gli aumenti \"fino a\" si applicano per intero: prima si sommano quelli su minimo e massimo, poi si applicano quelli sul solo massimo; se il massimo scende sotto il minimo, il minimo si abbassa allo stesso valore. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie locata, considerando anche le parti condivise.",
+  "durata": {
+   "4": 4,
+   "5": 7,
+   "6": 8
+  },
+  "contratto": {
+   "transitorio": 10,
+   "studenti": 10
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Il canone si aggiorna ogni anno nella misura concordata, al massimo il 75% dell'ISTAT (niente aggiornamento se il proprietario sceglie la cedolare secca)."
+   },
+   {
+    "testo": "Contratto transitorio: al massimo 18 mesi, con un'esigenza di transitorietà prevista dall'accordo e scritta nel contratto (se non è fra quelle previste o è difficile da documentare, le parti si fanno assistere dalle associazioni). Fino a 30 giorni il canone è libero.",
+    "contratti": ["transitorio"]
+   },
+   {
+    "testo": "Contratto per studenti universitari (Gorizia è sede di corsi delle Università di Udine e di Trieste): durata da 6 mesi a 3 anni; può essere firmato dal singolo studente, da gruppi di studenti o dagli enti per il diritto allo studio.",
+    "contratti": ["studenti"]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 5",
+  "titolo": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16/1/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Gorizia sottoscritto il 18.04.2018 - Confedilizia Gorizia-Monfalcone, UPPI, SUNIA, SICET, UNIAT",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Accordo territoriale",
+  "titolo_elementi": "ELEMENTI E PARAMETRI OGGETTIVI",
+  "dichiarazione": "Il richiedente, nella qualità di locatore/conduttore dell'immobile/porzione di immobile sito a Gorizia sopra indicato, ha presentato richiesta per l'attestazione ex D.M. 16/01/2017, dichiarando, sotto la sua responsabilità, gli elementi sopra riportati.",
+  "firme": [],
+  "titolo_attestazione": "ATTESTAZIONE DELL'ORGANIZZAZIONE",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Gorizia, in persona di ……………………………, come sopra rappresentata, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Gorizia depositato in data ……………………",
+   "Gorizia, lì ……………………"
+  ],
+  "firme_attestazione": ["Il dichiarante", "p. l'Organizzazione"],
+  "nota_zone": "La zona si ricava dalla via e dal numero civico (allegato 1, quartieri del regolamento delle circoscrizioni): zona 1 Centro, San Rocco-Sant'Anna, Montesanto-Piazzutta; zona 2 Campagnuzza, Madonnina del Fante, Straccis, Piedimonte, Piuma-San Mauro-Oslavia; zona 3 Lucinico e Sant'Andrea."
+ }
+}

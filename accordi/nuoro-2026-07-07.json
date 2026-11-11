@@ -1,0 +1,461 @@
+{
+ "accordo": {
+  "codice": "nuoro-2026-07-07",
+  "modello": "nuoro-2026",
+  "comune": "Nuoro",
+  "provincia": "NU",
+  "titolo": "Nuovo accordo territoriale per le locazioni abitative agevolate, Città di Nuoro, anno 2026",
+  "data": "2026-07-07",
+  "data_testo": "7 luglio 2026",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "Segreteria Generale del Comune di Nuoro (Ufficio Protocollo Generale)",
+  "ufficio_breve": "Comune di Nuoro",
+  "valido_fino": "2029-07-07",
+  "firmatari_proprieta": [
+   "APE CONFEDILIZIA SARDEGNA",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato a Nuoro il 07/07/2026 (presentato nella sede CGIL); vale per i contratti firmati dal giorno dopo e dura tre anni dalla firma. Il testo pubblicato non riporta gli estremi del deposito al Comune (art. 38). Sostituisce l'accordo del 28/04/2015, che resta valido per i contratti in corso. Quattro zone omogenee, tre sottofasce (A, B, C) secondo il numero di requisiti su 28 (allegato 3), valori annui al mq di superficie convenzionale (allegato 2), aggiornati al 75% ISTAT dal quarto anno.",
+  "fonte": "PDF in scansione di 20 pagine pubblicato da UPPI nazionale nella pagina della sede di Nuoro (testo, allegati 2, 3, 5 e 6; mancano l'allegato 1 con la zonizzazione e l'allegato 4 con il modello di attestazione)."
+ },
+ "esempio_zona": "la zona omogenea (Centrale, Semicentrale, Periferica o Suburbana)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "C",
+    "nome": "Centrale",
+    "nota": "Zona omogenea Centrale. Sottofascia C fino a 4 requisiti, B con 5 o 6, A da 7. Valori in euro al mq all'anno (allegato 2). Nelle vie di confine fra due zone vale la zona con i valori più alti (art. 9). L'elenco delle vie di ogni zona (allegato 1) non è pubblicato con il testo dell'accordo: in caso di dubbio chiedi conferma a un'associazione firmataria.",
+    "fasce": [
+     [
+      40,
+      45
+     ],
+     [
+      50,
+      55
+     ],
+     [
+      60,
+      65
+     ]
+    ]
+   },
+   {
+    "codice": "SC",
+    "nome": "Semicentrale",
+    "nota": "Zona omogenea Semicentrale. Sottofascia C fino a 5 requisiti, B da 6 a 8, A da 9. Valori in euro al mq all'anno (allegato 2). Nelle vie di confine fra due zone vale la zona con i valori più alti (art. 9). L'elenco delle vie di ogni zona (allegato 1) non è pubblicato con il testo dell'accordo: in caso di dubbio chiedi conferma a un'associazione firmataria.",
+    "fasce": [
+     [
+      40,
+      45
+     ],
+     [
+      50,
+      55
+     ],
+     [
+      58,
+      65
+     ]
+    ]
+   },
+   {
+    "codice": "P",
+    "nome": "Periferica",
+    "nota": "Zona omogenea Periferica. Sottofascia C fino a 5 requisiti, B da 6 a 8, A da 9. Valori in euro al mq all'anno (allegato 2). Nelle vie di confine fra due zone vale la zona con i valori più alti (art. 9). L'elenco delle vie di ogni zona (allegato 1) non è pubblicato con il testo dell'accordo: in caso di dubbio chiedi conferma a un'associazione firmataria.",
+    "fasce": [
+     [
+      40,
+      45
+     ],
+     [
+      50,
+      55
+     ],
+     [
+      58,
+      62
+     ]
+    ]
+   },
+   {
+    "codice": "S",
+    "nome": "Suburbana (Perdas Arbas, Corte, Prato Sardo)",
+    "nota": "Zona omogenea Suburbana: Perdas Arbas, Corte, Prato Sardo (artt. 8 e 11). Sottofascia C fino a 5 requisiti, B da 6 a 8, A da 9. Valori in euro al mq all'anno (allegato 2). Nelle vie di confine fra due zone vale la zona con i valori più alti (art. 9). L'elenco delle vie di ogni zona (allegato 1) non è pubblicato con il testo dell'accordo: in caso di dubbio chiedi conferma a un'associazione firmataria.",
+    "fasce": [
+     [
+      35,
+      40
+     ],
+     [
+      43,
+      46
+     ],
+     [
+      49,
+      55
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "C",
+    "B",
+    "A"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    5,
+    8
+   ],
+   "soglie_zona": {
+    "C": [
+     4,
+     6
+    ]
+   }
+  },
+  "elementi": [
+   {
+    "testo": "Abitazione costruita o integralmente ristrutturata negli ultimi 15 anni"
+   },
+   {
+    "testo": "Classe energetica A, B o C (da APE in corso di validità)"
+   },
+   {
+    "testo": "Riscaldamento autonomo (in tutta la casa) o centralizzato con contabilizzazione, oppure a pavimento o a parete"
+   },
+   {
+    "testo": "Climatizzazione caldo/freddo in tutti i vani (fino a 50 mq basta un apparecchio fisso a pompa di calore; non valgono i portatili)"
+   },
+   {
+    "testo": "Autorimessa singola coperta, affittata con l'abitazione"
+   },
+   {
+    "testo": "Posto auto esclusivo, anche scoperto, accatastato e affittato con l'abitazione"
+   },
+   {
+    "testo": "Posto auto comune o cortile con possibilità di parcheggio (anche a rotazione)"
+   },
+   {
+    "testo": "Area esterna esclusiva (escluse le aree di sosta e manovra), indicata nel contratto"
+   },
+   {
+    "testo": "Area condominiale utilizzabile dall'inquilino, indicata nel contratto"
+   },
+   {
+    "testo": "Cucina di almeno 7 mq con finestra"
+   },
+   {
+    "testo": "Ripostiglio di almeno 1 mq"
+   },
+   {
+    "testo": "Cantina o soffitta"
+   },
+   {
+    "testo": "Nessuna barriera architettonica (o impianti per superarle)"
+   },
+   {
+    "testo": "Ascensore, per abitazioni dal 1° piano in su"
+   },
+   {
+    "testo": "Fabbricato con meno di tre unità per piano, o abitazione singola"
+   },
+   {
+    "testo": "Balcone, terrazza o lastrico solare di uso esclusivo"
+   },
+   {
+    "testo": "Doppi servizi (il secondo bagno almeno con wc, lavabo e doccia o vasca)"
+   },
+   {
+    "testo": "Porta blindata (non basta la sola serratura di sicurezza)"
+   },
+   {
+    "testo": "Doppi vetri, doppie finestre o vetri da almeno 6 mm su almeno l'80% degli infissi"
+   },
+   {
+    "testo": "Persiane o tapparelle alle finestre"
+   },
+   {
+    "testo": "Connessione internet attiva a carico del proprietario"
+   },
+   {
+    "testo": "Videosorveglianza (privata o condominiale)"
+   },
+   {
+    "testo": "Allarme antintrusione nell'appartamento"
+   },
+   {
+    "testo": "Videocitofono (privato o condominiale)"
+   },
+   {
+    "testo": "Impianto fotovoltaico o pannelli solari per l'acqua calda"
+   },
+   {
+    "testo": "Predisposizione per l'allacciamento al gas di città"
+   },
+   {
+    "testo": "Riserva idrica (privata o condominiale)"
+   },
+   {
+    "testo": "Edificio unifamiliare (non in condominio)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale dell'abitazione (dalla visura)",
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa coperta accatastata",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto macchina in autorimessa scoperta di uso comune",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Terrazze non collegate, lastrici solari, cantine e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Cortile o giardino a uso esclusivo dell'inquilino",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale, quota millesimale",
+     "coeff": 0.1
+    }
+   ]
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "superficie fino a 40 mq",
+    "a": 40,
+    "perc": 25,
+    "zone": [
+     "C"
+    ]
+   },
+   {
+    "nome": "superficie da 41 a 60 mq",
+    "da": 40.01,
+    "a": 60,
+    "perc": 15,
+    "zone": [
+     "C"
+    ]
+   },
+   {
+    "nome": "superficie fino a 40 mq",
+    "a": 40,
+    "perc": 20,
+    "escluse": [
+     "C"
+    ]
+   },
+   {
+    "nome": "superficie da 41 a 60 mq",
+    "da": 40.01,
+    "a": 60,
+    "perc": 10,
+    "escluse": [
+     "C"
+    ]
+   },
+   {
+    "nome": "superficie da 140 a 159 mq",
+    "da": 140,
+    "a": 159.99,
+    "perc": -10
+   },
+   {
+    "nome": "superficie da 160 a 179 mq",
+    "da": 160,
+    "a": 179.99,
+    "perc": -15
+   },
+   {
+    "nome": "superficie da 180 mq",
+    "da": 180,
+    "perc": -20
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "nome": "villa o abitazione di pregio",
+    "perc": 15,
+    "escluse": [
+     "S"
+    ],
+    "testo": "Villa o abitazione di pregio: almeno 12 requisiti (10 in zona Centrale), non di lusso (A/1, A/8, A/9)"
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE)",
+    "nome": "classe energetica",
+    "nessuna": "sotto A1 o senza APE",
+    "opzioni": [
+     {
+      "valore": "A4",
+      "testo": "A4",
+      "perc": 13
+     },
+     {
+      "valore": "A3",
+      "testo": "A3",
+      "perc": 12
+     },
+     {
+      "valore": "A2",
+      "testo": "A2",
+      "perc": 10
+     },
+     {
+      "valore": "A1",
+      "testo": "A1",
+      "perc": 8
+     }
+    ]
+   },
+   {
+    "chiave": "deposito",
+    "tipo": "spunta",
+    "testo": "Nessun deposito cauzionale a garanzia",
+    "nome": "senza deposito cauzionale",
+    "perc": 10
+   },
+   {
+    "chiave": "recesso",
+    "tipo": "scelta",
+    "testo": "Recesso dell'inquilino",
+    "nome": "recesso",
+    "nessuna": "preavviso ordinario",
+    "opzioni": [
+     {
+      "valore": "15g",
+      "testo": "con preavviso di soli 15 giorni",
+      "perc": 5
+     },
+     {
+      "valore": "1-3m",
+      "testo": "con preavviso da 1 a 3 mesi",
+      "perc": 3
+     }
+    ]
+   },
+   {
+    "chiave": "spese",
+    "tipo": "spunta",
+    "testo": "Nessuna spesa condominiale",
+    "nome": "senza spese condominiali",
+    "perc": 2
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredo (elenco dell'allegato 6)",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "arredato: tutti gli arredi in grassetto, mancano al massimo 5 in chiaro",
+      "perc": 20
+     },
+     {
+      "valore": "parziale15",
+      "testo": "parzialmente: mancano fino a 3 in grassetto e fino a 3 in chiaro",
+      "perc": 15
+     },
+     {
+      "valore": "parziale10",
+      "testo": "parzialmente: mancano da 4 a 6 in grassetto e fino a 5 in chiaro",
+      "perc": 10
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano fra loro (art. 11). Contratti più lunghi di 3 anni: +5% per 4+2, +7% per 5+2, +12% per 6+2 o più (art. 12). Transitori: +10% (art. 29).",
+  "durata": {
+   "4": 5,
+   "5": 7,
+   "6": 12
+  },
+  "contratto": {
+   "transitorio": 10
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "zone": [
+     "SC",
+     "P",
+     "S"
+    ],
+    "fascia": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     9,
+     10
+    ],
+    "testo": "Il massimo della sottofascia spetta solo con il numero più alto di requisiti previsto per quella sottofascia (C: 5, B: 8, A: 11 o più); con meno requisiti il canone va tenuto sotto il massimo (art. 9)."
+   },
+   {
+    "zone": [
+     "C"
+    ],
+    "fascia": [
+     0,
+     1,
+     2,
+     3,
+     5,
+     7,
+     8
+    ],
+    "testo": "Il massimo della sottofascia spetta solo con il numero più alto di requisiti previsto per quella sottofascia (C: 4, B: 6, A: 9 o più); con meno requisiti il canone va tenuto sotto il massimo (art. 9)."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 4",
+  "titolo": "Attestazione di rispondenza ex D.M. 16 gennaio 2017",
+  "sottotitolo": "Nuovo accordo territoriale per le locazioni abitative agevolate della Città di Nuoro - anno 2026 (sottoscritto il 07/07/2026)",
+  "titolo_elementi": "Elenco requisiti presenti (allegato 3)",
+  "dichiarazione": "Il locatore e il conduttore hanno presentato richiesta per l'attestazione ex D.M. 16.01.2017, dichiarando, sotto la propria responsabilità, i suddetti elementi del contratto di cui al vigente Accordo territoriale per le locazioni abitative agevolate della Città di Nuoro. Firma dei dichiaranti:",
+  "attestazione": [
+   "Le Organizzazioni ………………………………… in persona dei legali rappresentanti, firmatarie dell'Accordo territoriale per il Comune di Nuoro sottoscritto il 07/07/2026, sotto la loro responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTANO che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo Territoriale vigente.",
+   "Nuoro, ……/……/…………"
+  ],
+  "titolo_attestazione": "TUTTO CIÒ PREMESSO",
+  "firme_attestazione": [
+   "l'Organizzazione locatori (timbro e firma)",
+   "l'Organizzazione conduttori (timbro e firma)"
+  ],
+  "nota_zone": "Zone omogenee dell'art. 8: Centrale, Semicentrale, Periferica, Suburbana (Perdas Arbas, Corte, Prato Sardo). Nelle vie di confine vale la zona con i valori più alti."
+ }
+}

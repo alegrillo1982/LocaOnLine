@@ -1,0 +1,307 @@
+{
+ "accordo": {
+  "codice": "biella-2019-12-20",
+  "modello": "biella-2019",
+  "comune": "Biella",
+  "provincia": "BI",
+  "titolo": "Accordo territoriale per il Comune di Biella",
+  "data": "2019-12-20",
+  "data_testo": "20 dicembre 2019",
+  "deposito": "Comune di Biella, protocollo n. 71671 del 20/12/2019",
+  "deposito_data": "20.12.2019",
+  "protocollo": "71671",
+  "ufficio": "Comune di Biella, Protocollo generale",
+  "ufficio_breve": "Comune di Biella",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Biella del 20 dicembre 2019:</strong> durava tre anni dal deposito in Comune, ma resta in vigore fino a un nuovo accordo (punto 1). Il Comune di Biella lo indica ancora come accordo vigente (pagina «Politiche abitative e misure di sostegno», contratto tipo e attestazione aggiornati a ottobre 2026). I valori della tabella non hanno aggiornamenti: il 75% dell'ISTAT si applica solo al canone durante il contratto (punto 9.6), e non con la cedolare secca.",
+  "firmatari_proprieta": [
+   "Confedilizia - Associazione Biellese della Proprietà Edilizia",
+   "A.S.P.P.I. Biella"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A. (Federazione Piemonte Nord Est)",
+   "S.I.C.E.T. Biella",
+   "U.N.I.A.T. UIL Piemonte Nord"
+  ],
+  "nota": "Firmato a Biella il 20/12/2019 e protocollato lo stesso giorno dal Comune di Biella (timbro «Città di Biella 20 dic. 2019, prot. n. 71671», numero scritto a mano, sulla prima pagina). Durata tre anni dal giorno dopo il deposito, poi fino a un nuovo accordo (punto 1). Sostituisce l'accordo del 2014/2015 (DM 2002). Tre zone (punto 9.1 e cartina allegato G): A centro storico, B residenziale, C periferia e frazioni. Valori in euro al mese per mq di superficie convenzionale, per zona e fascia (punto 9.3 e allegato I): fascia 4 «degrado» se manca anche uno dei 3 elementi dell'elenco A; altrimenti fascia 3 bassa fino a 3 elementi dell'elenco B, fascia 2 media da 4 a 6, fascia 1 alta oltre 6 (punto 9.2). Aumenti dall'attestazione bilaterale (allegato F): arredo completo 35%, solo cucina e camera 15% (punto 9.8), durata 4+2 1%, 5+2 2%, 6+2 3%, preavviso di recesso di 3 mesi 2,5%, senza cauzione 2,5%. Transitori sopra i 30 giorni e studenti: stessi valori degli agevolati (punti 10.2 e 11).",
+  "fonte": "Confedilizia, pagina «Confedilizia Biella»: «Accordo territoriale Biella 20.12.2019» (scansione di 42 pagine con gli allegati A-I). Vigenza confermata dalla pagina del Comune di Biella «Politiche abitative e misure di sostegno» (ASLo: «Accordo Territoriale ... siglato nel dicembre 2019»; contratto tipo «come da Accordo Territoriale 20/12/2019», modello di attestazione bilaterale ed elenco delle associazioni firmatarie, file di ottobre 2026)."
+ },
+ "esempio_zona": "la zona dalla cartina dell'allegato G: centro storico (zona A), la fascia residenziale intorno al centro (zona B) o il resto del Comune con frazioni e periferia (zona C)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Zona A - Centro storico",
+    "nota": "Zona A, centro storico: l'area dentro la linea continua della cartina (allegato G), con via Gramsci, via XX Settembre e piazza Martiri della Libertà, fino a via Alfonso La Marmora (è il «centro storico» della delimitazione comunale del 1978).",
+    "fasce": [
+     [
+      1.29,
+      2.79
+     ],
+     [
+      2.32,
+      4.01
+     ],
+     [
+      2.58,
+      4.84
+     ],
+     [
+      3.55,
+      5.95
+     ]
+    ]
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B - Residenziale",
+    "nota": "Zona B, residenziale: l'area dentro la linea tratteggiata della cartina (allegato G) fuori dal centro storico, cioè la «zona compresa fra il centro storico e la zona periferica» della delimitazione comunale del 1978. In caso di dubbio fa fede la cartina.",
+    "fasce": [
+     [
+      1.29,
+      2.79
+     ],
+     [
+      2.32,
+      4.01
+     ],
+     [
+      2.73,
+      5.12
+     ],
+     [
+      3.61,
+      6.51
+     ]
+    ]
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C - Periferia e frazioni",
+    "nota": "Zona C, periferia e frazioni: tutto il resto del territorio comunale, fuori dalla linea tratteggiata della cartina (allegato G): rioni, frazioni, cantoni e zona agricola.",
+    "fasce": [
+     [
+      1.29,
+      2.63
+     ],
+     [
+      2.22,
+      3.63
+     ],
+     [
+      2.32,
+      4.51
+     ],
+     [
+      3.1,
+      5.4
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "4 degrado",
+    "3 bassa",
+    "2 media",
+    "1 alta"
+   ],
+   "criterio": "conta",
+   "conta": {
+    "da": 3,
+    "a": 14
+   },
+   "soglie": [
+    -1,
+    3,
+    6
+   ],
+   "obbligatori": [
+    0,
+    1,
+    2
+   ],
+   "avviso_obbligatori": "Senza anche uno solo dei 3 elementi dell'elenco A (bagno completo interno, riscaldamento, impianto elettrico a norma) l'alloggio è in fascia 4 «degrado», qualunque sia il numero di elementi dell'elenco B (punto 9.2).",
+   "nota_soglie": "fascia 4 «degrado» se manca anche uno dei 3 elementi dell'elenco A",
+   "nota": "Con tutti i 3 elementi dell'elenco A si contano gli elementi dell'elenco B: fino a 3 fascia 3 (bassa), da 4 a 6 fascia 2 (media), oltre 6 fascia 1 (alta). Se manca anche un solo elemento dell'elenco A si applica la fascia 4 (degrado)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elenco A (essenziali): senza anche uno solo di questi l'alloggio è in fascia 4 «degrado»"
+   },
+   {
+    "da": 3,
+    "titolo": "Elenco B: fascia 3 fino a 3 elementi, fascia 2 da 4 a 6, fascia 1 oltre 6"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Servizi igienici completi interni all'alloggio"
+   },
+   {
+    "testo": "Impianto di riscaldamento"
+   },
+   {
+    "testo": "Impianto elettrico a norma di legge"
+   },
+   {
+    "testo": "Cantina, ripostiglio, soffitta o sottotetto accessibile"
+   },
+   {
+    "testo": "Cortile o area verde comune"
+   },
+   {
+    "testo": "Ascensore nell'edificio"
+   },
+   {
+    "testo": "Allacciamento alla rete del gas"
+   },
+   {
+    "testo": "Doppi vetri negli infissi esterni"
+   },
+   {
+    "testo": "Posto auto scoperto"
+   },
+   {
+    "testo": "Autorimessa singola o posto auto coperto"
+   },
+   {
+    "testo": "Autorimessa doppia"
+   },
+   {
+    "testo": "Doppi servizi igienici interni (vale solo se la superficie convenzionale supera i 90 mq)"
+   },
+   {
+    "testo": "Riscaldamento autonomo o contabilizzatori di calore"
+   },
+   {
+    "testo": "Condizionatore o pompa di calore"
+   },
+   {
+    "testo": "APE in classe energetica A, B o C"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale lorda dell'alloggio, senza le aree scoperte (dalla visura catastale)",
+   "coeff_base": 0.85,
+   "correzioni": [
+    {
+     "fino": 60,
+     "perc": 10,
+     "tetto": 60
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e soffitte",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa o posto auto coperto",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto scoperto",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Cortili, giardini e orti in uso esclusivo",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale: la tua quota in mq (mq del verde x millesimi / 1000)",
+     "coeff": 1
+    }
+   ],
+   "nota": "Superficie convenzionale (punto 9.5): superficie catastale lorda dell'alloggio senza le aree scoperte, ridotta del 15%; se il risultato è sotto i 60 mq si aumenta del 10%, fino a 60 mq al massimo. Si aggiungono balconi, terrazze, cantine e soffitte al 25%, autorimessa o posto auto coperto al 50%, posto auto scoperto al 20%, cortili, giardini e orti in uso esclusivo al 15%. L'attestazione (allegato F) aggiunge, a titolo di esempio, la quota millesimale del verde condominiale. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie locata, con le parti condivise contate al 50% (punto 5)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredo (mobili efficienti ed elettrodomestici funzionanti)",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato (fino a +35%)",
+      "perc": 35
+     },
+     {
+      "valore": "parziale",
+      "testo": "arredati solo cucina e camera da letto (fino a +15%)",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "preavviso",
+    "tipo": "spunta",
+    "perc": 2.5,
+    "contratti": [
+     "agevolato"
+    ],
+    "testo": "L'inquilino può recedere con un preavviso di 3 mesi (invece di 6)",
+    "nome": "preavviso di recesso di 3 mesi"
+   },
+   {
+    "chiave": "cauzione",
+    "tipo": "spunta",
+    "perc": 2.5,
+    "testo": "Contratto senza deposito cauzionale",
+    "nome": "senza cauzione"
+   }
+  ],
+  "nota_maggiorazioni": "Aumenti dell'attestazione bilaterale (allegato F): arredo completo fino a +35%, solo cucina e camera fino a +15% (punto 9.8), durata 4+2 +1%, 5+2 +2%, 6+2 +3%, preavviso di 3 mesi +2,5%, senza cauzione +2,5%. Si sommano e si applicano al minimo e al massimo della fascia. Per l'arredo il calcolo usa la percentuale massima.",
+  "durata": {
+   "4": 1,
+   "5": 2,
+   "6": 3
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Transitori: fino a 30 giorni il canone è libero; oltre i 30 giorni si applicano gli stessi valori degli agevolati (punto 10.2).",
+    "contratti": [
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Per le agevolazioni fiscali serve l'attestazione bilaterale: la rilasciano insieme un'associazione dei proprietari e una degli inquilini firmatarie dell'accordo (punto 6, allegato F)."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato F",
+  "titolo": "Attestazione bilaterale di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Biella sottoscritto e depositato il 20/12/2019 (prot. Comune di Biella n. 71671) - calcolo secondo i punti 9.2, 9.3, 9.5 e 9.8 e l'allegato F",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE AI SENSI DELL'ACCORDO TERRITORIALE",
+  "titolo_elementi": "Elementi e parametri oggettivi (elenchi A e B, punto 9.2 e allegato H)",
+  "etichetta_conteggio": "TOTALE ELEMENTI ELENCO B",
+  "dichiarazione": "Il locatore e il conduttore hanno presentato richiesta per l'attestazione ex D.M. 16/01/2017, dichiarando, sotto la loro responsabilità, gli elementi sopra riportati.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "ATTESTANO",
+  "attestazione": [
+   "Tutto ciò premesso, le Organizzazioni …………………………… e ……………………………, come sopra rappresentate, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Biella depositato in data 20/12/2019."
+  ],
+  "firme_attestazione": [
+   "p. l'Organizzazione",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "Zone dalla cartina dell'allegato G (delimitazione comunale del 1978): A centro storico (linea continua), B residenziale (linea tratteggiata intorno al centro), C periferia, frazioni e zona agricola (tutto il resto)."
+ }
+}

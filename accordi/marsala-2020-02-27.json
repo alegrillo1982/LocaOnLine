@@ -1,0 +1,702 @@
+{
+ "accordo": {
+  "codice": "marsala-2020-02-27",
+  "modello": "marsala-2020",
+  "comune": "Marsala",
+  "provincia": "TP",
+  "titolo": "Accordo territoriale per il Comune di Marsala",
+  "data": "2020-02-27",
+  "data_testo": "27 febbraio 2020",
+  "deposito": "Comune di Marsala",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "Comune di Marsala",
+  "ufficio_breve": "Comune di Marsala",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Marsala del 27 febbraio 2020:</strong> durava tre anni dal deposito in Comune, ma resta in vigore finché non ne viene firmato uno nuovo (punto H) e non risultano accordi più recenti. L'allegato 3 (elementi dell'immobile) non è nel PDF pubblicato: qui si usano i 21 elementi del modulo di dichiarazione (allegato 4). <strong>Per la data di deposito e l'attestazione rivolgiti a un'associazione firmataria.</strong>",
+  "firmatari_proprieta": [
+   "A.P.E.T. Confedilizia",
+   "Casa Mia",
+   "U.P.P.I.",
+   "A.S.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T.",
+   "A.N.I.A.",
+   "FEDER.CASA"
+  ],
+  "nota": "Firmato a Marsala il 27/02/2020, nel Palazzo municipale e alla presenza dell'Amministrazione comunale, da A.P.E.T. Confedilizia, Casa Mia, U.P.P.I. Trapani e A.S.P.P.I. Trapani (proprietari) e da SUNIA, SICET, UNIAT, ANIA e Federcasa (inquilini). Sostituisce integralmente gli accordi precedenti. Dura tre anni dal giorno dopo il deposito in Comune e resta in vigore fino alla firma di un nuovo accordo (punto H); non risultano accordi più recenti. Data e protocollo del deposito non sono riportati nel PDF pubblicato. Territorio diviso in 9 microzone (allegato 1, delibera del Consiglio comunale n. 91 del 26/03/1999); valori al mq al mese per microzona, epoca di costruzione o ultima ristrutturazione (fino al 1970, 1971-2000, dal 2001) e sub-fascia secondo il numero dei 21 elementi (fino a 3, da 4 a 7, oltre 7). Fasce aumentate del 25% nel centro storico e per gli immobili riconosciuti di interesse storico, del 20% sotto i 50 mq; arredo completo fino a +20%; durata 4/5/6 anni +3/5/8%; alloggi popolari di categoria A/4 ad Amabilina e Sappusi -8%; alloggio sociale: massimo ridotto del 20%. Transitori (fino a 18 mesi) e studenti universitari (sede distaccata di Agraria, da 6 mesi a 3 anni): stessi valori e criteri. Il canone si aggiorna al 75% dell'ISTAT, salvo cedolare secca.",
+  "fonte": "Scansione firmata dell'accordo (33 pagine: testo, allegati 1, 2, 4, 5, 6, 7 e planimetrie delle microzone) pubblicata da SUNIA nazionale (sunia.it, Accordi territoriali Sicilia, pagina di Trapani, voce «Marsala»). La firma è confermata dai comunicati di UIL Trapani (3 marzo 2020) e di Prima Pagina Marsala. Il sito del Comune di Marsala non pubblica l'accordo."
+ },
+ "esempio_zona": "la microzona (allegato 1: centro storico, centrale, periferia, suburbana, fasce costiere o contrade)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "scelta",
+  "tabella_chiave": "epoca",
+  "tabella_predefinita": "1970",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "1. Centro storico",
+    "nota": "Microzona 1 (centro storico): oltre al centro storico, la parte del centro urbano delimitata da piazza del Popolo, un tratto di via Mazzini, un tratto di via Roma e un tratto di via Mario Nuccio. Foglio di mappa catastale 204. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1970": [
+      [
+       2.31,
+       2.95
+      ],
+      [
+       2.39,
+       3.28
+      ],
+      [
+       2.47,
+       3.65
+      ]
+     ],
+     "2000": [
+      [
+       2.57,
+       3.28
+      ],
+      [
+       2.66,
+       3.65
+      ],
+      [
+       2.75,
+       4.05
+      ]
+     ],
+     "2001": [
+      [
+       2.85,
+       3.65
+      ],
+      [
+       2.95,
+       4.05
+      ],
+      [
+       3.05,
+       4.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "2. Centrale",
+    "nota": "Microzona 2 (centrale): la parte del centro urbano fra via Isolato Egadi, via del Fante, corso Gramsci, via Trapani, via Circonvallazione, via Nino Bixio, piazza Caprera, via Mazara, via Sebastiano Lipari, via Mario Gandolfo, lungomare Mediterraneo e lungomare Boeo. Fogli di mappa catastali 191, 192, 193, 200, 205. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1970": [
+      [
+       2.07,
+       2.82
+      ],
+      [
+       2.15,
+       3.13
+      ],
+      [
+       2.23,
+       3.48
+      ]
+     ],
+     "2000": [
+      [
+       2.3,
+       3.13
+      ],
+      [
+       2.39,
+       3.48
+      ],
+      [
+       2.48,
+       3.87
+      ]
+     ],
+     "2001": [
+      [
+       2.55,
+       3.48
+      ],
+      [
+       2.65,
+       3.87
+      ],
+      [
+       2.75,
+       4.3
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "3. Periferia",
+    "nota": "Microzona 3 (periferia): la parte periferica del centro urbano fra i confini della microzona 2 e contrada Casabianca, viale Regione Siciliana, contrada Amabilina, via Vita, contrada Santa Venera e villaggio Sappusi. Fogli di mappa catastali 169, 170, 171, 194, 195, 201, 206, 207, 223. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1970": [
+      [
+       1.98,
+       2.3
+      ],
+      [
+       2.07,
+       2.55
+      ],
+      [
+       2.15,
+       2.84
+      ]
+     ],
+     "2000": [
+      [
+       2.21,
+       2.55
+      ],
+      [
+       2.3,
+       2.84
+      ],
+      [
+       2.39,
+       3.15
+      ]
+     ],
+     "2001": [
+      [
+       2.45,
+       2.84
+      ],
+      [
+       2.55,
+       3.15
+      ],
+      [
+       2.65,
+       3.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "4. Suburbana (contrade vicine)",
+    "nota": "Microzona 4 (suburbana): dal confine della microzona 3, le contrade Amabilina, San Silvestro, Ciancio, Cozzaro, Casabianca, Madonna Alto Oliva, Birgi Novi, Birgi Vecchi, Porcospino, Cutusio, Catenazzi, Pispisia, San Michele Rifugio, Ranna, Addolorata, Fontana di Leo, Tabaccaro, San Giuseppe Tafalia, Sturiano, Giardinello, Fontanelle, Gurgo, Misilla, Sant'Onofrio, Ponte Fiumarella, Berbarello, Ventrischi, Bambina, Cuore di Gesù, Berbaro e Strasatti. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1970": [
+      [
+       1.86,
+       2.03
+      ],
+      [
+       1.94,
+       2.26
+      ],
+      [
+       2.03,
+       2.51
+      ]
+     ],
+     "2000": [
+      [
+       2.07,
+       2.26
+      ],
+      [
+       2.16,
+       2.51
+      ],
+      [
+       2.25,
+       2.79
+      ]
+     ],
+     "2001": [
+      [
+       2.3,
+       2.51
+      ],
+      [
+       2.4,
+       2.79
+      ],
+      [
+       2.5,
+       3.1
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "5",
+    "nome": "5. Fascia costiera nord",
+    "nota": "Microzona 5 (fascia litoranea nord, zona pregiata balneare stagionale): contrade Birgi Vecchi, Birgi Sottano, San Teodoro, San Leonardo, Ettore Infersa, Spagnola, Giunchi, Dammusello, Santa Venera, Colombaio Lasagna e Amabilina. Fogli di mappa catastali 1, 2, 4, 7, 8, 10, 11, 19, 26, 36, 47, 63, 76, 77, 95, 112, 139, 153, 154, 172, 173, 196. Stessi valori delle microzone 3 e 8. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1970": [
+      [
+       1.98,
+       2.3
+      ],
+      [
+       2.07,
+       2.55
+      ],
+      [
+       2.15,
+       2.84
+      ]
+     ],
+     "2000": [
+      [
+       2.21,
+       2.55
+      ],
+      [
+       2.3,
+       2.84
+      ],
+      [
+       2.39,
+       3.15
+      ]
+     ],
+     "2001": [
+      [
+       2.45,
+       2.84
+      ],
+      [
+       2.55,
+       3.15
+      ],
+      [
+       2.65,
+       3.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "6",
+    "nome": "6. Contrade sud (Sant'Anna, Perriere)",
+    "nota": "Microzona 6 (frazione): contrade Sant'Anna, Santo Padre delle Perriere, Pastorella e Fornara, nell'entroterra sud. Fogli di mappa catastali 309, 312, 314, 315, 316, 317, 318, 319, 337, 338, 339, 340, 341, 342, 343. Stessi valori della microzona 7. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1970": [
+      [
+       1.94,
+       2.03
+      ],
+      [
+       2.03,
+       2.26
+      ],
+      [
+       2.11,
+       2.51
+      ]
+     ],
+     "2000": [
+      [
+       2.16,
+       2.26
+      ],
+      [
+       2.25,
+       2.51
+      ],
+      [
+       2.34,
+       2.79
+      ]
+     ],
+     "2001": [
+      [
+       2.4,
+       2.51
+      ],
+      [
+       2.5,
+       2.79
+      ],
+      [
+       2.6,
+       3.1
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "7",
+    "nome": "7. Contrade nord (Bosco, Ciavolo...)",
+    "nota": "Microzona 7 (frazione): l'entroterra nord oltre la microzona 4, con i terreni agricoli: contrade Cutusio, Bosco, Dara, Conca, Bufalata, Madonna Cava Bufalata, San Filippo e Giacomo, Perino, Casazze, Fontanelle, Gurgo, Paolini, Matarocco, Misilla, Cardilla, Torrelunga Puleo, Canale e Sant'Onofrio. Stessi valori della microzona 6. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1970": [
+      [
+       1.94,
+       2.03
+      ],
+      [
+       2.03,
+       2.26
+      ],
+      [
+       2.11,
+       2.51
+      ]
+     ],
+     "2000": [
+      [
+       2.16,
+       2.26
+      ],
+      [
+       2.25,
+       2.51
+      ],
+      [
+       2.34,
+       2.79
+      ]
+     ],
+     "2001": [
+      [
+       2.4,
+       2.51
+      ],
+      [
+       2.5,
+       2.79
+      ],
+      [
+       2.6,
+       3.1
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "8",
+    "nome": "8. Fascia costiera sud",
+    "nota": "Microzona 8 (fascia litoranea sud, zona pregiata balneare stagionale): lungomare Vincenzo Florio, contrade Casabianca, Berbaro e Fossarunza, e la costa sud fra la ferrovia Marsala-Petrosino e il mare. Fogli di mappa catastali 245, 258, 262, 276, 288, 298, 324, 325. Stessi valori delle microzone 3 e 5. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1970": [
+      [
+       1.98,
+       2.3
+      ],
+      [
+       2.07,
+       2.55
+      ],
+      [
+       2.15,
+       2.84
+      ]
+     ],
+     "2000": [
+      [
+       2.21,
+       2.55
+      ],
+      [
+       2.3,
+       2.84
+      ],
+      [
+       2.39,
+       3.15
+      ]
+     ],
+     "2001": [
+      [
+       2.45,
+       2.84
+      ],
+      [
+       2.55,
+       3.15
+      ],
+      [
+       2.65,
+       3.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "9",
+    "nome": "9. Contrade centrali (Digerbato, Ciavolotto)",
+    "nota": "Microzona 9 (frazione): contrade Digerbato, Ciavolotto, Ciavolo e Scacciaiazzo, nell'entroterra centrale fra i terreni agricoli. Valori in euro al mq al mese (allegato 2): la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione.",
+    "fasce": {
+     "1970": [
+      [
+       1.38,
+       1.64
+      ],
+      [
+       1.46,
+       1.82
+      ],
+      [
+       1.54,
+       2.03
+      ]
+     ],
+     "2000": [
+      [
+       1.53,
+       1.82
+      ],
+      [
+       1.62,
+       2.03
+      ],
+      [
+       1.71,
+       2.25
+      ]
+     ],
+     "2001": [
+      [
+       1.7,
+       2.03
+      ],
+      [
+       1.8,
+       2.25
+      ],
+      [
+       1.9,
+       2.5
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "1",
+    "2",
+    "3"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    3,
+    7
+   ],
+   "nota": "Sub-fascia 1 fino a 3 elementi, sub-fascia 2 da 4 a 7, sub-fascia 3 oltre 7 (allegato 2)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi che caratterizzano l'immobile (allegato 4): segna quelli presenti"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Un'autorimessa singola o un posto auto coperto"
+   },
+   {
+    "testo": "Posto auto scoperto"
+   },
+   {
+    "testo": "Cortile comune"
+   },
+   {
+    "testo": "Area verde di pertinenza"
+   },
+   {
+    "testo": "Impianti sportivi o area giochi"
+   },
+   {
+    "testo": "Cantina, sottotetto o soffitta"
+   },
+   {
+    "testo": "Allacciamento alla rete del gas"
+   },
+   {
+    "testo": "Impianto di condizionamento (aria condizionata)"
+   },
+   {
+    "testo": "Impianto di riscaldamento"
+   },
+   {
+    "testo": "Antenna centralizzata o internet condominiale"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Un altro posto auto o box oltre il primo"
+   },
+   {
+    "testo": "Videosorveglianza o allarme"
+   },
+   {
+    "testo": "Classe energetica D o migliore (A, B, C o D)"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Impianti e strutture per l'accesso dei disabili"
+   },
+   {
+    "testo": "Mobili (alloggio arredato, anche in parte)"
+   },
+   {
+    "testo": "Doppi servizi (due bagni)"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Infissi con doppi vetri"
+   },
+   {
+    "testo": "Scorta d'acqua (serbatoio o autoclave)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile (esclusi i muri perimetrali e quelli interni)",
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Box, autorimessa o posto auto coperto o scoperto",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantine",
+     "testo": "Soffitte, cantine, mansarde, taverne e simili comunicanti con l'alloggio",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantine_nc",
+     "testo": "Soffitte, cantine e simili non comunicanti",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, verande anche coperte e simili",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta esclusiva (10% fino alla superficie dell'alloggio, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    }
+   ],
+   "nota": "Superficie del punto A dell'accordo: l'alloggio al 100% (esclusi i muri); box, autorimessa o posto auto al 50%; soffitte, cantine, mansarde, taverne e soppalchi senza abitabilità al 50% se comunicanti, al 25% se no; balconi, terrazze e verande al 30%; area scoperta esclusiva al 10% fino alla superficie dell'alloggio e al 2% oltre. Si può arrotondare al metro quadro. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie locata, considerando anche le parti condivise, con la planimetria allegata al contratto."
+  },
+  "correttivi_superficie": [
+   {
+    "a": 49.99,
+    "su": "base",
+    "perc": 20,
+    "nome": "alloggio sotto i 50 mq"
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "epoca",
+    "tipo": "scelta",
+    "testo": "Anno di costruzione o dell'ultima ristrutturazione (sceglie la tabella dei valori)",
+    "nome": "costruzione o ristrutturazione",
+    "nessuna": "fino al 1970",
+    "mostra_perc": false,
+    "opzioni": [
+     {
+      "valore": "2000",
+      "testo": "dal 1971 al 2000",
+      "perc": 0
+     },
+     {
+      "valore": "2001",
+      "testo": "dal 2001 in poi",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "storico",
+    "tipo": "spunta",
+    "testo": "Immobile nel centro storico, o riconosciuto di interesse storico anche fuori dal centro storico",
+    "nome": "centro storico o interesse storico",
+    "perc": 25
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "ammobiliato": true,
+    "testo": "Alloggio completamente arredato",
+    "nome": "completamente arredato",
+    "perc": 20
+   },
+   {
+    "chiave": "erp",
+    "tipo": "spunta",
+    "testo": "Alloggio di categoria catastale A/4 nelle aree di edilizia popolare di Amabilina o Sappusi",
+    "nome": "A/4 nelle aree popolari di Amabilina o Sappusi",
+    "perc": -8
+   },
+   {
+    "chiave": "sociale",
+    "tipo": "spunta",
+    "testo": "Alloggio sociale (social housing) con agevolazioni pubbliche al locatore: massimo ridotto",
+    "nome": "alloggio sociale",
+    "perc": -20,
+    "solo_max": true
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano e valgono sul minimo e sul massimo. Centro storico e immobili riconosciuti di interesse storico anche fuori dal centro storico: +25%. Alloggio sotto i 50 mq (solo l'abitazione, senza pertinenze): +20%. Completamente arredato: fino a +20%. Durata 4, 5 o 6 anni (più 2 di proroga): +3%, +5%, +8%. Alloggi di categoria A/4 nelle aree di edilizia popolare di Amabilina e Sappusi: -8%. Transitori e studenti: stessi valori e criteri. Alloggio sociale: massimo ridotto del 20%.",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 8
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Il +25% vale «per la rivalutazione del centro storico, nonché per gli immobili riconosciuti di interesse storico ubicati anche al di fuori del perimetro del centro storico». Qui si applica a tutti gli alloggi del centro storico e agli immobili storici altrove; se l'alloggio è in microzona 1 ma fuori dal centro storico vero e proprio, non va segnato. Nei casi dubbi chiedi all'associazione che attesta il contratto."
+   },
+   {
+    "testo": "Le parti possono scegliere una sub-fascia più bassa della stessa microzona, ma non scendere sotto il minimo della prima fascia (costruzione prima del 1971)."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 4",
+  "titolo": "Dichiarazione del locatore e del conduttore con attestazione - contratti assistiti",
+  "sottotitolo": "Accordo territoriale del Comune di Marsala del 27/02/2020 (D.M. 16/01/2017)",
+  "titolo_superficie": "SUPERFICIE (metri quadrati utili, punto A dell'accordo)",
+  "titolo_elementi": "ELEMENTI CHE CARATTERIZZANO L'IMMOBILE OGGETTO DELLA LOCAZIONE",
+  "etichetta_conteggio": "TOTALE ELEMENTI",
+  "dichiarazione": "Il locatore e il conduttore dichiarano i dati sopra riportati, consapevoli delle sanzioni per le dichiarazioni mendaci (art. 46 D.P.R. n. 445/2000).",
+  "firme": [
+   "Il Locatore",
+   "Il Conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI CONFORMITÀ",
+  "attestazione": [
+   "La sottoscritta Organizzazione sindacale ……………………………, firmataria dell'Accordo territoriale del Comune di Marsala depositato in data ……………………, accertati i dati riferiti dalla sopraindicata dichiarazione,",
+   "ATTESTA la conformità del canone concordato e del contratto al vigente Accordo territoriale del Comune di Marsala."
+  ],
+  "firme_attestazione": [
+   "Data ……………………",
+   "Per l'Organizzazione Sindacale"
+  ],
+  "nota_zone": "Marsala è divisa in 9 microzone (allegato 1, con planimetria): 1 centro storico, 2 centrale, 3 periferia, 4 suburbana, 5 e 8 fasce costiere nord e sud (zone pregiate balneari), 6, 7 e 9 contrade dell'entroterra. Nei casi dubbi chiedi all'associazione che attesta il contratto."
+ }
+}

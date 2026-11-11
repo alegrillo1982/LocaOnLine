@@ -103,12 +103,15 @@
     // elementi o parametri, su due colonne (es. Varese: nessun elemento, la sezione non si stampa)
     if (R.elementi.length) {
     sezione((P.titolo_elementi || (R.fasce.criterio === "punti" ? "PARAMETRI E PUNTEGGI" : "ELEMENTI PRESENTI")).toUpperCase());
-    const E = R.elementi, el = (s.elementi || []).map((x, k) => (CG.escluso(E[k], s.zona, s.tipo) ? false : x)), met = Math.ceil(E.length / 2), w = (DX - SX) / 2 - 12;
+    const E = R.elementi, el = (s.elementi || []).map((x, k) => (CG.escluso(E[k], s.zona, s.tipo) ? false : x)), w = (DX - SX) / 2 - 12;
+    // es. Vercelli: gli elementi validi solo per altri contratti non si stampano (numerazione continua)
+    const vis = E.map((e, i) => i).filter((i) => !(E[i].contratti && !E[i].contratti.includes(s.tipo || "agevolato")));
+    const num = (i) => vis.indexOf(i) + 1, met = Math.ceil(vis.length / 2);
     const livello = (i) => { const e = E[i], val = el[i]; return e.livelli && val !== "" && val !== undefined && val !== null && val !== false ? e.livelli[Number(val)] : null; };
     const puntiEl = (i) => (E[i].mostra_punti === false ? "" : E[i].livelli ? (livello(i) ? livello(i).punti : "") : E[i].punti);
-    const righeCol = (i) => aCapo(`${i + 1}) ${E[i].testo}${livello(i) ? `: ${livello(i).testo}` : ""}`, reg, 8, w - 26 - ((E[i].punti || E[i].livelli) && E[i].mostra_punti !== false ? 16 : 0));
+    const righeCol = (i) => aCapo(`${num(i)}) ${E[i].testo}${livello(i) ? `: ${livello(i).testo}` : ""}`, reg, 8, w - 26 - ((E[i].punti || E[i].livelli) && E[i].mostra_punti !== false ? 16 : 0));
     for (let k = 0; k < met; k++) {
-      const coppia = [k, k + met].filter((i) => i < E.length), alto = Math.max(...coppia.map((i) => righeCol(i).length)) * 9.6 + 2.5;
+      const coppia = [k, k + met].filter((j) => j < vis.length).map((j) => vis[j]), alto = Math.max(...coppia.map((i) => righeCol(i).length)) * 9.6 + 2.5;
       spazio(alto);
       coppia.forEach((i, c) => {
         const x0 = SX + c * ((DX - SX) / 2 + 6), si = E[i].livelli ? !!livello(i) : !!el[i];
@@ -133,9 +136,11 @@
 
     // maggiorazioni e calcolo
     sezione("MAGGIORAZIONI E RIDUZIONI");
-    if (!r.maggiorazioni.length && !(r.importi || []).length) { spazio(12); tx("nessuna", SX, a, { c: DATO }); a += 12; }
+    if (!r.maggiorazioni.length && !(r.importi || []).length && !(r.importi_mq || []).length) { spazio(12); tx("nessuna", SX, a, { c: DATO }); a += 12; }
     for (const im of r.importi || []) { spazio(12); tx(`${im.nome} (quota fissa mensile)`, SX, a, { sz: 8.8, c: DATO }); dx(`+ € ${v(im.importo)}`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
     for (const m of r.maggiorazioni) { spazio(12); tx(m.nome, SX, a, { sz: 8.8, c: DATO }); dx(`${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
+    // es. Enna: importi fissi al mq
+    for (const m of r.importi_mq || []) { spazio(12); tx(m.nome, SX, a, { sz: 8.8, c: DATO }); dx(`+ € ${v(m.importo)} al mq${R.unita_importi_mq === "anno" ? "/anno" : ""}`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
     if (r.maggiorazioni.length > 1) { spazio(12); tx(R.tetto_zona ? P.etichetta_totale_tetto || "totale (fino al massimo della zona; durata e transitorio anche oltre)" : r.maggiorazioni.some((m) => m.dopo) || R.combinazione === "prodotto" ? "totale (in parte applicate una sull'altra)" : "totale (sommate)", SX, a, { sz: 8.8 }); dx(`${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%`, DX, a, { sz: 8.8, c: DATO }); a += 11.5; }
 
     sezione("CALCOLO DEL CANONE");

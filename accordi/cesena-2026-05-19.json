@@ -1,0 +1,596 @@
+{
+ "accordo": {
+  "codice": "cesena-2026-05-19",
+  "modello": "cesena-2026",
+  "comune": "Cesena",
+  "provincia": "FC",
+  "titolo": "Accordo territoriale per il Comune di Cesena (integrazione 2026)",
+  "data": "2026-05-19",
+  "data_testo": "19 maggio 2026",
+  "deposito": "Comune di Cesena, PGN 73221 del 20/05/2026",
+  "deposito_data": "20.05.2026",
+  "protocollo": "PGN 73221",
+  "ufficio": "Comune di Cesena, Protocollo generale",
+  "ufficio_breve": "Comune di Cesena",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Cesena: valori dell'integrazione del 19 maggio 2026 all'accordo del 19 dicembre 2018, per i contratti che decorrono dal 1° giugno 2026.</strong> Restano validi finché resta in vigore l'accordo del 2018 e fino a una nuova revisione; non si aggiornano con l'ISTAT.",
+  "firmatari_proprieta": [
+   "A.P.E. - Confedilizia di Forlì-Cesena",
+   "A.S.P.P.I. di Cesena"
+  ],
+  "firmatari_conduttori": [
+   "S.I.C.E.T. Romagna",
+   "S.U.N.I.A. di Forlì-Cesena",
+   "U.N.I.A.T. Emilia-Romagna, sportello di Cesena"
+  ],
+  "nota": "Integrazione 2026 dell'accordo territoriale del 19/12/2018 (PGN 141181/2018): firmata il 19/05/2026 da A.P.E.-Confedilizia di Forlì-Cesena, A.S.P.P.I. di Cesena, S.I.C.E.T. Romagna, S.U.N.I.A. di Forlì-Cesena e U.N.I.A.T. Emilia-Romagna sportello di Cesena, protocollata dal Comune con PGN 73221 del 20/05/2026 (i moduli dicono «integrazione depositata il 19/05/2026»); l'attestazione (allegato 6) vale per i contratti «con decorrenza dal 1° giugno 2026». Riscrive il testo del 2018 con valori nuovi e alcune regole cambiate: superficie dalla visura catastale («totale escluse aree scoperte») meno il 10%, balconi al 15% senza più la soglia dei 5 mq, area verde esclusiva al 15%, sottotetto al posto della mansarda, arredo minimo +10% (era +5%), durata 4 anni +3%, 5 anni +5%, 6 anni +8%, oltre +10% (erano +2% per anno), APE in classe A+ 3 punti, domotica 2 punti, foglio 129 passato dalla zona D alla C e zone A e B ridisegnate. Quattro zone (fogli di mappa catastale, allegato 1), quattro righe secondo la superficie utile (fino a 50, 51-80, 81-100, oltre 100 mq) e tre fasce secondo i punti dell'allegato 3 (minima fino a 7, media da 8 a 13, massima da 14); valori in euro al mq al mese (allegato 2), NON aggiornabili, nemmeno con l'ISTAT. Resta in vigore finché resta in vigore l'accordo del 2018, e comunque fino a una revisione ufficiale delle organizzazioni. Nota: per i pannelli solari/fotovoltaico l'allegato 3 dà 1 punto, mentre il modulo dell'allegato 4 ne indica 2; qui si usa 1 punto (allegato 3, al quale rimanda il testo dell'accordo).",
+  "fonte": "Comune di Cesena, pagina «Accordo territoriale fra proprietari e inquilini» (Amministrazione > Documenti e dati > Accordo tra enti): «Integrazione del 19-05-2026» (testo firmato, 15 pagine in scansione con gli allegati 1-6), allegati 1-6 dell'integrazione 2026 in PDF separati e «Accordo 2018 con allegati»."
+ },
+ "esempio_zona": "la zona dal foglio di mappa catastale (visura)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Zona A - Centro storico e di pregio",
+    "nota": "Zona A - Centro storico e di pregio: fogli di mappa catastale 109-111, 123-127, 148, 149 (il foglio è nella visura). Indicativamente: Centro Storico, Madonna del Monte, Madonna delle Rose, Fiorenzuola, Ippodromo, Fiorita, Oltre Savio, Ponte Abbadesse. La riga della tabella dipende dalla superficie utile: fino a 50 mq, da 51 a 80, da 81 a 100, da 101 in poi (con la tolleranza del 10% il massimo può arrivare a quello della riga inferiore fino a 55, 88 e 110 mq). Valori in euro al mq al mese.",
+    "fasce": {
+     "50": [
+      [
+       5.4,
+       6.9
+      ],
+      [
+       6.4,
+       8.7
+      ],
+      [
+       7.5,
+       9.9
+      ]
+     ],
+     "80": [
+      [
+       5.0,
+       6.3
+      ],
+      [
+       5.8,
+       7.5
+      ],
+      [
+       6.9,
+       8.3
+      ]
+     ],
+     "100": [
+      [
+       3.9,
+       5.3
+      ],
+      [
+       5.1,
+       6.7
+      ],
+      [
+       6.0,
+       7.6
+      ]
+     ],
+     "oltre": [
+      [
+       3.5,
+       5.0
+      ],
+      [
+       4.4,
+       6.1
+      ],
+      [
+       5.1,
+       7.2
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B - Area urbana",
+    "nota": "Zona B - Area urbana (nella tabella dei valori: «Centro storico e residenziale ordinario»): fogli di mappa catastale 78, 81-83, 97, 98, 107, 108, 114, 122, 128, 130, 131, 145-147, 150, 166 (il foglio è nella visura). Indicativamente: Martorano, Sant'Egidio, San Mauro, Case Finali, Ponte Nuovo, ex Zuccherificio, Stazione, Vigne, Ponte Pietra, Case Frini. La riga della tabella dipende dalla superficie utile: fino a 50 mq, da 51 a 80, da 81 a 100, da 101 in poi (con la tolleranza del 10% il massimo può arrivare a quello della riga inferiore fino a 55, 88 e 110 mq). Valori in euro al mq al mese.",
+    "fasce": {
+     "50": [
+      [
+       5.2,
+       6.8
+      ],
+      [
+       6.1,
+       7.8
+      ],
+      [
+       7.2,
+       9.1
+      ]
+     ],
+     "80": [
+      [
+       4.4,
+       6.0
+      ],
+      [
+       5.2,
+       7.1
+      ],
+      [
+       6.4,
+       8.0
+      ]
+     ],
+     "100": [
+      [
+       3.7,
+       5.1
+      ],
+      [
+       4.8,
+       6.3
+      ],
+      [
+       5.9,
+       7.2
+      ]
+     ],
+     "oltre": [
+      [
+       3.4,
+       4.7
+      ],
+      [
+       4.1,
+       5.6
+      ],
+      [
+       5.0,
+       7.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C - Area periferica con servizi",
+    "nota": "Zona C - Area periferica con servizi: fogli di mappa catastale 4, 5, 11-14, 24, 26, 27, 30, 31, 34, 36, 40-44, 48, 49, 62, 66-68, 73, 76, 79, 84-86, 93, 101, 102, 105, 106, 115, 116, 129, 151, 161, 174, 176, 185, 198, 200, 215, 249, 250, 258, 281 e, dell'ex catasto di Roversano, i fogli 2, 6, 7, 10 (il foglio è nella visura). Indicativamente: Pievesestina, Sant'Andrea in Bagnolo, San Cristoforo, Ronta, Martorano, San Giorgio, Pioppa, Calabrina, Villa Calabra, Macerone, Villa Casone, Ruffio, Case Missiroli, Case Castagnoli, Calisese, San Carlo, San Vittore, Borello, Torre del Moro, Diegaro, Roversano. La riga della tabella dipende dalla superficie utile: fino a 50 mq, da 51 a 80, da 81 a 100, da 101 in poi (con la tolleranza del 10% il massimo può arrivare a quello della riga inferiore fino a 55, 88 e 110 mq). Valori in euro al mq al mese.",
+    "fasce": {
+     "50": [
+      [
+       4.4,
+       5.9
+      ],
+      [
+       5.2,
+       6.7
+      ],
+      [
+       6.5,
+       8.2
+      ]
+     ],
+     "80": [
+      [
+       4.1,
+       5.3
+      ],
+      [
+       4.8,
+       6.2
+      ],
+      [
+       5.3,
+       7.2
+      ]
+     ],
+     "100": [
+      [
+       3.5,
+       5.2
+      ],
+      [
+       4.5,
+       6.0
+      ],
+      [
+       4.8,
+       6.5
+      ]
+     ],
+     "oltre": [
+      [
+       3.3,
+       4.5
+      ],
+      [
+       4.0,
+       5.6
+      ],
+      [
+       4.6,
+       6.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D",
+    "nome": "Zona D - Forese (area agricola e collinare)",
+    "nota": "Zona D - Forese, area agricola e collinare: tutti gli altri fogli di mappa catastale, cioè 1-3, 6-10, 15-23, 25, 28, 29, 32, 33, 35, 37-39, 45-47, 50-61, 63-65, 69-72, 74, 75, 77, 80, 87-92, 94-96, 99, 100, 103, 104, 112, 113, 117-121, 132-144, 152-160, 162-165, 167-173, 175, 177-184, 186-197, 199, 201-214, 216-248, 251-257, 259-280 e, dell'ex catasto di Roversano, i fogli 1, 3-5, 8, 9, 11-15 (il foglio è nella visura). La riga della tabella dipende dalla superficie utile: fino a 50 mq, da 51 a 80, da 81 a 100, da 101 in poi (con la tolleranza del 10% il massimo può arrivare a quello della riga inferiore fino a 55, 88 e 110 mq). Valori in euro al mq al mese.",
+    "fasce": {
+     "50": [
+      [
+       4.0,
+       5.2
+      ],
+      [
+       4.7,
+       6.0
+      ],
+      [
+       5.8,
+       7.1
+      ]
+     ],
+     "80": [
+      [
+       3.8,
+       5.1
+      ],
+      [
+       4.6,
+       5.8
+      ],
+      [
+       5.1,
+       6.9
+      ]
+     ],
+     "100": [
+      [
+       3.4,
+       4.6
+      ],
+      [
+       4.4,
+       5.5
+      ],
+      [
+       4.8,
+       6.5
+      ]
+     ],
+     "oltre": [
+      [
+       3.0,
+       4.3
+      ],
+      [
+       3.8,
+       5.2
+      ],
+      [
+       4.1,
+       6.3
+      ]
+     ]
+    }
+   }
+  ],
+  "tabella_per": "superficie",
+  "tabella_soglie": [
+   [
+    50,
+    "50"
+   ],
+   [
+    80,
+    "80"
+   ],
+   [
+    100,
+    "100"
+   ]
+  ],
+  "tabella_oltre": "oltre",
+  "fasce": {
+   "nomi": [
+    "minima",
+    "media",
+    "massima"
+   ],
+   "criterio": "punti",
+   "soglie": [
+    7,
+    13
+   ],
+   "almeno": {
+    "da": 7,
+    "a": 7,
+    "n": 1,
+    "avviso": "senza impianto di riscaldamento si resta comunque nella fascia minima: se c'è, indica di che tipo è"
+   }
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Dotazioni dell'alloggio e dell'edificio"
+   },
+   {
+    "da": 20,
+    "titolo": "Pertinenze"
+   },
+   {
+    "da": 25,
+    "titolo": "Penalizzazione"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Ascensore e/o alloggio senza barriere architettoniche",
+    "punti": 1
+   },
+   {
+    "testo": "Area verde e/o cortile a uso esclusivo",
+    "punti": 1
+   },
+   {
+    "testo": "Terrazza, balcone, loggia o portico",
+    "punti": 1
+   },
+   {
+    "testo": "Veranda",
+    "punti": 1
+   },
+   {
+    "testo": "Doppi vetri in tutte le finestre (non la doppia finestra)",
+    "punti": 1
+   },
+   {
+    "testo": "Doppi servizi (due bagni)",
+    "punti": 2
+   },
+   {
+    "testo": "Edificio con non più di 8 abitazioni",
+    "punti": 1
+   },
+   {
+    "testo": "Riscaldamento (senza impianto: fascia minima)",
+    "livelli": [
+     {
+      "testo": "centralizzato senza contabilizzazione, o altro impianto",
+      "punti": 0
+     },
+     {
+      "testo": "centralizzato con contabilizzazione del calore",
+      "punti": 1
+     },
+     {
+      "testo": "autonomo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Condizionatore o climatizzazione",
+    "livelli": [
+     {
+      "testo": "solo in una parte dell'alloggio",
+      "punti": 1
+     },
+     {
+      "testo": "fisso, in tutto l'alloggio",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Pannelli solari o fotovoltaico",
+    "punti": 1
+   },
+   {
+    "testo": "Wi-Fi attivo",
+    "punti": 1
+   },
+   {
+    "testo": "Impianto TV satellitare",
+    "punti": 1
+   },
+   {
+    "testo": "Certificazione antisismica",
+    "livelli": [
+     {
+      "testo": "dopo una ristrutturazione",
+      "punti": 2
+     },
+     {
+      "testo": "edificio costruito antisismico",
+      "punti": 3
+     }
+    ]
+   },
+   {
+    "testo": "Inferriate o infissi di sicurezza equivalenti",
+    "punti": 1
+   },
+   {
+    "testo": "Videocitofono, videosorveglianza o allarme",
+    "punti": 1
+   },
+   {
+    "testo": "Porta blindata",
+    "punti": 2
+   },
+   {
+    "testo": "Prelazione sul nuovo affitto scritta nel contratto",
+    "punti": 1
+   },
+   {
+    "testo": "Attestato energetico (APE)",
+    "livelli": [
+     {
+      "testo": "classe C, D o E",
+      "punti": 1
+     },
+     {
+      "testo": "classe A o B",
+      "punti": 2
+     },
+     {
+      "testo": "classe A+",
+      "punti": 3
+     }
+    ]
+   },
+   {
+    "testo": "Domotica (impianti comandati a distanza)",
+    "punti": 2
+   },
+   {
+    "testo": "Parquet di legno, anche solo in parte",
+    "punti": 1
+   },
+   {
+    "testo": "Cantina di oltre 8 mq e/o posto auto coperto",
+    "punti": 1
+   },
+   {
+    "testo": "Sottotetto a uso servizio",
+    "punti": 1
+   },
+   {
+    "testo": "Posto auto utilizzabile",
+    "punti": 1
+   },
+   {
+    "testo": "Posto auto scoperto riservato (C/6 di 1ª classe)",
+    "punti": 1
+   },
+   {
+    "testo": "Garage",
+    "punti": 2
+   },
+   {
+    "testo": "Oltre il 3° piano fuori terra, senza ascensore",
+    "punti": -2
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile (catastale meno il 10%, o interna netta)",
+   "voci": [
+    {
+     "chiave": "balconi",
+     "testo": "Terrazza, balcone, portico, loggia (15%)",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "veranda",
+     "testo": "Veranda (30%)",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "verde",
+     "testo": "Area verde a uso esclusivo (15%)",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "sottotetto",
+     "testo": "Sottotetto a uso servizio (30%)",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "garage",
+     "testo": "Garage, autorimessa singola (50%)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantina",
+     "testo": "Posto auto riservato e cantina (20%)",
+     "coeff": 0.2
+    }
+   ],
+   "nota": "L'accordo usa la superficie della visura catastale («totale escluse aree scoperte») ridotta del 10%; il modulo (allegato 4) la chiama superficie interna, senza i muri perimetrali, che è anche quella da usare per l'affitto di una parte dell'alloggio. Le pertinenze affittate con l'alloggio contano in percentuale, con la superficie della visura (C/6, C/2) o delle planimetrie: terrazzi, balconi, portici, logge e area verde esclusiva 15%, veranda e sottotetto 30%, garage 50%, posto auto e cantina 20%. Non inserire di nuovo ciò che è già compreso nella superficie dell'alloggio. La riga della tabella si sceglie con la superficie utile; se la supera di non più del 10% (per esempio 54 mq contro 50) il massimo può arrivare a quello della riga inferiore, mentre il minimo resta quello della riga normale."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento (allegato 5)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "minimo",
+      "testo": "arredo minimo: blocco cucina",
+      "perc": 10
+     },
+     {
+      "valore": "completo",
+      "testo": "arredo completo, zona giorno e notte",
+      "perc": 15
+     },
+     {
+      "valore": "pregio",
+      "testo": "arredo nuovo o di pregio su misura, elettrodomestici di qualità",
+      "perc": 20
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Le maggiorazioni sono il massimo consentito («fino a») e si sommano sul canone di tabella, come nell'allegato 4: arredo minimo +10%, completo +15%, nuovo o di pregio +20%; durata 4 anni +3%, 5 anni +5%, 6 anni +8%, oltre 6 anni +10%; contratti transitori (fino a 18 mesi) e per studenti +10%. Per una parte dell'alloggio si conta la superficie usata in esclusiva più la quota delle parti in comune.",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 8,
+   "7": 10
+  },
+  "contratto": {
+   "transitorio": 10,
+   "studenti": 10
+  },
+  "combinazione": "somma",
+  "avvisi": [],
+  "riga_inferiore_facoltativa": {
+   "perc": 10
+  },
+  "durate": [
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "durata_max": 7
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 4 (Cesena)",
+  "titolo": "Determinazione dei limiti abitativi ed elementi utili per individuare il canone di locazione abitativo agevolato e transitorio",
+  "sottotitolo": "Legge 431/1998, art. 2, c. 3, legge 2/2002, D.M. 30/12/02 e D.M. 16/01/2017 ed Accordo territoriale del 19-12-2018 e aggiornato con integrazione depositata il 19/05/2026",
+  "titolo_superficie": "DATI E MISURE",
+  "titolo_elementi": "Determinazione della fascia (All. 3 dell'Accordo territoriale del Comune di Cesena)",
+  "etichetta_conteggio": "TOTALE DEI PUNTI",
+  "dichiarazione": "Le parti dichiarano: a) di aver preso visione, per quanto interessa, del testo integrale dell'Accordo territoriale; b) che gli elementi sopra riportati sono stati forniti e corrispondono a verità; c) che concordano nell'individuazione del canone all'interno delle fasce di oscillazione desunte dalla compilazione delle precedenti tabelle. Il presente all. «4» sottoscritto dal locatore e conduttore, «obbligatorio» unitamente al Contratto d'affitto regolarmente registrato, necessario per ottenere «l'Attestazione ed Asseverazione del Canone di locazione» per i contratti non assistiti, ed utile alla parte locatrice per ottenere la riduzione IMU dal Comune di Cesena.",
+  "firme": [
+   "la parte locatrice",
+   "la parte conduttrice"
+  ],
+  "titolo_attestazione": "ALLEGATO 6 - ATTESTAZIONE DI RISPONDENZA EX D.M. 16/01/2017",
+  "attestazione": [
+   "La scrivente Organizzazione …………………………… firmataria dell'Accordo territoriale per il Comune di Cesena, depositato il 19/12/2018 e aggiornato con integrazione depositata il 19/05/2026, sulla base di quanto dichiarato nell'«Allegato 4», anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Cesena, con decorrenza dal 1° giugno 2026."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dal foglio di mappa catastale dell'immobile (lo trovi nella visura): l'allegato 1 dell'accordo elenca i fogli delle zone A (centro storico e di pregio), B (area urbana), C (area periferica con servizi) e D (forese, area agricola e collinare), compresi quelli dell'ex catasto di Roversano."
+ }
+}

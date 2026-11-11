@@ -1,0 +1,619 @@
+{
+ "accordo": {
+  "codice": "verbania-2023-03-29",
+  "modello": "verbania-2023",
+  "comune": "Verbania",
+  "provincia": "VB",
+  "titolo": "Accordo territoriale per il territorio del Comune di Verbania",
+  "data": "2023-03-29",
+  "data_testo": "29 marzo 2023",
+  "deposito": "Comune di Verbania, protocollo generale del 29/03/2023 (timbro di arrivo sulla prima pagina)",
+  "deposito_data": "29.03.2023",
+  "protocollo": "",
+  "ufficio": "Comune di Verbania, Protocollo generale",
+  "ufficio_breve": "Comune di Verbania",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Verbania del 29 marzo 2023: durava tre anni, quindi fino a marzo 2026.</strong> Il Comune lo pubblica ancora come accordo in vigore e non risulta firmato un accordo nuovo. Le fasce non hanno aggiornamenti ISTAT (si aggiorna solo il canone, ogni anno, al massimo del 75% ISTAT): prima di firmare chiedi a un'associazione firmataria se nel frattempo è stato sottoscritto un accordo nuovo.",
+  "firmatari_proprieta": [
+   "A.P.E. - Confedilizia Verbania",
+   "U.P.P.I. V.C.O.",
+   "A.P.P.C. - Associazione Piccoli Proprietari Case Verbania"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A. Piemonte Nord Est",
+   "S.I.C.E.T. Piemonte Orientale",
+   "U.N.I.A.T. Piemonte Nord"
+  ],
+  "nota": "Firmato a Verbania il 29/03/2023 e protocollato lo stesso giorno dal Comune di Verbania (timbro di arrivo sulla prima pagina; il numero di protocollo nella scansione non si legge con certezza). Per i soli contratti per studenti intervengono anche l'Università del Piemonte Orientale e l'EDISU Piemonte. Durata di tre anni, poi trattative per un accordo nuovo (art. 4, lettera A). Valori in euro all'anno per mq utile, per area (1-3), subfascia (I-IV, dal punteggio dell'allegato D) e durata (allegati E 3+2, F 4+2, G 5+2, H 6+2); transitori e studenti usano i valori del 3+2. Il canone si aggiorna ogni anno al massimo del 75% ISTAT FOI.",
+  "fonte": "Comune di Verbania, pagina «Accordo Territoriale 2023» (Amministrazione > Documenti e dati > Accordi tra enti, pubblicata il 31/03/2023, aggiornata il 18/09/2024): accordo firmato e protocollato (8 pagine, scansione) e allegati A, B, C, D, D bis, E, F, G, H, I, L, M, N, O. Firma confermata da VerbaniaNotizie (31/03/2023) e dalla delibera del CdA dell'Università del Piemonte Orientale del 21/04/2023."
+ },
+ "esempio_zona": "l'area dai confini dell'allegato B (area 1 lungo il lago, da Intra a Pallanza e Suna; area 3 Piano Grande di Fondotoce e Cavandone; area 2 il resto del Comune)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Area 1 - Fascia a lago (Intra, Pallanza, Suna)",
+    "nota": "Area 1: la parte a lago racchiusa da Lago Maggiore, via Mapelli fino al cimitero di Biganzolo, via Selasca, via Brigata Cesare Battisti, via al Torrente San Giovanni, via Muller fino a via San Giovanni Bosco, via San Giovanni Bosco, corso Cairoli fino a via Farinelli, via Farinelli, via Brigata Valgrande Martire, terzo ponte sul San Bernardino (Caduti di Nassiriya), via Guido Rossa, viale Sant'Anna fino a via Nazioni Unite, via Nazioni Unite fino a via Troubetzkoy. Le strade di confine contano per intero nell'area con i valori più alti.",
+    "fasce": {
+     "3": [
+      [
+       69,
+       83
+      ],
+      [
+       78,
+       94
+      ],
+      [
+       88,
+       107
+      ],
+      [
+       98,
+       121
+      ]
+     ],
+     "4": [
+      [
+       72,
+       88
+      ],
+      [
+       82,
+       99
+      ],
+      [
+       92,
+       112
+      ],
+      [
+       103,
+       127
+      ]
+     ],
+     "5": [
+      [
+       76,
+       92
+      ],
+      [
+       87,
+       104
+      ],
+      [
+       96,
+       117
+      ],
+      [
+       108,
+       133
+      ]
+     ],
+     "6": [
+      [
+       80,
+       96
+      ],
+      [
+       91,
+       109
+      ],
+      [
+       101,
+       124
+      ],
+      [
+       113,
+       139
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2 - Resto del territorio comunale",
+    "nota": "Area 2: tutto il territorio del Comune di Verbania fuori dalle aree 1 e 3.",
+    "fasce": {
+     "3": [
+      [
+       57,
+       69
+      ],
+      [
+       62,
+       78
+      ],
+      [
+       68,
+       88
+      ],
+      [
+       76,
+       98
+      ]
+     ],
+     "4": [
+      [
+       60,
+       72
+      ],
+      [
+       65,
+       82
+      ],
+      [
+       71,
+       92
+      ],
+      [
+       80,
+       103
+      ]
+     ],
+     "5": [
+      [
+       63,
+       76
+      ],
+      [
+       68,
+       87
+      ],
+      [
+       74,
+       96
+      ],
+      [
+       84,
+       108
+      ]
+     ],
+     "6": [
+      [
+       66,
+       80
+      ],
+      [
+       71,
+       91
+      ],
+      [
+       78,
+       101
+      ],
+      [
+       89,
+       113
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3 - Piano Grande di Fondotoce e Cavandone",
+    "nota": "Area 3: il Piano Grande di Fondotoce e la frazione di Cavandone.",
+    "fasce": {
+     "3": [
+      [
+       31,
+       57
+      ],
+      [
+       46,
+       62
+      ],
+      [
+       49,
+       68
+      ],
+      [
+       57,
+       76
+      ]
+     ],
+     "4": [
+      [
+       33,
+       60
+      ],
+      [
+       48,
+       65
+      ],
+      [
+       52,
+       71
+      ],
+      [
+       60,
+       80
+      ]
+     ],
+     "5": [
+      [
+       35,
+       63
+      ],
+      [
+       51,
+       68
+      ],
+      [
+       55,
+       74
+      ],
+      [
+       63,
+       84
+      ]
+     ],
+     "6": [
+      [
+       37,
+       66
+      ],
+      [
+       53,
+       71
+      ],
+      [
+       58,
+       78
+      ],
+      [
+       66,
+       89
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "IV",
+    "III",
+    "II",
+    "I"
+   ],
+   "criterio": "punti",
+   "soglie": [
+    6,
+    12,
+    18
+   ]
+  },
+  "elementi": [
+   {
+    "testo": "Posto auto assegnato o autorimessa comune",
+    "punti": 1
+   },
+   {
+    "testo": "Ascensore",
+    "punti": 1
+   },
+   {
+    "testo": "Età dell'edificio (o dalla fine di lavori importanti certificati dal Comune)",
+    "livelli": [
+     {
+      "testo": "oltre 40 anni",
+      "punti": 0
+     },
+     {
+      "testo": "da 21 a 40 anni",
+      "punti": 1
+     },
+     {
+      "testo": "da 10 a 20 anni",
+      "punti": 2
+     },
+     {
+      "testo": "fino a 10 anni",
+      "punti": 3
+     },
+     {
+      "testo": "nuovo, mai abitato",
+      "punti": 4
+     }
+    ]
+   },
+   {
+    "testo": "Piano",
+    "livelli": [
+     {
+      "testo": "piano terreno o rialzato",
+      "punti": 0
+     },
+     {
+      "testo": "piano intermedio",
+      "punti": 1
+     },
+     {
+      "testo": "ultimo piano",
+      "punti": 2
+     },
+     {
+      "testo": "attico",
+      "punti": 3
+     }
+    ]
+   },
+   {
+    "testo": "Affaccio fronte lago",
+    "punti": 3
+   },
+   {
+    "testo": "Cantina",
+    "punti": 2
+   },
+   {
+    "testo": "Soffitta",
+    "punti": 2
+   },
+   {
+    "testo": "Balconi o terrazzi",
+    "livelli": [
+     {
+      "testo": "nessuno",
+      "punti": 0
+     },
+     {
+      "testo": "balconi",
+      "punti": 1
+     },
+     {
+      "testo": "balconi e terrazzi oltre 20 mq",
+      "punti": 3
+     }
+    ]
+   },
+   {
+    "testo": "Doppi servizi (due bagni)",
+    "punti": 2
+   },
+   {
+    "testo": "Porta blindata",
+    "punti": 1
+   },
+   {
+    "testo": "Doppi vetri",
+    "punti": 1
+   },
+   {
+    "testo": "Riscaldamento",
+    "livelli": [
+     {
+      "testo": "centralizzato senza contabilizzazione, o altro",
+      "punti": 0
+     },
+     {
+      "testo": "centralizzato con contabilizzazione del calore",
+      "punti": 2
+     },
+     {
+      "testo": "autonomo",
+      "punti": 3
+     }
+    ]
+   },
+   {
+    "testo": "Cappotto esterno o interno, oppure pannelli solari",
+    "punti": 2
+   },
+   {
+    "testo": "Aria condizionata",
+    "punti": 1
+   },
+   {
+    "testo": "Domotica, fibra, Wi-Fi o fotovoltaico",
+    "punti": 2
+   },
+   {
+    "testo": "Giardino",
+    "livelli": [
+     {
+      "testo": "nessuno",
+      "punti": 0
+     },
+     {
+      "testo": "giardino comune",
+      "punti": 1
+     },
+     {
+      "testo": "giardino di proprietà esclusiva",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Contatore dell'acqua individuale",
+    "punti": 1
+   },
+   {
+    "testo": "Categoria catastale (dalla visura)",
+    "livelli": [
+     {
+      "testo": "A/4 o inferiore",
+      "punti": 0
+     },
+     {
+      "testo": "A/3",
+      "punti": 1
+     },
+     {
+      "testo": "A/2",
+      "punti": 2
+     },
+     {
+      "testo": "A/7",
+      "punti": 3
+     },
+     {
+      "testo": "A/1, A/8 o A/9",
+      "punti": 1
+     }
+    ]
+   },
+   {
+    "testo": "Tipo di edificio",
+    "livelli": [
+     {
+      "testo": "condominio con più di 10 alloggi",
+      "punti": 1
+     },
+     {
+      "testo": "edificio fino a 10 alloggi",
+      "punti": 2
+     },
+     {
+      "testo": "casa singola o bifamiliare",
+      "punti": 3
+     }
+    ]
+   },
+   {
+    "testo": "Classe energetica (APE)",
+    "livelli": [
+     {
+      "testo": "G",
+      "punti": 0
+     },
+     {
+      "testo": "D, E o F",
+      "punti": 1
+     },
+     {
+      "testo": "A, B o C",
+      "punti": 2
+     }
+    ]
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale della visura (escluse le aree scoperte)",
+   "coeff_base": 0.9,
+   "correzioni": [
+    {
+     "fino": 50,
+     "incluso": true,
+     "perc": 30,
+     "tetto": 50
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Box auto",
+     "coeff": 0.8
+    }
+   ],
+   "nota": "I metri quadri utili sono la superficie catastale della visura, al netto delle aree scoperte, ridotta del 10% (allegato C); se c'è la dichiarazione di un tecnico abilitato allegata al contratto vale quella. Se l'alloggio ha fino a 50 mq utili si aumenta del 30%, senza superare i 50 mq. Il box auto si aggiunge all'80%. Se affitti solo una parte dell'alloggio contano i mq della parte locata più metà di quelli in comune."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "aumento",
+    "tipo": "scelta",
+    "testo": "Alloggio arredato o immobile di pregio (fino al +30%, non cumulabili)",
+    "nome": "aumento art. 1, comma 9",
+    "nessuna": "nessuno dei due",
+    "ammobiliato": true,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "arredato e corredato completamente",
+      "perc": 30
+     },
+     {
+      "valore": "stanze",
+      "testo": "arredati cucina, camera, sala e bagno",
+      "perc": 20
+     },
+     {
+      "valore": "parziale",
+      "testo": "arredato parzialmente",
+      "perc": 10
+     },
+     {
+      "valore": "pregio",
+      "testo": "immobile A/1, A/8, A/9 o vincolato, arredato o no",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "arredo_studenti",
+    "tipo": "scelta",
+    "testo": "Arredo (contratto per studenti)",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "contratti": [
+     "studenti"
+    ],
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "arredato con tutto: lavello, piano cottura, frigorifero, tavolo e sedie, luci adeguate, letto, scrivania, lampada, sedia e armadio per ogni studente, bagno arredato",
+      "perc": 30
+     },
+     {
+      "valore": "parziale",
+      "testo": "arredato, ma manca almeno uno di questi elementi",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "pregio_studenti",
+    "tipo": "spunta",
+    "testo": "Immobile A/1, A/8, A/9 o vincolato (contratto per studenti)",
+    "nome": "immobile di pregio",
+    "perc": 30,
+    "contratti": [
+     "studenti"
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "La durata oltre i 3 anni ha tabelle proprie con valori più alti (4, 5 e 6 anni). Per gli alloggi arredati e per gli immobili A/1, A/8, A/9 o vincolati il minimo e il massimo possono aumentare fino al 30%: l'aumento è uno solo anche se ricorrono entrambi i casi. Per gli studenti l'arredo vale +30% solo con tutti gli arredi richiesti (altrimenti +10%) e gli immobili A/1, A/8, A/9 o vincolati hanno un aumento proprio del 30%. I transitori e i contratti per studenti usano i valori del 3+2.",
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Il minimo di ogni subfascia si può ridurre fino al 30%, ma solo con l'assistenza delle organizzazioni firmatarie (art. 4, lettera F)."
+   },
+   {
+    "testo": "Contratti per studenti: l'accordo assegna i punti con un'altra tabella (allegato D bis: vicinanza alla sede del corso, camere singole o doppie, bagni per studente, collegamento internet; subfascia I da 16 punti, II da 11, III da 6). Il calcolo qui usa la tabella dell'allegato D: per gli studenti fai verificare la subfascia.",
+    "contratti": [
+     "studenti"
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato L",
+  "titolo": "Attestazione di rispondenza ex D.M. 16.1.2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Verbania sottoscritto il 29/03/2023 e depositato il 29/03/2023 presso il Comune di Verbania",
+  "titolo_superficie": "SUPERFICIE UTILE (ALLEGATO C)",
+  "titolo_elementi": "Elementi posti a base del calcolo del canone (allegato D)",
+  "dichiarazione": "I predetti locatore/i e conduttore/i dichiarano che i dati sopra comunicati sono stati dagli stessi rilevati e verificati, pertanto riconoscono che la presente attestazione è rilasciata sulla base di quanto dagli stessi dichiarato e conseguentemente espressamente sollevano le Organizzazioni attestanti da qualsiasi responsabilità derivante da errori, omissioni o asserzioni non veritiere relative ai dati indicati nel presente atto.",
+  "firme": [
+   "Il dichiarante (proprietario/i)",
+   "Il dichiarante (inquilino/i)"
+  ],
+  "titolo_attestazione": "ATTESTANO",
+  "attestazione": [
+   "Tanto premesso le Organizzazioni …………………………… e …………………………… (attestazione congiunta), firmatarie del predetto Accordo Territoriale, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "che i contenuti economici e normativi del contratto di locazione corrispondono a quanto previsto dall'Accordo Territoriale vigente per il Comune di Verbania sottoscritto il 29/03/2023 e depositato il 29/03/2023 presso il Comune di Verbania.",
+   "Verbania, lì ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "Per l'Organizzazione",
+   "Per l'Organizzazione (attestazione congiunta)"
+  ],
+  "nota_zone": "L'area si ricava dai confini dell'allegato B e dalla cartina dell'allegato A: area 1 la parte a lago (Intra, Pallanza, Suna), area 3 Piano Grande di Fondotoce e Cavandone, area 2 il resto del Comune."
+ }
+}

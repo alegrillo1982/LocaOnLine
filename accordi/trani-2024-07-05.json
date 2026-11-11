@@ -1,0 +1,679 @@
+{
+ "accordo": {
+  "codice": "trani-2024-07-05",
+  "modello": "trani-2024",
+  "comune": "Trani",
+  "provincia": "BT",
+  "titolo": "Accordo territoriale per il Comune di Trani",
+  "data": "2024-07-05",
+  "data_testo": "5 luglio 2024",
+  "deposito": "Comune di Trani",
+  "deposito_data": "05.07.2024",
+  "protocollo": "0045257",
+  "ufficio": "Comune di Trani - Area Segreteria Generale",
+  "ufficio_breve": "Comune di Trani",
+  "valido_fino": "2027-07-29",
+  "firmatari_proprieta": [
+   "APPC",
+   "ASSEDIL/CONFEDILIZIA",
+   "ASPPI",
+   "CONFABITARE",
+   "UPPI",
+   "UNIONCASA"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET CISL",
+   "UNIAT UIL",
+   "ASSOCASA",
+   "SAI CISAL",
+   "UNIONE INQUILINI"
+  ],
+  "nota": "Sottoscritto il 05/07/2024 nella sede comunale di Trani, alla presenza del sindaco, e depositato lo stesso giorno (timbro «Comune di Trani - Area Segreteria Generale - E - 05/07/2024 - Prot. N. 0045257 - 14.1» sulla nota di deposito). Dura tre anni dal 30 luglio 2024; le fasce non si aggiornano all'ISTAT. Sostituisce l'accordo del 12/04/2000, che resta valido per i contratti in corso. 5 zone per fogli di mappa catastale (allegato 1), elementi da contare (30 nelle zone 1 e 2, 28 nelle altre), fasce D, C, B, A nelle zone 1 e 4 e C, B, A nelle altre, valori mensili al mq di superficie convenzionale.",
+  "fonte": "PDF dell'accordo firmato con nota di deposito protocollata e allegati 1-5 (52 pagine, scansione) pubblicato dal SUNIA nazionale nella pagina 'Accordi territoriali di Barletta, Andria e Trani (BAT)'."
+ },
+ "esempio_zona": "la zona dal foglio di mappa catastale (visura)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "scelta",
+  "tabella_chiave": "arredo",
+  "tabella_predefinita": "3",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - fogli 13, 14, 15",
+    "nota": "Zona 1: fogli di mappa catastale 13, 14 e 15 (allegato 1; il foglio è nella visura catastale). Valori in euro al mq al mese. D fino a 4 elementi, C da 5 a 6, B da 7 a 8, A da 9. Zona di pregio: con ingresso dello stabile su mare o piazza in via Cavour, via Malcangi, piazza della Repubblica, bacino portuale, piazza Plebiscito, via Pagano, lungomare C. Colombo, largo Chairelli, piazza Libertà, con almeno riscaldamento e impianto elettrico adeguati, autoclave e buone condizioni di alloggio e stabile, si va in fascia A.",
+    "fasce": {
+     "3": [
+      [
+       2.03,
+       2.84
+      ],
+      [
+       2.85,
+       3.65
+      ],
+      [
+       3.66,
+       4.87
+      ],
+      [
+       4.88,
+       5.68
+      ]
+     ],
+     "parz_ok": [
+      [
+       2.03,
+       2.84
+      ],
+      [
+       4.88,
+       5.68
+      ],
+      [
+       4.88,
+       5.68
+      ],
+      [
+       4.88,
+       5.68
+      ]
+     ],
+     "tot_ok": [
+      [
+       2.03,
+       2.84
+      ],
+      [
+       4.88,
+       6.248
+      ],
+      [
+       4.88,
+       6.248
+      ],
+      [
+       4.88,
+       5.68
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - fogli 25, 26, 35, 43, 44",
+    "nota": "Zona 2: fogli di mappa catastale 25, 26, 35, 43 e 44 (allegato 1; il foglio è nella visura catastale). Valori in euro al mq al mese. Tre fasce: C fino a 8 elementi, B da 9 a 11, A da 12.",
+    "fasce": {
+     "3": [
+      [
+       4.06,
+       4.87
+      ],
+      [
+       4.06,
+       4.87
+      ],
+      [
+       4.88,
+       5.68
+      ],
+      [
+       5.69,
+       6.49
+      ]
+     ],
+     "parz_ok": [
+      [
+       4.06,
+       4.87
+      ],
+      [
+       5.69,
+       6.49
+      ],
+      [
+       5.69,
+       6.49
+      ],
+      [
+       5.69,
+       6.49
+      ]
+     ],
+     "tot_ok": [
+      [
+       4.06,
+       4.87
+      ],
+      [
+       5.69,
+       7.139
+      ],
+      [
+       5.69,
+       7.139
+      ],
+      [
+       5.69,
+       6.49
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - fogli 32-34, 40-42, 57, 58, 64",
+    "nota": "Zona 3: fogli di mappa catastale 32, 33, 34, 40, 41, 42, 57, 58 e 64 (allegato 1; il foglio è nella visura catastale). Valori in euro al mq al mese. Tre fasce: C fino a 5 elementi, B da 6 a 8, A da 9.",
+    "fasce": {
+     "3": [
+      [
+       2.84,
+       3.25
+      ],
+      [
+       2.84,
+       3.25
+      ],
+      [
+       3.26,
+       4.47
+      ],
+      [
+       4.48,
+       5.28
+      ]
+     ],
+     "parz_ok": [
+      [
+       2.84,
+       3.25
+      ],
+      [
+       4.48,
+       5.28
+      ],
+      [
+       4.48,
+       5.28
+      ],
+      [
+       4.48,
+       5.28
+      ]
+     ],
+     "tot_ok": [
+      [
+       2.84,
+       3.25
+      ],
+      [
+       4.48,
+       5.808
+      ],
+      [
+       4.48,
+       5.808
+      ],
+      [
+       4.48,
+       5.28
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - fogli 8, 12, 21-24",
+    "nota": "Zona 4: fogli di mappa catastale 8, 12, 21, 22, 23 e 24 (allegato 1; il foglio è nella visura catastale). Valori in euro al mq al mese. D fino a 4 elementi, C da 5 a 6, B da 7 a 9, A da 10.",
+    "fasce": {
+     "3": [
+      [
+       2.03,
+       2.84
+      ],
+      [
+       2.85,
+       3.65
+      ],
+      [
+       3.66,
+       5.28
+      ],
+      [
+       5.29,
+       6.09
+      ]
+     ],
+     "parz_ok": [
+      [
+       2.03,
+       2.84
+      ],
+      [
+       5.29,
+       6.09
+      ],
+      [
+       5.29,
+       6.09
+      ],
+      [
+       5.29,
+       6.09
+      ]
+     ],
+     "tot_ok": [
+      [
+       2.03,
+       2.84
+      ],
+      [
+       5.29,
+       6.699
+      ],
+      [
+       5.29,
+       6.699
+      ],
+      [
+       5.29,
+       6.09
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "5",
+    "nome": "Zona 5 - fogli 1-7, 10, 11, 16-20 e altri",
+    "nota": "Zona 5: fogli di mappa catastale 1-7, 10, 11, 16-20, 27-31, 37-39, 45-56, 59-63, 65-97, 99-107, 109-111 (allegato 1; il foglio è nella visura catastale). Valori in euro al mq al mese. Tre fasce: C fino a 5 elementi, B da 6 a 8, A da 9.",
+    "fasce": {
+     "3": [
+      [
+       2.31,
+       2.93
+      ],
+      [
+       2.31,
+       2.93
+      ],
+      [
+       2.94,
+       3.24
+      ],
+      [
+       3.25,
+       3.77
+      ]
+     ],
+     "parz_ok": [
+      [
+       2.31,
+       2.93
+      ],
+      [
+       3.25,
+       3.77
+      ],
+      [
+       3.25,
+       3.77
+      ],
+      [
+       3.25,
+       3.77
+      ]
+     ],
+     "tot_ok": [
+      [
+       2.31,
+       2.93
+      ],
+      [
+       3.25,
+       4.147
+      ],
+      [
+       3.25,
+       4.147
+      ],
+      [
+       3.25,
+       3.77
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "D",
+    "C",
+    "B",
+    "A"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    6,
+    9
+   ],
+   "soglie_zona": {
+    "1": [
+     4,
+     6,
+     8
+    ],
+    "2": [
+     -1,
+     8,
+     11
+    ],
+    "3": [
+     -1,
+     5,
+     8
+    ],
+    "5": [
+     -1,
+     5,
+     8
+    ]
+   },
+   "conta": {
+    "da": 0,
+    "a": 29
+   },
+   "basta": [
+    30
+   ],
+   "nomi_per_tabella": {
+    "parz_ok": [
+     "D",
+     "A (era C)",
+     "A (era B)",
+     "A"
+    ],
+    "tot_ok": [
+     "D",
+     "A (era C)",
+     "A (era B)",
+     "A"
+    ]
+   },
+   "nota_soglie": "Contano gli elementi da 1 a 30 (nelle zone 3, 4 e 5 il 2 e il 3 non ci sono); nella zona 1 la zona di pregio porta direttamente in fascia A"
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi per la determinazione della fascia (allegato 1): segna quelli presenti"
+   },
+   {
+    "da": 30,
+    "titolo": "Zona 1: zona di pregio (non conta come elemento)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Appartamento dal 1° piano fuori terra in su"
+   },
+   {
+    "testo": "Ingresso dell'alloggio da piazza o dal mare (solo zone 1 e 2)",
+    "zone": [
+     "1",
+     "2"
+    ]
+   },
+   {
+    "testo": "Balcone con vista su piazza o sul mare (solo zone 1 e 2)",
+    "zone": [
+     "1",
+     "2"
+    ]
+   },
+   {
+    "testo": "Allacciamento al gas metano"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Secondo servizio igienico"
+   },
+   {
+    "testo": "Spazi esterni a uso esclusivo e/o condominiale"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Cantina o soffitta o giardino privato o terrazza a livello"
+   },
+   {
+    "testo": "Posto auto di pertinenza e/o condominiale assegnato"
+   },
+   {
+    "testo": "Box auto"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Portierato"
+   },
+   {
+    "testo": "Videosorveglianza condominiale o individuale"
+   },
+   {
+    "testo": "Impianto fotovoltaico o pannelli solari per l'acqua calda"
+   },
+   {
+    "testo": "Citofono"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Autoclave"
+   },
+   {
+    "testo": "Impianto elettrico interno a norma (D.M. 37/2008)"
+   },
+   {
+    "testo": "Attico"
+   },
+   {
+    "testo": "Ripostiglio"
+   },
+   {
+    "testo": "Parquet"
+   },
+   {
+    "testo": "Ricarica per auto elettriche nel box o nel posto auto (esclusivo o condominiale) del conduttore, o antenna satellitare"
+   },
+   {
+    "testo": "Cucina abitabile di almeno 9 mq con finestra"
+   },
+   {
+    "testo": "Sistemi di sicurezza, allarme"
+   },
+   {
+    "testo": "Domotica in almeno metà dell'alloggio"
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato o pompa di calore"
+   },
+   {
+    "testo": "Infissi interni ed esterni in buono stato"
+   },
+   {
+    "testo": "Cassaforte"
+   },
+   {
+    "testo": "Doppio ingresso o cortile/giardino recintato"
+   },
+   {
+    "testo": "Zona 1, zona di pregio (ingresso dello stabile su mare o piazza nelle vie della nota di zona), con riscaldamento, impianto elettrico e autoclave adeguati e buone condizioni",
+    "zone": [
+     "1"
+    ]
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile interna, non catastale (senza i vani alti meno di 1,70 m)",
+   "voci": [
+    {
+     "chiave": "basse",
+     "testo": "Vani con altezza inferiore a 1,70 m",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa singola a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_accatastato",
+     "testo": "Posto auto accatastato in area condominiale scoperta",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto non accatastato in area condominiale scoperta",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazze, cortili, cantine, soffitte e accessori simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Superficie scoperta a uso esclusivo del conduttore",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota millesimale dell'alloggio)",
+     "coeff": 0.1
+    }
+   ],
+   "scaglioni_totale": [
+    {
+     "oltre": 130,
+     "perc": 50
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 45,
+     "perc": 20,
+     "limite": 45
+    },
+    {
+     "fino": 70,
+     "perc": 20,
+     "limite": 70
+    }
+   ],
+   "etichetta_correzione": "convenzionale",
+   "nota": "Superficie convenzionale (punto 2 delle norme comuni): superficie utile (non catastale) al 100%, vani alti meno di 1,70 m al 50%; autorimessa singola esclusiva 50%; posto auto in area condominiale scoperta 50% se accatastato, 25% se no; balconi, terrazze, cortili, cantine, soffitte e simili 25%; superficie scoperta esclusiva 15%; verde condominiale 10% della quota millesimale. Oltre 130 mq la parte in più conta il 50%. Fino a 45 mq la superficie si moltiplica per 1,20 (al massimo 45 mq); da 46 a 70 mq per 1,20 (al massimo 70 mq). È ammessa una tolleranza del 4% in più o in meno sulla superficie convenzionale. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie della parte locata, contando anche le parti condivise (punto 5)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "ape",
+    "tipo": "scelta",
+    "testo": "Classe energetica (dall'APE)",
+    "nome": "classe energetica",
+    "nessuna": "classe G o senza APE",
+    "opzioni": [
+     {
+      "valore": "A",
+      "testo": "A (A1, A2, A3, A4)",
+      "perc": 5
+     },
+     {
+      "valore": "BF",
+      "testo": "B, C, D, E o F",
+      "perc": 3
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Alloggio ammobiliato (arredi elencati nell'accordo)",
+    "nome": "Alloggio",
+    "nessuna": "non ammobiliato",
+    "nessuna_breve": "non ammobiliato",
+    "ammobiliato": true,
+    "mostra_perc": false,
+    "fasce": [
+     3
+    ],
+    "opzioni": [
+     {
+      "valore": "parz",
+      "testo": "parzialmente ammobiliato",
+      "breve": "parzialmente ammobiliato (in fascia A +10%)",
+      "perc": 10
+     },
+     {
+      "valore": "parz_ok",
+      "testo": "parzialmente ammobiliato, con riscaldamento, autoclave e infissi in buono stato",
+      "breve": "parzialmente ammobiliato, con i requisiti: da B o C in fascia A",
+      "perc": 10
+     },
+     {
+      "valore": "tot",
+      "testo": "totalmente ammobiliato",
+      "breve": "totalmente ammobiliato (in fascia A +20%)",
+      "perc": 20
+     },
+     {
+      "valore": "tot_ok",
+      "testo": "totalmente ammobiliato, con riscaldamento, autoclave e infissi in buono stato",
+      "breve": "totalmente ammobiliato, con i requisiti: da B o C in A, massimo +10%",
+      "perc": 20
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Classe energetica (punto 3): A (A1-A4) +5%, B, C, D, E o F +3%, per tutti i contratti e in tutte le zone. Arredo (allegato 1): in fascia A +10% se parzialmente ammobiliato, +20% se totalmente. Un alloggio che per i suoi elementi sarebbe in fascia B o C passa in fascia A se è ammobiliato e ha riscaldamento, autoclave e infissi in buono stato: senza aumento se parzialmente ammobiliato, con un aumento massimo del 10% (sul massimo della fascia A) se totalmente. Nelle zone 1 e 4 la fascia D non passa in A. Totalmente ammobiliato (allegato 3): cucina (pensili o credenza, frigorifero, cucina, tavolo con sedie, scolapiatti e stoviglie), camera da letto (letto con materasso, comodino, armadio, sedia), per studenti scrivania con sedia e libreria, soggiorno (tavolo con sedie, vetrinetta o mobiletto), bagno arredato; parzialmente: solo una parte di questi arredi. Durata (solo agevolati): 4 anni +5%, 5 anni +7%, 6 anni o più +12%, anche per le proroghe. Gli aumenti si applicano uno dopo l'altro (punto 4). Il canone, se il locatore non sceglie la cedolare secca, si può aggiornare ogni anno al 75% dell'ISTAT.",
+  "durata": {
+   "4": 5,
+   "5": 7,
+   "6": 12
+  },
+  "combinazione": "prodotto",
+  "avvisi": [
+   {
+    "testo": "L'attestazione di rispondenza di una delle organizzazioni firmatarie è obbligatoria per le agevolazioni fiscali (punto 6 dell'accordo)."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 1",
+  "titolo": "Determinazione del canone di locazione e fasce di oscillazione",
+  "sottotitolo": "Accordo territoriale per il Comune di Trani del 05/07/2024, depositato il 05/07/2024 (prot. n. 0045257), in vigore dal 30/07/2024",
+  "titolo_superficie": "SUPERFICIE CONVENZIONALE (punto 2 dell'accordo)",
+  "titolo_elementi": "Elementi per la determinazione della fascia del canone di locazione",
+  "etichetta_conteggio": "ELEMENTI PRESENTI",
+  "dichiarazione": "Le parti contrattuali dichiarano, sotto la propria responsabilità, gli elementi oggettivi e i criteri sopra riportati (punto 1 dell'accordo e allegato 1); restano uniche responsabili della veridicità delle dichiarazioni rese (punto 6).",
+  "firme": [
+   "Il Locatore",
+   "Il Conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA (D.M. 16/01/2017)",
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Trani depositato il 05/07/2024, verificati la conformità e la rispondenza del contenuto economico e normativo del contratto ai parametri dell'Accordo, sulla base degli elementi dichiarati dalle parti, anche ai fini delle agevolazioni fiscali,",
+   "ATTESTA che il contratto è conforme all'Accordo territoriale vigente per il Comune di Trani (punto 6 dell'Accordo e D.M. 16/01/2017).",
+   "Trani, lì ……………"
+  ],
+  "firme_attestazione": [
+   "P. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dal foglio di mappa catastale dell'immobile (nella visura). Zona 1: fogli 13, 14, 15. Zona 2: fogli 25, 26, 35, 43, 44. Zona 3: fogli 32, 33, 34, 40, 41, 42, 57, 58, 64. Zona 4: fogli 8, 12, 21, 22, 23, 24. Zona 5: fogli 1-7, 10, 11, 16-20, 27-31, 37-39, 45-56, 59-63, 65-97, 99-107, 109-111. I fogli 9, 36, 98 e 108 non sono elencati: chiedi all'associazione che attesta il contratto."
+ }
+}

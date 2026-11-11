@@ -34,12 +34,12 @@
     campo("zona").innerHTML = '<option value="">scegli…</option>' + r.zone.map((z) => `<option value="${testo(z.codice)}">${testo(z.nome)}</option>`).join("");
     const durate = r.durate || [3, 4, 5, 6];
     const pd = (n) => (r.durata && r.durata[String(n)] ? ` (+${v(r.durata[String(n)], r.durata[String(n)] % 1 ? 1 : 0)}%)` : "");
-    $("gen-durata").innerHTML = durate.map((n) => `<option value="${n}">${n} + 2 anni${n === 6 ? " o più" : ""}${pd(n)}</option>`).join("");
+    $("gen-durata").innerHTML = durate.map((n) => `<option value="${n}">${n} + 2 anni${n === durate[durate.length - 1] ? " o più" : ""}${pd(n)}</option>`).join("");
     $("gen-titolo-elementi").textContent = (accordo.pdf && accordo.pdf.titolo_elementi) || (r.fasce.criterio === "punti" ? "Parametri e punteggi" : "Elementi");
     $("gen-elementi").closest("section").hidden = !r.elementi.length;
     $("gen-elementi").innerHTML = r.elementi.map((e, i) => {
       const g = [...(r.fasce.gruppi || []), ...(r.titoli_elementi || [])].find((x) => x.da === i);
-      const titolo = g ? `<h3 class="stacco">${testo(g.titolo || g.nome)}</h3>` : "";
+      const titolo = g ? `<h3 class="stacco"${g.contratti ? ` data-tit-contratti="${g.contratti.join(" ")}"` : ""}>${testo(g.titolo || g.nome)}</h3>` : "";
       if (e.livelli) return `${titolo}<label class="livello" data-el="${i}"><span><b class="codice">${i + 1}</b> ${testo(e.testo)}</span><select name="el" data-i="${i}"><option value="">scegli…</option>${e.livelli.map((l, k) => `<option value="${k}">${testo(l.testo)}${e.mostra_punti === false ? "" : ` (${virgolaN(l.punti)} ${l.punti === 1 ? "punto" : "punti"})`}</option>`).join("")}</select></label>`;
       return `${titolo}<label data-el="${i}"><input type="checkbox" name="el" value="${i}"> <span><b class="codice">${i + 1}</b> ${testo(e.testo)}${e.punti ? ` <small>(${virgolaN(e.punti)} ${e.punti === 1 ? "punto" : "punti"})</small>` : ""}</span></label>`;
     }).join("");
@@ -71,7 +71,8 @@
     s.maggiorazioni_scelte = {};
     for (const m of r.maggiorazioni || []) { if (m.tipo === "auto") continue; const c = campo("m_" + m.chiave); s.maggiorazioni_scelte[m.chiave] = m.tipo === "scelta" ? c.value : c.checked; }
     s.catasto = { foglio: s.foglio, particella: s.particella, subalterno: s.subalterno };
-    const arr = (r.maggiorazioni || []).find((m) => m.ammobiliato);
+    // l'arredo che passa al contratto: quello valido per il tipo di contratto scelto (es. Vercelli, studenti)
+    const arr = (r.maggiorazioni || []).find((m) => m.ammobiliato && (!m.contratti || m.contratti.includes(s.tipo)));
     let ammob = "";
     if (arr) { const val = s.maggiorazioni_scelte[arr.chiave]; if (arr.tipo === "scelta") { const o = arr.opzioni.find((x) => x.valore === val); if (o) ammob = String(o.perc); } else if (val) ammob = String(arr.perc); }
     s.maggiorazioni = { ammobiliato: ammob };
@@ -117,6 +118,7 @@
       // elementi validi solo per alcuni contratti (es. Avellino): nascosti, e non contati dal calcolo
       if (e && e.contratti && !e.contratti.includes(s.tipo)) el.hidden = true;
     });
+    modulo.querySelectorAll("[data-tit-contratti]").forEach((h) => { h.hidden = !h.dataset.titContratti.split(" ").includes(s.tipo); });
     const sup = r.superficie;
     for (const td of modulo.querySelectorAll("[data-sup]")) {
       const riga = sup && sup.righe.find((x) => x.chiave === td.dataset.sup);

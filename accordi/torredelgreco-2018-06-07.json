@@ -1,0 +1,794 @@
+{
+ "accordo": {
+  "codice": "torredelgreco-2018-06-07",
+  "modello": "torredelgreco-2018",
+  "comune": "Torre del Greco",
+  "provincia": "NA",
+  "titolo": "Accordo territoriale per il Comune di Torre del Greco",
+  "data": "2018-06-07",
+  "data_testo": "7 giugno 2018",
+  "deposito": "Comune di Torre del Greco, prot. n. 0043783 del 26/06/2018",
+  "deposito_data": "26.06.2018",
+  "protocollo": "0043783",
+  "ufficio": "Segreteria Generale del Comune di Torre del Greco",
+  "ufficio_breve": "Segreteria Generale",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Torre del Greco ha ancora l'accordo territoriale firmato il 7 giugno 2018</strong> e depositato in Comune il 26 giugno 2018: durava tre anni, ma resta in vigore finché non ne viene firmato uno nuovo (art. 27), che a novembre 2026 non risulta pubblicato. Dall'inizio del terzo anno i valori minimi e massimi si aggiornano ogni anno, per i nuovi contratti, fino al 75% della variazione ISTAT: qui trovi i valori originali del 2018, <strong>chiedi all'associazione che attesta il contratto se applica valori aggiornati</strong>.",
+  "nota_validita": "Art. 27: durata di tre anni dal deposito (26/06/2018), poi resta in vigore fino al nuovo accordo. Art. 6 e allegato B: dall'inizio del terzo anno minimi e massimi si aggiornano ogni anno fino al 75% della variazione ISTAT (salvo diverso accordo integrativo delle organizzazioni entro il 30 luglio). Qui ci sono i valori originali.",
+  "firmatari_proprieta": [
+   "A.P.E. Napoli - Confedilizia",
+   "A.P.P.C.",
+   "A.S.P.P.I.",
+   "Confabitare Napoli",
+   "Confappi",
+   "Federproprietà Napoli",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "Assocasa",
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T. Campania",
+   "Unione Inquilini"
+  ],
+  "nota": "Accordo firmato il 07/06/2018 e depositato al Comune di Torre del Greco il 26/06/2018 (verbale di deposito con timbro di protocollo n. 0043783 del 26/06/2018). Sostituisce l'accordo dell'8 ottobre 1999. Otto aree omogenee per foglio di mappa catastale (allegato A), valori in euro al mq l'anno (allegato B), quattro fasce secondo il numero di elementi caratteristici (allegato C): fino a 3 elementi 1ª fascia, 4 la 2ª, 5 la 3ª, almeno 6 la 4ª; con classe A sempre la 4ª. L'accordo non ha una parte per i contratti per studenti universitari.",
+  "fonte": "SUNIA nazionale, pagina «Accordi territoriali di Napoli» (provincia): PDF «accordo-torre_greco.pdf» (21 pagine: verbale di deposito, accordo, allegati A, B, C, D, F, H). Lo stesso file è pubblicato da U.N.I.A.T. Campania."
+ },
+ "esempio_zona": "l'area dal foglio di mappa catastale del fabbricato (allegato A)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Area 1",
+    "nota": "Area 1: fogli di mappa catastali 2, 6, 9, 14, 36 (allegato A). Valori dell'area da € 20,00 a € 43,00 al mq l'anno (allegato B); ogni fascia è una quarta parte della differenza fra minimo e massimo.",
+    "fasce": [
+     [
+      20.23,
+      25.75
+     ],
+     [
+      25.98,
+      31.5
+     ],
+     [
+      31.73,
+      37.25
+     ],
+     [
+      37.48,
+      43.0
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2",
+    "nota": "Area 2: fogli di mappa catastali 18, 22, 28, 29 (allegato A). Valori dell'area da € 28,00 a € 61,00 al mq l'anno (allegato B); ogni fascia è una quarta parte della differenza fra minimo e massimo.",
+    "fasce": [
+     [
+      28.33,
+      36.25
+     ],
+     [
+      36.58,
+      44.5
+     ],
+     [
+      44.83,
+      52.75
+     ],
+     [
+      53.08,
+      61.0
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3",
+    "nota": "Area 3: fogli di mappa catastali 1, 3, 4, 5, 8, 13 (allegato A). Valori dell'area da € 29,00 a € 64,00 al mq l'anno (allegato B); ogni fascia è una quarta parte della differenza fra minimo e massimo.",
+    "fasce": [
+     [
+      29.35,
+      37.75
+     ],
+     [
+      38.1,
+      46.5
+     ],
+     [
+      46.85,
+      55.25
+     ],
+     [
+      55.6,
+      64.0
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Area 4",
+    "nota": "Area 4: fogli di mappa catastali 30, 32, 33, 34, 35 (allegato A). Valori dell'area da € 32,00 a € 70,00 al mq l'anno (allegato B); ogni fascia è una quarta parte della differenza fra minimo e massimo.",
+    "fasce": [
+     [
+      32.38,
+      41.5
+     ],
+     [
+      41.88,
+      51.0
+     ],
+     [
+      51.38,
+      60.5
+     ],
+     [
+      60.88,
+      70.0
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Area 5",
+    "nota": "Area 5: fogli di mappa catastali 21, 24, 25, 26, 27, 31 (allegato A). Valori dell'area da € 34,00 a € 75,00 al mq l'anno (allegato B); ogni fascia è una quarta parte della differenza fra minimo e massimo.",
+    "fasce": [
+     [
+      34.41,
+      44.25
+     ],
+     [
+      44.66,
+      54.5
+     ],
+     [
+      54.91,
+      64.75
+     ],
+     [
+      65.16,
+      75.0
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "Area 6",
+    "nota": "Area 6: fogli di mappa catastali 10, 11, 501, 502, 503 (allegato A). Valori dell'area da € 35,00 a € 76,00 al mq l'anno (allegato B); ogni fascia è una quarta parte della differenza fra minimo e massimo.",
+    "fasce": [
+     [
+      35.41,
+      45.25
+     ],
+     [
+      45.66,
+      55.5
+     ],
+     [
+      55.91,
+      65.75
+     ],
+     [
+      66.16,
+      76.0
+     ]
+    ]
+   },
+   {
+    "codice": "7",
+    "nome": "Area 7",
+    "nota": "Area 7: fogli di mappa catastali 15, 19, 20, 23 (allegato A). Valori dell'area da € 38,00 a € 85,00 al mq l'anno (allegato B); ogni fascia è una quarta parte della differenza fra minimo e massimo.",
+    "fasce": [
+     [
+      38.47,
+      49.75
+     ],
+     [
+      50.22,
+      61.5
+     ],
+     [
+      61.97,
+      73.25
+     ],
+     [
+      73.72,
+      85.0
+     ]
+    ]
+   },
+   {
+    "codice": "8",
+    "nome": "Area 8",
+    "nota": "Area 8: fogli di mappa catastali 7, 12, 16, 17 (allegato A). Valori dell'area da € 42,00 a € 92,00 al mq l'anno (allegato B); ogni fascia è una quarta parte della differenza fra minimo e massimo.",
+    "fasce": [
+     [
+      42.5,
+      54.5
+     ],
+     [
+      55.0,
+      67.0
+     ],
+     [
+      67.5,
+      79.5
+     ],
+     [
+      80.0,
+      92.0
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "1ª fascia",
+    "2ª fascia",
+    "3ª fascia",
+    "4ª fascia"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    3,
+    4,
+    5
+   ],
+   "conta": {
+    "da": 0,
+    "a": 19
+   },
+   "basta": [
+    20
+   ],
+   "nota": "fino a 3 elementi 1ª fascia (dall'1% al 25% della differenza fra minimo e massimo dell'area), 4 elementi 2ª (26-50%), 5 elementi 3ª (51-75%), almeno 6 elementi 4ª (76-100%); con classe A (APE dopo l'1/1/2013) sempre la 4ª"
+  },
+  "elementi": [
+   {
+    "testo": "Ascensore (o alloggio non oltre il 3° piano, anche senza ascensore)"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Aree e spazi liberi di uso comune"
+   },
+   {
+    "testo": "Balcone sporgente o terrazzo"
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato"
+   },
+   {
+    "testo": "Area verde di pertinenza o piano attico"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Servizio di portierato"
+   },
+   {
+    "testo": "Stabile o alloggio costruito o ristrutturato del tutto negli ultimi 10 anni"
+   },
+   {
+    "testo": "Sistema di sicurezza o allarme interno"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Antenna o impianto satellitare centralizzato"
+   },
+   {
+    "testo": "Stato di manutenzione ottimo"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Infissi con doppio vetrocamera"
+   },
+   {
+    "testo": "Classe energetica A, B, C o D"
+   },
+   {
+    "testo": "Posto auto"
+   },
+   {
+    "testo": "Cucina abitabile"
+   },
+   {
+    "testo": "Senza barriere architettoniche dentro l'alloggio"
+   },
+   {
+    "testo": "Wi-Fi (solo contratti transitori)",
+    "contratti": [
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Classe A, APE rilasciato dopo l'1/1/2013 (4ª fascia; segna anche il 16)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile calpestabile dell'alloggio",
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Box auto",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Superficie scoperta a uso esclusivo",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota in millesimi di proprietà)",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Superficie utile calpestabile più gli accessori in percentuale (allegato C, parte seconda). Tolleranza del 5% in più o in meno."
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "superficie sotto 30 mq",
+    "a": 29.999,
+    "perc": 50
+   },
+   {
+    "nome": "superficie da 30 a 31 mq",
+    "da": 30,
+    "a": 30.999,
+    "perc": 49
+   },
+   {
+    "nome": "superficie da 31 a 32 mq",
+    "da": 31,
+    "a": 31.999,
+    "perc": 48
+   },
+   {
+    "nome": "superficie da 32 a 33 mq",
+    "da": 32,
+    "a": 32.999,
+    "perc": 47
+   },
+   {
+    "nome": "superficie da 33 a 34 mq",
+    "da": 33,
+    "a": 33.999,
+    "perc": 46
+   },
+   {
+    "nome": "superficie da 34 a 35 mq",
+    "da": 34,
+    "a": 34.999,
+    "perc": 45
+   },
+   {
+    "nome": "superficie da 35 a 36 mq",
+    "da": 35,
+    "a": 35.999,
+    "perc": 44
+   },
+   {
+    "nome": "superficie da 36 a 37 mq",
+    "da": 36,
+    "a": 36.999,
+    "perc": 43
+   },
+   {
+    "nome": "superficie da 37 a 38 mq",
+    "da": 37,
+    "a": 37.999,
+    "perc": 42
+   },
+   {
+    "nome": "superficie da 38 a 39 mq",
+    "da": 38,
+    "a": 38.999,
+    "perc": 41
+   },
+   {
+    "nome": "superficie da 39 a 40 mq",
+    "da": 39,
+    "a": 39.999,
+    "perc": 40
+   },
+   {
+    "nome": "superficie da 40 a 41 mq",
+    "da": 40,
+    "a": 40.999,
+    "perc": 39
+   },
+   {
+    "nome": "superficie da 41 a 42 mq",
+    "da": 41,
+    "a": 41.999,
+    "perc": 38
+   },
+   {
+    "nome": "superficie da 42 a 43 mq",
+    "da": 42,
+    "a": 42.999,
+    "perc": 37
+   },
+   {
+    "nome": "superficie da 43 a 44 mq",
+    "da": 43,
+    "a": 43.999,
+    "perc": 36
+   },
+   {
+    "nome": "superficie da 44 a 45 mq",
+    "da": 44,
+    "a": 44.999,
+    "perc": 35
+   },
+   {
+    "nome": "superficie da 45 a 46 mq",
+    "da": 45,
+    "a": 45.999,
+    "perc": 34
+   },
+   {
+    "nome": "superficie da 46 a 47 mq",
+    "da": 46,
+    "a": 46.999,
+    "perc": 33
+   },
+   {
+    "nome": "superficie da 47 a 48 mq",
+    "da": 47,
+    "a": 47.999,
+    "perc": 32
+   },
+   {
+    "nome": "superficie da 48 a 49 mq",
+    "da": 48,
+    "a": 48.999,
+    "perc": 31
+   },
+   {
+    "nome": "superficie da 49 a 50 mq",
+    "da": 49,
+    "a": 49.999,
+    "perc": 30
+   },
+   {
+    "nome": "superficie da 50 a 51 mq",
+    "da": 50,
+    "a": 50.999,
+    "perc": 29
+   },
+   {
+    "nome": "superficie da 51 a 52 mq",
+    "da": 51,
+    "a": 51.999,
+    "perc": 28
+   },
+   {
+    "nome": "superficie da 52 a 53 mq",
+    "da": 52,
+    "a": 52.999,
+    "perc": 27
+   },
+   {
+    "nome": "superficie da 53 a 54 mq",
+    "da": 53,
+    "a": 53.999,
+    "perc": 26
+   },
+   {
+    "nome": "superficie da 54 a 55 mq",
+    "da": 54,
+    "a": 54.999,
+    "perc": 25
+   },
+   {
+    "nome": "superficie da 55 a 56 mq",
+    "da": 55,
+    "a": 55.999,
+    "perc": 24
+   },
+   {
+    "nome": "superficie da 56 a 57 mq",
+    "da": 56,
+    "a": 56.999,
+    "perc": 23
+   },
+   {
+    "nome": "superficie da 57 a 58 mq",
+    "da": 57,
+    "a": 57.999,
+    "perc": 22
+   },
+   {
+    "nome": "superficie da 58 a 59 mq",
+    "da": 58,
+    "a": 58.999,
+    "perc": 21
+   },
+   {
+    "nome": "superficie da 59 a 60 mq",
+    "da": 59,
+    "a": 59.999,
+    "perc": 20
+   },
+   {
+    "nome": "superficie da 60 a 61 mq",
+    "da": 60,
+    "a": 60.999,
+    "perc": 19
+   },
+   {
+    "nome": "superficie da 61 a 62 mq",
+    "da": 61,
+    "a": 61.999,
+    "perc": 18
+   },
+   {
+    "nome": "superficie da 62 a 63 mq",
+    "da": 62,
+    "a": 62.999,
+    "perc": 17
+   },
+   {
+    "nome": "superficie da 63 a 64 mq",
+    "da": 63,
+    "a": 63.999,
+    "perc": 16
+   },
+   {
+    "nome": "superficie da 64 a 65 mq",
+    "da": 64,
+    "a": 64.999,
+    "perc": 15
+   },
+   {
+    "nome": "superficie da 65 a 66 mq",
+    "da": 65,
+    "a": 65.999,
+    "perc": 14
+   },
+   {
+    "nome": "superficie da 66 a 67 mq",
+    "da": 66,
+    "a": 66.999,
+    "perc": 13
+   },
+   {
+    "nome": "superficie da 67 a 68 mq",
+    "da": 67,
+    "a": 67.999,
+    "perc": 12
+   },
+   {
+    "nome": "superficie da 68 a 69 mq",
+    "da": 68,
+    "a": 68.999,
+    "perc": 11
+   },
+   {
+    "nome": "superficie da 69 a 70 mq",
+    "da": 69,
+    "a": 69.999,
+    "perc": 10
+   },
+   {
+    "nome": "superficie da 70 a 71 mq",
+    "da": 70,
+    "a": 70.999,
+    "perc": 9
+   },
+   {
+    "nome": "superficie da 71 a 72 mq",
+    "da": 71,
+    "a": 71.999,
+    "perc": 8
+   },
+   {
+    "nome": "superficie da 72 a 73 mq",
+    "da": 72,
+    "a": 72.999,
+    "perc": 7
+   },
+   {
+    "nome": "superficie da 73 a 74 mq",
+    "da": 73,
+    "a": 73.999,
+    "perc": 6
+   },
+   {
+    "nome": "superficie da 74 a 75 mq",
+    "da": 74,
+    "a": 74.999,
+    "perc": 5
+   },
+   {
+    "nome": "superficie da 75 a 76 mq",
+    "da": 75,
+    "a": 75.999,
+    "perc": 4
+   },
+   {
+    "nome": "superficie da 76 a 77 mq",
+    "da": 76,
+    "a": 76.999,
+    "perc": 3
+   },
+   {
+    "nome": "superficie da 77 a 78 mq",
+    "da": 77,
+    "a": 77.999,
+    "perc": 2
+   },
+   {
+    "nome": "superficie da 78 a 79 mq",
+    "da": 78,
+    "a": 78.999,
+    "perc": 1
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "contratti": [
+     "agevolato",
+     "studenti"
+    ],
+    "ammobiliato": true,
+    "testo": "Completamente arredato, con l'elenco dei mobili allegato al contratto",
+    "nome": "arredato",
+    "perc": 15
+   },
+   {
+    "chiave": "arredo_tr",
+    "tipo": "spunta",
+    "contratti": [
+     "transitorio"
+    ],
+    "ammobiliato": true,
+    "testo": "Completamente arredato, con l'elenco dei mobili allegato al contratto",
+    "nome": "arredato (transitorio)",
+    "perc": 25
+   },
+   {
+    "chiave": "strada",
+    "tipo": "spunta",
+    "testo": "In una strada di maggior interesse commerciale (elenco dell'allegato A, qui sotto)",
+    "nome": "strada di maggior interesse commerciale",
+    "perc": 30
+   },
+   {
+    "chiave": "veduta",
+    "tipo": "spunta",
+    "testo": "Ampia e libera veduta (non nelle strade di maggior interesse commerciale)",
+    "nome": "veduta libera",
+    "perc": 10,
+    "se": {
+     "chiave": "strada",
+     "valori": [
+      true
+     ],
+     "perc": 0,
+     "testo": "non vale nelle strade di maggior interesse commerciale"
+    }
+   },
+   {
+    "chiave": "giardino",
+    "tipo": "spunta",
+    "testo": "Casa unifamiliare o bifamiliare con giardino (non nelle strade di maggior interesse commerciale)",
+    "nome": "casa uni/bifamiliare con giardino",
+    "perc": 30,
+    "se": {
+     "chiave": "strada",
+     "valori": [
+      true
+     ],
+     "perc": 0,
+     "testo": "non vale nelle strade di maggior interesse commerciale"
+    }
+   }
+  ],
+  "nota_maggiorazioni": "Aumenti e riduzioni si sommano fra loro (art. 4). Sono tutti \"fino a\": qui si usa il massimo. Oltre i 3 anni di durata +2% per ogni anno in più, fino al 12%. Per gli alloggi sotto 80 mq di superficie convenzionale l'aumento è la differenza fra 80 e i mq (fino al 50%). Veduta libera e casa con giardino non valgono nelle strade di maggior interesse commerciale. Strade di maggior interesse commerciale (allegato A): 1° vico Abolitomonte, corso Avezzana, corso Vittorio Emanuele, piazza Luigi Palomba, piazza Martiri d'Africa, piazza Santa Croce, via Alcide De Gasperi, via Beato Vincenzo Romano, via Benedetto Croce, via Cappella Bianchini, via Cesare Battisti, via Circumvallazione, via Curtoli, via Diego Colamarino, via Enrico De Nicola, via Guglielmo Marconi, via Montedoro, via Nazionale, via Piscopia, via Purgatorio, via Roma, via Salvator Noto, via Scappi, via Vittorio Veneto, viale Aldo Moro, viale Campania, viale Cristoforo Colombo, viale Armando Diaz, viale Ungheria, via Tirone, via Beneduce. Non sono applicate le riduzioni facoltative: fino al 30% nelle altre strade, fino al 30% oltre 130 mq, fino al 30% d'intesa fra le parti, fino al 40% per le grandi proprietà e per l'alloggio sociale.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6,
+   "7": 8,
+   "8": 10,
+   "9": 12
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "4ª fascia: alloggio e fabbricato devono essere almeno in buone condizioni; se manca qualche requisito, il canone si ferma al minimo della 4ª fascia.",
+    "fascia": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   },
+   {
+    "testo": "L'accordo di Torre del Greco non ha una parte per i contratti per studenti universitari: qui si applicano le regole dei contratti 3+2. Chiedi conferma all'associazione che attesta il contratto.",
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "Contratto transitorio: durata fino a 18 mesi, stessi valori dei contratti 3+2 (art. 12 e 13); l'arredo completo vale fino al 25%.",
+    "contratti": [
+     "transitorio"
+    ]
+   }
+  ],
+  "durate": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "durata_max": 9
+ },
+ "pdf": {
+  "allegato": "Allegato H",
+  "titolo": "Scheda riepilogativa del canone concordato - Comune di Torre del Greco",
+  "sottotitolo": "(Art. 2 comma 3 ed art. 5 commi 1-2-3 legge 9.12.98 n. 431) - Accordo territoriale per il Comune di Torre del Greco del 07/06/2018, depositato il 26/06/2018 al prot. n. 0043783",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "Elementi caratteristici (allegato C)",
+  "etichetta_conteggio": "TOTALE ELEMENTI",
+  "dichiarazione": "Le parti dichiarano sotto la propria responsabilità, civile e penale, che i valori e le caratteristiche sopra riportate corrispondono all'effettivo stato attuale dei luoghi. Il calcolo del canone è stato effettuato sulla base dei dati forniti dalle parti.",
+  "firme": [
+   "Parte locatrice",
+   "Parte conduttrice"
+  ],
+  "titolo_attestazione": "ALLEGATO D - ATTESTAZIONE DI RISPONDENZA (D.M. 16/01/2017)",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Torre del Greco, come sopra rappresentata, sulla base degli elementi oggettivi sopra dichiarati, visto il contratto di locazione e la scheda riepilogativa del canone concordato,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Torre del Greco depositato in data 26/06/2018 al prot. n. 0043783."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "L'area omogenea si ricava dal foglio di mappa catastale del fabbricato (allegato A): area 1 fogli 2, 6, 9, 14, 36; area 2 fogli 18, 22, 28, 29; area 3 fogli 1, 3, 4, 5, 8, 13; area 4 fogli 30, 32-35; area 5 fogli 21, 24-27, 31; area 6 fogli 10, 11, 501, 502, 503; area 7 fogli 15, 19, 20, 23; area 8 fogli 7, 12, 16, 17."
+ }
+}

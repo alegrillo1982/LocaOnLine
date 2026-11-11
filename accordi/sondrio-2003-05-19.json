@@ -1,0 +1,906 @@
+{
+ "accordo": {
+  "codice": "sondrio-2003-05-19",
+  "modello": "sondrio-2003",
+  "comune": "Sondrio",
+  "provincia": "SO",
+  "titolo": "Accordo territoriale di Sondrio in attuazione della L. 9.12.1998 n. 431 e del D.M. LL.PP. 30.12.2002",
+  "data": "2003-05-19",
+  "data_testo": "19 maggio 2003",
+  "deposito": "Comune di Sondrio",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "Comune di Sondrio",
+  "ufficio_breve": "Comune di Sondrio",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Sondrio del 19 maggio 2003, ancora in vigore</strong>: vale fino a un nuovo accordo (punto 27) e il Comune lo pubblica come vigente, con nuove adesioni fino a ottobre 2026. <strong>I valori sono quelli originali del 2003</strong>: l'accordo li aumenta ogni anno della metà dell'inflazione ISTAT (punto 13), per i contratti nuovi. Prima di firmare chiedi a un'associazione firmataria i valori aggiornati.",
+  "firmatari_proprieta": [
+   "A.P.C. - Confedilizia",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "UNIAT",
+   "CONIA"
+  ],
+  "nota": "Accordo per il Comune di Sondrio in attuazione del D.M. 30/12/2002, firmato a Sondrio il 19/05/2003 (data scritta a mano sulla pagina delle firme: si legge «19.05.03») da Confedilizia (A.P.C.) e U.P.P.I. per la proprietà e da SUNIA, SICET, UNIAT e CONIA per gli inquilini. Le organizzazioni si impegnano a depositarlo in Comune (punto 29): data e protocollo del deposito non sono nel testo pubblicato. Vale fino al rinnovo della convenzione nazionale e del decreto, poi continua ad applicarsi fino a un nuovo accordo (punto 27): il Comune di Sondrio lo pubblica come «accordo territoriale in vigore» e vi hanno aderito ANPU (dal 01/01/2022), Fe.N.I.T. (dal 15/09/2025), ConfProprietà (dal 15/09/2026) e SEIASS (dal 29/10/2026). Tutto il comune è un'unica zona omogenea; i valori cambiano secondo la categoria catastale (allegato A): canoni mensili per l'intero alloggio per fasce di superficie catastale (DPR 138/1998) per A/1, A/2 e A/3-A/4, valori al mq per A/7; A/5-A/6 come A/3 ridotti del 10%. Sotto i 55 mq la superficie si aumenta del 10% (fasce convenzionali). Nella fascia: valore massimo con tutti gli elementi della lettera b dell'allegato B, valore intermedio (minimo più metà della differenza) con almeno gli elementi 3, 7 e 16, valore minimo con stabile oltre 40 anni o senza uno degli elementi 7, 14, 16. Frazioni Mossini, Triangia, Ponchiera e Sant'Anna -10%; alloggi antigienici o senza servizi igienici interni: valore minimo ridotto del 20%. Arredati +20% (+30% sotto i 55 mq e per i transitori); immobili dell'art. 1, comma 2, lett. a, L. 431/98 +20%, cumulabile. Durata 5 anni: +4% dopo il 4° anno; 6 anni: +6% dopo il 5° anno. Valori delle fasce aumentati ogni anno della metà della variazione ISTAT dal secondo anno (punto 13): qui i valori originali.",
+  "fonte": "Comune di Sondrio, pagina «Contratti di locazione agevolati» (comune.sondrio.it/contratti-di-locazione-agevolati/): PDF «Contratti locazione agevolati» (scansione di 25 pagine con accordo, allegati A-F e firme) e avvisi delle adesioni successive. Testo dell'accordo anche nell'archivio SICET (accordi 2003). Polis Lombardia (2019) conferma che a Sondrio vige l'accordo del 2003."
+ },
+ "esempio_zona": "la categoria catastale dell'alloggio, dalla visura (tutto il comune è un'unica zona: cambiano solo i valori per categoria)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "a_corpo": {
+   "nota": "Per le categorie A/1, A/2, A/3-A/4 e A/5-A/6 i valori dell'allegato A sono canoni mensili per l'intero alloggio: la superficie serve solo a scegliere la riga. Per A/7 (villini) sono valori al mq, moltiplicati per la superficie."
+  },
+  "tabella_per": "superficie",
+  "tabella_soglie": [
+   [
+    30,
+    "c33"
+   ],
+   [
+    40,
+    "c44"
+   ],
+   [
+    45.45,
+    "c50"
+   ],
+   [
+    50,
+    "c55"
+   ],
+   [
+    54.99,
+    "c60"
+   ],
+   [
+    65,
+    "n65"
+   ],
+   [
+    75,
+    "n75"
+   ],
+   [
+    90,
+    "n90"
+   ],
+   [
+    115,
+    "n115"
+   ]
+  ],
+  "tabella_oltre": "oltre",
+  "scaglioni": {
+   "soglie": [],
+   "nota": "Solo per A/7: valore al mq per tutta la superficie (con il 10% in più sotto i 55 mq)."
+  },
+  "zone": [
+   {
+    "codice": "A2",
+    "nome": "A/2 - abitazione di tipo civile",
+    "nota": "Il canone dell'allegato A è un importo mensile per l'intero alloggio, che dipende dalla superficie catastale: sotto i 55 mq si usano le «fasce convenzionali» con la superficie aumentata del 10% (art. 7), da 55 mq in su le «fasce normali». Da 0 a 33, 33-44, 44-50, 50-55, 55-60 mq convenzionali; poi 55-65, 65-75, 75-90, 90-115 e oltre 115 mq.",
+    "fasce": {
+     "c33": [
+      [
+       99.0,
+       99.0
+      ],
+      [
+       99.0,
+       137.0
+      ],
+      [
+       99.0,
+       175.0
+      ]
+     ],
+     "c44": [
+      [
+       132.0,
+       132.0
+      ],
+      [
+       132.0,
+       186.0
+      ],
+      [
+       132.0,
+       240.0
+      ]
+     ],
+     "c50": [
+      [
+       150.0,
+       150.0
+      ],
+      [
+       150.0,
+       200.0
+      ],
+      [
+       150.0,
+       250.0
+      ]
+     ],
+     "c55": [
+      [
+       160.0,
+       160.0
+      ],
+      [
+       160.0,
+       210.0
+      ],
+      [
+       160.0,
+       260.0
+      ]
+     ],
+     "c60": [
+      [
+       170.0,
+       170.0
+      ],
+      [
+       170.0,
+       220.0
+      ],
+      [
+       170.0,
+       270.0
+      ]
+     ],
+     "n65": [
+      [
+       195.0,
+       195.0
+      ],
+      [
+       195.0,
+       237.5
+      ],
+      [
+       195.0,
+       280.0
+      ]
+     ],
+     "n75": [
+      [
+       200.0,
+       200.0
+      ],
+      [
+       200.0,
+       245.0
+      ],
+      [
+       200.0,
+       290.0
+      ]
+     ],
+     "n90": [
+      [
+       230.0,
+       230.0
+      ],
+      [
+       230.0,
+       280.0
+      ],
+      [
+       230.0,
+       330.0
+      ]
+     ],
+     "n115": [
+      [
+       300.0,
+       300.0
+      ],
+      [
+       300.0,
+       340.0
+      ],
+      [
+       300.0,
+       380.0
+      ]
+     ],
+     "oltre": [
+      [
+       380.0,
+       380.0
+      ],
+      [
+       380.0,
+       440.0
+      ],
+      [
+       380.0,
+       500.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "A3",
+    "nome": "A/3 o A/4 - tipo economico e popolare",
+    "nota": "Il canone dell'allegato A è un importo mensile per l'intero alloggio, che dipende dalla superficie catastale: sotto i 55 mq si usano le «fasce convenzionali» con la superficie aumentata del 10% (art. 7), da 55 mq in su le «fasce normali». Stesse fasce di superficie della categoria A/2.",
+    "fasce": {
+     "c33": [
+      [
+       79.2,
+       79.2
+      ],
+      [
+       79.2,
+       118.35
+      ],
+      [
+       79.2,
+       157.5
+      ]
+     ],
+     "c44": [
+      [
+       105.6,
+       105.6
+      ],
+      [
+       105.6,
+       160.8
+      ],
+      [
+       105.6,
+       216.0
+      ]
+     ],
+     "c50": [
+      [
+       120.0,
+       120.0
+      ],
+      [
+       120.0,
+       172.5
+      ],
+      [
+       120.0,
+       225.0
+      ]
+     ],
+     "c55": [
+      [
+       128.0,
+       128.0
+      ],
+      [
+       128.0,
+       181.0
+      ],
+      [
+       128.0,
+       234.0
+      ]
+     ],
+     "c60": [
+      [
+       136.0,
+       136.0
+      ],
+      [
+       136.0,
+       189.5
+      ],
+      [
+       136.0,
+       243.0
+      ]
+     ],
+     "n65": [
+      [
+       156.0,
+       156.0
+      ],
+      [
+       156.0,
+       204.0
+      ],
+      [
+       156.0,
+       252.0
+      ]
+     ],
+     "n75": [
+      [
+       160.0,
+       160.0
+      ],
+      [
+       160.0,
+       210.5
+      ],
+      [
+       160.0,
+       261.0
+      ]
+     ],
+     "n90": [
+      [
+       184.0,
+       184.0
+      ],
+      [
+       184.0,
+       240.5
+      ],
+      [
+       184.0,
+       297.0
+      ]
+     ],
+     "n115": [
+      [
+       240.0,
+       240.0
+      ],
+      [
+       240.0,
+       291.0
+      ],
+      [
+       240.0,
+       342.0
+      ]
+     ],
+     "oltre": [
+      [
+       335.0,
+       335.0
+      ],
+      [
+       335.0,
+       392.5
+      ],
+      [
+       335.0,
+       450.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "A5",
+    "nome": "A/5 o A/6 - ultrapopolare o rurale",
+    "nota": "Valori della categoria A/3 ridotti del 10% (allegato B, lettera e). Il canone dell'allegato A è un importo mensile per l'intero alloggio, che dipende dalla superficie catastale: sotto i 55 mq si usano le «fasce convenzionali» con la superficie aumentata del 10% (art. 7), da 55 mq in su le «fasce normali». ",
+    "fasce": {
+     "c33": [
+      [
+       71.28,
+       71.28
+      ],
+      [
+       71.28,
+       106.52
+      ],
+      [
+       71.28,
+       141.75
+      ]
+     ],
+     "c44": [
+      [
+       95.04,
+       95.04
+      ],
+      [
+       95.04,
+       144.72
+      ],
+      [
+       95.04,
+       194.4
+      ]
+     ],
+     "c50": [
+      [
+       108.0,
+       108.0
+      ],
+      [
+       108.0,
+       155.25
+      ],
+      [
+       108.0,
+       202.5
+      ]
+     ],
+     "c55": [
+      [
+       115.2,
+       115.2
+      ],
+      [
+       115.2,
+       162.9
+      ],
+      [
+       115.2,
+       210.6
+      ]
+     ],
+     "c60": [
+      [
+       122.4,
+       122.4
+      ],
+      [
+       122.4,
+       170.55
+      ],
+      [
+       122.4,
+       218.7
+      ]
+     ],
+     "n65": [
+      [
+       140.4,
+       140.4
+      ],
+      [
+       140.4,
+       183.6
+      ],
+      [
+       140.4,
+       226.8
+      ]
+     ],
+     "n75": [
+      [
+       144.0,
+       144.0
+      ],
+      [
+       144.0,
+       189.45
+      ],
+      [
+       144.0,
+       234.9
+      ]
+     ],
+     "n90": [
+      [
+       165.6,
+       165.6
+      ],
+      [
+       165.6,
+       216.45
+      ],
+      [
+       165.6,
+       267.3
+      ]
+     ],
+     "n115": [
+      [
+       216.0,
+       216.0
+      ],
+      [
+       216.0,
+       261.9
+      ],
+      [
+       216.0,
+       307.8
+      ]
+     ],
+     "oltre": [
+      [
+       301.5,
+       301.5
+      ],
+      [
+       301.5,
+       353.25
+      ],
+      [
+       301.5,
+       405.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "A1",
+    "nome": "A/1 - signorile (o A/10 residuale)",
+    "nota": "Comprende anche gli uffici A/10 residuali, dopo la domanda di conversione ad uso abitativo. Il canone dell'allegato A è un importo mensile per l'intero alloggio, che dipende dalla superficie catastale: sotto i 55 mq si usano le «fasce convenzionali» con la superficie aumentata del 10% (art. 7), da 55 mq in su le «fasce normali». ",
+    "fasce": {
+     "c33": [
+      [
+       108.9,
+       108.9
+      ],
+      [
+       108.9,
+       159.45
+      ],
+      [
+       108.9,
+       210.0
+      ]
+     ],
+     "c44": [
+      [
+       145.2,
+       145.2
+      ],
+      [
+       145.2,
+       216.6
+      ],
+      [
+       145.2,
+       288.0
+      ]
+     ],
+     "c50": [
+      [
+       165.0,
+       165.0
+      ],
+      [
+       165.0,
+       232.5
+      ],
+      [
+       165.0,
+       300.0
+      ]
+     ],
+     "c55": [
+      [
+       176.0,
+       176.0
+      ],
+      [
+       176.0,
+       244.0
+      ],
+      [
+       176.0,
+       312.0
+      ]
+     ],
+     "c60": [
+      [
+       187.0,
+       187.0
+      ],
+      [
+       187.0,
+       255.5
+      ],
+      [
+       187.0,
+       324.0
+      ]
+     ],
+     "n65": [
+      [
+       214.5,
+       214.5
+      ],
+      [
+       214.5,
+       275.25
+      ],
+      [
+       214.5,
+       336.0
+      ]
+     ],
+     "n75": [
+      [
+       220.0,
+       220.0
+      ],
+      [
+       220.0,
+       284.0
+      ],
+      [
+       220.0,
+       348.0
+      ]
+     ],
+     "n90": [
+      [
+       253.0,
+       253.0
+      ],
+      [
+       253.0,
+       324.5
+      ],
+      [
+       253.0,
+       396.0
+      ]
+     ],
+     "n115": [
+      [
+       330.0,
+       330.0
+      ],
+      [
+       330.0,
+       393.0
+      ],
+      [
+       330.0,
+       456.0
+      ]
+     ],
+     "oltre": [
+      [
+       418.0,
+       418.0
+      ],
+      [
+       418.0,
+       509.0
+      ],
+      [
+       418.0,
+       600.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "A7",
+    "nome": "A/7 - villino (o A/11)",
+    "nota": "Per villini (e alloggi tipici dei luoghi A/11) i valori sono al mq: da € 5,00 a € 6,00 al mese per ogni mq di superficie catastale (aumentata del 10% sotto i 55 mq).",
+    "fasce": [
+     [
+      5.0,
+      5.0
+     ],
+     [
+      5.0,
+      5.5
+     ],
+     [
+      5.0,
+      6.0
+     ]
+    ],
+    "scaglioni": [
+     [
+      [
+       5.0
+      ],
+      [
+       5.0
+      ]
+     ],
+     [
+      [
+       5.0
+      ],
+      [
+       5.5
+      ]
+     ],
+     [
+      [
+       5.0
+      ],
+      [
+       6.0
+      ]
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "valore minimo",
+    "valore intermedio",
+    "valore massimo"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 3,
+      "tutti": true
+     }
+    ],
+    [
+     {
+      "da": 0,
+      "a": 12,
+      "tutti": true
+     }
+    ]
+   ],
+   "conta": {
+    "da": 0,
+    "a": 12
+   },
+   "blocca": [
+    {
+     "da": 13,
+     "a": 13,
+     "fino": 0,
+     "avviso": "Alloggio antigienico o senza servizi igienici interni: si applica il valore minimo, ridotto del 20% (segna anche la riduzione più sotto)."
+    }
+   ],
+   "nota": "Valore intermedio (fino al minimo più metà della differenza col massimo): tutti gli elementi da 1 a 4. Valore massimo: tutti gli elementi da 1 a 13. Altrimenti, e con stabile di oltre 40 anni, valore minimo (allegato B).",
+   "nota_pdf": "Valore intermedio (minimo + metà della differenza): elementi 3, 7 e 16 (qui 1-4, con 14). Valore massimo: tutti gli elementi della lettera b (qui 1-13). Valore minimo: stabile oltre 40 anni o senza uno degli elementi 7, 14, 16 (allegato B)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Valore intermedio: servono tutti questi elementi"
+   },
+   {
+    "da": 4,
+    "titolo": "Valore massimo: servono anche tutti questi"
+   },
+   {
+    "da": 13,
+    "titolo": "Alloggio antigienico"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Stabile costruito da non più di 40 anni, oppure alloggio nuovo o integralmente ristrutturato (elementi 1, 2 o 3)"
+   },
+   {
+    "testo": "Infissi, serramenti e pavimenti in stato di conservazione normale (elemento 7)"
+   },
+   {
+    "testo": "Bagno interno completo (tazza, lavabo, vasca o doccia) con almeno una finestra o un'aerazione meccanica (elemento 14)"
+   },
+   {
+    "testo": "Ascensore, se l'alloggio è al 3° piano o più in alto; per gli alloggi più in basso segna comunque (elemento 16)"
+   },
+   {
+    "testo": "Alloggio nuovo o integralmente ristrutturato, oppure stabile con meno di 15 anni (elementi 1 o 2)"
+   },
+   {
+    "testo": "Facciate tinteggiate da meno di 10 anni (elemento 4)"
+   },
+   {
+    "testo": "Cantina o soffitta (elemento 8)"
+   },
+   {
+    "testo": "Autorimessa singola o posto auto, coperto o scoperto (elementi 9 o 10)"
+   },
+   {
+    "testo": "Balconi o terrazze (elemento 11)"
+   },
+   {
+    "testo": "Cucina abitabile con almeno una finestra, non angolo cottura (elemento 13)"
+   },
+   {
+    "testo": "Riscaldamento e acqua calda con caldaia singola (elemento 18)"
+   },
+   {
+    "testo": "Riscaldamento centralizzato con regolazione autonoma, oppure impianto di condizionamento (elementi 19 o 20)"
+   },
+   {
+    "testo": "Giardino esclusivo, verde condominiale oppure spazio attrezzato per lo sport o il gioco dei bambini (elementi 12, 22 o 23)"
+   },
+   {
+    "testo": "Alloggio antigienico o senza servizi igienici interni (lettera f)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale dell'alloggio (DPR 138/1998, dalla visura)",
+   "correzioni": [
+    {
+     "fino": 55,
+     "perc": 10
+    }
+   ],
+   "nota": "Sotto i 55 mq la superficie si aumenta del 10% (art. 7): per A/1, A/2, A/3-A/4 e A/5-A/6 serve a scegliere la riga «convenzionale» della tabella, per A/7 si moltiplica per il valore al mq."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Alloggio arredato compiutamente (punto 7)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "20",
+      "testo": "sì, alloggio da 55 mq in su (contratto agevolato o per studenti)",
+      "perc": 20
+     },
+     {
+      "valore": "30",
+      "testo": "sì, alloggio sotto i 55 mq, oppure contratto transitorio",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "perc": 20,
+    "nome": "immobile dell'art. 1, c. 2, lett. a, L. 431/98",
+    "testo": "Immobile vincolato o di pregio dell'art. 1, comma 2, lettera a) della legge 431/1998 (punto 8)"
+   },
+   {
+    "chiave": "frazioni",
+    "tipo": "spunta",
+    "perc": -10,
+    "nome": "frazioni",
+    "testo": "Immobile nelle frazioni Mossini, Triangia, Ponchiera o Sant'Anna (allegato B)"
+   },
+   {
+    "chiave": "antigienico",
+    "tipo": "spunta",
+    "perc": -20,
+    "nome": "alloggio antigienico o senza servizi igienici interni",
+    "testo": "Alloggio antigienico o senza servizi igienici interni (allegato B, lettera f)"
+   }
+  ],
+  "nota_maggiorazioni": "Arredo e immobile di pregio si sommano. La maggiorazione per la durata di 5 o 6 anni vale solo dagli ultimi anni del contratto: non è compresa nel calcolo.",
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Contratti di 5 anni: il canone può aumentare al massimo del 4% dopo il 4° anno; di 6 anni: del 6% dopo il 5° anno (punto 12). L'aumento non vale per i primi anni e non è nel calcolo.",
+    "contratti": [
+     "agevolato"
+    ]
+   },
+   {
+    "testo": "Contratti transitori: durata da 1 a 18 mesi, con l'esigenza transitoria scritta nel contratto e documentata (punti 15-18).",
+    "contratti": [
+     "transitorio"
+    ]
+   },
+   {
+    "testo": "Contratti per studenti universitari: durata da 6 mesi a 3 anni (punto 21).",
+    "contratti": [
+     "studenti"
+    ]
+   },
+   {
+    "testo": "L'accordo non vale per le categorie A/8 e A/9."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegati A e B",
+  "titolo": "Prospetto per la determinazione del canone",
+  "sottotitolo": "Accordo territoriale di Sondrio in attuazione della L. 431/1998 e del D.M. 30.12.2002, sottoscritto il 19/05/2003 - calcolo secondo gli allegati A (tipologie catastali e valori) e B (elementi e modalità)",
+  "titolo_superficie": "SUPERFICIE CATASTALE (DPR 138/1998)",
+  "titolo_elementi": "Elementi oggettivi dell'allegato B",
+  "etichetta_conteggio": "ELEMENTI PRESENTI",
+  "dichiarazione": "Le parti dichiarano che gli elementi indicati corrispondono alle caratteristiche dell'alloggio e che il canone è stato determinato all'interno delle fasce di oscillazione dell'Accordo territoriale di Sondrio, secondo i criteri degli allegati A e B.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "nota_zone": "Tutto il comune è un'unica zona omogenea (punto 2): scegli la categoria catastale dell'alloggio, che trovi nella visura."
+ }
+}

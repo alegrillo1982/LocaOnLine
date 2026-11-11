@@ -1,0 +1,452 @@
+{
+ "accordo": {
+  "codice": "belluno-2025-02-24",
+  "modello": "belluno-2025",
+  "comune": "Belluno",
+  "provincia": "BL",
+  "titolo": "Accordo territoriale per il Comune di Belluno",
+  "data": "2025-02-24",
+  "data_testo": "24 febbraio 2025",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Belluno del 24 febbraio 2025: dura tre anni dal deposito in Comune (le associazioni indicano il 1° marzo 2025) e poi si rinnova di anno in anno, fino a un nuovo accordo.</strong> I valori della tabella si aggiornano ogni anno del 75% della variazione ISTAT di gennaio: qui trovi i valori originali dell'allegato 2, chiedi all'associazione che attesta il contratto se sono già stati aggiornati.",
+  "firmatari_proprieta": [
+   "A.P.E. Confedilizia Belluno",
+   "A.P.P.C. Belluno e Treviso",
+   "A.S.P.P.I. Belluno"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A. Belluno",
+   "S.I.C.E.T. Belluno Treviso",
+   "U.N.I.A.T. Veneto"
+  ],
+  "nota": "Firmato a Belluno il 24/02/2025 (presso la Provincia) insieme ad altri quattro accordi per la provincia (Feltre, Sedico, Borgo Valbelluna e gli altri comuni); sostituisce l'accordo del 20/11/2006. Dura tre anni dal deposito tramite PEC al Comune di Belluno (data e protocollo non pubblicati; le associazioni indicano la decorrenza dal 1° marzo 2025), poi si rinnova di anno in anno e resta in vigore fino a un nuovo accordo. Quattro zone (A, B, C, D) ricavate dalle zone OMI; per ogni zona tre righe per anno di costruzione o di ristrutturazione e tre colonne per numero di elementi (allegato 2). Valori annui al mq, aggiornati ogni anno del 75% dell'ISTAT di gennaio.",
+  "fonte": "Testo firmato con allegati 1-6 (scansione, 16 pagine) pubblicato da Confedilizia (APE Belluno); stessa scansione firmata pubblicata da CGIL/SUNIA Belluno e versione testuale non firmata pubblicata dal SUNIA nazionale. Notizia della firma e della decorrenza dal 1° marzo 2025 sul sito APPC Belluno e Treviso."
+ },
+ "esempio_zona": "la zona OMI (B1, B2, C1, C2, C3, D1, D2, E1, E2, E3 o R1) dal sito GEOPOI dell'Agenzia delle Entrate",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "solo_massimo": true,
+  "durata_anche_minimo": true,
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Zona A (OMI B1 e B2)",
+    "nota": "Zona A: zone OMI B1 e B2. Si verifica sul sito GEOPOI dell'Agenzia delle Entrate. Se il confine di zona è una strada, tutti i numeri civici di quella strada vanno nella zona superiore. Valori in euro al mq all'anno.",
+    "fasce": {
+     "2010": [
+      [
+       20,
+       100
+      ],
+      [
+       30,
+       125
+      ],
+      [
+       40,
+       150
+      ]
+     ],
+     "1980": [
+      [
+       20,
+       95
+      ],
+      [
+       20,
+       100
+      ],
+      [
+       30,
+       125
+      ]
+     ],
+     "ante": [
+      [
+       20,
+       90
+      ],
+      [
+       20,
+       95
+      ],
+      [
+       20,
+       100
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B (OMI C1, C2, C3, E2 ed E3)",
+    "nota": "Zona B: zone OMI C1, C2, C3, E2 ed E3. Si verifica sul sito GEOPOI dell'Agenzia delle Entrate. Se il confine di zona è una strada, tutti i numeri civici di quella strada vanno nella zona superiore. Valori in euro al mq all'anno.",
+    "fasce": {
+     "2010": [
+      [
+       20,
+       60
+      ],
+      [
+       35,
+       75
+      ],
+      [
+       40,
+       90
+      ]
+     ],
+     "1980": [
+      [
+       20,
+       55
+      ],
+      [
+       20,
+       60
+      ],
+      [
+       35,
+       75
+      ]
+     ],
+     "ante": [
+      [
+       20,
+       50
+      ],
+      [
+       20,
+       55
+      ],
+      [
+       20,
+       60
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C (OMI E1, D1 e D2)",
+    "nota": "Zona C: zone OMI E1, D1 e D2. Si verifica sul sito GEOPOI dell'Agenzia delle Entrate. Se il confine di zona è una strada, tutti i numeri civici di quella strada vanno nella zona superiore. Valori in euro al mq all'anno.",
+    "fasce": {
+     "2010": [
+      [
+       20,
+       60
+      ],
+      [
+       30,
+       70
+      ],
+      [
+       35,
+       80
+      ]
+     ],
+     "1980": [
+      [
+       20,
+       55
+      ],
+      [
+       20,
+       60
+      ],
+      [
+       30,
+       70
+      ]
+     ],
+     "ante": [
+      [
+       15,
+       40
+      ],
+      [
+       20,
+       55
+      ],
+      [
+       20,
+       60
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D",
+    "nome": "Zona D (OMI R1)",
+    "nota": "Zona D: zona OMI R1. Si verifica sul sito GEOPOI dell'Agenzia delle Entrate. Se il confine di zona è una strada, tutti i numeri civici di quella strada vanno nella zona superiore. Valori in euro al mq all'anno.",
+    "fasce": {
+     "2010": [
+      [
+       15,
+       50
+      ],
+      [
+       20,
+       65
+      ],
+      [
+       30,
+       70
+      ]
+     ],
+     "1980": [
+      [
+       15,
+       45
+      ],
+      [
+       15,
+       50
+      ],
+      [
+       20,
+       65
+      ]
+     ],
+     "ante": [
+      [
+       15,
+       40
+      ],
+      [
+       15,
+       45
+      ],
+      [
+       15,
+       50
+      ]
+     ]
+    }
+   }
+  ],
+  "tabella_per": "scelta",
+  "tabella_chiave": "epoca",
+  "tabella_predefinita": "ante",
+  "fasce": {
+   "nomi": [
+    "Fino a 4 elementi",
+    "5 o 6 elementi",
+    "Da 7 elementi"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    6
+   ],
+   "nota": "Fino a 4 elementi la colonna più bassa, con 5 o 6 quella di mezzo, da 7 elementi quella più alta (allegato 2)."
+  },
+  "elementi": [
+   {
+    "testo": "Impianto di riscaldamento e/o canna fumaria utilizzabile"
+   },
+   {
+    "testo": "Condizionatore e/o deumidificatore e/o pannelli fotovoltaici o solari termici"
+   },
+   {
+    "testo": "Allarme antintrusione e/o portoncino blindato e/o inferriate e/o videocitofono e/o videosorveglianza"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Doppi servizi (due bagni)"
+   },
+   {
+    "testo": "Doppi vetri (vetrocamera o controfinestre)"
+   },
+   {
+    "testo": "Terrazza, balcone o portico"
+   },
+   {
+    "testo": "Cantina, magazzino o lavanderia"
+   },
+   {
+    "testo": "Soffitta o sottotetto agibile"
+   },
+   {
+    "testo": "Garage o posto auto in uso esclusivo, anche in autorimessa comune"
+   },
+   {
+    "testo": "Verde e/o cortile in uso comune (almeno 20 mq per alloggio)"
+   },
+   {
+    "testo": "Area scoperta in uso esclusivo"
+   },
+   {
+    "testo": "Edificio con al massimo 7 abitazioni"
+   },
+   {
+    "testo": "Parcheggio in spazio comune interno"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'alloggio",
+   "correzioni": [
+    {
+     "fino": 46,
+     "incluso": true,
+     "perc": 30
+    },
+    {
+     "fino": 60,
+     "incluso": true,
+     "perc": 20
+    },
+    {
+     "fino": 75,
+     "incluso": true,
+     "perc": 10
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa (50%)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto auto in garage comune (25%)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazze, portici, cantine, magazzini, lavanderie, soffitte (25%)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta in uso esclusivo (15%, fino alla superficie dell'alloggio)",
+     "coeff": 0.15,
+     "tetto_mq_base": 1
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale, la quota secondo i millesimi (10%)",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Superficie calpestabile dell'alloggio: fino a 46 mq conta il 130%, da 46,01 a 60 mq il 120%, da 60,01 a 75 mq il 110%, oltre 75 mq il 100%. Si aggiungono le pertinenze calpestabili: autorimessa 50%, posto auto in garage comune 25%, balconi, terrazze, portici, cantine, magazzini, lavanderie e soffitte 25%, area scoperta esclusiva 15% (al massimo quanto l'alloggio), verde condominiale 10% della quota millesimale. È ammessa una tolleranza del 5% in più o in meno."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "epoca",
+    "tipo": "scelta",
+    "testo": "Anno di costruzione o di ristrutturazione / manutenzione straordinaria (sceglie la riga della tabella)",
+    "nome": "epoca",
+    "nessuna": "prima del 1980",
+    "nessuna_breve": "prima del 01/01/1980",
+    "opzioni": [
+     {
+      "valore": "1980",
+      "testo": "dal 1980 al 2009",
+      "perc": 0
+     },
+     {
+      "valore": "2010",
+      "testo": "dal 2010 in poi",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "classe",
+    "tipo": "spunta",
+    "testo": "Attestato di prestazione energetica (APE) in classe A o B",
+    "nome": "classe energetica A o B",
+    "perc": 5
+   },
+   {
+    "chiave": "vincolo",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato (beni culturali) o di categoria A/1, A/8, A/9",
+    "nome": "immobile vincolato o A/1, A/8, A/9",
+    "perc": 30
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Alloggio arredato",
+    "nome": "arredo",
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "in parte: cucina con tavolo, sedie, frigo, forno e piano cottura, bagno arredato",
+      "perc": 15
+     },
+     {
+      "valore": "completo",
+      "testo": "completo: anche camere con letto, rete e armadio per ogni occupante",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "transitorio_grandi",
+    "tipo": "auto",
+    "contratti": [
+     "transitorio"
+    ],
+    "superficie": {
+     "da": 75.01
+    },
+    "testo": "Contratto transitorio, alloggio oltre 75 mq di superficie convenzionale",
+    "nome": "transitorio, alloggio oltre 75 mq",
+    "perc": 20
+   }
+  ],
+  "nota_maggiorazioni": "Per l'anno conta anche una ristrutturazione, un restauro o una manutenzione straordinaria (non la sola sostituzione della caldaia). Classe energetica, vincolo e arredo aumentano solo il massimo e si sommano. La durata di 4, 5 o 6 anni aumenta del 3, 5 o 7% sia il minimo sia il massimo. Nei contratti transitori, per gli alloggi oltre 75 mq di superficie convenzionale, il massimo può crescere ancora del 20%.",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 7
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "I contratti transitori durano al massimo 18 mesi e vanno motivati con un'esigenza del proprietario o dell'inquilino, indicata nel contratto e documentata."
+   },
+   {
+    "zone": [
+     "B"
+    ],
+    "testo": "Zona B, immobili del 1980-2009 con 5 o 6 elementi: la tabella firmata riporta un massimo di 90 € al mq all'anno, più alto della colonna con 7 elementi (75): è quasi certamente un refuso. Qui si usa 60, come nelle altre zone. Chiedi conferma all'associazione che attesta il contratto."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 3",
+  "titolo": "Attestazione di rispondenza unilaterale ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Belluno del 24/02/2025 - Legge 9.12.1998 n. 431 e D.M. 16.1.2017",
+  "titolo_elementi": "Tabella elementi e dotazioni (allegato 1 - Tabella A)",
+  "dichiarazione": "Il richiedente dichiara, sotto la sua responsabilità, le caratteristiche dell'immobile oggetto della locazione agevolata / ad uso transitorio / per studenti universitari, come da elementi oggettivi sopra riportati.",
+  "firme": [
+   "Il dichiarante",
+   "Firma del locatore (Tabella A)"
+  ],
+  "titolo_attestazione": "ATTESTA",
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Belluno, sulla base degli elementi oggettivi dichiarati dal locatore, anche ai fini di eventuali agevolazioni fiscali, ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Belluno e che il canone mensile indicato nel contratto risulta congruo in relazione alle tabelle e alle previsioni dell'Accordo."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla zona OMI dell'immobile (GEOPOI, Agenzia delle Entrate): B1 e B2 zona A; C1, C2, C3, E2 ed E3 zona B; E1, D1 e D2 zona C; R1 zona D."
+ }
+}

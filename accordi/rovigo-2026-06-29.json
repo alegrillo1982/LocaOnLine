@@ -1,0 +1,791 @@
+{
+ "accordo": {
+  "codice": "rovigo-2026-06-29",
+  "modello": "rovigo-2026",
+  "comune": "Rovigo",
+  "provincia": "RO",
+  "titolo": "Accordo territoriale per il Comune di Rovigo",
+  "data": "2026-06-29",
+  "data_testo": "29 giugno 2026",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "firmatari_proprieta": [
+   "A.P.E. - Confedilizia",
+   "U.P.P.I.",
+   "A.S.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "C.O.N.I.A."
+  ],
+  "nota": "Protocollo modificativo firmato a Rovigo il 29/06/2026 da A.P.E.-Confedilizia, U.P.P.I. e A.S.P.P.I. (proprietari) e C.O.N.I.A. (inquilini), in vigore dal 01/07/2026: riscrive per intero l'accordo del 14/06/2018 come sostituito il 18/01/2023 (protocollo del Comune n. 0003935 del 19/01/2023). Va depositato presso il Comune di Rovigo e la Regione Veneto (data e protocollo non pubblicati); dura tre anni dal giorno dopo il deposito e resta in vigore fino al nuovo accordo. Quattro aree (allegati 1 e 5), tre subfasce secondo il livello di qualità prevalente fra cinque categorie (allegato 2), valori mensili al mq aggiornati a febbraio 2026 e aggiornabili ogni anno al 100% dell'ISTAT; i massimi cambiano con l'aliquota IMU (sezione 13 dell'allegato 2). A Rovigo c'è anche l'accordo dell'08/10/2019 fra SUNIA, SICET e (dal 12/04/2024) UNIAT, da cui A.S.P.P.I. è receduta con effetto dal 29/06/2026 (allegato 6). Gli altri comuni della provincia hanno un accordo separato (19/02/2024).",
+  "fonte": "Confedilizia, pagina della sede di Rovigo: scansione firmata del protocollo modificativo del 29/06/2026 con allegati 1-6 (20 pagine), pubblicata a luglio 2026; precedente accordo del 18/01/2023 sulla stessa pagina."
+ },
+ "esempio_zona": "l'area dall'allegato 1 e dalla planimetria (allegato 5): A centro storico allargato, B Città Giardino, San Bortolo, Commenda, Tassina, C San Pio X, Commenda Ovest, Borsea, D resto del territorio e frazioni",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "scelta",
+  "tabella_chiave": "imu",
+  "tabella_predefinita": "96",
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Area A - Centro storico allargato",
+    "nota": "Area A: centro storico allargato, delimitato in giallo nella planimetria dell'accordo (allegato 5). Valori in euro al mq al mese, aggiornati a febbraio 2026; il massimo dipende dall'aliquota IMU.",
+    "fasce": {
+     "96": [
+      [
+       1.13,
+       3.92
+      ],
+      [
+       3.92,
+       5.63
+      ],
+      [
+       5.63,
+       6.51
+      ]
+     ],
+     "80": [
+      [
+       1.13,
+       3.81
+      ],
+      [
+       3.92,
+       5.472
+      ],
+      [
+       5.63,
+       6.328
+      ]
+     ],
+     "60": [
+      [
+       1.13,
+       3.69
+      ],
+      [
+       3.92,
+       5.352
+      ],
+      [
+       5.63,
+       6.208
+      ]
+     ],
+     "40": [
+      [
+       1.13,
+       3.57
+      ],
+      [
+       3.92,
+       5.232
+      ],
+      [
+       5.63,
+       6.088
+      ]
+     ],
+     "106": [
+      [
+       1.13,
+       3.98
+      ],
+      [
+       3.92,
+       5.69
+      ],
+      [
+       5.63,
+       6.57
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "B",
+    "nome": "Area B - Città Giardino, San Bortolo, Tassina",
+    "nota": "Area B: Città Giardino, San Bortolo, Commenda Est, Commenda Ovest e Tassina, delimitate in rosso nella planimetria (allegato 5). Commenda Ovest è divisa fra le aree B e C: guarda la planimetria. Valori in euro al mq al mese, aggiornati a febbraio 2026; il massimo dipende dall'aliquota IMU.",
+    "fasce": {
+     "96": [
+      [
+       1.02,
+       3.71
+      ],
+      [
+       3.71,
+       5.33
+      ],
+      [
+       5.33,
+       6.16
+      ]
+     ],
+     "80": [
+      [
+       1.02,
+       3.606
+      ],
+      [
+       3.71,
+       5.181
+      ],
+      [
+       5.33,
+       5.988
+      ]
+     ],
+     "60": [
+      [
+       1.02,
+       3.486
+      ],
+      [
+       3.71,
+       5.061
+      ],
+      [
+       5.33,
+       5.868
+      ]
+     ],
+     "40": [
+      [
+       1.02,
+       3.366
+      ],
+      [
+       3.71,
+       4.941
+      ],
+      [
+       5.33,
+       5.748
+      ]
+     ],
+     "106": [
+      [
+       1.02,
+       3.77
+      ],
+      [
+       3.71,
+       5.39
+      ],
+      [
+       5.33,
+       6.22
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C",
+    "nome": "Area C - San Pio X, Borsea, Commenda Ovest",
+    "nota": "Area C: San Pio X, Commenda Ovest e Borsea, delimitate in viola nella planimetria. Commenda Ovest è divisa fra le aree B e C: guarda la planimetria. Valori in euro al mq al mese, aggiornati a febbraio 2026; il massimo dipende dall'aliquota IMU.",
+    "fasce": {
+     "96": [
+      [
+       0.9,
+       3.42
+      ],
+      [
+       3.42,
+       5.02
+      ],
+      [
+       5.02,
+       5.86
+      ]
+     ],
+     "80": [
+      [
+       0.9,
+       3.324
+      ],
+      [
+       3.42,
+       4.879
+      ],
+      [
+       5.02,
+       5.696
+      ]
+     ],
+     "60": [
+      [
+       0.9,
+       3.204
+      ],
+      [
+       3.42,
+       4.759
+      ],
+      [
+       5.02,
+       5.576
+      ]
+     ],
+     "40": [
+      [
+       0.9,
+       3.084
+      ],
+      [
+       3.42,
+       4.639
+      ],
+      [
+       5.02,
+       5.456
+      ]
+     ],
+     "106": [
+      [
+       0.9,
+       3.48
+      ],
+      [
+       3.42,
+       5.08
+      ],
+      [
+       5.02,
+       5.92
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D",
+    "nome": "Area D - Zone rimanenti e frazioni",
+    "nota": "Area D: tutte le altre zone del territorio comunale e le frazioni. Valori in euro al mq al mese, aggiornati a febbraio 2026; il massimo dipende dall'aliquota IMU.",
+    "fasce": {
+     "96": [
+      [
+       0.77,
+       3.18
+      ],
+      [
+       3.18,
+       4.39
+      ],
+      [
+       4.39,
+       5.63
+      ]
+     ],
+     "80": [
+      [
+       0.77,
+       3.091
+      ],
+      [
+       3.18,
+       4.267
+      ],
+      [
+       4.39,
+       5.472
+      ]
+     ],
+     "60": [
+      [
+       0.77,
+       2.971
+      ],
+      [
+       3.18,
+       4.147
+      ],
+      [
+       4.39,
+       5.352
+      ]
+     ],
+     "40": [
+      [
+       0.77,
+       2.851
+      ],
+      [
+       3.18,
+       4.027
+      ],
+      [
+       4.39,
+       5.232
+      ]
+     ],
+     "106": [
+      [
+       0.77,
+       3.24
+      ],
+      [
+       3.18,
+       4.45
+      ],
+      [
+       4.39,
+       5.69
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "Subfascia 1 (normale)",
+    "Subfascia 2 (buono)",
+    "Subfascia 3 (ottimo)"
+   ],
+   "combina": "prevalente",
+   "gruppi": [
+    {
+     "nome": "Tipologia edilizia",
+     "da": 0,
+     "a": 0,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Vetustà",
+     "da": 1,
+     "a": 1,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Caratteristiche posizionali/contesto",
+     "da": 2,
+     "a": 4,
+     "soglie": [
+      1,
+      2
+     ]
+    },
+    {
+     "nome": "Accessori",
+     "da": 5,
+     "a": 15,
+     "soglie": [
+      3,
+      6
+     ]
+    },
+    {
+     "nome": "Dotazione tecnologica",
+     "da": 16,
+     "a": 29,
+     "soglie": [
+      3,
+      6
+     ]
+    }
+   ],
+   "parita": {
+    "0-1": 1,
+    "1-2": 2,
+    "0-2": 1
+   },
+   "nota": "Ogni categoria vale normale, buono o ottimo (posizione: 0-1 servizi normale, 2 buono, 3 ottimo; accessori: fino a 3 normale, da 4 a 6 buono, oltre 6 ottimo; dotazione tecnologica: fino a 3 punti normale, da 3,01 a 6 buono, oltre 6 ottimo). La subfascia è il livello che ricorre più spesso; a parità normale e buono vale buono, buono e ottimo vale ottimo, normale e ottimo vale buono."
+  },
+  "elementi": [
+   {
+    "testo": "Tipologia edilizia",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "condominio a scala unica con più di 6 unità, o condominio a blocco/in linea con più scale (normale)",
+      "punti": 0
+     },
+     {
+      "testo": "ingresso indipendente, casa aggregata o sovrapposta, plurifamiliare, a schiera, o condominio con al massimo 6 unità (buono)",
+      "punti": 1
+     },
+     {
+      "testo": "casa isolata unifamiliare o abbinata, o attico con terrazzo (ottimo)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Vetustà: anno di costruzione o di ristrutturazione totale",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "fino al 1977 (normale)",
+      "punti": 0
+     },
+     {
+      "testo": "dal 1978 al 2002 (buono)",
+      "punti": 1
+     },
+     {
+      "testo": "dal 2003 (ottimo)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Servizi postali, bancari, commerciali o negozi di vicinato entro 400 m",
+    "punti": 1
+   },
+   {
+    "testo": "Trasporto pubblico (di qualunque genere) entro 400 m",
+    "punti": 1
+   },
+   {
+    "testo": "Scuole pubbliche (di qualunque genere) entro 400 m",
+    "punti": 1
+   },
+   {
+    "testo": "Posto auto/moto/bici su area esclusiva",
+    "punti": 1
+   },
+   {
+    "testo": "Cantina o ripostiglio in comune, all'interno dell'edificio",
+    "punti": 1
+   },
+   {
+    "testo": "Serramenti a risparmio energetico",
+    "punti": 1
+   },
+   {
+    "testo": "Posto auto/moto/bici in comune",
+    "punti": 1
+   },
+   {
+    "testo": "Doppi servizi",
+    "punti": 1
+   },
+   {
+    "testo": "Finestre con zanzariere",
+    "punti": 1
+   },
+   {
+    "testo": "Travi a vista",
+    "punti": 1
+   },
+   {
+    "testo": "Portoncino d'ingresso blindato",
+    "punti": 1
+   },
+   {
+    "testo": "Basculante e/o cancello carraio automatizzato",
+    "punti": 1
+   },
+   {
+    "testo": "Verde e/o scoperto in comune",
+    "punti": 1
+   },
+   {
+    "testo": "Lastrico solare in comune",
+    "punti": 1
+   },
+   {
+    "testo": "Riscaldamento autonomo e produzione di acqua calda con caldaia a gas a condensazione",
+    "punti": 2.4
+   },
+   {
+    "testo": "Riscaldamento e produzione di acqua calda autonomi a gas",
+    "punti": 2.2
+   },
+   {
+    "testo": "Riscaldamento autonomo e produzione di acqua calda da fonti rinnovabili",
+    "punti": 2.6
+   },
+   {
+    "testo": "Riscaldamento a pavimento, autonomo o centralizzato",
+    "punti": 2.6
+   },
+   {
+    "testo": "Riscaldamento a pompa di calore",
+    "punti": 2.6
+   },
+   {
+    "testo": "Riscaldamento centralizzato con contabilizzazione e valvole termostatiche",
+    "punti": 0.9
+   },
+   {
+    "testo": "Riscaldamento centralizzato",
+    "punti": 0.6
+   },
+   {
+    "testo": "Produzione di acqua calda sanitaria indipendente",
+    "punti": 0.7
+   },
+   {
+    "testo": "Produzione di acqua calda centralizzata",
+    "punti": 0.6
+   },
+   {
+    "testo": "Impianto di condizionamento fisso",
+    "punti": 1.3
+   },
+   {
+    "testo": "Impianto di allarme",
+    "punti": 1.4
+   },
+   {
+    "testo": "Ascensore/elevatore (non vale per le unità al piano terra senza autorimessa al piano interrato)",
+    "punti": 1.2
+   },
+   {
+    "testo": "Citofono/videocitofono",
+    "punti": 1.1
+   },
+   {
+    "testo": "Classe energetica (dall'APE)",
+    "livelli": [
+     {
+      "testo": "A+++",
+      "punti": 5
+     },
+     {
+      "testo": "A++",
+      "punti": 4.5
+     },
+     {
+      "testo": "A+",
+      "punti": 4
+     },
+     {
+      "testo": "A",
+      "punti": 3.5
+     },
+     {
+      "testo": "B",
+      "punti": 3
+     },
+     {
+      "testo": "C o D",
+      "punti": 2
+     },
+     {
+      "testo": "E o F",
+      "punti": 1
+     },
+     {
+      "testo": "G",
+      "punti": 0.4
+     }
+    ]
+   }
+  ],
+  "superficie": {
+   "base": "Superficie netta calpestabile dell'alloggio",
+   "correzioni": [
+    {
+     "fino": 36,
+     "perc": 50
+    },
+    {
+     "da": 36,
+     "fino": 42,
+     "incluso": true,
+     "imposta": 54
+    },
+    {
+     "da": 42,
+     "fino": 50,
+     "incluso": true,
+     "perc": 30
+    },
+    {
+     "da": 50,
+     "fino": 65,
+     "incluso": true,
+     "imposta": 65
+    }
+   ],
+   "grandi": {
+    "oltre": 100,
+    "perc": 30
+   },
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa/garage in uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto accatastato o assegnato in uso esclusivo",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "mansarda",
+     "testo": "Mansarda/taverna (parte con altezza di almeno 2,40 m)",
+     "coeff": 1.0
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e simili",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta esclusiva (15% fino a 150 mq, 5% oltre)",
+     "coeff": 0.15,
+     "scaglione": [
+      150,
+      0.15,
+      0.05
+     ]
+    }
+   ],
+   "nota": "Sotto i 36 mq la superficie si moltiplica per 1,50; da 36 a 42 mq vale 54 mq; da 42 a 50 mq si moltiplica per 1,30; da 50 a 65 mq vale 65 mq; oltre 100 mq la parte eccedente conta il 30%. Sulla superficie dell'alloggio è ammessa una tolleranza del 5% in più o in meno."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "imu",
+    "tipo": "scelta",
+    "testo": "Aliquota IMU dell'immobile (sceglie i valori massimi della tabella)",
+    "nome": "aliquota IMU",
+    "nessuna": "9,6 per mille (valori base)",
+    "nessuna_breve": "9,6 per mille",
+    "opzioni": [
+     {
+      "valore": "106",
+      "testo": "10,6 per mille",
+      "perc": 0
+     },
+     {
+      "valore": "80",
+      "testo": "8 per mille",
+      "perc": 0
+     },
+     {
+      "valore": "60",
+      "testo": "6 per mille",
+      "perc": 0
+     },
+     {
+      "valore": "40",
+      "testo": "4 per mille",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Alloggio arredato",
+    "nome": "arredo",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "arredato in parte, senza cucina completa",
+      "perc": 15
+     },
+     {
+      "valore": "cucina",
+      "testo": "cucina completa (almeno frigorifero, piano cottura, lavello e pensili) o elettrodomestici con arredo parziale",
+      "perc": 20
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "storico",
+    "tipo": "scelta",
+    "testo": "Immobile vincolato (beni culturali) o di categoria A/1, A/8, A/9",
+    "nome": "immobile vincolato o A/1, A/8, A/9",
+    "opzioni": [
+     {
+      "valore": "5",
+      "testo": "aumento del 5%",
+      "perc": 5
+     },
+     {
+      "valore": "10",
+      "testo": "aumento del 10%",
+      "perc": 10
+     },
+     {
+      "valore": "15",
+      "testo": "aumento del 15%",
+      "perc": 15
+     },
+     {
+      "valore": "20",
+      "testo": "aumento del 20%",
+      "perc": 20
+     }
+    ]
+   },
+   {
+    "chiave": "esigenza",
+    "tipo": "spunta",
+    "testo": "Transitorio motivato da un'esigenza dell'inquilino (solo sul massimo)",
+    "nome": "transitorio per esigenza dell'inquilino (sul massimo)",
+    "perc": 10,
+    "solo_max": true,
+    "contratti": [
+     "transitorio"
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Arredo: fino a +15% (parziale), +20% (cucina completa o elettrodomestici), +30% (completo); il calcolo usa la percentuale massima. Immobili vincolati o A/1, A/8, A/9: dal 5% al 20%. Durata 4+2, 5+2, 6+2: +5%, +7%, +10%. Transitori per esigenza dell'inquilino: +10% sul solo massimo. Gli aumenti si applicano uno dopo l'altro, sul minimo e sul massimo.",
+  "durata": {
+   "4": 5,
+   "5": 7,
+   "6": 10
+  },
+  "combinazione": "prodotto",
+  "avvisi": [
+   {
+    "testo": "Valori aggiornati a febbraio 2026: l'accordo li aggiorna ogni anno al 100% dell'ISTAT. Chiedi all'associazione che attesta il contratto se ci sono valori più recenti."
+   },
+   {
+    "testo": "Il massimo della subfascia dipende dall'aliquota IMU che il Comune applica all'immobile: se non la conosci, chiedila al Comune o al tuo consulente."
+   },
+   {
+    "testo": "I contratti transitori durano al massimo 18 mesi.",
+    "contratti": [
+     "transitorio"
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 2 e 3",
+  "titolo": "Scheda per la determinazione del canone di locazione",
+  "sottotitolo": "ai sensi dell'Accordo per il Comune di Rovigo sottoscritto il 14/06/2018 e successive modifiche e sostituzioni (protocollo modificativo del 29/06/2026, in vigore dal 01/07/2026)",
+  "titolo_superficie": "SUPERFICIE LOCATIVA",
+  "titolo_elementi": "Definizione subfascia di appartenenza (livello di qualità prevalente)",
+  "dichiarazione": "Il locatore e/o il conduttore dichiarano, sotto la propria responsabilità, gli elementi oggettivi sopra riportati, ai fini dell'attestazione ex D.M. 16/01/2017.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16/1/2017",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Rovigo, come sopra rappresentata, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Rovigo depositato in data ……………………"
+  ],
+  "firme_attestazione": [
+   "Rovigo, li ……………………",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "Aree dell'allegato 1 (planimetria nell'allegato 5): A centro storico allargato (giallo); B Città Giardino, San Bortolo, Commenda Est, Commenda Ovest, Tassina (rosso); C San Pio X, Commenda Ovest, Borsea (viola); D zone rimanenti e frazioni. I confini passano sulla mezzeria delle strade."
+ }
+}

@@ -1,0 +1,711 @@
+{
+ "accordo": {
+  "codice": "ascolipiceno-2025-02-13",
+  "modello": "ascolipiceno-2025",
+  "comune": "Ascoli Piceno",
+  "provincia": "AP",
+  "titolo": "Accordo territoriale comunale per il Comune di Ascoli Piceno",
+  "data": "2025-02-13",
+  "data_testo": "13 febbraio 2025",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo per il Comune di Ascoli Piceno del 13 febbraio 2025</strong>, in vigore dal 1° marzo 2025 per tre anni (poi prorogato di anno in anno, salvo disdetta).",
+  "firmatari_proprieta": [
+   "ASPPI",
+   "CONFEDILIZIA",
+   "UPPI",
+   "CONFABITARE"
+  ],
+  "firmatari_conduttori": [
+   "SICET",
+   "SUNIA",
+   "UNIAT",
+   "UNIONE INQUILINI"
+  ],
+  "nota": "Accordo sottoscritto ad Ascoli Piceno il 13/02/2025, in vigore dal 01/03/2025 per tre anni, poi aggiornabile o prorogato di anno in anno salvo disdetta (titolo C, punto 9). Sostituisce, per il capoluogo, l'accordo quadro provinciale del 13/09/2019. Data e protocollo di deposito al Comune non sono riportati sul testo pubblicato. Valori in euro al mq l'anno per 4 zone e 3 fasce (tabella del punto B.2, riferita agli immobili non intensivi di nuova costruzione, dopo il 2010): il minimo è sempre il 60% del massimo. Ogni gruppo di elementi (pertinenze, stato di conservazione, servizi) dà una fascia; il massimo è (2 x pertinenze + conservazione + 2 x servizi) / 5. Tutti i correttivi dei punti 5-9 si sommano e si applicano a minimo e massimo.",
+  "fonte": "Unione Inquilini San Benedetto del Tronto, pagina «Accordi territoriali per il Comune di Ascoli Piceno (2025)»: accordo firmato (15 pagine), scheda di calcolo (verbale di consegna e attestato di rispondenza), allegati A, B, C, D."
+ },
+ "esempio_zona": "la zona dalla via (centro di pregio, centro, semicentrale, periferia)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "PREGIO",
+    "nome": "Centro storico di pregio",
+    "nota": "Piazza del Popolo, Piazza Arringo, Piazza Simonetti, Piazza Roma e vie collegate, escluse via Pretoriana, via Angelini, via Mazzini, via Ancaria, via Bonaccorsi e via Trieste dall'incrocio con via Mazzini.",
+    "fasce": [
+     [
+      45.0,
+      75
+     ],
+     [
+      52.2,
+      87
+     ],
+     [
+      60.0,
+      100
+     ]
+    ]
+   },
+   {
+    "codice": "CENTRO",
+    "nome": "Centro",
+    "nota": "Dentro le mura castellane, escluso il centro di pregio, tra i fiumi Castellano e Tronto, da Porta Romana fino a Piazza Matteotti.",
+    "fasce": [
+     [
+      43.8,
+      73
+     ],
+     [
+      48.6,
+      81
+     ],
+     [
+      54.0,
+      90
+     ]
+    ]
+   },
+   {
+    "codice": "SEMICENTRALE",
+    "nome": "Semicentrale",
+    "nota": "Fascia intorno alle mura: Porta Cartara, via Adriatico e abitato di via San Marco, via Napoli, Pennile di sopra e di sotto, Porta Maggiore, via Cagliari, SS. Filippo e Giacomo, Tofare, sponda del Tronto dalla Circonvallazione Nord (compresa la zona del cimitero), Porta Cappuccina, Campo Parignano, Borgo Chiaro, Zeppelle, Monticelli fino al confine con Brecciarolo, con gli agglomerati vicini.",
+    "fasce": [
+     [
+      39.0,
+      65
+     ],
+     [
+      43.2,
+      72
+     ],
+     [
+      48.0,
+      80
+     ]
+    ]
+   },
+   {
+    "codice": "PERIFERICA",
+    "nome": "Periferica, agricola e frazioni",
+    "nota": "Tutto il resto del territorio comunale.",
+    "fasce": [
+     [
+      36.0,
+      60
+     ],
+     [
+      40.2,
+      67
+     ],
+     [
+      43.2,
+      72
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "bassa",
+    "media",
+    "alta"
+   ],
+   "criterio": "punti",
+   "minimo_perc": 60,
+   "gruppi": [
+    {
+     "nome": "pertinenze",
+     "titolo": "a) Dotazione di pertinenze",
+     "da": 0,
+     "a": 8,
+     "soglie": [
+      5,
+      12
+     ],
+     "peso": 2
+    },
+    {
+     "nome": "conservazione",
+     "titolo": "b) Stato di conservazione dell'immobile e degli impianti",
+     "da": 9,
+     "a": 14,
+     "soglie": [
+      4,
+      8
+     ],
+     "peso": 1
+    },
+    {
+     "nome": "servizi",
+     "titolo": "c) Dotazione di servizi e accessori",
+     "da": 15,
+     "a": 25,
+     "soglie": [
+      8,
+      18
+     ],
+     "peso": 2
+    }
+   ],
+   "nota": "Ogni gruppo dà una fascia (pertinenze: fino a 5 punti bassa, 6-12 media, 13-23 alta; conservazione: fino a 4, 5-8, 9-12; servizi: fino a 8, 9-18, 19-27). Massimo = (2 x pertinenze + conservazione + 2 x servizi) / 5; minimo = 60% del massimo."
+  },
+  "elementi": [
+   {
+    "testo": "Garage in uso esclusivo",
+    "punti": 5
+   },
+   {
+    "testo": "Posto auto coperto riservato",
+    "punti": 3
+   },
+   {
+    "testo": "Posto auto scoperto riservato",
+    "punti": 2
+   },
+   {
+    "testo": "Cantina di almeno 4 mq",
+    "punti": 3
+   },
+   {
+    "testo": "Soffitta praticabile di almeno 4 mq",
+    "punti": 2
+   },
+   {
+    "testo": "Ripostiglio esterno, sottoscala, soffitta o cantina sotto i 4 mq",
+    "punti": 1
+   },
+   {
+    "testo": "Balconi e terrazze esclusivi (si conta una sola voce)",
+    "livelli": [
+     {
+      "testo": "nessuno",
+      "punti": 0
+     },
+     {
+      "testo": "balconi sotto i 10 mq in tutto",
+      "punti": 1
+     },
+     {
+      "testo": "balconi oltre i 10 mq in tutto",
+      "punti": 2
+     },
+     {
+      "testo": "terrazza o lastrico solare esclusivo oltre 10 mq",
+      "punti": 3
+     }
+    ]
+   },
+   {
+    "testo": "Area verde in godimento esclusivo",
+    "punti": 3
+   },
+   {
+    "testo": "Lavatoio o stenditoio in godimento esclusivo",
+    "punti": 1
+   },
+   {
+    "testo": "Pavimenti",
+    "livelli": [
+     {
+      "testo": "scadente",
+      "punti": 0
+     },
+     {
+      "testo": "medio o discreto",
+      "punti": 1
+     },
+     {
+      "testo": "ottimo o nuovo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Pareti, soffitti e tinteggiatura",
+    "livelli": [
+     {
+      "testo": "scadente",
+      "punti": 0
+     },
+     {
+      "testo": "medio o discreto",
+      "punti": 1
+     },
+     {
+      "testo": "ottimo o nuovo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Infissi",
+    "livelli": [
+     {
+      "testo": "scadente",
+      "punti": 0
+     },
+     {
+      "testo": "medio o discreto",
+      "punti": 1
+     },
+     {
+      "testo": "ottimo o nuovo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Impianto idrico e servizi igienico-sanitari",
+    "livelli": [
+     {
+      "testo": "scadente",
+      "punti": 0
+     },
+     {
+      "testo": "medio o discreto",
+      "punti": 1
+     },
+     {
+      "testo": "ottimo o nuovo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Accessi, scale, ascensore",
+    "livelli": [
+     {
+      "testo": "scadente",
+      "punti": 0
+     },
+     {
+      "testo": "medio o discreto",
+      "punti": 1
+     },
+     {
+      "testo": "ottimo o nuovo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Facciate, coperture e parti comuni",
+    "livelli": [
+     {
+      "testo": "scadente",
+      "punti": 0
+     },
+     {
+      "testo": "medio o discreto",
+      "punti": 1
+     },
+     {
+      "testo": "ottimo o nuovo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Ascensore",
+    "punti": 5
+   },
+   {
+    "testo": "Assenza di barriere architettoniche",
+    "punti": 3
+   },
+   {
+    "testo": "Cucina abitabile (almeno 9 mq con finestra)",
+    "punti": 2
+   },
+   {
+    "testo": "Doppi servizi",
+    "punti": 3
+   },
+   {
+    "testo": "Porta blindata e/o sbarre anti-intrusione agli infissi",
+    "punti": 2
+   },
+   {
+    "testo": "Allarme o sistema di sorveglianza",
+    "punti": 1
+   },
+   {
+    "testo": "Impianto domotico di gestione completa degli impianti",
+    "punti": 2
+   },
+   {
+    "testo": "Videocitofono",
+    "punti": 1
+   },
+   {
+    "testo": "Portiere",
+    "punti": 1
+   },
+   {
+    "testo": "Aria condizionata in almeno metà dei vani",
+    "punti": 2
+   },
+   {
+    "testo": "Classe energetica (APE)",
+    "livelli": [
+     {
+      "testo": "F o G",
+      "punti": 0
+     },
+     {
+      "testo": "C, D o E",
+      "punti": 2
+     },
+     {
+      "testo": "B",
+      "punti": 3
+     },
+     {
+      "testo": "A",
+      "punti": 5
+     }
+    ]
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile netta (vani principali e accessori diretti)",
+   "correzioni": [
+    {
+     "fino": 46,
+     "perc": 30
+    },
+    {
+     "fino": 65,
+     "da": 46,
+     "incluso": true,
+     "proporzionale": true
+    }
+   ],
+   "grandi": {
+    "oltre": 95,
+    "perc": 50
+   },
+   "voci": [
+    {
+     "chiave": "accessori_com",
+     "testo": "Soffitte, cantine e simili comunicanti",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "accessori_non",
+     "testo": "Soffitte, cantine e simili non comunicanti",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi_com",
+     "testo": "Balconi e terrazze esclusivi comunicanti",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi_non",
+     "testo": "Balconi e terrazze esclusivi non comunicanti",
+     "coeff": 0.1
+    },
+    {
+     "chiave": "verde",
+     "testo": "Area scoperta o verde esclusivo (10% fino ai mq dell'alloggio, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    },
+    {
+     "chiave": "garage",
+     "testo": "Garage o posto auto coperto esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto assegnato",
+     "coeff": 0.2
+    }
+   ],
+   "nota": "Per soffitte e cantine, la parte alta meno di 1,70 m conta il 25%: inseriscila già ridotta. Le correzioni per gli alloggi piccoli e grandi non valgono se si affitta solo una parte dell'alloggio."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "alloggi",
+    "tipo": "scelta",
+    "testo": "Alloggi nello stesso fabbricato",
+    "nome": "alloggi nel fabbricato",
+    "nessuna": "fino a 8",
+    "opzioni": [
+     {
+      "valore": "9-15",
+      "testo": "da 9 a 15",
+      "perc": -2
+     },
+     {
+      "valore": "oltre15",
+      "testo": "oltre 15",
+      "perc": -4
+     }
+    ]
+   },
+   {
+    "chiave": "cortile_parcheggio",
+    "tipo": "spunta",
+    "testo": "Cortile con parcheggio in uso comune",
+    "nome": "cortile con parcheggio comune",
+    "perc": 2
+   },
+   {
+    "chiave": "verde_comune",
+    "tipo": "spunta",
+    "testo": "Cortile (senza parcheggio) o area verde in uso comune",
+    "nome": "cortile o verde comune",
+    "perc": 1
+   },
+   {
+    "chiave": "stenditoi",
+    "tipo": "spunta",
+    "testo": "Stenditoio o lavatoio in uso comune",
+    "nome": "stenditoio comune",
+    "perc": 1
+   },
+   {
+    "chiave": "lastrici",
+    "tipo": "spunta",
+    "testo": "Lastrico solare agibile in uso comune",
+    "nome": "lastrico comune",
+    "perc": 1
+   },
+   {
+    "chiave": "androni",
+    "tipo": "spunta",
+    "testo": "Altre aree condominiali in uso comune (androni, ripostigli, rimesse)",
+    "nome": "aree condominiali",
+    "perc": 1
+   },
+   {
+    "chiave": "autonoma",
+    "tipo": "spunta",
+    "testo": "Abitazione autonoma (casa singola o con ingresso indipendente)",
+    "nome": "abitazione autonoma",
+    "perc": 5
+   },
+   {
+    "chiave": "categoria",
+    "tipo": "scelta",
+    "testo": "Categoria catastale",
+    "nome": "categoria",
+    "nessuna": "A/2 o A/3",
+    "opzioni": [
+     {
+      "valore": "A1",
+      "testo": "A/1, A/7, A/8, A/9 o A/11",
+      "perc": 5
+     },
+     {
+      "valore": "A4",
+      "testo": "A/4, A/5 o A/6",
+      "perc": -4
+     }
+    ]
+   },
+   {
+    "chiave": "vetusta",
+    "tipo": "scelta",
+    "testo": "Anno di costruzione o di ristrutturazione completa (con manutenzione straordinaria dal 2011 la riduzione si dimezza)",
+    "nome": "vetustà",
+    "nessuna": "dal 2011 in poi",
+    "opzioni": [
+     {
+      "valore": "1967",
+      "testo": "prima del 1968",
+      "perc": -10
+     },
+     {
+      "valore": "1967m",
+      "testo": "prima del 1968, con manutenzione straordinaria dal 2011",
+      "perc": -5
+     },
+     {
+      "valore": "1990",
+      "testo": "dal 1968 al 1990",
+      "perc": -8
+     },
+     {
+      "valore": "1990m",
+      "testo": "dal 1968 al 1990, con manutenzione straordinaria dal 2011",
+      "perc": -4
+     },
+     {
+      "valore": "2010",
+      "testo": "dal 1991 al 2010",
+      "perc": -4
+     },
+     {
+      "valore": "2010m",
+      "testo": "dal 1991 al 2010, con manutenzione straordinaria dal 2011",
+      "perc": -2
+     }
+    ]
+   },
+   {
+    "chiave": "senza_risc",
+    "tipo": "spunta",
+    "testo": "Riscaldamento non presente in tutti i vani",
+    "nome": "riscaldamento non in tutti i vani",
+    "perc": -10
+   },
+   {
+    "chiave": "piano",
+    "tipo": "scelta",
+    "testo": "Piano",
+    "nome": "piano",
+    "nessuna": "terra o primo, oppure con ascensore",
+    "opzioni": [
+     {
+      "valore": "seminterrato",
+      "testo": "seminterrato (almeno metà della superficie)",
+      "perc": -6
+     },
+     {
+      "valore": "secondo",
+      "testo": "secondo piano senza ascensore",
+      "perc": -3
+     },
+     {
+      "valore": "terzo",
+      "testo": "terzo piano senza ascensore",
+      "perc": -5
+     },
+     {
+      "valore": "oltre",
+      "testo": "oltre il terzo piano senza ascensore",
+      "perc": -10
+     }
+    ]
+   },
+   {
+    "chiave": "mobilio",
+    "tipo": "scelta",
+    "testo": "Mobilio (se scadente, la percentuale si riduce del 20%)",
+    "nome": "mobilio",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "tutto",
+      "testo": "completamente ammobiliato (tutti gli ambienti)",
+      "perc": 25
+     },
+     {
+      "valore": "cucina_camere",
+      "testo": "cucina con elettrodomestici e camere ammobiliate",
+      "perc": 20
+     },
+     {
+      "valore": "cucina",
+      "testo": "solo cucina ammobiliata con elettrodomestici",
+      "perc": 15
+     },
+     {
+      "valore": "camere",
+      "testo": "solo camere da letto ammobiliate",
+      "perc": 10
+     },
+     {
+      "valore": "tutto_s",
+      "testo": "completamente ammobiliato, mobilio scadente",
+      "perc": 20
+     },
+     {
+      "valore": "cucina_camere_s",
+      "testo": "cucina e camere, mobilio scadente",
+      "perc": 16
+     },
+     {
+      "valore": "cucina_s",
+      "testo": "solo cucina, mobilio scadente",
+      "perc": 12
+     },
+     {
+      "valore": "camere_s",
+      "testo": "solo camere, mobilio scadente",
+      "perc": 8
+     }
+    ]
+   },
+   {
+    "chiave": "studenti_durata",
+    "tipo": "scelta",
+    "testo": "Studenti universitari: durata del contratto",
+    "nome": "studenti, durata",
+    "nessuna": "fino a 9 mesi",
+    "contratti": [
+     "studenti"
+    ],
+    "opzioni": [
+     {
+      "valore": "12",
+      "testo": "da 10 a 12 mesi",
+      "perc": 5
+     },
+     {
+      "valore": "24",
+      "testo": "da 13 a 24 mesi",
+      "perc": 8
+     },
+     {
+      "valore": "36",
+      "testo": "da 25 a 36 mesi",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "studenti_zona",
+    "tipo": "spunta",
+    "testo": "Studenti fuori sede: alloggio in zona universitaria o vicino alle sedi universitarie",
+    "nome": "zona universitaria",
+    "perc": 5,
+    "contratti": [
+     "studenti"
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Tutti i correttivi (tipologia, vetustà, carenze, mobilio, durata e studenti) si sommano e si applicano insieme a minimo e massimo.",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 7
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "titolo": "Verbale di consegna e attestato di rispondenza",
+  "sottotitolo": "dell'immobile, del contratto e del canone all'Accordo per il Comune di Ascoli Piceno del 13/02/2025 tra UPPI, ASPPI, CONFABITARE, CONFEDILIZIA, SUNIA, SICET, UNIAT e UNIONE INQUILINI (in vigore dal 01/03/2025)",
+  "titolo_elementi": "Elementi qualificanti per i margini di oscillazione tra valori massimi e minimi (punto B.4)",
+  "etichetta_conteggio": "TOTALE PUNTI",
+  "dichiarazione": "Il locatore, consapevole delle sanzioni penali previste dall'art. 76 del D.P.R. 28/12/2000, n. 445 per le dichiarazioni mendaci e per la formazione e l'uso di atti falsi, afferma, ai sensi degli artt. 21, comma 2, e 47 del D.P.R. 445/2000, che il contratto è conforme ai modelli ministeriali e che le dichiarazioni rese corrispondono al vero. La valutazione dell'alloggio e la scelta del contratto sono effettuate su dati forniti direttamente dalle parti contraenti, le quali, firmando il presente verbale, se ne assumono la totale responsabilità, esonerandone le Organizzazioni Sindacali intervenute.",
+  "firme": [
+   "Il/I locatore/i",
+   "Il/I conduttore/i"
+  ],
+  "titolo_attestazione": "ATTESTATO DI RISPONDENZA",
+  "attestazione": [
+   "L'Organizzazione …………………………, firmataria dell'Accordo territoriale per il Comune di Ascoli Piceno del 13/02/2025, sulla base degli elementi dichiarati dalle parti, attesta la rispondenza dell'immobile, del contratto e del canone all'Accordo territoriale in vigore alla data della sottoscrizione del presente verbale."
+  ],
+  "firme_attestazione": [
+   "L'Organizzazione sindacale inquilini o della proprietà edilizia"
+  ],
+  "nota_zone": "Zone omogenee del punto B.1: centro storico di pregio, centro (dentro le mura), semicentrale (fascia intorno alle mura), periferica, agricola e frazioni."
+ }
+}

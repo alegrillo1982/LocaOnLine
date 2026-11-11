@@ -1,0 +1,727 @@
+{
+ "accordo": {
+  "codice": "lodi-2019-07-15",
+  "modello": "lodi-2019",
+  "comune": "Lodi",
+  "provincia": "LO",
+  "titolo": "Accordo territoriale per la Città di Lodi",
+  "data": "2019-07-15",
+  "data_testo": "15 luglio 2019",
+  "deposito": "Comune di Lodi",
+  "deposito_data": "15.07.2019",
+  "protocollo": "",
+  "ufficio": "Comune di Lodi",
+  "ufficio_breve": "Comune di Lodi",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Lodi del 15 luglio 2019.</strong> Durava tre anni ma resta in vigore finché non ne viene firmato uno nuovo (art. 3 e 16): a novembre 2026 non ne risultano di più recenti, e l'Ufficio di Piano di Lodi e Confedilizia lo pubblicano ancora come accordo vigente. Dopo i primi tre anni i minimi e i massimi si aumentano con la variazione ISTAT dei prezzi al consumo, da agosto 2019 al mese prima della firma del contratto (art. 3), ma nessuno pubblica tabelle aggiornate: <strong>qui trovi i valori originali del 2019</strong>. Chiedi all'associazione che attesta il contratto il coefficiente ISTAT da applicare.",
+  "firmatari_proprieta": [
+   "A.L.P.E. - CONFEDILIZIA Lodi",
+   "CONFABITARE Lodi",
+   "U.P.P.I. Pavia",
+   "CONFAPPI Pavia",
+   "A.P.P.C. Pavia",
+   "FEDERPROPRIETÀ Milano"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A. Lodi",
+   "S.I.C.E.T. Pavia - Lodi",
+   "UNIONE INQUILINI Lodi",
+   "C.O.N.I.A. Lodi",
+   "U.N.I.A.T. Milano e Lombardia"
+  ],
+  "nota": "Firmato nella sede del Comune di Lodi il 15/07/2019, alla presenza del Sindaco e dell'Assessore alla Casa; il modulo di attestazione (Allegato 6) e il modulo di conciliazione (Allegato 4) lo indicano come depositato presso i Comuni interessati il 15/07/2019. Vale anche per sette comuni vicini (Boffalora d'Adda, Cornegliano Laudense, Corte Palasio, Lodi Vecchio, Montanaso Lombardo, San Martino in Strada, Tavazzano con Villavesco), qui non modellati: per loro c'è la Zona 6, con gli stessi valori delle Zone 4 e 5. Sostituisce l'accordo del 10/02/2004. Cinque zone nel Comune (Allegato 1), tre classi di superficie (fino a 60, da 61 a 100, oltre 100 mq), tre sub-fasce secondo gli elementi A, B e C; con almeno 5 elementi D si può applicare il massimo della sub-fascia. Valori annui al mq. Dopo tre anni i valori si aggiornano con l'ISTAT (art. 3): nessuna tabella aggiornata pubblicata. Sulla pagina delle firme non si vedono le firme di Unione Inquilini e C.O.N.I.A., che compaiono fra le parti.",
+  "fonte": "Ufficio di Piano dell'Ambito di Lodi (Agenzia Lodigiana per l'Abitare), pagina 'Accordo Locale - Comune di Lodi e limitrofi': accordo di 11 pagine e allegati 1-5. Testo completo firmato di 36 pagine con gli allegati 2-7 (compreso il modulo di attestazione) pubblicato da Confedilizia (caricato a ottobre 2025) e da SUNIA."
+ },
+ "esempio_zona": "la zona dalla planimetria dell'Allegato 1",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "tabella_per": "superficie",
+  "tabella_su": "totale",
+  "tabella_soglie": [
+   [
+    60,
+    "60"
+   ],
+   [
+    100,
+    "100"
+   ]
+  ],
+  "tabella_oltre": "oltre",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro storico",
+    "nota": "Zona 1 - Centro storico, la città bassa (Allegato 1, in rosso). La tabella dipende dalla superficie convenzionale: fino a 60 mq, da 61 a 100, oltre 100 mq. Valori in euro al mq all'anno.",
+    "fasce": {
+     "60": [
+      [
+       54,
+       75
+      ],
+      [
+       75,
+       90
+      ],
+      [
+       90,
+       103
+      ]
+     ],
+     "100": [
+      [
+       47,
+       56
+      ],
+      [
+       56,
+       70
+      ],
+      [
+       70,
+       83
+      ]
+     ],
+     "oltre": [
+      [
+       44,
+       54
+      ],
+      [
+       54,
+       63
+      ],
+      [
+       63,
+       74
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Intermedia",
+    "nota": "Zona 2 - Intermedia: Zona Laghi, Vigili del Fuoco, Fanfani, Bralla e parte di San Fereolo (Allegato 1, in verde). La tabella dipende dalla superficie convenzionale: fino a 60 mq, da 61 a 100, oltre 100 mq. Valori in euro al mq all'anno.",
+    "fasce": {
+     "60": [
+      [
+       51,
+       72
+      ],
+      [
+       66,
+       85
+      ],
+      [
+       80,
+       96
+      ]
+     ],
+     "100": [
+      [
+       46,
+       54
+      ],
+      [
+       54,
+       67
+      ],
+      [
+       67,
+       77
+      ]
+     ],
+     "oltre": [
+      [
+       40,
+       50
+      ],
+      [
+       50,
+       60
+      ],
+      [
+       60,
+       70
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Residenziale periferica",
+    "nota": "Zona 3 - Residenziale periferica: parte di San Fereolo, Albarola, Faustina e San Bernardo (Allegato 1, in blu). La tabella dipende dalla superficie convenzionale: fino a 60 mq, da 61 a 100, oltre 100 mq. Valori in euro al mq all'anno.",
+    "fasce": {
+     "60": [
+      [
+       48,
+       65
+      ],
+      [
+       59,
+       82
+      ],
+      [
+       77,
+       90
+      ]
+     ],
+     "100": [
+      [
+       38,
+       47
+      ],
+      [
+       47,
+       61
+      ],
+      [
+       61,
+       74
+      ]
+     ],
+     "oltre": [
+      [
+       35,
+       47
+      ],
+      [
+       47,
+       57
+      ],
+      [
+       57,
+       67
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Terziario periferica",
+    "nota": "Zona 4 - Terziario periferica: San Grato, Torretta, Campo Marte, Revellino e frazione Olmo (Allegato 1, in azzurro). Stessi valori della Zona 5. La tabella dipende dalla superficie convenzionale: fino a 60 mq, da 61 a 100, oltre 100 mq. Valori in euro al mq all'anno.",
+    "fasce": {
+     "60": [
+      [
+       37,
+       53
+      ],
+      [
+       49,
+       68
+      ],
+      [
+       63,
+       80
+      ]
+     ],
+     "100": [
+      [
+       32,
+       42
+      ],
+      [
+       42,
+       53
+      ],
+      [
+       53,
+       63
+      ]
+     ],
+     "oltre": [
+      [
+       31,
+       38
+      ],
+      [
+       38,
+       47
+      ],
+      [
+       47,
+       58
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "5",
+    "nome": "Zona 5 - Agricola",
+    "nota": "Zona 5 - Agricola: il resto del territorio comunale, fuori dai quartieri (Allegato 1, senza colore). Stessi valori della Zona 4. La tabella dipende dalla superficie convenzionale: fino a 60 mq, da 61 a 100, oltre 100 mq. Valori in euro al mq all'anno.",
+    "fasce": {
+     "60": [
+      [
+       37,
+       53
+      ],
+      [
+       49,
+       68
+      ],
+      [
+       63,
+       80
+      ]
+     ],
+     "100": [
+      [
+       32,
+       42
+      ],
+      [
+       42,
+       53
+      ],
+      [
+       53,
+       63
+      ]
+     ],
+     "oltre": [
+      [
+       31,
+       38
+      ],
+      [
+       38,
+       47
+      ],
+      [
+       47,
+       58
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "Sub-fascia 1",
+    "Sub-fascia 2",
+    "Sub-fascia 3"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 1,
+      "tutti": true
+     },
+     {
+      "da": 2,
+      "a": 6,
+      "n": 3
+     }
+    ],
+    [
+     {
+      "da": 0,
+      "a": 1,
+      "tutti": true
+     },
+     {
+      "da": 2,
+      "a": 6,
+      "n": 3
+     },
+     {
+      "da": 7,
+      "a": 13,
+      "n": 3
+     }
+    ]
+   ],
+   "blocca": [
+    {
+     "da": 29,
+     "a": 29,
+     "fino": 0,
+     "salvo": {
+      "da": 2,
+      "a": 6,
+      "n": 4
+     },
+     "avviso": "Alloggio scaldato con stufe nelle singole stanze e con meno di 4 elementi B: Sub-fascia 1 (art. 4.1 B)."
+    },
+    {
+     "da": 30,
+     "a": 30,
+     "fino": 1,
+     "avviso": "Palazzo con parti comuni in evidente degrado (facciata, cortile, scale): non si può applicare la Sub-fascia 3 (art. 4.1 B)."
+    }
+   ],
+   "conta": {
+    "da": 14,
+    "a": 28
+   },
+   "nota": "Sub-fascia 2: tutti gli elementi A e almeno 3 elementi B. Sub-fascia 3: in più almeno 3 elementi C (mai se le parti comuni del palazzo sono in evidente degrado). Tutti gli altri nella Sub-fascia 1, come anche gli alloggi scaldati con stufe nelle singole stanze, se non hanno almeno 4 elementi B. Con almeno 5 elementi D si può applicare il massimo della sub-fascia.",
+   "nota_pdf": "Sub-fascia 1: manca un elemento A, oppure meno di 3 elementi B, oppure stufe nei singoli locali (salvo almeno 4 elementi B). Sub-fascia 2: tutti gli A e almeno 3 B. Sub-fascia 3: tutti gli A, almeno 3 B e almeno 3 C; mai con parti comuni in evidente degrado. Almeno 5 elementi D: si può applicare il valore massimo della sub-fascia (art. 4.1 B)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi di tipo A: servono tutti per salire oltre la Sub-fascia 1"
+   },
+   {
+    "da": 2,
+    "titolo": "Elementi di tipo B: ne servono almeno 3"
+   },
+   {
+    "da": 7,
+    "titolo": "Elementi di tipo C: almeno 3 per la Sub-fascia 3"
+   },
+   {
+    "da": 14,
+    "titolo": "Elementi di tipo D: con almeno 5 si può arrivare al massimo"
+   },
+   {
+    "da": 29,
+    "titolo": "Condizioni che limitano la sub-fascia"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "A1 - Bagno interno completo (tazza, lavabo, bidet, vasca o doccia) con almeno una finestra o aerazione meccanica"
+   },
+   {
+    "testo": "A2 - Impianti essenziali funzionanti: acqua potabile, predisposizione per l'acqua calda, impianto elettrico, impianto gas"
+   },
+   {
+    "testo": "B1 - Cantina, soffitta o ripostiglio esterno"
+   },
+   {
+    "testo": "B2 - Ascensore, per gli alloggi dal 3° piano in su"
+   },
+   {
+    "testo": "B3 - Alloggio in stato di manutenzione normale (impianti, infissi, pavimenti, pareti e soffitti)"
+   },
+   {
+    "testo": "B4 - Impianti, esalazioni e scarichi a norma (igiene e sicurezza) alla firma del contratto"
+   },
+   {
+    "testo": "B5 - Riscaldamento centralizzato o autonomo (non a stufe)"
+   },
+   {
+    "testo": "C1 - Cucina di almeno 9 mq con almeno una finestra"
+   },
+   {
+    "testo": "C2 - Garage o posto auto coperto (esclusivo o in comune)"
+   },
+   {
+    "testo": "C3 - Giardino condominiale"
+   },
+   {
+    "testo": "C4 - Alloggio in buono stato di manutenzione (impianti, infissi, pavimenti, pareti e soffitti)"
+   },
+   {
+    "testo": "C5 - Palazzo in stato di manutenzione normale (impianti comuni, facciate, tetto, scale e spazi comuni)"
+   },
+   {
+    "testo": "C6 - Porta blindata e doppi vetri"
+   },
+   {
+    "testo": "C7 - Vicino ai servizi: mezzi pubblici, negozi, servizi sociali"
+   },
+   {
+    "testo": "D1 - Balconi o terrazzo"
+   },
+   {
+    "testo": "D2 - Doppio bagno, almeno uno completo e con finestra o aerazione meccanica"
+   },
+   {
+    "testo": "D3 - Costruito da meno di 30 anni, o ristrutturato del tutto negli ultimi 30 anni (o immobile di pregio)"
+   },
+   {
+    "testo": "D4 - Nessuna fonte di inquinamento ambientale o acustico (classi acustiche 1, 2 o 3 del Comune)"
+   },
+   {
+    "testo": "D5 - Affaccio su strade, piazze o luoghi di pregio storico o ambientale"
+   },
+   {
+    "testo": "D6 - Giardino privato o spazio esterno in uso esclusivo"
+   },
+   {
+    "testo": "D7 - Posto auto scoperto"
+   },
+   {
+    "testo": "D8 - Lavori di manutenzione con pratica in Comune negli ultimi 10 anni"
+   },
+   {
+    "testo": "D9 - Terrazza di oltre 20 mq"
+   },
+   {
+    "testo": "D10 - Zanzariere su finestre e porte finestre"
+   },
+   {
+    "testo": "D11 - Aria condizionata"
+   },
+   {
+    "testo": "D12 - Parcheggio per biciclette o moto"
+   },
+   {
+    "testo": "D13 - Impianto di allarme"
+   },
+   {
+    "testo": "D14 - Collegamento Internet attivo"
+   },
+   {
+    "testo": "D15 - Collegamento alla fibra ottica"
+   },
+   {
+    "testo": "Riscaldamento con stufe nelle singole stanze"
+   },
+   {
+    "testo": "Parti comuni del palazzo (facciata, cortile, scale) in evidente degrado"
+   }
+  ],
+  "superficie": {
+   "base": "Abitazione: superficie catastale (visura) o interna (Allegato 3)",
+   "correzioni": [
+    {
+     "fino": 30,
+     "perc": 10,
+     "tetto": 30
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Box chiuso individuale (75%)",
+     "coeff": 0.75
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto con stallo riservato e delimitato (50%)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto con stallo riservato e delimitato (30%)",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "posto_libero",
+     "testo": "Posto auto scoperto non riservato e non delimitato (15%)",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "area",
+     "testo": "Area scoperta esclusiva (10% fino ai mq dell'abitazione, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    },
+    {
+     "chiave": "giardino",
+     "testo": "Giardino di villa o villino: mq oltre il 20% dell'abitazione (10%, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Soffitta, cantina, scala interna comunicanti (50%) - solo sup. interna",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "accessori_nc",
+     "testo": "Soffitta o cantina non comunicanti (25%) - solo sup. interna",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi/terrazzi comunicanti (30% fino a 25 mq, poi 10%) - solo sup. interna",
+     "coeff": 0.3,
+     "scaglione": [
+      25,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "chiave": "balconi_nc",
+     "testo": "Balconi/terrazzi non comunicanti (15% fino a 25 mq, poi 5%) - solo sup. interna",
+     "coeff": 0.15,
+     "scaglione": [
+      25,
+      0.15,
+      0.05
+     ]
+    }
+   ],
+   "tetto_voci": 0.5,
+   "nota": "Si usa di norma la superficie catastale dell'abitazione (visura), più box, posti auto, area scoperta e giardino con le percentuali indicate. Se la superficie catastale non corrisponde a quella reale, si calcola come nell'Allegato 3: superficie interna dell'abitazione (vani, bagni, ripostigli, ingressi, corridoi e muri interni; senza muri perimetrali e in comune e senza le parti alte meno di 1,50 m), più cantine, soffitte e balconi con le percentuali indicate (le voci \"solo sup. interna\" non si inseriscono se usi la superficie catastale, che li comprende già). Tutte le pertinenze insieme contano al massimo per metà della superficie dell'abitazione. Se l'abitazione è sotto i 30 mq si aumenta del 10%, fino a 30 mq. Il giardino di una villa o villino non conta fino al 20% della superficie dell'abitazione: inserisci solo i mq che superano quella quota. La classe della tabella (fino a 60 mq, da 61 a 100, oltre 100 mq) si sceglie sulla superficie convenzionale. Una differenza di misura entro il 4% non cambia il canone."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Alloggio arredato (Allegato 2)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "arredo completo in buono stato (tutti gli elementi dell'Allegato 2, esclusi i facoltativi)",
+      "breve": "arredo completo",
+      "perc": 15
+     },
+     {
+      "valore": "vetusto",
+      "testo": "arredo completo ma vecchio e usurato",
+      "breve": "arredo vecchio e usurato",
+      "perc": 8
+     },
+     {
+      "valore": "parziale",
+      "testo": "manca più della metà degli elementi dell'Allegato 2",
+      "breve": "arredo incompleto",
+      "perc": 7.5
+     },
+     {
+      "valore": "parziale_vetusto",
+      "testo": "arredo vecchio e manca più della metà degli elementi",
+      "breve": "arredo vecchio e incompleto",
+      "perc": 4
+     }
+    ]
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE)",
+    "nome": "classe energetica",
+    "nessuna": "classe G",
+    "opzioni": [
+     {
+      "valore": "ABC",
+      "testo": "classe A, B o C",
+      "perc": 10
+     },
+     {
+      "valore": "DE",
+      "testo": "classe D o E",
+      "perc": 5
+     },
+     {
+      "valore": "F",
+      "testo": "classe F",
+      "perc": 2
+     }
+    ]
+   },
+   {
+    "chiave": "vincolo",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato (L. 1089/1939) o di categoria catastale A/1, A/8, A/9",
+    "nome": "immobile vincolato o A/1, A/8, A/9",
+    "perc": 5
+   },
+   {
+    "chiave": "stufe",
+    "tipo": "spunta",
+    "testo": "Senza caldaia autonoma o centralizzata efficiente: stufe o apparecchi elettrici mobili",
+    "nome": "senza caldaia efficiente",
+    "perc": -5
+   },
+   {
+    "chiave": "serramenti",
+    "tipo": "spunta",
+    "testo": "Finestre vecchie, senza guarnizioni e poco isolanti",
+    "nome": "serramenti vetusti",
+    "perc": -5
+   },
+   {
+    "chiave": "bagno_cieco",
+    "tipo": "spunta",
+    "testo": "Bagno senza finestra o con sola aspirazione forzata (se non c'è un secondo bagno con finestra)",
+    "nome": "bagno senza finestra",
+    "perc": -5
+   },
+   {
+    "chiave": "piano",
+    "tipo": "spunta",
+    "testo": "Alloggio oltre il 2° piano in un palazzo senza ascensore",
+    "nome": "oltre il 2° piano senza ascensore",
+    "perc": -5
+   }
+  ],
+  "nota_maggiorazioni": "Aumenti e riduzioni si sommano e si applicano al minimo e al massimo della sub-fascia, come nel riepilogo dell'attestazione: arredo fino a +15% (al massimo +8% se i mobili sono vecchi e usurati; percentuale dimezzata se manca più della metà degli elementi dell'Allegato 2), classe energetica A-B-C +10%, D-E +5%, F +2%, G nessun aumento, immobile vincolato o A/1, A/8, A/9 +5%; -5% ciascuno per riscaldamento senza caldaia efficiente, finestre vetuste, bagno senza finestra, oltre il 2° piano senza ascensore. Durata 4/5/6 anni +3/5/10%; l'accordo prevede anche +12% per 8 anni e +14% per 10 anni, che qui non si possono scegliere (il calcolo si ferma al +10%). Transitori e studenti universitari fino a +10% (per i contratti fino a 30 giorni il canone è libero). Si può sempre pattuire un canone più basso del minimo (art. 4.1 D). Per una stanza o una parte dell'alloggio si conta anche la quota delle parti comuni; la somma dei canoni delle stanze non può superare il canone dell'intero alloggio (art. 7).",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 10,
+   "8": 12,
+   "10": 14
+  },
+  "contratto": {
+   "transitorio": 10,
+   "studenti": 10
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "fascia": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "testo": "Meno di 5 elementi D: l'accordo consente il valore massimo della sub-fascia solo con almeno 5 elementi D. Tieni il canone sotto il massimo indicato."
+   },
+   {
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Contratto per studenti (da 6 a 36 mesi): per iscritti a corsi di laurea, master, dottorati, specializzazioni e perfezionamenti. Nel contratto va scritto che lo studente può recedere con 2 mesi di preavviso, con raccomandata, se interrompe gli studi (art. 6.2)."
+   },
+   {
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Transitorio (fino a 18 mesi): serve un motivo documentato previsto dall'accordo, per esempio trasferimento temporaneo di lavoro, contratto di lavoro a tempo determinato, separazione, studio, assistenza a un familiare, casa in arrivo entro 18 mesi, accoglienza temporanea da parte di associazioni (art. 5.2). Per i contratti fino a 30 giorni il canone è libero."
+   }
+  ],
+  "durate": [
+   3,
+   4,
+   5,
+   6,
+   8,
+   10
+  ],
+  "durata_max": 10
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 6",
+  "titolo": "Attestazione di rispondenza (D.M. 16/1/2017)",
+  "sottotitolo": "Accordo territoriale per la Città di Lodi e Comuni confinanti del 15/07/2019, depositato presso i Comuni interessati il 15/07/2019",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Allegato 3 dell'Accordo territoriale",
+  "titolo_elementi": "Prospetto illustrativo degli elementi qualitativi (sub-fasce 1, 2, 3)",
+  "etichetta_conteggio": "ELEMENTI QUALITATIVI TIPO D n.",
+  "dichiarazione": "Il richiedente, nella qualità di locatore/conduttore, ha presentato richiesta per l'attestazione ex D.M. 16/1/2017, dichiarando sotto la propria responsabilità gli elementi oggettivi sopra indicati, confermati dalle parti contraenti firmando in calce.",
+  "firme": [],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione/le Organizzazioni ……………………………, firmataria/e dell'Accordo territoriale, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati dalle parti contraenti,",
+   "ATTESTA / ATTESTANO la conformità dei contenuti economici e normativi del contratto sopra descritto alle disposizioni dell'Accordo territoriale vigente per i Comuni della Provincia di Lodi nello stesso elencati, depositato presso i medesimi Comuni il 15/07/2019."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla planimetria dell'Allegato 1 (Zone urbane omogenee): Zona 1 centro storico (città bassa), Zona 2 intermedia, Zona 3 residenziale periferica, Zona 4 terziario periferica, Zona 5 agricola. I confini passano a metà strada; un edificio attraversato dal confine sta nella zona di valore più alto."
+ }
+}

@@ -1,0 +1,503 @@
+{
+ "accordo": {
+  "codice": "crotone-2018-05-24",
+  "modello": "crotone-2018",
+  "comune": "Crotone",
+  "provincia": "KR",
+  "titolo": "Accordo territoriale per la città di Crotone",
+  "data": "2018-05-24",
+  "data_testo": "24 maggio 2018",
+  "deposito": "Comune di Crotone",
+  "deposito_data": "24.05.2018",
+  "protocollo": "0032445/I del 24/05/2018",
+  "ufficio": "Comune di Crotone",
+  "ufficio_breve": "Comune di Crotone",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Crotone del 24 maggio 2018: durava tre anni dal deposito, ormai trascorsi.</strong> Resta in vigore fino alla firma di quello nuovo (art. 13): a novembre 2026 Confedilizia, ASPPI, SUNIA, SICET e UNIAT stanno trattando il rinnovo, non ancora firmato. Nel febbraio 2026 altre associazioni (Confabitare, Federproprietà, UPPI con ANIA, Assocasa e Feder.casa) hanno depositato un accordo diverso, con zone per foglio catastale, il cui testo non è pubblicato: se il contratto viene attestato da una di queste associazioni, chiedi a loro quali valori applicano.",
+  "firmatari_proprieta": [
+   "Confedilizia Crotone",
+   "Federproprietà Crotone",
+   "ASPPI Catanzaro-Crotone-Lamezia",
+   "Confabitare Calabria (adesione)"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA Calabria",
+   "SICET Crotone",
+   "UNIAT Crotone",
+   "ANIA Calabria",
+   "Feder.casa Catanzaro e Crotone (delega a SUNIA)"
+  ],
+  "nota": "Firmato a Crotone il 24/05/2018 e depositato lo stesso giorno al Comune di Crotone (timbro di protocollo n. 0032445/I del 24/05/2018 sulla prima pagina; data di deposito scritta a mano a pagina 6). Sostituisce l'accordo del 14/03/2003. Dura tre anni dal giorno dopo il deposito e resta in vigore fino al nuovo accordo (art. 13). Undici zone con i codici OMI (allegato A), due fasce di valori mensili al mq: abitazioni economiche (almeno 4 elementi su 26 dell'allegato B) e normali (almeno 6, fra cui obbligatoriamente APE A-D e stabile ultimato o ristrutturato negli ultimi 20 anni); con meno di 4 elementi vale il minimo delle economiche. Nelle zone D2 e R4 ci sono solo i valori delle abitazioni normali, nella zona R3 nessun valore. Arredato completo fino a +15%; seminterrato -20%, oltre il terzo piano senza ascensore -15%. Nessun aumento per la durata; i transitori hanno lo stesso canone (art. 8). Non regola i contratti per studenti universitari.",
+  "fonte": "PDF firmato e protocollato dell'accordo con allegati A-H (32 pagine, scansione) pubblicato da SUNIA nazionale nella pagina «Accordi territoriali di Crotone»."
+ },
+ "esempio_zona": "la zona OMI (mappa GEOPOI dell'Agenzia delle Entrate)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "B4",
+    "nome": "B4 - Centrale, centro cittadino",
+    "nota": "Zona B4 - Centrale, centro cittadino (microzona catastale 1). Abitazioni economiche da 2,2 a 2,8 €, normali da 2,9 a 4,0 € al mq al mese. Il codice è quello della zona OMI dell'Agenzia delle Entrate (lo trovi sulla mappa GEOPOI). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.2,
+      2.2
+     ],
+     [
+      2.2,
+      2.8
+     ],
+     [
+      2.9,
+      4.0
+     ]
+    ]
+   },
+   {
+    "codice": "C1",
+    "nome": "C1 - Semicentrale, G. Paolo II alta (dopo piazza Caputi), Villa G., Tufolo",
+    "nota": "Zona C1 - Semicentrale, G. Paolo II alta (dopo piazza Caputi), Villa G., Tufolo (microzona catastale 1). Abitazioni economiche da 3,0 a 3,5 €, normali da 3,6 a 3,9 € al mq al mese. Il codice è quello della zona OMI dell'Agenzia delle Entrate (lo trovi sulla mappa GEOPOI). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.0,
+      3.0
+     ],
+     [
+      3.0,
+      3.5
+     ],
+     [
+      3.6,
+      3.9
+     ]
+    ]
+   },
+   {
+    "codice": "D1",
+    "nome": "D1 - Periferica, Farina",
+    "nota": "Zona D1 - Periferica, Farina (microzona catastale 3). Abitazioni economiche da 2,2 a 2,9 €, normali da 3,0 a 3,8 € al mq al mese. Il codice è quello della zona OMI dell'Agenzia delle Entrate (lo trovi sulla mappa GEOPOI). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.2,
+      2.2
+     ],
+     [
+      2.2,
+      2.9
+     ],
+     [
+      3.0,
+      3.8
+     ]
+    ]
+   },
+   {
+    "codice": "D2",
+    "nome": "D2 - Periferica, strada per Capo Colonna e litorale (lidi, hotel C. Tiziana, Casa Rossa)",
+    "nota": "Zona D2 - Periferica, strada per Capo Colonna e litorale (lidi, hotel C. Tiziana, Casa Rossa) (microzona catastale 2). Solo abitazioni normali: da 4,6 a 6,1 € al mq al mese; l'allegato A non dà valori per le abitazioni economiche. Il codice è quello della zona OMI dell'Agenzia delle Entrate (lo trovi sulla mappa GEOPOI). Valori in euro al mq al mese.",
+    "fasce": [
+     null,
+     null,
+     [
+      4.6,
+      6.1
+     ]
+    ]
+   },
+   {
+    "codice": "D4",
+    "nome": "D4 - Periferica, zona industriale",
+    "nota": "Zona D4 - Periferica, zona industriale (microzona catastale 0). Abitazioni economiche da 1,6 a 2,3 €, normali da 2,0 a 2,6 € al mq al mese. Il codice è quello della zona OMI dell'Agenzia delle Entrate (lo trovi sulla mappa GEOPOI). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.6,
+      1.6
+     ],
+     [
+      1.6,
+      2.3
+     ],
+     [
+      2.0,
+      2.6
+     ]
+    ]
+   },
+   {
+    "codice": "D5",
+    "nome": "D5 - Periferica, Margherita, Gabella",
+    "nota": "Zona D5 - Periferica, Margherita, Gabella (microzona catastale 0). Abitazioni economiche da 1,4 a 2,0 €, normali da 2,5 a 3,0 € al mq al mese. Il codice è quello della zona OMI dell'Agenzia delle Entrate (lo trovi sulla mappa GEOPOI). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.4,
+      1.4
+     ],
+     [
+      1.4,
+      2.0
+     ],
+     [
+      2.5,
+      3.0
+     ]
+    ]
+   },
+   {
+    "codice": "D8",
+    "nome": "D8 - Periferica, Poggio Pudano",
+    "nota": "Zona D8 - Periferica, Poggio Pudano (microzona catastale 0). Abitazioni economiche da 2,2 a 2,8 €, normali da 2,6 a 3,5 € al mq al mese. Il codice è quello della zona OMI dell'Agenzia delle Entrate (lo trovi sulla mappa GEOPOI). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.2,
+      2.2
+     ],
+     [
+      2.2,
+      2.8
+     ],
+     [
+      2.6,
+      3.5
+     ]
+    ]
+   },
+   {
+    "codice": "E2",
+    "nome": "E2 - Suburbana, Papanice",
+    "nota": "Zona E2 - Suburbana, Papanice (microzona catastale 0). Abitazioni economiche da 1,9 a 2,5 €, normali da 2,3 a 2,8 € al mq al mese. Il codice è quello della zona OMI dell'Agenzia delle Entrate (lo trovi sulla mappa GEOPOI). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.9,
+      1.9
+     ],
+     [
+      1.9,
+      2.5
+     ],
+     [
+      2.3,
+      2.8
+     ]
+    ]
+   },
+   {
+    "codice": "R2",
+    "nome": "R2 - Extraurbana, territorio rurale settentrionale",
+    "nota": "Zona R2 - Extraurbana, territorio rurale settentrionale (microzona catastale 0). Abitazioni economiche da 1,4 a 2,0 €, normali da 1,9 a 2,5 € al mq al mese. Il codice è quello della zona OMI dell'Agenzia delle Entrate (lo trovi sulla mappa GEOPOI). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.4,
+      1.4
+     ],
+     [
+      1.4,
+      2.0
+     ],
+     [
+      1.9,
+      2.5
+     ]
+    ]
+   },
+   {
+    "codice": "R3",
+    "nome": "R3 - Extraurbana, territorio rurale meridionale",
+    "nota": "Zona R3 - Extraurbana, territorio rurale meridionale (microzona catastale 0). L'allegato A non indica alcun valore per questa zona. Il codice è quello della zona OMI dell'Agenzia delle Entrate (lo trovi sulla mappa GEOPOI). Valori in euro al mq al mese.",
+    "fasce": [
+     null,
+     null,
+     null
+    ]
+   },
+   {
+    "codice": "R4",
+    "nome": "R4 - Extraurbana, zona rurale di pregio (Capo Colonna)",
+    "nota": "Zona R4 - Extraurbana, zona rurale di pregio (Capo Colonna) (microzona catastale 0). Solo abitazioni normali: da 2,2 a 2,7 € al mq al mese; l'allegato A non dà valori per le abitazioni economiche. Il codice è quello della zona OMI dell'Agenzia delle Entrate (lo trovi sulla mappa GEOPOI). Valori in euro al mq al mese.",
+    "fasce": [
+     null,
+     null,
+     [
+      2.2,
+      2.7
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "minima",
+    "economica",
+    "normale"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 25,
+      "n": 4
+     }
+    ],
+    [
+     {
+      "da": 0,
+      "a": 25,
+      "n": 6
+     },
+     {
+      "da": 18,
+      "a": 18,
+      "tutti": true
+     },
+     {
+      "da": 26,
+      "a": 26,
+      "tutti": true
+     }
+    ]
+   ],
+   "conta": {
+    "da": 0,
+    "a": 25
+   },
+   "nota": "Meno di 4 elementi: solo il valore minimo delle abitazioni economiche. Abitazione economica: almeno 4 elementi. Abitazione normale: almeno 6 elementi, fra cui per forza l'APE in classe A-D (elemento 19) e lo stabile ultimato o ristrutturato negli ultimi 20 anni (riga 27) (allegati A e B). Il requisito della riga 27 non conta fra i 26 elementi.",
+   "nota_pdf": "Meno di 4 elementi: minimo delle abitazioni economiche. Economiche: almeno 4 elementi. Normali: almeno 6, fra cui obbligatoriamente APE A/B/C/D (19) e stabile ultimato o ristrutturato negli ultimi 20 anni (27) (allegati A e B)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi oggettivi dell'immobile (allegato B): segna quelli presenti"
+   },
+   {
+    "da": 26,
+    "titolo": "Requisito per le abitazioni normali (non conta fra gli elementi)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Riscaldamento autonomo"
+   },
+   {
+    "testo": "Impianto di videosorveglianza o sistema di sicurezza o di allarme"
+   },
+   {
+    "testo": "Impianto antincendio"
+   },
+   {
+    "testo": "Antenna centralizzata o impianto satellitare"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Citofono o videocitofono"
+   },
+   {
+    "testo": "Aria condizionata o climatizzata"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Doppi infissi oppure vetrocamera o infissi antirumore"
+   },
+   {
+    "testo": "Box"
+   },
+   {
+    "testo": "Posto auto assegnato"
+   },
+   {
+    "testo": "Cantina, sottotetto o soffitta (uno a scelta)"
+   },
+   {
+    "testo": "Cortile o giardino a uso comune"
+   },
+   {
+    "testo": "Giardino a uso esclusivo di 80 mq o più"
+   },
+   {
+    "testo": "Doppio ingresso"
+   },
+   {
+    "testo": "Portiere"
+   },
+   {
+    "testo": "Linea telefonica e ADSL, o Wi-Fi libero"
+   },
+   {
+    "testo": "Stabile ultimato o completamente ristrutturato negli ultimi 10 anni"
+   },
+   {
+    "testo": "Certificazione energetica (APE) dell'appartamento in classe A, B, C o D"
+   },
+   {
+    "testo": "Porta blindata e/o finestre blindate"
+   },
+   {
+    "testo": "Cucina con finestra (luce e veduta)"
+   },
+   {
+    "testo": "Balconi o terrazzo"
+   },
+   {
+    "testo": "Fermata di autobus o di altro trasporto pubblico entro 100 metri"
+   },
+   {
+    "testo": "Autorimesse o garage custoditi entro 100 metri"
+   },
+   {
+    "testo": "Palazzina di non più di quattro piani, con al massimo tre appartamenti per piano"
+   },
+   {
+    "testo": "Strutture per il superamento delle barriere architettoniche"
+   },
+   {
+    "testo": "Stabile ultimato o ristrutturato negli ultimi 20 anni (segnalo anche se hai segnato l'elemento 18)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie interna calpestabile (senza i vani alti in media meno di 1,70 m)",
+   "correzioni": [
+    {
+     "fino": 50,
+     "perc": 20,
+     "tetto": 50
+    },
+    {
+     "da": 50,
+     "fino": 70,
+     "incluso": true,
+     "perc": 15,
+     "tetto": 70
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "autorimessa_comune",
+     "testo": "Posto macchina in autorimessa di uso comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazzi, cantine",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Superficie scoperta a uso esclusivo",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota in mq secondo i millesimi di proprietà)",
+     "coeff": 0.1
+    },
+    {
+     "chiave": "box",
+     "testo": "Box auto",
+     "coeff": 0.65
+    },
+    {
+     "chiave": "bassi",
+     "testo": "Vani con altezza media inferiore a 1,70 m",
+     "coeff": 0.2
+    }
+   ],
+   "nota": "Superficie interna calpestabile più le pertinenze nelle percentuali dell'allegato C. Alloggi sotto i 50 mq: superficie interna aumentabile del 20%, fino a 50 mq; da 50 a 70 mq: aumentabile del 15%, fino a 70 mq (qui si applica l'aumento)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "ammobiliato": true,
+    "testo": "Completamente arredato, con mobili efficienti e non degradati ed elettrodomestici funzionanti (fino a +15%)",
+    "nome": "completamente arredato",
+    "perc": 15
+   },
+   {
+    "chiave": "piano",
+    "tipo": "scelta",
+    "testo": "Piano",
+    "nome": "piano",
+    "nessuna": "nessuna riduzione",
+    "opzioni": [
+     {
+      "valore": "seminterrato",
+      "testo": "alloggio al piano seminterrato abitabile",
+      "perc": -20
+     },
+     {
+      "valore": "senza_ascensore",
+      "testo": "oltre il terzo piano senza ascensore",
+      "perc": -15
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "L'arredo completo aumenta il canone fino al 15%; la riduzione per il piano (seminterrato -20%, oltre il terzo piano senza ascensore -15%) si applica al canone così ottenuto (allegato B). Nessun aumento per la durata; i transitori hanno lo stesso canone degli agevolati (art. 8).",
+  "combinazione": "prodotto",
+  "avvisi": [
+   {
+    "testo": "In tutte le zone il canone massimo non si può raggiungere se l'immobile non ha i due elementi fondamentali: l'ascensore (se l'alloggio è oltre il terzo piano) e il riscaldamento, autonomo o centralizzato (allegato B). L'accordo non dice di quanto restare sotto: in quel caso pattuisci un valore inferiore al massimo."
+   },
+   {
+    "zone": [
+     "D2",
+     "R4"
+    ],
+    "testo": "In questa zona l'allegato A dà valori solo per le abitazioni normali: se l'alloggio non è «normale» (almeno 6 elementi con APE A-D e stabile degli ultimi 20 anni) l'accordo non indica un canone. Scrivici prima di procedere."
+   },
+   {
+    "zone": [
+     "R3"
+    ],
+    "testo": "Per questa zona l'allegato A non indica alcun valore: l'accordo non permette di calcolare il canone. Scrivici prima di procedere."
+   },
+   {
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Contratto transitorio: stesso canone degli agevolati (art. 8). Serve un motivo di transitorietà documentato (fra quelli elencati nell'art. 8 o un altro evento certo a data prefissata), da allegare al contratto."
+   },
+   {
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "L'accordo di Crotone non regola i contratti per studenti universitari (nessun contratto tipo né valori propri): scrivici prima di procedere."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato E",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/1/2017",
+  "sottotitolo": "Accordo territoriale per la città di Crotone, sottoscritto e depositato il 24/05/2018 (prot. 0032445/I)",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Accordo territoriale",
+  "titolo_elementi": "ELEMENTI E PARAMETRI (allegato B)",
+  "etichetta_conteggio": "ELEMENTI E PARAMETRI n.",
+  "dichiarazione": "La parte richiedente dichiara, sotto la sua responsabilità, gli elementi sopra riportati (D.M. 16/1/2017).",
+  "firme": [],
+  "titolo_attestazione": "ATTESTA",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Crotone depositato il 24/05/2018, in persona di ……………………………, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Crotone depositato in data 24/05/2018."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "Le zone dell'allegato A hanno i codici delle zone OMI dell'Agenzia delle Entrate (mappa GEOPOI): B4 centro, C1 semicentrale, D1-D8 periferiche, E2 Papanice, R2-R4 extraurbane. I confini fra le zone passano a metà della strada (art. 3)."
+ }
+}
