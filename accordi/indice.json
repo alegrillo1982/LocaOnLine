@@ -183,6 +183,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffirenze-2025-07-03-accordo.pdf?alt=media&token=95dd698f-d768-4edb-ab61-245a21c1dbbe"
     }
    ]
+  },
+  {
+   "comune": "Bari",
+   "provincia": "BA",
+   "accordo": "bari-2024-03-13",
+   "sottoscritto": "13 marzo 2024",
+   "depositato": "26 marzo 2024",
+   "zone": 13,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbari-2024-03-13-accordo.pdf?alt=media&token=9784fa99-0f2f-4492-8bea-412c4ff22e5d",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbari-2024-03-13-accordo.pdf?alt=media&token=9784fa99-0f2f-4492-8bea-412c4ff22e5d"
+    }
+   ]
   }
  ]
 }

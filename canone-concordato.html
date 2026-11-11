@@ -992,6 +992,94 @@
       <ul id="firenze-avvisi" class="avvisi-canone" aria-live="polite"></ul>
     </section>
   </form>
+  <!-- Scheda per l'accordo di Bari (2024): riproduce la scheda della zona
+       dell'allegato 1 (elementi e fasce). Visibile solo con l'accordo di Bari. -->
+  <form id="scheda-bari" class="scheda-bari" autocomplete="off" onsubmit="return false" hidden>
+
+    <section class="sezione-canone">
+      <h2>Contratto</h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Tipo di contratto">
+        <label><input type="radio" name="tipo" value="agevolato" checked> Agevolato (3 + 2)</label>
+        <label><input type="radio" name="tipo" value="transitorio"> Transitorio</label>
+        <label><input type="radio" name="tipo" value="studenti"> Studenti universitari</label>
+      </div>
+      <div class="griglia-campi">
+        <label class="solo-agevolato">Durata<select name="durata_anni">
+          <option value="3">3 + 2 anni</option><option value="4">4 + 2 anni (+5%)</option><option value="5">5 + 2 anni (+7%)</option><option value="6">6 + 2 anni o più (+12%)</option></select></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Parti e immobile</h2>
+      <div class="griglia-campi">
+        <label class="largo">Locatore<input type="text" name="locatore"></label>
+        <label>C.F. locatore<input type="text" name="locatore_cf" class="maiuscolo"></label>
+        <label class="largo">Conduttore<input type="text" name="conduttore"></label>
+        <label>C.F. conduttore<input type="text" name="conduttore_cf" class="maiuscolo"></label>
+        <label class="largo">Via e numero civico<input type="text" name="indirizzo"></label>
+        <label>Foglio<input type="text" name="foglio" inputmode="numeric"></label>
+        <label>Particella<input type="text" name="particella"></label>
+        <label>Subalterno<input type="text" name="subalterno" inputmode="numeric"></label>
+      </div>
+      <div class="griglia-campi stacco">
+        <label class="largo">Zona<select name="zona"><option value="">scegli…</option></select></label>
+      </div>
+      <p class="nota-copia stacco" id="bari-zona-nota">La zona si trova dal foglio di mappa catastale (è nella visura).</p>
+      <div class="caselle colonna stacco se-pregio">
+        <label><input type="checkbox" name="pregio"> <span id="bari-pregio-testo">Zona di pregio</span></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Superficie <small>mq utili, non catastali</small></h2>
+      <div class="scorre">
+        <table class="tabella-superfici superfici-bari">
+          <thead><tr><th>Voce</th><th>Mq</th><th>Mq conv.</th></tr></thead>
+          <tbody id="bari-superfici"></tbody>
+          <tfoot><tr><th colspan="2">Superficie convenzionale</th><td class="totale"><b id="bari-totale">—</b> mq</td></tr></tfoot>
+        </table>
+      </div>
+      <p class="nota-copia stacco" id="bari-sup-nota"></p>
+      <div class="caselle colonna stacco">
+        <label><input type="checkbox" name="porzione"> Si affitta solo una porzione (es. una stanza)</label>
+      </div>
+      <div class="griglia-campi solo-porzione">
+        <label class="largo">Mq convenzionali della porzione, con la quota delle parti in comune<input type="text" name="mq_porzione" class="campo-numero" inputmode="decimal"></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Elementi <small id="bari-conteggio"></small></h2>
+      <p class="nota-copia" id="bari-soglie"></p>
+      <div id="bari-elementi" class="caselle colonna elementi"></div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Maggiorazioni</h2>
+      <div class="griglia-campi">
+        <label class="largo">Arredo (allegato 3)<select name="arredo">
+          <option value="">non arredato</option><option value="parziale">arredato in parte</option><option value="totale">arredato totalmente</option></select></label>
+        <label class="largo">Classe energetica (APE)<select name="energia">
+          <option value="">G o senza APE</option><option value="A">A, da A1 ad A4 (+5%)</option><option value="BF">da B a F (+3%)</option></select></label>
+      </div>
+      <p class="nota-copia stacco">In fascia A l'arredo vale +10% (in parte) o +20% (totale). In fascia B o C, con riscaldamento, autoclave e infissi in buono stato, l'alloggio arredato passa in fascia A (totale: fino a +10%).</p>
+    </section>
+
+    <section class="sezione-canone calcolo">
+      <h2>Calcolo del canone</h2>
+      <dl class="righe-calcolo">
+        <dt>Fascia</dt><dd id="bari-esito-fascia">—</dd>
+        <dt>Maggiorazioni</dt><dd id="bari-esito-magg">—</dd>
+        <dt><label for="bari-valore">Valore al mq al mese (€)</label></dt>
+        <dd><input type="text" id="bari-valore" name="valore_mq" inputmode="decimal" class="campo-numero"> <small id="bari-valore-nota"></small></dd>
+        <dt>Canone mensile minimo</dt><dd id="bari-esito-minimo">—</dd>
+        <dt>Canone mensile massimo</dt><dd><b id="bari-esito-massimo">—</b></dd>
+        <dt><label for="bari-pattuito">Canone mensile pattuito (€)</label></dt>
+        <dd><input type="text" id="bari-pattuito" name="canone_mensile" inputmode="decimal" class="campo-numero"></dd>
+      </dl>
+      <ul id="bari-avvisi" class="avvisi-canone" aria-live="polite"></ul>
+    </section>
+  </form>
   <div class="barra-canone" role="region" aria-label="Riepilogo del canone">
     <span>Canone massimo <b id="barra-massimo">—</b><span class="solo-largo"> al mese</span></span>
     <span id="stato-salvataggio" class="stato-salvataggio" aria-live="polite"></span>
@@ -1408,6 +1496,9 @@
   <script src="assets/canone/canone-firenze.js"></script>
   <script src="assets/canone/stampa-firenze.js"></script>
   <script src="assets/canone/scheda-firenze.js"></script>
+  <script src="assets/canone/canone-bari.js"></script>
+  <script src="assets/canone/stampa-bari.js"></script>
+  <script src="assets/canone/scheda-bari.js"></script>
   <script src="assets/canone/modulo-contratto.js"></script>
   <script src="assets/canone/pagina-canone.js"></script>
   <script type="module" src="assets/canone/salva-canone.js"></script>

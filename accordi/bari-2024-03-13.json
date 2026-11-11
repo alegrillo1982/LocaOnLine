@@ -1,0 +1,506 @@
+{
+ "accordo": {
+  "codice": "bari-2024-03-13",
+  "modello": "bari-2024",
+  "comune": "Bari",
+  "provincia": "BA",
+  "titolo": "Accordo territoriale per il Comune di Bari",
+  "data": "2024-03-13",
+  "data_testo": "13 marzo 2024",
+  "deposito": "",
+  "deposito_data": "26.03.2024",
+  "protocollo": "",
+  "ufficio": "Ripartizione Patrimonio",
+  "ufficio_breve": "Ripartizione Patrimonio",
+  "valido_fino": "2027-05-02",
+  "firmatari_proprieta": [
+   "APPC",
+   "ASSEDIL/CONFEDILIZIA",
+   "ASPPI",
+   "CONFABITARE",
+   "UPPI"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET CISL",
+   "UNIAT UIL",
+   "ASSOCASA",
+   "SAI CISAL"
+  ],
+  "nota": "Accordo firmato il 13/03/2024 presso la Ripartizione Patrimonio, depositato il 26/03/2024 (nota di deposito; protocollo del timbro non leggibile con certezza). Decorre dal 2/5/2024 per tre anni. Fasce non aggiornabili ISTAT. Esiste anche un accordo del 9/9/2024 di Federproprietà, Unioncasa, Feder.Casa, Fenit Confial, ANIA: non implementato.",
+  "fonte": "PDF con nota di deposito e accordo firmato pubblicato dal SUNIA (70 pagine)."
+ },
+ "esempio_zona": "la zona dal foglio catastale",
+ "regole": {
+  "unita": "euro mensili al mq di superficie convenzionale",
+  "zone": [
+   [
+    "1",
+    "Città Vecchia",
+    "89-90-91-92",
+    [
+     [
+      "A",
+      6,
+      5.26,
+      6.37
+     ],
+     [
+      "B",
+      4,
+      4.38,
+      5.25
+     ],
+     [
+      "C",
+      0,
+      2.18,
+      4.37
+     ]
+    ],
+    "immobili con balcone su mare o su Piazza Mercantile, Piazza Ferrarese, Piazza Massari, Via Venezia, con almeno riscaldamento, autoclave e impianto elettrico adeguato al D.M. 37/2008"
+   ],
+   [
+    "2",
+    "Murat",
+    "88-93-94-96-97",
+    [
+     [
+      "A",
+      8,
+      6.63,
+      8.2
+     ],
+     [
+      "B",
+      7,
+      5.38,
+      6.62
+     ],
+     [
+      "C",
+      5,
+      4.76,
+      5.37
+     ],
+     [
+      "D",
+      0,
+      2.37,
+      4.75
+     ]
+    ],
+    "immobili con balcone e ingresso su via Sparano, corso Vittorio Emanuele, corso Cavour, piazza Garibaldi, piazza Umberto, piazza Moro, con almeno riscaldamento, ascensore dopo il 2° piano, autoclave, impianto elettrico adeguato, appartamento e stabile in buone condizioni"
+   ],
+   [
+    "3",
+    "Libertà",
+    "25-85-86-87-95-103",
+    [
+     [
+      "A",
+      8,
+      5.13,
+      6.06
+     ],
+     [
+      "B",
+      7,
+      4.51,
+      5.12
+     ],
+     [
+      "C",
+      5,
+      4.11,
+      4.5
+     ],
+     [
+      "D",
+      0,
+      3.88,
+      4.1
+     ]
+    ],
+    "zona Executive e contrada Barone"
+   ],
+   [
+    "4",
+    "Madonnella",
+    "31-98",
+    [
+     [
+      "A",
+      8,
+      6.01,
+      6.5
+     ],
+     [
+      "B",
+      7,
+      5.31,
+      6.0
+     ],
+     [
+      "C",
+      5,
+      4.41,
+      5.3
+     ],
+     [
+      "D",
+      0,
+      3.41,
+      4.4
+     ]
+    ],
+    ""
+   ],
+   [
+    "5",
+    "Japigia e Sant'Anna",
+    "34-42-43-44-51-52-53-54-55-56-62-63-64-71-72-119-120-121-123-124",
+    [
+     [
+      "A",
+      8,
+      5.26,
+      6.0
+     ],
+     [
+      "B",
+      7,
+      4.81,
+      5.25
+     ],
+     [
+      "C",
+      6,
+      3.51,
+      4.8
+     ],
+     [
+      "D",
+      0,
+      3.0,
+      3.5
+     ]
+    ],
+    ""
+   ],
+   [
+    "6",
+    "San Paolo",
+    "10-11-12-13-16-17, sez. PA 4-5, sez. SPI 11-12-13-14",
+    [
+     [
+      "A",
+      8,
+      4.94,
+      5.18
+     ],
+     [
+      "B",
+      7,
+      4.57,
+      4.93
+     ],
+     [
+      "C",
+      6,
+      4.32,
+      4.56
+     ],
+     [
+      "D",
+      0,
+      2.16,
+      4.31
+     ]
+    ],
+    ""
+   ],
+   [
+    "7",
+    "Stanic",
+    "14-18-19-20-21-22-23-24-26-35-36-100-101-102",
+    [
+     [
+      "A",
+      8,
+      5.19,
+      5.5
+     ],
+     [
+      "B",
+      7,
+      4.91,
+      5.18
+     ],
+     [
+      "C",
+      6,
+      4.31,
+      4.9
+     ],
+     [
+      "D",
+      0,
+      2.16,
+      4.3
+     ]
+    ],
+    ""
+   ],
+   [
+    "8",
+    "San Girolamo - Fesca",
+    "7-8-9-15-80-81-82-83-84",
+    [
+     [
+      "A",
+      8,
+      5.13,
+      6.0
+     ],
+     [
+      "B",
+      7,
+      4.51,
+      5.12
+     ],
+     [
+      "C",
+      6,
+      3.88,
+      4.5
+     ],
+     [
+      "D",
+      0,
+      1.93,
+      3.87
+     ]
+    ],
+    ""
+   ],
+   [
+    "9",
+    "Torre a Mare - San Giorgio",
+    "sez. TO 1-2-3-4-5-6-7",
+    [
+     [
+      "A",
+      8,
+      5.51,
+      5.9
+     ],
+     [
+      "B",
+      7,
+      4.71,
+      5.5
+     ],
+     [
+      "C",
+      0,
+      3.7,
+      4.7
+     ]
+    ],
+    ""
+   ],
+   [
+    "10",
+    "Carrassi - San Pasquale",
+    "29-32-33-40-41-49-50-51-60-61-109-112-113-114-115-116-117-118",
+    [
+     [
+      "A",
+      8,
+      7.01,
+      7.5
+     ],
+     [
+      "B",
+      7,
+      6.01,
+      7.0
+     ],
+     [
+      "C",
+      0,
+      5.5,
+      6.0
+     ]
+    ],
+    ""
+   ],
+   [
+    "11",
+    "Poggiofranco - Picone",
+    "27-28-37-38-39-45-46-47-48-57-65-104-105-106-107-108-110-111",
+    [
+     [
+      "A",
+      8,
+      6.88,
+      7.5
+     ],
+     [
+      "B",
+      7,
+      6.26,
+      6.87
+     ],
+     [
+      "C",
+      6,
+      5.61,
+      6.25
+     ],
+     [
+      "D",
+      0,
+      5.0,
+      5.6
+     ]
+    ],
+    ""
+   ],
+   [
+    "12",
+    "Carbonara - Ceglie - Loseto",
+    "58-59-66-67-68-69-70-73-74-75-76, sez. CA 1-23, sez. CE 1-29, sez. LO",
+    [
+     [
+      "A",
+      8,
+      5.26,
+      5.7
+     ],
+     [
+      "B",
+      7,
+      4.88,
+      5.25
+     ],
+     [
+      "C",
+      6,
+      4.13,
+      4.87
+     ],
+     [
+      "D",
+      0,
+      2.06,
+      4.12
+     ]
+    ],
+    ""
+   ],
+   [
+    "13",
+    "Santo Spirito - Palese",
+    "1-2-3-4-5-6-77-78-79, sez. PA 1-2-3, sez. SPI 1-10, 15",
+    [
+     [
+      "A",
+      8,
+      5.69,
+      6.12
+     ],
+     [
+      "B",
+      7,
+      5.13,
+      5.68
+     ],
+     [
+      "C",
+      0,
+      2.56,
+      5.12
+     ]
+    ],
+    ""
+   ]
+  ],
+  "superficie": {
+   "autorimessa": 0.5,
+   "posto_auto": 0.25,
+   "accessori": 0.25,
+   "scoperta": 0.15,
+   "verde": 0.1,
+   "basse": 0.5,
+   "grandi": [
+    130,
+    0.5
+   ],
+   "piccoli": [
+    [
+     45,
+     1.2,
+     45
+    ],
+    [
+     70,
+     1.2,
+     70
+    ]
+   ]
+  },
+  "energia": {
+   "A": 5,
+   "altre": 3
+  },
+  "durata": {
+   "4": 5,
+   "5": 7,
+   "6": 12
+  },
+  "arredo": {
+   "parziale_in_a": 10,
+   "totale_in_a": 20,
+   "totale_promosso": 10
+  },
+  "requisiti_promozione": [
+   26,
+   17,
+   27
+  ]
+ },
+ "elementi": [
+  "Appartamento dal 1° piano fuori terra",
+  "Ingresso dell'alloggio da piazza o da mare",
+  "Balcone con vista su piazza o mare",
+  "Allacciamento gas metano",
+  "Impianto di condizionamento",
+  "Secondo servizio igienico",
+  "Spazi esterni a uso esclusivo e/o condominiale",
+  "Porta blindata",
+  "Cantina o soffitta o giardino privato o terrazza a livello",
+  "Posto auto di pertinenza e/o condominiale assegnato",
+  "Box auto",
+  "Ascensore",
+  "Portierato",
+  "Videosorveglianza condominiale o individuale",
+  "Impianto fotovoltaico o pannelli solari per l'acqua calda",
+  "Impianto citofono",
+  "Impianto di videocitofono",
+  "Impianto di autoclave",
+  "Impianto elettrico interno adeguato al D.M. 37/2008",
+  "Attico",
+  "Ripostiglio",
+  "Parquet",
+  "Ricarica per veicoli elettrici nel box o posto auto del conduttore, o antenna satellitare",
+  "Cucina abitabile di almeno 9 mq con finestra",
+  "Sistemi di sicurezza: allarme",
+  "Domotica in almeno il 50% dell'unità immobiliare",
+  "Riscaldamento autonomo o centralizzato o pompa di calore",
+  "Infissi interni ed esterni in buono stato",
+  "Cassaforte",
+  "Doppio ingresso o cortile/giardino recintato"
+ ]
+}
