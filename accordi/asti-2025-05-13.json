@@ -1,0 +1,736 @@
+{
+ "accordo": {
+  "codice": "asti-2025-05-13",
+  "modello": "asti-2025",
+  "comune": "Asti",
+  "provincia": "AT",
+  "titolo": "Accordo territoriale del Comune di Asti (accordo del 08/01/2019 aggiornato al 13/05/2025)",
+  "data": "2025-05-13",
+  "data_testo": "13 maggio 2025",
+  "deposito": "Comune di Asti, ricevuto il 20/05/2025",
+  "deposito_data": "20.05.2025",
+  "protocollo": "",
+  "ufficio": "Comune di Asti",
+  "ufficio_breve": "Comune di Asti",
+  "valido_fino": "2028-05-31",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA - A.P.P.E.",
+   "U.P.P.I.",
+   "CONFAPPI",
+   "A.P.P.C.",
+   "CONFABITARE"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Accordo territoriale del 08/01/2019 aggiornato e firmato ad Asti il 13/05/2025 (sostituisce integralmente l'accordo depositato l'08/01/2019), ricevuto dal Comune di Asti il 20/05/2025 (timbro «per ricevuta» del protocollo, numero non indicato), in vigore dal 01/06/2025 per tre anni e comunque fino a un nuovo accordo. Valori al mq all'anno per 5 zone (per foglio catastale), 5 epoche di costruzione e 3 categorie di dotazioni (1, 2 o 3 stelle secondo il numero di elementi, su 21). Tutte le variazioni (superficie, classe energetica, arredo, durata, deposito, recesso, transitori e studenti) valgono solo sul valore massimo e si applicano una sull'altra; box e posto auto danno una quota mensile fissa per zona. Nessun aggiornamento ISTAT dei valori previsto: l'ISTAT (75%) riguarda solo l'aggiornamento annuale del canone dei contratti senza cedolare secca.",
+  "fonte": "SUNIA, pagina «Accordi territoriali di Asti»: «Asti, nuovo accordo valido dal 1 Giugno 2025» (scansione firmata, 45 pagine: testo, allegato A planimetrie, allegati B/1-B/5 tabelle dei valori, allegati C e C/1 attestazioni, D oneri accessori, E negoziazione paritetica, F-H contratti tipo)."
+ },
+ "esempio_zona": "la zona dal numero di foglio catastale (allegati B/1-B/5)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "solo_massimo": true,
+  "tabella_per": "scelta",
+  "tabella_chiave": "epoca",
+  "tabella_predefinita": "1954",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro storico",
+    "nota": "Zona 1 - Centro storico (arancione nella planimetria): foglio di mappa catastale 77 (allegato B/1). La zona si riconosce dal numero di foglio catastale dell'immobile.",
+    "fasce": {
+     "2018": [
+      [
+       34.0,
+       87.0
+      ],
+      [
+       41.0,
+       90.0
+      ],
+      [
+       49.0,
+       92.0
+      ]
+     ],
+     "2007": [
+      [
+       34.0,
+       85.0
+      ],
+      [
+       41.0,
+       87.0
+      ],
+      [
+       49.0,
+       89.0
+      ]
+     ],
+     "1989": [
+      [
+       26.0,
+       77.0
+      ],
+      [
+       33.0,
+       79.0
+      ],
+      [
+       41.0,
+       81.0
+      ]
+     ],
+     "1955": [
+      [
+       24.0,
+       73.0
+      ],
+      [
+       29.0,
+       75.0
+      ],
+      [
+       32.0,
+       77.0
+      ]
+     ],
+     "1954": [
+      [
+       21.0,
+       71.0
+      ],
+      [
+       24.0,
+       73.0
+      ],
+      [
+       26.0,
+       75.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Residenziale di maggior pregio",
+    "nota": "Zona 2 - Residenziale di maggior pregio (giallo nella planimetria): fogli di mappa catastali 22, 24, 51, 52, 78, 79, 80, 81 (allegato B/2).",
+    "fasce": {
+     "2018": [
+      [
+       44.0,
+       81.0
+      ],
+      [
+       46.0,
+       89.0
+      ],
+      [
+       49.0,
+       92.0
+      ]
+     ],
+     "2007": [
+      [
+       44.0,
+       83.0
+      ],
+      [
+       46.0,
+       86.0
+      ],
+      [
+       49.0,
+       89.0
+      ]
+     ],
+     "1989": [
+      [
+       36.0,
+       75.0
+      ],
+      [
+       38.0,
+       78.0
+      ],
+      [
+       41.0,
+       81.0
+      ]
+     ],
+     "1955": [
+      [
+       33.0,
+       69.0
+      ],
+      [
+       36.0,
+       72.0
+      ],
+      [
+       38.0,
+       75.0
+      ]
+     ],
+     "1954": [
+      [
+       31.0,
+       66.0
+      ],
+      [
+       33.0,
+       69.0
+      ],
+      [
+       36.0,
+       72.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Semiperiferica",
+    "nota": "Zona 3 - Zone semiperiferiche (rosa nella planimetria): fogli di mappa catastali 21, 53, 54, 74, 76, 82, 83, 103, 104, 105, 106, 107 (allegato B/3).",
+    "fasce": {
+     "2018": [
+      [
+       41.0,
+       76.0
+      ],
+      [
+       41.0,
+       81.0
+      ],
+      [
+       44.0,
+       84.0
+      ]
+     ],
+     "2007": [
+      [
+       38.0,
+       76.0
+      ],
+      [
+       41.0,
+       79.0
+      ],
+      [
+       44.0,
+       82.0
+      ]
+     ],
+     "1989": [
+      [
+       30.0,
+       68.0
+      ],
+      [
+       33.0,
+       71.0
+      ],
+      [
+       36.0,
+       74.0
+      ]
+     ],
+     "1955": [
+      [
+       27.0,
+       62.0
+      ],
+      [
+       29.0,
+       66.0
+      ],
+      [
+       33.0,
+       68.0
+      ]
+     ],
+     "1954": [
+      [
+       22.0,
+       59.0
+      ],
+      [
+       25.0,
+       62.0
+      ],
+      [
+       27.0,
+       65.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Periferica e frazioni",
+    "nota": "Zona 4 - Periferica e frazionale (bianco nella planimetria): tutti i fogli catastali del Comune di Asti non elencati nelle zone 1, 2, 3 e 5 (allegato B/4), compreso il foglio 3 fuori dalla lottizzazione «La Giardina».",
+    "fasce": {
+     "2018": [
+      [
+       38.0,
+       63.0
+      ],
+      [
+       41.0,
+       69.0
+      ],
+      [
+       44.0,
+       78.0
+      ]
+     ],
+     "2007": [
+      [
+       38.0,
+       63.0
+      ],
+      [
+       41.0,
+       69.0
+      ],
+      [
+       44.0,
+       75.0
+      ]
+     ],
+     "1989": [
+      [
+       30.0,
+       55.0
+      ],
+      [
+       33.0,
+       61.0
+      ],
+      [
+       36.0,
+       67.0
+      ]
+     ],
+     "1955": [
+      [
+       22.0,
+       51.0
+      ],
+      [
+       26.0,
+       57.0
+      ],
+      [
+       31.0,
+       61.0
+      ]
+     ],
+     "1954": [
+      [
+       16.0,
+       45.0
+      ],
+      [
+       22.0,
+       49.0
+      ],
+      [
+       25.0,
+       53.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "5",
+    "nome": "Zona 5 - La Giardina",
+    "nota": "Zona 5 - Residenziale di pregio decentrata «La Giardina» (azzurro nella planimetria): foglio catastale 3, solo gli immobili del piano di lottizzazione «La Giardina» (allegato B/5).",
+    "fasce": {
+     "2018": [
+      [
+       48.0,
+       89.0
+      ],
+      [
+       51.0,
+       92.0
+      ],
+      [
+       54.0,
+       96.0
+      ]
+     ],
+     "2007": [
+      [
+       48.0,
+       89.0
+      ],
+      [
+       51.0,
+       92.0
+      ],
+      [
+       54.0,
+       95.0
+      ]
+     ],
+     "1989": [
+      [
+       41.0,
+       81.0
+      ],
+      [
+       43.0,
+       84.0
+      ],
+      [
+       46.0,
+       87.0
+      ]
+     ],
+     "1955": [
+      [
+       37.0,
+       72.0
+      ],
+      [
+       41.0,
+       79.0
+      ],
+      [
+       43.0,
+       81.0
+      ]
+     ],
+     "1954": [
+      [
+       22.0,
+       59.0
+      ],
+      [
+       25.0,
+       62.0
+      ],
+      [
+       27.0,
+       65.0
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "1 stella",
+    "2 stelle",
+    "3 stelle"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    9
+   ],
+   "nota_soglie": "1 stella: dotazioni essenziali; 2 stelle: medie dotazioni; 3 stelle: particolari dotazioni"
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi di riferimento (allegati B): 1 stella fino a 4, 2 stelle da 5, 3 stelle da 10"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Cortile comune"
+   },
+   {
+    "testo": "Una cantina, un sottotetto o una soffitta"
+   },
+   {
+    "testo": "Comodità di salita (oltre il 2° piano, cioè dal 3° fuori terra, serve l'ascensore)"
+   },
+   {
+    "testo": "Area verde privata o condominiale"
+   },
+   {
+    "testo": "Almeno un box auto o posto auto coperto"
+   },
+   {
+    "testo": "Posto auto scoperto"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Mobili (anche solo in parte)"
+   },
+   {
+    "testo": "Doppi servizi (due bagni)"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Doppi vetri"
+   },
+   {
+    "testo": "Citofono"
+   },
+   {
+    "testo": "Antifurto"
+   },
+   {
+    "testo": "Geotermia o pompa di calore per riscaldamento o raffrescamento"
+   },
+   {
+    "testo": "Riscaldamento autonomo o con contabilizzatori"
+   },
+   {
+    "testo": "Riscaldamento a pavimento (sistema radiante)"
+   },
+   {
+    "testo": "Pannelli fotovoltaici e/o solari termici"
+   },
+   {
+    "testo": "Ventilazione meccanica controllata"
+   },
+   {
+    "testo": "Antenna TV digitale o satellitare centralizzata"
+   },
+   {
+    "testo": "Tapparelle motorizzate (almeno la metà)"
+   },
+   {
+    "testo": "Videosorveglianza condominiale o videocitofono"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile indicata nell'APE",
+   "nota": "Vale la superficie utile scritta nell'attestato di prestazione energetica (APE), dichiarata nel contratto e data in copia all'inquilino. Balconi, cantine e garage non si aggiungono. La superficie cambia il valore massimo: sotto 41 mq +50%, da 41 a 50,99 mq +30%, da 51 a 60,99 mq +20%, da 61 a 100 mq nessuna variazione, oltre 100 mq -10%, oltre 120 mq -15%, oltre 140 mq -20%."
+  },
+  "correttivi_superficie": [
+   {
+    "a": 40.99,
+    "perc": 50,
+    "nome": "superficie sotto 41 mq",
+    "su": "base"
+   },
+   {
+    "da": 41,
+    "a": 50.99,
+    "perc": 30,
+    "nome": "superficie da 41 a 50,99 mq",
+    "su": "base"
+   },
+   {
+    "da": 51,
+    "a": 60.99,
+    "perc": 20,
+    "nome": "superficie da 51 a 60,99 mq",
+    "su": "base"
+   },
+   {
+    "da": 100.01,
+    "a": 120,
+    "perc": -10,
+    "nome": "superficie oltre 100 mq",
+    "su": "base"
+   },
+   {
+    "da": 120.01,
+    "a": 140,
+    "perc": -15,
+    "nome": "superficie oltre 120 mq",
+    "su": "base"
+   },
+   {
+    "da": 140.01,
+    "perc": -20,
+    "nome": "superficie oltre 140 mq",
+    "su": "base"
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "epoca",
+    "tipo": "scelta",
+    "testo": "Anno di costruzione, o di ristrutturazione totale (dall'APE; sceglie la riga della tabella)",
+    "nome": "anno di costruzione",
+    "nessuna": "fino al 1954",
+    "nessuna_breve": "fino al 1954",
+    "opzioni": [
+     {
+      "valore": "1955",
+      "testo": "dal 1955 al 1988",
+      "perc": 0
+     },
+     {
+      "valore": "1989",
+      "testo": "dal 1989 al 2006",
+      "perc": 0
+     },
+     {
+      "valore": "2007",
+      "testo": "dal 2007 al 2017",
+      "perc": 0
+     },
+     {
+      "valore": "2018",
+      "testo": "dal 2018 in poi",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica dell'edificio (dall'APE)",
+    "nome": "classe energetica",
+    "nessuna": "D, E o F",
+    "nessuna_breve": "nessuna variazione",
+    "opzioni": [
+     {
+      "valore": "A2",
+      "testo": "A2, A3 o A4",
+      "perc": 20
+     },
+     {
+      "valore": "A",
+      "testo": "A, A+ o A1",
+      "perc": 15
+     },
+     {
+      "valore": "B",
+      "testo": "B",
+      "perc": 10
+     },
+     {
+      "valore": "C",
+      "testo": "C",
+      "perc": 5
+     },
+     {
+      "valore": "G",
+      "testo": "G o non classificato",
+      "perc": -20
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "ammobiliato": true,
+    "testo": "Completamente arredato (mobili in buono stato, frigorifero, lavatrice, televisore e piano cottura, con verbale firmato dalle parti)",
+    "nome": "arredato",
+    "perc": 10
+   },
+   {
+    "chiave": "deposito",
+    "tipo": "spunta",
+    "contratti": [
+     "agevolato"
+    ],
+    "testo": "Il proprietario rinuncia al deposito cauzionale e a ogni altra garanzia",
+    "nome": "senza deposito cauzionale",
+    "perc": 2.5
+   },
+   {
+    "chiave": "recesso",
+    "tipo": "spunta",
+    "contratti": [
+     "agevolato"
+    ],
+    "testo": "L'inquilino può lasciare la casa per qualsiasi motivo con preavviso ridotto (da 6 ad almeno 2 mesi)",
+    "nome": "preavviso ridotto",
+    "perc": 2.5
+   },
+   {
+    "chiave": "box",
+    "tipo": "scelta",
+    "testo": "Autorimessa o posto auto coperto a uso esclusivo, indicato nel contratto (quota mensile fissa per zona)",
+    "nome": "box o posto auto coperto",
+    "nessuna": "no",
+    "mostra_perc": false,
+    "opzioni": [
+     {
+      "valore": "si",
+      "testo": "sì",
+      "importo_zona": {
+       "1": 75,
+       "2": 50,
+       "3": 40,
+       "4": 30,
+       "5": 25
+      }
+     }
+    ]
+   },
+   {
+    "chiave": "scoperto",
+    "tipo": "scelta",
+    "testo": "Posto auto scoperto a uso esclusivo, indicato nel contratto (quota mensile fissa per zona)",
+    "nome": "posto auto scoperto",
+    "nessuna": "no",
+    "mostra_perc": false,
+    "opzioni": [
+     {
+      "valore": "si",
+      "testo": "sì",
+      "importo_zona": {
+       "1": 55,
+       "2": 40,
+       "3": 30,
+       "4": 25,
+       "5": 20
+      }
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Tutte le variazioni valgono solo sul valore massimo e si applicano una sull'altra: superficie, classe energetica (A2-A4 +20%, A/A+/A1 +15%, B +10%, C +5%, G o non classificato -20%), arredo completo +10%, durata 4+2 anni +3%, 5+2 +7%, 6+2 o più +12%, rinuncia al deposito +2,5%, preavviso ridotto +2,5%, transitori e studenti +10%. Box o posto auto coperto e posto auto scoperto si aggiungono con una quota mensile fissa (al massimo quella indicata per la zona).",
+  "durata": {
+   "4": 3,
+   "5": 7,
+   "6": 12
+  },
+  "contratto": {
+   "transitorio": 10,
+   "studenti": 10
+  },
+  "combinazione": "prodotto",
+  "avvisi": [
+   {
+    "testo": "Superfici di confine (accordo, punto I): da 140,01 a 148,75 mq il canone massimo può essere quello di un alloggio di 140 mq; da 120,01 a 127,06 mq quello di 120 mq; da 100,01 a 111,11 mq quello di 100 mq; da 61 a 73,19 mq quello di 60,99 mq; da 51 a 55,24 mq quello di 50,99 mq; da 41 a 47,30 mq quello di 40,99 mq. Se la tua superficie è in questi intervalli, il massimo può essere un po' più alto di quello calcolato qui."
+   },
+   {
+    "testo": "Box e posto auto: la quota mensile è un massimo (fino a), da indicare nel contratto; contano anche come elementi 5 e 6."
+   }
+  ],
+  "importo_solo_massimo": true
+ },
+ "pdf": {
+  "allegato": "Allegato C",
+  "titolo": "Attestazione di applicazione dei parametri dell'accordo territoriale per la Città di Asti (D.M. 16/01/2017)",
+  "sottotitolo": "Accordo territoriale del Comune di Asti del 08/01/2019 aggiornato al 13/05/2025, in vigore dal 01/06/2025",
+  "titolo_superficie": "SUPERFICIE UTILE (DALL'APE)",
+  "titolo_elementi": "Elementi di riferimento (allegati B/1 - B/5)",
+  "dichiarazione": "Il sottoscritto, locatore/conduttore dell'immobile sopra indicato, DICHIARA sotto la propria responsabilità che l'immobile è dotato degli elementi sopra riportati.",
+  "firme": [
+   "Il dichiarante"
+  ],
+  "titolo_attestazione": "TUTTO CIÒ PREMESSO",
+  "attestazione": [
+   "l'Organizzazione ……………………………………, firmataria dell'accordo territoriale per il Comune di Asti depositato il 20/05/2025, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali, visti: copia del contratto registrato / in corso di registrazione; scheda di verifica dei valori di fascia applicata e relativi parametri di maggiorazione,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Asti depositato in data 20/05/2025 e ai fini IMU il canone rientra:  [  ] fascia bassa (cat. A/3, A/4, A/5, A/6 + C/2, C/6, C/7)   [  ] fascia alta (cat. A/2 e A/7 + C/2, C/6, C/7)",
+   "Asti, lì ……………………"
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "per l'Organizzazione firmataria dell'accordo territoriale"
+  ],
+  "nota_zone": "La zona si ricava dal numero di foglio catastale dell'immobile: zona 1 foglio 77; zona 2 fogli 22, 24, 51, 52, 78, 79, 80, 81; zona 3 fogli 21, 53, 54, 74, 76, 82, 83, 103-107; zona 5 lottizzazione «La Giardina» (foglio 3, in parte); zona 4 tutti gli altri fogli."
+ }
+}
