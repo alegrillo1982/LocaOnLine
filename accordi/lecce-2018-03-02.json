@@ -1,0 +1,527 @@
+{
+ "accordo": {
+  "codice": "lecce-2018-03-02",
+  "modello": "lecce-2018",
+  "comune": "Lecce",
+  "provincia": "LE",
+  "titolo": "Accordo territoriale per la stipula di contratti di locazione agevolata per il Comune di Lecce",
+  "data": "2018-03-02",
+  "data_testo": "2 marzo 2018",
+  "deposito": "Comune di Lecce",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Lecce del 2 marzo 2018: la durata di tre anni dal deposito è trascorsa.</strong> Resta in vigore fino alla firma di un nuovo accordo, che a novembre 2026 non risulta pubblicato. Minimi e massimi si aggiornano con la variazione ISTAT dalla firma al mese prima del contratto: qui trovi i valori originali, chiedi all'associazione che attesta il contratto quelli aggiornati.",
+  "firmatari_proprieta": [
+   "A.P.E. - CONFEDILIZIA LECCE",
+   "A.P.P.C. LECCE",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato a Lecce il 02/03/2018 (data scritta a mano a pag. 7; presentato quel giorno in Comune, notizia del Comune di Lecce). Sostituisce integralmente l'accordo del 9/10/1999. Durata tre anni dal giorno dopo il deposito, poi resta in vigore fino al nuovo accordo; data e protocollo del deposito non indicati nei documenti. Tre zone dallo stradario (allegato 1, con sub-zone di pregio «P»), tre sub-fasce A, B, C secondo il numero di elementi, diversi per zona (allegato 2); valori al mq convenzionale al mese. Fasce aggiornate con l'ISTAT (FOI) dal mese dopo la firma al mese prima del contratto; canone aggiornato ogni anno al 75% dell'ISTAT.",
+  "fonte": "Archivio ZIP pubblicato dal Comune di Lecce con la notizia del 02/03/2018 (accordo firmato in scansione, 35 pagine, e allegati 1-5 in formato Word/PDF); stessa scansione pubblicata da SUNIA."
+ },
+ "esempio_zona": "la zona dalla via (allegato 1)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1",
+    "nota": "Zona 1: la si ricava dalla via nello stradario (allegato 1, colonna «zona omog.»: 1). Le vie segnate «P» sono sub-zone di pregio. Le strade nuove seguono quella della strada già censita più vicina e simile; vicino a due zone vale quella di maggior pregio.",
+    "fasce": [
+     [
+      1.8,
+      3.5
+     ],
+     [
+      3.6,
+      4.6
+     ],
+     [
+      4.7,
+      5.4
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2",
+    "nota": "Zona 2: la si ricava dalla via nello stradario (allegato 1, colonna «zona omog.»: 2). Le vie segnate «P» sono sub-zone di pregio. Le strade nuove seguono quella della strada già censita più vicina e simile; vicino a due zone vale quella di maggior pregio.",
+    "fasce": [
+     [
+      3.0,
+      3.8
+     ],
+     [
+      3.9,
+      4.6
+     ],
+     [
+      4.7,
+      5.4
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3",
+    "nota": "Zona 3: le vie con «3» nello stradario (allegato 1) e tutte le strade delle marine e delle zone rurali.",
+    "fasce": [
+     [
+      2.4,
+      3.2
+     ],
+     [
+      3.2,
+      3.8
+     ],
+     [
+      3.9,
+      4.3
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "C",
+    "B",
+    "A"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    3,
+    5
+   ],
+   "soglie_zona": {
+    "2": [
+     5,
+     8
+    ],
+    "3": [
+     7,
+     12
+    ]
+   },
+   "conta": {
+    "da": 1,
+    "a": 23
+   },
+   "obbligatori": [
+    0
+   ],
+   "basta": [
+    24,
+    25,
+    26
+   ],
+   "nota_soglie": "conta solo gli elementi della tua zona (zona 1: da 2 a 9; zona 2: da 4 a 19; zona 3: da 4 a 24); con l'elemento 25, 26 o 27 (secondo la zona) si va direttamente in sub-fascia A; senza bagno interno (elemento 1) si resta in C"
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Requisito per le sub-fasce A e B (tutte le zone)"
+   },
+   {
+    "da": 1,
+    "titolo": "Elementi solo della zona 1"
+   },
+   {
+    "da": 3,
+    "titolo": "Elementi di tutte le zone"
+   },
+   {
+    "da": 9,
+    "titolo": "Elementi solo delle zone 2 e 3"
+   },
+   {
+    "da": 19,
+    "titolo": "Elementi solo della zona 3"
+   },
+   {
+    "da": 24,
+    "titolo": "Sub-fascia A direttamente (solo nelle zone indicate)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Bagno all'interno dell'alloggio (tazza, lavabo, doccia o vasca): senza, sub-fascia C",
+    "zone": [
+     "1",
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Zona 1: appartamento dal 1° piano fuori terra in su",
+    "zone": [
+     "1"
+    ]
+   },
+   {
+    "testo": "Zona 1: bagno completo (tazza, bidet, lavabo, doccia o vasca) all'interno",
+    "zone": [
+     "1"
+    ]
+   },
+   {
+    "testo": "Allacciamento al gas metano",
+    "zone": [
+     "1",
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Ascensore (zona 1: alloggio dal 2° piano; zone 2 e 3: dal 3° piano)",
+    "zone": [
+     "1",
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Autoclave",
+    "zone": [
+     "1",
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Impianto elettrico interno a norma (legge 37/08, già 46/90)",
+    "zone": [
+     "1",
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato",
+    "zone": [
+     "1",
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Infissi interni ed esterni in buono stato",
+    "zone": [
+     "1",
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Verde condominiale (zona 3: anche verde attrezzato)",
+    "zone": [
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Cortile in comune",
+    "zone": [
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Impianto di ricezione satellitare",
+    "zone": [
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Porta blindata",
+    "zone": [
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Ripostiglio e/o cantina",
+    "zone": [
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Doppi servizi",
+    "zone": [
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Impianto di condizionamento",
+    "zone": [
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Posto auto (il primo)",
+    "zone": [
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Secondo posto auto",
+    "zone": [
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Attico",
+    "zone": [
+     "2",
+     "3"
+    ]
+   },
+   {
+    "testo": "Verde esclusivo",
+    "zone": [
+     "3"
+    ]
+   },
+   {
+    "testo": "Impianti sportivi",
+    "zone": [
+     "3"
+    ]
+   },
+   {
+    "testo": "Box auto",
+    "zone": [
+     "3"
+    ]
+   },
+   {
+    "testo": "Cassaforte",
+    "zone": [
+     "3"
+    ]
+   },
+   {
+    "testo": "Parquet",
+    "zone": [
+     "3"
+    ]
+   },
+   {
+    "testo": "Via di pregio («P» nello stradario, allegato 1)",
+    "zone": [
+     "1",
+     "2"
+    ]
+   },
+   {
+    "testo": "Immobile accatastato A/7",
+    "zone": [
+     "2"
+    ]
+   },
+   {
+    "testo": "Rifiniture di pregio (piastrelle alte 2 m in bagni e cucina, pavimenti in marmo o di pregio)",
+    "zone": [
+     "3"
+    ]
+   }
+  ],
+  "superficie": {
+   "base": "Superficie netta calpestabile (soppalchi oltre 1,70 m compresi)",
+   "correzioni": [
+    {
+     "fino": 45,
+     "perc": 25
+    },
+    {
+     "fino": 60,
+     "perc": 20
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze a uso esclusivo, cantine",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa singola",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto in autorimessa comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto auto in spazi comuni",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta esclusiva (20% fino ai mq dell'alloggio, poi 10%)",
+     "coeff": 0.2,
+     "scaglione": [
+      "base",
+      0.2,
+      0.1
+     ]
+    },
+    {
+     "chiave": "bassi",
+     "testo": "Vani alti fra 1,00 e 1,70 m",
+     "coeff": 0.7
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 115,
+     "perc": 0
+    },
+    {
+     "fino": 999999,
+     "perc": -10
+    }
+   ],
+   "etichetta_correzione": "convenzionale",
+   "nota": "Superficie netta sotto i 60 mq: +20%; sotto i 45 mq: +25%. Superficie convenzionale oltre 115 mq: -10%. Balconi, terrazze esclusive e cantine 25%, autorimessa singola 50%, posto auto in autorimessa comune 20%, posto auto in spazi comuni 15%; area scoperta esclusiva 20% fino alla superficie dell'alloggio e 10% per la parte in più, oltre 300 mq non conta (scrivi al massimo 300). Vani alti fra 1,00 e 1,70 m al 70%. Non contano i ripostigli «aerei» senza scala fissa e gli spazi comuni (allegato 3). Se si affitta una sola stanza, il canone si calcola sull'intero alloggio e si divide in proporzione, con la quota delle parti comuni; la somma dei canoni delle stanze non può superare quello dell'intero alloggio."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "ammobiliato",
+    "tipo": "scelta",
+    "testo": "Arredamento (la percentuale vale solo se l'alloggio è già in sub-fascia A)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato (cucina, camera da letto e bagno arredati)",
+      "perc": 8
+     },
+     {
+      "valore": "totale",
+      "testo": "totalmente arredato (tutti gli arredi dell'allegato 3)",
+      "perc": 20
+     }
+    ]
+   },
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "testo": "Immobile di categoria A/1, A/8 o A/9, o vincolato (D.Lgs. 42/04)",
+    "nome": "immobile di particolare pregio",
+    "perc": 15
+   },
+   {
+    "chiave": "nuovo",
+    "tipo": "scelta",
+    "testo": "Costruzione, ristrutturazione integrale o restauro completo (fine lavori prima dell'inizio della locazione)",
+    "nome": "nuova costruzione o ristrutturazione",
+    "nessuna": "più di 5 anni fa, o mai",
+    "opzioni": [
+     {
+      "valore": "1",
+      "testo": "entro l'anno prima",
+      "perc": 15
+     },
+     {
+      "valore": "2-3",
+      "testo": "dal 3° al 2° anno prima",
+      "perc": 10
+     },
+     {
+      "valore": "4-5",
+      "testo": "dal 5° al 4° anno prima",
+      "perc": 8
+     }
+    ]
+   },
+   {
+    "chiave": "classe",
+    "tipo": "spunta",
+    "testo": "Classe energetica C o superiore (dall'APE)",
+    "nome": "classe energetica C o superiore",
+    "perc": 10
+   },
+   {
+    "chiave": "oltre6",
+    "tipo": "spunta",
+    "contratti": [
+     "agevolato"
+    ],
+    "testo": "Durata di oltre 6 anni (scegli anche «6 + 2 anni o più»: in tutto +10% invece del +6%)",
+    "nome": "durata oltre 6 anni",
+    "perc": 4,
+    "mostra_perc": false
+   }
+  ],
+  "nota_maggiorazioni": "Le percentuali si sommano. Arredato: un alloggio parzialmente o totalmente arredato sale di una sub-fascia (da C a B, da B ad A); solo se è già in sub-fascia A ha invece +8% (parzialmente) o +20% (totalmente). Anche con almeno due fra condizionamento, allarme, videosorveglianza, domotica e impianto satellitare si sale di una sub-fascia. Durata: 4 anni +3%, 5 o 6 anni +6%, oltre 6 anni +10%. Transitori (fino a 18 mesi) e studenti universitari (da 6 mesi a 3 anni): stesse fasce e stesse regole.",
+  "durata": {
+   "4": 3,
+   "5": 6,
+   "6": 6
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "zone": [
+     "1"
+    ],
+    "testo": "Zona 1: contano solo gli elementi da 2 a 9. Per la sub-fascia A servono i servizi igienici completi, con bidet, all'interno dell'alloggio (elemento 3)."
+   },
+   {
+    "zone": [
+     "2"
+    ],
+    "testo": "Zona 2: contano solo gli elementi da 4 a 19. Senza impianto elettrico a norma (elemento 7) non si entra in sub-fascia A; senza riscaldamento e senza autoclave si resta in sub-fascia C."
+   },
+   {
+    "zone": [
+     "3"
+    ],
+    "testo": "Zona 3: contano gli elementi da 4 a 24. Per la sub-fascia A è indispensabile l'impianto elettrico a norma (elemento 7); senza riscaldamento e senza autoclave si resta in sub-fascia C."
+   },
+   {
+    "testo": "Sub-fascia A solo con stabile e appartamento in buone condizioni (allegato 3). Un alloggio arredato fuori dalla sub-fascia A, o con almeno due fra condizionamento, allarme, videosorveglianza, domotica e satellitare, sale di una sub-fascia: il calcolo qui non lo fa da solo, chiedi all'associazione."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 4",
+  "titolo": "Attestazione di rispondenza D.M. 16/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Lecce sottoscritto il 02/03/2018",
+  "titolo_superficie": "SUPERFICIE CONVENZIONALE (allegato 3)",
+  "titolo_elementi": "Elementi per la determinazione della sub-fascia (allegato 2)",
+  "etichetta_conteggio": "ELEMENTI DELLA ZONA",
+  "dichiarazione": "Il richiedente ha presentato richiesta di attestazione ex DM 16/2017 dichiarando, sotto la sua responsabilità, le caratteristiche dell'immobile oggetto della locazione agevolata / ad uso transitorio / per studenti universitari, come da elementi oggettivi sopra riportati ai fini del calcolo agevolato.",
+  "firme": [],
+  "titolo_attestazione": "ATTESTA",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Lecce, come sopra rappresentata, sulla base degli elementi oggettivi dichiarati dal richiedente, anche ai fini dell'ottenimento delle agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo Territoriale vigente del Comune di Lecce depositato in data ……………"
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "L'Organizzazione"
+  ],
+  "nota_zone": "La zona (1, 2 o 3) si ricava dalla via nello stradario (allegato 1); le vie segnate «P» sono sub-zone di pregio. Marine e zone rurali: zona 3."
+ }
+}
