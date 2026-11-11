@@ -449,6 +449,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpadova-2023-02-14-accordo-allegati.pdf?alt=media&token=9d440114-1fa9-425f-88ed-705f45a27d81"
     }
    ]
+  },
+  {
+   "comune": "Verona",
+   "provincia": "VR",
+   "accordo": "verona-2017-06-08",
+   "sottoscritto": "8 giugno 2017",
+   "depositato": "",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fverona-2017-06-08-accordo.pdf?alt=media&token=0524cf70-74d9-4fb6-a4a2-78ff12d6762c",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fverona-2017-06-08-accordo.pdf?alt=media&token=0524cf70-74d9-4fb6-a4a2-78ff12d6762c"
+    }
+   ]
   }
  ]
 }

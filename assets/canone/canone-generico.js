@@ -68,7 +68,8 @@
     for (const v of R.voci || []) {
       const mq = numero(sup[v.chiave]) || 0;
       const k = v.coeff_zona && v.coeff_zona[z] !== undefined ? v.coeff_zona[z] : v.coeff;
-      let conv = v.scaglione ? Math.min(mq, v.scaglione[0]) * v.scaglione[1] + Math.max(0, mq - v.scaglione[0]) * v.scaglione[2] : mq * k;
+      const lim = v.scaglione && v.scaglione[0] === "base" ? U : v.scaglione && v.scaglione[0];
+      let conv = v.scaglione ? Math.min(mq, lim) * v.scaglione[1] + Math.max(0, mq - lim) * v.scaglione[2] : mq * k;
       if (v.tetto === "base" && conv > U) { conv = U; note.push(`${v.testo}: al massimo la superficie dell'alloggio.`); }
       righe.push({ chiave: v.chiave, mq, coeff: k, convenzionale: cent(conv) });
     }
@@ -99,6 +100,11 @@
         // es. Padova: vale il livello che ricorre più spesso fra i gruppi; a parità quello superiore
         const conta = F.nomi.map((_, k) => gruppi.filter((g) => g.i === k).length);
         let i = 0; conta.forEach((c, k) => { if (c >= conta[i]) i = k; });
+        // es. Verona: regole proprie per la parità fra due livelli
+        const pari = conta.map((c, k) => (c === conta[i] ? k : -1)).filter((k) => k >= 0);
+        const regola = pari.length === 2 && F.parita ? F.parita[pari.join("-")] : undefined;
+        if (typeof regola === "number") i = regola;
+        else if (regola) i = gruppi[regola.gruppo].i === regola.se ? regola.allora : regola.altrimenti;
         return { n: conta[i], i, nome: F.nomi[i], gruppi, prevalente: true, avviso: "" };
       }
       return { n: gruppi.reduce((t, g) => t + g.n, 0), i: null, nome: gruppi.map((g) => `${g.nome} ${g.fascia}`).join(", "), gruppi, avviso: "" };
@@ -198,7 +204,9 @@
       const np = R.elementi.filter((e, i) => i >= P.da && i <= P.a && presente(e, el[i])).length;
       const sc = P.scaglioni.filter((x) => np >= x.da).pop();
       r.premium = np;
-      if (sc) add(`${np} elementi premium`, sc.perc[z] ?? sc.perc.altre ?? 0, P.dopo);
+      // es. Verona: la percentuale dipende dalla superficie (fino a 65 mq "piccoli", oltre "grandi")
+      const taglia = P.soglia_mq && sup ? (sup.righe[0].mq <= P.soglia_mq ? "piccoli" : "grandi") : null;
+      if (sc) add(`${np} ${P.nome || "elementi premium"}`, (taglia ? sc.perc[taglia] : sc.perc[z] ?? sc.perc.altre) ?? 0, P.dopo);
     }
     if (R.arredo && sup) {
       // es. Padova: arredo in proporzione ai punti degli oggetti presenti, fino al massimo dell'accordo

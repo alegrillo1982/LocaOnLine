@@ -1,0 +1,621 @@
+{
+ "accordo": {
+  "codice": "verona-2017-06-08",
+  "modello": "verona-2017",
+  "comune": "Verona",
+  "provincia": "VR",
+  "titolo": "Accordo territoriale per il Comune di Verona",
+  "data": "2017-06-08",
+  "data_testo": "8 giugno 2017",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2020-06-08",
+  "firmatari_proprieta": [
+   "A.P.E. Confedilizia Verona",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Primo accordo firmato in attuazione del D.M. 16/01/2017, presentato dal Comune l'8/06/2017 (il testo non riporta data di firma né di deposito); durata tre anni dal deposito, resta in vigore fino al nuovo. Valori da aggiornare con l'ISTAT da giugno 2019 (punto 4).",
+  "fonte": "Testo dell'accordo con allegati pubblicato da SUNIA e UPPI (stesso file); comunicato stampa del Comune di Verona dell'8/06/2017."
+ },
+ "esempio_zona": "la zona dal quartiere",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Città antica",
+    "nota": "Zona 1 (Città antica, S. Stefano). Se l'area è delimitata da una strada, ciascun lato appartiene alla zona su cui si affaccia.",
+    "fasce": [
+     [
+      3.83,
+      6.67
+     ],
+     [
+      6.67,
+      9.37
+     ],
+     [
+      9.37,
+      10.67
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Quartieri residenziali di pregio",
+    "nota": "Zona 2 (B. Trento, Valdonega, P. Crencano, Avesa, Cittadella, S. Zeno, Veronetta, S. Nazaro, Quinzano). Se l'area è delimitata da una strada, ciascun lato appartiene alla zona su cui si affaccia.",
+    "fasce": [
+     [
+      3.64,
+      5.18
+     ],
+     [
+      5.18,
+      6.8
+     ],
+     [
+      6.8,
+      8.43
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Quartieri residenziali est",
+    "nota": "Zona 3 (B. Venezia, P.S. Pancrazio, S. Michele Extra, Montorio, Mizzole, S. Maria in Stelle, Quinto). Se l'area è delimitata da una strada, ciascun lato appartiene alla zona su cui si affaccia.",
+    "fasce": [
+     [
+      3.64,
+      4.5
+     ],
+     [
+      4.5,
+      5.46
+     ],
+     [
+      5.46,
+      6.42
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Quartieri residenziali ovest",
+    "nota": "Zona 4 (B. Milano, S. Massimo, Parona). Se l'area è delimitata da una strada, ciascun lato appartiene alla zona su cui si affaccia.",
+    "fasce": [
+     [
+      3.03,
+      4.17
+     ],
+     [
+      4.17,
+      5.46
+     ],
+     [
+      5.46,
+      6.42
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Zona 5 - Quartieri residenziali sud e sud-ovest",
+    "nota": "Zona 5 (S. Lucia, Golosine, B. Roma, Cadidavid). Se l'area è delimitata da una strada, ciascun lato appartiene alla zona su cui si affaccia.",
+    "fasce": [
+     [
+      2.71,
+      4.02
+     ],
+     [
+      4.02,
+      5.29
+     ],
+     [
+      5.29,
+      6.24
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "Zona 6 - Zone produttive",
+    "nota": "Zona 6 (ZAI storica, ZAI del Basson, Quadrante Europa). Se l'area è delimitata da una strada, ciascun lato appartiene alla zona su cui si affaccia.",
+    "fasce": [
+     [
+      2.19,
+      3.64
+     ],
+     [
+      3.64,
+      4.85
+     ],
+     [
+      4.85,
+      5.79
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "Inferiore",
+    "Media",
+    "Superiore"
+   ],
+   "combina": "prevalente",
+   "gruppi": [
+    {
+     "nome": "Tipologia edilizia",
+     "da": 0,
+     "a": 0,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Tipologia catastale",
+     "da": 1,
+     "a": 1,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Vetustà",
+     "da": 2,
+     "a": 2,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Accessori in dotazione",
+     "da": 3,
+     "a": 9,
+     "soglie": [
+      1,
+      2
+     ]
+    },
+    {
+     "nome": "Spazi comuni attrezzati",
+     "da": 10,
+     "a": 10,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Dotazione servizi tecnici",
+     "da": 11,
+     "a": 13,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Dotazione di autorimessa",
+     "da": 14,
+     "a": 14,
+     "soglie": [
+      0,
+      1
+     ]
+    }
+   ],
+   "parita": {
+    "1-2": 2,
+    "0-2": 1,
+    "0-1": {
+     "gruppo": 6,
+     "se": 2,
+     "allora": 1,
+     "altrimenti": 0
+    }
+   },
+   "nota": "Ogni elemento vale inferiore, media o superiore (accessori: 3 o più superiore, 2 media; servizi tecnici: 2 o più superiore, 1 media). Vale il livello prevalente; a parità: superiore e media → superiore, superiore e inferiore → media, media e inferiore → media solo se l'autorimessa è superiore."
+  },
+  "titoli_elementi": [
+   {
+    "da": 15,
+    "titolo": "Elementi di valorizzazione (allegato 4)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Tipologia edilizia",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "unità su scala con più di 10 alloggi (inferiore)",
+      "punti": 0
+     },
+     {
+      "testo": "unità con accesso indipendente o su scala fino a 9 alloggi (media)",
+      "punti": 1
+     },
+     {
+      "testo": "casa singola o bifamiliare (superiore)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Tipologia catastale",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "A/4, A/5, A/6 (inferiore)",
+      "punti": 0
+     },
+     {
+      "testo": "A/3 classe 2 o 1 (inferiore)",
+      "punti": 0
+     },
+     {
+      "testo": "A/3 classe da 6 a 3 (media)",
+      "punti": 1
+     },
+     {
+      "testo": "A/2 classe da 4 a 1 (media)",
+      "punti": 1
+     },
+     {
+      "testo": "A/2 classe da 8 a 5 (superiore)",
+      "punti": 2
+     },
+     {
+      "testo": "A/1 o A/7, tutte le classi (superiore)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Vetustà",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "oltre 35 anni (inferiore)",
+      "punti": 0
+     },
+     {
+      "testo": "oltre 15 e fino a 35 anni (media)",
+      "punti": 1
+     },
+     {
+      "testo": "integrale rifacimento documentato dell'alloggio (media)",
+      "punti": 1
+     },
+     {
+      "testo": "nuova costruzione o ristrutturazione da 0 a 15 anni (superiore)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Posto auto interno e/o autorimessa a uso esclusivo",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Posto auto esterno esclusivo (non conta per gli A/7)",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Area a uso esclusivo (non conta per gli A/7)",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Doppi servizi",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Terrazzi superiori a 30 mq",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Soffitta o cantina (non conta per gli A/7)",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Terrazza sul piano attico",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Spazi comuni attrezzati",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "assenza di spazi attrezzati, o giardino sotto il 20% dell'area scoperta (inferiore)",
+      "punti": 0
+     },
+     {
+      "testo": "giardino condominiale piantumato fra il 20% e il 50% dell'area scoperta (media)",
+      "punti": 1
+     },
+     {
+      "testo": "parco giochi, attrezzature sportive fisse o giardino piantumato oltre il 50% (superiore)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Impianto di riscaldamento autonomo",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Impianto di condizionamento o raffrescamento",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Ascensore",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Dotazione di autorimessa",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "assenza di autorimessa e di posto auto esclusivo interno (inferiore)",
+      "punti": 0
+     },
+     {
+      "testo": "un solo posto auto o posto auto esclusivo interno (media)",
+      "punti": 1
+     },
+     {
+      "testo": "due o più posti auto (superiore)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Pavimenti in parquet"
+   },
+   {
+    "testo": "Pavimenti in marmo pregiato o in cotto"
+   },
+   {
+    "testo": "Doppie finestre"
+   },
+   {
+    "testo": "Serramenti isolati con vetrocamera"
+   },
+   {
+    "testo": "Porta o serramenti blindati"
+   },
+   {
+    "testo": "Travi a vista"
+   },
+   {
+    "testo": "Serramenti interni di legno pregiato"
+   },
+   {
+    "testo": "Parabola satellitare"
+   },
+   {
+    "testo": "Impianto antifurto"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Rivestimento esterno del fabbricato in marmo o materiale pregiato"
+   },
+   {
+    "testo": "Sistemi alternativi di riscaldamento"
+   },
+   {
+    "testo": "Tapparelle elettriche"
+   },
+   {
+    "testo": "Inferriate di protezione"
+   },
+   {
+    "testo": "Cancello elettrico"
+   },
+   {
+    "testo": "Affreschi interni o esterni"
+   },
+   {
+    "testo": "Impianto fotovoltaico"
+   },
+   {
+    "testo": "Impianto solare termico"
+   },
+   {
+    "testo": "Impianto geotermico"
+   },
+   {
+    "testo": "Cappotto esterno o interno"
+   },
+   {
+    "testo": "Vicinanza a scuole, palestre, centri ricreativi e di culto"
+   },
+   {
+    "testo": "Rete Wi-Fi"
+   }
+  ],
+  "premium": {
+   "da": 15,
+   "a": 37,
+   "nome": "elementi di valorizzazione",
+   "soglia_mq": 65,
+   "scaglioni": [
+    {
+     "da": 2,
+     "perc": {
+      "piccoli": 15,
+      "grandi": 10
+     }
+    },
+    {
+     "da": 3,
+     "perc": {
+      "piccoli": 30,
+      "grandi": 20
+     }
+    },
+    {
+     "da": 4,
+     "perc": {
+      "piccoli": 40,
+      "grandi": 30
+     }
+    }
+   ]
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "alloggio fino a 65 mq effettivi",
+    "a": 65,
+    "perc": 10,
+    "su": "base"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile al netto dei muri (tolleranza 5%)",
+   "voci": [
+    {
+     "chiave": "accessori50",
+     "testo": "Soffitte, cantine, verande comunicanti con l'alloggio; autorimesse e box",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "accessori25",
+     "testo": "Soffitte, cantine, verande non comunicanti; posti auto",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazze comunicanti (30% fino a 25 mq, poi 10%)",
+     "coeff": 0.3,
+     "scaglione": [
+      25,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "chiave": "balconi_nc",
+     "testo": "Balconi e terrazze non comunicanti (15% fino a 25 mq, poi 5%)",
+     "coeff": 0.15,
+     "scaglione": [
+      25,
+      0.15,
+      0.05
+     ]
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta esclusiva (10% fino alla superficie dell'alloggio, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    }
+   ],
+   "nota": "Gli alloggi fino a 65 mq effettivi hanno un aumento automatico del 10%."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "ammobiliato",
+    "tipo": "scelta",
+    "testo": "Mobilio (dal 10% al 30% secondo tipo e completezza)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "10",
+      "testo": "arredamento essenziale",
+      "perc": 10
+     },
+     {
+      "valore": "20",
+      "testo": "arredamento buono",
+      "perc": 20
+     },
+     {
+      "valore": "30",
+      "testo": "arredamento completo",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "vincolato",
+    "tipo": "spunta",
+    "testo": "Immobile storico vincolato (art. 1, c. 2, lett. a, L. 431/98)",
+    "nome": "immobile storico vincolato",
+    "perc": 30,
+    "contratti": [
+     "agevolato"
+    ]
+   },
+   {
+    "chiave": "traffico",
+    "tipo": "spunta",
+    "testo": "Adiacente ad arterie a elevatissimo traffico veicolare o ferroviario",
+    "nome": "adiacenza ad arterie di grande traffico",
+    "perc": -5
+   }
+  ],
+  "nota_maggiorazioni": "Elementi di valorizzazione (allegato 4): con 2, 3 o 4 elementi +15/30/40% fino a 65 mq, +10/20/30% oltre. Studenti: fino a +18%.",
+  "durata": {
+   "4": 3,
+   "5": 6,
+   "6": 9
+  },
+  "contratto": {
+   "studenti": 18
+  },
+  "combinazione": "prodotto",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato 1",
+  "titolo": "Attestazione di rispondenza ex D.M. 16 gennaio 2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Verona (2017): individuazione della subfascia (allegato 3)",
+  "titolo_elementi": "Individuazione della subfascia e elementi di valorizzazione",
+  "dichiarazione": "Il richiedente dichiara, sotto la propria responsabilità, gli elementi oggettivi sopra riportati.",
+  "firme": [],
+  "attestazione": [
+   "TUTTO CIÒ PREMESSO, l'Organizzazione ……………………………, come sopra rappresentata, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Verona depositato in data …………"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dal quartiere (allegato 2 dell'accordo)."
+ }
+}
