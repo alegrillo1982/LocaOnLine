@@ -1,0 +1,563 @@
+{
+ "accordo": {
+  "codice": "cremona-2022-12-27",
+  "modello": "cremona-2022",
+  "comune": "Cremona",
+  "provincia": "CR",
+  "titolo": "Accordo territoriale per la Città di Cremona",
+  "data": "2022-12-27",
+  "data_testo": "27 dicembre 2022",
+  "deposito": "Comune di Cremona, Ufficio Protocollo, 09/01/2023 (Protocollo Generale n. 1987 del 10/01/2023)",
+  "deposito_data": "09.01.2023",
+  "protocollo": "Protocollo Generale n. 1987 del 10/01/2023",
+  "ufficio": "Comune di Cremona, Ufficio Protocollo",
+  "ufficio_breve": "Comune di Cremona",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Cremona del 27 dicembre 2022, depositato in Comune il 9 gennaio 2023:</strong> durava tre anni ma resta in vigore finché non ne viene firmato uno nuovo, e il Comune lo pubblica ancora come accordo vigente. I minimi e i massimi della tabella <strong>si aumentano con l'intera variazione ISTAT</strong> da gennaio 2023 al mese prima della firma del contratto (punto 4.2), ma tabelle aggiornate non sono pubblicate: qui trovi i valori originali. <strong>Chiedi i valori aggiornati all'associazione che attesta il contratto.</strong> Il garage (autorimessa) ha un valore al mq a parte: lo trovi negli avvisi sotto il calcolo.",
+  "firmatari_proprieta": [
+   "U.P.P.I. Cremona",
+   "A.P.P.E. - Confedilizia Cremona",
+   "A.P.P.C. Cremona",
+   "UNIONCASA Cremona (adesione del 26/01/2023)",
+   "CONFABITARE Cremona (adesione del 06/03/2023)"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A. Cremona"
+  ],
+  "nota": "Firmato a Cremona il 27/12/2022 (data scritta a mano in calce; il Comune e le adesioni indicano la stessa data) da UPPI, APPE - Confedilizia, APPC e SUNIA; consegnato all'Ufficio Protocollo del Comune il 09/01/2023 (timbro «Ricevuto») e registrato al Protocollo Generale n. 1987 del 10/01/2023. Sostituisce l'accordo del 21/06/2010 (depositato il 23/06/2010). Durata tre anni dal giorno dopo il deposito, poi resta in vigore fino al nuovo accordo (punti 3 e 12). Hanno aderito UNIONCASA (26/01/2023, prot. 8556 del 31/01/2023) e CONFABITARE (06/03/2023, prot. 19800 del 08/03/2023). Quattro zone (allegato 1), righe della tabella secondo la superficie (fino a 30 mq solo nel centro storico, 31-60, 61-100, 101-180, oltre 180 solo in periferia) e tre sub-fasce secondo il numero di parametri oggettivi (21): nel centro storico fino a 3 minima, 4 media, 5 o più massima; nelle altre zone fino a 4, 5, 6 o più. Valori in euro al mq al mese, aumentati dell'intera variazione ISTAT dal mese dopo la firma. Esiste anche un accordo integrativo solo per gli alloggi della Fondazione Città di Cremona (firmato il 22/06/2023, depositato il 23/06/2023): non è modellato qui.",
+  "fonte": "Comune di Cremona, scheda «Accordo territoriale per i contratti di locazione agevolati» (aggiornata il 16/06/2026): testo dell'accordo con lettera di deposito, allegato 1 (planimetrie), allegato 2 (modulo per la commissione di conciliazione), allegato 3 (oneri accessori), allegato 4 (modulo di attestazione), adesioni di Unioncasa e Confabitare, accordo integrativo Fondazione Città di Cremona. Stessa copia protocollata pubblicata da UPPI Cremona (uppicremona.it, 18/01/2023). Data di firma e deposito confermate dal resoconto del Consiglio comunale del 27/03/2023."
+ },
+ "esempio_zona": "1 nucleo storico, 2 adiacente al nucleo storico, 3 periferica, 4 resto del territorio (planimetria dell'allegato 1)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "superficie",
+  "tabella_soglie": [
+   [
+    30,
+    "30"
+   ],
+   [
+    60,
+    "60"
+   ],
+   [
+    100,
+    "100"
+   ],
+   [
+    180,
+    "180"
+   ]
+  ],
+  "tabella_oltre": "oltre",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Nucleo storico (centro storico)",
+    "nota": "Zona 1 - Nucleo storico: il centro storico, dentro il perimetro segnato nella planimetria dell'allegato 1 (vie di confine indicate nella legenda: Trento e Trieste, Tofane, G. Pedone, Cadore, Stretta Corta, Cadorna, Massarotti, Spalato, Grado, Zara, Montello). I confini tra le zone passano a metà della strada. La riga della tabella si sceglie con i mq catastali dell'abitazione: fino a 30, da 31 a 60, da 61 a 100, da 101 in poi.",
+    "fasce": {
+     "30": [
+      [
+       5.0,
+       7.0
+      ],
+      [
+       6.0,
+       8.0
+      ],
+      [
+       7.0,
+       10.0
+      ]
+     ],
+     "60": [
+      [
+       3.5,
+       5.5
+      ],
+      [
+       4.5,
+       8.0
+      ],
+      [
+       5.0,
+       9.5
+      ]
+     ],
+     "100": [
+      [
+       3.0,
+       6.0
+      ],
+      [
+       4.0,
+       7.0
+      ],
+      [
+       4.5,
+       9.0
+      ]
+     ],
+     "180": [
+      [
+       2.5,
+       5.5
+      ],
+      [
+       3.0,
+       6.5
+      ],
+      [
+       4.5,
+       8.0
+      ]
+     ],
+     "oltre": [
+      [
+       2.5,
+       5.5
+      ],
+      [
+       3.0,
+       6.5
+      ],
+      [
+       4.5,
+       8.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Adiacente al nucleo storico",
+    "nota": "Zona 2 - Adiacente al nucleo storico: l'anello intorno al centro storico (vie di confine nella legenda dell'allegato 1: Ferrovia, Brescia, Gallazzi, Persico, Annona, S. Camillo, Pippia, Cavo Coperto, Cavo Cerca, Bosco, la linea virtuale di via Del Sale, Portinari del Po, viale Po). I confini passano a metà della strada. La riga della tabella si sceglie con i mq catastali dell'abitazione: fino a 60, da 61 a 100, da 101 in poi.",
+    "fasce": {
+     "30": [
+      [
+       2.5,
+       5.5
+      ],
+      [
+       3.5,
+       6.5
+      ],
+      [
+       4.5,
+       8.0
+      ]
+     ],
+     "60": [
+      [
+       2.5,
+       5.5
+      ],
+      [
+       3.5,
+       6.5
+      ],
+      [
+       4.5,
+       8.0
+      ]
+     ],
+     "100": [
+      [
+       2.5,
+       5.5
+      ],
+      [
+       3.0,
+       6.0
+      ],
+      [
+       4.0,
+       7.0
+      ]
+     ],
+     "180": [
+      [
+       2.0,
+       5.0
+      ],
+      [
+       3.0,
+       6.0
+      ],
+      [
+       4.0,
+       7.0
+      ]
+     ],
+     "oltre": [
+      [
+       2.0,
+       5.0
+      ],
+      [
+       3.0,
+       6.0
+      ],
+      [
+       4.0,
+       7.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Periferica (intermedia)",
+    "nota": "Zona 3 - Periferica (nella tabella «intermedia»): la fascia di quartieri attorno alla zona 2 (vie di confine nella legenda dell'allegato 1: Eridano, Seminario, Nazario Sauro, Zaist, Concordia, Postumia, confine dell'edificato, Palosca, Ca' del Ferro, S. Sigismondo, Giuseppina, Diritta, S. Rocco). I confini passano a metà della strada. La riga della tabella si sceglie con i mq catastali dell'abitazione: fino a 60, da 61 a 100, da 101 in poi.",
+    "fasce": {
+     "30": [
+      [
+       2.3,
+       5.0
+      ],
+      [
+       3.0,
+       6.0
+      ],
+      [
+       4.0,
+       7.0
+      ]
+     ],
+     "60": [
+      [
+       2.3,
+       5.0
+      ],
+      [
+       3.0,
+       6.0
+      ],
+      [
+       4.0,
+       7.0
+      ]
+     ],
+     "100": [
+      [
+       2.1,
+       5.0
+      ],
+      [
+       3.0,
+       5.5
+      ],
+      [
+       3.5,
+       6.5
+      ]
+     ],
+     "180": [
+      [
+       2.0,
+       4.5
+      ],
+      [
+       2.5,
+       4.5
+      ],
+      [
+       3.5,
+       6.0
+      ]
+     ],
+     "oltre": [
+      [
+       2.0,
+       4.5
+      ],
+      [
+       2.5,
+       4.5
+      ],
+      [
+       3.5,
+       6.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Restante parte del territorio comunale",
+    "nota": "Zona 4 - Restante parte del territorio comunale (nella tabella «zona periferica»): tutto quello che sta fuori dalle zone 1, 2 e 3, comprese le frazioni. La riga della tabella si sceglie con i mq catastali dell'abitazione: fino a 60, da 61 a 100, da 101 a 180, oltre 180.",
+    "fasce": {
+     "30": [
+      [
+       2.0,
+       4.5
+      ],
+      [
+       2.5,
+       5.5
+      ],
+      [
+       3.5,
+       6.5
+      ]
+     ],
+     "60": [
+      [
+       2.0,
+       4.5
+      ],
+      [
+       2.5,
+       5.5
+      ],
+      [
+       3.5,
+       6.5
+      ]
+     ],
+     "100": [
+      [
+       1.9,
+       4.3
+      ],
+      [
+       3.5,
+       5.0
+      ],
+      [
+       4.0,
+       6.0
+      ]
+     ],
+     "180": [
+      [
+       1.6,
+       4.0
+      ],
+      [
+       2.0,
+       4.8
+      ],
+      [
+       3.0,
+       5.5
+      ]
+     ],
+     "oltre": [
+      [
+       2.0,
+       3.0
+      ],
+      [
+       3.0,
+       3.5
+      ],
+      [
+       3.5,
+       4.0
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "1 - bassa",
+    "2 - media",
+    "3 - alta"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    5
+   ],
+   "soglie_zona": {
+    "1": [
+     3,
+     4
+    ]
+   },
+   "nota": "Si contano i parametri oggettivi presenti. Nel centro storico (zona 1): fino a 3 sub-fascia bassa, 4 media, 5 o più alta. Nelle altre zone: fino a 4 bassa, 5 media, 6 o più alta."
+  },
+  "elementi": [
+   {
+    "testo": "Impianto di riscaldamento o teleriscaldamento, autonomo o centralizzato (le stufe non contano)"
+   },
+   {
+    "testo": "Impianto fisso di condizionamento d'aria"
+   },
+   {
+    "testo": "Ascensore (vale per gli alloggi dal 2° piano in su)"
+   },
+   {
+    "testo": "Autorimessa o box auto (nel centro storico basta il posto auto)"
+   },
+   {
+    "testo": "Cantina, soffitta o ripostiglio a uso esclusivo"
+   },
+   {
+    "testo": "Costruzione, ristrutturazione o risanamento conservativo finiti da meno di 10 anni"
+   },
+   {
+    "testo": "Doppi servizi completi, uno con finestra e uno con aspiratore"
+   },
+   {
+    "testo": "Area scoperta privata o condominiale almeno in parte a verde (nel centro storico: cortile di almeno 10 mq)"
+   },
+   {
+    "testo": "Balcone o terrazzino sotto i 10 mq"
+   },
+   {
+    "testo": "Terrazzo o balcone oltre i 10 mq"
+   },
+   {
+    "testo": "Portineria o videocitofono"
+   },
+   {
+    "testo": "Edificio con meno di 9 unità immobiliari per scala"
+   },
+   {
+    "testo": "Finestre con vetri isolanti (doppi vetri)"
+   },
+   {
+    "testo": "Sistema di sicurezza: porta blindata e/o antifurto e/o inferriate se al piano terra"
+   },
+   {
+    "testo": "Cucina abitabile con almeno una finestra"
+   },
+   {
+    "testo": "Serramenti con zanzariere"
+   },
+   {
+    "testo": "Accesso per disabili con rampa o montascale"
+   },
+   {
+    "testo": "Parcheggio comune per biciclette e moto"
+   },
+   {
+    "testo": "Trasporti pubblici entro 250 m"
+   },
+   {
+    "testo": "Supermercato entro 250 m"
+   },
+   {
+    "testo": "Certificazione energetica (APE) dalla classe A alla D"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale dell'abitazione (dalla visura)",
+   "voci": [
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto a uso esclusivo (50%)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto a uso esclusivo (25%)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "cantina",
+     "testo": "Cantina, solo se accatastata con scheda propria (30%)",
+     "coeff": 0.3
+    }
+   ],
+   "nota": "Si parte dalla superficie catastale che trovi nella visura (con una tolleranza del 5%). Si aggiungono il posto auto coperto al 50%, quello scoperto al 25% e la cantina al 30%, ma solo se ha una scheda catastale propria. Il garage (autorimessa) non entra qui: conta l'80% dei suoi mq con il valore «B» della zona, che trovi negli avvisi sotto il calcolo. La riga della tabella si sceglie con i mq catastali dell'abitazione."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "arredato in ogni vano abitabile",
+      "perc": 15
+     },
+     {
+      "valore": "parziale",
+      "testo": "arredato in parte (almeno cucina e una camera da letto)",
+      "perc": 7
+     }
+    ]
+   },
+   {
+    "chiave": "oltre6",
+    "tipo": "spunta",
+    "contratti": [
+     "agevolato"
+    ],
+    "testo": "Durata superiore a 6 anni (scegli anche la durata 6 + 2: l'aumento sale dall'8% al 10%)",
+    "nome": "durata oltre 6 anni (dall'8% al 10%)",
+    "perc": 2
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti sono il massimo consentito e si sommano: arredo in ogni vano +15%, arredo parziale (almeno cucina e una camera da letto) +7%; durata di 4 anni +3%, 5 anni +5%, 6 anni +8%, oltre 6 anni +10%; contratti transitori e per studenti universitari +15%, che si somma agli altri aumenti.",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 8
+  },
+  "contratto": {
+   "transitorio": 15,
+   "studenti": 15
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "zone": [
+     "1"
+    ],
+    "testo": "Garage (autorimessa) nella zona 1: si conta l'80% dei suoi mq con un valore fra € 5,00 e € 8,00 al mq al mese (lettera B della tabella), da aggiungere al canone. Esempio: 15 mq x 80% = 12 mq, da € 60,00 a € 96,00 al mese."
+   },
+   {
+    "zone": [
+     "2"
+    ],
+    "testo": "Garage (autorimessa) nella zona 2: si conta l'80% dei suoi mq con un valore fra € 4,00 e € 7,00 al mq al mese (lettera B della tabella), da aggiungere al canone. Esempio: 15 mq x 80% = 12 mq, da € 48,00 a € 84,00 al mese."
+   },
+   {
+    "zone": [
+     "3"
+    ],
+    "testo": "Garage (autorimessa) nella zona 3: si conta l'80% dei suoi mq con un valore fra € 3,00 e € 6,00 al mq al mese (lettera B della tabella), da aggiungere al canone. Esempio: 15 mq x 80% = 12 mq, da € 36,00 a € 72,00 al mese."
+   },
+   {
+    "zone": [
+     "4"
+    ],
+    "testo": "Garage (autorimessa) nella zona 4: si conta l'80% dei suoi mq con un valore fra € 3,00 e € 5,00 al mq al mese (lettera B della tabella), da aggiungere al canone. Esempio: 15 mq x 80% = 12 mq, da € 36,00 a € 60,00 al mese."
+   },
+   {
+    "testo": "Per una stanza o una parte dell'alloggio si conta la sua superficie più la quota delle parti in comune; la somma dei canoni delle stanze non può superare quello dell'intero alloggio."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 4",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "In conformità all'Accordo Territoriale nel Comune di Cremona del 27/12/2022, depositato il 09/01/2023 (Protocollo Generale n. 1987 del 10/01/2023) e sottoscritto da A.P.P.C., APPE, UPPI e SUNIA",
+  "titolo_superficie": "SUPERFICIE",
+  "titolo_elementi": "PARAMETRI OGGETTIVI (punto 4.1 dell'Accordo)",
+  "etichetta_conteggio": "N. PARAMETRI OGGETTIVI",
+  "dichiarazione": "Il/la sottoscritto/a richiede l'attestazione relativa alla locazione sopra indicata e, in qualità di locatore/conduttore, dichiara che i dati comunicati sono stati dallo stesso rilevati e verificati, esonerando l'organizzazione da verifiche. Riconoscendo che l'attestazione sarà rilasciata, secondo quanto previsto dal D.M. 16/01/2017, sulla base di quanto dichiarato, solleva espressamente l'organizzazione da qualsiasi responsabilità derivante da errori, omissioni o asserzioni non veritiere relative ai dati dichiarati nel presente atto.",
+  "firme": [
+   "Il locatore / Il conduttore"
+  ],
+  "titolo_attestazione": "TUTTO CIÒ PREMESSO",
+  "attestazione": [
+   "L'Associazione ……………………………… in persona di ……………………………… firmataria dell'accordo territoriale per il Comune di Cremona (CR), sulla base dei parametri oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici, che rientrano nei valori di fascia della zona di appartenenza dell'immobile, e normativi del contratto corrispondono a quanto previsto dall'Accordo Territoriale vigente per il Comune di Cremona depositato in data 09/01/2023."
+  ],
+  "firme_attestazione": [
+   "L'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla planimetria dell'allegato 1: zona 1 nucleo storico, zona 2 adiacente al nucleo storico, zona 3 periferica, zona 4 il resto del territorio comunale. I confini passano a metà della strada."
+ }
+}
