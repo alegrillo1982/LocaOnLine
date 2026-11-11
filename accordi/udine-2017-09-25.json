@@ -1,0 +1,150 @@
+{
+  "accordo": {
+    "codice": "udine-2017-09-25",
+    "modello": "udine-2017",
+    "comune": "Udine",
+    "provincia": "UD",
+    "titolo": "Accordo territoriale per il Comune di Udine e per i Comuni della Provincia di Udine",
+    "data": "2017-09-25",
+    "data_testo": "25 settembre 2017",
+    "deposito": "Comune di Udine (PEC)",
+    "deposito_data": "27.09.2017",
+    "protocollo": "",
+    "ufficio": "",
+    "ufficio_breve": "",
+    "valido_fino": "",
+    "avviso_validita": "<strong>Accordo di Udine del 25 settembre 2017, in vigore dal 1° ottobre 2017</strong>, con i protocolli integrativi del 13/04/2018, 03/06/2020, 17/05/2021 e 10/09/2025. Si rinnova da solo ogni tre anni (oggi fino al 30/09/2029, salvo disdetta). I valori massimi sono quelli aggiornati all'ISTAT per i contratti dal 1° ottobre 2026 al 30 settembre 2027.",
+    "firmatari_proprieta": [
+      "CONFEDILIZIA (Associazione della Proprietà Edilizia di Udine)",
+      "U.P.P.I."
+    ],
+    "firmatari_conduttori": [
+      "S.U.N.I.A.",
+      "S.I.C.E.T. FVG"
+    ],
+    "nota": "Firmato a Udine il 25/09/2017 da Confedilizia, UPPI, SUNIA e SICET FVG (il SICET con riserva sul punto 7 del titolo B, transitori), in vigore dal 01/10/2017; depositato via PEC al Comune di Udine e ai Comuni della provincia il 27/09/2017 e alla Regione FVG il 29/09/2017. Protocolli integrativi: 13/04/2018 (testo coordinato, aggiornamento ISTAT al 100%), 03/06/2020 (minimo a 0,50 €/mq, rinnovo tacito triennale), 17/05/2021 (enti di accoglienza +2%, tinteggiatura a nuovo +5%, porzioni; dal 01/06/2021), 10/09/2025 (studenti ITS fuori sede con il contratto per universitari). Valori massimi aggiornati ISTAT dal 01/10/2026 (+4%) pubblicati dall'UPPI di Udine. L'accordo vale anche per gli altri comuni della provincia (zona unica con i valori della zona intermedia di Udine): qui è modellato solo il Comune di Udine.",
+    "fonte": "Testo dell'accordo e secondo protocollo nell'archivio SUNIA (sunia.info); protocollo 2018, terzo e quarto protocollo, cartografia delle zone e tabella delle fasce 2026-2027 pubblicati dall'UPPI di Udine (uppiudine.it) e da uppi.it."
+  },
+  "esempio_zona": "la zona dalla cartografia del Comune (centro storico, intermedia, periferica)",
+  "regole": {
+    "generico": true,
+    "unita": "mese",
+    "solo_massimo": true,
+    "zone": [
+      {
+        "codice": "centro",
+        "nome": "Centro storico",
+        "nota": "Centro storico: perimetrazione adottata dal Comune di Udine per l'equo canone (delibera C.C. n. 311 del 06/11/1978), vedi la cartografia delle zone. Il confine passa a metà della strada. Valori in euro al mq al mese dal 01/10/2026 al 30/09/2027 (minimo 0,50 dal 2020).",
+        "fasce": [[0.5, 7.3]]
+      },
+      {
+        "codice": "intermedia",
+        "nome": "Zona intermedia",
+        "nota": "Zona intermedia: comprende la zona di pregio e la zona edificata fra il centro storico e la periferia, secondo la cartografia delle zone (perimetrazione dell'equo canone, delibera C.C. n. 311 del 06/11/1978). Valori in euro al mq al mese dal 01/10/2026 al 30/09/2027. Gli altri comuni della provincia usano questi stessi valori.",
+        "fasce": [[0.5, 6.99]]
+      },
+      {
+        "codice": "periferica",
+        "nome": "Zona periferica",
+        "nota": "Zona periferica: la zona edificata periferica della cartografia delle zone (perimetrazione dell'equo canone, delibera C.C. n. 311 del 06/11/1978). Valori in euro al mq al mese dal 01/10/2026 al 30/09/2027.",
+        "fasce": [[0.5, 6.69]]
+      }
+    ],
+    "fasce": {
+      "nomi": ["unica"],
+      "criterio": "requisiti",
+      "requisiti": [null],
+      "conta": { "da": 0, "a": 7 },
+      "nota": "una sola fascia per zona: minimo 0,50 € al mq, massimo della zona con le maggiorazioni e le riduzioni dell'allegato 1",
+      "nota_pdf": "Una sola fascia per zona: minimo € 0,50 al mq, massimo della zona aggiornato ISTAT, con le maggiorazioni e riduzioni dell'allegato 1."
+    },
+    "titoli_elementi": [
+      { "da": 0, "titolo": "Vani che compongono l'appartamento (solo per il modulo)" }
+    ],
+    "elementi": [
+      { "testo": "Ingresso" },
+      { "testo": "Soggiorno" },
+      { "testo": "Cucina" },
+      { "testo": "Camera da letto" },
+      { "testo": "Ripostiglio" },
+      { "testo": "Bagno" },
+      { "testo": "Corridoio" },
+      { "testo": "Veranda chiusa" }
+    ],
+    "superficie": {
+      "base": "Superficie dell'appartamento (mq netti dei vani)",
+      "voci": [
+        { "chiave": "garage", "testo": "Autorimessa singola", "coeff": 0.5 },
+        { "chiave": "posto", "testo": "Posto macchina in autorimessa comune", "coeff": 0.2 },
+        { "chiave": "cantina", "testo": "Cantina e soffitta", "coeff": 0.25 },
+        { "chiave": "balconi", "testo": "Terrazzi e balconi", "coeff": 0.25 },
+        { "chiave": "scoperta", "testo": "Superficie scoperta a uso esclusivo del conduttore", "coeff": 0.15 },
+        { "chiave": "verde", "testo": "Verde condominiale, quota secondo i millesimi di proprietà", "coeff": 0.1 }
+      ],
+      "nota": "Superficie convenzionale come nella richiesta di attestazione: i mq dei vani dell'appartamento più gli accessori ridotti (garage 50%, posto macchina in autorimessa comune 20%, cantina e soffitta 25%, terrazzi e balconi 25%, scoperto esclusivo 15%, verde condominiale in millesimi 10%). L'accordo ammette una tolleranza del 5% sui mq. Per una porzione (stanza): mq della stanza più la quota delle parti comuni in proporzione alla stanza rispetto a tutte le stanze a uso esclusivo (terzo protocollo, art. 4)."
+    },
+    "tabella_per": "superficie",
+    "tabella_soglie": [[44.99, "45"], [59.99, "60"], [74.99, "75"]],
+    "tabella_oltre": "oltre",
+    "minimo_riga_inferiore": true,
+    "correttivi_superficie": [
+      { "nome": "superficie inferiore a 45 mq", "a": 44.99, "perc": 40, "su": "base" },
+      { "nome": "superficie inferiore a 60 mq", "da": 45, "a": 59.99, "perc": 30, "su": "base" },
+      { "nome": "superficie inferiore a 75 mq", "da": 60, "a": 74.99, "perc": 20, "su": "base" },
+      { "nome": "superficie dell'alloggio superiore a 110 mq", "da": 110.01, "perc": -10, "su": "base" }
+    ],
+    "maggiorazioni": [
+      { "chiave": "arredo", "tipo": "spunta", "testo": "Immobile arredato (anche in parte)", "nome": "immobile arredato", "perc": 30, "ammobiliato": true },
+      { "chiave": "riscaldamento", "tipo": "scelta", "testo": "Riscaldamento", "nome": "riscaldamento", "nessuna": "centralizzato", "opzioni": [
+        { "valore": "autonomo", "testo": "autonomo", "perc": 10 },
+        { "valore": "assente", "testo": "assente", "perc": -15 }
+      ] },
+      { "chiave": "vetusta", "tipo": "spunta", "testo": "Edificio costruito, o ristrutturato o restaurato per intero, da meno di 20 anni", "nome": "vetustà inferiore a 20 anni", "perc": 5 },
+      { "chiave": "garage", "tipo": "spunta", "testo": "Con garage", "nome": "immobile dotato di garage", "perc": 2 },
+      { "chiave": "no_posto", "tipo": "spunta", "testo": "Senza garage né posto auto", "nome": "assenza di posto auto", "perc": -5 },
+      { "chiave": "tinteggiato", "tipo": "spunta", "testo": "Consegnato tinteggiato a nuovo (con foto), contratto di almeno 2 anni, senza obbligo per l'inquilino di ritinteggiare alla riconsegna", "nome": "tinteggiato a nuovo", "perc": 5, "contratti": ["agevolato", "studenti"] },
+      { "chiave": "vani_studenti", "tipo": "scelta", "testo": "Alloggio per studenti universitari o ITS: vani catastali utili (esclusi cantina, soffitta e garage)", "nome": "alloggio per studenti", "nessuna": "non indicati", "contratti": ["studenti"], "opzioni": [
+        { "valore": "1", "testo": "1 vano", "perc": 10 },
+        { "valore": "2", "testo": "2 vani", "perc": 20 },
+        { "valore": "3", "testo": "3 vani", "perc": 30 },
+        { "valore": "4", "testo": "4 vani", "perc": 40 },
+        { "valore": "5", "testo": "5 vani", "perc": 50 },
+        { "valore": "6", "testo": "6 vani", "perc": 60 },
+        { "valore": "7", "testo": "7 vani", "perc": 70 },
+        { "valore": "8", "testo": "8 vani", "perc": 80 }
+      ] },
+      { "chiave": "enti", "tipo": "spunta", "testo": "Inquilino ente o associazione di accoglienza (stranieri o persone in difficoltà)", "nome": "locato a enti di accoglienza", "perc": 2, "contratti": ["agevolato", "transitorio"] },
+      { "chiave": "vincolato", "tipo": "spunta", "testo": "Immobile vincolato (art. 1, comma 2, lett. a, L. 431/98)", "nome": "immobile vincolato", "perc": 20 },
+      { "chiave": "impianti", "tipo": "spunta", "testo": "Impianti non a norma (fino ai lavori di adeguamento)", "nome": "impianti non a norma", "perc": -10 },
+      { "chiave": "ascensore", "tipo": "spunta", "testo": "Oltre il 3° piano in edificio senza ascensore", "nome": "oltre il 3° piano senza ascensore", "perc": -5 }
+    ],
+    "nota_maggiorazioni": "Le maggiorazioni dell'allegato 1 sono \"fino a\" (da 0 alla percentuale indicata): qui si applicano per intero e si sommano sul valore massimo della zona, come nel modulo dell'accordo; il minimo resta 0,50 € al mq. La superficie conta la sola superficie dell'appartamento; un alloggio da 45, 60 o 75 mq in su non può avere un massimo più basso di uno appena più piccolo. Per una stanza, le maggiorazioni per superficie valgono solo se è sotto la soglia l'intero appartamento.",
+    "durata": { "4": 5, "5": 10, "6": 15 },
+    "contratto": { "transitorio": 15, "studenti": 30, "anche_minimo": true },
+    "combinazione": "somma",
+    "avvisi": [
+      { "testo": "Contratti oltre i 6 anni: la maggiorazione per la durata è del 5% per ogni anno oltre i 3; qui si arriva al massimo al 15%.", "contratti": ["agevolato"] },
+      { "testo": "Il canone si aggiorna ogni anno al massimo al 75% dell'ISTAT (clausola del contratto tipo).", "contratti": ["agevolato"] },
+      { "testo": "Contratto per studenti: vale anche per gli studenti ITS fuori sede (protocollo del 10/09/2025). Durata da 6 mesi a 3 anni.", "contratti": ["studenti"] },
+      { "testo": "Contratto transitorio: al massimo 18 mesi, con un'esigenza di transitorietà prevista dall'accordo e scritta nel contratto.", "contratti": ["transitorio"] }
+    ]
+  },
+  "pdf": {
+    "allegato": "Allegato al terzo protocollo integrativo",
+    "titolo": "Richiesta di attestazione di rispondenza ex D.M. 16.1.2017",
+    "sottotitolo": "Accordo locale per il Comune di Udine sottoscritto in data 25.9.2017 e successive integrazioni (protocolli integrativi del 13.4.2018, 3.6.2020, 17.5.2021 e 10.9.2025) - Confedilizia, UPPI, SUNIA, SICET FVG",
+    "titolo_superficie": "CALCOLO DELLA SUPERFICIE CONVENZIONALE",
+    "titolo_elementi": "L'appartamento è composto dai seguenti vani",
+    "etichetta_conteggio": "TIPI DI VANI",
+    "dichiarazione": "Il richiedente dichiara sotto la propria responsabilità che il contratto di locazione è stato stipulato utilizzando il tipo di contratto allegato al D.M. 16.1.2017 e rispettando rigorosamente il testo di tale contratto, e dichiara altresì quanto sopra riportato relativamente al contratto di locazione.",
+    "firme": ["Il richiedente", "Firma altro contraente (facoltativa)"],
+    "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16/1/2017",
+    "attestazione": [
+      "Tutto ciò premesso, l'Associazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Udine stipulato il 25.9.2017, come sopra rappresentata, sulla base degli elementi oggettivi dichiarati dal richiedente, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+      "ATTESTA che i contenuti economici e normativi del rapporto contrattuale sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Udine, stipulato in data 25.9.2017 e successive integrazioni.",
+      "Udine, lì ……………"
+    ],
+    "firme_attestazione": ["p. l'Associazione"],
+    "nota_zone": "La zona si ricava dalla cartografia delle zone del Comune di Udine (centro storico, zona intermedia con la zona di pregio, zona periferica), basata sulla perimetrazione dell'equo canone del 1978."
+  }
+}
