@@ -77,12 +77,20 @@
       righe.push({ chiave: v.chiave, mq, coeff: k, convenzionale: cent(conv) });
     }
     let totale = cent(righe.reduce((t, r) => t + r.convenzionale, 0));
+    // es. Messina: le pertinenze contano al massimo per una quota della superficie principale
+    if (R.tetto_voci) {
+      const voci = totale - righe[0].convenzionale, tetto = cent(U * R.tetto_voci);
+      if (voci > tetto) { totale = cent(righe[0].convenzionale + tetto); note.push(`Pertinenze contate fino a ${virgola(tetto)} mq (metà della superficie dell'alloggio).`); }
+    }
     const ct = (R.correzioni_totale || []).find((x) => (R.correzioni_totale_su === "base" ? U : totale) <= x.fino);
     if (ct && ct.perc) {
       const prima = totale;
       totale = cent(ct.perc > 0 ? Math.max(prima, Math.min(prima * (1 + ct.perc / 100), ct.limite ?? Infinity)) : Math.min(prima, Math.max(prima * (1 + ct.perc / 100), ct.limite ?? 0)));
       if (totale !== prima) note.push(`Superficie ${R.correzioni_totale_su === "base" ? "convenzionale" : "intermedia"} ${virgola(prima)} mq ${ct.perc > 0 ? "aumentata" : "ridotta"} del ${Math.abs(ct.perc)}%${ct.limite ? ` (limite ${virgola(ct.limite)} mq)` : ""}.`);
     }
+    // es. Messina: coefficiente di posizione nella microzona (periferia, semiperiferia, centro)
+    const CS = R.coeff_scelta, cv = CS && (s.maggiorazioni_scelte || {})[CS.chiave];
+    if (cv && CS.valori[cv]) { totale = cent(totale * CS.valori[cv]); note.push(`Superficie moltiplicata per ${virgola(CS.valori[cv])} (${CS.testi[cv]}).`); }
     return { righe, base: cent(base), totale, note };
   }
 
@@ -111,6 +119,11 @@
         return { n: conta[i], i, nome: F.nomi[i], gruppi, prevalente: true, avviso: "" };
       }
       return { n: gruppi.reduce((t, g) => t + g.n, 0), i: null, nome: gruppi.map((g) => `${g.nome} ${g.fascia}`).join(", "), gruppi, avviso: "" };
+    }
+    if (F.criterio === "differenza") {
+      // es. Messina: le percentuali degli elementi si applicano alla differenza fra minimo e massimo
+      const n = Math.round(E.reduce((t, e, k) => t + puntiDi(e, el[k]), 0) * 100) / 100;
+      return { n, i: 0, nome: `${virgola(Math.min(n, 100), 0)}% della differenza`, avviso: "" };
     }
     if (F.criterio === "obbligatori") {
       // es. Bergamo: per ogni subfascia un numero minimo di elementi, alcuni obbligatori; un obbligatorio
@@ -194,6 +207,10 @@
         // es. Catanzaro: le ville hanno una fascia sola, qualunque sia il numero di elementi
         r.base = tab[0]; f.i = 0; f.nome = R.fasce.nomi_tabella[chiave.replace(/^stud_/, "")];
       } else r.base = tab[f.i];
+      if (r.base && R.fasce.criterio === "differenza") {
+        r.massimo_fascia = r.base[1];
+        r.base = [r.base[0], Math.round((r.base[0] + (r.base[1] - r.base[0]) * Math.min(f.n, 100) / 100) * 1000) / 1000];
+      }
       if (r.base && f.penale && R.fasce.penale_perc) r.base = [r.base[0], cent(r.base[1] * (1 - R.fasce.penale_perc / 100))];
       // es. Bergamo: classe energetica bassa, massimo ridotto prima delle maggiorazioni
       const RM = R.riduzione_max;
@@ -264,6 +281,12 @@
       : 1 + prima.reduce((t, m) => t + m.perc, 0) / 100) * dopo.reduce((k, m) => k * (1 + m.perc / 100), 1);
     const kMin = r.maggiorazioni.filter((m) => m.minimo).reduce((k, m) => k * (1 + m.perc / 100), 1);
     if (r.base) r.valori = r.base.map((x, i) => (R.solo_massimo && i === 0 ? Math.round(x * kMin * 1000) / 1000 : Math.round(x * r.fattore * 1000) / 1000));
+    // es. Messina: le maggiorazioni non superano il massimo della microzona; senza riscaldamento, al massimo -5%
+    if (R.tetto_fascia && r.valori && r.massimo_fascia !== undefined) {
+      if (r.valori[1] > r.massimo_fascia) { r.valori = [r.valori[0], r.massimo_fascia]; avvisi.push("Il valore si ferma al massimo della microzona (art. 3)."); }
+      const SR = R.senza_riscaldamento;
+      if (SR && (s.maggiorazioni_scelte || {})[SR.chiave] && r.valori[1] >= r.massimo_fascia - 0.0005) { r.valori = [r.valori[0], Math.round(r.massimo_fascia * (1 - SR.perc / 100) * 1000) / 1000]; avvisi.push(SR.avviso); }
+    }
     // es. Brescia: con uno di questi elementi si applica il solo valore minimo
     if (R.solo_minimo && r.valori && R.elementi.some((e, k) => k >= R.solo_minimo.da && k <= R.solo_minimo.a && presente(e, (s.elementi || [])[k]))) {
       r.valori = [r.valori[0], r.valori[0]];

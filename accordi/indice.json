@@ -541,6 +541,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbergamo-2025-11-06-accordo.pdf?alt=media&token=463b3a2b-a882-407c-b62d-d5e57e9a80ad"
     }
    ]
+  },
+  {
+   "comune": "Messina",
+   "provincia": "ME",
+   "accordo": "messina-2024-11-11",
+   "sottoscritto": "11 novembre 2024",
+   "depositato": "25 novembre 2024",
+   "zone": 29,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmessina-2024-11-11-accordo.pdf?alt=media&token=49e42c4f-a0aa-47e9-980f-d93a1951a584",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmessina-2024-11-11-accordo.pdf?alt=media&token=49e42c4f-a0aa-47e9-980f-d93a1951a584"
+    }
+   ]
   }
  ]
 }

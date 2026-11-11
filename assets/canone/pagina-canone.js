@@ -43,6 +43,9 @@
   const sceltaComune = $("comune");
   let indice = null, attuale = null;      // attuale: il codice dell'accordo caricato
 
+  /** "del 3 agosto", ma "dell'11 novembre" e "dell'8 giugno". */
+  const del_ = (d) => (/^(8|11)\b/.test(d) ? `dell'${d}` : `del ${d}`);
+
   async function caricaAccordo(codice) {
     const voce = indice.comuni.find((c) => c.accordo === codice);
     $("accordo-in-uso").textContent = "Caricamento dell'accordo…";
@@ -53,7 +56,7 @@
       const a = accordo.accordo;
       // Roma: data e protocollo del deposito; Milano: data di deposito non pubblicata
       const deposito = a.deposito_data ? `, depositato il ${a.deposito_data}` : "";
-      $("accordo-in-uso").textContent = `Accordo del ${a.data_testo}` +
+      $("accordo-in-uso").textContent = `Accordo ${del_(a.data_testo)}` +
         (a.integrazione_testo ? `, integrato il ${a.integrazione_testo}` : "") + deposito +
         (a.protocollo ? ` (prot. ${a.protocollo})` : "") + ".";
       // il PDF ufficiale, se e' stato caricato (link in accordi/indice.json)
@@ -62,7 +65,7 @@
         if (voce && voce[campo]) { link.href = voce[campo]; link.hidden = false; } else link.hidden = true;
       }
       $("fonte-accordo").textContent =
-        `${a.titolo} del ${a.data_testo}` + (a.integrazione_testo ? `, integrato il ${a.integrazione_testo}` : "") +
+        `${a.titolo} ${del_(a.data_testo)}` + (a.integrazione_testo ? `, integrato il ${a.integrazione_testo}` : "") +
         deposito + (a.protocollo ? ` con prot. ${a.protocollo}` : "") +
         (a.ufficio ? ` (${a.ufficio})` : "") + (voce && voce.zone ? `: ${voce.zone} zone.` : ".");
       avvisoValidita(a);

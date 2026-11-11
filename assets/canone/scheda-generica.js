@@ -24,7 +24,7 @@
 
   function soglieTesto(z) {
     const F = R().fasce, s = (F.soglie_zona && z && F.soglie_zona[z.codice]) || F.soglie, cosa = F.criterio === "punti" ? "punti" : "elementi";
-    if (F.criterio === "scelta" || F.criterio === "requisiti" || F.criterio === "obbligatori") return F.nota || "fascia scelta in base al foglio di calcolo dell'accordo";
+    if (["scelta", "requisiti", "obbligatori", "differenza"].includes(F.criterio)) return F.nota || "fascia scelta in base al foglio di calcolo dell'accordo";
     if (!s.length) return "una sola fascia per zona; gli elementi indicano se avvicinarsi al minimo o al massimo";
     return F.nomi.map((nome, i) => i === 0 ? `${nome}: fino a ${s[0]} ${cosa}` : i < s.length ? `${nome}: da ${s[i - 1] + 1} a ${s[i]}` : `${nome}: da ${s[i - 1] + 1}`).join(" · ") + (F.almeno ? ` (${F.almeno.avviso.replace(/^Per /, "per ").replace(/\.$/, "")})` : "") + (F.nota_soglie ? `; ${F.nota_soglie}` : "");
   }
@@ -116,9 +116,9 @@
     $("gen-sup-nota").textContent = (R().superficie || {}).nota || "";
     $("gen-zona-nota").textContent = r.zona ? (r.zona.nota || "") : ((accordo.pdf && accordo.pdf.nota_zone) || "");
     $("gen-soglie").textContent = R().fasce.gruppi ? (R().fasce.nota || "") : `Fasce${r.zona ? ` (${r.zona.nome})` : ""}: ${soglieTesto(r.zona)}.`;
-    $("gen-conteggio").textContent = r.fascia.prevalente ? `· livello ${r.fascia.nome.toLowerCase()}` : R().fasce.criterio === "scelta" ? `· ${$("gen-elementi").querySelectorAll("input:checked").length} su ${R().elementi.length}` : R().fasce.criterio === "punti" ? `· ${virgolaN(r.punti)} punti` : R().fasce.conta ? `· ${r.punti}${r.premium !== undefined ? ` base, ${r.premium} premium` : ` su ${R().fasce.conta.a - R().fasce.conta.da + 1}`}` : `· ${r.punti} su ${R().elementi.length}`;
+    $("gen-conteggio").textContent = R().fasce.criterio === "differenza" ? `· ${virgolaN(r.punti)}%` : r.fascia.prevalente ? `· livello ${r.fascia.nome.toLowerCase()}` : R().fasce.criterio === "scelta" ? `· ${$("gen-elementi").querySelectorAll("input:checked").length} su ${R().elementi.length}` : R().fasce.criterio === "punti" ? `· ${virgolaN(r.punti)} punti` : R().fasce.conta ? `· ${r.punti}${r.premium !== undefined ? ` base, ${r.premium} premium` : ` su ${R().fasce.conta.a - R().fasce.conta.da + 1}`}` : `· ${r.punti} su ${R().elementi.length}`;
     $("gen-esito-fascia").textContent = r.base
-      ? `${r.zona.nome}, fascia ${r.fascia.nome}${R().fasce.criterio === "scelta" || r.fascia.prevalente ? "" : ` (${virgolaN(r.punti)} ${R().fasce.criterio === "punti" ? (r.punti === 1 ? "punto" : "punti") : (r.punti === 1 ? "elemento" : "elementi")})`}: da € ${v(r.base[0])} a € ${v(r.base[1])} al mq ${unita()}` : `fascia ${r.fascia.nome}`;
+      ? `${r.zona.nome}, fascia ${r.fascia.nome}${R().fasce.criterio === "scelta" || R().fasce.criterio === "differenza" || r.fascia.prevalente ? "" : ` (${virgolaN(r.punti)} ${R().fasce.criterio === "punti" ? (r.punti === 1 ? "punto" : "punti") : (r.punti === 1 ? "elemento" : "elementi")})`}: da € ${v(r.base[0])} a € ${v(r.base[1])} al mq ${unita()}` : `fascia ${r.fascia.nome}`;
     $("gen-esito-magg").textContent = r.maggiorazioni.length
       ? r.maggiorazioni.map((m) => `${m.nome} ${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%`).join(", ") + (r.maggiorazioni.length > 1 ? ` = ${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%` : "") +
         (r.valori ? ` → da € ${v(r.valori[0])} a € ${v(r.valori[1])}` : "")

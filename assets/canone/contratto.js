@@ -355,7 +355,7 @@
       { testo: "Concordato tra le Organizzazioni della proprietà", s: 10 },
       { testo: "e le Organizzazioni degli inquilini", s: 10 },
       { testo: `Depositato presso il Comune di ${comuneAccordo(acc)} il ${acc.deposito_data}, n° Prot. ${acc.protocollo}`, s: 10 },
-      { testo: `quale allegato dell'accordo sottoscritto il ${acc.data_testo}`, s: 10 },
+      { testo: `quale allegato dell'accordo sottoscritto ${/^(8|11)\b/.test(acc.data_testo) ? "l'" : "il "}${acc.data_testo}`, s: 10 },
       { testo: "(a tassazione agevolata ai sensi dell'art. 8 comma 1 L. 431/98)", s: 10 },
     ] });
     partiEImmobile(B, d, imp, { ruoloConduttore: "studente",
@@ -922,7 +922,7 @@
     const PROT = "\u0000PROT\u0000", DEP = "\u0000DEP\u0000";
     accordo = Object.assign({}, accordo, { accordo: Object.assign({}, a, {
       deposito_data: a.deposito_data || DEP, protocollo: a.protocollo || PROT }) });
-    const firma = `sottoscritto il ${a.data_testo}` + (a.integrazione_testo ? ` e integrato il ${a.integrazione_testo}` : "");
+    const firma = `sottoscritto ${/^(8|11)\b/.test(a.data_testo) ? "l'" : "il "}${a.data_testo}` + (a.integrazione_testo ? ` e integrato il ${a.integrazione_testo}` : "");
     return senzaEstremi(m.genera(dati, accordo, impostazioni), PROT, DEP, firma);
   }
 

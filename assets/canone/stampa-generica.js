@@ -66,7 +66,7 @@
     if (P.allegato) dx(P.allegato, DX, a, { f: bold, sz: 10 });
     a += 16;
     for (const rr of aCapo((P.titolo || "SCHEDA PER LA DETERMINAZIONE DEL CANONE").toUpperCase(), bold, 11.5, DX - SX)) { tx(rr, (L - largo(rr, bold, 11.5)) / 2, a, { f: bold, sz: 11.5 }); a += 14; }
-    const sotto = P.sottotitolo || `${A.titolo} (${A.deposito_data ? `depositato il ${A.deposito_data.replace(/\./g, "/")}` : `sottoscritto il ${A.data_testo}`})`;
+    const sotto = P.sottotitolo || `${A.titolo} (${A.deposito_data ? `depositato il ${A.deposito_data.replace(/\./g, "/")}` : `sottoscritto ${/^(8|11)\b/.test(A.data_testo) ? "l'" : "il "}${A.data_testo}`})`;
     for (const rr of aCapo(sotto, reg, 8.6, DX - SX)) { tx(rr, (L - largo(rr, reg, 8.6)) / 2, a, { sz: 8.6 }); a += 11; }
     a += 6;
     const tipo = s.tipo || "agevolato";
@@ -78,7 +78,8 @@
     riga(["Locatore ", { w: 180, v: s.locatore }, "  C.F. ", { w: 130, v: (s.locatore_cf || "").toUpperCase() }]);
     riga(["Conduttore ", { w: 170, v: s.conduttore }, "  C.F. ", { w: 130, v: (s.conduttore_cf || "").toUpperCase() }]);
     riga([`Immobile in ${A.comune}, `, { w: 170, v: s.indirizzo }, " piano ", { w: 26, v: s.piano }, " Fg. ", { w: 30, v: s.foglio }, " Part. ", { w: 36, v: s.particella }, " Sub. ", { w: 26, v: s.subalterno }]);
-    if (r.fascia.prevalente) riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, "  Subfascia (livello di qualità) ", { w: 90, v: r.zona ? r.fascia.nome : "" }]);
+    if (R.fasce.criterio === "differenza") riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, "  Somma delle percentuali A-G ", { w: 60, v: `${String(r.punti).replace(".", ",")}%` }]);
+    else if (r.fascia.prevalente) riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, "  Subfascia (livello di qualità) ", { w: 90, v: r.zona ? r.fascia.nome : "" }]);
     else if (r.fascia.gruppi) { riga(["Zona ", { w: 200, v: r.zona ? r.zona.nome : "" }, "  Punteggio ", { w: 40, v: String(r.punti) }]); riga(["Fasce ", { w: 360, v: r.zona ? r.fascia.nome : "" }]); }
     else riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, "  Fascia ", { w: 70, v: r.zona ? r.fascia.nome : "" }, R.fasce.criterio === "punti" ? "  Punteggio " : "  Elementi n. ", { w: 40, v: String(r.punti) }]);
 
@@ -119,13 +120,13 @@
     spazio(14); a += 2;
     const soglie = (R.fasce.soglie_zona && r.zona && R.fasce.soglie_zona[r.zona.codice]) || R.fasce.soglie;
     const cosa = R.fasce.criterio === "punti" ? "punti" : "elementi";
-    if (R.fasce.criterio === "requisiti" || R.fasce.criterio === "obbligatori") { for (const rr of aCapo(R.fasce.nota_pdf || R.fasce.nota || "", reg, 7.8, DX - SX - 110)) { spazio(10); tx(rr, SX, a, { sz: 7.8 }); a += 9.5; } a -= 9.5; }
+    if (["requisiti", "obbligatori", "differenza"].includes(R.fasce.criterio)) { for (const rr of aCapo(R.fasce.nota_pdf || R.fasce.nota || "", reg, 7.8, DX - SX - 110)) { spazio(10); tx(rr, SX, a, { sz: 7.8 }); a += 9.5; } a -= 9.5; }
     else if (R.fasce.criterio === "scelta") tx(`Fascia ${r.fascia.nome} (scelta in base al foglio di calcolo dell'accordo).`, SX, a, { sz: 7.8, c: DATO });
     else if (!r.fascia.gruppi && !soglie.length) tx("Una sola fascia per zona: gli elementi indicano se avvicinarsi al minimo o al massimo.", SX, a, { sz: 7.8 });
     else if (r.fascia.prevalente) { for (const rr of aCapo(r.fascia.gruppi.map((g) => `${g.nome}: ${g.fascia.toLowerCase()}`).join("  ·  ") + `  →  livello prevalente ${r.fascia.nome.toUpperCase()}`, reg, 7.8, DX - SX)) { spazio(10); tx(rr, SX, a, { sz: 7.8, c: DATO }); a += 9.5; } a -= 9.5; }
     else if (r.fascia.gruppi) tx(r.fascia.gruppi.map((g) => `${g.nome}: ${g.n} punti, fascia ${g.fascia}`).join("   ·   "), SX, a, { sz: 7.8, c: DATO });
     else tx(R.fasce.nomi.map((n, i) => i === 0 ? `${n}: fino a ${soglie[0]} ${cosa}` : i < soglie.length ? `${n}: da ${soglie[i - 1] + 1} a ${soglie[i]}` : `${n}: da ${soglie[i - 1] + 1}`).join("   ·   "), SX, a, { sz: 7.8 });
-    if (!r.fascia.prevalente) dx(`TOTALE ${R.fasce.criterio === "punti" ? "PUNTEGGIO" : "ELEMENTI"} ${r.punti}`, DX, a, { f: bold, sz: 8.6, c: DATO });
+    if (!r.fascia.prevalente) dx(R.fasce.criterio === "differenza" ? `TOTALE PERCENTUALI ${String(r.punti).replace(".", ",")}%` : `TOTALE ${R.fasce.criterio === "punti" ? "PUNTEGGIO" : "ELEMENTI"} ${r.punti}`, DX, a, { f: bold, sz: 8.6, c: DATO });
     a += 10;
 
     // maggiorazioni e calcolo
@@ -173,7 +174,7 @@
     spazio(12, 16);
     tx("Calcolo di LocaOnLine: il modulo segue le voci del modello dell'accordo; i dati dell'organizzazione e della registrazione restano da compilare.", SX, a, { sz: 6.8, c: GRIGIO });
 
-    const piede = P.piede || `${P.allegato ? P.allegato + " dell'" : ""}Accordo territoriale per il Comune di ${A.comune} (${A.deposito_data ? `depositato il ${A.deposito_data.replace(/\./g, "/")}` : `sottoscritto il ${A.data_testo}`}), compilato con LocaOnLine`;
+    const piede = P.piede || `${P.allegato ? P.allegato + " dell'" : ""}Accordo territoriale per il Comune di ${A.comune} (${A.deposito_data ? `depositato il ${A.deposito_data.replace(/\./g, "/")}` : `sottoscritto ${/^(8|11)\b/.test(A.data_testo) ? "l'" : "il "}${A.data_testo}`}), compilato con LocaOnLine`;
     for (const pg of pagine) {
       pg.drawText(piede, { x: (L - largo(piede, reg, 6.5)) / 2, y: 44, size: 6.5, font: reg, color: GRIGIO });
       if (marchio) Marchio.disegna(doc, ris.PDFLib, pg, marchio, { cx: L / 2, y: 14, campagna: `scheda_canone_${A.comune.toLowerCase().replace(/[^a-z]/g, "")}` });

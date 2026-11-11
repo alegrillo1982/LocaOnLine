@@ -1,0 +1,725 @@
+{
+ "accordo": {
+  "codice": "messina-2024-11-11",
+  "modello": "messina-2024",
+  "comune": "Messina",
+  "provincia": "ME",
+  "titolo": "Accordo territoriale del Comune di Messina",
+  "data": "2024-11-11",
+  "data_testo": "11 novembre 2024",
+  "deposito": "Comune di Messina",
+  "deposito_data": "25.11.2024",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2027-11-25",
+  "firmatari_proprieta": [
+   "U.P.P.I.",
+   "A.S.P.P.I.",
+   "CONFAPPI",
+   "FEDERPROPRIETÀ",
+   "A.M.P.E. Confedilizia",
+   "UNIONCASA"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "UNIAT",
+   "UNIONE INQUILINI",
+   "SICET"
+  ],
+  "nota": "Firmato l'11/11/2024, protocollato dal Comune il 25/11/2024 (numero scritto a mano, non leggibile con certezza), durata tre anni dal deposito; 29 microzone (allegato A, valori 2024 mensili). I valori possono essere aggiornati ogni anno al 100% ISTAT su convocazione delle associazioni.",
+  "fonte": "Copia scansionata dell'accordo depositato (36 pagine) fornita da Alessandro Grillo; sul sito UPPI il file è vuoto."
+ },
+ "esempio_zona": "la microzona",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "1. Litoranea tirrenica",
+    "nota": "Microzona 1 (Litoranea tirrenica), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.84,
+      5.888
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "2. Litoranea nord",
+    "nota": "Microzona 2 (Litoranea nord), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      3.02,
+      6.199
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "3. Capo Peloro",
+    "nota": "Microzona 3 (Capo Peloro), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      3.68,
+      6.912
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "4. Pozzicello",
+    "nota": "Microzona 4 (Pozzicello), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      4.1,
+      7.452
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "5. Castanea delle Furie",
+    "nota": "Microzona 5 (Castanea delle Furie), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.49,
+      4.466
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "6. Masse",
+    "nota": "Microzona 6 (Masse), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.49,
+      4.246
+     ]
+    ]
+   },
+   {
+    "codice": "7",
+    "nome": "7. Gesso",
+    "nota": "Microzona 7 (Gesso), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.53,
+      4.246
+     ]
+    ]
+   },
+   {
+    "codice": "8",
+    "nome": "8. Salice",
+    "nota": "Microzona 8 (Salice), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.53,
+      4.246
+     ]
+    ]
+   },
+   {
+    "codice": "9",
+    "nome": "9. Sperone",
+    "nota": "Microzona 9 (Sperone), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      3.15,
+      6.096
+     ]
+    ]
+   },
+   {
+    "codice": "10",
+    "nome": "10. Annunziata",
+    "nota": "Microzona 10 (Annunziata), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      3.49,
+      6.6
+     ]
+    ]
+   },
+   {
+    "codice": "11",
+    "nome": "11. Giostra - Ritiro",
+    "nota": "Microzona 11 (Giostra - Ritiro), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.98,
+      5.511
+     ]
+    ]
+   },
+   {
+    "codice": "12",
+    "nome": "12. Z.I.R. - Z.I.S.",
+    "nota": "Microzona 12 (Z.I.R. - Z.I.S.), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.44,
+      5.918
+     ]
+    ]
+   },
+   {
+    "codice": "13",
+    "nome": "13. Camaro",
+    "nota": "Microzona 13 (Camaro), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      3.14,
+      5.852
+     ]
+    ]
+   },
+   {
+    "codice": "14",
+    "nome": "14. Litoranea sud",
+    "nota": "Microzona 14 (Litoranea sud), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.92,
+      5.434
+     ]
+    ]
+   },
+   {
+    "codice": "15",
+    "nome": "15. S. Lucia",
+    "nota": "Microzona 15 (S. Lucia), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.74,
+      4.829
+     ]
+    ]
+   },
+   {
+    "codice": "16",
+    "nome": "16. Faro Superiore",
+    "nota": "Microzona 16 (Faro Superiore), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.88,
+      5.474
+     ]
+    ]
+   },
+   {
+    "codice": "17",
+    "nome": "17. Zona industriale sud",
+    "nota": "Microzona 17 (Zona industriale sud), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      3.12,
+      5.67
+     ]
+    ]
+   },
+   {
+    "codice": "18",
+    "nome": "18. San Filippo",
+    "nota": "Microzona 18 (San Filippo), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.33,
+      5.005
+     ]
+    ]
+   },
+   {
+    "codice": "19",
+    "nome": "19. Tipoldo",
+    "nota": "Microzona 19 (Tipoldo), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.33,
+      4.18
+     ]
+    ]
+   },
+   {
+    "codice": "20",
+    "nome": "20. Mili S. Marco",
+    "nota": "Microzona 20 (Mili S. Marco), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.24,
+      4.51
+     ]
+    ]
+   },
+   {
+    "codice": "21",
+    "nome": "21. Santo Stefano",
+    "nota": "Microzona 21 (Santo Stefano), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.28,
+      4.18
+     ]
+    ]
+   },
+   {
+    "codice": "22",
+    "nome": "22. Pezzolo",
+    "nota": "Microzona 22 (Pezzolo), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.28,
+      4.235
+     ]
+    ]
+   },
+   {
+    "codice": "23",
+    "nome": "23. Giampilieri Superiore",
+    "nota": "Microzona 23 (Giampilieri Superiore), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.24,
+      4.235
+     ]
+    ]
+   },
+   {
+    "codice": "24",
+    "nome": "24. Gazzi",
+    "nota": "Microzona 24 (Gazzi), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      2.85,
+      5.616
+     ]
+    ]
+   },
+   {
+    "codice": "25",
+    "nome": "25. Centro storico",
+    "nota": "Microzona 25 (Centro storico), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      3.88,
+      8.591
+     ]
+    ]
+   },
+   {
+    "codice": "26",
+    "nome": "26. Viale S. Martino",
+    "nota": "Microzona 26 (Viale S. Martino), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      4.85,
+      9.856
+     ]
+    ]
+   },
+   {
+    "codice": "27",
+    "nome": "27. Villa Dante",
+    "nota": "Microzona 27 (Villa Dante), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      3.32,
+      6.969
+     ]
+    ]
+   },
+   {
+    "codice": "28",
+    "nome": "28. Fiera",
+    "nota": "Microzona 28 (Fiera), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      3.99,
+      7.403
+     ]
+    ]
+   },
+   {
+    "codice": "29",
+    "nome": "29. Zona Monti Peloritani",
+    "nota": "Microzona 29 (Zona Monti Peloritani), approvata con delibera del 26/02/1999.",
+    "fasce": [
+     [
+      1.89,
+      4.29
+     ]
+    ]
+   }
+  ],
+  "solo_massimo": true,
+  "tetto_fascia": true,
+  "fasce": {
+   "nomi": [
+    "unica"
+   ],
+   "criterio": "differenza",
+   "nota": "Si parte dal minimo della microzona e si aggiunge la somma delle percentuali A-G calcolata sulla differenza fra minimo e massimo (allegato B), senza superare il massimo."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Calcolo degli aumenti sulla differenza fra minimo e massimo (allegato B)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "(A) Tipologia dell'immobile",
+    "livelli": [
+     {
+      "testo": "A/4 popolare (15%)",
+      "punti": 15
+     },
+     {
+      "testo": "A/3 economico popolare (18%)",
+      "punti": 18
+     },
+     {
+      "testo": "A/2-A/7 civile abitazione (20%)",
+      "punti": 20
+     }
+    ],
+    "mostra_punti": false
+   },
+   {
+    "testo": "(B) Stato manutentivo del fabbricato",
+    "livelli": [
+     {
+      "testo": "scadente (0%)",
+      "punti": 0
+     },
+     {
+      "testo": "medio (8%)",
+      "punti": 8
+     },
+     {
+      "testo": "buono (15%)",
+      "punti": 15
+     }
+    ],
+    "mostra_punti": false
+   },
+   {
+    "testo": "(C) Stato manutentivo dell'alloggio",
+    "livelli": [
+     {
+      "testo": "da rinnovare (0%)",
+      "punti": 0
+     },
+     {
+      "testo": "normale (8%)",
+      "punti": 8
+     },
+     {
+      "testo": "buono (15%)",
+      "punti": 15
+     }
+    ],
+    "mostra_punti": false
+   },
+   {
+    "testo": "(D) Pertinenze: posto auto, box auto, cantina o area verde",
+    "punti": 5
+   },
+   {
+    "testo": "(E) Ascensore",
+    "punti": 10
+   },
+   {
+    "testo": "(E) Porta blindata o antifurto",
+    "punti": 10
+   },
+   {
+    "testo": "(E) Riscaldamento autonomo, centralizzato o pompe di calore",
+    "punti": 10
+   },
+   {
+    "testo": "(F) Classe energetica",
+    "livelli": [
+     {
+      "testo": "G (0%)",
+      "punti": 0
+     },
+     {
+      "testo": "F (10%)",
+      "punti": 10
+     },
+     {
+      "testo": "E (15%)",
+      "punti": 15
+     },
+     {
+      "testo": "D (20%)",
+      "punti": 20
+     },
+     {
+      "testo": "C (25%)",
+      "punti": 25
+     },
+     {
+      "testo": "B (28%)",
+      "punti": 28
+     },
+     {
+      "testo": "A (30%)",
+      "punti": 30
+     }
+    ],
+    "mostra_punti": false
+   },
+   {
+    "testo": "(G) Arredo",
+    "livelli": [
+     {
+      "testo": "vuoto (0%)",
+      "punti": 0
+     },
+     {
+      "testo": "parzialmente ammobiliato (10%)",
+      "punti": 10
+     },
+     {
+      "testo": "ammobiliato (20%)",
+      "punti": 20
+     }
+    ],
+    "mostra_punti": false
+   }
+  ],
+  "senza_riscaldamento": {
+   "chiave": "senza_riscaldamento",
+   "perc": 5,
+   "avviso": "Senza alcun riscaldamento il canone non può arrivare al massimo della microzona: -5% (art. 5)."
+  },
+  "superficie": {
+   "base": "Superficie utile calpestabile (dalla visura catastale, che si può ridurre del 10%)",
+   "voci": [
+    {
+     "chiave": "cantine",
+     "testo": "Soffitte, cantine e simili comunicanti con l'alloggio",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantine_nc",
+     "testo": "Soffitte, cantine e simili non comunicanti",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazze comunicanti (30% fino a 25 mq, poi 10%)",
+     "coeff": 0.3,
+     "scaglione": [
+      25,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "chiave": "balconi_nc",
+     "testo": "Balconi e terrazze non comunicanti (15% fino a 25 mq, poi 5%)",
+     "coeff": 0.15,
+     "scaglione": [
+      25,
+      0.15,
+      0.05
+     ]
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta esclusiva (10% fino alla superficie dell'alloggio, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    }
+   ],
+   "tetto_voci": 0.5,
+   "correzioni_totale": [
+    {
+     "fino": 49.99,
+     "perc": 20
+    }
+   ],
+   "coeff_scelta": {
+    "chiave": "posizione",
+    "valori": {
+     "semi": 1.1,
+     "centro": 1.2
+    },
+    "testi": {
+     "semi": "semiperiferia della microzona",
+     "centro": "centro della microzona"
+    }
+   },
+   "nota": "Pertinenze al massimo per metà della superficie dell'alloggio; sotto 50 mq la superficie si moltiplica per 1,20; poi coefficiente di posizione: periferia 1,00, semiperiferia 1,10, centro 1,20. Tolleranza del 10%."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "posizione",
+    "tipo": "scelta",
+    "testo": "Posizione nella microzona (moltiplica la superficie)",
+    "nome": "posizione",
+    "nessuna": "periferia (1,00)",
+    "mostra_perc": false,
+    "opzioni": [
+     {
+      "valore": "semi",
+      "testo": "semiperiferia (1,10)",
+      "perc": 0
+     },
+     {
+      "valore": "centro",
+      "testo": "centro (1,20)",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "rendita",
+    "tipo": "scelta",
+    "testo": "(H) Rendita catastale (sul canone finale)",
+    "nome": "rendita catastale",
+    "nessuna": "non indicata",
+    "opzioni": [
+     {
+      "valore": "149",
+      "testo": "da 0 a 149 €",
+      "perc": 5
+     },
+     {
+      "valore": "299",
+      "testo": "da 150 a 299 €",
+      "perc": 10
+     },
+     {
+      "valore": "449",
+      "testo": "da 300 a 449 €",
+      "perc": 15
+     },
+     {
+      "valore": "450",
+      "testo": "da 450 € in poi",
+      "perc": 20
+     }
+    ]
+   },
+   {
+    "chiave": "costruzione",
+    "tipo": "scelta",
+    "testo": "Costruzione o ristrutturazione (art. 5)",
+    "nome": "costruzione o ristrutturazione",
+    "nessuna": "nessuna delle seguenti",
+    "opzioni": [
+     {
+      "valore": "1985",
+      "testo": "costruito dopo il 1985 o completamente ristrutturato",
+      "perc": 15
+     },
+     {
+      "valore": "2005",
+      "testo": "costruito dopo il 2005",
+      "perc": 15
+     },
+     {
+      "valore": "2009",
+      "testo": "ristrutturato parzialmente dopo il 2009",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "senza_riscaldamento",
+    "tipo": "spunta",
+    "testo": "Senza alcun impianto di riscaldamento",
+    "nome": "senza riscaldamento",
+    "perc": 0,
+    "mostra_perc": false
+   },
+   {
+    "chiave": "durata_tr",
+    "tipo": "scelta",
+    "testo": "Durata del transitorio",
+    "nome": "durata",
+    "nessuna": "fino a 6 mesi",
+    "contratti": [
+     "transitorio"
+    ],
+    "opzioni": [
+     {
+      "valore": "6",
+      "testo": "più di 6 mesi",
+      "perc": 5
+     },
+     {
+      "valore": "12",
+      "testo": "più di 12 mesi",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "durata_st",
+    "tipo": "scelta",
+    "testo": "Durata del contratto per studenti",
+    "nome": "durata",
+    "nessuna": "6 mesi",
+    "contratti": [
+     "studenti"
+    ],
+    "opzioni": [
+     {
+      "valore": "12",
+      "testo": "da 6 a 12 mesi",
+      "perc": 5
+     },
+     {
+      "valore": "18",
+      "testo": "da 12 a 18 mesi",
+      "perc": 10
+     },
+     {
+      "valore": "24",
+      "testo": "da 18 a 24 mesi",
+      "perc": 15
+     },
+     {
+      "valore": "30",
+      "testo": "da 24 a 30 mesi",
+      "perc": 20
+     },
+     {
+      "valore": "36",
+      "testo": "da 30 a 36 mesi",
+      "perc": 25
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Rendita, costruzione e durata si applicano sul canone finale, sempre entro il massimo della microzona (art. 3). Durata 4/5/6 anni: +5% per ogni anno oltre i tre. Transitori ordinari: si può scendere del 20% sotto minimo e massimo.",
+  "durata": {
+   "4": 5,
+   "5": 10,
+   "6": 15
+  },
+  "combinazione": "prodotto",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato B",
+  "titolo": "Calcolo degli aumenti da apportare alla differenza fra minimo e massimo della microzona",
+  "sottotitolo": "Accordo territoriale del Comune di Messina dell'11/11/2024, depositato il 25/11/2024",
+  "titolo_elementi": "Caratteristiche dell'immobile (allegato B)",
+  "dichiarazione": "I dati indicati e sopra selezionati con la lettera X sono stati forniti dalle parti, sotto la propria responsabilità.",
+  "nota_zone": "La microzona è quella approvata con delibera del 26/02/1999."
+ }
+}
