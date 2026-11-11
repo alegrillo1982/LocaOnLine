@@ -103,7 +103,7 @@
     // elementi o parametri, su due colonne (es. Varese: nessun elemento, la sezione non si stampa)
     if (R.elementi.length) {
     sezione((P.titolo_elementi || (R.fasce.criterio === "punti" ? "PARAMETRI E PUNTEGGI" : "ELEMENTI PRESENTI")).toUpperCase());
-    const E = R.elementi, el = (s.elementi || []).map((x, k) => (CG.escluso(E[k], s.zona, s.tipo) ? false : x)), w = (DX - SX) / 2 - 12;
+    const E = R.elementi, el = (s.elementi || []).map((x, k) => (CG.escluso(E[k], s.zona, s.tipo, s.maggiorazioni_scelte) ? false : x)), w = (DX - SX) / 2 - 12;
     // es. Vercelli: gli elementi validi solo per altri contratti non si stampano (numerazione continua)
     const vis = E.map((e, i) => i).filter((i) => !(E[i].contratti && !E[i].contratti.includes(s.tipo || "agevolato")));
     const num = (i) => vis.indexOf(i) + 1, met = Math.ceil(vis.length / 2);

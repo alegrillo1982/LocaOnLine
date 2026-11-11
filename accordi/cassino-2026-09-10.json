@@ -1,0 +1,478 @@
+{
+ "accordo": {
+  "codice": "cassino-2026-09-10",
+  "modello": "frosinone-2026",
+  "comune": "Cassino",
+  "provincia": "FR",
+  "titolo": "Accordo territoriale applicabile nel territorio del Comune di Cassino",
+  "data": "2026-09-10",
+  "data_testo": "10 settembre 2026",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "nota_validita": "Art. 17: durata minima di tre anni dal deposito presso il Comune (data e protocollo non indicati nella copia pubblicata). Dopo il primo anno le fasce si possono rivalutare con l'ISTAT (FOI senza tabacchi). Le parti si rivedono un anno dopo il deposito.",
+  "firmatari_proprieta": [
+   "A.P.P.C.",
+   "A.S.P.P.I.",
+   "CONFEDILIZIA",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "ASSOCASA",
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Accordo per il Comune di Cassino sottoscritto dalle organizzazioni provinciali di inquilini e proprietari, gemello di quello di Frosinone e degli altri comuni della provincia pubblicati insieme. Data di firma 10/09/2026: nella copia pubblicata la pagina delle firme (pag. 10) è la stessa scansione dell'accordo di Anagni (cita «Comune di Anagni» e «sottoscritto in Anagni»); la data è la stessa di tutti gli accordi gemelli e gli allegati 1 e 2 di Cassino sono siglati dalle parti. Sostituisce integralmente l'accordo stipulato il 13/11/2017 e depositato il 23/11/2017 (prot. 61276). Zone = microzone OMI dell'Agenzia delle Entrate (allegati 1 e 2); per le zone senza valori OMI si usano quelle attigue. Tre sub-fasce (inferiore, media, massima) secondo quanti dei 20 parametri sono presenti; valori mensili al mq di superficie convenzionale. Vale per contratti agevolati, transitori e per studenti universitari. Il canone si aggiorna ogni anno al massimo del 75% della variazione ISTAT. Data e protocollo di deposito al Comune non sono nella copia pubblicata.",
+  "fonte": "SUNIA, pagina «Accordi territoriali di Frosinone» (provincia): «CASSINO_Accordo-territoriale-con-allegati-2026.pdf» (scansione firmata, 41 pagine: accordo di 10 pagine e allegati 1-10, con le attestazioni 5/a e 5/b)."
+ },
+ "esempio_zona": "la zona OMI dall'indirizzo (allegato 2, microzone del Comune di Cassino)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tetto_zona": true,
+  "zone": [
+   {
+    "codice": "B1",
+    "nome": "B1 - Centrale",
+    "nota": "Zona OMI B1, fascia centrale (allegato 2): C.so Repubblica, Via De Nicola, Via Pascoli, Via Verdi, Via Leopardi, Via Dante, Via Marconi, Via Arigni, Via De Bosis, Viale Europa, Via del Foro, Via Di Biasio. Valori in euro al mq al mese (allegato 1).",
+    "fasce": [
+     [
+      4.7,
+      5.21
+     ],
+     [
+      5.22,
+      5.73
+     ],
+     [
+      5.74,
+      6.23
+     ]
+    ]
+   },
+   {
+    "codice": "C1",
+    "nome": "C1 - Semicentrale",
+    "nota": "Zona OMI C1, fascia semicentrale (allegato 2): zona Colosseo, Via Sferracavallo, Via Solfegna, San Pasquale, Via Ausonia Vecchia, Folcara, Via Montecassino, S. Bartolomeo, S. Antonino, Casilina Sud. Valori in euro al mq al mese (allegato 1).",
+    "fasce": [
+     [
+      4.8,
+      4.94
+     ],
+     [
+      4.95,
+      5.08
+     ],
+     [
+      5.09,
+      5.21
+     ]
+    ]
+   },
+   {
+    "codice": "D2",
+    "nome": "D2 - Periferica",
+    "nota": "Zona OMI D2, fascia periferica (allegato 2): Capo d'Acqua, Le Vaglie, Chiusa Vecchia, Spineto, Morrone. Valori in euro al mq al mese (allegato 1).",
+    "fasce": [
+     [
+      4.8,
+      4.94
+     ],
+     [
+      4.95,
+      5.08
+     ],
+     [
+      5.09,
+      5.21
+     ]
+    ]
+   },
+   {
+    "codice": "D3",
+    "nome": "D3 - Periferica",
+    "nota": "Zona OMI D3, fascia periferica (allegato 2): Zona industriale del Comprensorio ASI, Cerro Antico, Cerro Nuovo, Stradone Fiat, Colle Monache. Valori in euro al mq al mese (allegato 1).",
+    "fasce": [
+     [
+      4.8,
+      4.94
+     ],
+     [
+      4.95,
+      5.08
+     ],
+     [
+      5.09,
+      5.21
+     ]
+    ]
+   },
+   {
+    "codice": "D4",
+    "nome": "D4 - Periferica",
+    "nota": "Zona OMI D4, fascia periferica, nell'allegato 2 indicata come suburbana (allegato 2): Frazione Caira. Valori in euro al mq al mese (allegato 1).",
+    "fasce": [
+     [
+      3.7,
+      4.05
+     ],
+     [
+      4.06,
+      4.41
+     ],
+     [
+      4.42,
+      4.74
+     ]
+    ]
+   },
+   {
+    "codice": "E1",
+    "nome": "E1 - Suburbana",
+    "nota": "Zona OMI E1, fascia suburbana: l'allegato 2 non ne elenca le località, vale la mappa delle microzone OMI dell'Agenzia delle Entrate. Valori in euro al mq al mese (allegato 1).",
+    "fasce": [
+     [
+      3.7,
+      4.05
+     ],
+     [
+      4.06,
+      4.41
+     ],
+     [
+      4.42,
+      4.74
+     ]
+    ]
+   },
+   {
+    "codice": "R3",
+    "nome": "R3 - Extraurbana",
+    "nota": "Zona OMI R3, fascia extraurbana: l'allegato 2 non ne elenca le località, vale la mappa delle microzone OMI dell'Agenzia delle Entrate. Valori in euro al mq al mese (allegato 1).",
+    "fasce": [
+     [
+      4.0,
+      4.5
+     ],
+     [
+      4.5,
+      4.99
+     ],
+     [
+      4.99,
+      5.49
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "inferiore",
+    "media",
+    "massima"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    7
+   ],
+   "nota": "Sub-fascia inferiore fino a 4 parametri, media da 5 a 7, massima oltre 7 (art. 4 e allegato 3)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Parametri (allegato 3): contano solo se installati a spese del proprietario. Fino a 4: sub-fascia inferiore; da 5 a 7: media; oltre 7: massima"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Posto auto"
+   },
+   {
+    "testo": "Cortile d'uso comune, area verde"
+   },
+   {
+    "testo": "Cantina"
+   },
+   {
+    "testo": "Terrazzo o balcone"
+   },
+   {
+    "testo": "Area verde di pertinenza dell'appartamento"
+   },
+   {
+    "testo": "Aria condizionata"
+   },
+   {
+    "testo": "Stabile con ascensore"
+   },
+   {
+    "testo": "Bagno con finestra o doppi servizi"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Doppi vetri"
+   },
+   {
+    "testo": "Stabile con servizio di portierato"
+   },
+   {
+    "testo": "Stabile ultimato o completamente ristrutturato negli ultimi 10 anni"
+   },
+   {
+    "testo": "Sistema di sicurezza, allarme o altro sistema antintrusione"
+   },
+   {
+    "testo": "Cucina abitabile con finestra"
+   },
+   {
+    "testo": "Videocitofono o videosorveglianza"
+   },
+   {
+    "testo": "Antenna centralizzata o impianto satellitare"
+   },
+   {
+    "testo": "Riscaldamento autonomo"
+   },
+   {
+    "testo": "Stabile non superiore a 4 piani"
+   },
+   {
+    "testo": "Strutture per il superamento delle barriere architettoniche"
+   },
+   {
+    "testo": "Terrazzo o locale condominiale ad uso comune"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'appartamento",
+   "correzioni": [
+    {
+     "fino": 46,
+     "incluso": true,
+     "perc": 30,
+     "tetto": 52.9
+    },
+    {
+     "da": 46,
+     "fino": 70,
+     "incluso": true,
+     "perc": 15,
+     "tetto": 70
+    }
+   ],
+   "grandi": {
+    "oltre": 120,
+    "perc": 85
+   },
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Box o autorimessa coperta a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "autorimessa_comune",
+     "testo": "Autorimessa coperta a uso comune",
+     "coeff": 0.35
+    },
+    {
+     "chiave": "posto_esclusivo",
+     "testo": "Posto auto scoperto a uso esclusivo",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto auto scoperto a uso comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazzi, cantine e accessori simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Area scoperta di pertinenza a uso esclusivo (fino ai mq dell'appartamento)",
+     "coeff": 0.15,
+     "scaglione": [
+      "base",
+      0.15,
+      0
+     ]
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota millesimale)",
+     "coeff": 0.1
+    },
+    {
+     "chiave": "basse",
+     "testo": "Vani alti meno di 1,70 m",
+     "coeff": 0.7
+    }
+   ],
+   "nota": "Superficie calpestabile dell'appartamento, senza balconi, cantine, terrazze, soppalchi non accatastati e parti alte meno di 1,70 m, con tolleranza del 5% in più o in meno. Fino a 46 mq aumenta del 30% (al massimo 52,90 mq), da 46 a 70 mq del 15% (al massimo 70 mq); la parte oltre i 120 mq conta l'85%. Si aggiungono il box o l'autorimessa esclusiva al 50%, l'autorimessa comune al 35%, il posto auto scoperto esclusivo al 25% e comune al 20%, balconi, terrazzi e cantine al 25%, l'area scoperta esclusiva al 15% (fino a tanti mq quanti quelli dell'appartamento), il verde condominiale della tua quota millesimale al 10% e i vani alti meno di 1,70 m al 70%."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "cucina",
+      "testo": "solo cucina arredata",
+      "perc": 5
+     },
+     {
+      "valore": "parziale",
+      "testo": "almeno due stanze arredate",
+      "perc": 10
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "seminterrato",
+    "tipo": "spunta",
+    "testo": "Alloggio al piano seminterrato",
+    "nome": "seminterrato",
+    "perc": -10
+   },
+   {
+    "chiave": "ascensore",
+    "tipo": "spunta",
+    "testo": "Alloggio oltre il terzo piano senza ascensore",
+    "nome": "oltre il 3° piano senza ascensore",
+    "perc": -10
+   },
+   {
+    "chiave": "attico",
+    "tipo": "spunta",
+    "testo": "Alloggio al piano attico",
+    "nome": "attico",
+    "perc": 10
+   },
+   {
+    "chiave": "ape_ab",
+    "tipo": "spunta",
+    "dopo": true,
+    "testo": "Classe energetica A o B (anche oltre il massimo della zona)",
+    "nome": "classe energetica A o B",
+    "perc": 10
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Altre classi energetiche (dall'APE)",
+    "nome": "classe energetica",
+    "nessuna": "classe A o B (casella sopra)",
+    "opzioni": [
+     {
+      "valore": "CDEF",
+      "testo": "classe C, D, E o F",
+      "perc": 5
+     },
+     {
+      "valore": "G",
+      "testo": "classe G",
+      "perc": -5
+     }
+    ]
+   },
+   {
+    "chiave": "elettro",
+    "tipo": "spunta",
+    "dopo": true,
+    "testo": "Grandi elettrodomestici in classe A o B",
+    "nome": "elettrodomestici in classe A o B",
+    "perc": 5,
+    "se": {
+     "chiave": "ape_ab",
+     "valori": [
+      true
+     ],
+     "perc": 7,
+     "testo": "con APE in classe A o B"
+    }
+   },
+   {
+    "chiave": "fotovoltaico",
+    "tipo": "spunta",
+    "dopo": true,
+    "testo": "Pannelli fotovoltaici",
+    "nome": "pannelli fotovoltaici",
+    "perc": 10
+   },
+   {
+    "chiave": "sisma",
+    "tipo": "spunta",
+    "testo": "Interventi documentati Sisma Bonus",
+    "nome": "Sisma Bonus",
+    "perc": 10
+   },
+   {
+    "chiave": "villa",
+    "tipo": "spunta",
+    "sulle_fasce": true,
+    "testo": "Villa o villino: le fasce della zona aumentano fino al 10%",
+    "nome": "villa o villino (fasce)",
+    "perc": 10
+   },
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "sulle_fasce": true,
+    "testo": "Immobile di pregio o vincolato (art. 1, c. 2, lett. a, L. 431/98 o D.Lgs. 42/2004): fasce +15%",
+    "nome": "immobile di pregio (fasce)",
+    "perc": 15
+   }
+  ],
+  "nota_maggiorazioni": "Arredo: solo cucina +5%, almeno due stanze +10%, completo +15%. Seminterrato o oltre il terzo piano senza ascensore -10%; attico +10%. Classe energetica C, D, E o F +5%, G -5%; Sisma Bonus documentato +10%. Le percentuali si sommano e non portano oltre il massimo della zona. Fanno eccezione e si aggiungono anche oltre: classe energetica A o B +10%, pannelli fotovoltaici +10%, grandi elettrodomestici in classe A o B +5% (+7% con APE in classe A o B), durata più lunga (4 anni +7%, 5 anni +8%, 6 e più +9%) e contratto transitorio (fino a +10%). Ville e villini: fasce della zona fino a +10%; immobili di pregio: fasce +15%.",
+  "durata": {
+   "4": 7,
+   "5": 8,
+   "6": 9
+  },
+  "durata_dopo": true,
+  "contratto": {
+   "transitorio": 10
+  },
+  "combinazione": "somma",
+  "avvisi": [],
+  "dopo_somma": true
+ },
+ "pdf": {
+  "allegato": "Allegato 5/a",
+  "titolo": "Attestazione unilaterale di rispondenza all'accordo territoriale",
+  "sottotitolo": "Accordo territoriale del Comune di Cassino sottoscritto il 10/09/2026 - il locatore richiede l'attestazione dichiarando sotto la sua responsabilità i seguenti elementi",
+  "titolo_superficie": "Superficie convenzionale, calpestabile, in mq",
+  "titolo_elementi": "Parametri qualitativi dell'immobile a contratto",
+  "firme": [],
+  "titolo_attestazione": "TUTTO CIÒ PREMESSO",
+  "attestazione": [
+   "L'Organizzazione ____________________ firmataria dell'accordo territoriale, sotto la propria responsabilità, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali, ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale in epigrafe."
+  ],
+  "firme_attestazione": [
+   "Cassino, lì",
+   "Il dichiarante",
+   "Per prestata assistenza"
+  ],
+  "nota_zone": "La zona è la microzona OMI dell'Agenzia delle Entrate in cui si trova l'immobile (allegato 2 dell'accordo, con le località delle zone B1, C1, D2, D3 e D4). Per le zone E1 e R3 vale la mappa OMI; per le zone senza valori OMI si usano quelli delle microzone vicine.",
+  "etichetta_totale_tetto": "totale (fino al massimo della zona; classe A/B, fotovoltaico, elettrodomestici, durata e transitorio anche oltre)"
+ }
+}

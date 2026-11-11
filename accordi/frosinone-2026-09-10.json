@@ -586,7 +586,8 @@
    "transitorio": 10
   },
   "combinazione": "somma",
-  "avvisi": []
+  "avvisi": [],
+  "dopo_somma": true
  },
  "pdf": {
   "allegato": "Allegato 5/a",

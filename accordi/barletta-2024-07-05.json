@@ -219,7 +219,10 @@
     30,
     31
    ],
-   "nota_soglie": "Contano gli elementi da 1 a 30 (nelle zone da 3 a 6 il 2 e il 3 non ci sono); con l'elemento 31 o 32 si va direttamente in fascia A"
+   "nota_soglie": "Contano gli elementi da 1 a 30 (nelle zone da 3 a 6 il 2 e il 3 non ci sono); con l'elemento 31 o 32 si va direttamente in fascia A",
+   "basta_min": {
+    "31": 1
+   }
   },
   "titoli_elementi": [
    {

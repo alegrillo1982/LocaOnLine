@@ -1,0 +1,365 @@
+{
+ "accordo": {
+  "codice": "olbia-2000-10-04",
+  "modello": "olbia-2000",
+  "comune": "Olbia",
+  "provincia": "SS",
+  "titolo": "Accordo territoriale del Comune amministrativo di Olbia in attuazione della L. 431/1998 e del D.M. 5 marzo 1999",
+  "data": "2000-10-04",
+  "data_testo": "4 ottobre 2000",
+  "deposito": "Comune di Olbia, Protocollo generale",
+  "deposito_data": "04.10.2000",
+  "protocollo": "44685",
+  "ufficio": "Segreteria Generale del Comune di Olbia (Ufficio Protocollo generale)",
+  "ufficio_breve": "Comune di Olbia",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Olbia ha ancora l'accordo territoriale del 4 ottobre 2000</strong>, firmato in base al vecchio D.M. 5 marzo 1999: resta in vigore fino a un nuovo accordo, che non è stato firmato (nell'agosto 2026 vi ha aderito anche Confproprietà). <strong>I valori sono quelli originali in lire, convertiti in euro</strong>: prima di firmare fatti confermare il canone da un'associazione firmataria.",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA",
+   "A.S.P.P.I.",
+   "U.P.P.I.",
+   "A.P.P.C."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T.",
+   "A.N.I.A."
+  ],
+  "nota": "Accordo per il Comune amministrativo di Olbia (L. 431/1998 e D.M. 5/3/1999), firmato dalle sedi provinciali di Sassari di Confedilizia, ASPPI, UPPI e APPC per la proprietà e di SUNIA, SICET, UNIAT e ANIA per gli inquilini. Il testo non riporta la data della firma: il timbro del Protocollo generale del Comune di Olbia sulla prima pagina riporta 04 OTT 2000, n. 44685 (deposito). Resta in vigore fino a un nuovo accordo successivo a un nuovo decreto ministeriale: non risulta firmato alcun accordo successivo, e il 13/08/2026 Confproprietà ha comunicato al Comune la propria adesione a questo accordo (stesse zone). Cinque zone omogenee (scheda A) con valori in lire al mq all'anno (scheda B), qui convertiti in euro (1 euro = 1.936,27 lire): nelle zone A e B due subfasce (tipologia a superiore, tipologia b inferiore), nelle zone C, D ed E una sola. Subfascia superiore con almeno 10 dei 18 elementi della scheda F, di cui almeno 3 contrassegnati «A». Superficie convenzionale secondo il D.P.R. 138/1998, ridotta oltre 100, 120 e 140 mq e aumentata sotto 70 mq. Arredo fino al +10%, immobili dell'art. 1, comma 2, lett. a) L. 431/98 +15%; senza servizi igienici interni o senza allacciamento fognario il canone resta fra il minimo e il minimo +10%. Transitori: stessi valori, arredo +10%. Aggiornamento del canone al 75% dell'ISTAT.",
+  "fonte": "PDF in scansione di 17 pagine pubblicato dal Comune di Olbia (www.comune.olbia.ss.it/CED/accordo_territoriale.pdf, non più online: copia dell'Internet Archive del 22/03/2011, identica a quelle dal 2003): testo, schede A-F e firme. Adesione di Confproprietà: Olbia.it, 27/08/2026."
+ },
+ "esempio_zona": "la zona omogenea (A semicentrale, B centro storico, C costa nord, D rurale, E industriale)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "A - Semicentrale estensiva",
+    "nota": "Zona A, semicentrale estensiva (microzona 1, zona residenziale urbana e periurbana). Subfascia superiore (tipologia a) da 45.000 a 85.000 lire, inferiore (tipologia b) da 35.000 a 75.000 lire al mq all'anno, qui in euro. L'accordo non riporta l'elenco delle vie: in caso di dubbio chiedi a un'associazione firmataria.",
+    "fasce": [
+     [
+      18.08,
+      38.73
+     ],
+     [
+      23.24,
+      43.9
+     ]
+    ]
+   },
+   {
+    "codice": "B",
+    "nome": "B - Centro storico",
+    "nota": "Zona B, centro storico (microzona 1). Subfascia superiore (tipologia a) da 40.000 a 75.000 lire, inferiore (tipologia b) da 30.000 a 65.000 lire al mq all'anno, qui in euro. L'accordo non riporta i confini del centro storico: in caso di dubbio chiedi a un'associazione firmataria.",
+    "fasce": [
+     [
+      15.49,
+      33.57
+     ],
+     [
+      20.66,
+      38.73
+     ]
+    ]
+   },
+   {
+    "codice": "C",
+    "nome": "C - Costa: Porto Rotondo, Portisco",
+    "nota": "Zona C, costiera (microzone 3 e 4: Porto Rotondo - Golfo di Marinella, Portisco - Cugnana Verde). Una sola fascia (tipologia a), da 35.000 a 60.000 lire al mq all'anno, qui in euro: gli elementi non cambiano i valori.",
+    "fasce": [
+     [
+      18.08,
+      30.99
+     ]
+    ]
+   },
+   {
+    "codice": "D",
+    "nome": "D - Rurale: San Pantaleo, Berchiddeddu",
+    "nota": "Zona D, rurale (microzone 5 e 6: San Pantaleo, Murta Maria, Berchiddeddu e borghi rurali vicini). Una sola fascia, da 30.000 a 50.000 lire al mq all'anno, qui in euro: gli elementi non cambiano i valori.",
+    "fasce": [
+     [
+      15.49,
+      25.82
+     ]
+    ]
+   },
+   {
+    "codice": "E",
+    "nome": "E - Industriale e artigianale",
+    "nota": "Zona E, industriale e artigianale (microzona 2). Una sola fascia (tipologia a), da 25.000 a 55.000 lire al mq all'anno, qui in euro: gli elementi non cambiano i valori.",
+    "fasce": [
+     [
+      12.91,
+      28.41
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "inferiore (o unica)",
+    "superiore"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 17,
+      "n": 10
+     },
+     {
+      "da": 0,
+      "a": 7,
+      "n": 3
+     }
+    ]
+   ],
+   "conta": {
+    "da": 0,
+    "a": 17
+   },
+   "nota": "Zone A e B: subfascia superiore (tipologia a) con almeno 10 elementi, di cui almeno 3 contrassegnati «A»; altrimenti subfascia inferiore (tipologia b). Zone C, D ed E: una sola fascia, gli elementi non contano (scheda F).",
+   "nota_pdf": "Zone A e B: subfascia superiore (tipologia a) con almeno 10 elementi, di cui almeno 3 contrassegnati «A»; con meno di 10 subfascia inferiore (tipologia b). Zone C, D ed E: una sola fascia (scheda F)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi contrassegnati «A» (ne servono almeno 3 per la subfascia superiore)"
+   },
+   {
+    "da": 8,
+    "titolo": "Altri elementi"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Doppi servizi (A)",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Autorimessa singola o posto auto coperto (A)",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Giardino, area verde o cortile a uso esclusivo (A)",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Nessuna barriera architettonica (A)",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Isolamento termico o doppi vetri (vetrocamera) (A)",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Impianto a risparmio energetico (A)",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Impianto o sistema antifurto (A)",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Allacciamento alla rete del gas o bombolone condominiale (A)",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Cucina abitabile con finestra",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Bagno interno completo di tutti i sanitari, con vasca o doccia",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Sottotetto, soffitta o cantina",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Terrazzi o balconi",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Posto auto scoperto",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Ascensore, per le abitazioni dal terzo piano fuori terra",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Impianto di riscaldamento",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Impianti tecnologici: luce, sollevamento dell'acqua, ecc.",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Giardino, area verde o cortile condominiale",
+    "zone": [
+     "A",
+     "B"
+    ]
+   },
+   {
+    "testo": "Edificio con meno di tre appartamenti per piano",
+    "zone": [
+     "A",
+     "B"
+    ]
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale (D.P.R. 138/1998, dalla visura)",
+   "correzioni": [
+    {
+     "fino": 70,
+     "perc": 10,
+     "tetto": 70
+    },
+    {
+     "da": 100.01,
+     "fino": 120,
+     "incluso": true,
+     "perc": -10,
+     "minimo": 100
+    },
+    {
+     "da": 120.01,
+     "fino": 140,
+     "incluso": true,
+     "perc": -15,
+     "minimo": 107
+    },
+    {
+     "da": 140.01,
+     "fino": 1000000,
+     "perc": -20,
+     "minimo": 118
+    }
+   ],
+   "voci": [],
+   "nota": "Superficie convenzionale secondo il D.P.R. 138/1998 (la superficie catastale della visura). Sotto i 70 mq si aumenta del 10% (fino a 70 mq); oltre 100 mq si riduce del 10% (non sotto 100 mq), oltre 120 mq del 15% (non sotto 107 mq), oltre 140 mq del 20% (non sotto 118 mq)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "testo": "Immobile arredato (agevolati: aumento fino al 10%; transitori: arredo adeguato all'uso, +10%)",
+    "nome": "arredato",
+    "perc": 10,
+    "ammobiliato": true
+   },
+   {
+    "chiave": "vincolato",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato o di pregio dell'art. 1, comma 2, lettera a) della legge 431/1998",
+    "nome": "immobile dell'art. 1, c. 2, lett. a, L. 431/98",
+    "perc": 15
+   },
+   {
+    "chiave": "carenze",
+    "tipo": "spunta",
+    "testo": "Alloggio senza servizi igienici interni, oppure non allacciato alla rete fognaria o a un impianto fognario",
+    "nome": "senza servizi igienici interni o fognatura",
+    "perc": 0,
+    "mostra_perc": false
+   }
+  ],
+  "tetto_minimo": {
+   "chiave": "carenze",
+   "perc": 10,
+   "avviso": "Senza servizi igienici interni o senza allacciamento alla fognatura il canone va dal minimo della fascia al minimo aumentato del 10% (scheda F)."
+  },
+  "nota_maggiorazioni": "Arredo e immobile dell'art. 1, comma 2, lett. a) si sommano. Le altre caratteristiche (stato di manutenzione dell'alloggio e dello stabile) servono solo a scegliere il valore fra minimo e massimo.",
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "zone": [
+     "D"
+    ],
+    "testo": "Nella scheda B dell'accordo la zona D riporta due massimi diversi: 50.000 lire al mq nel riepilogo e 60.000 nella tipologia a. Qui si usa il più basso (€ 25,82 al mq all'anno): prima di superarlo chiedi conferma a un'associazione firmataria."
+   },
+   {
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Contratti transitori: stessi valori degli agevolati. Serve un'esigenza transitoria del proprietario o dell'inquilino elencata nell'accordo (punto 2), scritta nel contratto e documentata."
+   },
+   {
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "L'accordo di Olbia non prevede i contratti per studenti universitari: scegli il contratto agevolato o il transitorio."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Schede B e F",
+  "titolo": "Scheda per la determinazione del canone",
+  "sottotitolo": "Accordo territoriale del Comune amministrativo di Olbia in attuazione della L. 431/1998 e del D.M. 5 marzo 1999, depositato al Comune di Olbia il 04/10/2000 (prot. n. 44685)",
+  "titolo_superficie": "SUPERFICIE CONVENZIONALE (D.P.R. 138/1998)",
+  "titolo_elementi": "Elementi tipologici dell'immobile (scheda F)",
+  "dichiarazione": "Le parti dichiarano che gli elementi sopra indicati corrispondono alle caratteristiche dell'immobile e che il canone è stato determinato all'interno della subfascia di oscillazione della zona, secondo l'Accordo territoriale del Comune di Olbia.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "nota_zone": "Zone omogenee della scheda A: A semicentrale estensiva e B centro storico (microzona 1), C Porto Rotondo - Portisco (microzone 3-4), D rurale San Pantaleo - Berchiddeddu (microzone 5-6), E industriale - artigianale (microzona 2). Valori della scheda B in lire, convertiti in euro."
+ }
+}

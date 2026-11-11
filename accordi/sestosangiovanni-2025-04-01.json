@@ -1,0 +1,199 @@
+{
+ "accordo": {
+  "codice": "sestosangiovanni-2025-04-01",
+  "modello": "sestosangiovanni-2025",
+  "comune": "Sesto San Giovanni",
+  "provincia": "MI",
+  "titolo": "Accordo locale per il Comune di Sesto San Giovanni",
+  "data": "2025-04-01",
+  "data_testo": "1° aprile 2025",
+  "deposito": "Comune di Sesto San Giovanni",
+  "deposito_data": "01.04.2025",
+  "protocollo": "0036548/2025",
+  "ufficio": "Comune di Sesto San Giovanni",
+  "ufficio_breve": "Comune di Sesto San Giovanni",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Sesto San Giovanni: accordo locale del 1° aprile 2025, depositato in Comune lo stesso giorno.</strong> Vale dal deposito finché non arriva un nuovo decreto ministeriale (art. 14). Dal 1° aprile 2028, se non sarà aggiornato, minimi e massimi si aumenteranno con l'intera variazione ISTAT. A Sesto è in vigore anche un secondo accordo, del 2024, firmato da altre associazioni (Assocasa Lombardia, Confabitare, Unioncasa e altre), con zone e valori diversi: questa scheda segue quello del 2025, firmato da Assoedilizia, SUNIA, UPPI, ASPPI, CONFAPPI, APPC e CONIA. L'attestazione va chiesta a un'associazione firmataria dell'accordo che si usa.",
+  "firmatari_proprieta": [
+   "ASSOEDILIZIA (aderente a CONFEDILIZIA)",
+   "U.P.P.I.",
+   "A.S.P.P.I.",
+   "A.P.P.C.",
+   "A.P.P.C. Scarlatti",
+   "CONFAPPI"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "CONIA"
+  ],
+  "nota": "Firmato a Milano, Largo Augusto 8, il 01/04/2025 e depositato al Comune di Sesto San Giovanni lo stesso giorno (protocollo n. 0036548/2025 del 01/04/2025, timbro sulla copia pubblicata). Sostituisce dal deposito l'accordo del 27/04/2017. Nel testo compaiono fra le parti anche SICET e UNIAT, ma sulla pagina delle firme le loro firme non ci sono; il Comune elenca fra i firmatari anche F.E.N.I.T., che nel testo non compare. Quattro zone (allegato 1, con mappe ed elenco delle vie), tre sub-fasce secondo gli elementi A, B e C; con almeno 5 elementi D si può applicare il massimo della sub-fascia. Valori annui al mq (allegato 2). Arredo fino a +15% (semi arredato fino a +8%), durata oltre i 3 anni da +3% a +10%, classe energetica G -1%: variazioni cumulabili. Superficie catastale; fra 28 e 50 mq +10% fino a 50 mq. Nello stesso Comune vale anche l'accordo del 07/03/2024 (depositato il 13/03/2024, prot. 0028757), firmato da altre associazioni, qui non modellato.",
+  "fonte": "Comune di Sesto San Giovanni, pagine 'Accordo locale 2025' e 'Accordo locale: affitto a canone concordato' (aggiornate ad agosto 2025): accordo in scansione di 60 pagine con mappe e vie delle zone, tabella dei canoni (allegato 2), contratti tipo e modello di richiesta e attestazione (allegato 8)."
+ },
+ "esempio_zona": "la zona dall'elenco delle vie dell'allegato 1",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Comune, Marelli",
+    "nota": "Zona 1 - Comune, Marelli: il centro fra la ferrovia e viale Edison, dal confine con Milano fino a via Mazzini e via Falck (piazza della Resistenza, viale Gramsci, viale Italia, viale Marelli). Un edificio attraversato dal confine sta nella zona di valore più alto. Valori in euro al mq all'anno.",
+    "fasce": [
+     [72, 90],
+     [91, 110],
+     [111, 130]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Rondò, Rondinella, Stazione",
+    "nota": "Zona 2 - Rondò, Rondinella, Stazione: a ovest della ferrovia, a nord di piazza Quattro Novembre e di via Fratelli Bandiera, fino ai confini con Monza e Cinisello Balsamo. Un edificio attraversato dal confine sta nella zona di valore più alto. Valori in euro al mq all'anno.",
+    "fasce": [
+     [60, 77],
+     [78, 96],
+     [97, 115]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Pelucca, Cascina Gatti, Parpagliona",
+    "nota": "Zona 3 - Pelucca, Cascina Gatti, Parpagliona: a est di viale Edison, via Falck e via Mazzini, fino al Lambro (Cologno Monzese) e ai confini con Monza e Milano. Un edificio attraversato dal confine sta nella zona di valore più alto. Valori in euro al mq all'anno.",
+    "fasce": [
+     [50, 62],
+     [63, 81],
+     [82, 100]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Torretta",
+    "nota": "Zona 4 - Torretta: a ovest della ferrovia, a sud di via Fratelli Bandiera e di viale Fulvio Testi, fino ai confini con Milano e Bresso. Un edificio attraversato dal confine sta nella zona di valore più alto. Valori in euro al mq all'anno.",
+    "fasce": [
+     [40, 57],
+     [58, 76],
+     [77, 95]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "Sub-fascia 1",
+    "Sub-fascia 2",
+    "Sub-fascia 3"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {"da": 0, "a": 3, "tutti": true},
+     {"da": 4, "a": 6, "n": 1}
+    ],
+    [
+     {"da": 0, "a": 3, "tutti": true},
+     {"da": 4, "a": 6, "n": 1},
+     {"da": 7, "a": 15, "n": 3}
+    ]
+   ],
+   "conta": {"da": 16, "a": 25},
+   "nota": "Sub-fascia 2: tutti gli elementi A e almeno un elemento B. Sub-fascia 3: in più almeno 3 elementi C. Se manca anche un solo elemento A (per esempio riscaldamento a stufe nelle singole stanze) si resta nella Sub-fascia 1. Con almeno 5 elementi D si può applicare il massimo della sub-fascia. Il numero accanto alla sub-fascia conta gli elementi D.",
+   "nota_pdf": "Sub-fascia 1: manca un elemento A, o riscaldamento con stufe nei singoli locali. Sub-fascia 2: tutti gli A e almeno un B (e meno di 3 C). Sub-fascia 3: tutti gli A, almeno un B e tre C. Con almeno cinque elementi D si può applicare il valore massimo della sub-fascia (art. 4.1 b)."
+  },
+  "titoli_elementi": [
+   {"da": 0, "titolo": "Elementi di tipo A: servono tutti (se ne manca uno, Sub-fascia 1)"},
+   {"da": 4, "titolo": "Elementi di tipo B: ne serve almeno uno"},
+   {"da": 7, "titolo": "Elementi di tipo C: almeno 3 per la Sub-fascia 3"},
+   {"da": 16, "titolo": "Elementi di tipo D: con almeno 5 si può arrivare al massimo"}
+  ],
+  "elementi": [
+   {"testo": "A1 - Bagno interno completo (tazza, lavabo, vasca o doccia) con almeno una finestra o aerazione meccanica"},
+   {"testo": "A2 - Impianti essenziali funzionanti: acqua potabile, predisposizione per lo scaldabagno in bagno, impianto elettrico, impianto del gas"},
+   {"testo": "A3 - Impianti, esalazioni e scarichi a norma di igiene e sicurezza alla firma del contratto"},
+   {"testo": "A4 - Riscaldamento centralizzato o autonomo (non segnare se ci si scalda con stufe nelle singole stanze)"},
+   {"testo": "B1 - Cucina abitabile con almeno una finestra"},
+   {"testo": "B2 - Ascensore, per gli alloggi dal 2° piano in su"},
+   {"testo": "B3 - Alloggio in stato di manutenzione normale (impianti, infissi, pavimenti, pareti e soffitti)"},
+   {"testo": "C1 - Doppio bagno, almeno uno completo e con finestra o aerazione meccanica"},
+   {"testo": "C2 - Box o posto auto coperto (esclusivo o in comune) affittato all'inquilino"},
+   {"testo": "C3 - Giardino condominiale"},
+   {"testo": "C4 - Alloggio in buono stato di manutenzione (impianti, infissi, pavimenti, pareti e soffitti)"},
+   {"testo": "C5 - Palazzo in stato di manutenzione normale (impianti comuni, facciate, tetto, scale e spazi comuni)"},
+   {"testo": "C6 - Porta blindata o doppi vetri"},
+   {"testo": "C7 - Vicino ai servizi: treno o mezzi pubblici, negozi, servizi sociali"},
+   {"testo": "C8 - Lavori di manutenzione con pratica in Comune negli ultimi 10 anni"},
+   {"testo": "C9 - Nessuna fonte particolare di inquinamento ambientale o acustico"},
+   {"testo": "D1 - Balconi o terrazzo"},
+   {"testo": "D2 - Cantina o soffitta affittata all'inquilino"},
+   {"testo": "D3 - Costruito da meno di 30 anni, oppure immobile di pregio (anche se non vincolato)"},
+   {"testo": "D4 - Domotica per elettrodomestici o climatizzazione"},
+   {"testo": "D5 - Giardino privato o spazio esterno in uso esclusivo"},
+   {"testo": "D6 - Posto auto scoperto affittato all'inquilino"},
+   {"testo": "D7 - Videocitofono"},
+   {"testo": "D8 - Terrazza di oltre 20 mq"},
+   {"testo": "D9 - Classe energetica A, B o C"},
+   {"testo": "D10 - Lavori di manutenzione con pratica in Comune negli ultimi 5 anni"}
+  ],
+  "superficie": {
+   "base": "Appartamento (o parte affittata): superficie catastale dalla visura",
+   "correzioni": [
+    {"da": 28, "fino": 50, "incluso": true, "perc": 10, "tetto": 50}
+   ],
+   "voci": [
+    {"chiave": "autorimessa", "testo": "Box singolo (50%)", "coeff": 0.5},
+    {"chiave": "posto_auto", "testo": "Posto auto in cortile (25%)", "coeff": 0.25},
+    {"chiave": "balconi", "testo": "Balconi, terrazze, lastrici solari (30%)", "coeff": 0.3},
+    {"chiave": "cantine", "testo": "Cantine e soffitte non comunicanti (25%)", "coeff": 0.25},
+    {"chiave": "scoperta", "testo": "Area scoperta in uso esclusivo (10%)", "coeff": 0.1}
+   ],
+   "nota": "Si usa la superficie catastale dell'appartamento (visura, DPR 138/98), più box, posto auto, balconi, cantine e area scoperta con le percentuali del modello di attestazione. Fra 28 e 50 mq la superficie dell'appartamento si aumenta del 10%, ma non oltre 50 mq. Se affitti solo una parte dell'alloggio o singole stanze, conta la parte affittata più la quota delle parti in comune (art. 7). Una differenza di misura entro il 4% non cambia il canone."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Alloggio arredato",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {"valore": "completo", "testo": "completamente arredato, con mobili in buono stato ed elettrodomestici funzionanti (fino a +15%)", "breve": "completamente arredato", "perc": 15},
+     {"valore": "semi", "testo": "semi arredato: cucina con elettrodomestici funzionanti e zona giorno (fino a +8%)", "breve": "semi arredato", "perc": 8}
+    ]
+   },
+   {
+    "chiave": "classe_g",
+    "tipo": "spunta",
+    "testo": "Classe energetica G (APE)",
+    "nome": "classe energetica G",
+    "perc": -1
+   }
+  ],
+  "durata": {"4": 3, "5": 5, "6": 8, "7": 10},
+  "durate": [3, 4, 5, 6, 7],
+  "durata_max": 7,
+  "combinazione": "prodotto",
+  "nota_maggiorazioni": "Arredo, durata e classe G aumentano o riducono il minimo e il massimo della sub-fascia e si cumulano: qui sono applicati uno sull'altro, come nel calcolatore di Assoedilizia per l'accordo di Milano, che ha lo stesso modello. Durata: 4 anni +3%, 5 anni +5%, 6 anni +8%, più di 6 anni +10% (solo contratti agevolati).",
+  "avvisi": [
+   {"fascia": [0, 1, 2, 3, 4], "testo": "Meno di 5 elementi D: l'accordo consente il valore massimo della sub-fascia solo con almeno 5 elementi D. Tieni il canone sotto il massimo indicato."},
+   {"testo": "Il canone può essere più basso del minimo della sub-fascia, se le parti sono d'accordo; sotto il minimo della zona solo con l'assistenza di un'associazione dei proprietari e di un sindacato degli inquilini (art. 4.1 d)."},
+   {"contratti": ["transitorio"], "testo": "Transitorio (fino a 18 mesi): serve un motivo previsto dall'accordo e documentato, per esempio trasferimento temporaneo di lavoro, matrimonio o separazione, formazione, assistenza a un familiare, casa in arrivo entro 18 mesi, accoglienza temporanea da parte di associazioni, o un altro evento certo a data fissa (art. 5.2). Per i contratti fino a 30 giorni il canone è libero."},
+   {"contratti": ["studenti"], "testo": "Contratto per studenti universitari (da 6 a 36 mesi): nel contratto va scritto che lo studente può recedere con 2 mesi di preavviso, con raccomandata, se interrompe gli studi (art. 6.2)."}
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 8",
+  "titolo": "Richiesta di attestazione bilaterale",
+  "sottotitolo": "Accordo locale per il Comune di Sesto San Giovanni del 01/04/2025, depositato in Comune il 01/04/2025 (prot. n. 0036548/2025)",
+  "titolo_superficie": "SUPERFICIE (da visura catastale)",
+  "titolo_elementi": "Caratteristiche dell'immobile (elementi A, B, C, D)",
+  "etichetta_conteggio": "ELEMENTI DI TIPO D n.",
+  "dichiarazione": "Il locatore e il conduttore dichiarano che i dati sopra comunicati sono stati dagli stessi rilevati e verificati. Pertanto, riconoscendo che l'Attestazione sarà rilasciata, secondo quanto previsto dal D.M. 16/01/2017, sulla base di quanto dichiarato dagli stessi, sollevano espressamente le Organizzazioni da qualsiasi responsabilità derivante da errori, omissioni o asseverazioni non veritiere ai dati dichiarati nel presente atto.",
+  "firme": ["Il dichiarante", "Il dichiarante"],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione …………………… in persona di …………………… e l'Organizzazione …………………… in persona di ……………………, firmatarie dell'Accordo territoriale per il Comune di Sesto San Giovanni, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTANO che i contenuti economici, che rientrano nei valori da …………… a …………… della zona di appartenenza dell'immobile (zona ……), e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Sesto San Giovanni depositato in data 01/04/2025."
+  ],
+  "firme_attestazione": ["L'Organizzazione proprietari", "L'Organizzazione conduttori"],
+  "nota_zone": "La zona si ricava dalle mappe e dall'elenco delle vie dell'allegato 1: Zona 1 Comune - Marelli, Zona 2 Rondò - Rondinella - Stazione, Zona 3 Pelucca - Cascina Gatti - Parpagliona, Zona 4 Torretta. Un edificio attraversato dal confine sta nella zona di valore più alto."
+ }
+}

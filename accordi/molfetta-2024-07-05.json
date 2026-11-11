@@ -1,0 +1,683 @@
+{
+ "accordo": {
+  "codice": "molfetta-2024-07-05",
+  "modello": "molfetta-2024",
+  "comune": "Molfetta",
+  "provincia": "BA",
+  "titolo": "Accordo territoriale per il Comune di Molfetta",
+  "data": "2024-07-05",
+  "data_testo": "5 luglio 2024",
+  "deposito": "Comune di Molfetta",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "Comune di Molfetta - Ripartizione Patrimonio",
+  "ufficio_breve": "Comune di Molfetta",
+  "valido_fino": "2027-07-04",
+  "firmatari_proprieta": [
+   "APPC",
+   "ASSEDIL/CONFEDILIZIA",
+   "ASPPI",
+   "CONFABITARE",
+   "UPPI"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET CISL",
+   "UNIAT UIL",
+   "ASSOCASA",
+   "SAI CISAL"
+  ],
+  "nota": "Stipulato il 05/07/2024 nella sede comunale di Molfetta (Ripartizione Patrimonio), alla presenza del sindaco. Dura tre anni e decorre dal 05/07/2024; le fasce non si aggiornano all'ISTAT. Sostituisce l'accordo dell'08/02/2004, che resta valido per i contratti in corso. Il Comune ne ha dato notizia a luglio 2024 come accordo depositato; data e protocollo di deposito non risultano dal testo pubblicato. 5 zone per fogli di mappa catastale (allegato 1), elementi da contare (30 nelle zone 1, 2 e 4, 28 nelle zone 3 e 5), fasce D, C, B, A nelle zone 2, 3 e 4 e C, B, A nelle zone 1 e 5, valori mensili al mq di superficie convenzionale.",
+  "fonte": "PDF dell'accordo con allegati 1-5 (51 pagine, versione Word non firmata) pubblicato dal SUNIA Puglia nella pagina 'Contratti concordati' (provincia di Bari); lo stesso accordo è pubblicato dal Comune di Molfetta tra gli avvisi pubblici."
+ },
+ "esempio_zona": "la zona dal foglio di mappa catastale (visura)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "scelta",
+  "tabella_chiave": "arredo",
+  "tabella_predefinita": "3",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - foglio 55",
+    "nota": "Zona 1: foglio di mappa catastale 55 (allegato 1; il foglio è nella visura catastale). Valori in euro al mq al mese. Tre fasce: C fino a 5 elementi, B da 6 a 10, A oltre 10 (da 11).",
+    "fasce": {
+     "3": [
+      [
+       3.5,
+       4.28
+      ],
+      [
+       3.5,
+       4.28
+      ],
+      [
+       4.3,
+       5.46
+      ],
+      [
+       5.47,
+       6.33
+      ]
+     ],
+     "parz_ok": [
+      [
+       3.5,
+       4.28
+      ],
+      [
+       5.47,
+       6.33
+      ],
+      [
+       5.47,
+       6.33
+      ],
+      [
+       5.47,
+       6.33
+      ]
+     ],
+     "tot_ok": [
+      [
+       3.5,
+       4.28
+      ],
+      [
+       5.47,
+       6.963
+      ],
+      [
+       5.47,
+       6.963
+      ],
+      [
+       5.47,
+       6.33
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - fogli 9, 10",
+    "nota": "Zona 2: fogli di mappa catastale 9 e 10 (allegato 1; il foglio è nella visura catastale). Valori in euro al mq al mese. D fino a 6 elementi, C da 7 a 9, B da 10 a 12, A da 13.",
+    "fasce": {
+     "3": [
+      [
+       3.72,
+       4.66
+      ],
+      [
+       4.67,
+       5.47
+      ],
+      [
+       5.48,
+       6.23
+      ],
+      [
+       6.24,
+       7.8
+      ]
+     ],
+     "parz_ok": [
+      [
+       3.72,
+       4.66
+      ],
+      [
+       6.24,
+       7.8
+      ],
+      [
+       6.24,
+       7.8
+      ],
+      [
+       6.24,
+       7.8
+      ]
+     ],
+     "tot_ok": [
+      [
+       3.72,
+       4.66
+      ],
+      [
+       6.24,
+       8.58
+      ],
+      [
+       6.24,
+       8.58
+      ],
+      [
+       6.24,
+       7.8
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - fogli 16-18, 25, 26",
+    "nota": "Zona 3: fogli di mappa catastale 16, 17, 18, 25 e 26 (allegato 1; il foglio è nella visura catastale). Valori in euro al mq al mese. D fino a 5 elementi, C da 6 a 7, B da 8 a 11, A da 12.",
+    "fasce": {
+     "3": [
+      [
+       3.88,
+       4.26
+      ],
+      [
+       4.27,
+       5.03
+      ],
+      [
+       5.04,
+       5.42
+      ],
+      [
+       5.43,
+       6.5
+      ]
+     ],
+     "parz_ok": [
+      [
+       3.88,
+       4.26
+      ],
+      [
+       5.43,
+       6.5
+      ],
+      [
+       5.43,
+       6.5
+      ],
+      [
+       5.43,
+       6.5
+      ]
+     ],
+     "tot_ok": [
+      [
+       3.88,
+       4.26
+      ],
+      [
+       5.43,
+       7.15
+      ],
+      [
+       5.43,
+       7.15
+      ],
+      [
+       5.43,
+       6.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - fogli 8, 54",
+    "nota": "Zona 4: fogli di mappa catastale 8 e 54 (allegato 1; il foglio è nella visura catastale). Valori in euro al mq al mese. D fino a 6 elementi, C da 7 a 9, B da 10 a 12, A da 13.",
+    "fasce": {
+     "3": [
+      [
+       4.3,
+       5.06
+      ],
+      [
+       5.07,
+       5.46
+      ],
+      [
+       5.47,
+       6.23
+      ],
+      [
+       6.24,
+       7.02
+      ]
+     ],
+     "parz_ok": [
+      [
+       4.3,
+       5.06
+      ],
+      [
+       6.24,
+       7.02
+      ],
+      [
+       6.24,
+       7.02
+      ],
+      [
+       6.24,
+       7.02
+      ]
+     ],
+     "tot_ok": [
+      [
+       4.3,
+       5.06
+      ],
+      [
+       6.24,
+       7.722
+      ],
+      [
+       6.24,
+       7.722
+      ],
+      [
+       6.24,
+       7.02
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "5",
+    "nome": "Zona 5 - fogli 1-7, 11-15, 19-24, 27-52",
+    "nota": "Zona 5: fogli di mappa catastale da 1 a 7, da 11 a 15, da 19 a 24 e da 27 a 52 (allegato 1; il foglio è nella visura catastale). Valori in euro al mq al mese. Tre fasce: C fino a 5 elementi, B da 8, A da 10. L'accordo non dice in che fascia vanno 6 o 7 elementi: il calcolo li mette in C.",
+    "fasce": {
+     "3": [
+      [
+       3.67,
+       4.05
+      ],
+      [
+       3.67,
+       4.05
+      ],
+      [
+       4.06,
+       4.71
+      ],
+      [
+       4.72,
+       5.46
+      ]
+     ],
+     "parz_ok": [
+      [
+       3.67,
+       4.05
+      ],
+      [
+       4.72,
+       5.46
+      ],
+      [
+       4.72,
+       5.46
+      ],
+      [
+       4.72,
+       5.46
+      ]
+     ],
+     "tot_ok": [
+      [
+       3.67,
+       4.05
+      ],
+      [
+       4.72,
+       6.006
+      ],
+      [
+       4.72,
+       6.006
+      ],
+      [
+       4.72,
+       5.46
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "D",
+    "C",
+    "B",
+    "A"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    6,
+    9,
+    12
+   ],
+   "soglie_zona": {
+    "1": [
+     -1,
+     5,
+     10
+    ],
+    "3": [
+     5,
+     7,
+     11
+    ],
+    "5": [
+     -1,
+     7,
+     9
+    ]
+   },
+   "conta": {
+    "da": 0,
+    "a": 29
+   },
+   "nomi_per_tabella": {
+    "parz_ok": [
+     "D",
+     "A (era C)",
+     "A (era B)",
+     "A"
+    ],
+    "tot_ok": [
+     "D",
+     "A (era C)",
+     "A (era B)",
+     "A"
+    ]
+   },
+   "nota_soglie": "Contano gli elementi da 1 a 30 (nelle zone 3 e 5 il 2 e il 3 non ci sono)"
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi per la determinazione della fascia (allegato 1): segna quelli presenti"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Appartamento dal 1° piano fuori terra in su"
+   },
+   {
+    "testo": "Ingresso dell'alloggio da piazza o dal mare (solo zone 1, 2 e 4)",
+    "zone": [
+     "1",
+     "2",
+     "4"
+    ]
+   },
+   {
+    "testo": "Balcone con vista su piazza o sul mare (solo zone 1, 2 e 4)",
+    "zone": [
+     "1",
+     "2",
+     "4"
+    ]
+   },
+   {
+    "testo": "Allacciamento al gas metano"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Secondo servizio igienico"
+   },
+   {
+    "testo": "Spazi esterni a uso esclusivo e/o condominiale"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Cantina o soffitta o giardino privato o terrazza a livello"
+   },
+   {
+    "testo": "Posto auto di pertinenza e/o condominiale assegnato"
+   },
+   {
+    "testo": "Box auto"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Portierato"
+   },
+   {
+    "testo": "Videosorveglianza condominiale o individuale"
+   },
+   {
+    "testo": "Impianto fotovoltaico o pannelli solari per l'acqua calda"
+   },
+   {
+    "testo": "Citofono"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Autoclave"
+   },
+   {
+    "testo": "Impianto elettrico interno a norma (D.M. 37/2008)"
+   },
+   {
+    "testo": "Attico"
+   },
+   {
+    "testo": "Ripostiglio"
+   },
+   {
+    "testo": "Parquet"
+   },
+   {
+    "testo": "Ricarica per auto elettriche nel box o nel posto auto (esclusivo o condominiale) del conduttore, o antenna satellitare"
+   },
+   {
+    "testo": "Cucina abitabile di almeno 9 mq con finestra"
+   },
+   {
+    "testo": "Sistemi di sicurezza, allarme"
+   },
+   {
+    "testo": "Domotica in almeno metà dell'alloggio"
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato o pompa di calore"
+   },
+   {
+    "testo": "Infissi interni ed esterni in buono stato"
+   },
+   {
+    "testo": "Cassaforte"
+   },
+   {
+    "testo": "Doppio ingresso o cortile/giardino recintato"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile interna, non catastale (senza i vani alti meno di 1,70 m)",
+   "voci": [
+    {
+     "chiave": "basse",
+     "testo": "Vani con altezza inferiore a 1,70 m",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa singola a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_accatastato",
+     "testo": "Posto auto accatastato in area condominiale scoperta",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto non accatastato in area condominiale scoperta",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazze, cortili, cantine, soffitte e accessori simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Superficie scoperta a uso esclusivo del conduttore",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota millesimale dell'alloggio)",
+     "coeff": 0.1
+    }
+   ],
+   "scaglioni_totale": [
+    {
+     "oltre": 130,
+     "perc": 50
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 45,
+     "perc": 20,
+     "limite": 45
+    },
+    {
+     "fino": 70,
+     "perc": 20,
+     "limite": 70
+    }
+   ],
+   "etichetta_correzione": "convenzionale",
+   "nota": "Superficie convenzionale (punto 2 delle norme comuni): superficie utile (non catastale) al 100%, vani alti meno di 1,70 m al 50%; autorimessa singola esclusiva 50%; posto auto in area condominiale scoperta 50% se accatastato, 25% se no; balconi, terrazze, cortili, cantine, soffitte e simili 25%; superficie scoperta esclusiva 15%; verde condominiale 10% della quota millesimale. Oltre 130 mq la parte in più conta il 50%. Fino a 45 mq la superficie si moltiplica per 1,20 (al massimo 45 mq); da 46 a 70 mq per 1,20 (al massimo 70 mq). È ammessa una tolleranza del 4% in più o in meno sulla superficie convenzionale. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie della parte locata, contando anche le parti condivise (punto 5)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "ape",
+    "tipo": "scelta",
+    "testo": "Classe energetica (dall'APE)",
+    "nome": "classe energetica",
+    "nessuna": "classe G o senza APE",
+    "opzioni": [
+     {
+      "valore": "A",
+      "testo": "A (A1, A2, A3, A4)",
+      "perc": 5
+     },
+     {
+      "valore": "BF",
+      "testo": "B, C, D, E o F",
+      "perc": 3
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Alloggio ammobiliato (arredi elencati nell'accordo)",
+    "nome": "Alloggio",
+    "nessuna": "non ammobiliato",
+    "nessuna_breve": "non ammobiliato",
+    "ammobiliato": true,
+    "mostra_perc": false,
+    "fasce": [
+     3
+    ],
+    "opzioni": [
+     {
+      "valore": "parz",
+      "testo": "parzialmente ammobiliato",
+      "breve": "parzialmente ammobiliato (in fascia A +10%)",
+      "perc": 10
+     },
+     {
+      "valore": "parz_ok",
+      "testo": "parzialmente ammobiliato, con riscaldamento, autoclave e infissi in buono stato",
+      "breve": "parzialmente ammobiliato, con i requisiti: da B o C in fascia A",
+      "perc": 10
+     },
+     {
+      "valore": "tot",
+      "testo": "totalmente ammobiliato",
+      "breve": "totalmente ammobiliato (in fascia A +20%)",
+      "perc": 20
+     },
+     {
+      "valore": "tot_ok",
+      "testo": "totalmente ammobiliato, con riscaldamento, autoclave e infissi in buono stato",
+      "breve": "totalmente ammobiliato, con i requisiti: da B o C in A, massimo +10%",
+      "perc": 20
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Classe energetica (punto 3): A (A1-A4) +5%, B, C, D, E o F +3%, per tutti i contratti e in tutte le zone. Arredo (allegato 1): in fascia A +10% se parzialmente ammobiliato, +20% se totalmente. Un alloggio che per i suoi elementi sarebbe in fascia B o C passa in fascia A se è ammobiliato e ha riscaldamento, autoclave e infissi in buono stato: senza aumento se parzialmente ammobiliato, con un aumento massimo del 10% (sul massimo della fascia A) se totalmente. Nelle zone 2, 3 e 4 la fascia D non passa in A. Totalmente ammobiliato (allegato 3): cucina (pensili o credenza, frigorifero, cucina, tavolo con sedie, scolapiatti e stoviglie), camera da letto (letto con materasso, comodino, armadio, sedia), per studenti scrivania con sedia e libreria, soggiorno (tavolo con sedie, vetrinetta o mobiletto), bagno arredato; parzialmente: solo una parte di questi arredi. Durata (solo agevolati): 4 anni +5%, 5 anni +7%, 6 anni o più +12%, anche per le proroghe. Gli aumenti si applicano uno dopo l'altro (punto 4). Il canone, se il locatore non sceglie la cedolare secca, si può aggiornare ogni anno al 75% dell'ISTAT.",
+  "durata": {
+   "4": 5,
+   "5": 7,
+   "6": 12
+  },
+  "combinazione": "prodotto",
+  "avvisi": [
+   {
+    "zone": [
+     "5"
+    ],
+    "fascia": [
+     6,
+     7
+    ],
+    "testo": "Zona 5: l'accordo indica la fascia C fino a 5 elementi e la B da 8; con 6 o 7 elementi non dice nulla. Il calcolo usa la fascia C: fatti confermare la fascia dall'associazione che attesta il contratto."
+   },
+   {
+    "testo": "L'attestazione di rispondenza di una delle organizzazioni firmatarie è obbligatoria per le agevolazioni fiscali, se il contratto non è assistito (punto 6 dell'accordo)."
+   },
+   {
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Contratto per studenti: l'accordo lo prevede per studenti iscritti a un corso universitario o post-laurea (anche Erasmus e AFAM) in un comune diverso da quello di residenza; durata da 6 mesi a 3 anni."
+   },
+   {
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Contratto transitorio: durata da 1 a 18 mesi, con una delle esigenze del locatore o del conduttore elencate nell'accordo, da indicare nel contratto."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 1",
+  "titolo": "Determinazione del canone di locazione e fasce di oscillazione",
+  "sottotitolo": "Accordo territoriale per il Comune di Molfetta del 05/07/2024, in vigore dal 05/07/2024",
+  "titolo_superficie": "SUPERFICIE CONVENZIONALE (punto 2 dell'accordo)",
+  "titolo_elementi": "Elementi per la determinazione della fascia del canone di locazione",
+  "etichetta_conteggio": "ELEMENTI PRESENTI",
+  "dichiarazione": "Le parti contrattuali dichiarano, sotto la propria responsabilità, gli elementi oggettivi e i criteri sopra riportati (punto 1 dell'accordo e allegato 1); restano uniche responsabili della veridicità delle dichiarazioni rese (punto 6).",
+  "firme": [
+   "Il Locatore",
+   "Il Conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA (D.M. 16/01/2017)",
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Molfetta del 05/07/2024, verificati la conformità e la rispondenza del contenuto economico e normativo del contratto ai parametri dell'Accordo, sulla base degli elementi dichiarati dalle parti, anche ai fini delle agevolazioni fiscali,",
+   "ATTESTA che il contratto è conforme all'Accordo territoriale vigente per il Comune di Molfetta (punto 6 dell'Accordo e D.M. 16/01/2017).",
+   "Molfetta, lì ……………"
+  ],
+  "firme_attestazione": [
+   "P. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dal foglio di mappa catastale dell'immobile (nella visura). Zona 1: foglio 55. Zona 2: fogli 9 e 10. Zona 3: fogli 16, 17, 18, 25, 26. Zona 4: fogli 8 e 54. Zona 5: fogli 1-7, 11-15, 19-24, 27-52. Il foglio 53 (e gli eventuali fogli oltre il 55) non è elencato: chiedi all'associazione che attesta il contratto."
+ }
+}

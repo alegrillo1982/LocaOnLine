@@ -1,0 +1,670 @@
+{
+ "accordo": {
+  "codice": "imola-2024-03-27",
+  "modello": "imola-2024",
+  "comune": "Imola",
+  "provincia": "BO",
+  "titolo": "Accordo applicabile nel territorio metropolitano di Bologna",
+  "data": "2024-03-27",
+  "data_testo": "27 marzo 2024",
+  "deposito": "Città metropolitana di Bologna, P.G. 20926 del 28/03/2024",
+  "deposito_data": "28.03.2024",
+  "protocollo": "20926/2024",
+  "ufficio": "Città metropolitana di Bologna",
+  "ufficio_breve": "Città metropolitana di Bologna",
+  "valido_fino": "2027-03-31",
+  "nota_validita": "Art. 16: valido fino al 31/03/2027 e comunque fino al nuovo accordo; si applica ai contratti firmati dal 1/4/2024.",
+  "firmatari_proprieta": [
+   "ASPPI",
+   "UPPI",
+   "CONFABITARE",
+   "AIPI-CONFAPPI",
+   "APPC",
+   "UNIONCASA",
+   "APE",
+   "APIB FEDERPROPRIETA'"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET",
+   "UNIAT",
+   "UNIONE INQUILINI",
+   "ASSOCASA",
+   "APIAB-CONIA",
+   "FEDER.CASA",
+   "AIDA"
+  ],
+  "nota": "Accordo unico per tutti i comuni della Città metropolitana di Bologna, firmato il 27/03/2024 e depositato il 28/03/2024 (P.G. 20926), in vigore per i contratti dal 1/4/2024 fino al 31/03/2027 e comunque fino al nuovo (art. 16). Supera i vecchi accordi separati del Circondario Imolese. Per Imola valgono l'allegato 4 (tariffe dei comuni del Circondario Imolese) e l'allegato 8 (zone e fogli catastali): Imola pregio = Zona 1, Imola A = Zona 2, Imola B = Zona 3, Imola C = Zona 4. Integrazioni: 8/05/2024 (P.G. 32004 del 13/05/2024: allegati 3 e 7, non riguardano Imola) e 25/11/2024 (P.G. 77163: immobili sulle vie di confine, nuova esigenza transitoria per calamità naturali). Il canone si aggiorna ogni anno al massimo del 75% della variazione ISTAT.",
+  "fonte": "Città metropolitana di Bologna, pagina «Accordo territoriale relativo ai contratti di locazione a canone concordato»: testo firmato e protocollato, versione accessibile, allegati 4, 8 e 14-16, integrazioni del 13/05/2024 e del 25/11/2024. Confermato dalla pagina SUNIA degli accordi di Bologna."
+ },
+ "esempio_zona": "pregio, A, B o C (allegato 8, dal foglio catastale)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "tabella_per": "scelta",
+  "tabella_chiave": "vani",
+  "tabella_predefinita": "mono",
+  "fasce": {
+   "nomi": [
+    "minima",
+    "media",
+    "massima"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    3,
+    7
+   ]
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Parametri (art. 4): contano solo se installati a spese del proprietario"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Tipologia A/1, A/2, A/3, A/7, A/8 o A/9 (dalla visura catastale)"
+   },
+   {
+    "testo": "Autorimessa singola (accessibile, con corrente elettrica, affittata con l'abitazione)"
+   },
+   {
+    "testo": "Posto auto esclusivo, anche scoperto, regolarmente accatastato (affittato con l'abitazione)"
+   },
+   {
+    "testo": "Accesso fino al 1° piano o, se più in alto, con ascensore (seminterrato solo con area esclusiva collegata)"
+   },
+   {
+    "testo": "Riscaldamento autonomo (su tutta la casa, a norma, con libretto) o contacalorie se centralizzato, o a pavimento/parete"
+   },
+   {
+    "testo": "Porta blindata o sistema di allarme o cancello"
+   },
+   {
+    "testo": "Doppi vetri su almeno l'80% delle finestre"
+   },
+   {
+    "testo": "Condizionamento: impianto che serve almeno metà dei vani (non solo apparecchi portatili)"
+   },
+   {
+    "testo": "Area verde condominiale, prevalentemente erbosa e usabile dall'inquilino"
+   },
+   {
+    "testo": "Area verde esclusiva, prevalentemente erbosa e usabile dall'inquilino"
+   },
+   {
+    "testo": "Doppio servizio (il secondo bagno almeno con WC e lavabo)"
+   },
+   {
+    "testo": "Interventi di risparmio energetico documentati: APE almeno in classe D e APE precedente ai lavori"
+   },
+   {
+    "testo": "Cantina o soffitta"
+   },
+   {
+    "testo": "Cortile con possibilità di parcheggiare l'auto (anche a rotazione)"
+   },
+   {
+    "testo": "Balcone, terrazzo o lastrico solare a uso esclusivo"
+   },
+   {
+    "testo": "Costruito, o con recupero edilizio importante, dopo l'1/1/2013"
+   },
+   {
+    "testo": "Impianto fotovoltaico o pannelli solari per l'acqua calda"
+   },
+   {
+    "testo": "Barriere architettoniche abbattute (anche nelle parti condominiali)"
+   }
+  ],
+  "superficie": {
+   "base": "Alloggio: catastale -10% (con cantina) o -5% (senza), o interna",
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa esclusiva accatastata C/6 (50%)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_auto",
+     "testo": "Posto auto esclusivo (20%)",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "terrazzo",
+     "testo": "Terrazza o balcone esclusivo, solo se oltre 10 mq (10%)",
+     "coeff": 0.1,
+     "oltre_mq": 10
+    },
+    {
+     "chiave": "verde",
+     "testo": "Area verde esclusiva, solo se oltre 10 mq (10%)",
+     "coeff": 0.1,
+     "oltre_mq": 10
+    }
+   ],
+   "nota": "Per l'alloggio scrivi la superficie della visura catastale «totale escluse aree scoperte» già ridotta: meno il 10% se comprende la cantina o la soffitta, meno il 5% se no (per esempio 80 mq con cantina: 72 mq; senza cantina: 76 mq). Se la visura non la indica, usa la superficie interna misurata sulla planimetria, da muro a muro senza i muri esterni, senza balconi, cantine e parti alte meno di 1,60 m (senza riduzioni). Le pertinenze affittate con l'alloggio, se non hanno un contratto a parte, contano così: autorimessa C/6 50%, posto auto esclusivo 20%, terrazza o balcone e area verde esclusiva il 10% di tutta la metratura, ma solo se superano i 10 mq. Tolleranza del 5% in più o in meno. Per una porzione dell'alloggio il canone è la quota dell'intero pari ai mq calpestabili a uso esclusivo dell'inquilino divisi per tutti i mq calpestabili a uso esclusivo (suoi più quelli del proprietario o di altri inquilini)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "vani",
+    "tipo": "scelta",
+    "testo": "Vani abitabili: camere, soggiorno, studio, cucina, soppalco abitabile; almeno 9 mq con finestra, bagni esclusi (sceglie la riga della tabella)",
+    "nome": "vani abitabili",
+    "nessuna": "monolocale",
+    "nessuna_breve": "monolocale",
+    "opzioni": [
+     {
+      "valore": "2",
+      "testo": "2 vani",
+      "perc": 0
+     },
+     {
+      "valore": "3",
+      "testo": "3 vani",
+      "perc": 0
+     },
+     {
+      "valore": "4",
+      "testo": "4 vani",
+      "perc": 0
+     },
+     {
+      "valore": "5",
+      "testo": "5 vani",
+      "perc": 0
+     },
+     {
+      "valore": "oltre5",
+      "testo": "oltre 5 vani",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "testo": "Immobile di pregio: categoria A/1, A/7, A/8 o A/9, o immobile vincolato (art. 1, c. 2, lett. a, L. 431/98)",
+    "nome": "immobile di pregio",
+    "perc": 8
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento a spese del proprietario, con l'elenco dei mobili in contratto (almeno la cucina completa di forno, piano cottura e frigo; il 13% pieno solo se ogni stanza è completamente arredata)",
+    "nome": "arredamento",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "arredato",
+      "testo": "arredato (fino al 13%)",
+      "perc": 13
+     },
+     {
+      "valore": "nuovo",
+      "testo": "tutto arredato, mobili comprati negli ultimi 2 anni (con fatture)",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "deposito",
+    "tipo": "spunta",
+    "contratti": [
+     "agevolato",
+     "studenti"
+    ],
+    "testo": "Deposito cauzionale non oltre una mensilità (o nessun deposito), senza altre garanzie onerose oltre una mensilità",
+    "nome": "deposito fino a una mensilità",
+    "perc": 5
+   },
+   {
+    "chiave": "recesso",
+    "tipo": "spunta",
+    "contratti": [
+     "agevolato",
+     "studenti"
+    ],
+    "testo": "L'inquilino può lasciare la casa in qualsiasi momento, senza motivo, con preavviso fino a 3 mesi",
+    "nome": "recesso libero",
+    "perc": 5
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica dell'APE (da consegnare in copia e da riportare nel contratto)",
+    "nome": "classe energetica",
+    "nessuna": "classe E, F, G o senza APE",
+    "opzioni": [
+     {
+      "valore": "AB",
+      "testo": "classe A o B",
+      "perc": 12
+     },
+     {
+      "valore": "CD",
+      "testo": "classe C o D",
+      "perc": 7
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Le maggiorazioni sono facoltative («fino a»), vanno scritte nel contratto e si sommano, poi si applicano una sola volta al minimo e al massimo della fascia (art. 7): immobile di pregio +8%, arredato fino a +13% (+15% con mobili degli ultimi due anni), durata 4 anni +5%, 5 anni +8%, 6 anni +12%, deposito fino a una mensilità +5%, recesso libero con preavviso fino a 3 mesi +5%, classe energetica A o B +12%, C o D +7%. Nei contratti transitori non valgono durata, deposito e recesso; in quelli per studenti universitari non vale la durata. Il proprietario può rinunciare alle maggiorazioni.",
+  "durata": {
+   "4": 5,
+   "5": 8,
+   "6": 12
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Il massimo della fascia massima si può applicare solo con almeno 8 parametri e stato di manutenzione ottimo (art. 6).",
+    "fascia": [
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ]
+   }
+  ],
+  "zone": [
+   {
+    "codice": "pregio",
+    "nome": "Zona di pregio (Zona 1)",
+    "nota": "Zona di pregio (Zona 1 del Circondario Imolese): centro storico, quartiere Cappuccini, Viale Dante. Fogli di mappa catastale 149, 151, 152, 153, 155, 237, 240, 241 (il foglio è nella visura). La riga della tabella dipende dai vani abitabili (monolocale, 2, 3, 4, 5, oltre 5). Valori in euro al mq all'anno (allegato 4).",
+    "fasce": {
+     "mono": [
+      [
+       58,
+       82
+      ],
+      [
+       63,
+       91
+      ],
+      [
+       69,
+       99
+      ]
+     ],
+     "2": [
+      [
+       55,
+       79
+      ],
+      [
+       60,
+       87
+      ],
+      [
+       66,
+       94
+      ]
+     ],
+     "3": [
+      [
+       50,
+       71
+      ],
+      [
+       55,
+       79
+      ],
+      [
+       60,
+       85
+      ]
+     ],
+     "4": [
+      [
+       47,
+       68
+      ],
+      [
+       52,
+       74
+      ],
+      [
+       57,
+       81
+      ]
+     ],
+     "5": [
+      [
+       42,
+       61
+      ],
+      [
+       47,
+       67
+      ],
+      [
+       51,
+       73
+      ]
+     ],
+     "oltre5": [
+      [
+       38,
+       54
+      ],
+      [
+       42,
+       60
+      ],
+      [
+       46,
+       65
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "A",
+    "nome": "Zona A (Zona 2)",
+    "nota": "Zona A (Zona 2 del Circondario Imolese): quartieri Pedagna Est e Ovest, Zolino, Colombarina, Villaggio Campanella, Borgo Spuviglia. Fogli di mappa catastale 113, 114, 114a, 114b, 114c, 115a, 140, 140a, 141, 142, 143, 150, 150a, 150b, 154, 154a, 154b, 156a, 162, 163, 163a, 164, 165, 166, 176, 179, da 228 a 236, 238, 239, 242. La riga della tabella dipende dai vani abitabili (monolocale, 2, 3, 4, 5, oltre 5). Valori in euro al mq all'anno (allegato 4).",
+    "fasce": {
+     "mono": [
+      [
+       47,
+       68
+      ],
+      [
+       52,
+       77
+      ],
+      [
+       58,
+       85
+      ]
+     ],
+     "2": [
+      [
+       44,
+       64
+      ],
+      [
+       50,
+       73
+      ],
+      [
+       56,
+       81
+      ]
+     ],
+     "3": [
+      [
+       40,
+       59
+      ],
+      [
+       45,
+       67
+      ],
+      [
+       50,
+       73
+      ]
+     ],
+     "4": [
+      [
+       38,
+       56
+      ],
+      [
+       43,
+       63
+      ],
+      [
+       48,
+       70
+      ]
+     ],
+     "5": [
+      [
+       34,
+       50
+      ],
+      [
+       39,
+       57
+      ],
+      [
+       43,
+       63
+      ]
+     ],
+     "oltre5": [
+      [
+       31,
+       46
+      ],
+      [
+       35,
+       51
+      ],
+      [
+       39,
+       57
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B (Zona 3)",
+    "nota": "Zona B (Zona 3 del Circondario Imolese): Linaro, Ponticelli, zona industriale, estrema periferia della città. Fogli di mappa catastale 106, 107, 107a, 107b, da 108 a 112, 115, 116, 117, 148, 156, 167, 175, 175a, 177, 178, 180, 192, 193, 194, 195, 199. La riga della tabella dipende dai vani abitabili (monolocale, 2, 3, 4, 5, oltre 5). Valori in euro al mq all'anno (allegato 4).",
+    "fasce": {
+     "mono": [
+      [
+       40,
+       58
+      ],
+      [
+       46,
+       65
+      ],
+      [
+       52,
+       79
+      ]
+     ],
+     "2": [
+      [
+       38,
+       54
+      ],
+      [
+       44,
+       62
+      ],
+      [
+       50,
+       75
+      ]
+     ],
+     "3": [
+      [
+       35,
+       50
+      ],
+      [
+       40,
+       57
+      ],
+      [
+       45,
+       69
+      ]
+     ],
+     "4": [
+      [
+       33,
+       48
+      ],
+      [
+       38,
+       54
+      ],
+      [
+       43,
+       64
+      ]
+     ],
+     "5": [
+      [
+       30,
+       43
+      ],
+      [
+       34,
+       49
+      ],
+      [
+       39,
+       59
+      ]
+     ],
+     "oltre5": [
+      [
+       27,
+       38
+      ],
+      [
+       30,
+       43
+      ],
+      [
+       35,
+       52
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C (Zona 4)",
+    "nota": "Zona C (Zona 4 del Circondario Imolese): Sesto Imolese, Sasso Morelli, San Prospero, Zello, Giardino, Casola Canina, Balia, Fabbrica, Spazzate Sassatelli e le zone agricole. Fogli di mappa catastale da 1 a 73 (con 33a, 34a, 62a), 74a, da 75 a 77, 78a, da 79 a 105 (con 84a, 98a), da 118 a 139 (con 126a, 137a), da 144 a 147, da 157 a 161, da 168 a 174, da 182 a 192, da 196 a 198, da 200 a 227. La riga della tabella dipende dai vani abitabili (monolocale, 2, 3, 4, 5, oltre 5). Valori in euro al mq all'anno (allegato 4).",
+    "fasce": {
+     "mono": [
+      [
+       34,
+       50
+      ],
+      [
+       40,
+       59
+      ],
+      [
+       46,
+       67
+      ]
+     ],
+     "2": [
+      [
+       32,
+       48
+      ],
+      [
+       38,
+       56
+      ],
+      [
+       43,
+       63
+      ]
+     ],
+     "3": [
+      [
+       29,
+       43
+      ],
+      [
+       34,
+       50
+      ],
+      [
+       39,
+       58
+      ]
+     ],
+     "4": [
+      [
+       28,
+       41
+      ],
+      [
+       33,
+       48
+      ],
+      [
+       37,
+       54
+      ]
+     ],
+     "5": [
+      [
+       25,
+       38
+      ],
+      [
+       29,
+       43
+      ],
+      [
+       34,
+       49
+      ]
+     ],
+     "oltre5": [
+      [
+       23,
+       33
+      ],
+      [
+       26,
+       39
+      ],
+      [
+       30,
+       44
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 14",
+  "titolo": "Attestazione bilaterale di rispondenza ex D.M. 16/01/2017 - Parametri e calcolo del canone",
+  "sottotitolo": "Accordo applicabile nel territorio metropolitano di Bologna sottoscritto il 27/03/2024, in vigore dal 01/04/2024 (P.G. 20926 del 28/03/2024) - Comune di Imola: tariffe allegato 4, zone allegato 8",
+  "titolo_superficie": "SUPERFICIE CONVENZIONALE (ART. 5)",
+  "titolo_elementi": "Parametri - n. elementi di qualità (art. 4)",
+  "etichetta_conteggio": "N. ELEMENTI DI QUALITÀ",
+  "dichiarazione": "Il locatore e il conduttore dichiarano, sotto la loro responsabilità, gli elementi sopra indicati e di aver preso visione e di essere stati informati sul contenuto dell'Accordo territoriale sottoscritto il 27/03/2024 ed in vigore dal 01/04/2024.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE BILATERALE DI RISPONDENZA EX D.M. 16/01/2017",
+  "attestazione": [
+   "L'Organizzazione ……………………, in persona di ……………………, e l'Organizzazione ……………………, in persona di ……………………, firmatarie dell'Accordo territoriale per la Città Metropolitana Bolognese per il Comune di Imola depositato il 28/03/2024 ed in vigore dal 01/04/2024,",
+   "tutto ciò premesso, come sopra rappresentate, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali, ATTESTANO che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per la Città Metropolitana Bolognese per il Comune di Imola, depositato in data 28/03/2024 ed in vigore dal 01/04/2024."
+  ],
+  "firme_attestazione": [
+   "p. l'Organizzazione",
+   "p. l'Organizzazione"
+  ],
+  "piede": "Allegato 14 dell'Accordo applicabile nel territorio metropolitano di Bologna (P.G. 20926 del 28/03/2024), Comune di Imola, compilato con LocaOnLine",
+  "nota_zone": "Imola è divisa in quattro zone (allegato 8 dell'accordo): pregio, A, B e C, che nelle tariffe del Circondario Imolese sono le zone 1, 2, 3 e 4. La zona si ricava dal foglio di mappa catastale (lo trovi nella visura); le mappe sono anche su cartografia.cittametropolitana.bo.it/canone-concordato. Gli immobili sulle vie di confine appartengono alla zona di valore più alto."
+ }
+}

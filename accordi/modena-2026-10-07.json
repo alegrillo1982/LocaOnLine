@@ -953,6 +953,10 @@
       "testo": "parzialmente arredato (almeno cucina e una camera)",
       "perc": 6
      }
+    ],
+    "tranne_tabelle": [
+     "stanza",
+     "stanza_bagno"
     ]
    },
    {

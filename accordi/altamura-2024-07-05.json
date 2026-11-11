@@ -1,0 +1,390 @@
+{
+ "accordo": {
+  "codice": "altamura-2024-07-05",
+  "modello": "altamura-2024",
+  "comune": "Altamura",
+  "provincia": "BA",
+  "titolo": "Accordo territoriale per il Comune di Altamura",
+  "data": "2024-07-05",
+  "data_testo": "5 luglio 2024",
+  "deposito": "Comune di Altamura",
+  "deposito_data": "31.07.2024",
+  "protocollo": "",
+  "ufficio": "Protocollo generale del Comune di Altamura (via PEC)",
+  "ufficio_breve": "Comune di Altamura",
+  "valido_fino": "2027-07-29",
+  "firmatari_proprieta": [
+   "APPC",
+   "ASSEDIL/CONFEDILIZIA",
+   "ASPPI",
+   "CONFABITARE",
+   "UPPI"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET CISL",
+   "UNIAT UIL",
+   "ASSOCASA",
+   "SAI CISAL"
+  ],
+  "nota": "Firmato il 05/07/2024 nella sede comunale, alla presenza del Sindaco di Altamura, dalle associazioni provinciali di Bari. Inviato dal SICET di Bari alla PEC del protocollo generale del Comune di Altamura il 31/07/2024 (ricevuta di avvenuta consegna allegata al PDF; numero di protocollo non indicato). Sostituisce l'accordo del 13/01/2000, che resta valido per i contratti in corso. Dura tre anni dal 30/07/2024. Tre zone per fogli catastali (allegato 1), quattro fasce (A, B, C, D) nelle zone 1 e 2 e tre (A, B, C) nella zona 3, secondo il numero di elementi presenti su 28; valori mensili al mq di superficie convenzionale. Fasce non aggiornabili ISTAT.",
+  "fonte": "PDF dell'accordo firmato con ricevute PEC di deposito e allegati 1-5 (49 pagine, scansione con testo) pubblicato da SUNIA nazionale nella pagina degli accordi della provincia di Bari."
+ },
+ "esempio_zona": "la zona dal foglio catastale (allegato 1)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - foglio 161",
+    "nota": "Zona 1: foglio di mappa catastale 161 (allegato 1). Valori in euro al mq al mese. D fino a 4 elementi, C da 5, B da 7, A da 10.",
+    "fasce": [
+     [
+      1.99,
+      2.47
+     ],
+     [
+      2.48,
+      3.34
+     ],
+     [
+      3.35,
+      3.98
+     ],
+     [
+      3.99,
+      4.78
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - fogli 126-129, 131, 154-160, 162-167",
+    "nota": "Zona 2: fogli di mappa catastale 126, 127, 128, 129, 131, 154, 155, 156, 157, 158, 159, 160, 162, 163, 164, 165, 166 e 167 (allegato 1). Valori in euro al mq al mese. D fino a 5 elementi, C da 6, B da 8, A da 10.",
+    "fasce": [
+     [
+      1.99,
+      3.18
+     ],
+     [
+      3.19,
+      3.98
+     ],
+     [
+      3.99,
+      4.78
+     ],
+     [
+      4.78,
+      5.57
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - tutti gli altri fogli (1-125, 130, 132-153, 168-280)",
+    "nota": "Zona 3: fogli di mappa catastale da 1 a 125, 130, da 132 a 153 e da 168 a 280 (allegato 1). Valori in euro al mq al mese. Tre fasce: C fino a 5 elementi, B con 6, A da 7 (oltre sei).",
+    "fasce": [
+     [
+      2.17,
+      2.59
+     ],
+     [
+      2.17,
+      2.59
+     ],
+     [
+      2.6,
+      2.84
+     ],
+     [
+      2.85,
+      3.16
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "D",
+    "C",
+    "B",
+    "A"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    6,
+    9
+   ],
+   "soglie_zona": {
+    "2": [
+     5,
+     7,
+     9
+    ],
+    "3": [
+     -1,
+     5,
+     6
+    ]
+   },
+   "conta": {
+    "da": 0,
+    "a": 27
+   },
+   "basta": [
+    28
+   ],
+   "nota_soglie": "Contano gli elementi da 1 a 28; con l'elemento 29 (alloggio arredato con riscaldamento, autoclave e infissi in buono stato) si va direttamente in fascia A",
+   "basta_min": {
+    "28": 1
+   }
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi per la determinazione della fascia (allegato 1): segna quelli presenti"
+   },
+   {
+    "da": 28,
+    "titolo": "Passaggio diretto in fascia A"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Appartamento dal 1° piano fuori terra in su"
+   },
+   {
+    "testo": "Allacciamento al gas metano"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Secondo bagno"
+   },
+   {
+    "testo": "Spazi esterni a uso esclusivo e/o condominiale"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Cantina o soffitta o giardino privato o terrazza a livello"
+   },
+   {
+    "testo": "Posto auto di pertinenza e/o condominiale assegnato"
+   },
+   {
+    "testo": "Box auto"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Portierato"
+   },
+   {
+    "testo": "Videosorveglianza condominiale o individuale"
+   },
+   {
+    "testo": "Impianto fotovoltaico o pannelli solari per l'acqua calda"
+   },
+   {
+    "testo": "Citofono"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Autoclave"
+   },
+   {
+    "testo": "Impianto elettrico interno a norma (D.M. 37/2008)"
+   },
+   {
+    "testo": "Attico"
+   },
+   {
+    "testo": "Ripostiglio"
+   },
+   {
+    "testo": "Parquet"
+   },
+   {
+    "testo": "Ricarica per auto elettriche nel box o nel posto auto (esclusivo o condominiale) del conduttore, o antenna satellitare"
+   },
+   {
+    "testo": "Cucina abitabile di almeno 9 mq con finestra"
+   },
+   {
+    "testo": "Sistemi di sicurezza, allarme"
+   },
+   {
+    "testo": "Domotica in almeno metà dell'alloggio"
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato o pompa di calore"
+   },
+   {
+    "testo": "Infissi interni ed esterni in buono stato"
+   },
+   {
+    "testo": "Cassaforte"
+   },
+   {
+    "testo": "Doppio ingresso o cortile/giardino recintato"
+   },
+   {
+    "testo": "Alloggio arredato (anche in parte) che per i suoi elementi sarebbe in fascia B o C (zone 1 e 2: non D), con riscaldamento, autoclave e infissi in buono stato: passa in fascia A. Indica l'arredo più sotto"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile calpestabile (non catastale), esclusi i vani più bassi di 1,70 m",
+   "voci": [
+    {
+     "chiave": "basse",
+     "testo": "Vani con altezza inferiore a 1,70 m",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa singola a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_accatastato",
+     "testo": "Posto auto accatastato in area condominiale scoperta",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto non accatastato in area condominiale scoperta",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazze, cortili, cantine, soffitte e accessori simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Superficie scoperta a uso esclusivo del conduttore",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota millesimale dell'alloggio)",
+     "coeff": 0.1
+    }
+   ],
+   "scaglioni_totale": [
+    {
+     "oltre": 130,
+     "perc": 50
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 45,
+     "perc": 20,
+     "limite": 45
+    },
+    {
+     "fino": 70,
+     "perc": 20,
+     "limite": 70
+    }
+   ],
+   "etichetta_correzione": "convenzionale",
+   "nota": "Superficie convenzionale (punto 2 delle norme comuni): superficie utile al 100%; autorimessa singola esclusiva 50%; posto auto in area condominiale scoperta 50% se accatastato, 25% se no; balconi, terrazze, cortili, cantine, soffitte e simili 25%; scoperto esclusivo 15%; verde condominiale 10% della quota millesimale; vani più bassi di 1,70 m al 50%. Oltre 130 mq la parte eccedente conta il 50%. Fino a 45 mq la superficie si moltiplica per 1,20 (al massimo 45 mq); da 46 a 70 mq per 1,20 (al massimo 70 mq). È ammessa una tolleranza del 4% in più o in meno sulla superficie convenzionale. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie della parte locata, considerando anche le parti condivise."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "classe",
+    "tipo": "scelta",
+    "testo": "Classe energetica (dall'APE)",
+    "nome": "classe energetica",
+    "nessuna": "G o senza APE",
+    "opzioni": [
+     {
+      "valore": "BF",
+      "testo": "classe B, C, D, E o F",
+      "perc": 3
+     },
+     {
+      "valore": "A",
+      "testo": "classe A (A1, A2, A3 o A4)",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "fasce": [
+     3
+    ],
+    "testo": "Arredamento (vale solo in fascia A; arredi minimi nell'allegato 3)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "in parte, alloggio già in fascia A per i suoi elementi",
+      "perc": 10
+     },
+     {
+      "valore": "totale",
+      "testo": "del tutto, alloggio già in fascia A per i suoi elementi",
+      "perc": 20
+     },
+     {
+      "valore": "parziale_promosso",
+      "testo": "in parte, alloggio passato in fascia A grazie all'arredo (elemento 29)",
+      "perc": 0
+     },
+     {
+      "valore": "totale_promosso",
+      "testo": "del tutto, alloggio passato in fascia A grazie all'arredo (elemento 29)",
+      "perc": 10
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Classe energetica A (A1-A4) +5%, da B a F +3%, per tutti i contratti e in tutte le zone. Poi si applicano progressivamente (una sull'altra) l'arredo e la durata. Arredo: in fascia A per i suoi elementi, +10% se arredato in parte e +20% se del tutto; in fascia B o C, con riscaldamento, autoclave e infissi in buono stato, l'alloggio arredato passa in fascia A: senza aumento se arredato in parte, fino a +10% se del tutto. Totalmente arredato: cucina (pensili o credenza, frigorifero, cucina, tavolo con sedie, una per conduttore se studenti, scolapiatti e stoviglie), camera (letto con materasso, comodino, armadio, sedia), per gli studenti camera-studio (scrivania con sedia, libreria), soggiorno (tavolo con sedie, vetrinetta o mobiletto), bagno arredato (mensole, specchio), tutte le camere con illuminazione elettrica (allegato 3); parzialmente arredato: solo una parte di questi arredi. Durata 4, 5, 6 anni o più (più 2 di proroga): +5%, +7%, +12%, solo per i contratti agevolati. Transitori e studenti: stesse fasce, senza l'aumento per la durata. Le fasce non si aggiornano con l'ISTAT per tutta la durata dell'accordo; il canone, se il locatore non sceglie la cedolare secca, si aggiorna ogni anno al 75% dell'ISTAT.",
+  "durata": {
+   "4": 5,
+   "5": 7,
+   "6": 12
+  },
+  "combinazione": "prodotto",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato 1",
+  "titolo": "Elementi per la determinazione della fascia del canone di locazione",
+  "sottotitolo": "Accordo territoriale per il Comune di Altamura sottoscritto il 05/07/2024 (inviato al Comune via PEC il 31/07/2024)",
+  "titolo_superficie": "SUPERFICIE CONVENZIONALE (norme comuni, punto 2)",
+  "titolo_elementi": "Elementi per la determinazione della fascia (allegato 1)",
+  "etichetta_conteggio": "ELEMENTI PRESENTI",
+  "dichiarazione": "Le parti dichiarano, sotto la propria responsabilità, gli elementi oggettivi e i dati sopra riportati, come previsto dal punto 1 delle norme comuni dell'Accordo (le parti restano uniche responsabili della veridicità delle dichiarazioni rese).",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA (D.M. 16/01/2017)",
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Altamura, verificati gli elementi oggettivi dichiarati dalle parti,",
+   "ATTESTA la rispondenza del contenuto economico e normativo del contratto ai parametri dell'Accordo territoriale per il Comune di Altamura sottoscritto il 05/07/2024.",
+   "Altamura, lì ……………"
+  ],
+  "firme_attestazione": [
+   "P. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dal foglio di mappa catastale (allegato 1): zona 1 foglio 161; zona 2 fogli 126-129, 131, 154-160, 162-167; zona 3 fogli 1-125, 130, 132-153 e 168-280."
+ }
+}

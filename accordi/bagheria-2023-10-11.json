@@ -1,0 +1,473 @@
+{
+ "accordo": {
+  "codice": "bagheria-2023-10-11",
+  "modello": "bagheria-2023",
+  "comune": "Bagheria",
+  "provincia": "PA",
+  "titolo": "Accordo territoriale per il Comune di Bagheria",
+  "data": "2023-10-11",
+  "data_testo": "11 ottobre 2023",
+  "deposito": "Comune di Bagheria, protocollo n. 0060994/2023 dell'11/10/2023",
+  "deposito_data": "11.10.2023",
+  "protocollo": "0060994/2023",
+  "ufficio": "Comune di Bagheria, Protocollo generale",
+  "ufficio_breve": "Comune di Bagheria",
+  "avviso_validita": "<strong>Accordo di Bagheria dell'11 ottobre 2023: durava tre anni dal giorno dopo il deposito, cioè fino all'11 ottobre 2026.</strong> Resta in vigore fino alla firma di quello nuovo (titolo H). Dopo la scadenza i valori si possono aggiornare una sola volta, del 75% della variazione ISTAT dell'ultimo anno: qui trovi quelli originali, chiedi all'associazione che attesta il contratto se ne applica di aggiornati.",
+  "firmatari_proprieta": [
+   "A.P.E. Confedilizia",
+   "A.P.P.C.",
+   "U.P.P.I.",
+   "Confabitare",
+   "Federcasa",
+   "Casa Mia",
+   "UnionCasa",
+   "ASPPI Palermo"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T.",
+   "A.N.I.A.",
+   "Unione Inquilini"
+  ],
+  "nota": "Firmato e depositato al Comune di Bagheria l'11/10/2023 (timbro: protocollo n. 0060994/2023 dell'11/10/2023; lo stesso giorno lo annuncia il SICET). Sostituisce l'accordo precedente, scaduto da tempo. Dura tre anni dal giorno dopo il deposito e resta in vigore fino al nuovo accordo; dopo il triennio i valori si possono aggiornare una sola volta al 75% dell'ISTAT dell'ultimo anno (titolo H). Territorio diviso in 3 zone (allegato 1: Centro storico, Resto del territorio, Aspra); per ogni zona 9 sub-fasce (allegato 2) secondo la dotazione (fino a 5 elementi su 19, almeno 6, almeno 10) e l'epoca di costruzione o ristrutturazione completa (prima del 1980, 1980-2014, dal 2015), calcolate come percentuali del valore medio della zona. Valori per contratti di 3+2 anni; durata 4/5/6 anni +2/4/6%, alloggio completamente arredato +15%, classe energetica A1-A4 +15% (insieme al massimo +30%), immobile storico vincolato +40%. Massimo ridotto per le categorie A/4 (-5%), A/5 (-7%), A/6 (-9%) se non ristrutturate e per l'alloggio sociale (almeno -20%). Superficie: art. 6 (pertinenze al massimo metà dell'alloggio, sotto i 50 mq x 1,25) e allegato 2 (da 120 a 150 mq al 75%, oltre al 25%). Transitori e studenti: stessi criteri e valori.",
+  "fonte": "SUNIA, pagina «Accordi territoriali Palermo» (sunia.it): scansione firmata di 14 pagine (testo, allegati 1 e 2; manca l'allegato 3, modulo per la conciliazione). Notizia della firma: BlogSicilia, 11/10/2023."
+ },
+ "esempio_zona": "la zona (allegato 1: Centro storico, Resto del territorio o Aspra)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "scelta",
+  "tabella_chiave": "epoca",
+  "tabella_predefinita": "1979",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "1. Centro storico",
+    "nota": "Zona 1 (allegato 1): via Palagonia, corso Butera, via Diaz, via Lanza di Trabia, via Maggiore, via Damuselli, via Sen. Scaduto, via Tomaselli, via Angiò, via Trudén, via Trabia, corso Umberto, via del Cavaliere e comunque tutte le vie della pianta del Centro storico del Comune (allegato 1 dell'accordo precedente). Valore medio da € 2,21 a € 4,10. Valori in euro al mq al mese (allegato 2), per contratti di 3 + 2 anni: la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione completa.",
+    "fasce": {
+     "1979": [
+      [
+       1.99,
+       3.69
+      ],
+      [
+       2.25,
+       4.18
+      ],
+      [
+       2.54,
+       4.72
+      ]
+     ],
+     "2014": [
+      [
+       2.25,
+       4.18
+      ],
+      [
+       2.36,
+       4.39
+      ],
+      [
+       2.65,
+       4.92
+      ]
+     ],
+     "2015": [
+      [
+       2.34,
+       4.35
+      ],
+      [
+       2.54,
+       4.72
+      ],
+      [
+       2.76,
+       5.13
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "2. Resto del territorio",
+    "nota": "Zona 2 (allegato 1): via Mattarella, via Giovanni XXIII, via De Spuches, via Casaurro, via F. Buttitta, la zona a monte dell'autostrada e ogni immobile fuori dal Centro storico e da Aspra. Valore medio da € 2,35 a € 4,35. Valori in euro al mq al mese (allegato 2), per contratti di 3 + 2 anni: la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione completa.",
+    "fasce": {
+     "1979": [
+      [
+       2.12,
+       3.92
+      ],
+      [
+       2.4,
+       4.44
+      ],
+      [
+       2.7,
+       5.0
+      ]
+     ],
+     "2014": [
+      [
+       2.4,
+       4.44
+      ],
+      [
+       2.51,
+       4.65
+      ],
+      [
+       2.82,
+       5.22
+      ]
+     ],
+     "2015": [
+      [
+       2.49,
+       4.61
+      ],
+      [
+       2.7,
+       5.0
+      ],
+      [
+       2.94,
+       5.44
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "3. Aspra",
+    "nota": "Zona 3 (allegato 1): la frazione di Aspra. Valore medio da € 2,30 a € 3,90. Valori in euro al mq al mese (allegato 2), per contratti di 3 + 2 anni: la tabella dipende dall'anno di costruzione o dell'ultima ristrutturazione completa. Nella tabella del 1980-2014, dotazioni essenziali, l'accordo stampa «da € 2,35 a € 4,98 pari a più 2%»: qui si usa € 3,98, cioè il valore medio più 2% come dice la stessa casella.",
+    "fasce": {
+     "1979": [
+      [
+       2.07,
+       3.51
+      ],
+      [
+       2.35,
+       3.98
+      ],
+      [
+       2.65,
+       4.49
+      ]
+     ],
+     "2014": [
+      [
+       2.35,
+       3.98
+      ],
+      [
+       2.46,
+       4.17
+      ],
+      [
+       2.76,
+       4.68
+      ]
+     ],
+     "2015": [
+      [
+       2.44,
+       4.13
+      ],
+      [
+       2.65,
+       4.49
+      ],
+      [
+       2.88,
+       4.88
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "essenziale",
+    "media",
+    "particolare"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    5,
+    9
+   ],
+   "non_cumulabili": [
+    [
+     3,
+     16
+    ],
+    [
+     11,
+     17
+    ]
+   ],
+   "nota": "Unità di dotazioni essenziali fino a 5 elementi, di media dotazione da 6 a 9, di particolare dotazione da 10 in poi (allegato 2). Riscaldamento e riscaldamento a condensazione, doppi vetri e infissi a taglio termico sono alternativi: ogni coppia conta una volta."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi di riferimento (allegato 2): segna quelli presenti"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Un'autorimessa singola o un posto auto"
+   },
+   {
+    "testo": "Cantina, sottotetto o soffitta"
+   },
+   {
+    "testo": "Videosorveglianza condominiale o allarme privato"
+   },
+   {
+    "testo": "Impianto di riscaldamento"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Comodità di salita (oltre il 2° piano serve l'ascensore)"
+   },
+   {
+    "testo": "Area verde di pertinenza"
+   },
+   {
+    "testo": "Mobili (alloggio arredato anche in parte)"
+   },
+   {
+    "testo": "Doppi servizi (due bagni)"
+   },
+   {
+    "testo": "Allacciamento alla rete del gas"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Doppi vetri"
+   },
+   {
+    "testo": "Strutture per superare le barriere architettoniche"
+   },
+   {
+    "testo": "Fermata di mezzi pubblici entro 200 metri"
+   },
+   {
+    "testo": "Facciata dell'edificio rifatta negli ultimi 10 anni"
+   },
+   {
+    "testo": "Impianti a energia rinnovabile (non conta in classe A)",
+    "esclusi_se": {
+     "chiave": "classe_a"
+    }
+   },
+   {
+    "testo": "Riscaldamento a condensazione (non conta in classe A)",
+    "esclusi_se": {
+     "chiave": "classe_a"
+    }
+   },
+   {
+    "testo": "Infissi a taglio termico (non conta in classe A)",
+    "esclusi_se": {
+     "chiave": "classe_a"
+    }
+   },
+   {
+    "testo": "Cortile comune"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile (con vani accessori interni e verande chiuse autorizzate)",
+   "voci": [
+    {
+     "chiave": "cantine",
+     "testo": "Soffitte, cantine, mezzanini, box e simili comunicanti con l'alloggio",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantine_nc",
+     "testo": "Soffitte, cantine, mezzanini, box e simili non comunicanti",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazze comunicanti (30% fino a 25 mq, poi 10%)",
+     "coeff": 0.3,
+     "scaglione": [
+      25,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "chiave": "balconi_nc",
+     "testo": "Balconi e terrazze non comunicanti (15% fino a 25 mq, poi 5%)",
+     "coeff": 0.15,
+     "scaglione": [
+      25,
+      0.15,
+      0.05
+     ]
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta esclusiva (10% fino alla superficie dell'alloggio, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    }
+   ],
+   "tetto_voci": 0.5,
+   "correzioni_totale": [
+    {
+     "fino": 49.99,
+     "perc": 25
+    }
+   ],
+   "etichetta_correzione": "utile",
+   "scaglioni_totale": [
+    {
+     "oltre": 120,
+     "perc": 75
+    },
+    {
+     "oltre": 150,
+     "perc": 25
+    }
+   ],
+   "nota": "Superficie dell'art. 6: l'alloggio al 100%; soffitte, cantine, mezzanini e box al 50% se comunicanti, al 25% se no; balconi e terrazze al 30% fino a 25 mq e al 10% per il resto (15% e 5% se non comunicanti); area scoperta esclusiva al 10% fino alla superficie dell'alloggio e al 2% oltre. Le pertinenze contano al massimo metà dell'alloggio. Sotto i 50 mq la superficie si moltiplica per 1,25; oltre 120 mq la parte fino a 150 mq conta il 75% e quella oltre il 25% (allegato 2). Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie locata, considerando anche le parti condivise."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "epoca",
+    "tipo": "scelta",
+    "testo": "Anno di costruzione o dell'ultima ristrutturazione completa (sceglie la tabella dei valori)",
+    "nome": "costruzione o ristrutturazione",
+    "nessuna": "fino al 1979",
+    "mostra_perc": false,
+    "opzioni": [
+     {
+      "valore": "2014",
+      "testo": "dal 1980 al 2014",
+      "perc": 0
+     },
+     {
+      "valore": "2015",
+      "testo": "dal 2015 in poi",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "ammobiliato": true,
+    "testo": "Alloggio completamente arredato",
+    "nome": "completamente arredato",
+    "perc": 15
+   },
+   {
+    "chiave": "classe_a",
+    "tipo": "spunta",
+    "testo": "Classe energetica A1, A2, A3 o A4 (APE)",
+    "nome": "classe energetica A",
+    "perc": 15
+   },
+   {
+    "chiave": "storico",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato di interesse storico o artistico (legge 1089/1939)",
+    "nome": "immobile di interesse storico",
+    "perc": 40
+   },
+   {
+    "chiave": "categoria",
+    "tipo": "scelta",
+    "testo": "Categoria catastale A/4, A/5 o A/6 non ristrutturata: massimo ridotto",
+    "nome": "categoria non ristrutturata",
+    "nessuna": "nessuna di queste",
+    "solo_max": true,
+    "opzioni": [
+     {
+      "valore": "a4",
+      "testo": "A/4 non ristrutturata",
+      "perc": -5
+     },
+     {
+      "valore": "a5",
+      "testo": "A/5 non ristrutturata",
+      "perc": -7
+     },
+     {
+      "valore": "a6",
+      "testo": "A/6 non ristrutturata",
+      "perc": -9
+     }
+    ]
+   },
+   {
+    "chiave": "sociale",
+    "tipo": "spunta",
+    "testo": "Alloggio sociale con agevolazioni pubbliche al locatore: massimo ridotto almeno del 20%",
+    "nome": "alloggio sociale",
+    "perc": -20,
+    "solo_max": true
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano e valgono sul minimo e sul massimo. Durata 4, 5 o 6 anni (più 2 di proroga): +2%, +4%, +6%. Alloggio completamente arredato: +15%. Classe energetica A1-A4: +15%. Durata, arredo e classe energetica insieme non superano il 30%. Immobile vincolato di interesse storico o artistico: +40%. Categorie A/4, A/5 e A/6 non ristrutturate: massimo ridotto del 5%, 7% e 9%. Alloggio sociale: massimo ridotto (orientativamente almeno del 20%). Transitori e studenti: stessi valori e aumenti, tranne quello per la durata.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "combinazione": "somma",
+  "tetto_somma": [
+   {
+    "chiavi": [
+     "arredo",
+     "classe_a"
+    ],
+    "durata": true,
+    "perc": 30,
+    "testo": "limite: durata, arredo e classe A insieme al massimo +30%"
+   }
+  ],
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "",
+  "titolo": "Calcolo del canone concordato e attestazione",
+  "sottotitolo": "Accordo territoriale del Comune di Bagheria dell'11/10/2023, depositato l'11/10/2023 (prot. n. 0060994/2023)",
+  "titolo_superficie": "SUPERFICIE (art. 6 dell'Accordo e allegato 2)",
+  "titolo_elementi": "ELEMENTI DI RIFERIMENTO (allegato 2)",
+  "etichetta_conteggio": "TOTALE ELEMENTI",
+  "dichiarazione": "Il locatore e il conduttore, consapevoli che chiunque rilascia dichiarazioni mendaci è punito ai sensi del codice penale e delle leggi speciali in materia (art. 46 D.P.R. n. 445/2000), dichiarano i dati sopra riportati.",
+  "firme": [
+   "Il Locatore",
+   "Il Conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI CONFORMITÀ",
+  "attestazione": [
+   "La sottoscritta Organizzazione ……………………………, firmataria dell'Accordo territoriale del Comune di Bagheria depositato in data 11/10/2023, accertati i dati riferiti dalla sopraindicata dichiarazione,",
+   "ATTESTA la conformità del canone concordato e del contratto al vigente Accordo territoriale del Comune di Bagheria (art. 1, comma 8, art. 2, comma 8, e art. 3, comma 5, D.M. 16/01/2017)."
+  ],
+  "firme_attestazione": [
+   "Data ……………………",
+   "Per l'Organizzazione"
+  ],
+  "nota_zone": "Bagheria è divisa in 3 zone (allegato 1): 1 Centro storico, 2 Resto del territorio, 3 Aspra. L'accordo non ha mappe: per il Centro storico vale la pianta del Comune allegata all'accordo precedente; nei casi dubbi chiedi all'associazione che attesta il contratto."
+ }
+}

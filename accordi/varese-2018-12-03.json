@@ -32,7 +32,10 @@
   "tabella_per": "superficie",
   "tabella_su": "totale",
   "tabella_soglie": [
-   [80, "A"]
+   [
+    80,
+    "A"
+   ]
   ],
   "tabella_oltre": "B",
   "zone": [
@@ -41,8 +44,18 @@
     "nome": "Zona 1 - Centrale",
     "nota": "Area 1, zona centrale: la zona centrale della zonizzazione approvata dal Comune di Varese nel 1978 per l'equo canone (delibera del Consiglio comunale n. 471 del 30/10/1978), comprese le zone di particolare pregio.",
     "fasce": {
-     "A": [[50.0, 90.0]],
-     "B": [[44.0, 85.0]]
+     "A": [
+      [
+       50.0,
+       90.0
+      ]
+     ],
+     "B": [
+      [
+       44.0,
+       85.0
+      ]
+     ]
     }
    },
    {
@@ -50,8 +63,18 @@
     "nome": "Zona 2 - Semicentrale",
     "nota": "Area 2, zona semicentrale della zonizzazione approvata dal Comune di Varese nel 1978 per l'equo canone (delibera del Consiglio comunale n. 471 del 30/10/1978).",
     "fasce": {
-     "A": [[38.0, 80.0]],
-     "B": [[36.0, 75.0]]
+     "A": [
+      [
+       38.0,
+       80.0
+      ]
+     ],
+     "B": [
+      [
+       36.0,
+       75.0
+      ]
+     ]
     }
    },
    {
@@ -59,13 +82,25 @@
     "nome": "Zona 3 - Periferica",
     "nota": "Area 3, zona periferica della zonizzazione approvata dal Comune di Varese nel 1978 per l'equo canone (delibera del Consiglio comunale n. 471 del 30/10/1978), compresa la zona agricola.",
     "fasce": {
-     "A": [[34.0, 70.0]],
-     "B": [[32.0, 65.0]]
+     "A": [
+      [
+       34.0,
+       70.0
+      ]
+     ],
+     "B": [
+      [
+       32.0,
+       65.0
+      ]
+     ]
     }
    }
   ],
   "fasce": {
-   "nomi": ["unica"],
+   "nomi": [
+    "unica"
+   ],
    "criterio": "requisiti",
    "requisiti": [],
    "nota": "una sola fascia per zona: il canone si concorda fra il minimo e il massimo, corretti con le caratteristiche dell'allegato 3",
@@ -76,13 +111,33 @@
    "base": "Superficie lorda dell'appartamento (con i muri perimetrali e interni)",
    "coeff_base": 0.9,
    "correzioni": [
-    {"fino": 60, "perc": 15, "tetto": 60}
+    {
+     "fino": 60,
+     "perc": 15,
+     "tetto": 60
+    }
    ],
    "voci": [
-    {"chiave": "garage", "testo": "Autorimessa singola (superficie lorda)", "coeff": 0.7},
-    {"chiave": "posto_comune", "testo": "Posto auto in autorimessa comune (superficie netta)", "coeff": 0.5},
-    {"chiave": "accessori", "testo": "Cantine, solai, balconi, terrazzi e posti auto scoperti esclusivi (superficie lorda)", "coeff": 0.25},
-    {"chiave": "scoperto", "testo": "Area scoperta di pertinenza esclusiva", "coeff": 0.1}
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa singola (superficie lorda)",
+     "coeff": 0.7
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto auto in autorimessa comune (superficie netta)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Cantine, solai, balconi, terrazzi e posti auto scoperti esclusivi (superficie lorda)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta di pertinenza esclusiva",
+     "coeff": 0.1
+    }
    ],
    "nota": "L'appartamento conta per il 90% della superficie lorda (muri compresi); se il risultato è sotto i 60 mq si aumenta del 15%, ma senza superare 60 mq. Si aggiungono il 70% dell'autorimessa singola, il 50% del posto auto in autorimessa comune, il 25% di cantine, solai, balconi, terrazzi e posti auto scoperti esclusivi e il 10% dell'area scoperta esclusiva. Il totale sceglie la tabella: fino a 80 mq (tabella A) o oltre 80 mq (tabella B). Un errore di misura fino al 5% non cambia il canone."
   },
@@ -94,20 +149,84 @@
     "nome": "classe energetica",
     "nessuna": "non indicata",
     "opzioni": [
-     {"valore": "ABC", "testo": "A, B o C", "perc": 10},
-     {"valore": "DE", "testo": "D o E", "perc": 5},
-     {"valore": "F", "testo": "F", "perc": 0},
-     {"valore": "G", "testo": "G", "perc": -5}
+     {
+      "valore": "ABC",
+      "testo": "A, B o C",
+      "perc": 10
+     },
+     {
+      "valore": "DE",
+      "testo": "D o E",
+      "perc": 5
+     },
+     {
+      "valore": "F",
+      "testo": "F",
+      "perc": 0
+     },
+     {
+      "valore": "G",
+      "testo": "G",
+      "perc": -5
+     }
     ]
    },
-   {"chiave": "clima", "tipo": "spunta", "testo": "Impianto di climatizzazione estiva", "nome": "climatizzazione estiva", "perc": 5},
-   {"chiave": "sicurezza", "tipo": "spunta", "testo": "Porta blindata e, in più, allarme o inferriate di sicurezza", "nome": "porta blindata e allarme o inferriate", "perc": 5},
-   {"chiave": "ristrutturato", "tipo": "spunta", "testo": "Ristrutturazione completa negli ultimi 10 anni, con titolo edilizio", "nome": "ristrutturazione completa recente", "perc": 5},
-   {"chiave": "ante1977", "tipo": "spunta", "testo": "Riduzione: costruito o ristrutturato per intero prima del 1977", "nome": "costruito o ristrutturato prima del 1977", "perc": -5},
-   {"chiave": "piano", "tipo": "spunta", "testo": "Riduzione: oltre il 2° piano fuori terra, in uno stabile senza ascensore", "nome": "oltre il 2° piano senza ascensore", "perc": -5},
-   {"chiave": "impianti", "tipo": "spunta", "testo": "Riduzione: impianti vecchi (elettrico, gas, idrico)", "nome": "impianti vetusti", "perc": -5},
-   {"chiave": "serramenti", "tipo": "spunta", "testo": "Riduzione: serramenti vecchi, senza guarnizioni o senza vetrocamera", "nome": "serramenti vetusti", "perc": -5},
-   {"chiave": "riscaldamento", "tipo": "spunta", "testo": "Riduzione: niente caldaia autonoma o centralizzata (solo stufe, apparecchi elettrici, split)", "nome": "senza riscaldamento a caldaia", "perc": -10},
+   {
+    "chiave": "clima",
+    "tipo": "spunta",
+    "testo": "Impianto di climatizzazione estiva",
+    "nome": "climatizzazione estiva",
+    "perc": 5
+   },
+   {
+    "chiave": "sicurezza",
+    "tipo": "spunta",
+    "testo": "Porta blindata e, in più, allarme o inferriate di sicurezza",
+    "nome": "porta blindata e allarme o inferriate",
+    "perc": 5
+   },
+   {
+    "chiave": "ristrutturato",
+    "tipo": "spunta",
+    "testo": "Ristrutturazione completa negli ultimi 10 anni, con titolo edilizio",
+    "nome": "ristrutturazione completa recente",
+    "perc": 5
+   },
+   {
+    "chiave": "ante1977",
+    "tipo": "spunta",
+    "testo": "Riduzione: costruito o ristrutturato per intero prima del 1977",
+    "nome": "costruito o ristrutturato prima del 1977",
+    "perc": -5
+   },
+   {
+    "chiave": "piano",
+    "tipo": "spunta",
+    "testo": "Riduzione: oltre il 2° piano fuori terra, in uno stabile senza ascensore",
+    "nome": "oltre il 2° piano senza ascensore",
+    "perc": -5
+   },
+   {
+    "chiave": "impianti",
+    "tipo": "spunta",
+    "testo": "Riduzione: impianti vecchi (elettrico, gas, idrico)",
+    "nome": "impianti vetusti",
+    "perc": -5
+   },
+   {
+    "chiave": "serramenti",
+    "tipo": "spunta",
+    "testo": "Riduzione: serramenti vecchi, senza guarnizioni o senza vetrocamera",
+    "nome": "serramenti vetusti",
+    "perc": -5
+   },
+   {
+    "chiave": "riscaldamento",
+    "tipo": "spunta",
+    "testo": "Riduzione: niente caldaia autonoma o centralizzata (solo stufe, apparecchi elettrici, split)",
+    "nome": "senza riscaldamento a caldaia",
+    "perc": -10
+   },
    {
     "chiave": "arredo",
     "tipo": "scelta",
@@ -117,16 +236,33 @@
     "nome": "arredo completo",
     "nessuna": "non arredato",
     "opzioni": [
-     {"valore": "15", "testo": "aumento del 15% (il massimo)", "perc": 15},
-     {"valore": "10", "testo": "aumento del 10%", "perc": 10},
-     {"valore": "5", "testo": "aumento del 5%", "perc": 5}
+     {
+      "valore": "15",
+      "testo": "aumento del 15% (il massimo)",
+      "perc": 15
+     },
+     {
+      "valore": "10",
+      "testo": "aumento del 10%",
+      "perc": 10
+     },
+     {
+      "valore": "5",
+      "testo": "aumento del 5%",
+      "perc": 5
+     }
     ]
    }
   ],
   "nota_maggiorazioni": "I coefficienti dell'allegato 3 (classe energetica, climatizzazione, sicurezza, ristrutturazione e le riduzioni) si sommano e valgono sia sul minimo sia sul massimo, insieme all'aumento per la durata (+5% per 4 anni, +8% per 5, +10% per 6 o più). Le riduzioni che si contano sono al massimo 4: se l'alloggio ne ha di più, segnane solo 4. L'arredo completo aumenta fino al 15% il canone così ottenuto, per tutti i tipi di contratto. Per i transitori fino a 30 giorni il canone è libero.",
-  "durata": {"4": 5, "5": 8, "6": 10},
+  "durata": {
+   "4": 5,
+   "5": 8,
+   "6": 10
+  },
   "combinazione": "somma",
-  "avvisi": []
+  "avvisi": [],
+  "max_riduzioni": 4
  },
  "pdf": {
   "allegato": "Allegati 2 e 3",
@@ -135,14 +271,18 @@
   "titolo_superficie": "SUPERFICIE COMPLESSIVA (TABELLA DELLE MODALITÀ DI CALCOLO DELLE SUPERFICI)",
   "titolo_elementi": "Fascia di oscillazione (allegato 2)",
   "dichiarazione": "Il richiedente dichiara sotto la propria responsabilità che i dati dell'immobile sopra riportati corrispondono al vero e che il contratto è stato stipulato con il tipo di contratto allegato al D.M. 16/01/2017, e chiede l'attestazione di rispondenza all'Accordo territoriale per il Comune di Varese.",
-  "firme": ["Il richiedente"],
+  "firme": [
+   "Il richiedente"
+  ],
   "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16/01/2017",
   "attestazione": [
    "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Varese sottoscritto il 03/12/2018, sulla base degli elementi oggettivi dichiarati dal richiedente, anche ai fini dell'ottenimento delle agevolazioni fiscali,",
    "ATTESTA che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Varese.",
    "Varese, lì ……………"
   ],
-  "firme_attestazione": ["Per l'Organizzazione"],
+  "firme_attestazione": [
+   "Per l'Organizzazione"
+  ],
   "nota_zone": "La zona si ricava dalla zonizzazione approvata dal Comune di Varese nel 1978 per l'equo canone (delibera del Consiglio comunale n. 471 del 30/10/1978): la zona agricola va con la periferica, le zone di particolare pregio con la centrale. Chiedi la zona all'associazione o all'ufficio comunale."
  }
 }

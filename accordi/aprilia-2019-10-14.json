@@ -1,0 +1,320 @@
+{
+ "accordo": {
+  "codice": "aprilia-2019-10-14",
+  "modello": "aprilia-2019",
+  "comune": "Aprilia",
+  "provincia": "LT",
+  "titolo": "Accordo territoriale per il territorio del Comune di Aprilia",
+  "data": "2019-10-14",
+  "data_testo": "14 ottobre 2019",
+  "deposito": "Comune di Aprilia",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Aprilia del 14 ottobre 2019, firmato da SUNIA, SICET e UNIAT con APE Confedilizia, ASPPI e UPPI: durava quattro anni, ma resta in vigore finché non viene firmato quello nuovo (titolo H).</strong> Il 15 aprile 2026 altre associazioni (ANPU, Uniproprietari, Unsicasa, FENIT e SEIASS) hanno firmato un accordo diverso, con le zone OMI e valori un po' più alti, che il Comune pubblica nella pagina dell'IMU. <strong>Prima di firmare chiedi all'associazione che attesta il contratto quale accordo applica.</strong> I valori si aggiornano ogni anno al 75% dell'ISTAT: qui trovi quelli originali del 2019.",
+  "firmatari_proprieta": [
+   "APE CONFEDILIZIA",
+   "A.S.P.P.I.",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Stipulato il 14/10/2019 (data scritta a mano sulla prima pagina dell'accordo e sul protocollo d'intesa con il Comune di Aprilia, che porta il timbro dell'Ufficio Tributi). Sulla prima pagina c'è anche un timbro di arrivo dell'Ufficio Tributi del 17/07/2019, precedente alla firma: data e protocollo del deposito non si leggono. Quattro anni dal giorno dopo il deposito, poi in vigore fino al nuovo accordo. Sostituisce l'accordo del 17/10/2014. Quattro zone omogenee (planimetrie allegate), tre subfasce (bassa, media, alta) secondo quanti dei 15 parametri sono presenti; valori mensili al mq di superficie convenzionale, aggiornati ogni anno al 75% dell'ISTAT. Il protocollo d'intesa con il Comune riguarda l'aliquota IMU ridotta. Nei titoli B e C (transitori e studenti) il testo nomina per errore il Comune di Latina, ripreso dal suo accordo. Il 15/04/2026 ANPU, Uniproprietari, Unsicasa, FENIT e SEIASS hanno firmato un altro accordo (prot. Comune n. 42179 del 17/04/2026), con zone OMI e 26 parametri; Confabitare vi ha aderito a luglio 2026.",
+  "fonte": "SUNIA, pagina 'Accordi territoriali Latina' (comuni della provincia): 'AccordoTerritoriale_APRILIA-14-10-2019.pdf' (scansione di 16 pagine: protocollo d'intesa con il Comune, accordo, allegato 1 con i valori, allegato 2 con la scheda di attestazione, planimetrie delle zone)."
+ },
+ "esempio_zona": "la zona dall'indirizzo (planimetrie dell'accordo)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro della città",
+    "nota": "Zona 1 - Centro della città, come delimitato nella planimetria 1 allegata all'accordo (grosso modo tra la Via Nettunense, Via del Commercio e la Strada Mediana). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.7,
+      4.7
+     ],
+     [
+      3.7,
+      5.9
+     ],
+     [
+      4.0,
+      6.3
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Due porzioni accanto al centro",
+    "nota": "Zona 2 - Due porzioni distinte accanto al centro, come delimitate nella planimetria 2 allegata all'accordo: una a sud-ovest, oltre Via del Commercio (verso Via delle Scienze), e una a est del centro. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.8,
+      4.5
+     ],
+     [
+      3.3,
+      5.5
+     ],
+     [
+      3.8,
+      5.85
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Campo di Carne, Campoverde, Campoleone",
+    "nota": "Zona 3 - Centri abitati di Campo di Carne, Campoverde e Campoleone, come delimitati nelle planimetrie 3 allegate all'accordo. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.5,
+      3.5
+     ],
+     [
+      3.0,
+      4.7
+     ],
+     [
+      3.5,
+      5.5
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Resto del territorio comunale",
+    "nota": "Zona 4 - Tutto il resto del territorio comunale. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.0,
+      3.2
+     ],
+     [
+      2.5,
+      4.2
+     ],
+     [
+      3.0,
+      4.8
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "bassa",
+    "media",
+    "alta"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    2,
+    7
+   ],
+   "nota": "Fascia bassa: meno di 3 parametri. Fascia media: da 3 a 7 parametri. Fascia alta: più di 7 parametri."
+  },
+  "elementi": [
+   {
+    "testo": "Costruito o completamente ristrutturato negli ultimi 15 anni"
+   },
+   {
+    "testo": "Riscaldamento autonomo"
+   },
+   {
+    "testo": "Allaccio funzionante alla rete del gas e all'acqua"
+   },
+   {
+    "testo": "Porta d'ingresso blindata"
+   },
+   {
+    "testo": "Finestre con doppi vetri o vetri termici"
+   },
+   {
+    "testo": "Autorimessa singola"
+   },
+   {
+    "testo": "Posto auto a uso esclusivo"
+   },
+   {
+    "testo": "Piano rialzato o primo piano; ai piani più alti, con ascensore"
+   },
+   {
+    "testo": "Doppi servizi oltre 70 mq (fino a 70 mq basta un bagno)"
+   },
+   {
+    "testo": "Condizionatore d'aria"
+   },
+   {
+    "testo": "Area a uso esclusivo"
+   },
+   {
+    "testo": "Cantina, balcone o terrazzo a uso personale"
+   },
+   {
+    "testo": "Area verde, cortile o spazio esterno condominiale attrezzato"
+   },
+   {
+    "testo": "Portineria, videocitofono, videosorveglianza o simili"
+   },
+   {
+    "testo": "Pannelli fotovoltaici o solari termici"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile interna netta (senza i vani alti meno di 1,80 m)",
+   "correzioni": [
+    {
+     "fino": 45,
+     "incluso": true,
+     "perc": 22,
+     "tetto": 50
+    },
+    {
+     "fino": 60,
+     "incluso": true,
+     "perc": 16,
+     "tetto": 65
+    },
+    {
+     "fino": 70,
+     "incluso": true,
+     "perc": 10,
+     "tetto": 75
+    }
+   ],
+   "grandi": {
+    "oltre": 130,
+    "perc": 90
+   },
+   "voci": [
+    {
+     "chiave": "vani_bassi",
+     "testo": "Vani alti meno di 1,80 m",
+     "coeff": 0.7,
+     "abitazione": true
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "garage",
+     "testo": "Garage o box auto a uso esclusivo",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto a uso esclusivo",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "area_esclusiva",
+     "testo": "Area scoperta a uso esclusivo (fino ai mq dell'abitazione)",
+     "coeff": 0.15,
+     "scaglione": [
+      "base",
+      0.15,
+      0
+     ]
+    },
+    {
+     "chiave": "area_comune",
+     "testo": "Area scoperta o verde condominiale, quota millesimale",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Misura la superficie interna netta (tolleranza del 5% in più o in meno). Fino a 45 mq la superficie aumenta del 22% (al massimo 50 mq), da 45 a 60 mq del 16% (al massimo 65 mq), da 60 a 70 mq del 10% (al massimo 75 mq); oltre 130 mq la parte in più conta il 90%. Per l'area condominiale scrivi la tua quota: mq dell'area x millesimi / 1000."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "arredato",
+      "perc": 15
+     },
+     {
+      "valore": "completo",
+      "testo": "arredamento completo con elettrodomestici (piano cottura o forno, frigorifero, lavatrice)",
+      "perc": 25
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "L'arredo aumenta i valori minimi e massimi del 15%, o del 25% se l'arredamento è completo di elettrodomestici. Per i contratti agevolati più lunghi di 3 anni +2% per ogni anno in più, fino a 5 anni in più (8 anni, +10%). Arredo e durata si applicano uno dopo l'altro.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6,
+   "7": 8,
+   "8": 10
+  },
+  "durata_max": 8,
+  "durate": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "durata_dopo": true,
+  "combinazione": "prodotto",
+  "avvisi": [
+   {
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Transitorio (fino a 18 mesi): serve un motivo documentato previsto dall'accordo, per esempio trasferimento temporaneo di lavoro, matrimonio, rientro dall'estero, lavoro a tempo determinato in un altro comune, cure o assistenza a familiari, acquisto di una casa disponibile entro 18 mesi, lavori che rendono inagibile la propria casa. Il canone segue le stesse fasce dei contratti 3+2. Cauzione al massimo di una mensilità fino a 6 mesi, di due fino a 18 mesi. Per i contratti fino a 30 giorni il canone è libero."
+   },
+   {
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Contratto per studenti universitari (da 6 mesi a 3 anni, rinnovabile alla prima scadenza salvo disdetta dello studente con 1-3 mesi di preavviso): il canone segue le regole dei contratti 3+2. Il testo dell'accordo (titolo C) richiama la sede universitaria di Latina: chiedi conferma all'associazione che attesta il contratto."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 2",
+  "titolo": "Contratti di affitto a canone concordato - Attestazione di rispondenza ex D.M. 16.01.2017",
+  "sottotitolo": "Accordo territoriale per il territorio del Comune di Aprilia stipulato il 14/10/2019",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "Tabella parametri",
+  "dichiarazione": "La presente scheda ATTESTANTE il valore minimo e massimo applicabile per l'immobile oggetto della locazione è stata redatta secondo le dichiarazioni rese dal locatore, che a conferma sottoscrive la presente scheda.",
+  "firme": [
+   "Il locatore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "Le OO.SS. della proprietà e dei conduttori, firmatarie dell'Accordo territoriale per il Comune di Aprilia, ATTESTANO che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale suddetto.",
+   "Per prestata assistenza"
+  ],
+  "firme_attestazione": [
+   "OO.SS. Proprietà",
+   "OO.SS. Inquilini"
+  ],
+  "nota_zone": "La zona (area omogenea) si ricava dalle planimetrie allegate all'accordo: zona 1 il centro della città, zona 2 due porzioni accanto al centro, zona 3 i centri abitati di Campo di Carne, Campoverde e Campoleone, zona 4 il resto del territorio comunale."
+ }
+}

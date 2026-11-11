@@ -1,0 +1,335 @@
+{
+ "accordo": {
+  "codice": "formia-2023-07-10",
+  "modello": "formia-2023",
+  "comune": "Formia",
+  "provincia": "LT",
+  "titolo": "Accordo territoriale per il Comune di Formia",
+  "data": "2023-07-10",
+  "data_testo": "10 luglio 2023",
+  "deposito": "Comune di Formia, 13/07/2023, prot. 0039522",
+  "deposito_data": "13.07.2023",
+  "protocollo": "0039522 del 13/07/2023",
+  "ufficio": "Comune di Formia",
+  "ufficio_breve": "Comune di Formia",
+  "valido_fino": "2027-07-13",
+  "nota_validita": "Titolo H: durata di quattro anni dal giorno successivo al deposito (13/07/2023). Resta in vigore fino alla firma del nuovo accordo.",
+  "firmatari_proprieta": [
+   "APE CONFEDILIZIA",
+   "A.S.P.P.I.",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Stipulato il 10/07/2023 e depositato al Comune di Formia il 13/07/2023 (lettera di deposito del SUNIA con timbro di protocollo n. 0039522 del 13-07-2023). Quattro anni dal giorno dopo il deposito, poi in vigore fino al nuovo accordo. Sostituisce l'accordo depositato il 02/12/2004 (prot. 39357). Quattro aree omogenee (A, B, C, D), tre sub-fasce secondo quanti dei 16 parametri sono presenti (meno di 3: sub-fascia 3 minima; da 3 a 8: sub-fascia 2 media; più di 8: sub-fascia 1 massima); valori mensili al mq di superficie convenzionale, aggiornati ogni anno al 75% dell'ISTAT. Stesso modello dell'accordo di Latina. Vale per contratti agevolati e transitori; non c'è una parte per gli studenti universitari.",
+  "fonte": "SUNIA, Accordi territoriali di Latina: 'ACCORDO-FORMIA_DEPOSITATO-13-LUGLIO-2023.pdf' (scansione firmata con lettera di deposito protocollata, 18 pagine: testo, allegato 1 mappe, allegato 2 valori, allegato 3 attestazione)."
+ },
+ "esempio_zona": "la zona dall'indirizzo (zone A, B, C, D dell'accordo)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Zona A",
+    "nota": "Zona A - da Via Canzatora a ovest, Via Tito Scipione, Via Porto Caposele a sud, Via F. Tonetti, Via G. Paone, Via Olivetani, verso S. Erasmo, Via Ascatiello, Via Vicinale Monte di Mola, Via Pagnano a est, località S. M. la Noce, comprese tutte le aree edificabili in zona B3, B5, PPI e B6 del PRG a nord e a ovest (allegato 1). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.5,
+      5.6
+     ],
+     [
+      4.4,
+      6.9
+     ],
+     [
+      5.5,
+      7.5
+     ]
+    ]
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B",
+    "nota": "Zona B - dal confine ovest della Zona A verso Via Vicinale Monte di Mola, Via Cassio, località Caravalle, tratto di Sant'Antonio Abate, lungo la direttissima Roma-Napoli fino all'incrocio del ponte della ferrovia con Via Rotabile Formia-Castellonorato a nord, poi giù fino a Via Matteotti a est, fino allo svincolo con la SS Appia (Caserma Carabinieri), e lungo tutto il confine sud dell'area demaniale fino alla Zona A (allegato 1). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.3,
+      5.5
+     ],
+     [
+      4.2,
+      6.1
+     ],
+     [
+      4.4,
+      6.9
+     ]
+    ]
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C",
+    "nota": "Zona C - da Via delle Cave, Via Castagneto, Via Acqualonga, lungo Via Matteotti a nord fino allo svincolo di S. Croce, poi lungo il torrente S. Croce a est e l'area demaniale a sud, fino al confine della Zona B a ovest (allegato 1). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.1,
+      5.0
+     ],
+     [
+      4.0,
+      5.5
+     ],
+     [
+      4.2,
+      6.1
+     ]
+    ]
+   },
+   {
+    "codice": "D",
+    "nome": "Zona D - Resto del territorio e frazioni",
+    "nota": "Zona D - tutto il resto del territorio comunale, comprese le frazioni di Maranola, Trivio e Castellonorato (allegato 1). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.9,
+      4.4
+     ],
+     [
+      3.1,
+      5.0
+     ],
+     [
+      4.0,
+      5.5
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "3 (minima)",
+    "2 (media)",
+    "1 (massima)"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    2,
+    8
+   ]
+  },
+  "elementi": [
+   {
+    "testo": "Immobile costruito da non più di 15 anni, o completamente ristrutturato negli ultimi 15 anni"
+   },
+   {
+    "testo": "Edificio isolato, villino singolo o villino a schiera"
+   },
+   {
+    "testo": "Piano rialzato o primo piano; ai piani più alti, con ascensore"
+   },
+   {
+    "testo": "Servizi igienici doppi se l'alloggio supera 70 mq (fino a 70 mq basta un bagno)"
+   },
+   {
+    "testo": "Cantina, balcone, terrazzo, loggia o porticato a uso esclusivo"
+   },
+   {
+    "testo": "Riscaldamento autonomo, o centralizzato con contabilizzazione del calore per ogni alloggio"
+   },
+   {
+    "testo": "Condizionatore d'aria"
+   },
+   {
+    "testo": "Allaccio funzionante all'acquedotto pubblico"
+   },
+   {
+    "testo": "Allaccio funzionante al gas metano o ad altro impianto del gas a norma"
+   },
+   {
+    "testo": "Portineria, videocitofono o videosorveglianza condominiale"
+   },
+   {
+    "testo": "Porta d'ingresso blindata"
+   },
+   {
+    "testo": "Finestre con doppi vetri o vetri atermici"
+   },
+   {
+    "testo": "Autorimessa singola"
+   },
+   {
+    "testo": "Posto auto a uso esclusivo"
+   },
+   {
+    "testo": "Area esterna a uso esclusivo"
+   },
+   {
+    "testo": "Area verde, cortile o spazio esterno condominiale"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie interna netta dell'abitazione (senza i vani alti meno di 1,80 m)",
+   "correzioni": [
+    {
+     "fino": 45,
+     "incluso": true,
+     "perc": 22,
+     "tetto": 50
+    },
+    {
+     "fino": 60,
+     "incluso": true,
+     "perc": 16,
+     "tetto": 65
+    },
+    {
+     "fino": 70,
+     "incluso": true,
+     "perc": 10,
+     "tetto": 70
+    }
+   ],
+   "grandi": {
+    "oltre": 130,
+    "perc": 90
+   },
+   "voci": [
+    {
+     "chiave": "vani_bassi",
+     "testo": "Vani alti meno di 1,80 m",
+     "coeff": 0.7,
+     "abitazione": true
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazzi, logge, porticati, cantine",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "garage",
+     "testo": "Garage o box auto a uso esclusivo",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto a uso esclusivo",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "area_esclusiva",
+     "testo": "Area scoperta a uso esclusivo (15%, fino ai mq dell'abitazione)",
+     "coeff": 0.15,
+     "scaglione": [
+      "base",
+      0.15,
+      0
+     ]
+    },
+    {
+     "chiave": "area_comune",
+     "testo": "Area o verde condominiale, quota millesimale (10%, fino ai mq dell'abitazione)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0
+     ]
+    }
+   ],
+   "nota": "Misura la superficie interna netta (tolleranza del 5% in più o in meno). Fino a 45 mq la superficie aumenta del 22% (al massimo 50 mq), da 45 a 60 mq del 16% (al massimo 65 mq), da 60 a 70 mq del 10% (al massimo 70 mq); oltre 130 mq la parte in più conta il 90%. Per l'area condominiale scrivi la tua quota: mq dell'area x millesimi / 1000."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE)",
+    "nome": "classe energetica",
+    "nessuna": "classe E, F, G o senza APE",
+    "opzioni": [
+     {
+      "valore": "AB",
+      "testo": "classe A o B",
+      "perc": 8
+     },
+     {
+      "valore": "CD",
+      "testo": "classe C o D",
+      "perc": 5
+     }
+    ],
+    "solo_base": true
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "arredato",
+      "perc": 15
+     },
+     {
+      "valore": "completo",
+      "testo": "arredamento completo con elettrodomestici (piano cottura o forno, frigorifero, lavatrice)",
+      "perc": 25
+     }
+    ],
+    "solo_base": true
+   }
+  ],
+  "nota_maggiorazioni": "Classe energetica e arredo si sommano e valgono solo sulla superficie dell'abitazione, non su balconi, garage e aree esterne. Per durate oltre 3 anni +3% per ogni anno in più (fino a 6 anni), in modo composto: +3%, +6,09%, +9,27%.",
+  "durata": {
+   "4": 3,
+   "5": 6.09,
+   "6": 9.2727
+  },
+  "durata_dopo": true,
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "L'accordo di Formia non ha una parte per i contratti per studenti universitari: qui si applicano le regole dei contratti 3+2. Chiedi conferma all'associazione che attesta il contratto."
+   },
+   {
+    "testo": "I valori dell'accordo si aggiornano ogni anno al 75% della variazione ISTAT: qui trovi quelli originali del 2023, chiedi all'associazione che attesta il contratto quelli aggiornati."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 3",
+  "titolo": "Contratti di affitto a canone concordato - Attestazione di rispondenza ex D.M. 16.01.2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Formia stipulato il 10/07/2023, depositato il 13/07/2023 con prot. n. 0039522",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "Parametri di qualità dell'alloggio",
+  "dichiarazione": "La presente scheda ATTESTANTE il valore minimo e massimo applicabile per l'immobile oggetto della locazione è stata redatta secondo le dichiarazioni rese dal locatore, che a conferma sottoscrive la presente scheda.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "Le OO.SS. della proprietà e dei conduttori, firmatarie dell'Accordo territoriale per il Comune di Formia depositato il 13/07/2023 con Prot. n. 0039522 del 13/07/2023, visto le dichiarazioni delle parti, ATTESTANO che il contenuto economico del contratto corrisponde a quanto previsto dal citato Accordo Territoriale tuttora vigente.",
+   "Per prestata assistenza"
+  ],
+  "firme_attestazione": [
+   "OO.SS. Proprietà",
+   "OO.SS. Inquilini"
+  ],
+  "nota_zone": "La zona (area omogenea) si ricava dall'indirizzo: l'accordo descrive i confini delle zone A, B e C con le vie principali; la zona D è il resto del territorio con Maranola, Trivio e Castellonorato (allegato 1, mappe)."
+ }
+}

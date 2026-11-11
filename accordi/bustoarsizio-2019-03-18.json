@@ -1,0 +1,288 @@
+{
+ "accordo": {
+  "codice": "bustoarsizio-2019-03-18",
+  "modello": "varese-2018",
+  "comune": "Busto Arsizio",
+  "provincia": "VA",
+  "titolo": "Accordo territoriale per il Comune di Busto Arsizio",
+  "data": "2019-03-18",
+  "data_testo": "18 marzo 2019",
+  "deposito": "Comune di Busto Arsizio",
+  "deposito_data": "26.03.2019",
+  "protocollo": "36975/2019",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Busto Arsizio del 18 marzo 2019: durata di tre anni dal deposito, ormai trascorsi.</strong> Resta in vigore finché non ne viene firmato uno nuovo, e per i contratti firmati dopo la scadenza i valori minimi e massimi <strong>si aumentano della variazione ISTAT</strong> da aprile 2019 al mese prima della firma del contratto. Qui trovi i valori originali del 2019: chiedi quelli aggiornati all'associazione che attesta il contratto. Dal novembre 2025 esiste anche un accordo dei soli Confabitare e Assocasa per i Comuni ad alta tensione abitativa della provincia, con regole e valori diversi.",
+  "firmatari_proprieta": [
+   "A.P.E. - CONFEDILIZIA Varese",
+   "U.P.P.I. Varese"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A. Varese",
+   "S.I.C.eT. dei Laghi"
+  ],
+  "nota": "Firmato a Busto Arsizio il 18/03/2019 e depositato al Comune il 26/03/2019 con protocollo n. 36975/2019 (presa d'atto con delibera di Giunta n. 140 del 02/05/2019). Durata tre anni dal giorno dopo il deposito, poi resta in vigore fino al nuovo accordo; dopo la scadenza i limiti dell'allegato 2 si aumentano della variazione ISTAT dal mese dopo la firma dell'accordo al mese prima della firma del contratto. Sostituisce l'accordo del 09/02/2015. Il SICET ha firmato con una riserva sui transitori per esigenze non previste (punto 2, ultimo comma). Hanno poi aderito Confabitare Varese (09/09/2019), Feder.Casa Confsal (prot. 129953 del 11/10/2024), FENIT (prot. 107540 del 15/09/2025) e SEI.ASS (prot. 126151 del 28/10/2025). Confabitare applica, solo ai contratti che attesta lei, una propria tabella aggiornata con l'ISTAT a maggio 2024 (atto del 30/05/2024, per i contratti dal 1° giugno 2024). Il Comune, a dicembre 2025, indica ancora vigente l'accordo del 2019. Tre zone (centrale, semicentrale, periferica) secondo la mappa delle zone del canone per i dehors (allegato 1-bis); due tabelle, fino a 80 mq e oltre 80 mq di superficie complessiva; valori annui al mq (allegato 2) corretti con i coefficienti dell'allegato 3. Stessi valori e stesse regole dell'accordo di Varese del 03/12/2018. Il 13/11/2025 Confabitare e Assocasa hanno firmato un accordo per i Comuni ATA della provincia di Varese (Busto Arsizio compreso) basato sulle zone OMI, valido solo per le loro organizzazioni: non implementato.",
+  "fonte": "PDF dell'accordo (10 pagine: testo, allegati 1, 2 e 3, dichiarazione del SICET, mappa delle zone) e allegati 4-8 (contratti tipo, oneri accessori, moduli di attestazione 8 e 8 bis), pubblicati con la delibera di Giunta n. 140/2019 nell'Amministrazione trasparente del Comune di Busto Arsizio."
+ },
+ "esempio_zona": "centrale, semicentrale o periferica (mappa delle zone allegata all'accordo)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "tabella_per": "superficie",
+  "tabella_su": "totale",
+  "tabella_soglie": [
+   [
+    80,
+    "A"
+   ]
+  ],
+  "tabella_oltre": "B",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centrale",
+    "nota": "Area 1, zona centrale della mappa allegata all'accordo (allegato 1-bis: la zonizzazione approvata dal Comune di Busto Arsizio per il canone dei dehors).",
+    "fasce": {
+     "A": [
+      [
+       50.0,
+       90.0
+      ]
+     ],
+     "B": [
+      [
+       44.0,
+       85.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Semicentrale",
+    "nota": "Area 2, zona semicentrale della mappa allegata all'accordo (allegato 1-bis: la zonizzazione approvata dal Comune di Busto Arsizio per il canone dei dehors).",
+    "fasce": {
+     "A": [
+      [
+       38.0,
+       80.0
+      ]
+     ],
+     "B": [
+      [
+       36.0,
+       75.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Periferica",
+    "nota": "Area 3, zona periferica della mappa allegata all'accordo (allegato 1-bis: la zonizzazione approvata dal Comune di Busto Arsizio per il canone dei dehors): tutto il territorio fuori dalle zone centrale e semicentrale.",
+    "fasce": {
+     "A": [
+      [
+       34.0,
+       70.0
+      ]
+     ],
+     "B": [
+      [
+       32.0,
+       65.0
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "unica"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [],
+   "nota": "una sola fascia per zona: il canone si concorda fra il minimo e il massimo, corretti con le caratteristiche dell'allegato 3",
+   "nota_pdf": "Una sola fascia per zona (allegato 2): il canone si concorda fra il minimo e il massimo, corretti con i coefficienti dell'allegato 3 elencati qui sotto."
+  },
+  "elementi": [],
+  "superficie": {
+   "base": "Superficie lorda dell'appartamento (con i muri perimetrali e interni)",
+   "coeff_base": 0.9,
+   "correzioni": [
+    {
+     "fino": 60,
+     "perc": 15,
+     "tetto": 60
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa singola (superficie lorda)",
+     "coeff": 0.7
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto auto in autorimessa comune (superficie netta)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Cantine, solai, balconi, terrazzi e posti auto scoperti esclusivi (superficie lorda)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta di pertinenza esclusiva",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "L'appartamento conta per il 90% della superficie lorda (muri compresi); se il risultato è sotto i 60 mq si aumenta del 15%, ma senza superare 60 mq. Si aggiungono il 70% dell'autorimessa singola, il 50% del posto auto in autorimessa comune, il 25% di cantine, solai, balconi, terrazzi e posti auto scoperti esclusivi e il 10% dell'area scoperta esclusiva. Il totale sceglie la tabella: fino a 80 mq (tabella A) o oltre 80 mq (tabella B). Un errore di misura fino al 5% non cambia il canone."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "classe",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE)",
+    "nome": "classe energetica",
+    "nessuna": "non indicata",
+    "opzioni": [
+     {
+      "valore": "ABC",
+      "testo": "A, B o C",
+      "perc": 10
+     },
+     {
+      "valore": "DE",
+      "testo": "D o E",
+      "perc": 5
+     },
+     {
+      "valore": "F",
+      "testo": "F",
+      "perc": 0
+     },
+     {
+      "valore": "G",
+      "testo": "G",
+      "perc": -5
+     }
+    ]
+   },
+   {
+    "chiave": "clima",
+    "tipo": "spunta",
+    "testo": "Impianto di climatizzazione estiva",
+    "nome": "climatizzazione estiva",
+    "perc": 5
+   },
+   {
+    "chiave": "sicurezza",
+    "tipo": "spunta",
+    "testo": "Porta blindata e, in più, allarme o inferriate di sicurezza",
+    "nome": "porta blindata e allarme o inferriate",
+    "perc": 5
+   },
+   {
+    "chiave": "ristrutturato",
+    "tipo": "spunta",
+    "testo": "Ristrutturazione completa negli ultimi 10 anni, con titolo edilizio",
+    "nome": "ristrutturazione completa recente",
+    "perc": 5
+   },
+   {
+    "chiave": "ante1977",
+    "tipo": "spunta",
+    "testo": "Riduzione: costruito o ristrutturato per intero prima del 1977",
+    "nome": "costruito o ristrutturato prima del 1977",
+    "perc": -5
+   },
+   {
+    "chiave": "piano",
+    "tipo": "spunta",
+    "testo": "Riduzione: oltre il 2° piano fuori terra, in uno stabile senza ascensore",
+    "nome": "oltre il 2° piano senza ascensore",
+    "perc": -5
+   },
+   {
+    "chiave": "impianti",
+    "tipo": "spunta",
+    "testo": "Riduzione: impianti vecchi (elettrico, gas, idrico)",
+    "nome": "impianti vetusti",
+    "perc": -5
+   },
+   {
+    "chiave": "serramenti",
+    "tipo": "spunta",
+    "testo": "Riduzione: serramenti vecchi, senza guarnizioni o senza vetrocamera",
+    "nome": "serramenti vetusti",
+    "perc": -5
+   },
+   {
+    "chiave": "riscaldamento",
+    "tipo": "spunta",
+    "testo": "Riduzione: niente caldaia autonoma o centralizzata (solo stufe, apparecchi elettrici, split)",
+    "nome": "senza riscaldamento a caldaia",
+    "perc": -10
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "dopo": true,
+    "testo": "Alloggio completamente arredato, mobili in buone condizioni (aumento concordato, fino al 15%)",
+    "nome": "arredo completo",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "15",
+      "testo": "aumento del 15% (il massimo)",
+      "perc": 15
+     },
+     {
+      "valore": "10",
+      "testo": "aumento del 10%",
+      "perc": 10
+     },
+     {
+      "valore": "5",
+      "testo": "aumento del 5%",
+      "perc": 5
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "I coefficienti dell'allegato 3 (classe energetica, climatizzazione, sicurezza, ristrutturazione e le riduzioni) si sommano e valgono sia sul minimo sia sul massimo, insieme all'aumento per la durata (+5% per 4 anni, +8% per 5, +10% per 6 o più). Le riduzioni che si contano sono al massimo 4: se l'alloggio ne ha di più, segnane solo 4. L'arredo completo aumenta fino al 15% il canone così ottenuto, per tutti i tipi di contratto. Per i transitori fino a 30 giorni il canone è libero.",
+  "durata": {
+   "4": 5,
+   "5": 8,
+   "6": 10
+  },
+  "combinazione": "somma",
+  "avvisi": [],
+  "max_riduzioni": 4
+ },
+ "pdf": {
+  "allegato": "Allegati 2 e 3",
+  "titolo": "Calcolo del canone e attestazione di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Busto Arsizio sottoscritto il 18 marzo 2019 (depositato il 26/03/2019, prot. n. 36975/2019)",
+  "titolo_superficie": "SUPERFICIE COMPLESSIVA (TABELLA DELLE MODALITÀ DI CALCOLO DELLE SUPERFICI)",
+  "titolo_elementi": "Fascia di oscillazione (allegato 2)",
+  "dichiarazione": "Il richiedente dichiara sotto la propria responsabilità che i dati dell'immobile sopra riportati corrispondono al vero e che il contratto è stato stipulato con il tipo di contratto allegato al D.M. 16/01/2017, e chiede l'attestazione di rispondenza all'Accordo territoriale per il Comune di Busto Arsizio.",
+  "firme": [
+   "Il richiedente"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16/01/2017",
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Busto Arsizio depositato il 26/03/2019, sulla base degli elementi oggettivi dichiarati dal richiedente, anche ai fini dell'ottenimento delle agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Busto Arsizio, depositato in data 26/03/2019.",
+   "Busto Arsizio, lì ……………"
+  ],
+  "firme_attestazione": [
+   "Per l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla mappa allegata all'accordo (allegato 1-bis), che riprende le zone stabilite dal Comune di Busto Arsizio per il canone dei dehors: zona centrale, semicentrale e, fuori da queste, periferica. Chiedi la zona all'associazione o all'ufficio comunale."
+ }
+}

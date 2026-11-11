@@ -40,7 +40,9 @@
   const virgola = (n, c = 2) => (n === null || n === undefined ? "" :
     Number(n).toLocaleString("it-IT", { minimumFractionDigits: c, maximumFractionDigits: c }));
   /** Un elemento che non vale nella zona o nel tipo di contratto scelti (es. Lecce, Avellino). */
-  const escluso = (e, zona, tipo) => !!(e && ((e.zone && !e.zone.includes(String(zona || ""))) || (e.contratti && !e.contratti.includes(tipo || "agevolato"))));
+  // es. Bagheria: alcuni elementi non contano se è scelta una maggiorazione (esclusi_se: {chiave})
+  const escluso = (e, zona, tipo, scelte) => !!(e && ((e.zone && !e.zone.includes(String(zona || ""))) || (e.contratti && !e.contratti.includes(tipo || "agevolato")) ||
+    (e.esclusi_se && (scelte || {})[e.esclusi_se.chiave])));
   /** Il testo delle soglie delle fasce ("A: fino a 2 elementi · B: da 3 a 6 · C: da 7"); salta le fasce che
    *  in una zona non esistono (soglia negativa, es. Barletta) e usa il passo dei punti (0,5 a Cuneo). */
   function testoSoglie(F, s, cosa, sep) {
@@ -218,7 +220,8 @@
     let i = soglie.findIndex((x) => n <= x);
     if (i < 0) i = soglie.length;
     // es. Catanzaro: alcuni elementi (ristrutturazione recente, APE) bastano da soli per la fascia più alta
-    if (F.basta && F.basta.some((k) => presente(E[k], el[k]))) i = Math.max(i, soglie.length);
+    // es. Barletta, Altamura: l'arredo porta in fascia A solo da certe fasce (basta_min: {elemento: fascia minima})
+    if (F.basta && F.basta.some((k) => presente(E[k], el[k]) && i >= ((F.basta_min || {})[k] ?? 0))) i = Math.max(i, soglie.length);
     const mancano = (F.obbligatori || []).filter((k) => !el[k]);
     let avviso = i > 0 && mancano.length ? F.avviso_obbligatori || `Senza ${mancano.map((k) => `l'elemento ${k + 1}`).join(" e ")} si resta nella fascia più bassa.` : "";
     if (i > 0 && F.almeno) {
@@ -239,7 +242,7 @@
     if (!r.zona) avvisi.push("Scegli la zona.");
     // es. Lecce: alcuni elementi valgono solo in certe zone; altrove non si contano
     // es. Avellino: alcuni elementi valgono solo per certi contratti (Wi-Fi per transitori e studenti)
-    if (R.elementi && R.elementi.some((e) => e.zone || e.contratti)) s = { ...s, elementi: (s.elementi || []).map((x, k) => (escluso(R.elementi[k], s.zona, tipo) ? false : x)) };
+    if (R.elementi && R.elementi.some((e) => e.zone || e.contratti || e.esclusi_se)) s = { ...s, elementi: (s.elementi || []).map((x, k) => (escluso(R.elementi[k], s.zona, tipo, s.maggiorazioni_scelte) ? false : x)) };
     const f = fascia(accordo, s, r.zona);
     r.fascia = f; r.punti = f.n;
     if (f.avviso) avvisi.push(f.avviso);
@@ -323,6 +326,8 @@
       if (!perZona(m, z)) continue;
       // es. Pisa: la maggiorazione vale solo per alcune fasce (tipologie)
       if (m.fasce && !(r.fascia && m.fasce.includes(r.fascia.i))) continue;
+      // es. Modena, Carpi: l'arredo non aumenta il canone delle stanze (la tabella lo comprende già)
+      if (m.tranne_tabelle && m.tranne_tabelle.includes(r.tipologia)) continue;
       // es. Pistoia: la maggiorazione vale solo da una certa superficie in su (non cumulabile con quella dei piccoli)
       if (m.superficie && sup) { const mq = m.superficie.su === "base" ? sup.righe[0].mq : sup.totale; if ((m.superficie.da !== undefined && mq < m.superficie.da) || (m.superficie.a !== undefined && mq > m.superficie.a)) continue; }
       const val = (s.maggiorazioni_scelte || {})[m.chiave];
@@ -347,6 +352,15 @@
       }
     }
     corrente = null;
+    // es. Varese, Busto Arsizio: al massimo N riduzioni contano (le più forti)
+    if (R.max_riduzioni !== undefined) {
+      const neg = r.maggiorazioni.map((m, k) => [m, k]).filter(([m]) => m.perc < 0).sort((x, y) => x[0].perc - y[0].perc);
+      if (neg.length > R.max_riduzioni) {
+        const via = new Set(neg.slice(R.max_riduzioni).map(([, k]) => k));
+        r.maggiorazioni = r.maggiorazioni.filter((m, k) => !via.has(k)); for (let k = fonti.length - 1; k >= 0; k--) if (via.has(k)) fonti.splice(k, 1);
+        avvisi.push(`Contano al massimo ${R.max_riduzioni} riduzioni: le altre non si applicano.`);
+      }
+    }
     if (R.alternativa) {
       const A = R.alternativa, el = s.elementi || [];
       const n = R.elementi.filter((e, i) => presente(e, el[i])).length;
@@ -414,7 +428,8 @@
       const P = R.fasce.proporzionale && R.fasce.proporzionale[f.i];
       if (P && P.max_con_aumenti && prima.some((m) => m.perc > 0) && r.massimo_fascia !== undefined) r.base = [r.base[0], r.massimo_fascia];
       const kp = R.combinazione === "prodotto" ? prima.reduce((k, m) => k * (1 + m.perc / 100), 1) : 1 + prima.reduce((t, m) => t + m.perc, 0) / 100;
-      const kd = dopo.reduce((k, m) => k * (1 + m.perc / 100), 1);
+      // es. Frosinone, Cassino: gli aumenti oltre il tetto si sommano fra loro (art. 7), non si compongono
+      const kd = R.dopo_somma ? 1 + dopo.reduce((t, m) => t + m.perc, 0) / 100 : dopo.reduce((k, m) => k * (1 + m.perc / 100), 1);
       const zmin = Math.min(...r.tab.map((x) => x[0])) * kf, zmax = Math.max(...r.tab.map((x) => x[1])) * kf;
       let fermo = "";
       r.valori = r.base.map((x) => {

@@ -1,0 +1,1020 @@
+{
+ "accordo": {
+  "codice": "lameziaterme-2026-09-15",
+  "modello": "lameziaterme-2026",
+  "comune": "Lamezia Terme",
+  "provincia": "CZ",
+  "titolo": "Accordo territoriale per la Città di Lamezia Terme",
+  "data": "2026-09-15",
+  "data_testo": "15 settembre 2026",
+  "deposito": "Comune di Lamezia Terme",
+  "deposito_data": "15.09.2026",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Lamezia Terme del 15 settembre 2026</strong> (Confedilizia e CO.N.I.A.), in vigore dal deposito per tre anni e poi fino al nuovo accordo. I valori minimi e massimi si aggiornano ogni anno con l'ISTAT: qui trovi quelli originali dell'allegato A. A Lamezia esiste anche un altro accordo, depositato in Comune il 19 marzo 2024 da altre associazioni, il cui testo non è pubblicato: se il contratto viene attestato da una di quelle associazioni, chiedi a loro quali valori applicano.",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA Catanzaro",
+   "CONFEDILIZIA Calabria"
+  ],
+  "firmatari_conduttori": [
+   "CO.N.I.A. Catanzaro"
+  ],
+  "nota": "Stipulato in sede sindacale a Catanzaro il 15/09/2026 e depositato al Comune di Lamezia Terme lo stesso giorno (copertina dell'accordo; numero di protocollo non indicato). In vigore dal deposito per tre anni e poi fino al nuovo accordo (art. 14); dichiara cessati gli accordi precedenti (art. 16). Valori mensili al mq per zona OMI e tipologia (allegato A): abitazioni economiche, normali (almeno 6 elementi dell'allegato B, oppure appartamento nuovo o ristrutturato negli ultimi 10 anni, oppure APE fino alla classe E), ville e villini. Fasce aggiornate ogni anno con l'ISTAT FOI (art. 3).",
+  "fonte": "PDF dell'accordo con allegati A-F pubblicato da Confedilizia Catanzaro (26 pagine, scansione firmata)."
+ },
+ "esempio_zona": "la zona OMI (GEOPOI dell'Agenzia delle Entrate)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "B5",
+    "nome": "B5 - Centro storico Nicastro",
+    "nota": "Fascia centrale, zona OMI B5: Centro storico Nicastro. Abitazioni economiche da 1,8 a 5,1 €, normali da 2,2 a 6,0 €, ville e villini da 1,8 a 6,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       1.8,
+       5.1
+      ],
+      [
+       2.2,
+       6.0
+      ]
+     ],
+     "villa": [
+      [
+       1.8,
+       6.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "B6",
+    "nome": "B6 - Centro di Nicastro",
+    "nota": "Fascia centrale, zona OMI B6: Centro di Nicastro. Abitazioni economiche da 3,2 a 7,6 €, normali da 4,0 a 9,0 €, ville e villini da 3,2 a 9,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.2,
+       7.6
+      ],
+      [
+       4.0,
+       9.0
+      ]
+     ],
+     "villa": [
+      [
+       3.2,
+       9.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C4",
+    "nome": "C4 - Zona alta Nicastro",
+    "nota": "Fascia semicentrale, zona OMI C4: Zona alta Nicastro. Abitazioni economiche da 2,5 a 6,0 €, normali da 2,9 a 7,0 €, ville e villini da 2,5 a 7,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.5,
+       6.0
+      ],
+      [
+       2.9,
+       7.0
+      ]
+     ],
+     "villa": [
+      [
+       2.5,
+       7.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C5",
+    "nome": "C5 - Quartiere Bella - Madonna della Spina",
+    "nota": "Fascia semicentrale, zona OMI C5: Quartiere Bella - Madonna della Spina. Abitazioni economiche da 2,4 a 6,0 €, normali da 2,9 a 7,0 €, ville e villini da 2,4 a 7,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.4,
+       6.0
+      ],
+      [
+       2.9,
+       7.0
+      ]
+     ],
+     "villa": [
+      [
+       2.4,
+       7.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C6",
+    "nome": "C6 - Nicastro ovest (stadio - ospedale)",
+    "nota": "Fascia semicentrale, zona OMI C6: Nicastro ovest, dallo stadio \"Guido D'Ippolito\" al Presidio Ospedaliero \"Giovanni Paolo II\". Abitazioni economiche da 2,4 a 6,4 €, normali da 2,9 a 7,5 €, ville e villini da 2,4 a 7,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.4,
+       6.4
+      ],
+      [
+       2.9,
+       7.5
+      ]
+     ],
+     "villa": [
+      [
+       2.4,
+       7.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C7",
+    "nome": "C7 - Nicastro sud, via Senatore A. Scarpino",
+    "nota": "Fascia semicentrale, zona OMI C7: Nicastro sud, da via dei Bizantini a via del Progresso lungo via Senatore Armando Scarpino. Abitazioni economiche da 2,9 a 6,8 €, normali da 3,7 a 8,0 €, ville e villini da 2,9 a 8,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.9,
+       6.8
+      ],
+      [
+       3.7,
+       8.0
+      ]
+     ],
+     "villa": [
+      [
+       2.9,
+       8.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D18",
+    "nome": "D18 - Nicastro sud, est di via del Progresso",
+    "nota": "Fascia periferica, zona OMI D18: Nicastro sud, zona est di via del Progresso. Abitazioni economiche da 2,7 a 6,8 €, normali da 3,7 a 8,0 €, ville e villini da 2,7 a 8,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.7,
+       6.8
+      ],
+      [
+       3.7,
+       8.0
+      ]
+     ],
+     "villa": [
+      [
+       2.7,
+       8.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D19",
+    "nome": "D19 - Nicastro sud, via Progresso - via Foderaro",
+    "nota": "Fascia periferica, zona OMI D19: Nicastro sud, da via del Progresso a via Senatore Arturo Perugini e via Antonio Reillo fino a via Salvatore Foderaro. Abitazioni economiche da 3,0 a 6,4 €, normali da 3,4 a 7,5 €, ville e villini da 3,0 a 7,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.0,
+       6.4
+      ],
+      [
+       3.4,
+       7.5
+      ]
+     ],
+     "villa": [
+      [
+       3.0,
+       7.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D20",
+    "nome": "D20 - Nicastro-Sambiase sud, fino a via Savutano",
+    "nota": "Fascia periferica, zona OMI D20: Nicastro-Sambiase sud, da via Senatore Arturo Perugini e via Antonio Reillo fino a via Savutano. Abitazioni economiche da 2,3 a 6,0 €, normali da 3,1 a 7,0 €, ville e villini da 2,3 a 7,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.3,
+       6.0
+      ],
+      [
+       3.1,
+       7.0
+      ]
+     ],
+     "villa": [
+      [
+       2.3,
+       7.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D21",
+    "nome": "D21 - Nicastro-Sambiase, via G. Marconi",
+    "nota": "Fascia periferica, zona OMI D21: Area urbana Nicastro-Sambiase lungo via Guglielmo Marconi fino alla linea ferroviaria. Abitazioni economiche da 2,8 a 6,0 €, normali da 3,1 a 7,0 €, ville e villini da 2,8 a 7,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.8,
+       6.0
+      ],
+      [
+       3.1,
+       7.0
+      ]
+     ],
+     "villa": [
+      [
+       2.8,
+       7.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D22",
+    "nome": "D22 - Sambiase, lungo via delle Terme",
+    "nota": "Fascia periferica, zona OMI D22: Area urbana Sambiase lungo via delle Terme. Abitazioni economiche da 2,3 a 6,0 €, normali da 3,1 a 7,0 €, ville e villini da 2,3 a 7,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.3,
+       6.0
+      ],
+      [
+       3.1,
+       7.0
+      ]
+     ],
+     "villa": [
+      [
+       2.3,
+       7.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D23",
+    "nome": "D23 - Centro di Sambiase",
+    "nota": "Fascia periferica, zona OMI D23: Centro di Sambiase. Abitazioni economiche da 3,2 a 6,4 €, normali da 3,5 a 7,5 €, ville e villini da 3,2 a 7,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.2,
+       6.4
+      ],
+      [
+       3.5,
+       7.5
+      ]
+     ],
+     "villa": [
+      [
+       3.2,
+       7.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E7",
+    "nome": "E7 - Località Zangarona",
+    "nota": "Fascia suburbana, zona OMI E7: Località Zangarona. Abitazioni economiche da 1,8 a 4,7 €, normali da 2,2 a 5,5 €, ville e villini da 1,8 a 5,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       1.8,
+       4.7
+      ],
+      [
+       2.2,
+       5.5
+      ]
+     ],
+     "villa": [
+      [
+       1.8,
+       5.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E8",
+    "nome": "E8 - Località Fronti",
+    "nota": "Fascia suburbana, zona OMI E8: Località Fronti. Abitazioni economiche da 1,8 a 4,7 €, normali da 2,2 a 5,5 €, ville e villini da 1,8 a 5,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       1.8,
+       4.7
+      ],
+      [
+       2.2,
+       5.5
+      ]
+     ],
+     "villa": [
+      [
+       1.8,
+       5.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E9",
+    "nome": "E9 - Località Magolà",
+    "nota": "Fascia suburbana, zona OMI E9: Località Magolà. Abitazioni economiche da 3,3 a 6,8 €, normali da 3,8 a 8,0 €, ville e villini da 3,3 a 8,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.3,
+       6.8
+      ],
+      [
+       3.8,
+       8.0
+      ]
+     ],
+     "villa": [
+      [
+       3.3,
+       8.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E12",
+    "nome": "E12 - Vetere",
+    "nota": "Fascia suburbana, zona OMI E12: Vetere. Abitazioni economiche da 2,1 a 4,7 €, normali da 2,3 a 5,5 €, ville e villini da 2,1 a 5,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.1,
+       4.7
+      ],
+      [
+       2.3,
+       5.5
+      ]
+     ],
+     "villa": [
+      [
+       2.1,
+       5.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E13",
+    "nome": "E13 - Contrada Acquafredda",
+    "nota": "Fascia suburbana, zona OMI E13: Contrada Acquafredda. Abitazioni economiche da 1,8 a 4,2 €, normali da 2,2 a 5,0 €, ville e villini da 1,8 a 5,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       1.8,
+       4.2
+      ],
+      [
+       2.2,
+       5.0
+      ]
+     ],
+     "villa": [
+      [
+       1.8,
+       5.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E18",
+    "nome": "E18 - Gabella",
+    "nota": "Fascia suburbana, zona OMI E18: Gabella. Abitazioni economiche da 2,0 a 4,7 €, normali da 2,3 a 5,5 €, ville e villini da 2,0 a 5,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.0,
+       4.7
+      ],
+      [
+       2.3,
+       5.5
+      ]
+     ],
+     "villa": [
+      [
+       2.0,
+       5.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E19",
+    "nome": "E19 - Località Acquadanzano",
+    "nota": "Fascia suburbana, zona OMI E19: Località Acquadanzano. Abitazioni economiche da 2,0 a 4,7 €, normali da 2,3 a 5,5 €, ville e villini da 2,0 a 5,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.0,
+       4.7
+      ],
+      [
+       2.3,
+       5.5
+      ]
+     ],
+     "villa": [
+      [
+       2.0,
+       5.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E21",
+    "nome": "E21 - Sant'Eufemia",
+    "nota": "Fascia suburbana, zona OMI E21: Sant'Eufemia. Abitazioni economiche da 3,4 a 7,2 €, normali da 3,9 a 8,5 €, ville e villini da 3,4 a 8,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       3.4,
+       7.2
+      ],
+      [
+       3.9,
+       8.5
+      ]
+     ],
+     "villa": [
+      [
+       3.4,
+       8.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E22",
+    "nome": "E22 - Località Piano Luppino",
+    "nota": "Fascia suburbana, zona OMI E22: Località Piano Luppino. Abitazioni economiche da 2,0 a 4,7 €, normali da 2,3 a 5,5 €, ville e villini da 2,0 a 5,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.0,
+       4.7
+      ],
+      [
+       2.3,
+       5.5
+      ]
+     ],
+     "villa": [
+      [
+       2.0,
+       5.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E23",
+    "nome": "E23 - Zona industriale LameziaEuropa",
+    "nota": "Fascia suburbana, zona OMI E23: Zona industriale LameziaEuropa. Abitazioni economiche da 1,3 a 4,2 €, normali da 1,8 a 5,0 €, ville e villini da 1,3 a 5,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       1.3,
+       4.2
+      ],
+      [
+       1.8,
+       5.0
+      ]
+     ],
+     "villa": [
+      [
+       1.3,
+       5.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E24",
+    "nome": "E24 - Frazione di San Pietro Lametino",
+    "nota": "Fascia suburbana, zona OMI E24: Frazione di San Pietro Lametino. Abitazioni economiche da 1,2 a 3,8 €, normali da 1,5 a 4,5 €, ville e villini da 1,2 a 4,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       1.2,
+       3.8
+      ],
+      [
+       1.5,
+       4.5
+      ]
+     ],
+     "villa": [
+      [
+       1.2,
+       4.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E25",
+    "nome": "E25 - Aeroporto Internazionale",
+    "nota": "Fascia suburbana, zona OMI E25: Aeroporto Internazionale Lamezia Terme. Abitazioni economiche da 1,5 a 5,1 €, normali da 2,0 a 6,0 €, ville e villini da 1,5 a 6,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       1.5,
+       5.1
+      ],
+      [
+       2.0,
+       6.0
+      ]
+     ],
+     "villa": [
+      [
+       1.5,
+       6.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E26",
+    "nome": "E26 - Lungomare Lamezia Terme",
+    "nota": "Fascia suburbana, zona OMI E26: Lungomare Lamezia Terme. Abitazioni economiche da 2,0 a 7,6 €, normali da 2,6 a 9,0 €, ville e villini da 2,0 a 9,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.0,
+       7.6
+      ],
+      [
+       2.6,
+       9.0
+      ]
+     ],
+     "villa": [
+      [
+       2.0,
+       9.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E27",
+    "nome": "E27 - Terme di Caronte - località Bagni",
+    "nota": "Fascia suburbana, zona OMI E27: Terme di Caronte - località Bagni. Abitazioni economiche da 1,7 a 4,7 €, normali da 2,0 a 5,5 €, ville e villini da 1,7 a 5,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       1.7,
+       4.7
+      ],
+      [
+       2.0,
+       5.5
+      ]
+     ],
+     "villa": [
+      [
+       1.7,
+       5.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E28",
+    "nome": "E28 - Nicastro sud, via del Progresso - via Apuli",
+    "nota": "Fascia suburbana, zona OMI E28: Nicastro sud, lungo via del Progresso fino a via degli Apuli e da via Salvatore Foderaro a via Salvatore Raffaele. Abitazioni economiche da 2,5 a 6,4 €, normali da 3,1 a 7,5 €, ville e villini da 2,5 a 7,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.5,
+       6.4
+      ],
+      [
+       3.1,
+       7.5
+      ]
+     ],
+     "villa": [
+      [
+       2.5,
+       7.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E29",
+    "nome": "E29 - Nicastro-Sambiase sud, via dei Bizantini",
+    "nota": "Fascia suburbana, zona OMI E29: Nicastro-Sambiase sud, lungo via dei Bizantini fino a via degli Apuli e da via Salvatore Foderaro a via Salvatore Raffaele. Abitazioni economiche da 2,5 a 6,4 €, normali da 3,1 a 7,5 €, ville e villini da 2,5 a 7,5 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       2.5,
+       6.4
+      ],
+      [
+       3.1,
+       7.5
+      ]
+     ],
+     "villa": [
+      [
+       2.5,
+       7.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "R2",
+    "nome": "R2 - Zona rurale",
+    "nota": "Fascia rurale, zona OMI R2: Zona rurale. Abitazioni economiche da 1,3 a 5,1 €, normali da 1,8 a 6,0 €, ville e villini da 1,3 a 6,0 € al mq al mese. In caso di dubbio prevale la zona OMI risultante da GEOPOI (Agenzia delle Entrate).",
+    "fasce": {
+     "abitazione": [
+      [
+       1.3,
+       5.1
+      ],
+      [
+       1.8,
+       6.0
+      ]
+     ],
+     "villa": [
+      [
+       1.3,
+       6.0
+      ]
+     ]
+    }
+   }
+  ],
+  "tabella_per": "scelta",
+  "tabella_chiave": "tipologia",
+  "tabella_predefinita": "abitazione",
+  "fasce": {
+   "nomi": [
+    "economica",
+    "normale"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    5
+   ],
+   "basta": [
+    30,
+    31,
+    45
+   ],
+   "nomi_tabella": {
+    "villa": "villa o villino"
+   },
+   "nota_soglie": "è normale anche con l'elemento 31, 32 o 46 (appartamento nuovo o ristrutturato negli ultimi 10 anni, APE fino alla classe E, recente ristrutturazione integrale); ville e villini hanno una fascia propria"
+  },
+  "elementi": [
+   {
+    "testo": "Riscaldamento autonomo"
+   },
+   {
+    "testo": "Riscaldamento centralizzato con termoregolazione"
+   },
+   {
+    "testo": "Videosorveglianza, impianto di sicurezza o allarme"
+   },
+   {
+    "testo": "Impianto antincendio"
+   },
+   {
+    "testo": "Antenna centralizzata o impianto satellitare"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Citofono o videocitofono"
+   },
+   {
+    "testo": "Aria condizionata o climatizzazione"
+   },
+   {
+    "testo": "Pavimento riscaldato"
+   },
+   {
+    "testo": "Pavimento in parquet, gres porcellanato o materiale equivalente"
+   },
+   {
+    "testo": "Elettrodomestici efficienti o collegati in rete"
+   },
+   {
+    "testo": "Impianto fotovoltaico"
+   },
+   {
+    "testo": "Caldaia a condensazione"
+   },
+   {
+    "testo": "Autoclave con serbatoio acqua"
+   },
+   {
+    "testo": "Impianto solare termico"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Doppi infissi, vetrocamera o infissi antirumore"
+   },
+   {
+    "testo": "Tapparelle o persiane motorizzate"
+   },
+   {
+    "testo": "Box"
+   },
+   {
+    "testo": "Posto auto assegnato"
+   },
+   {
+    "testo": "Posto auto in cortile chiuso o riservato allo stabile"
+   },
+   {
+    "testo": "Doppio posto auto riservato"
+   },
+   {
+    "testo": "Cortile, corte, terrazza a piano terra o giardino a uso comune"
+   },
+   {
+    "testo": "Giardino a uso esclusivo"
+   },
+   {
+    "testo": "Doppio ingresso"
+   },
+   {
+    "testo": "Ingresso autonomo in villa o villino"
+   },
+   {
+    "testo": "Portiere"
+   },
+   {
+    "testo": "Linea telefonica, ADSL, fibra o connessione internet"
+   },
+   {
+    "testo": "Wi-Fi"
+   },
+   {
+    "testo": "Stabile ultimato, ammodernato o ristrutturato negli ultimi 15 anni"
+   },
+   {
+    "testo": "Appartamento ultimato, ammodernato o ristrutturato negli ultimi 10 anni"
+   },
+   {
+    "testo": "Certificazione energetica A4, A3, A2, A1, B, C, D o E"
+   },
+   {
+    "testo": "Porta blindata o finestre blindate"
+   },
+   {
+    "testo": "Cucina con finestra"
+   },
+   {
+    "testo": "Balconi o terrazzi"
+   },
+   {
+    "testo": "Pertinenze utilizzabili (sottotetto, magazzino, cantina, lastrico solare)"
+   },
+   {
+    "testo": "Fermate del trasporto pubblico entro 300 metri"
+   },
+   {
+    "testo": "Autorimesse o garage custoditi entro 300 metri"
+   },
+   {
+    "testo": "Palazzina fino a quattro piani, con non più di tre appartamenti per piano"
+   },
+   {
+    "testo": "Supermercati o servizi essenziali entro 300 metri"
+   },
+   {
+    "testo": "Strutture per il superamento delle barriere architettoniche"
+   },
+   {
+    "testo": "Piscina, anche condominiale"
+   },
+   {
+    "testo": "Vista mare o particolare panoramicità"
+   },
+   {
+    "testo": "Vicinanza al mare, alla montagna, a terme o impianti sciistici"
+   },
+   {
+    "testo": "Terrazzi, giardini o spazi esterni di particolare fruibilità"
+   },
+   {
+    "testo": "Recente ristrutturazione integrale"
+   },
+   {
+    "testo": "Finiture di pregio"
+   },
+   {
+    "testo": "Servizi comuni di particolare livello"
+   },
+   {
+    "testo": "Impianti domotici"
+   },
+   {
+    "testo": "Colonnina di ricarica per veicoli elettrici"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale (dalla visura)",
+   "voci": [
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazzi, cantine, soffitte, giardini e spazi esterni esclusivi, aree comuni a verde",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto scoperto, coperto o in autorimessa comune",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "box",
+     "testo": "Box auto o garage",
+     "coeff": 0.65
+    },
+    {
+     "chiave": "bassi",
+     "testo": "Vani con altezza media sotto 1,70 m",
+     "coeff": 0.2
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 49.99,
+     "perc": 20
+    },
+    {
+     "fino": 70,
+     "perc": 15
+    },
+    {
+     "fino": 90,
+     "perc": 10
+    }
+   ],
+   "nota": "Superficie catastale (visura), salvo altro atto ufficiale. Gli accessori si contano solo se risultano separatamente. Alloggi sotto 50 mq: superficie convenzionale +20%; da 51 a 70 mq +15%; da 71 a 90 mq +10% (allegato C).",
+   "correzioni_totale_su": "base"
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "tipologia",
+    "tipo": "scelta",
+    "testo": "Tipologia (sceglie la tabella dei valori)",
+    "nome": "tipologia",
+    "nessuna": "Appartamento (abitazione economica o normale)",
+    "opzioni": [
+     {
+      "valore": "villa",
+      "testo": "Villa o villino (indipendente o semi-indipendente)",
+      "perc": 0,
+      "breve": "villa o villino"
+     }
+    ],
+    "nessuna_breve": "appartamento"
+   },
+   {
+    "chiave": "ammobiliato",
+    "tipo": "scelta",
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato",
+      "perc": 15
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "testo": "Caratteristiche aggiuntive di particolare pregio (piscina, vista mare, finiture di pregio...)",
+    "nome": "caratteristiche di pregio",
+    "perc": 20
+   },
+   {
+    "chiave": "seminterrato",
+    "tipo": "spunta",
+    "testo": "Alloggio al piano seminterrato abitabile",
+    "nome": "piano seminterrato",
+    "perc": -20
+   },
+   {
+    "chiave": "senza_ascensore",
+    "tipo": "spunta",
+    "testo": "Alloggio oltre il terzo piano senza ascensore",
+    "nome": "oltre il terzo piano senza ascensore",
+    "perc": -10
+   }
+  ],
+  "nota_maggiorazioni": "Arredamento (parziale fino al 15%, completo fino al 30%) e caratteristiche di pregio (fino al 20%) si sommano; seminterrato fino a -20%, oltre il terzo piano senza ascensore fino a -10% (allegato B). Durata di 4, 5 o 6 anni e più: fino a +5%, +10%, +15% su minimo e massimo (art. 6). Transitori oltre 30 giorni: fino a +20% (art. 7). Le maggiorazioni vanno scritte nel contratto.",
+  "durata": {
+   "4": 5,
+   "5": 10,
+   "6": 15
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Dentro la fascia il valore dipende dal numero, dalla qualità e dall'importanza degli elementi: per arrivare al massimo l'immobile deve avere caratteristiche complessivamente adeguate (stato di manutenzione, impianti, servizi, posizione). Con pochi elementi pattuisci un valore più basso (allegato B)."
+   },
+   {
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Contratto transitorio (fino a 18 mesi): oltre i 30 giorni il canone può aumentare fino al 20% e il motivo di transitorietà va scritto nel contratto e documentato. Fino a 30 giorni canone e spese sono liberi (art. 7)."
+   },
+   {
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Contratto per studenti universitari (da 6 mesi a 3 anni): stesse fasce, elementi e maggiorazioni degli agevolati, senza l'aumento dei transitori (art. 8)."
+   }
+  ],
+  "contratto": {
+   "transitorio": 20
+  }
+ },
+ "pdf": {
+  "allegato": "Allegato E",
+  "titolo": "Attestazione bilaterale di rispondenza ex D.M. 16/1/2017",
+  "sottotitolo": "Accordo territoriale per la Città di Lamezia Terme, stipulato e depositato il 15/09/2026",
+  "titolo_elementi": "Elementi oggettivi dell'immobile (allegato B)",
+  "dichiarazione": "La parte richiedente dichiara, sotto la propria responsabilità, gli elementi oggettivi sopra riportati.",
+  "firme": [],
+  "attestazione": [
+   "Tutto ciò premesso, le Organizzazioni ……………………………, come sopra rappresentate, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTANO che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Lamezia Terme depositato in data 15/09/2026."
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona è quella OMI dell'Agenzia delle Entrate (GEOPOI): B5-B6 centrale, C4-C7 semicentrale, D18-D23 periferica, E7-E29 suburbana, R2 rurale. In caso di dubbio prevale GEOPOI (art. 2)."
+ }
+}
