@@ -747,6 +747,41 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flatina-2022-06-20-protocollo-intesa-imu-2023.pdf?alt=media&token=b66e1fbf-e3f8-4f9f-a3a6-185e59e3a557"
     }
    ]
+  },
+  {
+   "comune": "Pescara",
+   "provincia": "PE",
+   "accordo": "pescara-2018-05-29",
+   "sottoscritto": "29 maggio 2018",
+   "depositato": "29 maggio 2018",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpescara-2018-05-29-accordo.pdf?alt=media&token=6efdef19-8106-4593-98aa-9decba9c706e",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpescara-2018-05-29-accordo.pdf?alt=media&token=6efdef19-8106-4593-98aa-9decba9c706e"
+    },
+    {
+     "nome": "Allegato a b c contratti tipo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpescara-2018-05-29-allegato-a-b-c-contratti-tipo.pdf?alt=media&token=49df13af-10f5-48cd-9b1c-0c309e10786b"
+    },
+    {
+     "nome": "Allegato d oneri accessori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpescara-2018-05-29-allegato-d-oneri-accessori.pdf?alt=media&token=532618d4-1ac5-4809-bf8b-f389614dd5e4"
+    },
+    {
+     "nome": "Allegato e negoziazione conciliazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpescara-2018-05-29-allegato-e-negoziazione-conciliazione.pdf?alt=media&token=617af8e7-ad1d-4277-916b-d04103886185"
+    },
+    {
+     "nome": "Allegato f attestazione unilaterale",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpescara-2018-05-29-allegato-f-attestazione-unilaterale.pdf?alt=media&token=2dbfb118-e9ec-4d84-b955-772c447de236"
+    },
+    {
+     "nome": "Allegato g attestazione bilaterale",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpescara-2018-05-29-allegato-g-attestazione-bilaterale.pdf?alt=media&token=85305145-6cd9-4b99-896b-aeb50c8813d0"
+    }
+   ]
   }
  ]
 }

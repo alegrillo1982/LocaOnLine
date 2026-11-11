@@ -159,7 +159,10 @@
       const conta = (q) => E.filter((e, k) => k >= q.da && k <= q.a && presente(e, el[k])).length;
       let i = 0, avviso = "";
       F.requisiti.forEach((req, k) => { if (req && req.every((q) => (q.tutti ? conta(q) === q.a - q.da + 1 : conta(q) >= q.n))) i = k; });
-      if (F.blocca && i > F.blocca.fino && conta(F.blocca) > 0) { i = F.blocca.fino; avviso = F.blocca.avviso; }
+      // uno o più blocchi (es. Pescara: A/3 di classe 1, A/4, A/6; A/5 o stufe, salvo almeno 4 elementi B)
+      for (const B of [].concat(F.blocca || [])) {
+        if (i > B.fino && conta(B) > 0 && !(B.salvo && conta(B.salvo) >= B.salvo.n)) { i = B.fino; avviso = B.avviso; }
+      }
       return { n: F.conta ? conta(F.conta) : 0, i, nome: F.nomi[i], avviso };
     }
     if (F.criterio === "scelta") {
@@ -202,7 +205,8 @@
         r.tipologia = chiave;
       }
       if (R.tabella_per === "superficie") {
-        const U = numero((s.superfici || {}).base);
+        // es. Monza, Reggio Emilia: la taglia si sceglie sulla superficie totale (con le pertinenze)
+        const U = R.tabella_su === "totale" ? ((superficie(accordo, s) || {}).totale ?? null) : numero((s.superfici || {}).base);
         // es. Parma: soglie proprie dell'accordo, [[40,"40"],[60,"60"],...] e la tabella per le superfici oltre
         const TS = R.tabella_soglie;
         chiave = (s.maggiorazioni_scelte || {}).casa ? "casa"
@@ -364,7 +368,23 @@
     if (pattuito !== null) {
       r.canone_pattuito = pattuito;
       if (r.canone_massimo !== null && pattuito > r.canone_massimo + 0.005) avvisi.push(`Il canone pattuito supera il massimo (€ ${virgola(r.canone_massimo)} al mese).`);
-      if (r.canone_minimo !== null && pattuito < r.canone_minimo - 0.005) avvisi.push(`Il canone pattuito è sotto il minimo (€ ${virgola(r.canone_minimo)} al mese).`);
+      if (r.canone_minimo !== null && pattuito < r.canone_minimo - 0.005) {
+        // es. Reggio Emilia: sotto il minimo della sub-fascia si può scendere, ma non sotto un minimo assoluto
+        if (R.minimo_assoluto === undefined) avvisi.push(`Il canone pattuito è sotto il minimo (€ ${virgola(r.canone_minimo)} al mese).`);
+        else if (pattuito < R.minimo_assoluto) avvisi.push(`Il canone non può scendere sotto € ${virgola(R.minimo_assoluto)} al mese.`);
+        else avvisi.push(`Sotto il minimo della fascia (€ ${virgola(r.canone_minimo)}): consentito, purché non sotto € ${virgola(R.minimo_assoluto)} al mese.`);
+      }
+    }
+    // es. Pescara: il canone non può essere più basso di quello della riga inferiore della tabella (alloggio più piccolo)
+    if (R.minimo_riga_inferiore && R.tabella_soglie && !s._riga && r.tipologia && r.canone_massimo !== null) {
+      const TS = R.tabella_soglie, k = r.tipologia === R.tabella_oltre ? TS.length : TS.findIndex((x) => x[1] === r.tipologia);
+      if (k > 0) {
+        const lim = TS[k - 1][0], r2 = calcola(accordo, { ...s, _riga: true, canone_mensile: "", superfici: { ...(s.superfici || {}), base: String(lim) } });
+        if (r2.canone_massimo !== null && (r2.canone_minimo > r.canone_minimo || r2.canone_massimo > r.canone_massimo)) {
+          r.canone_minimo = Math.max(r.canone_minimo, r2.canone_minimo); r.canone_massimo = Math.max(r.canone_massimo, r2.canone_massimo);
+          avvisi.push(`Il canone non può essere più basso di quello di un alloggio di ${virgola(lim, 0)} mq della riga inferiore della tabella: minimo € ${virgola(r.canone_minimo)}, massimo € ${virgola(r.canone_massimo)}.`);
+        }
+      }
     }
     for (const a of (R.avvisi || [])) if (perZona(a, z) && (!a.fascia || a.fascia.includes(f.n))) avvisi.push(a.testo);
     return r;

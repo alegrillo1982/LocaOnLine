@@ -126,7 +126,7 @@
     else if (r.fascia.prevalente) { for (const rr of aCapo(r.fascia.gruppi.map((g) => `${g.nome}: ${g.fascia.toLowerCase()}`).join("  ·  ") + `  →  livello prevalente ${r.fascia.nome.toUpperCase()}`, reg, 7.8, DX - SX)) { spazio(10); tx(rr, SX, a, { sz: 7.8, c: DATO }); a += 9.5; } a -= 9.5; }
     else if (r.fascia.gruppi) tx(r.fascia.gruppi.map((g) => `${g.nome}: ${g.n} punti, fascia ${g.fascia}`).join("   ·   "), SX, a, { sz: 7.8, c: DATO });
     else tx(R.fasce.nomi.map((n, i) => i === 0 ? `${n}: fino a ${soglie[0]} ${cosa}` : i < soglie.length ? `${n}: da ${soglie[i - 1] + 1} a ${soglie[i]}` : `${n}: da ${soglie[i - 1] + 1}`).join("   ·   "), SX, a, { sz: 7.8 });
-    if (!r.fascia.prevalente) dx(R.fasce.criterio === "differenza" ? `${(P.etichetta_totale || "TOTALE PERCENTUALI")} ${String(r.punti).replace(".", ",")}%` : `TOTALE ${R.fasce.criterio === "punti" ? "PUNTEGGIO" : "ELEMENTI"} ${r.punti}`, DX, a, { f: bold, sz: 8.6, c: DATO });
+    if (!r.fascia.prevalente) dx(R.fasce.criterio === "differenza" ? `${(P.etichetta_totale || "TOTALE PERCENTUALI")} ${String(r.punti).replace(".", ",")}%` : `${P.etichetta_conteggio || `TOTALE ${R.fasce.criterio === "punti" ? "PUNTEGGIO" : "ELEMENTI"}`} ${r.punti}`, DX, a, { f: bold, sz: 8.6, c: DATO });
     a += 10;
 
     // maggiorazioni e calcolo
