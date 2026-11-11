@@ -63,6 +63,10 @@
 .cc .risultati-zona small { display: block; color: var(--tenue); font-size: 12px; }
 .cc .risultati-zona .nessuna { padding: 10px 12px; margin: 0; color: var(--tenue); font-size: 14px; }
 .cc .zona-scelta { margin: 10px 0 0; font-size: 14px; }
+/* il comune: si scrive, con i suggerimenti sotto (pagina-canone.js) */
+.cc .cerca-comune { position: relative; }
+.cc .cerca-comune .risultati-zona { top: 100%; margin-top: 4px; color: var(--testo); }
+.cc .cerca-comune .risultati-zona small { display: inline; margin-left: 6px; }
 .cc .zona-scelta .macro { color: var(--tenue); font-size: 12px; margin-left: 4px; }
 .cc .annulla-consegna { margin-left: 6px; padding: 2px 8px; font-size: 13px; color: var(--blu); background: var(--velo); border: 0; border-radius: 6px; cursor: pointer; }
 

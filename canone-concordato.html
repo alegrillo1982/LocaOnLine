@@ -147,8 +147,13 @@
           a meno che tu non scelga di salvarli nella tua area riservata.
         </p>
         <div class="bg-white/10 border border-white/20 rounded-2xl p-4 sm:flex sm:items-center sm:gap-4">
-          <label for="comune" class="block text-white font-semibold text-sm mb-2 sm:mb-0 sm:whitespace-nowrap">Comune dell'immobile</label>
-          <select id="comune" class="sm:max-w-xs" aria-describedby="accordo-in-uso"></select>
+          <label for="comune-cerca" class="block text-white font-semibold text-sm mb-2 sm:mb-0 sm:whitespace-nowrap">Comune dell'immobile</label>
+          <div class="cerca-comune sm:max-w-xs sm:flex-1">
+            <input type="search" id="comune-cerca" autocomplete="off" spellcheck="false" placeholder="Scrivi il comune, es. Milano"
+              role="combobox" aria-expanded="false" aria-controls="comuni-trovati" aria-autocomplete="list" aria-describedby="accordo-in-uso">
+            <div id="comuni-trovati" class="risultati-zona" role="listbox" hidden></div>
+            <select id="comune" hidden aria-hidden="true" tabindex="-1"></select>
+          </div>
           <p class="text-slate-200 text-sm mt-2 sm:mt-0"><span id="accordo-in-uso" aria-live="polite">Caricamento dell'accordo…</span>
             <a id="accordo-pdf" href="#" target="_blank" rel="noopener" class="text-white font-semibold underline whitespace-nowrap" hidden><i class="fa-regular fa-file-pdf"></i> Leggi l'accordo</a>
             <a id="accordo-pdf-studenti" href="#" target="_blank" rel="noopener" class="text-white font-semibold underline whitespace-nowrap ml-2" hidden><i class="fa-regular fa-file-pdf"></i> Accordo studenti</a></p>
