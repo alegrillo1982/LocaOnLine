@@ -856,6 +856,37 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-allegato-f-asseverazione.pdf?alt=media&token=74fc9fc3-13f7-4bb6-99a4-771951a23bd2"
     }
    ]
+  },
+  {
+   "comune": "Piacenza",
+   "provincia": "PC",
+   "accordo": "piacenza-2019-07-23",
+   "sottoscritto": "23 luglio 2019",
+   "depositato": "",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpiacenza-2019-07-23-accordo.pdf?alt=media&token=48f1efa3-4fd5-49ab-a5ba-010e007f920d",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpiacenza-2019-07-23-accordo.pdf?alt=media&token=48f1efa3-4fd5-49ab-a5ba-010e007f920d"
+    },
+    {
+     "nome": "Allegato a zone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpiacenza-2019-07-23-allegato-a-zone.pdf?alt=media&token=ff9fcd01-1703-4d3e-a311-5eee74b56df9"
+    },
+    {
+     "nome": "Allegato b valori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpiacenza-2019-07-23-allegato-b-valori.pdf?alt=media&token=2215f0e6-4296-46b0-961d-4ae5fd72c615"
+    },
+    {
+     "nome": "Allegato c elementi",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpiacenza-2019-07-23-allegato-c-elementi.pdf?alt=media&token=ec4bcf03-058f-4695-bd88-bb7488af55fe"
+    },
+    {
+     "nome": "Allegato d attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpiacenza-2019-07-23-allegato-d-attestazione.pdf?alt=media&token=165490d6-be82-448e-997f-27b278cc5992"
+    }
+   ]
   }
  ]
 }

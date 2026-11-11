@@ -1,0 +1,448 @@
+{
+ "accordo": {
+  "codice": "piacenza-2019-07-23",
+  "modello": "piacenza-2019",
+  "comune": "Piacenza",
+  "provincia": "PC",
+  "titolo": "Accordo territoriale per il territorio della provincia di Piacenza",
+  "data": "2019-07-23",
+  "data_testo": "23 luglio 2019",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Piacenza del 23 luglio 2019:</strong> durava sei anni dal deposito, ma resta in vigore finché non viene firmato quello nuovo, e Comune e Confedilizia Piacenza lo indicano ancora come vigente. Per i nuovi contratti i valori minimi e massimi si possono aggiornare ogni anno fino al 75% dell'ISTAT, ma le tabelle aggiornate non sono pubblicate: qui trovi i valori originali del 2019. <strong>Chiedi quelli aggiornati all'associazione che attesta il contratto.</strong>",
+  "firmatari_proprieta": [
+   "Associazione Proprietari Casa - Confedilizia di Piacenza"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA di Piacenza",
+   "SICET di Parma-Piacenza",
+   "UNIAT di Piacenza"
+  ],
+  "nota": "Firmato a Piacenza il 23/07/2019 per tutta la provincia; sostituisce l'accordo del 27/07/2004. Durata sei anni dal giorno dopo il deposito, poi resta in vigore fino al nuovo accordo (titolo G); data e protocollo del deposito non pubblicati. I valori minimi e massimi si aggiornano ogni anno, per i nuovi contratti, fino al 75% dell'ISTAT: nessuna tabella aggiornata pubblicata. Qui solo il Comune di Piacenza: valori mensili al mq per zona (A, B, C), classe di superficie e fascia (allegato B); Fiorenzuola d'Arda (allegato B1) e gli altri comuni (allegato B2) non sono modellati.",
+  "fonte": "SUNIA nazionale, pagina «Accordi territoriali di Piacenza»: accordo firmato con gli allegati in scansione (16 pagine) e cartina delle zone di Piacenza (allegato A). Firma e firmatari confermati da Confedilizia Piacenza (pagina «Nuovo accordo territoriale») e dalla scheda IMU canone concordato del Comune di Piacenza (attestazione per i contratti dopo il 23/07/2019)."
+ },
+ "esempio_zona": "A, B o C (cartina dell'allegato A)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "superficie",
+  "tabella_soglie": [
+   [
+    40,
+    "40"
+   ],
+   [
+    60,
+    "60"
+   ],
+   [
+    100,
+    "100"
+   ],
+   [
+    130,
+    "130"
+   ]
+  ],
+  "tabella_oltre": "oltre",
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Zona A - Centro storico e quartieri a sud",
+    "nota": "Zona A (contorno rosso nella cartina dell'allegato A): il centro storico dentro i viali (via XXI Aprile, viale Sant'Ambrogio, viale Patrioti, viale Pubblico Passeggio, via XXIV Maggio) più i quartieri a sud fino a via Pietro Cella, via Gadolini, via Giuseppe Manfredi e via Gorra, compreso il Villaggio INA Casa e la zona di via Dante e via Boselli. Gli edifici sui due lati delle strade di confine si considerano nella zona con i valori più alti.",
+    "fasce": {
+     "40": [
+      [
+       4.39,
+       5.42
+      ],
+      [
+       5.42,
+       6.46
+      ],
+      [
+       6.46,
+       7.84
+      ]
+     ],
+     "60": [
+      [
+       3.96,
+       4.99
+      ],
+      [
+       4.99,
+       6.02
+      ],
+      [
+       6.02,
+       7.08
+      ]
+     ],
+     "100": [
+      [
+       3.56,
+       4.59
+      ],
+      [
+       4.59,
+       5.64
+      ],
+      [
+       5.64,
+       6.33
+      ]
+     ],
+     "130": [
+      [
+       3.14,
+       4.17
+      ],
+      [
+       4.17,
+       5.21
+      ],
+      [
+       5.21,
+       5.9
+      ]
+     ],
+     "oltre": [
+      [
+       2.71,
+       3.75
+      ],
+      [
+       3.75,
+       4.8
+      ],
+      [
+       4.8,
+       5.49
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B - Prima periferia",
+    "nota": "Zona B (contorno verde nella cartina dell'allegato A): l'anello di quartieri intorno alla zona A, fra via Emilia Pavese a nord-ovest, la tangenziale sud e via Colombo / via Millo a est: Raffalda, Belvedere, La Buffalora, Galleana, Besurica, Montecucco, Santa Franca Cantù, Torricelle, la zona di via Conciliazione e di via Manzoni. Gli edifici sui due lati delle strade di confine si considerano nella zona con i valori più alti.",
+    "fasce": {
+     "40": [
+      [
+       4.02,
+       5.08
+      ],
+      [
+       5.08,
+       6.08
+      ],
+      [
+       6.08,
+       7.5
+      ]
+     ],
+     "60": [
+      [
+       3.62,
+       4.65
+      ],
+      [
+       4.65,
+       5.71
+      ],
+      [
+       5.71,
+       6.74
+      ]
+     ],
+     "100": [
+      [
+       3.2,
+       4.23
+      ],
+      [
+       4.23,
+       5.27
+      ],
+      [
+       5.27,
+       5.96
+      ]
+     ],
+     "130": [
+      [
+       2.77,
+       3.81
+      ],
+      [
+       3.81,
+       4.86
+      ],
+      [
+       4.86,
+       5.56
+      ]
+     ],
+     "oltre": [
+      [
+       2.7,
+       3.75
+      ],
+      [
+       3.75,
+       4.45
+      ],
+      [
+       4.45,
+       5.14
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C - Resto del territorio",
+    "nota": "Zona C: tutto il territorio comunale fuori dai contorni rosso e verde della cartina dell'allegato A, per esempio Sant'Antonio, Borgotrebbia, Molini degli Orti, Regina Margherita, Baia del Re, San Lazzaro, Le Mose, La Verza, Mucinasso e le frazioni.",
+    "fasce": {
+     "40": [
+      [
+       3.34,
+       4.39
+      ],
+      [
+       4.39,
+       5.42
+      ],
+      [
+       5.42,
+       6.46
+      ]
+     ],
+     "60": [
+      [
+       2.92,
+       3.95
+      ],
+      [
+       3.95,
+       4.99
+      ],
+      [
+       4.99,
+       5.71
+      ]
+     ],
+     "100": [
+      [
+       2.5,
+       3.56
+      ],
+      [
+       3.56,
+       4.57
+      ],
+      [
+       4.57,
+       5.27
+      ]
+     ],
+     "130": [
+      [
+       2.43,
+       3.14
+      ],
+      [
+       3.14,
+       4.17
+      ],
+      [
+       4.17,
+       4.86
+      ]
+     ],
+     "oltre": [
+      [
+       2.02,
+       2.7
+      ],
+      [
+       2.7,
+       3.75
+      ],
+      [
+       3.75,
+       4.45
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "minima",
+    "media",
+    "massima"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    9
+   ]
+  },
+  "elementi": [
+   {
+    "testo": "Autorimessa o posto auto coperto"
+   },
+   {
+    "testo": "Posto auto scoperto"
+   },
+   {
+    "testo": "Area verde e/o cortile comune di almeno 30 mq a disposizione"
+   },
+   {
+    "testo": "Sottotetto, soffitta o cantina"
+   },
+   {
+    "testo": "Impianto di riscaldamento a norma di legge"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Impianto elettrico a norma di legge"
+   },
+   {
+    "testo": "Collegamento alla rete del gas"
+   },
+   {
+    "testo": "Piano terreno o primo piano, oppure qualsiasi piano con ascensore"
+   },
+   {
+    "testo": "Appartamento in un edificio con meno di 6 unità"
+   },
+   {
+    "testo": "Terrazza o balcone"
+   },
+   {
+    "testo": "Doppi vetri e/o porta blindata e/o doppi servizi"
+   },
+   {
+    "testo": "Arredamento sufficiente per viverci"
+   },
+   {
+    "testo": "Edificio ultimato, o alloggio ristrutturato per intero, nei dieci anni prima dell'anno di stipula del contratto"
+   },
+   {
+    "testo": "Classe energetica A, B o C"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'alloggio",
+   "correzioni": [
+    {
+     "fino": 60,
+     "incluso": true,
+     "perc": 10,
+     "tetto": 60
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa a uso esclusivo, o posto auto esclusivo in aree comuni",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto auto in autorimessa di uso comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazze, cantine e altri accessori simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta in uso esclusivo (giardino, cortile)",
+     "coeff": 0.15
+    }
+   ],
+   "nota": "Si conta tutta la superficie calpestabile; se non supera 60 mq si aumenta del 10%, ma senza superare 60 mq. Si aggiungono metà dell'autorimessa o del posto auto esclusivo, il 20% del posto auto in autorimessa comune, il 25% di balconi, terrazze e cantine e il 15% del giardino o cortile esclusivo. La tabella dei valori si sceglie dai mq calpestabili dell'alloggio: fino a 40, da 41 a 60, da 61 a 100, da 101 a 130, oltre 130. Sulla misura è ammessa una tolleranza fino al 5%."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "vincolato",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato come bene culturale, o di categoria A/1, A/8 o A/9",
+    "nome": "immobile vincolato o di pregio",
+    "perc": 20
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Alloggio completamente arredato: aumento concordato (fino al 20%)",
+    "nome": "arredo completo",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "20",
+      "testo": "aumento del 20% (il massimo)",
+      "perc": 20
+     },
+     {
+      "valore": "15",
+      "testo": "aumento del 15%",
+      "perc": 15
+     },
+     {
+      "valore": "10",
+      "testo": "aumento del 10%",
+      "perc": 10
+     },
+     {
+      "valore": "5",
+      "testo": "aumento del 5%",
+      "perc": 5
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano e valgono sia sul minimo sia sul massimo: durata oltre i 3 anni (+5% per 4 anni, +7% per 5, +10% per 6 o più), contratto transitorio (+10%), immobile vincolato o di categoria A/1, A/8, A/9 (+20%), alloggio completamente arredato (fino al +20%, da concordare). Per i transitori fino a 30 giorni il canone è libero.",
+  "durata": {
+   "4": 5,
+   "5": 7,
+   "6": 10
+  },
+  "contratto": {
+   "transitorio": 10
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegati C e D",
+  "titolo": "Elementi oggettivi e attestazione di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale per il territorio della provincia di Piacenza del 23/07/2019 - Comune di Piacenza (allegato B)",
+  "titolo_superficie": "MISURA IN MQ UTILI DELL'UNITÀ IMMOBILIARE (TITOLO A)",
+  "titolo_elementi": "Elementi oggettivi per l'individuazione della fascia (allegato C)",
+  "dichiarazione": "Il richiedente fornisce sotto la propria responsabilità i dati dell'immobile e della locazione necessari per verificare la rispondenza del contratto all'Accordo territoriale per la provincia di Piacenza del 23/07/2019, e chiede l'attestazione ex D.M. 16/01/2017.",
+  "firme": [
+   "Il richiedente"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16.1.2017",
+  "attestazione": [
+   "L'Associazione …………………………… firmataria dell'Accordo territoriale per il territorio della provincia di Piacenza stipulato il 23/07/2019, sulla base degli elementi oggettivi e dei dati dichiarati dal richiedente e dall'altro contraente, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali, ATTESTA che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il territorio della provincia di Piacenza.          Piacenza, lì ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "Per l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla cartina dell'allegato A: zona A dentro il contorno rosso, zona B dentro il contorno verde, zona C tutto il resto del territorio comunale. Gli edifici sui due lati delle strade di confine vanno nella zona con i valori più alti."
+ }
+}
