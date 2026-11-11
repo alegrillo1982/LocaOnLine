@@ -217,6 +217,9 @@
 .cc .scheda-venezia:not(.zona-5) .solo-zona5 { display: none; }
 .cc .superfici-venezia .risultato { font-family: var(--dati); font-size: 14px; white-space: nowrap; }
 .cc .scheda-venezia h3 { font: 600 15px/1.3 Inter, sans-serif; color: var(--testo); margin: 14px 0 6px; }
+/* scheda per gli accordi descritti con i dati (scheda-generica.js) */
+.cc .scheda-generica:not(.tipo-agevolato) .solo-agevolato, .cc .scheda-generica:not(.porzione) .solo-porzione { display: none; }
+.cc .superfici-generica .risultato { font-family: var(--dati); font-size: 14px; white-space: nowrap; }
 .cc .griglia-campi .cerca-via { position: relative; min-width: 0; }
 .cc .griglia-campi .cerca-via .risultati-zona { top: 100%; margin-top: 4px; }
 
@@ -237,6 +240,8 @@
   .cc .tabella-superfici.superfici-bari tr[data-riga] td:nth-of-type(2)::before { content: "Mq convenzionali"; }
   .cc .tabella-superfici.superfici-venezia tr[data-riga] td:nth-of-type(1)::before { content: "Mq"; }
   .cc .tabella-superfici.superfici-venezia tr[data-riga] td:nth-of-type(2)::before { content: "Mq convenzionali"; }
+  .cc .tabella-superfici.superfici-generica tr[data-riga] td:nth-of-type(1)::before { content: "Mq"; }
+  .cc .tabella-superfici.superfici-generica tr[data-riga] td:nth-of-type(2)::before { content: "Mq convenzionali"; }
   .cc .sezione-canone { padding: 16px 14px; }
   .cc .griglia-campi .largo { grid-column: 1 / -1; }
   .cc .parametri { grid-template-columns: 1fr; }

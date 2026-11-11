@@ -233,6 +233,36 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvenezia-2026-07-28-tavola-zone.pdf?alt=media&token=07dee397-c844-4437-a93f-1dafd04efacd"
     }
    ]
+  },
+  {
+   "comune": "Cagliari",
+   "provincia": "CA",
+   "accordo": "cagliari-2026-03-30",
+   "sottoscritto": "26 marzo 2026",
+   "depositato": "30 marzo 2026",
+   "zone": 7,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcagliari-2026-03-30-accordo.pdf?alt=media&token=b61a843b-3c99-4dc0-ad80-f239d098e251",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcagliari-2026-03-30-accordo.pdf?alt=media&token=b61a843b-3c99-4dc0-ad80-f239d098e251"
+    }
+   ]
+  },
+  {
+   "comune": "Trieste",
+   "provincia": "TS",
+   "accordo": "trieste-2025-12-15",
+   "sottoscritto": "15 dicembre 2025",
+   "depositato": "",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrieste-2025-12-15-accordo.pdf?alt=media&token=ddc15bb4-7ae6-4821-b52c-e2fdc6629ed0",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrieste-2025-12-15-accordo.pdf?alt=media&token=ddc15bb4-7ae6-4821-b52c-e2fdc6629ed0"
+    }
+   ]
   }
  ]
 }

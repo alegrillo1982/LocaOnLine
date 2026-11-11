@@ -1178,6 +1178,85 @@
       <ul id="venezia-avvisi" class="avvisi-canone" aria-live="polite"></ul>
     </section>
   </form>
+  <!-- Scheda per gli accordi descritti solo con i dati ("regole.generico"):
+       il modulo si costruisce da accordi/<codice>.json (scheda-generica.js). -->
+  <form id="scheda-generica" class="scheda-generica" autocomplete="off" onsubmit="return false" hidden>
+
+    <section class="sezione-canone">
+      <h2>Contratto</h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Tipo di contratto">
+        <label><input type="radio" name="tipo" value="agevolato" checked> Agevolato (3 + 2)</label>
+        <label><input type="radio" name="tipo" value="transitorio"> Transitorio</label>
+        <label><input type="radio" name="tipo" value="studenti"> Studenti universitari</label>
+      </div>
+      <div class="griglia-campi">
+        <label class="solo-agevolato">Durata<select name="durata_anni" id="gen-durata"></select></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Parti e immobile</h2>
+      <div class="griglia-campi">
+        <label class="largo">Locatore<input type="text" name="locatore"></label>
+        <label>C.F. locatore<input type="text" name="locatore_cf" class="maiuscolo"></label>
+        <label class="largo">Conduttore<input type="text" name="conduttore"></label>
+        <label>C.F. conduttore<input type="text" name="conduttore_cf" class="maiuscolo"></label>
+        <label class="largo">Via e numero civico<input type="text" name="indirizzo"></label>
+        <label>Piano<input type="text" name="piano"></label>
+        <label>Foglio<input type="text" name="foglio" inputmode="numeric"></label>
+        <label>Particella<input type="text" name="particella"></label>
+        <label>Subalterno<input type="text" name="subalterno" inputmode="numeric"></label>
+      </div>
+      <div class="griglia-campi stacco">
+        <label class="largo">Zona<select name="zona"><option value="">scegli…</option></select></label>
+      </div>
+      <p class="nota-copia stacco" id="gen-zona-nota"></p>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Superficie</h2>
+      <div class="scorre">
+        <table class="tabella-superfici superfici-generica">
+          <thead><tr><th>Voce</th><th>Mq</th><th>Mq conv.</th></tr></thead>
+          <tbody id="gen-superfici"></tbody>
+          <tfoot><tr><th colspan="2">Superficie convenzionale</th><td class="totale"><b id="gen-totale">—</b> mq</td></tr></tfoot>
+        </table>
+      </div>
+      <p class="nota-copia stacco" id="gen-sup-nota"></p>
+      <div class="caselle colonna stacco">
+        <label><input type="checkbox" name="porzione"> Si affitta solo una porzione (es. una stanza)</label>
+      </div>
+      <div class="griglia-campi solo-porzione">
+        <label class="largo">Mq della porzione, con la quota delle parti condivise<input type="text" name="mq_porzione" class="campo-numero" inputmode="decimal"></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2><span id="gen-titolo-elementi">Elementi</span> <small id="gen-conteggio"></small></h2>
+      <p class="nota-copia" id="gen-soglie"></p>
+      <div id="gen-elementi" class="caselle colonna elementi"></div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Maggiorazioni e riduzioni</h2>
+      <div id="gen-maggiorazioni"></div>
+    </section>
+
+    <section class="sezione-canone calcolo">
+      <h2>Calcolo del canone</h2>
+      <dl class="righe-calcolo">
+        <dt>Fascia</dt><dd id="gen-esito-fascia">—</dd>
+        <dt>Maggiorazioni</dt><dd id="gen-esito-magg">—</dd>
+        <dt><label for="gen-valore" id="gen-valore-etichetta">Valore al mq (€)</label></dt>
+        <dd><input type="text" id="gen-valore" name="valore_mq" inputmode="decimal" class="campo-numero"> <small id="gen-valore-nota"></small></dd>
+        <dt>Canone mensile minimo</dt><dd id="gen-esito-minimo">—</dd>
+        <dt>Canone mensile massimo</dt><dd><b id="gen-esito-massimo">—</b></dd>
+        <dt><label for="gen-pattuito">Canone mensile pattuito (€)</label></dt>
+        <dd><input type="text" id="gen-pattuito" name="canone_mensile" inputmode="decimal" class="campo-numero"></dd>
+      </dl>
+      <ul id="gen-avvisi" class="avvisi-canone" aria-live="polite"></ul>
+    </section>
+  </form>
   <div class="barra-canone" role="region" aria-label="Riepilogo del canone">
     <span>Canone massimo <b id="barra-massimo">—</b><span class="solo-largo"> al mese</span></span>
     <span id="stato-salvataggio" class="stato-salvataggio" aria-live="polite"></span>
@@ -1600,6 +1679,9 @@
   <script src="assets/canone/canone-venezia.js"></script>
   <script src="assets/canone/stampa-venezia.js"></script>
   <script src="assets/canone/scheda-venezia.js"></script>
+  <script src="assets/canone/canone-generico.js"></script>
+  <script src="assets/canone/stampa-generica.js"></script>
+  <script src="assets/canone/scheda-generica.js"></script>
   <script src="assets/canone/modulo-contratto.js"></script>
   <script src="assets/canone/pagina-canone.js"></script>
   <script type="module" src="assets/canone/salva-canone.js"></script>

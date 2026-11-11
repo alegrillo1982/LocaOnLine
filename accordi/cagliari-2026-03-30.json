@@ -1,0 +1,785 @@
+{
+ "accordo": {
+  "codice": "cagliari-2026-03-30",
+  "modello": "cagliari-2026",
+  "comune": "Cagliari",
+  "provincia": "CA",
+  "titolo": "Nuovo accordo territoriale per le locazioni abitative agevolate, Città di Cagliari, anno 2026",
+  "data": "2026-03-26",
+  "data_testo": "26 marzo 2026",
+  "deposito": "prot. 0096656",
+  "deposito_data": "30.03.2026",
+  "protocollo": "0096656",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2029-03-26",
+  "firmatari_proprieta": [
+   "A.P.C.I.-FEDERPROPRIETÀ",
+   "APE CONFEDILIZIA",
+   "A.S.P.P.I.",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato il 26/03/2026, depositato il 30/03/2026 prot. 0096656 al Comune di Cagliari; tre anni dalla firma. Sostituisce l'accordo del 21/03/2018 aggiornato il 24/05/2019. Valori annui per zona, sub-fascia e durata (allegato 2), aggiornati al 75% ISTAT dal quarto anno.",
+  "fonte": "PDF pubblicato da APCI Sardegna (24 pagine; articoli in scansione, tabelle e modelli in testo)."
+ },
+ "esempio_zona": "la zona dal quartiere (allegato 1)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "CS",
+    "nome": "Centro storico",
+    "nota": "Centro storico: Castello, Villanova, Stampace (parte) (planimetria allegato 1). Nelle vie di confine vale la zona con i valori più alti.",
+    "fasce": {
+     "3": [
+      [
+       44,
+       60
+      ],
+      [
+       61,
+       71
+      ],
+      [
+       72,
+       97
+      ]
+     ],
+     "4": [
+      [
+       46,
+       63
+      ],
+      [
+       64,
+       75
+      ],
+      [
+       76,
+       101
+      ]
+     ],
+     "5": [
+      [
+       47,
+       64
+      ],
+      [
+       65,
+       76
+      ],
+      [
+       78,
+       103
+      ]
+     ],
+     "6": [
+      [
+       49,
+       67
+      ],
+      [
+       68,
+       80
+      ],
+      [
+       81,
+       108
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "SC1",
+    "nome": "Semicentrale 1",
+    "nota": "Semicentrale 1: Tuvixeddu-Tuvumannu (parte), La Vega, Fonsarda, Sant'Alenixedda, San Benedetto, Genneruxi (parte), Monte Urpinu (parte), Monte Mixi (parte), Bonaria (parte), Quartiere Europeo, Quartiere del Sole (planimetria allegato 1). Nelle vie di confine vale la zona con i valori più alti.",
+    "fasce": {
+     "3": [
+      [
+       52,
+       66
+      ],
+      [
+       67,
+       78
+      ],
+      [
+       79,
+       106
+      ]
+     ],
+     "4": [
+      [
+       54,
+       69
+      ],
+      [
+       70,
+       82
+      ],
+      [
+       83,
+       111
+      ]
+     ],
+     "5": [
+      [
+       55,
+       70
+      ],
+      [
+       71,
+       84
+      ],
+      [
+       85,
+       113
+      ]
+     ],
+     "6": [
+      [
+       58,
+       73
+      ],
+      [
+       75,
+       88
+      ],
+      [
+       89,
+       118
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "SC2",
+    "nome": "Semicentrale 2",
+    "nota": "Semicentrale 2: Is Mirrionis (parte), Sant'Avendrace/Santa Gilla (parte), Mulinu Becciu, San Michele (parte), Medau su Cramu-Molentargius, Borgo Sant'Elia (parte), Nuovo Borgo Sant'Elia (parte) (planimetria allegato 1). Nelle vie di confine vale la zona con i valori più alti.",
+    "fasce": {
+     "3": [
+      [
+       47,
+       60
+      ],
+      [
+       61,
+       71
+      ],
+      [
+       72,
+       97
+      ]
+     ],
+     "4": [
+      [
+       50,
+       63
+      ],
+      [
+       64,
+       75
+      ],
+      [
+       76,
+       101
+      ]
+     ],
+     "5": [
+      [
+       50,
+       64
+      ],
+      [
+       65,
+       76
+      ],
+      [
+       78,
+       103
+      ]
+     ],
+     "6": [
+      [
+       53,
+       67
+      ],
+      [
+       68,
+       80
+      ],
+      [
+       81,
+       108
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "SC3",
+    "nome": "Semicentrale 3 (zone di pregio)",
+    "nota": "Semicentrale 3 (zone di pregio): Stampace (parte), Tuvixeddu/Tuvumannu (parte), Genneruxi (parte), Monte Urpinu (parte), Monte Mixi (parte), Bonaria (parte), Sant'Avendrace (parte), Poetto (planimetria allegato 1). Nelle vie di confine vale la zona con i valori più alti.",
+    "fasce": {
+     "3": [
+      [
+       56,
+       72
+      ],
+      [
+       74,
+       86
+      ],
+      [
+       87,
+       117
+      ]
+     ],
+     "4": [
+      [
+       59,
+       76
+      ],
+      [
+       77,
+       91
+      ],
+      [
+       92,
+       123
+      ]
+     ],
+     "5": [
+      [
+       60,
+       78
+      ],
+      [
+       79,
+       92
+      ],
+      [
+       94,
+       126
+      ]
+     ],
+     "6": [
+      [
+       63,
+       81
+      ],
+      [
+       82,
+       97
+      ],
+      [
+       98,
+       131
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "SC4",
+    "nome": "Semicentrale 4",
+    "nota": "Semicentrale 4: Tuvixeddu (parte), Is Mirrionis (parte), San Michele (parte), La Palma, Nuovo Borgo Sant'Elia (parte), Borgo Sant'Elia (parte) (planimetria allegato 1). Nelle vie di confine vale la zona con i valori più alti.",
+    "fasce": {
+     "3": [
+      [
+       41,
+       52
+      ],
+      [
+       53,
+       61
+      ],
+      [
+       62,
+       84
+      ]
+     ],
+     "4": [
+      [
+       43,
+       54
+      ],
+      [
+       55,
+       64
+      ],
+      [
+       65,
+       88
+      ]
+     ],
+     "5": [
+      [
+       44,
+       55
+      ],
+      [
+       56,
+       65
+      ],
+      [
+       66,
+       89
+      ]
+     ],
+     "6": [
+      [
+       46,
+       58
+      ],
+      [
+       59,
+       68
+      ],
+      [
+       69,
+       94
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "P1",
+    "nome": "Periferica 1",
+    "nota": "Periferica 1: Pirri: Villa Doloretta, San Giuseppe/Santa Teresa/Parteolla, Is Bingias/Terramaini, Monteleone/Santa Rosalia; Piana di San Lorenzo (planimetria allegato 1). Nelle vie di confine vale la zona con i valori più alti.",
+    "fasce": {
+     "3": [
+      [
+       44,
+       55
+      ],
+      [
+       56,
+       64
+      ],
+      [
+       65,
+       90
+      ]
+     ],
+     "4": [
+      [
+       46,
+       57
+      ],
+      [
+       59,
+       67
+      ],
+      [
+       68,
+       95
+      ]
+     ],
+     "5": [
+      [
+       47,
+       59
+      ],
+      [
+       60,
+       68
+      ],
+      [
+       69,
+       96
+      ]
+     ],
+     "6": [
+      [
+       49,
+       61
+      ],
+      [
+       62,
+       71
+      ],
+      [
+       72,
+       101
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "P2",
+    "nome": "Periferica 2 (zone di pregio)",
+    "nota": "Periferica 2 (zone di pregio): Baracca Manna, Is Campus/Is Corrias, Monreale, Monteleone/Santa Rosalia (parte) (planimetria allegato 1). Nelle vie di confine vale la zona con i valori più alti.",
+    "fasce": {
+     "3": [
+      [
+       47,
+       58
+      ],
+      [
+       59,
+       67
+      ],
+      [
+       68,
+       92
+      ]
+     ],
+     "4": [
+      [
+       49,
+       61
+      ],
+      [
+       62,
+       70
+      ],
+      [
+       71,
+       97
+      ]
+     ],
+     "5": [
+      [
+       50,
+       62
+      ],
+      [
+       63,
+       71
+      ],
+      [
+       72,
+       98
+      ]
+     ],
+     "6": [
+      [
+       52,
+       65
+      ],
+      [
+       66,
+       74
+      ],
+      [
+       76,
+       103
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "C",
+    "B",
+    "A"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    7
+   ],
+   "soglie_zona": {
+    "CS": [
+     3,
+     5
+    ]
+   }
+  },
+  "elementi": [
+   {
+    "testo": "Abitazione costruita o ristrutturata negli ultimi 15 anni"
+   },
+   {
+    "testo": "Classe energetica A, B o C documentata da APE"
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato"
+   },
+   {
+    "testo": "Impianto di climatizzazione/condizionamento"
+   },
+   {
+    "testo": "Autorimessa singola, locata con l'abitazione"
+   },
+   {
+    "testo": "Posto auto esclusivo, accatastato e locato con l'abitazione"
+   },
+   {
+    "testo": "Posto auto comune o cortile con possibilità di parcheggio"
+   },
+   {
+    "testo": "Area esterna esclusiva (escluse aree di sosta e manovra)"
+   },
+   {
+    "testo": "Area condominiale fruibile dal conduttore"
+   },
+   {
+    "testo": "Vano cucina con superficie utile di almeno 7 mq"
+   },
+   {
+    "testo": "Ripostiglio di almeno 1 mq"
+   },
+   {
+    "testo": "Cantina o soffitta"
+   },
+   {
+    "testo": "Assenza di barriere architettoniche"
+   },
+   {
+    "testo": "Ascensore (a partire dal secondo piano)"
+   },
+   {
+    "testo": "Abitazione in fabbricato con meno di 3 unità per piano"
+   },
+   {
+    "testo": "Balcone, terrazza o lastrico di pertinenza esclusiva"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Infissi esterni con doppi vetri, doppie finestre o vetri da 6 mm"
+   },
+   {
+    "testo": "Persiane o tapparelle negli infissi esterni"
+   },
+   {
+    "testo": "Impianto o sistema domotico"
+   },
+   {
+    "testo": "Impianto di videosorveglianza"
+   },
+   {
+    "testo": "Impianto di allarme antintrusione"
+   },
+   {
+    "testo": "Impianto fotovoltaico o pannelli solari"
+   },
+   {
+    "testo": "Videocitofono o citofono (privato e/o condominiale)"
+   },
+   {
+    "testo": "Allacciamento alla rete del gas (predisposizione)"
+   },
+   {
+    "testo": "Riserva idrica (privata e/o condominiale)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale dell'abitazione (dalla visura)",
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto macchina in autorimessa comune",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Terrazze non collegate, lastrici, cantine e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Superficie scoperta in godimento esclusivo (cortili, giardini)",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale, quota millesimale",
+     "coeff": 0.1
+    }
+   ]
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "superficie fino a 40 mq",
+    "a": 40,
+    "perc": 25,
+    "zone": [
+     "CS"
+    ]
+   },
+   {
+    "nome": "superficie da 41 a 60 mq",
+    "da": 40.01,
+    "a": 60,
+    "perc": 15,
+    "zone": [
+     "CS"
+    ]
+   },
+   {
+    "nome": "superficie fino a 40 mq",
+    "a": 40,
+    "perc": 20,
+    "escluse": [
+     "CS"
+    ]
+   },
+   {
+    "nome": "superficie da 41 a 60 mq",
+    "da": 40.01,
+    "a": 60,
+    "perc": 10,
+    "escluse": [
+     "CS"
+    ]
+   },
+   {
+    "nome": "superficie da 140 a 159 mq",
+    "da": 140,
+    "a": 159.99,
+    "perc": -10
+   },
+   {
+    "nome": "superficie da 160 a 179 mq",
+    "da": 160,
+    "a": 179.99,
+    "perc": -15
+   },
+   {
+    "nome": "superficie da 180 mq",
+    "da": 180,
+    "perc": -20
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "testo": "Villa o abitazione di pregio: almeno 12 requisiti (14 in Semicentrale 3), non vincolata",
+    "nome": "abitazione di pregio",
+    "perc": 15,
+    "escluse": [
+     "SC4"
+    ]
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE)",
+    "nome": "classe energetica",
+    "nessuna": "sotto A1 o senza APE",
+    "opzioni": [
+     {
+      "valore": "A4",
+      "testo": "A4",
+      "perc": 13
+     },
+     {
+      "valore": "A3",
+      "testo": "A3",
+      "perc": 12
+     },
+     {
+      "valore": "A2",
+      "testo": "A2",
+      "perc": 10
+     },
+     {
+      "valore": "A1",
+      "testo": "A1",
+      "perc": 8
+     }
+    ]
+   },
+   {
+    "chiave": "deposito",
+    "tipo": "spunta",
+    "testo": "Nessun deposito cauzionale a garanzia",
+    "nome": "senza deposito cauzionale",
+    "perc": 10
+   },
+   {
+    "chiave": "recesso",
+    "tipo": "scelta",
+    "testo": "Recesso del conduttore",
+    "nome": "recesso",
+    "nessuna": "preavviso ordinario",
+    "opzioni": [
+     {
+      "valore": "15g",
+      "testo": "con preavviso di soli 15 giorni",
+      "perc": 5
+     },
+     {
+      "valore": "1-3m",
+      "testo": "con preavviso da 1 a 3 mesi",
+      "perc": 3
+     }
+    ]
+   },
+   {
+    "chiave": "spese",
+    "tipo": "spunta",
+    "testo": "Nessuna spesa condominiale",
+    "nome": "senza spese condominiali",
+    "perc": 2
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredo (per studenti: elenco dell'allegato 6)",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "arredamento completo e in buono stato",
+      "perc": 20
+     },
+     {
+      "valore": "studenti15",
+      "testo": "studenti, parzialmente arredato: mancano da 1 a 5 elementi E",
+      "perc": 15
+     },
+     {
+      "valore": "studenti10",
+      "testo": "studenti, parzialmente arredato: mancano 6 o più elementi E",
+      "perc": 10
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano. La durata superiore a 3 anni è già nelle tabelle dei valori (allegato 2).",
+  "contratto": {
+   "transitorio": 10
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 4",
+  "titolo": "Attestazione di rispondenza ex D.M. 16 gennaio 2017",
+  "sottotitolo": "Accordo territoriale sulle locazioni abitative agevolate per la Città di Cagliari - anno 2026 (sottoscritto il 26/03/2026, depositato il 30/03/2026 prot. 0096656)",
+  "titolo_elementi": "Elenco requisiti presenti (allegato 3)",
+  "dichiarazione": "Il locatore e il conduttore hanno presentato richiesta per l'attestazione ex D.M. 16.01.2017, dichiarando, sotto la propria responsabilità, i suddetti elementi del contratto di cui al vigente Accordo territoriale sulle locazioni abitative agevolate di Cagliari. Firma dei dichiaranti:",
+  "attestazione": [
+   "Le Organizzazioni ………………………………… in persona dei legali rappresentanti, firmatarie dell'Accordo territoriale per il Comune di Cagliari, depositato il 30/03/2026 prot. 0096656, sotto la loro responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTANO che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo Territoriale vigente.",
+   "Cagliari, ……/……/…………"
+  ],
+  "titolo_attestazione": "TUTTO CIÒ PREMESSO",
+  "firme_attestazione": [
+   "l'Organizzazione locatori (timbro e firma)",
+   "l'Organizzazione conduttori (timbro e firma)"
+  ],
+  "nota_zone": "La zona si ricava dal quartiere (planimetria dell'allegato 1)."
+ }
+}

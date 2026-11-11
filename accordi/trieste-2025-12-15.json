@@ -1,0 +1,408 @@
+{
+ "accordo": {
+  "codice": "trieste-2025-12-15",
+  "modello": "trieste-2025",
+  "comune": "Trieste",
+  "provincia": "TS",
+  "titolo": "Accordo territoriale di Trieste per i contratti di locazione a canone concordato",
+  "data": "2025-12-15",
+  "data_testo": "15 dicembre 2025",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2028-12-15",
+  "firmatari_proprieta": [
+   "UNSICASA",
+   "CASAMIA",
+   "UNPI"
+  ],
+  "firmatari_conduttori": [
+   "FE.N.I.T.",
+   "ANIA"
+  ],
+  "nota": "Firmato digitalmente il 15/12/2025, depositato al Comune via PEC (data non indicata), per i contratti dal 16/12/2025 fino al 15/12/2028 e comunque fino al nuovo. Sostituisce l'accordo del 14/12/2022 integrato il 23/01/2023 (UPPI, Confedilizia e sindacati maggiori non hanno partecipato al rinnovo; il Comune con nota del 03/12/2025 ha considerato valido il procedimento).",
+  "fonte": "PDF firmato pubblicato dal Comune di Trieste."
+ },
+ "esempio_zona": "la zona dalla zona OMI dell'indirizzo",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 (OMI B2, C1, D3)",
+    "nota": "Zona omogenea 1: zone OMI B2, C1, D3. Sul confine tra due zone vale quella con il valore più alto.",
+    "fasce": [
+     [
+      4.2,
+      8.0
+     ],
+     [
+      4.2,
+      10.3
+     ],
+     [
+      4.2,
+      11.4
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 (OMI C4, C5)",
+    "nota": "Zona omogenea 2: zone OMI C4, C5. Sul confine tra due zone vale quella con il valore più alto.",
+    "fasce": [
+     [
+      4.2,
+      7.7
+     ],
+     [
+      4.2,
+      9.9
+     ],
+     [
+      4.2,
+      11.0
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 (OMI B1, C3, D2)",
+    "nota": "Zona omogenea 3: zone OMI B1, C3, D2. Sul confine tra due zone vale quella con il valore più alto.",
+    "fasce": [
+     [
+      4.2,
+      7.1
+     ],
+     [
+      4.2,
+      9.1
+     ],
+     [
+      4.2,
+      10.1
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 (OMI C2, D1, R1)",
+    "nota": "Zona omogenea 4: zone OMI C2, D1, R1. Sul confine tra due zone vale quella con il valore più alto.",
+    "fasce": [
+     [
+      4.2,
+      6.2
+     ],
+     [
+      4.2,
+      7.9
+     ],
+     [
+      4.2,
+      8.8
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "BASSA",
+    "MEDIA",
+    "ALTA"
+   ],
+   "criterio": "punti",
+   "soglie": [
+    13,
+    19
+   ]
+  },
+  "elementi": [
+   {
+    "testo": "tutti gli impianti a norma e certificati",
+    "punti": 5
+   },
+   {
+    "testo": "cucina abitabile con almeno una finestra",
+    "punti": 2
+   },
+   {
+    "testo": "bagno cieco (completo, con aerazione forzata)",
+    "punti": 1
+   },
+   {
+    "testo": "bagno con finestra (completo)",
+    "punti": 2
+   },
+   {
+    "testo": "doppi servizi (il secondo almeno con WC e lavabo, entrambi con finestra o aerazione forzata)",
+    "punti": 2
+   },
+   {
+    "testo": "balcone o terrazza o lastrico solare di pertinenza esclusiva",
+    "punti": 1
+   },
+   {
+    "testo": "riscaldamento centralizzato su tutta l'abitazione",
+    "punti": 2
+   },
+   {
+    "testo": "riscaldamento autonomo su tutta l'abitazione",
+    "punti": 3
+   },
+   {
+    "testo": "condizionamento per almeno il 50% dei vani utili (non portatile)",
+    "punti": 2
+   },
+   {
+    "testo": "doppi vetri su almeno il 50% degli infissi",
+    "punti": 2
+   },
+   {
+    "testo": "interventi di risparmio energetico documentati (APE almeno D e APE precedente)",
+    "punti": 2
+   },
+   {
+    "testo": "energie rinnovabili: fotovoltaico o solare termico",
+    "punti": 1
+   },
+   {
+    "testo": "domotica, anche parziale",
+    "punti": 1
+   },
+   {
+    "testo": "sicurezza: porta blindata, barra antintrusione o allarme",
+    "punti": 1
+   },
+   {
+    "testo": "mobilio: completamente arredato, in buono stato",
+    "punti": 1
+   },
+   {
+    "testo": "videocitofono",
+    "punti": 1
+   },
+   {
+    "testo": "affaccio di pregio: vista aperta e gradevole su verde o contesto di qualità",
+    "punti": 1
+   },
+   {
+    "testo": "intervento edilizio manutentivo negli ultimi 5 anni",
+    "punti": 3
+   },
+   {
+    "testo": "tipologia A/1-A/2-A/3-A/7-A/8-A/9",
+    "punti": 1
+   },
+   {
+    "testo": "immobile unifamiliare (casa singola o a schiera)",
+    "punti": 2
+   },
+   {
+    "testo": "box auto locato con l'abitazione",
+    "punti": 2
+   },
+   {
+    "testo": "posto auto esclusivo, anche scoperto, accatastato",
+    "punti": 1
+   },
+   {
+    "testo": "cantina o soffitta",
+    "punti": 2
+   },
+   {
+    "testo": "area verde esclusiva o condominiale fruibile",
+    "punti": 2
+   },
+   {
+    "testo": "ascensore (presente comunque fino al secondo piano)",
+    "punti": 2
+   },
+   {
+    "testo": "abbattimento barriere architettoniche",
+    "punti": 1
+   },
+   {
+    "testo": "stato di manutenzione dello stabile normale/buono",
+    "punti": 1
+   },
+   {
+    "testo": "vicinanza mezzi di trasporto (entro 250 m)",
+    "punti": 1
+   },
+   {
+    "testo": "vicinanza di esercizi commerciali primari (entro 250 m)",
+    "punti": 1
+   },
+   {
+    "testo": "vicinanza di zone di godimento per famiglie (entro 250 m)",
+    "punti": 1
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile interna dell'alloggio",
+   "correzioni": [
+    {
+     "fino": 45,
+     "perc": 20,
+     "tetto": 49.5
+    },
+    {
+     "fino": 65,
+     "perc": 10,
+     "tetto": 65
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "balconi",
+     "testo": "Terrazze e balconi a uso esclusivo",
+     "coeff": 0.35
+    },
+    {
+     "chiave": "box",
+     "testo": "Box auto a uso esclusivo",
+     "coeff": 0.9
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto a uso esclusivo",
+     "coeff": 0.8
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto a uso esclusivo",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "cantina",
+     "testo": "Cantina, soffitta, altre pertinenze",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Area scoperta pertinenziale esclusiva",
+     "coeff": 0.2,
+     "tetto": "base"
+    },
+    {
+     "chiave": "verde",
+     "testo": "Area verde condominiale, quota millesimale",
+     "coeff": 0.15,
+     "tetto": "base"
+    }
+   ]
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato o di categoria A/1, A/7, A/8, A/9",
+    "nome": "immobile di pregio",
+    "perc": 8
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredo, con elenco allegato (cucina arredata e con forno, piano cottura e frigorifero)",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "totale",
+      "testo": "totalmente arredato",
+      "perc": 22
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE valido, estremi nel contratto)",
+    "nome": "classe energetica",
+    "nessuna": "E, F o senza APE",
+    "opzioni": [
+     {
+      "valore": "AB",
+      "testo": "A o B",
+      "perc": 12
+     },
+     {
+      "valore": "CD",
+      "testo": "C o D",
+      "perc": 7
+     },
+     {
+      "valore": "G",
+      "testo": "G (riduzione obbligatoria)",
+      "perc": -10
+     }
+    ]
+   },
+   {
+    "chiave": "brevi",
+    "tipo": "spunta",
+    "testo": "Nell'anno precedente usato per locazioni turistiche o affitti brevi",
+    "nome": "rientro da affitti brevi",
+    "perc": 20,
+    "contratti": [
+     "agevolato"
+    ]
+   },
+   {
+    "chiave": "studenti18",
+    "tipo": "spunta",
+    "testo": "Contratto per studenti di durata superiore a 18 mesi",
+    "nome": "studenti oltre 18 mesi",
+    "perc": 10,
+    "contratti": [
+     "studenti"
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Le percentuali si sommano e si applicano una volta sola ai valori minimo e massimo della fascia (art. 9).",
+  "durata": {
+   "4": 5,
+   "5": 8,
+   "6": 12
+  },
+  "contratto": {
+   "transitorio": 20
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Con 19 punti l'accordo non indica la fascia (media fino a 18, alta da 20): qui si usa la media.",
+    "fascia": [
+     19
+    ]
+   },
+   {
+    "testo": "Con 13 punti l'art. 7 indica la fascia bassa, la tabella dell'allegato 2 la media: qui si usa la bassa.",
+    "fascia": [
+     13
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 2",
+  "titolo": "Richiesta di attestazione di rispondenza",
+  "sottotitolo": "Accordo locale per il Comune di Trieste, sottoscritto in data 15.12.2025 da UNSICASA - CASAMIA - UNPI - FE.N.I.T. - ANIA (ai fini dell'art. 1, comma 8, D.M. 16 gennaio 2017)",
+  "titolo_elementi": "Parametri e punteggi (art. 7 e allegato 1)",
+  "dichiarazione": "Il richiedente, ai sensi degli artt. 46 e 47 del D.P.R. 445/2000, dichiara che i dati riportati sono veri, completi e conformi alla documentazione esibita, e che superficie convenzionale, parametri, fascia, maggiorazioni o riduzioni e canone sono stati determinati secondo i criteri dell'Accordo Territoriale vigente.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "nota_zone": "Zone omogenee per zone OMI: cerca l'indirizzo sulla mappa dell'Agenzia delle Entrate (GEOPOI) o con l'app OMI Mobile."
+ }
+}
