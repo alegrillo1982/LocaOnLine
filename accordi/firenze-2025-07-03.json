@@ -1,0 +1,245 @@
+{
+ "accordo": {
+  "codice": "firenze-2025-07-03",
+  "modello": "firenze-2025",
+  "comune": "Firenze",
+  "provincia": "FI",
+  "titolo": "Accordo territoriale sulle locazioni abitative applicabile nel Comune di Firenze e Comuni limitrofi",
+  "data": "2025-07-03",
+  "data_testo": "3 luglio 2025",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "firmatari_proprieta": [
+   "APPC",
+   "ASPPI",
+   "CONFABITARE",
+   "CONFAPPI",
+   "CONFEDILIZIA",
+   "UPPI"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET",
+   "UNIAT",
+   "UNIONE INQUILINI",
+   "CONIA"
+  ],
+  "nota": "Accordo firmato il 03/07/2025 a Palazzo Vecchio per Firenze e i comuni del L.O.D.E. fiorentino; in vigore dal 07/07/2025 (Confedilizia Firenze), tre anni dal giorno dopo il deposito e comunque fino al nuovo (art. 2). Data e protocollo di deposito non pubblicati. Sostituisce l'accordo del 25/06/2020. I modelli di attestazione (allegati B e C) non sono nella copia pubblicata.",
+  "fonte": "Copia firmata pubblicata da Confedilizia Firenze (31 pagine, scansione); comunicato del Comune di Firenze del 4/7/2025."
+ },
+ "esempio_zona": "la zona omogenea dalla microzona (art. 4)",
+ "regole": {
+  "unita": "euro mensili al mq di superficie convenzionale",
+  "zone": [
+   [
+    "centro",
+    "Centro",
+    "1-2-3",
+    "Centro Storico, Lungarno, Piazza Ferrucci",
+    {
+     "A": [
+      2,
+      13.0
+     ],
+     "B": [
+      2,
+      11.0
+     ],
+     "C": [
+      2,
+      7.0
+     ]
+    }
+   ],
+   [
+    "pregio",
+    "Di pregio",
+    "4-5-6-12-25-30",
+    "Bobolino, Due Strade, Marignolle, La Pietra, Careggi, Settignano",
+    {
+     "A": [
+      2,
+      13.5
+     ],
+     "B": [
+      2,
+      12.0
+     ],
+     "C": [
+      2,
+      7.5
+     ]
+    }
+   ],
+   [
+    "int_a",
+    "Intermedia A",
+    "11-13-14-15-16-17-23-26-27",
+    "Poggetto, Cure, Campo di Marte, Madonnone/Bellariva, Bandino, Nave a Rovezzano, Novoli, Coverciano, Varlungo",
+    {
+     "A": [
+      2,
+      10.2
+     ],
+     "B": [
+      2,
+      9.0
+     ],
+     "C": [
+      2,
+      5.5
+     ]
+    }
+   ],
+   [
+    "int_b",
+    "Intermedia B",
+    "9-10-18-19",
+    "San Jacopino, Dalmazia, Cascine del Riccio, Galluzzo",
+    {
+     "A": [
+      2,
+      9.7
+     ],
+     "B": [
+      2,
+      8.7
+     ],
+     "C": [
+      2,
+      5.5
+     ]
+    }
+   ],
+   [
+    "per_a",
+    "Periferica A",
+    "7-8-20-24",
+    "Legnaia, Isolotto, Argingrosso, Castello",
+    {
+     "A": [
+      2,
+      9.2
+     ],
+     "B": [
+      2,
+      8.3
+     ],
+     "C": [
+      2,
+      5.5
+     ]
+    }
+   ],
+   [
+    "per_b",
+    "Periferica B",
+    "21-22-28-29",
+    "Piagge, Peretola, Mantignano, Cupolina",
+    {
+     "A": [
+      2,
+      8.75
+     ],
+     "B": [
+      2,
+      8.1
+     ],
+     "C": [
+      2,
+      5.0
+     ]
+    }
+   ]
+  ],
+  "caratteristiche_b": [
+   "a) riscaldamento completo di elementi radianti e/o sistemi alternativi, efficiente e a norma",
+   "b) servizio igienico principale con almeno quattro apparecchi, con finestra o aerazione forzata efficiente",
+   "c) impianto idrico idoneo ed efficiente",
+   "d) impianto elettrico a norma",
+   "e) ascensore per le unità poste oltre il terzo piano fuori terra",
+   "f) infissi efficienti, a tenuta degli agenti atmosferici",
+   "g) citofono con apriporta efficiente"
+  ],
+  "decisive_c": [
+   0,
+   1,
+   2,
+   3,
+   5
+  ],
+  "superficie": {
+   "basse": 0.3,
+   "autorimessa": 0.5,
+   "attico": [
+    0.25,
+    0.05
+   ],
+   "posto_esclusivo": 0.3,
+   "posto_coperto": 0.25,
+   "posto_scoperto": 0.2,
+   "posto_rotazione": 0.05,
+   "balconi": 0.25,
+   "scoperta": [
+    0.1,
+    0.02
+   ],
+   "piccoli": [
+    [
+     60,
+     0.2,
+     63
+    ],
+    [
+     65,
+     0.05,
+     65
+    ]
+   ]
+  },
+  "arredo": {
+   "tutto": 15,
+   "tre_quarti": 10,
+   "meta": 7
+  },
+  "pregio": {
+   "vincolato": 15,
+   "a7": 10
+  },
+  "energia": {
+   "E": 2,
+   "D": 4,
+   "C": 6,
+   "B": 8,
+   "A1": 10,
+   "A2": 12,
+   "A3": 14,
+   "A4": 15
+  },
+  "transitorio_studio": 5,
+  "studenti": 15,
+  "durata": {
+   "4": 4.5,
+   "5": 6,
+   "6": 7.5
+  }
+ },
+ "elementi": [
+  "Apparecchi di condizionamento d'aria (non richiesto per immobili vincolati o A/8, A/9)",
+  "Rifiniture di particolare pregio",
+  "Doppi servizi igienici (secondo con almeno 3 apparecchi oltre 80 mq; sotto 80 mq servizio finestrato)",
+  "Spazi per parcheggio effettivamente disponibili, assegnati catastalmente o da regolamento condominiale",
+  "Spazi esterni a uso esclusivo pari almeno a 1/3 della superficie calpestabile",
+  "Sistema di allarme e/o sistemi anti effrazione (es. inferriate)",
+  "Servizio di portierato o videosorveglianza",
+  "Connessione internet in fibra ottica FTTH",
+  "Portone o portoncino blindato",
+  "Ascensore per unità poste oltre il secondo piano",
+  "Spazi verdi condominiali",
+  "Impianto fotovoltaico e/o solare termico"
+ ]
+}

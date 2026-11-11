@@ -893,6 +893,105 @@
       <ul id="bologna-avvisi" class="avvisi-canone" aria-live="polite"></ul>
     </section>
   </form>
+  <!-- Scheda per l'accordo di Firenze (2025): segue gli articoli 4-15
+       dell'accordo (i modelli di attestazione, allegati B e C, non sono
+       pubblicati). Visibile solo con l'accordo di Firenze. -->
+  <form id="scheda-firenze" class="scheda-firenze" autocomplete="off" onsubmit="return false" hidden>
+
+    <section class="sezione-canone">
+      <h2>Contratto</h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Tipo di contratto">
+        <label><input type="radio" name="tipo" value="agevolato" checked> Agevolato (3 + 2)</label>
+        <label><input type="radio" name="tipo" value="transitorio"> Transitorio</label>
+        <label><input type="radio" name="tipo" value="studenti"> Studenti universitari</label>
+      </div>
+      <div class="griglia-campi">
+        <label class="solo-agevolato">Durata<select name="durata_anni">
+          <option value="3">3 + 2 anni</option><option value="4">4 + 2 anni (+4,5%)</option><option value="5">5 + 2 anni (+6%)</option><option value="6">6 + 2 anni o più (+7,5%)</option></select></label>
+        <label class="solo-studenti">Maggiorazione studenti, % (fino a 15)<input type="text" name="studenti_perc" inputmode="decimal" placeholder="15"></label>
+      </div>
+      <div class="caselle colonna solo-transitorio">
+        <label><input type="checkbox" name="studio"> Esigenza del conduttore per studio, apprendistato, formazione, con attestazione bilaterale (+5%)</label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Parti e immobile</h2>
+      <div class="griglia-campi">
+        <label class="largo">Locatore<input type="text" name="locatore"></label>
+        <label>C.F. locatore<input type="text" name="locatore_cf" class="maiuscolo"></label>
+        <label class="largo">Conduttore<input type="text" name="conduttore"></label>
+        <label>C.F. conduttore<input type="text" name="conduttore_cf" class="maiuscolo"></label>
+        <label class="largo">Via e numero civico<input type="text" name="indirizzo"></label>
+        <label>Foglio<input type="text" name="foglio" inputmode="numeric"></label>
+        <label>Particella<input type="text" name="particella"></label>
+        <label>Subalterno<input type="text" name="subalterno" inputmode="numeric"></label>
+      </div>
+      <div class="griglia-campi stacco">
+        <label class="largo">Zona (microzona catastale)<select name="zona"><option value="">scegli…</option></select></label>
+      </div>
+      <p class="nota-copia stacco" id="firenze-zona-nota"></p>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Tipologia <small id="firenze-tipologia"></small></h2>
+      <p class="nota-copia">Caratteristiche dell'art. 8: con almeno 6 su 7 l'alloggio è di tipo B; se ne mancano almeno due tra a, b, c, d, f è di tipo C.</p>
+      <div id="firenze-caratteristiche" class="caselle colonna elementi"></div>
+      <div class="caselle colonna stacco">
+        <label><input type="checkbox" name="recente"> Costruito o ristrutturato integralmente negli ultimi 10 anni (impianti rifatti, infissi sostituiti, APE migliorato) con tutti i requisiti dell'art. 8 a): tipo A</label>
+      </div>
+      <h3 class="stacco">Elementi per il tipo A <small id="firenze-conteggio"></small></h3>
+      <p class="nota-copia">Con i requisiti B e almeno 6 di questi elementi l'alloggio è di tipo A.</p>
+      <div id="firenze-elementi" class="caselle colonna elementi"></div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Superficie <small>mq calpestabili</small></h2>
+      <div class="scorre">
+        <table class="tabella-superfici superfici-firenze">
+          <thead><tr><th>Voce</th><th>Mq</th><th>Mq conv.</th></tr></thead>
+          <tbody id="firenze-superfici"></tbody>
+          <tfoot><tr><th colspan="2">Superficie convenzionale</th><td class="totale"><b id="firenze-totale">—</b> mq</td></tr></tfoot>
+        </table>
+      </div>
+      <p class="nota-copia stacco" id="firenze-sup-nota"></p>
+      <div class="caselle colonna stacco">
+        <label><input type="checkbox" name="porzione"> Si affitta solo una porzione (es. una stanza)</label>
+      </div>
+      <div class="griglia-campi solo-porzione">
+        <label>Mq a uso esclusivo della porzione<input type="text" name="mq_porzione" class="campo-numero" inputmode="decimal"></label>
+        <label>Mq a uso esclusivo di tutte le stanze<input type="text" name="mq_esclusivi" class="campo-numero" inputmode="decimal"></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Maggiorazioni <small>una sull'altra</small></h2>
+      <div class="griglia-campi">
+        <label class="largo">Arredo<select name="arredo">
+          <option value="">non arredato</option><option value="tutto">ogni vano utile (fino a +15%)</option><option value="tre_quarti">3/4 dei vani (fino a +10%)</option><option value="meta">metà dei vani (fino a +7%)</option></select></label>
+        <label class="se-arredo">Arredo + %<input type="text" name="arredo_perc" inputmode="decimal"></label>
+        <label class="largo">Classe energetica (APE)<select name="energia">
+          <option value="">F, G o senza APE</option><option value="E">E (+2%)</option><option value="D">D (+4%)</option><option value="C">C (+6%)</option><option value="B">B (+8%)</option><option value="A1">A1 (+10%)</option><option value="A2">A2 (+12%)</option><option value="A3">A3 (+14%)</option><option value="A4">A4 (+15%)</option></select></label>
+        <label class="largo">Pregio<select name="pregio">
+          <option value="">nessuno</option><option value="vincolato">vincolato o A/1, A/8, A/9 (+15%)</option><option value="a7">categoria A/7 (+10%)</option></select></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone calcolo">
+      <h2>Calcolo del canone</h2>
+      <dl class="righe-calcolo">
+        <dt>Fascia</dt><dd id="firenze-esito-fascia">—</dd>
+        <dt>Maggiorazioni</dt><dd id="firenze-esito-magg">—</dd>
+        <dt><label for="firenze-valore">Valore al mq al mese (€)</label></dt>
+        <dd><input type="text" id="firenze-valore" name="valore_mq" inputmode="decimal" class="campo-numero"> <small id="firenze-valore-nota"></small></dd>
+        <dt>Canone mensile</dt><dd id="firenze-esito-canone">—</dd>
+        <dt>Canone mensile massimo</dt><dd><b id="firenze-esito-massimo">—</b></dd>
+        <dt><label for="firenze-pattuito">Canone mensile pattuito (€)</label></dt>
+        <dd><input type="text" id="firenze-pattuito" name="canone_mensile" inputmode="decimal" class="campo-numero"></dd>
+      </dl>
+      <ul id="firenze-avvisi" class="avvisi-canone" aria-live="polite"></ul>
+    </section>
+  </form>
   <div class="barra-canone" role="region" aria-label="Riepilogo del canone">
     <span>Canone massimo <b id="barra-massimo">—</b><span class="solo-largo"> al mese</span></span>
     <span id="stato-salvataggio" class="stato-salvataggio" aria-live="polite"></span>
@@ -1306,6 +1405,9 @@
   <script src="assets/canone/canone-bologna.js"></script>
   <script src="assets/canone/stampa-bologna.js"></script>
   <script src="assets/canone/scheda-bologna.js"></script>
+  <script src="assets/canone/canone-firenze.js"></script>
+  <script src="assets/canone/stampa-firenze.js"></script>
+  <script src="assets/canone/scheda-firenze.js"></script>
   <script src="assets/canone/modulo-contratto.js"></script>
   <script src="assets/canone/pagina-canone.js"></script>
   <script type="module" src="assets/canone/salva-canone.js"></script>

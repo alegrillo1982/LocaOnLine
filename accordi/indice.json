@@ -168,6 +168,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbologna-2024-03-28-integrazione-2024-11-25.pdf?alt=media&token=77db1393-a081-4b40-885b-78ab0c4f1530"
     }
    ]
+  },
+  {
+   "comune": "Firenze",
+   "provincia": "FI",
+   "accordo": "firenze-2025-07-03",
+   "sottoscritto": "3 luglio 2025",
+   "depositato": "",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffirenze-2025-07-03-accordo.pdf?alt=media&token=95dd698f-d768-4edb-ab61-245a21c1dbbe",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffirenze-2025-07-03-accordo.pdf?alt=media&token=95dd698f-d768-4edb-ab61-245a21c1dbbe"
+    }
+   ]
   }
  ]
 }
