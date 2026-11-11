@@ -1,0 +1,496 @@
+{
+ "accordo": {
+  "codice": "treviso-2024-02-05",
+  "modello": "treviso-2024",
+  "comune": "Treviso",
+  "provincia": "TV",
+  "titolo": "Accordo territoriale per il territorio del Comune di Treviso",
+  "data": "2024-02-05",
+  "data_testo": "5 febbraio 2024",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Treviso del 5 febbraio 2024: dura tre anni dal deposito e poi si rinnova di anno in anno.</strong> Dalla scadenza i valori massimi possono essere aggiornati ogni anno al 75% dell'ISTAT: qui trovi i valori originali dell'allegato 1, chiedi all'associazione che attesta il contratto se sono già stati aggiornati.",
+  "firmatari_proprieta": [
+   "A.P.E. Confedilizia Treviso",
+   "U.P.P.I. Treviso",
+   "A.S.P.P.I. Treviso",
+   "CONFAPPI Treviso",
+   "CONFABITARE Treviso",
+   "A.P.P.C."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A. Treviso",
+   "S.I.C.E.T. Treviso",
+   "U.N.I.A.T. Treviso",
+   "ASSOCASA",
+   "FEDER CASA"
+  ],
+  "nota": "Firmato a Treviso il 05/02/2024; sostituisce l'accordo dell'08/11/2017. Durata tre anni dal giorno dopo il deposito (data non pubblicata), poi rinnovo automatico annuale; resta in vigore fino al deposito di un nuovo accordo. Valori annui al mq per zona (A, B, C), epoca di costruzione o ristrutturazione e sub-fascia (allegato 1).",
+  "fonte": "PDF dell'accordo con allegati 1-4 pubblicato dal SUNIA (scansione, 19 pagine)."
+ },
+ "esempio_zona": "la zona OMI (B3, B4, C2, D2 o R1) dal sito GEOPOI dell'Agenzia delle Entrate",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "solo_massimo": true,
+  "zone": [
+   {
+    "codice": "A-entro",
+    "nome": "Zona A - Centro entro le mura (OMI B4)",
+    "nota": "Zona A entro le mura: zona OMI B4. Si verifica sul sito GEOPOI dell'Agenzia delle Entrate. Se il confine di zona è una strada, tutti i numeri civici di quella strada vanno nella zona superiore. Valori in euro al mq all'anno.",
+    "fasce": {
+     "2021": [
+      [
+       48,
+       111.0
+      ],
+      [
+       57,
+       135.0
+      ],
+      [
+       66,
+       158.0
+      ]
+     ],
+     "2006": [
+      [
+       44,
+       102.0
+      ],
+      [
+       52,
+       125.0
+      ],
+      [
+       61,
+       145.0
+      ]
+     ],
+     "1991": [
+      [
+       41,
+       91.0
+      ],
+      [
+       49,
+       113.0
+      ],
+      [
+       57,
+       130.0
+      ]
+     ],
+     "1990": [
+      [
+       31,
+       80.0
+      ],
+      [
+       36,
+       96.0
+      ],
+      [
+       44,
+       111.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "A-fuori",
+    "nome": "Zona A - Fuori mura (OMI B3)",
+    "nota": "Zona A fuori mura: zona OMI B3. I valori massimi sono già ridotti del 10% come prevede l'accordo. Si verifica sul sito GEOPOI dell'Agenzia delle Entrate. Se il confine di zona è una strada, tutti i numeri civici di quella strada vanno nella zona superiore.",
+    "fasce": {
+     "2021": [
+      [
+       48,
+       99.9
+      ],
+      [
+       57,
+       121.5
+      ],
+      [
+       66,
+       142.2
+      ]
+     ],
+     "2006": [
+      [
+       44,
+       91.8
+      ],
+      [
+       52,
+       112.5
+      ],
+      [
+       61,
+       130.5
+      ]
+     ],
+     "1991": [
+      [
+       41,
+       81.9
+      ],
+      [
+       49,
+       101.7
+      ],
+      [
+       57,
+       117.0
+      ]
+     ],
+     "1990": [
+      [
+       31,
+       72.0
+      ],
+      [
+       36,
+       86.4
+      ],
+      [
+       44,
+       99.9
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B - Semicentro (OMI C2 e D2)",
+    "nota": "Zona B: zone OMI C2 e D2. Si verifica sul sito GEOPOI dell'Agenzia delle Entrate. Se il confine di zona è una strada, tutti i numeri civici di quella strada vanno nella zona superiore.",
+    "fasce": {
+     "2021": [
+      [
+       43,
+       90.0
+      ],
+      [
+       47,
+       110.0
+      ],
+      [
+       54,
+       128.0
+      ]
+     ],
+     "2006": [
+      [
+       39,
+       83.0
+      ],
+      [
+       43,
+       101.0
+      ],
+      [
+       49,
+       117.0
+      ]
+     ],
+     "1991": [
+      [
+       36,
+       74.0
+      ],
+      [
+       40,
+       90.0
+      ],
+      [
+       46,
+       105.0
+      ]
+     ],
+     "1990": [
+      [
+       23,
+       63.0
+      ],
+      [
+       28,
+       76.0
+      ],
+      [
+       33,
+       89.0
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C - Periferia ed extraurbana (OMI R1)",
+    "nota": "Zona C: zona OMI R1. Si verifica sul sito GEOPOI dell'Agenzia delle Entrate. Se il confine di zona è una strada, tutti i numeri civici di quella strada vanno nella zona superiore.",
+    "fasce": {
+     "2021": [
+      [
+       33,
+       80.0
+      ],
+      [
+       38,
+       91.0
+      ],
+      [
+       45,
+       105.0
+      ]
+     ],
+     "2006": [
+      [
+       30,
+       73.0
+      ],
+      [
+       35,
+       83.0
+      ],
+      [
+       41,
+       96.0
+      ]
+     ],
+     "1991": [
+      [
+       28,
+       66.0
+      ],
+      [
+       33,
+       74.0
+      ],
+      [
+       38,
+       85.0
+      ]
+     ],
+     "1990": [
+      [
+       18,
+       58.0
+      ],
+      [
+       23,
+       66.0
+      ],
+      [
+       28,
+       73.0
+      ]
+     ]
+    }
+   }
+  ],
+  "tabella_per": "scelta",
+  "tabella_chiave": "epoca",
+  "tabella_predefinita": "1990",
+  "fasce": {
+   "nomi": [
+    "3ª sub-fascia",
+    "2ª sub-fascia",
+    "1ª sub-fascia"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    5,
+    6
+   ],
+   "nota": "1ª sub-fascia con almeno 7 elementi, 2ª con 6, 3ª fino a 5"
+  },
+  "elementi": [
+   {
+    "testo": "Impianto di riscaldamento"
+   },
+   {
+    "testo": "Impianto di condizionamento e/o pannelli fotovoltaici"
+   },
+   {
+    "testo": "Allarme antintrusione e/o portoncino blindato e/o barre antintrusione"
+   },
+   {
+    "testo": "Videocitofono e/o videosorveglianza"
+   },
+   {
+    "testo": "Edificio con ascensore"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Doppi vetri (vetrocamera o controfinestre)"
+   },
+   {
+    "testo": "Terrazza, balcone o portico"
+   },
+   {
+    "testo": "Cantina, magazzino, lavanderia o soffitta"
+   },
+   {
+    "testo": "Garage o posto auto in uso esclusivo"
+   },
+   {
+    "testo": "Area scoperta in uso esclusivo"
+   },
+   {
+    "testo": "Verde e/o cortile in uso comune (almeno 20 mq per alloggio)"
+   },
+   {
+    "testo": "Edificio con al massimo 8 abitazioni"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie interna dell'alloggio, al netto dei muri perimetrali e interni",
+   "correzioni": [
+    {
+     "fino": 40,
+     "incluso": true,
+     "perc": 40
+    },
+    {
+     "fino": 50,
+     "incluso": true,
+     "perc": 30
+    },
+    {
+     "fino": 60,
+     "incluso": true,
+     "perc": 20
+    },
+    {
+     "fino": 70,
+     "incluso": true,
+     "perc": 10
+    }
+   ],
+   "grandi": {
+    "oltre": 110,
+    "perc": 85
+   },
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa (50%; 100% in zona A entro le mura)",
+     "coeff": 0.5,
+     "coeff_zona": {
+      "A-entro": 1
+     }
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto auto in garage comune (25%)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazze, portici, cantine, magazzini, soffitte, lavanderie (25%)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta o posto auto scoperto esclusivi (15%, max metà alloggio)",
+     "coeff": 0.15,
+     "tetto_mq_base": 0.5
+    }
+   ],
+   "nota": "Alloggio fino a 40 mq +40%, fino a 50 +30%, fino a 60 +20%, fino a 70 +10%; oltre 110 mq la parte eccedente conta l'85%."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "epoca",
+    "tipo": "scelta",
+    "testo": "Anno di costruzione o ristrutturazione (sceglie la riga della tabella)",
+    "nome": "epoca",
+    "nessuna": "fino al 1990",
+    "nessuna_breve": "fino al 31/12/1990",
+    "opzioni": [
+     {
+      "valore": "1991",
+      "testo": "dal 1991 al 2005",
+      "perc": 0
+     },
+     {
+      "valore": "2006",
+      "testo": "dal 2006 al 2020",
+      "perc": 0
+     },
+     {
+      "valore": "2021",
+      "testo": "dal 2021 in poi",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "classe",
+    "tipo": "spunta",
+    "testo": "Classe energetica A o B",
+    "nome": "classe energetica A o B",
+    "perc": 10
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Alloggio arredato (almeno cucina con tavolo e sedie, bagno, camera completa)",
+    "nome": "arredo",
+    "opzioni": [
+     {
+      "valore": "arredato",
+      "testo": "arredato",
+      "perc": 30
+     },
+     {
+      "valore": "elettrodomestici",
+      "testo": "arredato con frigorifero, forno, piano cottura e lavatrice",
+      "perc": 35
+     }
+    ]
+   },
+   {
+    "chiave": "vincolo",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato (beni culturali) o di categoria A/1, A/8, A/9",
+    "nome": "immobile vincolato o A/1, A/8, A/9",
+    "perc": 25
+   }
+  ],
+  "nota_maggiorazioni": "Per l'anno conta anche una manutenzione straordinaria con rifacimento di impianti elettrico, termico e idraulico, pavimenti e serramenti. Classe energetica, arredo e vincolo aumentano solo il massimo e si cumulano. La durata di 4, 5 o 6 anni aumenta del 2, 4 o 6% sia il minimo sia il massimo.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "combinazione": "prodotto",
+  "avvisi": [],
+  "durata_anche_minimo": true
+ },
+ "pdf": {
+  "allegato": "Allegato 2",
+  "titolo": "Attestazione unilaterale di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale per il territorio del Comune di Treviso del 05/02/2024",
+  "titolo_elementi": "Elementi di riferimento (allegato 1)",
+  "dichiarazione": "Il richiedente dichiara, sotto la sua responsabilità, le caratteristiche dell'immobile oggetto della locazione agevolata / ad uso transitorio / per studenti universitari, come da elementi oggettivi sopra riportati ai fini del calcolo del canone.",
+  "firme": [
+   "Il dichiarante"
+  ],
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Treviso, sulla base degli elementi oggettivi dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Treviso e che il canone mensile indicato nel contratto risulta congruo in relazione alle tabelle ed alle previsioni dell'Accordo."
+  ],
+  "titolo_attestazione": "ATTESTA",
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla zona OMI dell'immobile (GEOPOI, Agenzia delle Entrate): B4 e B3 zona A, C2 e D2 zona B, R1 zona C."
+ }
+}

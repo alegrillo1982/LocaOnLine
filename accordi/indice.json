@@ -1290,6 +1290,25 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvarese-2018-12-03-accordo.pdf?alt=media&token=98a6ad85-9f2d-4f20-94a0-6f1b0ce1c0fb"
     }
    ]
+  },
+  {
+   "comune": "Treviso",
+   "provincia": "TV",
+   "accordo": "treviso-2024-02-05",
+   "sottoscritto": "5 febbraio 2024",
+   "depositato": "",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftreviso-2024-02-05-accordo.pdf?alt=media&token=4679600a-6fd4-4f43-a75a-b2ddd8ac2a84",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftreviso-2024-02-05-accordo.pdf?alt=media&token=4679600a-6fd4-4f43-a75a-b2ddd8ac2a84"
+    },
+    {
+     "nome": "Allegato 1 fasce oscillazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftreviso-2024-02-05-allegato-1-fasce-oscillazione.pdf?alt=media&token=d05f6d26-63c6-4fb0-b952-c30a2d2b26d4"
+    }
+   ]
   }
  ]
 }
