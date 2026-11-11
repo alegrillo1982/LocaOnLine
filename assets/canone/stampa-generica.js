@@ -78,7 +78,7 @@
     riga(["Locatore ", { w: 180, v: s.locatore }, "  C.F. ", { w: 130, v: (s.locatore_cf || "").toUpperCase() }]);
     riga(["Conduttore ", { w: 170, v: s.conduttore }, "  C.F. ", { w: 130, v: (s.conduttore_cf || "").toUpperCase() }]);
     riga([`Immobile in ${A.comune}, `, { w: 170, v: s.indirizzo }, " piano ", { w: 26, v: s.piano }, " Fg. ", { w: 30, v: s.foglio }, " Part. ", { w: 36, v: s.particella }, " Sub. ", { w: 26, v: s.subalterno }]);
-    if (R.fasce.criterio === "differenza") riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, "  Somma delle percentuali A-G ", { w: 60, v: `${String(r.punti).replace(".", ",")}%` }]);
+    if (R.fasce.criterio === "differenza") riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, `  ${P.etichetta_somma || "Somma delle percentuali A-G"} `, { w: 60, v: `${String(r.punti).replace(".", ",")}%` }]);
     else if (r.fascia.prevalente) riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, "  Subfascia (livello di qualità) ", { w: 90, v: r.zona ? r.fascia.nome : "" }]);
     else if (r.fascia.gruppi) { riga(["Zona ", { w: 200, v: r.zona ? r.zona.nome : "" }, "  Punteggio ", { w: 40, v: String(r.punti) }]); riga(["Fasce ", { w: 360, v: r.zona ? r.fascia.nome : "" }]); }
     else riga(["Zona ", { w: 190, v: r.zona ? r.zona.nome : "" }, "  Fascia ", { w: 70, v: r.zona ? r.fascia.nome : "" }, R.fasce.criterio === "punti" ? "  Punteggio " : "  Elementi n. ", { w: 40, v: String(r.punti) }]);
@@ -126,7 +126,7 @@
     else if (r.fascia.prevalente) { for (const rr of aCapo(r.fascia.gruppi.map((g) => `${g.nome}: ${g.fascia.toLowerCase()}`).join("  ·  ") + `  →  livello prevalente ${r.fascia.nome.toUpperCase()}`, reg, 7.8, DX - SX)) { spazio(10); tx(rr, SX, a, { sz: 7.8, c: DATO }); a += 9.5; } a -= 9.5; }
     else if (r.fascia.gruppi) tx(r.fascia.gruppi.map((g) => `${g.nome}: ${g.n} punti, fascia ${g.fascia}`).join("   ·   "), SX, a, { sz: 7.8, c: DATO });
     else tx(R.fasce.nomi.map((n, i) => i === 0 ? `${n}: fino a ${soglie[0]} ${cosa}` : i < soglie.length ? `${n}: da ${soglie[i - 1] + 1} a ${soglie[i]}` : `${n}: da ${soglie[i - 1] + 1}`).join("   ·   "), SX, a, { sz: 7.8 });
-    if (!r.fascia.prevalente) dx(R.fasce.criterio === "differenza" ? `TOTALE PERCENTUALI ${String(r.punti).replace(".", ",")}%` : `TOTALE ${R.fasce.criterio === "punti" ? "PUNTEGGIO" : "ELEMENTI"} ${r.punti}`, DX, a, { f: bold, sz: 8.6, c: DATO });
+    if (!r.fascia.prevalente) dx(R.fasce.criterio === "differenza" ? `${(P.etichetta_totale || "TOTALE PERCENTUALI")} ${String(r.punti).replace(".", ",")}%` : `TOTALE ${R.fasce.criterio === "punti" ? "PUNTEGGIO" : "ELEMENTI"} ${r.punti}`, DX, a, { f: bold, sz: 8.6, c: DATO });
     a += 10;
 
     // maggiorazioni e calcolo

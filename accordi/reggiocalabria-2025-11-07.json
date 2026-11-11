@@ -1,0 +1,348 @@
+{
+ "accordo": {
+  "codice": "reggiocalabria-2025-11-07",
+  "modello": "reggiocalabria-2025",
+  "comune": "Reggio Calabria",
+  "provincia": "RC",
+  "titolo": "Accordo territoriale decentrato per il Comune di Reggio Calabria",
+  "data": "2025-11-07",
+  "data_testo": "7 novembre 2025",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2028-12-31",
+  "firmatari_proprieta": [
+   "CONFABITARE Calabria",
+   "FEDERPROPRIETÀ Reggio Calabria",
+   "U.P.P.I. Reggio Calabria"
+  ],
+  "firmatari_conduttori": [
+   "A.N.I.A.",
+   "ASSOCASA",
+   "CO.N.I.A.-A.P.I.A."
+  ],
+  "nota": "Sottoscritto a Reggio Calabria il 07/11/2025 (firme digitali), protocollato dalla Regione Calabria il 02/12/2025 (prot. 927410); sostituisce dal 01/01/2026 l'accordo del 26/04/2021. Durata tre anni dal deposito, poi resta in vigore fino al nuovo accordo. Data e protocollo del deposito al Comune non pubblicati. Tre zone per sezione e foglio catastale, valori mensili: il valore al mq è la media dei quattro parametri dell'art. 4.",
+  "fonte": "PDF dell'accordo con i contratti tipo e gli allegati (44 pagine, testo) pubblicato dalla Regione Calabria."
+ },
+ "esempio_zona": "la zona A, B o C (dalla sezione e dal foglio catastale)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Zona A",
+    "nota": "Zona A: sezione catastale RC, fogli 18, 19, 21, 40, 41, 42, 43, 44, 70, 86, 87, 88, 89, 90, da 100 a 113 e da 118 a 129.",
+    "fasce": [
+     [
+      4.0,
+      6.0
+     ]
+    ]
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B",
+    "nota": "Zona B: sezione RC fogli 1, 2, 3, 4; sezione PEL fogli 15 e 16; sezione GNA fogli 1, 2, 3, 4, 5, 13, 14, 15, 16, 24, 25; sezione GCO fogli 3, 4, 7, 8, 9.",
+    "fasce": [
+     [
+      3.0,
+      5.0
+     ]
+    ]
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C (tutti gli altri fogli)",
+    "nota": "Zona C: tutti i fogli di tutte le sezioni catastali che non sono nelle zone A e B.",
+    "fasce": [
+     [
+      2.0,
+      4.0
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "unica"
+   ],
+   "criterio": "differenza",
+   "nota": "Il valore al mq è la media dei quattro parametri (art. 4): ognuno vale il minimo, il valore medio o il massimo della zona. Elementi caratteristici: riscaldamento autonomo o centralizzato, videosorveglianza o allarme, antenna centralizzata o satellitare, ascensore, aria condizionata, impianto a energie rinnovabili, allaccio o predisposizione al metano, caldaia a gas, dispositivi per le barriere architettoniche, autoclave, altre dotazioni; box o posto auto/moto scoperto, cantina o soffitta (una sola), giardino esclusivo, terrazzo esclusivo, altre pertinenze; cortile o giardino condominiale, impianti sportivi e ludici, altri spazi comuni.",
+   "nota_pdf": "Il valore al mq è la media dei quattro parametri dell'art. 4 (minimo, medio o massimo della zona): ogni parametro vale 0%, 12,5% o 25% della differenza fra minimo e massimo."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Parametri dell'art. 4: ognuno vale il minimo, il valore medio o il massimo della zona"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Tipologia (categoria catastale)",
+    "livelli": [
+     {
+      "testo": "A/4, A/5, A/6 o A/11 (minimo)",
+      "punti": 0
+     },
+     {
+      "testo": "A/3 (medio)",
+      "punti": 12.5
+     },
+     {
+      "testo": "A/2 o A/7 (massimo)",
+      "punti": 25
+     }
+    ],
+    "mostra_punti": false
+   },
+   {
+    "testo": "Stato di manutenzione dell'alloggio",
+    "livelli": [
+     {
+      "testo": "serve una manutenzione generale (minimo)",
+      "punti": 0
+     },
+     {
+      "testo": "serve una manutenzione parziale (medio)",
+      "punti": 12.5
+     },
+     {
+      "testo": "non serve alcuna manutenzione (massimo)",
+      "punti": 25
+     }
+    ],
+    "mostra_punti": false
+   },
+   {
+    "testo": "Stato di manutenzione dell'edificio",
+    "livelli": [
+     {
+      "testo": "serve una manutenzione generale (minimo)",
+      "punti": 0
+     },
+     {
+      "testo": "serve una manutenzione parziale (medio)",
+      "punti": 12.5
+     },
+     {
+      "testo": "non serve alcuna manutenzione (massimo)",
+      "punti": 25
+     }
+    ],
+    "mostra_punti": false
+   },
+   {
+    "testo": "Elementi caratteristici: dotazioni tecniche, pertinenze e spazi comuni",
+    "livelli": [
+     {
+      "testo": "nessuno (minimo)",
+      "punti": 0
+     },
+     {
+      "testo": "uno solo (medio)",
+      "punti": 12.5
+     },
+     {
+      "testo": "due o più (massimo)",
+      "punti": 25
+     }
+    ],
+    "mostra_punti": false
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile netta dell'alloggio (con bagni, ripostigli, ingressi e corridoi)",
+   "voci": [
+    {
+     "chiave": "cantine",
+     "testo": "Soffitte, cantine, verande e simili comunicanti con l'alloggio",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantine_nc",
+     "testo": "Soffitte, cantine, verande e simili non comunicanti",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazze comunicanti (30% fino a 25 mq, poi 10%)",
+     "coeff": 0.3,
+     "scaglione": [
+      25,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "chiave": "balconi_nc",
+     "testo": "Balconi e terrazze non comunicanti (15% fino a 25 mq, poi 5%)",
+     "coeff": 0.15,
+     "scaglione": [
+      25,
+      0.15,
+      0.05
+     ]
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta esclusiva (10% fino alla superficie dell'alloggio, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    }
+   ],
+   "correzioni": [
+    {
+     "fino": 60,
+     "incluso": true,
+     "perc": 20,
+     "tetto": 72
+    }
+   ],
+   "nota": "Pertinenze esclusive secondo il D.P.R. 138/98 (art. 2). Alloggi fino a 60 mq: superficie calpestabile aumentata del 20%, fino a un massimo di 72 mq."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "migliorativo",
+    "tipo": "scelta",
+    "testo": "Coefficiente migliorativo (se ne applica uno solo)",
+    "nome": "migliorativo",
+    "nessuna": "nessuno",
+    "opzioni": [
+     {
+      "valore": "2016",
+      "testo": "permesso di costruire o stato legittimo dal 1° gennaio 2016",
+      "perc": 10
+     },
+     {
+      "valore": "a7",
+      "testo": "villino in categoria A/7",
+      "perc": 10
+     },
+     {
+      "valore": "affaccio",
+      "testo": "affaccio su lungomare, Corso Garibaldi o altra via dell'elenco",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "detrattivo",
+    "tipo": "scelta",
+    "testo": "Coefficiente detrattivo (se ne applica uno solo)",
+    "nome": "detrattivo",
+    "nessuna": "nessuno",
+    "opzioni": [
+     {
+      "valore": "a5",
+      "testo": "categoria A/5, A/6 o A/11",
+      "perc": -10
+     },
+     {
+      "valore": "terra",
+      "testo": "piano terra di uno stabile con più di due piani fuori terra",
+      "perc": -10
+     },
+     {
+      "valore": "ascensore",
+      "testo": "oltre il terzo piano senza ascensore",
+      "perc": -10
+     }
+    ]
+   },
+   {
+    "chiave": "ape",
+    "tipo": "spunta",
+    "testo": "Classe energetica A, B, C o D (APE)",
+    "nome": "classe energetica A-D",
+    "perc": 10
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "in parte (alcuni ambienti principali senza arredo)",
+      "perc": 10
+     },
+     {
+      "valore": "totale",
+      "testo": "completo, con elettrodomestici",
+      "perc": 15
+     }
+    ]
+   },
+   {
+    "chiave": "locazione_parziale",
+    "tipo": "spunta",
+    "testo": "Si affitta solo una parte dell'alloggio (art. 7)",
+    "nome": "locazione parziale",
+    "perc": 10
+   },
+   {
+    "chiave": "degrado",
+    "tipo": "spunta",
+    "testo": "Zona di particolare degrado individuata dal Comune",
+    "nome": "zona di degrado",
+    "perc": -10
+   },
+   {
+    "chiave": "mobilita",
+    "tipo": "spunta",
+    "testo": "Transitorio per mobilità lavorativa (fino a +20%)",
+    "nome": "mobilità lavorativa",
+    "perc": 20,
+    "contratti": [
+     "transitorio"
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "I coefficienti si applicano uno sull'altro. Fra costruzione dal 2016, categoria A/7 e affaccio se ne sceglie uno solo, e uno solo fra i detrattivi. Vie con l'aumento del 5%: Lungomare Falcomatà, Corso Garibaldi, Piazza Garibaldi, Via De Nava, Via Aschenez, Via del Torrione, Piazza Castello, Via Possidonea, Via Domenico Tripepi, Piazza Carmine, Viale Genoese Zerbi, Lungomare di Pellaro, Lungomare Paolo Latella, Via Marina Arenile, Via Enzo Laganà. Durata 4+2: +10%; 5+2: +15%. Transitori da 1 a 18 mesi.",
+  "durate": [
+   3,
+   4,
+   5
+  ],
+  "durata": {
+   "4": 10,
+   "5": 15
+  },
+  "combinazione": "prodotto",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Contratti tipo A, B e C",
+  "titolo": "Modalità di calcolo del canone di locazione",
+  "sottotitolo": "Accordo territoriale decentrato per il Comune di Reggio Calabria, sottoscritto il 07/11/2025, in vigore dal 01/01/2026",
+  "titolo_elementi": "Parametri per il calcolo del canone (art. 4)",
+  "dichiarazione": "Il locatore e il conduttore dichiarano veritieri gli elementi oggettivi sopra riportati, da indicare nell'articolo «Modalità di calcolo» del contratto.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16/01/2017",
+  "attestazione": [
+   "L'Organizzazione ………………………………………… firmataria dell'Accordo Territoriale per il Comune di Reggio Calabria dello 01/01/2026, prot. N. …………, fatte salve le condizioni essenziali per usufruire della tassazione agevolata sia ai fini IMU che ai fini IRPEF,",
+   "ATTESTA che i contenuti economici e normativi del presente contratto, fra il locatore e il conduttore sopra indicati, sulla base degli elementi oggettivi dagli stessi espressamente dichiarati veritieri, riferito all'immobile identificato catastalmente alla sezione di ……, foglio ……, particella ……, sub ……, corrispondono a quanto previsto dall'Accordo Territoriale depositato nel Comune di Reggio Calabria in data ………… con protocollo n. ………… in vigore dallo 01/01/2026.",
+   "Reggio Calabria, ……/……/20……"
+  ],
+  "firme_attestazione": [
+   "p. l'Organizzazione (timbro e firma)"
+  ],
+  "piede": "Accordo territoriale decentrato per il Comune di Reggio Calabria (sottoscritto il 7 novembre 2025, in vigore dal 1° gennaio 2026), compilato con LocaOnLine",
+  "nota_zone": "La zona dipende dalla sezione e dal foglio catastale (visura): elenco all'art. 1 dell'accordo.",
+  "etichetta_somma": "Media dei parametri (% della differenza)",
+  "etichetta_totale": "MEDIA DEI PARAMETRI"
+ }
+}

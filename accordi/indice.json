@@ -556,6 +556,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmessina-2024-11-11-accordo.pdf?alt=media&token=49e42c4f-a0aa-47e9-980f-d93a1951a584"
     }
    ]
+  },
+  {
+   "comune": "Reggio Calabria",
+   "provincia": "RC",
+   "accordo": "reggiocalabria-2025-11-07",
+   "sottoscritto": "7 novembre 2025",
+   "depositato": "",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggiocalabria-2025-11-07-accordo.pdf?alt=media&token=4df463e3-2e58-4d9c-9e0d-c050aff61754",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggiocalabria-2025-11-07-accordo.pdf?alt=media&token=4df463e3-2e58-4d9c-9e0d-c050aff61754"
+    }
+   ]
   }
  ]
 }
