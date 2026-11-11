@@ -586,6 +586,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmodena-2026-10-07-accordo.pdf?alt=media&token=4e738819-ebc6-4539-a404-c934cad2c064"
     }
    ]
+  },
+  {
+   "comune": "Salerno",
+   "provincia": "SA",
+   "accordo": "salerno-2019-07-08",
+   "sottoscritto": "8 luglio 2019",
+   "depositato": "15 luglio 2019",
+   "zone": 14,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsalerno-2019-07-08-accordo.pdf?alt=media&token=8c3dec28-0068-472d-9835-40fb3fbbbc2f",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsalerno-2019-07-08-accordo.pdf?alt=media&token=8c3dec28-0068-472d-9835-40fb3fbbbc2f"
+    }
+   ]
   }
  ]
 }

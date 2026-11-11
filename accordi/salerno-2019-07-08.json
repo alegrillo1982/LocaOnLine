@@ -1,0 +1,925 @@
+{
+ "accordo": {
+  "codice": "salerno-2019-07-08",
+  "modello": "salerno-2019",
+  "comune": "Salerno",
+  "provincia": "SA",
+  "titolo": "Accordo territoriale per la Città di Salerno",
+  "data": "2019-07-08",
+  "data_testo": "8 luglio 2019",
+  "deposito": "Comune di Salerno, prot. n. 136125",
+  "deposito_data": "15.07.2019",
+  "protocollo": "136125",
+  "ufficio": "Ufficio Archivio del Comune di Salerno",
+  "ufficio_breve": "Ufficio Archivio",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Salerno dell'8 luglio 2019: durata di tre anni dal deposito, scaduta il 15 luglio 2022.</strong> Il Comune lo indica ancora come vigente e resta in vigore finché non viene firmato quello nuovo (art. 33); dal terzo anno i valori minimi e massimi <strong>possono essere aggiornati al 75% della variazione ISTAT</strong> (allegato B). Qui trovi i valori originali: chiedi all'associazione che attesta il contratto quelli aggiornati.",
+  "firmatari_proprieta": [
+   "A.P.E. Salerno - Confedilizia",
+   "U.P.P.I.",
+   "Federproprietà (A.S.P.E. Salerno)",
+   "Confabitare",
+   "A.P.P.C."
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET",
+   "UNIAT Campania",
+   "ASSOCASA"
+  ],
+  "nota": "Firmato l'8/07/2019 e depositato il 15/07/2019 all'Ufficio Archivio del Comune di Salerno (prot. n. 136125, scritto a mano sul timbro). Sostituisce l'accordo del 4/08/1999. Durata tre anni dal deposito, poi in vigore fino al nuovo (art. 33); il Comune lo indica come vigente nel modello IMU del 2026. Sedici aree omogenee (allegato A), valori al mq al mese (allegato B), quattro fasce secondo il numero di elementi (allegato C). Dentro la fascia il valore dipende da stato di conservazione, affaccio, soleggiamento, panoramicità, classe energetica e impianti.",
+  "fonte": "PDF dell'accordo depositato pubblicato dal SUNIA (31 pagine in scansione: verbale di deposito, accordo, allegati A-H); vigenza confermata dal Comune di Salerno (pagina Agevolazione IMU e modello di comunicazione del 2026)."
+ },
+ "esempio_zona": "l'area dal foglio di mappa catastale (allegato A)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Area 1 - Centrale (Lungomare Trieste)",
+    "nota": "Area 1: Centrale: Casa Comunale, Lungomare Trieste, Piazza V. Veneto, P.zza Borsellino, Trincerone (OMI B10). Fogli di mappa 64Bz, 64Cz, 64D, 64Dz. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      5.03,
+      5.75
+     ],
+     [
+      5.78,
+      6.5
+     ],
+     [
+      6.53,
+      7.25
+     ],
+     [
+      7.28,
+      8.0
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2 - Centro storico",
+    "nota": "Area 2: Centrale/Centro storico: Via Monti, Chiesa Annunziata, Piazza Portanova (OMI B11). Fogli di mappa 64A, 64B, 64C. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      4.03,
+      4.75
+     ],
+     [
+      4.78,
+      5.5
+     ],
+     [
+      5.53,
+      6.25
+     ],
+     [
+      6.28,
+      7.0
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3 - Centrale (Ferrovia, Lanzalone)",
+    "nota": "Area 3: Centrale: Ferrovia, Via Dalmazia, Via E. Caterina, Via Prudente, Piazza Naddeo, Via Lanzalone, Via Sichelgaita, Via C. Sorgente (OMI B12). Fogli di mappa 61, 62, 67, 68. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      4.03,
+      4.75
+     ],
+     [
+      4.78,
+      5.5
+     ],
+     [
+      5.53,
+      6.25
+     ],
+     [
+      6.28,
+      7.0
+     ]
+    ]
+   },
+   {
+    "codice": "4-5",
+    "nome": "Aree 4-5 - Semicentrale (Torrione)",
+    "nota": "Area 4 e 5: Semicentrale: Forte La Carnale, Lungomare Tafuri, Marconi, Colombo, Via G. Clark, Viale Verdi, Via Parmenide fino alla ferrovia a nord; zona fra la ferrovia a sud e la tangenziale a nord, Torrione Alto a ovest incluso, svincolo Mariconda a est (OMI C1-C2). Fogli di mappa 69, 70, 70z, 35, 35A, 35Az, 36, 36z, 39, 39z. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      4.025,
+      4.625
+     ],
+     [
+      4.65,
+      5.25
+     ],
+     [
+      5.275,
+      5.875
+     ],
+     [
+      5.9,
+      6.5
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "Area 6 - Semicentrale (Seripando)",
+    "nota": "Area 6: Semicentrale: Seripando, La Menolella, Calata San Vito, zona fra il fiume Irno a ovest e Via Belvedere a est (OMI C3). Fogli di mappa 58 (a sud dell'autostrada A3), 66, 16 (parte a ovest della SS Tirrena Inf.), 26 (parte a ovest della SS Tirrena Inf.), 62, 69z. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      4.03,
+      4.75
+     ],
+     [
+      4.78,
+      5.5
+     ],
+     [
+      5.53,
+      6.25
+     ],
+     [
+      6.28,
+      7.0
+     ]
+    ]
+   },
+   {
+    "codice": "7",
+    "nome": "Area 7 - Periferica (Fratte, Matierno)",
+    "nota": "Area 7: Periferica: Via dei Greci, Fratte, Cappelle, Matierno, Brignano, Cimitero (OMI D6). Fogli di mappa 10, 14, 15, 16, 65. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.025,
+      3.625
+     ],
+     [
+      3.65,
+      4.25
+     ],
+     [
+      4.275,
+      4.875
+     ],
+     [
+      4.9,
+      5.5
+     ]
+    ]
+   },
+   {
+    "codice": "8",
+    "nome": "Area 8 - Periferica (Panoramica, Giovi)",
+    "nota": "Area 8: Periferica: Via Panoramica, Sala Abagnano, Casa Manzo, Giovi Bottiglieri (OMI D7). Fogli di mappa 17, 22, 26. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.035,
+      3.875
+     ],
+     [
+      3.91,
+      4.75
+     ],
+     [
+      4.785,
+      5.625
+     ],
+     [
+      5.66,
+      6.5
+     ]
+    ]
+   },
+   {
+    "codice": "9",
+    "nome": "Area 9 - Periferica (Pastena)",
+    "nota": "Area 9: Periferica: Via Moscani, Paradiso di Pastena, Sant'Eustachio (OMI D8). Fogli di mappa 31, 22 e 28 (porzioni a sud della tangenziale). L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.03,
+      3.75
+     ],
+     [
+      3.78,
+      4.5
+     ],
+     [
+      4.53,
+      5.25
+     ],
+     [
+      5.28,
+      6.0
+     ]
+    ]
+   },
+   {
+    "codice": "10",
+    "nome": "Area 10 - Periferica (San Leonardo)",
+    "nota": "Area 10: Periferica: San Leonardo, Marina d'Arechi, Zona Industriale (OMI D9). Fogli di mappa 44, 44z, 45, 46, 46z, 47, 47z, 52, 53, 54, 54z. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.035,
+      2.875
+     ],
+     [
+      2.91,
+      3.75
+     ],
+     [
+      3.785,
+      4.625
+     ],
+     [
+      4.66,
+      5.5
+     ]
+    ]
+   },
+   {
+    "codice": "11",
+    "nome": "Area 11 - Periferica (zona Porto)",
+    "nota": "Area 11: Periferica: Chiesa S. Anna al Porto, zona Porto, Via Fusandola, Piazza Italia (OMI D10). Fogli di mappa 63z, 64Az, 71z. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.035,
+      2.875
+     ],
+     [
+      2.91,
+      3.75
+     ],
+     [
+      3.785,
+      4.625
+     ],
+     [
+      4.66,
+      5.5
+     ]
+    ]
+   },
+   {
+    "codice": "12",
+    "nome": "Area 12 - Suburbana (Ogliara, Rufoli)",
+    "nota": "Area 12: Suburbana: Pastorano, Ogliara, Sant'Angelo, Sordina, Rufoli (OMI E2). Fogli di mappa 1, 2, 3, 4, 5, 6, 7, 8, 9, 12. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.035,
+      2.875
+     ],
+     [
+      2.91,
+      3.75
+     ],
+     [
+      3.785,
+      4.625
+     ],
+     [
+      4.66,
+      5.5
+     ]
+    ]
+   },
+   {
+    "codice": "13",
+    "nome": "Area 13 - Suburbana (confini sud-est)",
+    "nota": "Area 13: Suburbana: zone confinanti con i Comuni di San Cipriano Picentino, Giffoni Sei Casali e Pontecagnano (OMI E4). Fogli di mappa 43, 48, 49, 50, 51. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.025,
+      2.625
+     ],
+     [
+      2.65,
+      3.25
+     ],
+     [
+      3.275,
+      3.875
+     ],
+     [
+      3.9,
+      4.5
+     ]
+    ]
+   },
+   {
+    "codice": "14-16",
+    "nome": "Aree 14-16 - Suburbana (Piegolelle)",
+    "nota": "Area 14 e 16: Suburbana: S. Nicola, Piegolelle, Giovi Casa Polla, Casa D'Amato, Casa Rocco, S. Bartolomeo, Casa Vicinanza, Altimari; restante parte del territorio comunale, zone da nord a est (OMI E7 e R2). Fogli di mappa 19, 20, 21, 23, 24, 24A, 29 e 11, 13, 18, 25, 28, 30, 32, 33, 34, 37, 38, 40, 41, 42. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.02,
+      2.5
+     ],
+     [
+      2.52,
+      3.0
+     ],
+     [
+      3.02,
+      3.5
+     ],
+     [
+      3.52,
+      4.0
+     ]
+    ]
+   },
+   {
+    "codice": "15",
+    "nome": "Area 15 - Extraurbana (Cernicchiara)",
+    "nota": "Area 15: Extraurbana: restante territorio del Comune, zona Cernicchiara, Croce, Canalone (OMI R1). Fogli di mappa 55, 56, 57, 58 (a nord dell'autostrada A3), 59, 60, 63, 71. L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.025,
+      1.625
+     ],
+     [
+      1.65,
+      2.25
+     ],
+     [
+      2.275,
+      2.875
+     ],
+     [
+      2.9,
+      3.5
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "1ª fascia",
+    "2ª fascia",
+    "3ª fascia",
+    "4ª fascia"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    3,
+    4,
+    5
+   ],
+   "conta": {
+    "da": 0,
+    "a": 19
+   },
+   "basta": [
+    20
+   ],
+   "nota": "fino a 3 elementi 1ª fascia, 4 elementi 2ª, 5 elementi 3ª, almeno 6 elementi 4ª; con classe A (APE dopo l'1/1/2013) sempre la 4ª"
+  },
+  "elementi": [
+   {
+    "testo": "Ascensore (o alloggio non oltre il 3° piano)"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Aree e spazi liberi di uso comune"
+   },
+   {
+    "testo": "Balcone sporgente o terrazzo"
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato"
+   },
+   {
+    "testo": "Area verde di pertinenza o piano attico"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Servizio di portierato"
+   },
+   {
+    "testo": "Costruito o ristrutturato del tutto negli ultimi 10 anni"
+   },
+   {
+    "testo": "Sistema di sicurezza o allarme interno"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Antenna o impianto satellitare centralizzato"
+   },
+   {
+    "testo": "Stato di manutenzione ottimo"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Infissi con doppio vetrocamera"
+   },
+   {
+    "testo": "Classe energetica A, B, C o D"
+   },
+   {
+    "testo": "Posto auto"
+   },
+   {
+    "testo": "Cucina abitabile"
+   },
+   {
+    "testo": "Senza barriere architettoniche nell'alloggio"
+   },
+   {
+    "testo": "Wi-Fi (solo contratti transitori)"
+   },
+   {
+    "testo": "Classe A, APE dopo l'1/1/2013 (4ª fascia; segna anche il 16)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile calpestabile dell'alloggio",
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Box auto",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto",
+     "coeff": 0.4
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Superficie scoperta a uso esclusivo",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota in millesimi di proprietà)",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Superficie utile calpestabile più gli accessori in percentuale (allegato C, parte seconda). Tolleranza del 5% in più o in meno."
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "superficie sotto 29 mq",
+    "a": 28.999,
+    "perc": 50
+   },
+   {
+    "nome": "superficie da 29 a 30 mq",
+    "da": 29,
+    "a": 29.999,
+    "perc": 50
+   },
+   {
+    "nome": "superficie da 30 a 31 mq",
+    "da": 30,
+    "a": 30.999,
+    "perc": 49
+   },
+   {
+    "nome": "superficie da 31 a 32 mq",
+    "da": 31,
+    "a": 31.999,
+    "perc": 48
+   },
+   {
+    "nome": "superficie da 32 a 33 mq",
+    "da": 32,
+    "a": 32.999,
+    "perc": 47
+   },
+   {
+    "nome": "superficie da 33 a 34 mq",
+    "da": 33,
+    "a": 33.999,
+    "perc": 46
+   },
+   {
+    "nome": "superficie da 34 a 35 mq",
+    "da": 34,
+    "a": 34.999,
+    "perc": 45
+   },
+   {
+    "nome": "superficie da 35 a 36 mq",
+    "da": 35,
+    "a": 35.999,
+    "perc": 44
+   },
+   {
+    "nome": "superficie da 36 a 37 mq",
+    "da": 36,
+    "a": 36.999,
+    "perc": 43
+   },
+   {
+    "nome": "superficie da 37 a 38 mq",
+    "da": 37,
+    "a": 37.999,
+    "perc": 42
+   },
+   {
+    "nome": "superficie da 38 a 39 mq",
+    "da": 38,
+    "a": 38.999,
+    "perc": 41
+   },
+   {
+    "nome": "superficie da 39 a 40 mq",
+    "da": 39,
+    "a": 39.999,
+    "perc": 40
+   },
+   {
+    "nome": "superficie da 40 a 41 mq",
+    "da": 40,
+    "a": 40.999,
+    "perc": 39
+   },
+   {
+    "nome": "superficie da 41 a 42 mq",
+    "da": 41,
+    "a": 41.999,
+    "perc": 38
+   },
+   {
+    "nome": "superficie da 42 a 43 mq",
+    "da": 42,
+    "a": 42.999,
+    "perc": 37
+   },
+   {
+    "nome": "superficie da 43 a 44 mq",
+    "da": 43,
+    "a": 43.999,
+    "perc": 36
+   },
+   {
+    "nome": "superficie da 44 a 45 mq",
+    "da": 44,
+    "a": 44.999,
+    "perc": 35
+   },
+   {
+    "nome": "superficie da 45 a 46 mq",
+    "da": 45,
+    "a": 45.999,
+    "perc": 34
+   },
+   {
+    "nome": "superficie da 46 a 47 mq",
+    "da": 46,
+    "a": 46.999,
+    "perc": 33
+   },
+   {
+    "nome": "superficie da 47 a 48 mq",
+    "da": 47,
+    "a": 47.999,
+    "perc": 32
+   },
+   {
+    "nome": "superficie da 48 a 49 mq",
+    "da": 48,
+    "a": 48.999,
+    "perc": 31
+   },
+   {
+    "nome": "superficie da 49 a 50 mq",
+    "da": 49,
+    "a": 49.999,
+    "perc": 30
+   },
+   {
+    "nome": "superficie da 50 a 51 mq",
+    "da": 50,
+    "a": 50.999,
+    "perc": 29
+   },
+   {
+    "nome": "superficie da 51 a 52 mq",
+    "da": 51,
+    "a": 51.999,
+    "perc": 28
+   },
+   {
+    "nome": "superficie da 52 a 53 mq",
+    "da": 52,
+    "a": 52.999,
+    "perc": 27
+   },
+   {
+    "nome": "superficie da 53 a 54 mq",
+    "da": 53,
+    "a": 53.999,
+    "perc": 26
+   },
+   {
+    "nome": "superficie da 54 a 55 mq",
+    "da": 54,
+    "a": 54.999,
+    "perc": 25
+   },
+   {
+    "nome": "superficie da 55 a 56 mq",
+    "da": 55,
+    "a": 55.999,
+    "perc": 24
+   },
+   {
+    "nome": "superficie da 56 a 57 mq",
+    "da": 56,
+    "a": 56.999,
+    "perc": 23
+   },
+   {
+    "nome": "superficie da 57 a 58 mq",
+    "da": 57,
+    "a": 57.999,
+    "perc": 22
+   },
+   {
+    "nome": "superficie da 58 a 59 mq",
+    "da": 58,
+    "a": 58.999,
+    "perc": 21
+   },
+   {
+    "nome": "superficie da 59 a 60 mq",
+    "da": 59,
+    "a": 59.999,
+    "perc": 20
+   },
+   {
+    "nome": "superficie da 60 a 61 mq",
+    "da": 60,
+    "a": 60.999,
+    "perc": 19
+   },
+   {
+    "nome": "superficie da 61 a 62 mq",
+    "da": 61,
+    "a": 61.999,
+    "perc": 18
+   },
+   {
+    "nome": "superficie da 62 a 63 mq",
+    "da": 62,
+    "a": 62.999,
+    "perc": 17
+   },
+   {
+    "nome": "superficie da 63 a 64 mq",
+    "da": 63,
+    "a": 63.999,
+    "perc": 16
+   },
+   {
+    "nome": "superficie da 64 a 65 mq",
+    "da": 64,
+    "a": 64.999,
+    "perc": 15
+   },
+   {
+    "nome": "superficie da 65 a 66 mq",
+    "da": 65,
+    "a": 65.999,
+    "perc": 14
+   },
+   {
+    "nome": "superficie da 66 a 67 mq",
+    "da": 66,
+    "a": 66.999,
+    "perc": 13
+   },
+   {
+    "nome": "superficie da 67 a 68 mq",
+    "da": 67,
+    "a": 67.999,
+    "perc": 12
+   },
+   {
+    "nome": "superficie da 68 a 69 mq",
+    "da": 68,
+    "a": 68.999,
+    "perc": 11
+   },
+   {
+    "nome": "superficie da 69 a 70 mq",
+    "da": 69,
+    "a": 69.999,
+    "perc": 10
+   },
+   {
+    "nome": "superficie da 70 a 71 mq",
+    "da": 70,
+    "a": 70.999,
+    "perc": 9
+   },
+   {
+    "nome": "superficie da 71 a 72 mq",
+    "da": 71,
+    "a": 71.999,
+    "perc": 8
+   },
+   {
+    "nome": "superficie da 72 a 73 mq",
+    "da": 72,
+    "a": 72.999,
+    "perc": 7
+   },
+   {
+    "nome": "superficie da 73 a 74 mq",
+    "da": 73,
+    "a": 73.999,
+    "perc": 6
+   },
+   {
+    "nome": "superficie da 74 a 75 mq",
+    "da": 74,
+    "a": 74.999,
+    "perc": 5
+   },
+   {
+    "nome": "superficie da 75 a 76 mq",
+    "da": 75,
+    "a": 75.999,
+    "perc": 4
+   },
+   {
+    "nome": "superficie da 76 a 77 mq",
+    "da": 76,
+    "a": 76.999,
+    "perc": 3
+   },
+   {
+    "nome": "superficie da 77 a 78 mq",
+    "da": 77,
+    "a": 77.999,
+    "perc": 2
+   },
+   {
+    "nome": "superficie da 78 a 79 mq",
+    "da": 78,
+    "a": 78.999,
+    "perc": 1
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "posizione",
+    "tipo": "scelta",
+    "testo": "Posizione dell'alloggio",
+    "nome": "posizione",
+    "nessuna": "nessuna delle due",
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "opzioni": [
+     {
+      "valore": "strada",
+      "testo": "in una strada di pregio dell'elenco (allegato A)",
+      "perc": 30
+     },
+     {
+      "valore": "veduta",
+      "testo": "ampia e libera veduta, fuori dall'elenco",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "strada_st",
+    "tipo": "spunta",
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Alloggio in una strada di pregio dell'elenco (allegato A)",
+    "nome": "strada di pregio",
+    "perc": 30
+   },
+   {
+    "chiave": "nuova",
+    "tipo": "spunta",
+    "testo": "Alloggio costruito o ristrutturato completamente negli ultimi 3 anni, oppure con giardino in villetta uni o bifamiliare fuori dalle strade dell'elenco",
+    "nome": "abitazione nuova o con giardino (all. B, punto 1)",
+    "perc": 30
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "contratti": [
+     "agevolato"
+    ],
+    "ammobiliato": true,
+    "testo": "Completamente arredato, con l'elenco dei mobili allegato al contratto",
+    "nome": "arredato",
+    "perc": 15
+   },
+   {
+    "chiave": "arredo_tr",
+    "tipo": "spunta",
+    "contratti": [
+     "transitorio"
+    ],
+    "ammobiliato": true,
+    "testo": "Completamente arredato, con l'elenco dei mobili allegato al contratto",
+    "nome": "arredato (transitorio)",
+    "perc": 25
+   },
+   {
+    "chiave": "transitorio",
+    "tipo": "auto",
+    "contratti": [
+     "transitorio"
+    ],
+    "nome": "contratto transitorio (art. 13)",
+    "perc": 10,
+    "dopo": true
+   },
+   {
+    "chiave": "porzione10",
+    "tipo": "spunta",
+    "contratti": [
+     "transitorio",
+     "studenti"
+    ],
+    "testo": "Si affitta una porzione (es. una stanza) e le parti concordano l'aumento fino al 10%",
+    "nome": "porzione, aumento concordato (artt. 14 e 25)",
+    "perc": 10,
+    "dopo": true
+   }
+  ],
+  "nota_maggiorazioni": "Le maggiorazioni si sommano fra loro (art. 4); i transitori hanno in più il 10% su minimi e massimi (art. 13). Sono tutte \"fino a\": qui si usa il massimo. Le riduzioni (strada fuori elenco, alloggio oltre 130 mq, riduzione generica) sono facoltative, fino al 30%, e non sono applicate.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "4ª fascia: alloggio e fabbricato devono essere almeno in buone condizioni; se manca qualche requisito, il canone si ferma al minimo della 4ª fascia.",
+    "fascia": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato D",
+  "titolo": "Attestazione di rispondenza (D.M. 16/01/2017)",
+  "sottotitolo": "Accordo territoriale per la Città di Salerno dell'8/07/2019, depositato presso il Comune di Salerno il 15/07/2019 (prot. n. 136125)",
+  "titolo_elementi": "Elementi caratteristici (allegato C)",
+  "dichiarazione": "Il richiedente dichiara, sotto la sua responsabilità civile e penale, gli elementi sopra riportati.",
+  "firme": [],
+  "titolo_attestazione": "TUTTO CIÒ PREMESSO",
+  "attestazione": [
+   "l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Salerno, sulla base degli elementi oggettivi sopra dichiarati, visto il contratto di locazione e la scheda riepilogativa del canone concordato,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Salerno depositato in data 15/07/2019 al prot. n. 136125."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "L'area si ricava dal foglio di mappa catastale del fabbricato (allegato A)."
+ }
+}
