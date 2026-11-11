@@ -69,18 +69,34 @@
     const righe = [{ chiave: "base", mq: U, coeff: R.coeff_base || 1, convenzionale: cent(base) }];
     for (const v of R.voci || []) {
       const mq = numero(sup[v.chiave]) || 0;
+      // es. Treviso: l'area scoperta conta al massimo per una quota della superficie dell'alloggio
+      const mqc = v.tetto_mq_base && mq > U * v.tetto_mq_base ? cent(U * v.tetto_mq_base) : mq;
+      if (mqc < mq) note.push(`${v.testo}: contati al massimo ${virgola(mqc)} mq.`);
       const k = v.coeff_zona && v.coeff_zona[z] !== undefined ? v.coeff_zona[z] : v.coeff;
       const lim = v.scaglione && v.scaglione[0] === "base" ? U : v.scaglione && v.scaglione[0];
-      let conv = v.scaglione ? Math.min(mq, lim) * v.scaglione[1] + Math.max(0, mq - lim) * v.scaglione[2] : mq * k;
+      let conv = v.scaglione ? Math.min(mqc, lim) * v.scaglione[1] + Math.max(0, mqc - lim) * v.scaglione[2] : mqc * k;
       if (v.oltre_mq !== undefined && mq <= v.oltre_mq) conv = 0;
       if (v.tetto === "base" && conv > U) { conv = U; note.push(`${v.testo}: al massimo la superficie dell'alloggio.`); }
       righe.push({ chiave: v.chiave, mq, coeff: k, convenzionale: cent(conv) });
+    }
+    // es. Pesaro: alcune pertinenze, insieme, contano al massimo per una quota della superficie dell'alloggio
+    for (const G of R.tetto_gruppi || []) {
+      const rr = righe.filter((x) => G.chiavi.includes(x.chiave)), som = rr.reduce((t, x) => t + x.convenzionale, 0), tetto = cent(U * G.frazione);
+      if (som > tetto) { rr.forEach((x) => { x.convenzionale = cent(x.convenzionale * tetto / som); }); note.push(`${G.testo || "Queste pertinenze"}: insieme al massimo ${virgola(tetto)} mq.`); }
     }
     let totale = cent(righe.reduce((t, r) => t + r.convenzionale, 0));
     // es. Messina: le pertinenze contano al massimo per una quota della superficie principale
     if (R.tetto_voci) {
       const voci = totale - righe[0].convenzionale, tetto = cent(U * R.tetto_voci);
       if (voci > tetto) { totale = cent(righe[0].convenzionale + tetto); note.push(`Pertinenze contate fino a ${virgola(tetto)} mq (${R.tetto_voci === 0.5 ? "metà della superficie" : R.tetto_voci === 1 ? "la superficie" : `${virgola(R.tetto_voci * 100, 0)}% della superficie`} dell'alloggio).`); }
+    }
+    // es. Pesaro: sotto una soglia la superficie convenzionale cresce con una formula, a tratti
+    const CF = (R.correzioni_formula || []).find((x) => (x.incluso ? totale <= x.fino : totale < x.fino));
+    if (CF) {
+      const prima = totale, ult = R.correzioni_formula[R.correzioni_formula.length - 1].fino;
+      totale = cent(prima + (CF.k !== undefined ? CF.k : prima) * (CF.limite - prima) / CF.divisore);
+      if (totale > prima) note.push(`Superficie sotto i ${virgola(ult, 0)} mq aumentata da ${virgola(prima)} a ${virgola(totale)} mq.`);
+      else totale = prima;
     }
     // es. Livorno: la superficie convenzionale oltre certe soglie conta solo in parte, a scaglioni
     const ST = R.scaglioni_totale;
@@ -124,6 +140,9 @@
         const regola = pari.length === 2 && F.parita ? F.parita[pari.join("-")] : undefined;
         if (typeof regola === "number") i = regola;
         else if (regola) i = gruppi[regola.gruppo].i === regola.se ? regola.allora : regola.altrimenti;
+        // es. La Spezia: il livello più basso vale solo se lo raggiungono almeno N gruppi
+        const PM = F.prevalente_minimo;
+        if (PM && i === PM.livello && conta[i] < PM.almeno) i = PM.altrimenti;
         return { n: conta[i], i, nome: F.nomi[i], gruppi, prevalente: true, avviso: "" };
       }
       return { n: gruppi.reduce((t, g) => t + g.n, 0), i: null, nome: gruppi.map((g) => `${g.nome} ${g.fascia}`).join(", "), gruppi, avviso: "" };
@@ -197,6 +216,8 @@
       canone_pattuito: null, quota: null, punti: 0 };
     r.zona = R.zone.find((z) => z.codice === String(s.zona || "")) || null;
     if (!r.zona) avvisi.push("Scegli la zona.");
+    // es. Lecce: alcuni elementi valgono solo in certe zone; altrove non si contano
+    if (R.elementi && R.elementi.some((e) => e.zone)) s = { ...s, elementi: (s.elementi || []).map((x, k) => (R.elementi[k] && R.elementi[k].zone && !R.elementi[k].zone.includes(String(s.zona || "")) ? false : x)) };
     const f = fascia(accordo, s, r.zona);
     r.fascia = f; r.punti = f.n;
     if (f.avviso) avvisi.push(f.avviso);
@@ -274,6 +295,10 @@
     for (const m of R.maggiorazioni || []) {
       if (m.contratti && !m.contratti.includes(tipo)) continue;
       if (!perZona(m, z)) continue;
+      // es. Pisa: la maggiorazione vale solo per alcune fasce (tipologie)
+      if (m.fasce && !(r.fascia && m.fasce.includes(r.fascia.i))) continue;
+      // es. Pistoia: la maggiorazione vale solo da una certa superficie in su (non cumulabile con quella dei piccoli)
+      if (m.superficie && sup) { const mq = m.superficie.su === "base" ? sup.righe[0].mq : sup.totale; if ((m.superficie.da !== undefined && mq < m.superficie.da) || (m.superficie.a !== undefined && mq > m.superficie.a)) continue; }
       const val = (s.maggiorazioni_scelte || {})[m.chiave];
       if (m.tipo === "auto") { add(m.nome || m.testo, m.perc, m.dopo); continue; }
       if (m.tipo === "scelta") { const o = (m.opzioni || []).find((x) => x.valore === val);
@@ -320,7 +345,9 @@
       if (si && tot) add(`arredo (${virgola(si, 1)} su ${virgola(tot, 1)} punti)`, Math.round(si / tot * A.perc * 100) / 100);
     }
     const DU = R.durata_piccoli && sup && sup.righe[0].mq < R.durata_piccoli.soglia ? R.durata_piccoli : R.durata;
-    if (tipo === "agevolato" && DU) add(`durata ${s.durata_anni} + 2 anni`, DU[String(anni)] || 0, R.durata_dopo);
+    if (tipo === "agevolato" && DU) { const n0 = r.maggiorazioni.length; add(`durata ${s.durata_anni} + 2 anni`, DU[String(anni)] || 0, R.durata_dopo);
+      // es. Treviso: con solo_massimo, la durata aumenta comunque anche il minimo
+      if (R.durata_anche_minimo && r.maggiorazioni.length > n0) r.maggiorazioni[n0].minimo = true; }
     if (R.contratto && R.contratto[tipo]) { add(tipo === "studenti" ? "contratto per studenti" : "contratto transitorio", R.contratto[tipo], R.durata_dopo); if (R.contratto.anche_minimo) r.maggiorazioni[r.maggiorazioni.length - 1].minimo = true; }
     // es. Latina: alcune maggiorazioni valgono solo per la superficie dell'abitazione, non per le pertinenze
     const sb = r.maggiorazioni.filter((m) => m.solo_base && !m.solo_max);
@@ -393,9 +420,11 @@
     }
     if (r.importi && r.canone_massimo !== null) {
       const tot = r.importi.reduce((t, x) => t + x.importo, 0);
-      r.canone_minimo = cent(r.canone_minimo + tot); r.canone_massimo = cent(r.canone_massimo + tot);
+      // es. Asti: la quota del box è "fino a": entra solo nel massimo
+      if (!R.importo_solo_massimo) r.canone_minimo = cent(r.canone_minimo + tot);
+      r.canone_massimo = cent(r.canone_massimo + tot);
       r.canone_intero = cent(r.canone_intero + tot); r.canone = cent(r.canone + tot);
-      avvisi.push(r.importi.map((x) => `${x.nome}: + € ${virgola(x.importo)} al mese`).join("; ") + " (quota fissa compresa nel canone).");
+      avvisi.push(r.importi.map((x) => `${x.nome}: + € ${virgola(x.importo)} al mese`).join("; ") + (R.importo_solo_massimo ? " (fino a questa quota, compresa nel canone massimo)." : " (quota fissa compresa nel canone)."));
     }
     const pattuito = numero(s.canone_mensile);
     if (pattuito !== null) {

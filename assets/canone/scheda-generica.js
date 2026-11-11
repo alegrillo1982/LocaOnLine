@@ -39,8 +39,8 @@
     $("gen-elementi").innerHTML = r.elementi.map((e, i) => {
       const g = [...(r.fasce.gruppi || []), ...(r.titoli_elementi || [])].find((x) => x.da === i);
       const titolo = g ? `<h3 class="stacco">${testo(g.titolo || g.nome)}</h3>` : "";
-      if (e.livelli) return `${titolo}<label class="livello"><span><b class="codice">${i + 1}</b> ${testo(e.testo)}</span><select name="el" data-i="${i}"><option value="">scegli…</option>${e.livelli.map((l, k) => `<option value="${k}">${testo(l.testo)}${e.mostra_punti === false ? "" : ` (${virgolaN(l.punti)} ${l.punti === 1 ? "punto" : "punti"})`}</option>`).join("")}</select></label>`;
-      return `${titolo}<label><input type="checkbox" name="el" value="${i}"> <span><b class="codice">${i + 1}</b> ${testo(e.testo)}${e.punti ? ` <small>(${virgolaN(e.punti)} ${e.punti === 1 ? "punto" : "punti"})</small>` : ""}</span></label>`;
+      if (e.livelli) return `${titolo}<label class="livello" data-el="${i}"><span><b class="codice">${i + 1}</b> ${testo(e.testo)}</span><select name="el" data-i="${i}"><option value="">scegli…</option>${e.livelli.map((l, k) => `<option value="${k}">${testo(l.testo)}${e.mostra_punti === false ? "" : ` (${virgolaN(l.punti)} ${l.punti === 1 ? "punto" : "punti"})`}</option>`).join("")}</select></label>`;
+      return `${titolo}<label data-el="${i}"><input type="checkbox" name="el" value="${i}"> <span><b class="codice">${i + 1}</b> ${testo(e.testo)}${e.punti ? ` <small>(${virgolaN(e.punti)} ${e.punti === 1 ? "punto" : "punti"})</small>` : ""}</span></label>`;
     }).join("");
     const S = r.superficie || {};
     $("gen-superfici").innerHTML = [{ chiave: "base", testo: S.base || "Superficie dell'alloggio" }, ...(S.voci || [])].map((x) => `
@@ -107,6 +107,11 @@
     modulo.querySelectorAll("[data-m]").forEach((el) => {
       const m = (R().maggiorazioni || []).find((x) => x.chiave === el.dataset.m), z = s.zona;
       el.hidden = !!(m && ((m.contratti && !m.contratti.includes(s.tipo)) || (m.zone && z && !m.zone.includes(z)) || (m.escluse && m.escluse.includes(z))));
+    });
+    // elementi validi solo in alcune zone (es. Lecce): nascosti e non contati nelle altre
+    modulo.querySelectorAll("[data-el]").forEach((el) => {
+      const e = R().elementi[Number(el.dataset.el)];
+      el.hidden = !!(e && e.zone && s.zona && !e.zone.includes(s.zona));
     });
     const sup = r.superficie;
     for (const td of modulo.querySelectorAll("[data-sup]")) {
