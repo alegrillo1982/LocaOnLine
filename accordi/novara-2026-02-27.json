@@ -1,0 +1,548 @@
+{
+ "accordo": {
+  "codice": "novara-2026-02-27",
+  "modello": "novara-2026",
+  "comune": "Novara",
+  "provincia": "NO",
+  "titolo": "Accordo territoriale per il Comune di Novara",
+  "data": "2026-02-27",
+  "data_testo": "27 febbraio 2026",
+  "deposito": "Comune di Novara, protocollo n. 0028232/2026 del 27/02/2026",
+  "deposito_data": "27.02.2026",
+  "protocollo": "0028232/2026",
+  "ufficio": "Comune di Novara, Protocollo generale",
+  "ufficio_breve": "Comune di Novara",
+  "valido_fino": "2029-03-31",
+  "firmatari_proprieta": [
+   "A.P.E. - Confedilizia Novara",
+   "U.P.P.I. Novara",
+   "A.S.P.P.I. Novara",
+   "A.P.P.C. Novara"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A. Novara",
+   "S.I.C.E.T. Novara",
+   "U.N.I.A.T. Novara"
+  ],
+  "nota": "Firmato a Novara il 27/02/2026 e protocollato lo stesso giorno dal Comune di Novara (n. 0028232/2026, timbro sulla prima pagina); in vigore dal 01/04/2026 per tre anni, poi fino a un nuovo accordo (art. 4, lettere A e N). Sostituisce l'accordo del 29/03/2018, applicabile fino al 31/03/2026. Per i soli contratti per studenti intervengono anche l'Università del Piemonte Orientale e l'EDISU e l'accordo vale anche per Caltignaga, Cameri, Casalino, Galliate, Garbagna, Granozzo con Monticello, Nibbiola, Romentino, San Pietro Mosezzo e Trecate (area 4, valori dell'allegato B/1 bis): qui è modellato solo il Comune di Novara. Valori in euro annui per mq utile, per area (1-3), subfascia (I-IV, da punteggio dell'allegato D) e durata (allegati B/3-B/6; transitori allegato B e studenti allegato B/1 con i valori del 3+2). Il canone si aggiorna ogni anno al massimo del 75% ISTAT FOI: le tabelle non hanno aggiornamenti. La stampa locale cita fra i firmatari anche Assocasa, che non compare nel testo depositato.",
+  "fonte": "APPC Novara, pagina «Nuovo Accordo Territoriale di Novara» del 20/03/2026: accordo protocollato dal Comune (8 pagine, scansione) e allegati A, B, C-D-E, F, G e contratti tipo. Entrata in vigore confermata da La Voce di Novara (03/04/2026), Malpensa24 e Confedilizia (affittocasa.info, 07/04/2026). Il PDF UNIAT dell'accordo 2018 non è più online (errore 404)."
+ },
+ "esempio_zona": "l'area dai confini dell'allegato A (centro storico, la corona di San Martino, Sacro Cuore, San Paolo e Porta Mortara, o il resto del Comune)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Area 1 - Centro storico",
+    "nota": "Area 1, centro storico: dentro il perimetro viale Dante, largo Buscaglia, viale Manzoni, via Adalgiso, ferrovia Novara-Mortara, via 25 Aprile, viale Ferrucci, viale Roma, viale Buonarroti, via Carducci, via Perazzi, via De Pagave, largo San Martino, viale Paietta, via Alcarotti, attraversamento del mercato coperto, viale Dante. I confini passano a metà della strada.",
+    "fasce": {
+     "3": [
+      [
+       29,
+       59
+      ],
+      [
+       59,
+       79
+      ],
+      [
+       79,
+       97
+      ],
+      [
+       97,
+       118
+      ]
+     ],
+     "4": [
+      [
+       30,
+       63
+      ],
+      [
+       63,
+       80
+      ],
+      [
+       80,
+       102
+      ],
+      [
+       102,
+       124
+      ]
+     ],
+     "5": [
+      [
+       33,
+       64
+      ],
+      [
+       64,
+       84
+      ],
+      [
+       84,
+       107
+      ],
+      [
+       107,
+       131
+      ]
+     ],
+     "6": [
+      [
+       35,
+       65
+      ],
+      [
+       65,
+       88
+      ],
+      [
+       88,
+       111
+      ],
+      [
+       111,
+       137
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2 - S. Martino, S. Cuore, S. Paolo, P. Mortara",
+    "nota": "Area 2, San Martino, Sacro Cuore, San Paolo e Porta Mortara: fuori dal centro storico, dentro il perimetro rotonda Oriana Fallaci, viale Curtatone, viale Giulio Cesare, via Camoletti, via Generali, via Umbria, piazzale Lombardia, via Pola, strada Crocetta, via Pinciroli, corso Vercelli, torrente Agogna, ferrovia Novara-Torino, viale Dante. I confini passano a metà della strada; in caso di dubbio fa fede la cartina dell'allegato A.",
+    "fasce": {
+     "3": [
+      [
+       29,
+       50
+      ],
+      [
+       50,
+       68
+      ],
+      [
+       68,
+       88
+      ],
+      [
+       88,
+       108
+      ]
+     ],
+     "4": [
+      [
+       30,
+       55
+      ],
+      [
+       55,
+       74
+      ],
+      [
+       74,
+       93
+      ],
+      [
+       93,
+       111
+      ]
+     ],
+     "5": [
+      [
+       33,
+       57
+      ],
+      [
+       57,
+       78
+      ],
+      [
+       78,
+       96
+      ],
+      [
+       96,
+       115
+      ]
+     ],
+     "6": [
+      [
+       35,
+       59
+      ],
+      [
+       59,
+       80
+      ],
+      [
+       80,
+       100
+      ],
+      [
+       100,
+       122
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3 - Resto del territorio comunale",
+    "nota": "Area 3: tutto il resto del territorio del Comune di Novara, fuori dalle aree 1 e 2 (quartieri a est della ferrovia, periferie e frazioni).",
+    "fasce": {
+     "3": [
+      [
+       29,
+       46
+      ],
+      [
+       46,
+       61
+      ],
+      [
+       61,
+       77
+      ],
+      [
+       77,
+       92
+      ]
+     ],
+     "4": [
+      [
+       30,
+       50
+      ],
+      [
+       50,
+       68
+      ],
+      [
+       68,
+       81
+      ],
+      [
+       81,
+       97
+      ]
+     ],
+     "5": [
+      [
+       33,
+       53
+      ],
+      [
+       53,
+       69
+      ],
+      [
+       69,
+       87
+      ],
+      [
+       87,
+       102
+      ]
+     ],
+     "6": [
+      [
+       35,
+       56
+      ],
+      [
+       56,
+       75
+      ],
+      [
+       75,
+       91
+      ],
+      [
+       91,
+       107
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "IV",
+    "III",
+    "II",
+    "I"
+   ],
+   "criterio": "punti",
+   "soglie": [
+    5,
+    9,
+    14
+   ]
+  },
+  "elementi": [
+   {
+    "testo": "Posto auto o box",
+    "livelli": [
+     {
+      "testo": "nessuno",
+      "punti": 0
+     },
+     {
+      "testo": "posto auto scoperto comune",
+      "punti": 1
+     },
+     {
+      "testo": "posto auto scoperto in uso esclusivo",
+      "punti": 2
+     },
+     {
+      "testo": "box",
+      "punti": 4
+     }
+    ]
+   },
+   {
+    "testo": "Ascensore",
+    "punti": 1
+   },
+   {
+    "testo": "Età dell'edificio (o delle opere di rilevante entità documentate sull'alloggio)",
+    "livelli": [
+     {
+      "testo": "oltre 40 anni",
+      "punti": 0
+     },
+     {
+      "testo": "da 21 a 40 anni",
+      "punti": 1
+     },
+     {
+      "testo": "da 11 a 20 anni",
+      "punti": 2
+     },
+     {
+      "testo": "da 6 a 10 anni",
+      "punti": 3
+     },
+     {
+      "testo": "nuovo, fino a 5 anni",
+      "punti": 4
+     }
+    ]
+   },
+   {
+    "testo": "Piano",
+    "livelli": [
+     {
+      "testo": "piano terra o rialzato",
+      "punti": 0
+     },
+     {
+      "testo": "piano intermedio",
+      "punti": 1
+     },
+     {
+      "testo": "ultimo piano",
+      "punti": 2
+     },
+     {
+      "testo": "attico",
+      "punti": 3
+     }
+    ]
+   },
+   {
+    "testo": "Cantina o soffitta",
+    "punti": 1
+   },
+   {
+    "testo": "Balconi o terrazzi",
+    "livelli": [
+     {
+      "testo": "nessuno",
+      "punti": 0
+     },
+     {
+      "testo": "balconi",
+      "punti": 1
+     },
+     {
+      "testo": "balconi e terrazzi oltre 30 mq",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Doppi servizi (due bagni)",
+    "punti": 2
+   },
+   {
+    "testo": "Riscaldamento autonomo, oppure centralizzato con contabilizzazione del calore",
+    "punti": 1
+   },
+   {
+    "testo": "Aria condizionata, raffrescamento o pompe di calore",
+    "punti": 1
+   },
+   {
+    "testo": "Giardino o cortile",
+    "livelli": [
+     {
+      "testo": "nessuno",
+      "punti": 0
+     },
+     {
+      "testo": "giardino o cortile comune",
+      "punti": 1
+     },
+     {
+      "testo": "giardino o cortile in proprietà esclusiva",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Categoria catastale (dalla visura)",
+    "livelli": [
+     {
+      "testo": "A/4, A/5, A/6 o altra",
+      "punti": 0
+     },
+     {
+      "testo": "A/3",
+      "punti": 2
+     },
+     {
+      "testo": "A/1, A/2, A/7, A/8 o A/9",
+      "punti": 3
+     }
+    ]
+   },
+   {
+    "testo": "Classe energetica (APE)",
+    "livelli": [
+     {
+      "testo": "E, F, G o senza APE",
+      "punti": 0
+     },
+     {
+      "testo": "C o D",
+      "punti": 1
+     },
+     {
+      "testo": "A o B",
+      "punti": 2
+     }
+    ]
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale della visura (escluse le aree scoperte)",
+   "coeff_base": 0.9,
+   "correzioni": [
+    {
+     "fino": 50,
+     "perc": 10,
+     "tetto": 50
+    }
+   ],
+   "nota": "I metri quadri utili sono la superficie catastale della visura, al netto delle aree scoperte, ridotta del 10% (allegato C). Se il risultato è sotto i 50 mq si aumenta del 10%, senza superare i 50 mq (allegato D). Cantine, box e posti auto non si aggiungono alla superficie: danno punti nella tabella. Se affitti solo una parte dell'alloggio contano le stanze locate più metà delle parti in comune."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "aumento",
+    "tipo": "scelta",
+    "testo": "Alloggio arredato o immobile di pregio (fino al +30%, non cumulabile)",
+    "nome": "aumento art. 1, comma 9",
+    "nessuna": "nessuno dei due",
+    "ammobiliato": true,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "opzioni": [
+     {
+      "valore": "arredato",
+      "testo": "completamente arredato (almeno l'arredo minimo dell'allegato E)",
+      "perc": 30
+     },
+     {
+      "valore": "pregio",
+      "testo": "immobile A/1, A/8, A/9 o vincolato, arredato o no",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "aumento_studenti",
+    "tipo": "scelta",
+    "testo": "Arredo o pregio (contratto per studenti)",
+    "nome": "arredo o pregio",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "contratti": [
+     "studenti"
+    ],
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "arredato con tutto: cucina (lavello, fornelli, frigo, tavolo e sedie), luci, letto, scrivania, lampada, sedia e armadio per ogni studente, bagno arredato",
+      "perc": 30
+     },
+     {
+      "valore": "parziale",
+      "testo": "arredato, ma manca almeno uno di questi elementi",
+      "perc": 10
+     },
+     {
+      "valore": "pregio",
+      "testo": "immobile A/1, A/8, A/9 o vincolato, arredato o no",
+      "perc": 30
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "La durata oltre i 3 anni ha tabelle proprie con valori più alti (4, 5 e 6 anni). Per gli alloggi completamente arredati e per gli immobili A/1, A/8, A/9 o vincolati il minimo e il massimo possono aumentare fino al 30%: l'aumento è uno solo anche se ricorrono entrambi i casi. Per gli studenti, se manca anche uno solo degli arredi richiesti l'aumento è del 10%. I transitori e i contratti per studenti usano i valori del 3+2.",
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Il minimo di ogni subfascia si può ridurre fino al 30%, ma solo con l'assistenza delle organizzazioni firmatarie (art. 4, lettera F)."
+   },
+   {
+    "testo": "Contratti per studenti: l'accordo assegna i punti con un'altra tabella (allegato D/bis: vicinanza alla sede del corso, camere singole o doppie, internet; subfascia I da 16 punti, II da 11, III da 6). Il calcolo qui usa la tabella dell'allegato D: per gli studenti fai verificare la subfascia.",
+    "contratti": [
+     "studenti"
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato G",
+  "titolo": "Attestazione di rispondenza ex D.M. 16.1.2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Novara sottoscritto il 27/02/2026 (prot. Comune di Novara n. 0028232/2026 del 27/02/2026), in vigore dal 01/04/2026",
+  "titolo_superficie": "SUPERFICIE UTILE (ALLEGATO C)",
+  "titolo_elementi": "Elementi posti a base del calcolo del canone (allegato D)",
+  "dichiarazione": "Le parti dichiarano che i dati sopra comunicati sono stati dalle stesse rilevati e verificati e pertanto riconoscono che la presente attestazione è rilasciata sulla base di quanto dalle stesse dichiarato e conseguentemente espressamente sollevano le Organizzazioni attestanti da qualsiasi responsabilità derivante da errori, omissioni o asserzioni non veritiere relative ai dati indicati nel presente atto.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "ATTESTANO",
+  "attestazione": [
+   "Tanto premesso le Organizzazioni …………………………… e …………………………… (attestazione congiunta), firmatarie dell'Accordo territoriale per il Comune di Novara, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "che i contenuti economici e normativi del contratto di locazione corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Novara sottoscritto il 27/02/2026 e depositato il 27/02/2026.",
+   "Novara, lì ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "Per l'Organizzazione",
+   "Per l'Organizzazione (attestazione congiunta)"
+  ],
+  "nota_zone": "L'area si ricava dai confini e dalla cartina dell'allegato A: area 1 centro storico, area 2 San Martino, Sacro Cuore, San Paolo e Porta Mortara, area 3 il resto del Comune."
+ }
+}

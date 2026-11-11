@@ -386,7 +386,7 @@
         }
       }
     }
-    for (const a of (R.avvisi || [])) if (perZona(a, z) && (!a.fascia || a.fascia.includes(f.n))) avvisi.push(a.testo);
+    for (const a of (R.avvisi || [])) if (perZona(a, z) && (!a.fascia || a.fascia.includes(f.n)) && (!a.contratti || a.contratti.includes(tipo))) avvisi.push(a.testo);
     return r;
   }
 

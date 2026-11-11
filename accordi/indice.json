@@ -941,6 +941,41 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsassari-2012-04-04-associazioni-firmatarie.pdf?alt=media&token=4920e0da-85a3-42e8-887f-3b3978d67f40"
     }
    ]
+  },
+  {
+   "comune": "Novara",
+   "provincia": "NO",
+   "accordo": "novara-2026-02-27",
+   "sottoscritto": "27 febbraio 2026",
+   "depositato": "27 febbraio 2026",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnovara-2026-02-27-accordo.pdf?alt=media&token=c0c896d2-9a8b-4661-82cd-e6817a87e901",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnovara-2026-02-27-accordo.pdf?alt=media&token=c0c896d2-9a8b-4661-82cd-e6817a87e901"
+    },
+    {
+     "nome": "Allegato a aree omogenee",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnovara-2026-02-27-allegato-a-aree-omogenee.pdf?alt=media&token=e106af63-31c0-4c33-b257-4bf1d1a74175"
+    },
+    {
+     "nome": "Allegato b valori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnovara-2026-02-27-allegato-b-valori.pdf?alt=media&token=06684f22-319f-4f29-baf5-8e53be890574"
+    },
+    {
+     "nome": "Allegato c d e superficie punteggi arredo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnovara-2026-02-27-allegato-c-d-e-superficie-punteggi-arredo.pdf?alt=media&token=91e705d2-f9d0-4f3e-bb64-a8c122fc0b31"
+    },
+    {
+     "nome": "Allegato f oneri accessori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnovara-2026-02-27-allegato-f-oneri-accessori.pdf?alt=media&token=04919dd1-7a6c-4e0e-bace-fab695f72ce5"
+    },
+    {
+     "nome": "Allegato g attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnovara-2026-02-27-allegato-g-attestazione.pdf?alt=media&token=f4bcda93-abec-4ec6-a196-e06817105a71"
+    }
+   ]
   }
  ]
 }
