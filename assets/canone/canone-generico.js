@@ -80,7 +80,7 @@
     // es. Messina: le pertinenze contano al massimo per una quota della superficie principale
     if (R.tetto_voci) {
       const voci = totale - righe[0].convenzionale, tetto = cent(U * R.tetto_voci);
-      if (voci > tetto) { totale = cent(righe[0].convenzionale + tetto); note.push(`Pertinenze contate fino a ${virgola(tetto)} mq (metà della superficie dell'alloggio).`); }
+      if (voci > tetto) { totale = cent(righe[0].convenzionale + tetto); note.push(`Pertinenze contate fino a ${virgola(tetto)} mq (${R.tetto_voci === 0.5 ? "metà della superficie" : R.tetto_voci === 1 ? "la superficie" : `${virgola(R.tetto_voci * 100, 0)}% della superficie`} dell'alloggio).`); }
     }
     // es. Livorno: la superficie convenzionale oltre certe soglie conta solo in parte, a scaglioni
     const ST = R.scaglioni_totale;
@@ -172,7 +172,9 @@
     }
     const [da, a] = F.conta ? [F.conta.da, F.conta.a] : [0, E.length - 1];
     const n = F.criterio === "punti" ? E.reduce((t, e, i) => t + (i >= da && i <= a ? puntiDi(e, el[i]) : 0), 0) : E.filter((e, i) => i >= da && i <= a && presente(e, el[i])).length;
-    const soglie = (F.soglie_zona && zona && F.soglie_zona[zona.codice]) || F.soglie;
+    // es. Rimini: soglie diverse per gli alloggi piccoli (superficie totale fino a soglie_sotto.mq)
+    const piccolo = F.soglie_sotto && ((superficie(accordo, s) || {}).totale ?? Infinity) <= F.soglie_sotto.mq;
+    const soglie = (F.soglie_zona && zona && F.soglie_zona[zona.codice]) || (piccolo ? F.soglie_sotto.soglie : null) || F.soglie;
     let i = soglie.findIndex((x) => n <= x);
     if (i < 0) i = soglie.length;
     // es. Catanzaro: alcuni elementi (ristrutturazione recente, APE) bastano da soli per la fascia più alta
@@ -244,6 +246,12 @@
       // es. Bergamo: classe energetica bassa, massimo ridotto prima delle maggiorazioni
       const RM = R.riduzione_max;
       if (r.base && RM && (s.maggiorazioni_scelte || {})[RM.chiave] && RM.fasce.includes(f.i)) { r.base = [r.base[0], cent(r.base[1] * (1 - RM.perc / 100))]; avvisi.push(RM.avviso); }
+      // es. Rimini: canone mensile a scaglioni di superficie (tasso per ogni mq dentro ciascuno scaglione)
+      if (R.scaglioni && r.zona.scaglioni) {
+        const S = (superficie(accordo, s) || {}).totale, SG = [0, ...R.scaglioni.soglie, Infinity], T = r.zona.scaglioni[f.i];
+        const somma = (tassi) => cent(tassi.reduce((tt, x, k) => tt + x * Math.max(0, Math.min(S, SG[k + 1]) - SG[k]), 0));
+        r.base = S ? [somma(T[0]), somma(T[1])] : null;
+      }
       const P = R.fasce.proporzionale && R.fasce.proporzionale[f.i];
       if (P && r.base) {
         const passi = Math.max(0, Math.min(f.n - P.da, P.passi));

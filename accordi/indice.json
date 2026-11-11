@@ -1088,6 +1088,45 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fravenna-2025-11-10-accordo.pdf?alt=media&token=2ad2f881-7582-4a0c-ba12-aa682fe60e50"
     }
    ]
+  },
+  {
+   "comune": "Rimini",
+   "provincia": "RN",
+   "accordo": "rimini-2018-07-19",
+   "sottoscritto": "19 luglio 2018",
+   "depositato": "29 agosto 2018",
+   "zone": 5,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frimini-2018-07-19-accordo.pdf?alt=media&token=815f0477-098a-45aa-a259-c83e5786d035",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frimini-2018-07-19-accordo.pdf?alt=media&token=815f0477-098a-45aa-a259-c83e5786d035"
+    },
+    {
+     "nome": "Adesione fenit 2024",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frimini-2018-07-19-adesione-fenit-2024.pdf?alt=media&token=7504ed43-6f73-425f-8c92-a619130b06ab"
+    },
+    {
+     "nome": "Adesione unione inquilini 2024",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frimini-2018-07-19-adesione-unione-inquilini-2024.pdf?alt=media&token=02e41a5f-ca51-45ee-97aa-df0a05bb846b"
+    },
+    {
+     "nome": "Allegato 2 fasce di oscillazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frimini-2018-07-19-allegato-2-fasce-di-oscillazione.pdf?alt=media&token=35c2958c-4f89-4d41-838d-f18c85da57f8"
+    },
+    {
+     "nome": "Allegato 3 elementi oggettivi",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frimini-2018-07-19-allegato-3-elementi-oggettivi.pdf?alt=media&token=858188ba-51b0-4cc2-8055-8b232516cd60"
+    },
+    {
+     "nome": "Allegato 4 richiesta attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frimini-2018-07-19-allegato-4-richiesta-attestazione.pdf?alt=media&token=236ef60c-0cfd-43dc-883a-e4b0cda0b387"
+    },
+    {
+     "nome": "Allegato 5 richiesta commissione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frimini-2018-07-19-allegato-5-richiesta-commissione.pdf?alt=media&token=fbf41d81-c8d4-4790-b2d8-4106bf0fdbc7"
+    }
+   ]
   }
  ]
 }

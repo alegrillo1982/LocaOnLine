@@ -1,0 +1,525 @@
+{
+ "accordo": {
+  "codice": "rimini-2018-07-19",
+  "modello": "rimini-2018",
+  "comune": "Rimini",
+  "provincia": "RN",
+  "titolo": "Accordo territoriale per il Comune di Rimini",
+  "data": "2018-07-19",
+  "data_testo": "19 luglio 2018",
+  "deposito": "Comune di Rimini, prot. n. 238668 del 29/08/2018",
+  "deposito_data": "29.08.2018",
+  "protocollo": "238668",
+  "ufficio": "Comune di Rimini",
+  "ufficio_breve": "Comune di Rimini",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Rimini del 19 luglio 2018, in vigore dal 15 settembre 2018:</strong> durava tre anni ma resta valido finché non ne viene firmato uno nuovo, e il Comune lo pubblica ancora come vigente. I valori si aggiornano ogni anno del 75% dell'ISTAT (titolo A, punto 4), ma il Comune e le associazioni non pubblicano tabelle aggiornate: qui trovi i valori originali del 2018. <strong>Chiedi all'associazione che attesta il contratto il coefficiente ISTAT da applicare.</strong> I valori dell'accordo sono a scaglioni (un importo per i primi mq più un valore per ogni mq in più): con superfici con i decimali il calcolo può restare sotto il massimo di qualche euro.",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA - A.P.E.",
+   "A.S.P.P.I.",
+   "U.P.P.I.",
+   "FEDERPROPRIETÀ",
+   "UNION CASA",
+   "CONFABITARE",
+   "CONFAPPI"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T.",
+   "ASSOCASA",
+   "Unione Inquilini (adesione del 2024)",
+   "FE.N.I.T. (adesione del 2024)"
+  ],
+  "nota": "Firmato a Rimini il 19/07/2018, acquisito dal Comune con prot. n. 238668 del 29/08/2018; in vigore dal 15/09/2018 per tre anni, poi fino alla firma del nuovo accordo (titolo G, punti 1 e 7); sostituisce l'accordo del 06/10/2004. Ad aprile 2026 i sindacati ne chiedevano il rinnovo: a novembre 2026 non risulta un accordo più recente. Hanno aderito senza modifiche Unione Inquilini (prot. 0201050/2024 del 04/06/2024, determina 1189 del 28/05/2024) e FE.N.I.T. (prot. 0399473/2024 del 12/11/2024, determina 2863 del 05/11/2024). Valori minimi e massimi da aggiornare ogni anno al 75% della variazione ISTAT FOI, calcolata dal mese prima della firma (titolo A, punto 4): nessuna tabella aggiornata pubblicata, qui i valori originali. Quattro aree omogenee (allegato 1, mappa online del Comune), con il centro storico dentro l'area 1; due fasce (minima e massima) secondo i 10 elementi dell'allegato 3: massima con almeno 6 elementi, 5 per gli alloggi fino a 40 mq di superficie convenzionale, 3 nel centro storico; senza riscaldamento sempre la fascia minima. Valori dell'allegato 2 in euro al mese a scaglioni (fino a 30 mq al mq; da 30 a 60, da 60 a 85 e oltre 85 mq un importo fisso più un valore per ogni mq in più), calcolati sulla superficie convenzionale complessiva.",
+  "fonte": "Comune di Rimini, pagina «Contratti a canone concordato» (Amministrazione > Documenti e dati > Accordo tra enti): testo dell'accordo e allegati 2-5 in PDF (ripubblicati a maggio 2026, identici a quelli del 2021), mappa ArcGIS «Allegato 1 Aree del Comune di Rimini», adesioni di Unione Inquilini e FE.N.I.T. del 2024. Stesso testo con gli allegati pubblicato da SUNIA (sunia.info)."
+ },
+ "esempio_zona": "l'area dalla mappa dell'allegato 1 sul sito del Comune (si cerca l'indirizzo)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Area 1 - Centro città",
+    "nota": "Area omogenea 1 (rossa nella mappa), fuori dal centro storico: il centro città intorno al centro storico. Comprende Marina Centro fra la ferrovia e il mare, dal porto canale lungo la parte nord di viale Regina Elena, e i quartieri intorno al centro storico, fra il parco XXV Aprile, via Marecchiese, il parco Giovanni Paolo II e via Lagomaggio (San Giovanni compreso). Valori a scaglioni: un importo per i primi mq più un valore per ogni mq in più (allegato 2). I confini passano a metà strada; un edificio sul confine sta nell'area dove si trova la maggior parte dell'alloggio. Fa fede la mappa del Comune.",
+    "fasce": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "scaglioni": [
+     [
+      [
+       7.5,
+       4.0,
+       2.9,
+       2.5
+      ],
+      [
+       11.4,
+       6.1,
+       4.4,
+       3.8
+      ]
+     ],
+     [
+      [
+       7.9,
+       4.2,
+       3.0,
+       2.6
+      ],
+      [
+       11.9,
+       6.4,
+       4.6,
+       4.0
+      ]
+     ]
+    ]
+   },
+   {
+    "codice": "CS",
+    "nome": "Area 1 - Centro storico",
+    "nota": "Centro storico (grigio nella mappa, dentro l'area 1): la città dentro le antiche mura (fra via Roma, via Bastioni Meridionali e il parco XXV Aprile) e il borgo San Giuliano fino a viale Matteotti. Stessi valori dell'area 1, ma bastano 3 elementi per la fascia massima (titolo A, punto 5). I confini passano a metà strada; un edificio sul confine sta nell'area dove si trova la maggior parte dell'alloggio. Fa fede la mappa del Comune.",
+    "fasce": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "scaglioni": [
+     [
+      [
+       7.5,
+       4.0,
+       2.9,
+       2.5
+      ],
+      [
+       11.4,
+       6.1,
+       4.4,
+       3.8
+      ]
+     ],
+     [
+      [
+       7.9,
+       4.2,
+       3.0,
+       2.6
+      ],
+      [
+       11.9,
+       6.4,
+       4.6,
+       4.0
+      ]
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2 - Mare e prima periferia",
+    "nota": "Area omogenea 2 (gialla nella mappa): la fascia lungo il mare a nord (Rivabella, Viserba, Viserbella, Torre Pedrera) e a sud dell'area 1 (Bellariva, Marebello, Rivazzurra, Miramare fino al confine con Riccione), e i quartieri residenziali intorno all'area 1 (fra gli altri Grotta Rossa e Villaggio 1° Maggio). I confini passano a metà strada; un edificio sul confine sta nell'area dove si trova la maggior parte dell'alloggio. Fa fede la mappa del Comune.",
+    "fasce": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "scaglioni": [
+     [
+      [
+       7.0,
+       3.8,
+       2.7,
+       2.4
+      ],
+      [
+       10.7,
+       5.8,
+       4.2,
+       3.6
+      ]
+     ],
+     [
+      [
+       7.5,
+       4.0,
+       2.9,
+       2.5
+      ],
+      [
+       11.3,
+       6.1,
+       4.4,
+       3.8
+      ]
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3 - Centri delle frazioni",
+    "nota": "Area omogenea 3 (verde nella mappa): i piccoli centri abitati delle frazioni di Orsoleto, Santa Giustina, Spadarolo, Corpolò e Gaiofana. Le campagne intorno sono area 4. I confini passano a metà strada; un edificio sul confine sta nell'area dove si trova la maggior parte dell'alloggio. Fa fede la mappa del Comune.",
+    "fasce": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "scaglioni": [
+     [
+      [
+       6.7,
+       3.4,
+       2.5,
+       2.2
+      ],
+      [
+       10.2,
+       5.2,
+       3.8,
+       3.3
+      ]
+     ],
+     [
+      [
+       6.9,
+       3.6,
+       2.6,
+       2.3
+      ],
+      [
+       10.5,
+       5.5,
+       4.0,
+       3.5
+      ]
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Area 4 - Resto del territorio",
+    "nota": "Area omogenea 4 (viola nella mappa): tutto il resto del territorio comunale, cioè le campagne e le frazioni (fra gli altri San Vito, Vergiano e la zona dell'aeroporto), esclusi i centri delle frazioni in area 3. I confini passano a metà strada; un edificio sul confine sta nell'area dove si trova la maggior parte dell'alloggio. Fa fede la mappa del Comune.",
+    "fasce": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "scaglioni": [
+     [
+      [
+       6.6,
+       3.3,
+       2.4,
+       1.9
+      ],
+      [
+       10.0,
+       5.0,
+       3.6,
+       2.9
+      ]
+     ],
+     [
+      [
+       6.8,
+       3.4,
+       2.5,
+       2.2
+      ],
+      [
+       10.3,
+       5.2,
+       3.8,
+       3.3
+      ]
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "minima",
+    "massima"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    5
+   ],
+   "soglie_zona": {
+    "CS": [
+     2
+    ]
+   },
+   "conta": {
+    "da": 0,
+    "a": 9
+   },
+   "almeno": {
+    "da": 10,
+    "a": 10,
+    "n": 1,
+    "avviso": "Senza impianto di riscaldamento si applica sempre la fascia minima (titolo A, punto 5)."
+   },
+   "nota_soglie": "fino a 40 mq di superficie convenzionale bastano 5 elementi per la fascia massima; nel centro storico ne bastano 3",
+   "soglie_sotto": {
+    "mq": 40,
+    "soglie": [
+     4
+    ]
+   },
+   "nota": "Fascia massima con almeno 6 elementi (5 fino a 40 mq; 3 nel centro storico); senza riscaldamento sempre fascia minima."
+  },
+  "elementi": [
+   {
+    "testo": "Autorimessa singola (per più auto vale anche il 5)"
+   },
+   {
+    "testo": "Cappotto termico o altro sistema di isolamento"
+   },
+   {
+    "testo": "Portone blindato, inferriate o altro sistema di sicurezza"
+   },
+   {
+    "testo": "Infissi con vetrocamera o doppi infissi"
+   },
+   {
+    "testo": "Un altro posto auto, posto auto esclusivo, cantina o ripostiglio esterno"
+   },
+   {
+    "testo": "Ascensore, oppure alloggio al primo o al secondo piano fuori terra"
+   },
+   {
+    "testo": "Impianto fisso di aria condizionata"
+   },
+   {
+    "testo": "Doppi servizi (due bagni)"
+   },
+   {
+    "testo": "Edificio con non più di 8 appartamenti"
+   },
+   {
+    "testo": "Terrazza, balcone o loggia, oppure area scoperta o loggiata (anche comune) di oltre 30 mq"
+   },
+   {
+    "testo": "Impianto di riscaldamento (non si conta: senza, fascia minima)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'alloggio (con ripostigli, studio, lavanderia e simili interni)",
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimesse coperte in uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "logge",
+     "testo": "Logge e tavernette",
+     "coeff": 0.35
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, ripostigli, depositi e lavanderie esterni",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posti auto scoperti in uso esclusivo",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta (giardino, cortile) in uso esclusivo",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "bassa",
+     "testo": "Parti alte meno di 1,70 m (i loro mq convenzionali)",
+     "coeff": -0.3
+    }
+   ],
+   "nota": "Si misura la superficie calpestabile reale (tolleranza del 5% in più o in meno): l'alloggio conta per intero, con i vani interni o collegati da dentro; le pertinenze in percentuale (autorimesse 50%, logge e tavernette 35%, balconi, terrazze, ripostigli e depositi esterni 25%, posti auto scoperti 20%, area scoperta 15%). Le pertinenze non possono contare più della superficie dell'alloggio; le parti più basse di 1,70 m si riducono di un altro 30%; le scale interne si contano una volta sola. Sulla superficie convenzionale complessiva si applicano i valori a scaglioni dell'allegato 2.",
+   "tetto_voci": 1
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredamento",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 15
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato (almeno la cucina; oltre 50 mq anche una stanza)",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "arredo_studenti",
+    "tipo": "scelta",
+    "testo": "Arredamento (contratto per studenti)",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "contratti": [
+     "studenti"
+    ],
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 25
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato (almeno la cucina; oltre 50 mq anche una stanza)",
+      "perc": 20
+     }
+    ]
+   },
+   {
+    "chiave": "vincolato",
+    "tipo": "spunta",
+    "testo": "Immobile di categoria A/1, A/8 o A/9, o vincolato come bene culturale",
+    "nome": "immobile di pregio (A/1, A/8, A/9 o vincolato)",
+    "perc": 20
+   },
+   {
+    "chiave": "deposito",
+    "tipo": "scelta",
+    "testo": "Deposito cauzionale",
+    "nome": "deposito cauzionale",
+    "nessuna": "più di una mensilità",
+    "opzioni": [
+     {
+      "valore": "una",
+      "testo": "non più di una mensilità",
+      "perc": 3
+     },
+     {
+      "valore": "nessuno",
+      "testo": "nessun deposito",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "preavviso",
+    "tipo": "spunta",
+    "testo": "Preavviso per il recesso dell'inquilino di 3 mesi o meno",
+    "nome": "preavviso di recesso fino a 3 mesi",
+    "perc": 5,
+    "contratti": [
+     "agevolato"
+    ]
+   },
+   {
+    "chiave": "classe",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE)",
+    "nome": "classe energetica",
+    "nessuna": "D o inferiore",
+    "opzioni": [
+     {
+      "valore": "A",
+      "testo": "classe A",
+      "perc": 3
+     },
+     {
+      "valore": "B",
+      "testo": "classe B",
+      "perc": 2
+     },
+     {
+      "valore": "C",
+      "testo": "classe C",
+      "perc": 1
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano fra loro (senza aumenti composti) e valgono sul minimo e sul massimo. Durata oltre i 3 anni: +3% per 4 anni, +6% per 5, +9% per 6 o più. Nei transitori non vale l'aumento per il preavviso breve; nei contratti per studenti l'arredo vale +25% o +20% e non valgono durata e preavviso. Con l'assistenza delle associazioni firmatarie il minimo si può ridurre fino al 50% (condizioni disagiate dell'inquilino o dell'immobile, da citare nel contratto). Per i transitori fino a 30 giorni il canone è libero.",
+  "durata": {
+   "4": 3,
+   "5": 6,
+   "6": 9
+  },
+  "combinazione": "somma",
+  "avvisi": [],
+  "scaglioni": {
+   "soglie": [
+    30,
+    60,
+    85
+   ],
+   "nota": "Canone mensile: valore al mq fino a 30 mq, poi per ogni mq in più da 30 a 60, da 60 a 85 e oltre 85 (allegato 2)."
+  },
+  "a_corpo": {
+   "nota": "I valori dell'allegato 2 danno il canone mensile dell'intero alloggio, calcolato a scaglioni di superficie."
+  }
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 4",
+  "titolo": "Richiesta di rilascio di attestazione di rispondenza ex D.M. 16/01/2017 e attestazione di rispondenza",
+  "sottotitolo": "Accordo territoriale per il Comune di Rimini del 19/07/2018 (prot. n. 238668 del 29/08/2018), in vigore dal 15/09/2018 - valori dell'allegato 2 senza aggiornamento ISTAT",
+  "titolo_superficie": "SUPERFICIE CONVENZIONALE (TITOLO A, PUNTO 8)",
+  "titolo_elementi": "Elementi oggettivi (allegato 3)",
+  "etichetta_conteggio": "ELEMENTI OGGETTIVI N.",
+  "dichiarazione": "Il sottoscritto, locatore / conduttore, chiede all'Organizzazione di attestare la rispondenza del contratto all'Accordo territoriale ex D.M. 16/01/2017 e dichiara sotto la propria responsabilità i dati e gli elementi sopra riportati; il canone concordato rientra tra il minimo e il massimo dell'Accordo. Si allega il contratto di locazione.",
+  "firme": [
+   "Il richiedente",
+   "Le altre parti contrattuali"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16/01/2017",
+  "attestazione": [
+   "Vista la richiesta che precede, la sottoscritta Organizzazione …………………………… sulla base dei dati ed elementi oggettivi sopra dichiarati dal richiedente,",
+   "ATTESTA che il contenuto economico e normativo del contratto di locazione descritto nella suestesa richiesta di attestazione è rispondente a quanto previsto dall'Accordo territoriale vigente per il Comune di Rimini, depositato in data 29/08/2018 presso il Comune di Rimini.",
+   "Rimini ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "per l'Organizzazione (firma)"
+  ],
+  "nota_zone": "L'area si ricava dalla mappa dell'allegato 1 sul sito del Comune di Rimini: area 1 rossa (con il centro storico in grigio), area 2 gialla, area 3 verde (centri delle frazioni), area 4 viola."
+ }
+}
