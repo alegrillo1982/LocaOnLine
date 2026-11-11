@@ -94,7 +94,7 @@
     if (ct && ct.perc) {
       const prima = totale;
       totale = cent(ct.perc > 0 ? Math.max(prima, Math.min(prima * (1 + ct.perc / 100), ct.limite ?? Infinity)) : Math.min(prima, Math.max(prima * (1 + ct.perc / 100), ct.limite ?? 0)));
-      if (totale !== prima) note.push(`Superficie ${R.correzioni_totale_su === "base" ? "convenzionale" : "intermedia"} ${virgola(prima)} mq ${ct.perc > 0 ? "aumentata" : "ridotta"} del ${Math.abs(ct.perc)}%${ct.limite ? ` (limite ${virgola(ct.limite)} mq)` : ""}.`);
+      if (totale !== prima) note.push(`Superficie ${R.etichetta_correzione || (R.correzioni_totale_su === "base" ? "convenzionale" : "intermedia")} ${virgola(prima)} mq ${ct.perc > 0 ? "aumentata" : "ridotta"} del ${Math.abs(ct.perc)}%${ct.limite ? ` (limite ${virgola(ct.limite)} mq)` : ""}.`);
     }
     // es. Messina: coefficiente di posizione nella microzona (periferia, semiperiferia, centro)
     const CS = R.coeff_scelta, cv = CS && (s.maggiorazioni_scelte || {})[CS.chiave];

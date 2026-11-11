@@ -1,0 +1,473 @@
+{
+ "accordo": {
+  "codice": "sassari-2012-04-04",
+  "modello": "sassari-2012",
+  "comune": "Sassari",
+  "provincia": "SS",
+  "titolo": "Accordo territoriale del Comune amministrativo di Sassari (L. 431/1998 e D.M. 30/12/2002)",
+  "data": "2012-04-04",
+  "data_testo": "4 aprile 2012",
+  "deposito": "Comune di Sassari, Segreteria generale",
+  "deposito_data": "04.04.2012",
+  "protocollo": "",
+  "ufficio": "Comune di Sassari, Segreteria generale (Ufficio protocollo generale)",
+  "ufficio_breve": "Comune di Sassari",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Sassari del 4 aprile 2012:</strong> non ha una scadenza e non è stato sostituito. Il Comune di Sassari lo pubblica ancora come accordo in vigore (pagina aggiornata a maggio 2026) e lo usa per i canoni dei propri alloggi (bando di settembre 2025). I valori sono quelli originali del 2012, senza aggiornamenti ISTAT.",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA",
+   "U.P.P.I.",
+   "A.P.P.C.",
+   "FEDERPROPRIETÀ"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato a Sassari il 4/04/2012 da Confedilizia, UPPI, APPC, Federproprietà (proprietari) e SUNIA, SICET, UNIAT (inquilini), con ERSU, rappresentante degli studenti e Comune di Sassari; il testo dice «Letto, confermato, sottoscritto e depositato presso il Comune di Sassari, 4 aprile 2012» (numero di protocollo non pubblicato). Aggiorna l'accordo del 2/12/1999 ed è scritto sul D.M. 30/12/2002; non indica una scadenza. Hanno aderito in seguito (elenco del Comune, maggio 2026): A.T.I., Unsicasa, Confproprietà, UNPI per la proprietà e F.E.N.I.T. per gli inquilini. Dieci microzone catastali in cinque gruppi (allegato A), tre subfasce per gruppo (allegato B, euro al mq all'anno), subfascia secondo quanti dei 12 elementi sono presenti (allegato F). Il canone si aggiorna al 75% dell'ISTAT. Per l'aliquota IMU agevolata serve il «Certificato di conformità del canone», firmato da un'associazione dei proprietari e da una degli inquilini.",
+  "fonte": "Comune di Sassari, pagina «Accordo territoriale - contratti agevolati locazione L. 431/98» (ultimo aggiornamento 18/05/2026): testo dell'accordo (5 pagine, testo digitale, copia non firmata), allegati A (microzone e gruppi), B (valori) e F (elementi), cartina delle microzone, associazioni firmatarie e aderenti. Lo stesso testo è pubblicato da Confedilizia (ottobre 2025)."
+ },
+ "esempio_zona": "la microzona dalla cartina del Comune (allegato A)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Microzona 1 - Centro storico (gruppo D)",
+    "nota": "Microzona 1 - Centro storico, come delimitato dal Comune (delibera del Consiglio comunale n. 70 del 30/06/1999), esclusi i Grattacieli, che stanno nella microzona 2. Gruppo D. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      36.14,
+      44.22
+     ],
+     [
+      40.18,
+      52.24
+     ],
+     [
+      48.12,
+      60.27
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Microzona 2 - Centrale (gruppo A)",
+    "nota": "Microzona 2 - Centrale, come delimitata dal Comune (delibera del Consiglio comunale n. 70 del 30/06/1999), compresi i Grattacieli. Gruppo A. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      44.2,
+      55.25
+     ],
+     [
+      51.57,
+      62.63
+     ],
+     [
+      55.25,
+      73.68
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Microzona 3 - Semicentrale (gruppo A)",
+    "nota": "Microzona 3 - Semicentrale, come delimitata dal Comune (delibera del Consiglio comunale n. 70 del 30/06/1999). Gruppo A. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      44.2,
+      55.25
+     ],
+     [
+      51.57,
+      62.63
+     ],
+     [
+      55.25,
+      73.68
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Microzona 4 - Semicentrale estensiva (gruppo A)",
+    "nota": "Microzona 4 - Semicentrale estensiva, come delimitata dal Comune (delibera del Consiglio comunale n. 70 del 30/06/1999). Gruppo A. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      44.2,
+      55.25
+     ],
+     [
+      51.57,
+      62.63
+     ],
+     [
+      55.25,
+      73.68
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Microzona 5 - Monte Rosello, Latte Dolce, Li Punti (gruppo C)",
+    "nota": "Microzona 5: Monte Rosello, Latte Dolce, Li Punti, più Via Baldedda, Sassari 2, Sant'Orsola nuova e Baddimanna. Gruppo C. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      38.51,
+      50.07
+     ],
+     [
+      42.37,
+      53.92
+     ],
+     [
+      50.07,
+      56.25
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "Microzona 6 - Luna e Sole, Carbonazzi, Monserrato (gruppo B)",
+    "nota": "Microzona 6: Luna e Sole, Carbonazzi, Monserrato, Prunizzedda, San Pietro origine, Rizzeddu. Gruppo B. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      40.19,
+      53.58
+     ],
+     [
+      50.23,
+      60.28
+     ],
+     [
+      53.58,
+      69.99
+     ]
+    ]
+   },
+   {
+    "codice": "7",
+    "nome": "Microzona 7 - Predda Niedda (gruppo E)",
+    "nota": "Microzona 7 - Predda Niedda (zona industriale). Gruppo E. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      30.82,
+      38.51
+     ],
+     [
+      38.51,
+      46.21
+     ],
+     [
+      42.37,
+      50.07
+     ]
+    ]
+   },
+   {
+    "codice": "8",
+    "nome": "Microzona 8 - Sant'Orsola (gruppo B)",
+    "nota": "Microzona 8 - Sant'Orsola. Gruppo B. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      40.19,
+      53.58
+     ],
+     [
+      50.23,
+      60.28
+     ],
+     [
+      53.58,
+      69.99
+     ]
+    ]
+   },
+   {
+    "codice": "9A",
+    "nome": "Microzona 9/A - Agro di pregio (gruppo B)",
+    "nota": "Microzona 9/A - Agro periferico di pregio: Monte Bianchinu, Filigheddu, Serra Secca (zona ecologica), San Francesco, Gardona. L'allegato A cita qui anche le ville di pregio della zona 9/C, «equiparata a zona semicentrale estensiva». Gruppo B. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      40.19,
+      53.58
+     ],
+     [
+      50.23,
+      60.28
+     ],
+     [
+      53.58,
+      69.99
+     ]
+    ]
+   },
+   {
+    "codice": "9B",
+    "nome": "Microzona 9/B - Frazioni e borgate (gruppo C)",
+    "nota": "Microzona 9/B - Frazioni e borgate periferiche abitate e servite: Bancali, La Landrigga, Caniga, Ottava, San Giorgio, San Giovanni. Gruppo C. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      38.51,
+      50.07
+     ],
+     [
+      42.37,
+      53.92
+     ],
+     [
+      50.07,
+      56.25
+     ]
+    ]
+   },
+   {
+    "codice": "9C",
+    "nome": "Microzona 9/C - Agro periferico (gruppo E)",
+    "nota": "Microzona 9/C - Agro periferico: la fascia in zona urbanistica E che circonda la città, destinata ad abitazioni (appartamenti in case plurifamiliari, case singole, villette). Gruppo E. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      30.82,
+      38.51
+     ],
+     [
+      38.51,
+      46.21
+     ],
+     [
+      42.37,
+      50.07
+     ]
+    ]
+   },
+   {
+    "codice": "10",
+    "nome": "Microzona 10 - Nurra (gruppo E)",
+    "nota": "Microzona 10 - Nurra: borgate (La Corte, Argentiera, Palmadula, Campanedda, Tottubella, Biancareddu ecc.) e tutto il resto dell'agro. Gruppo E. Valori in euro al mq all'anno.",
+    "fasce": [
+     [
+      30.82,
+      38.51
+     ],
+     [
+      38.51,
+      46.21
+     ],
+     [
+      42.37,
+      50.07
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "Inferiore (c)",
+    "Intermedia (b)",
+    "Superiore (a)"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    5,
+    7
+   ],
+   "nota": "Subfascia superiore con almeno 8 dei 12 elementi, intermedia con 6 o 7, inferiore con meno di 6 (allegato F).",
+   "nota_pdf": "Subfascia superiore (tip. a): almeno 8 elementi; intermedia (tip. b): 6 o 7; inferiore (tip. c): meno di 6 (allegato F)."
+  },
+  "elementi": [
+   {
+    "testo": "Cucina abitabile con finestra"
+   },
+   {
+    "testo": "Bagno interno completo di tutti i sanitari (con vasca o doccia)"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Terrazzi o balconi"
+   },
+   {
+    "testo": "Posto auto"
+   },
+   {
+    "testo": "Ascensore (per gli alloggi dal terzo piano fuori terra)"
+   },
+   {
+    "testo": "Isolamento termico o doppi vetri (vetrocamera)"
+   },
+   {
+    "testo": "Impianto di riscaldamento"
+   },
+   {
+    "testo": "Impianti tecnologici (luce, sollevamento acqua, TV centralizzata e satellitare)"
+   },
+   {
+    "testo": "Allacciamento alla rete del gas o bombolone condominiale"
+   },
+   {
+    "testo": "Giardino, area verde o corte condominiale"
+   },
+   {
+    "testo": "Caldaia ad alto rendimento, pannello fotovoltaico o certificazione energetica"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'alloggio (stanze, bagni, ingressi, corridoi, ripostigli)",
+   "voci": [
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazzi comunicanti con l'alloggio (30% fino a 25 mq, poi 10%)",
+     "coeff": 0.3,
+     "scaglione": [
+      25,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "chiave": "balconi_nc",
+     "testo": "Balconi e terrazzi non comunicanti (15% fino a 25 mq, poi 5%)",
+     "coeff": 0.15,
+     "scaglione": [
+      25,
+      0.15,
+      0.05
+     ]
+    },
+    {
+     "chiave": "cantine_c",
+     "testo": "Soffitte, cantine e simili comunicanti con l'alloggio (50%)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantine",
+     "testo": "Soffitte, cantine e simili non comunicanti (25%)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Giardino o cortile a uso esclusivo (10% fino alla superficie dell'alloggio, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 69.99,
+     "perc": 25,
+     "limite": 80
+    },
+    {
+     "fino": 100,
+     "perc": 0
+    },
+    {
+     "fino": 120,
+     "perc": -10,
+     "limite": 100
+    },
+    {
+     "fino": 140,
+     "perc": -15,
+     "limite": 107
+    },
+    {
+     "fino": 999999,
+     "perc": -20,
+     "limite": 118
+    }
+   ],
+   "nota": "Si misura la superficie calpestabile, più balconi, terrazzi, soffitte, cantine e aree scoperte contati come nel D.P.R. 138/1998, con una tolleranza del 7%. Poi si corregge: sotto 70 mq +25% (al massimo 80 mq); oltre 100 mq -10% (non sotto 100 mq); oltre 120 mq -15% (non sotto 107 mq); oltre 140 mq -20% (non sotto 118 mq).",
+   "etichetta_correzione": "convenzionale"
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "vincolato",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato (beni culturali) o di categoria catastale A/1, A/8 o A/9",
+    "nome": "immobile vincolato o A/1, A/8, A/9",
+    "perc": 15,
+    "contratti": [
+     "agevolato",
+     "studenti"
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredo ed elettrodomestici funzionanti (da +10% a +20%, secondo completezza e qualità)",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "20",
+      "testo": "arredo completo e di buona qualità",
+      "perc": 20
+     },
+     {
+      "valore": "15",
+      "testo": "arredo quasi completo",
+      "perc": 15
+     },
+     {
+      "valore": "10",
+      "testo": "arredo essenziale",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "carenze",
+    "tipo": "spunta",
+    "testo": "Alloggio senza bagno interno o non allacciato alla rete fognaria",
+    "nome": "senza bagno interno o fognatura",
+    "perc": 0,
+    "mostra_perc": false
+   }
+  ],
+  "tetto_minimo": {
+   "chiave": "carenze",
+   "perc": 10,
+   "avviso": "Senza bagno interno o senza allacciamento alla rete fognaria il canone sta fra il minimo della subfascia e il minimo aumentato del 10% (allegato F)."
+  },
+  "nota_maggiorazioni": "Immobili vincolati o di categoria A/1, A/8, A/9: minimi e massimi aumentati del 15% (contratti agevolati e per studenti). Con l'arredo il canone scelto nella subfascia aumenta dal 10% al 20%, secondo completezza e qualità di mobili ed elettrodomestici (anche per transitori e studenti). Gli aumenti si applicano uno dopo l'altro. Nessun aumento per la durata: transitori (da 1 a 18 mesi) e studenti universitari (da 6 a 36 mesi) usano gli stessi valori dei contratti agevolati.",
+  "durata": {},
+  "combinazione": "prodotto",
+  "avvisi": [
+   {
+    "testo": "Dentro la subfascia il canone si sceglie liberamente, tenendo conto dello stato di manutenzione dell'alloggio e dell'edificio (allegato F)."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "",
+  "titolo": "Certificato di conformità del canone di locazione",
+  "sottotitolo": "Accordo territoriale del Comune amministrativo di Sassari (L. 431/1998 e D.M. 30/12/2002), sottoscritto e depositato presso il Comune di Sassari il 04/04/2012",
+  "titolo_superficie": "SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "Elementi tipologici dell'immobile (allegato F)",
+  "dichiarazione": "Il locatore e il conduttore dichiarano, sotto la propria responsabilità, che i dati e gli elementi sopra indicati corrispondono all'immobile locato e chiedono il rilascio del Certificato di conformità del canone previsto dall'Accordo territoriale del Comune di Sassari.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "CERTIFICATO DI CONFORMITÀ DEL CANONE",
+  "attestazione": [
+   "L'Organizzazione della proprietà edilizia …………………………… e l'Organizzazione sindacale degli inquilini ……………………………, firmatarie dell'Accordo territoriale del Comune di Sassari del 04/04/2012, sulla base degli elementi oggettivi sopra dichiarati,",
+   "CERTIFICANO che il canone di locazione è conforme ai valori e ai criteri dell'Accordo territoriale vigente per il Comune di Sassari.",
+   "Sassari, ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "Per l'Organizzazione della proprietà (timbro e firma)",
+   "Per l'Organizzazione degli inquilini (timbro e firma)"
+  ],
+  "nota_zone": "La microzona si ricava dalla cartina del Comune (allegato A); le microzone sono riunite in cinque gruppi con gli stessi valori: A (2, 3, 4), B (6, 8, 9/A), C (5, 9/B), D (1), E (7, 9/C, 10)."
+ }
+}

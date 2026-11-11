@@ -902,6 +902,45 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsiracusa-2023-12-11-accordo.pdf?alt=media&token=d0cadb9a-ceb0-4455-9ef2-a7911bccbf33"
     }
    ]
+  },
+  {
+   "comune": "Sassari",
+   "provincia": "SS",
+   "accordo": "sassari-2012-04-04",
+   "sottoscritto": "4 aprile 2012",
+   "depositato": "4 aprile 2012",
+   "zone": 12,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsassari-2012-04-04-accordo.pdf?alt=media&token=ed059a68-8646-47fd-a317-f7fe93e8d89e",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsassari-2012-04-04-accordo.pdf?alt=media&token=ed059a68-8646-47fd-a317-f7fe93e8d89e"
+    },
+    {
+     "nome": "Allegato a cartina microzone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsassari-2012-04-04-allegato-a-cartina-microzone.pdf?alt=media&token=b58ea06f-bede-4547-9b61-406ffd12be24"
+    },
+    {
+     "nome": "Allegato a microzone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsassari-2012-04-04-allegato-a-microzone.pdf?alt=media&token=42b9ed45-77cf-4045-9dfc-d51b867d8999"
+    },
+    {
+     "nome": "Allegato b valori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsassari-2012-04-04-allegato-b-valori.pdf?alt=media&token=e807af79-6a97-493b-bdd4-a77cd6c0f011"
+    },
+    {
+     "nome": "Allegato f elementi",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsassari-2012-04-04-allegato-f-elementi.pdf?alt=media&token=c6048d40-e798-4476-bc48-6124181d7c77"
+    },
+    {
+     "nome": "Associazioni aderenti 2026",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsassari-2012-04-04-associazioni-aderenti-2026.pdf?alt=media&token=2ffe56e9-0547-4886-8f5f-da174cac67fb"
+    },
+    {
+     "nome": "Associazioni firmatarie",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsassari-2012-04-04-associazioni-firmatarie.pdf?alt=media&token=4920e0da-85a3-42e8-887f-3b3978d67f40"
+    }
+   ]
   }
  ]
 }
