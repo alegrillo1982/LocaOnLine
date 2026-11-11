@@ -91,10 +91,16 @@
     if (F.gruppi) {
       // es. Ancona: ogni gruppo di elementi dà una fascia; il massimo è la media pesata dei massimi
       const gruppi = F.gruppi.map((g) => {
-        const n = E.slice(g.da, g.a + 1).reduce((t, e, k) => t + puntiDi(e, el[g.da + k]), 0);
+        const n = Math.round(E.slice(g.da, g.a + 1).reduce((t, e, k) => t + puntiDi(e, el[g.da + k]), 0) * 100) / 100;
         let i = g.soglie.findIndex((x) => n <= x); if (i < 0) i = g.soglie.length;
         return { nome: g.nome, n, i, fascia: F.nomi[i], peso: g.peso };
       });
+      if (F.combina === "prevalente") {
+        // es. Padova: vale il livello che ricorre più spesso fra i gruppi; a parità quello superiore
+        const conta = F.nomi.map((_, k) => gruppi.filter((g) => g.i === k).length);
+        let i = 0; conta.forEach((c, k) => { if (c >= conta[i]) i = k; });
+        return { n: conta[i], i, nome: F.nomi[i], gruppi, prevalente: true, avviso: "" };
+      }
       return { n: gruppi.reduce((t, g) => t + g.n, 0), i: null, nome: gruppi.map((g) => `${g.nome} ${g.fascia}`).join(", "), gruppi, avviso: "" };
     }
     if (F.criterio === "scelta") {
@@ -142,7 +148,7 @@
         r.tipologia = chiave;
       }
       const tab = Array.isArray(r.zona.fasce) ? r.zona.fasce : r.zona.fasce[chiave] || r.zona.fasce["3"];
-      if (f.gruppi) {
+      if (f.gruppi && !f.prevalente) {
         const pesi = f.gruppi.reduce((t, g) => t + g.peso, 0);
         const max = Math.round(f.gruppi.reduce((t, g) => t + tab[g.i][1] * g.peso, 0) / pesi * 100) / 100;
         r.base = [Math.round(max * R.fasce.minimo_perc) / 100, max];
@@ -193,6 +199,17 @@
       const sc = P.scaglioni.filter((x) => np >= x.da).pop();
       r.premium = np;
       if (sc) add(`${np} elementi premium`, sc.perc[z] ?? sc.perc.altre ?? 0, P.dopo);
+    }
+    if (R.arredo && sup) {
+      // es. Padova: arredo in proporzione ai punti degli oggetti presenti, fino al massimo dell'accordo
+      const A = R.arredo, el = s.elementi || [], piccolo = sup.base <= A.soglia;
+      let tot = 0, si = 0;
+      for (let k = A.da; k <= A.a; k++) {
+        if (piccolo && (A.esclusi_piccoli || []).includes(k)) continue;
+        const p = R.elementi[k].punti || 0; tot += p; if (el[k]) si += p;
+      }
+      r.arredo = { punti: si, totale: tot };
+      if (si && tot) add(`arredo (${virgola(si, 1)} su ${virgola(tot, 1)} punti)`, Math.round(si / tot * A.perc * 100) / 100);
     }
     if (tipo === "agevolato" && R.durata) add(`durata ${s.durata_anni} + 2 anni`, R.durata[String(anni)] || 0, R.durata_dopo);
     if (R.contratto && R.contratto[tipo]) { add(tipo === "studenti" ? "contratto per studenti" : "contratto transitorio", R.contratto[tipo], R.durata_dopo); if (R.contratto.anche_minimo) r.maggiorazioni[r.maggiorazioni.length - 1].minimo = true; }

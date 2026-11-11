@@ -1,0 +1,659 @@
+{
+ "accordo": {
+  "codice": "padova-2023-02-14",
+  "modello": "padova-2023",
+  "comune": "Padova",
+  "provincia": "PD",
+  "titolo": "Accordo territoriale per la locazione nel Comune di Padova",
+  "data": "2023-02-14",
+  "data_testo": "14 febbraio 2023",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "avviso_validita": "<strong>L'accordo di Padova del 14/02/2023 aveva durata di tre anni</strong> e resta in vigore finché non viene firmato quello nuovo. Chiedi all'associazione che vidima il contratto se i valori sono stati aggiornati.",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA",
+   "U.P.P.I.",
+   "A.S.P.P.I.",
+   "FEDERPROPRIETÀ"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET",
+   "UNIAT",
+   "UNIONE INQUILINI"
+  ],
+  "nota": "Firmato a Padova il 14/02/2023, in vigore dal deposito all'Ufficio Protocollo (data non pubblicata), durata tre anni; sostituisce l'accordo depositato il 17/10/2019 (prot. 2019-0414529/E). Valori mensili per zona e livello di qualità (scheda, allegato B).",
+  "fonte": "Testo dell'accordo e scheda di calcolo (allegato B) pubblicati dal SUNIA."
+ },
+ "esempio_zona": "la zona dalla planimetria (allegato A)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Zona A",
+    "nota": "Zona A: le zone sono disegnate nella planimetria dell'allegato A dell'accordo.",
+    "fasce": [
+     [
+      4.5,
+      6.28
+     ],
+     [
+      4.5,
+      7.81
+     ],
+     [
+      4.5,
+      9.25
+     ]
+    ]
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B",
+    "nota": "Zona B: le zone sono disegnate nella planimetria dell'allegato A dell'accordo.",
+    "fasce": [
+     [
+      4.0,
+      5.67
+     ],
+     [
+      4.0,
+      7.0
+     ],
+     [
+      4.0,
+      8.03
+     ]
+    ]
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C",
+    "nota": "Zona C: le zone sono disegnate nella planimetria dell'allegato A dell'accordo.",
+    "fasce": [
+     [
+      3.5,
+      4.98
+     ],
+     [
+      3.5,
+      6.12
+     ],
+     [
+      3.5,
+      7.1
+     ]
+    ]
+   },
+   {
+    "codice": "D",
+    "nome": "Zona D",
+    "nota": "Zona D: le zone sono disegnate nella planimetria dell'allegato A dell'accordo.",
+    "fasce": [
+     [
+      3.15,
+      4.5
+     ],
+     [
+      3.15,
+      5.57
+     ],
+     [
+      3.15,
+      6.44
+     ]
+    ]
+   },
+   {
+    "codice": "E",
+    "nome": "Zona E",
+    "nota": "Zona E: le zone sono disegnate nella planimetria dell'allegato A dell'accordo.",
+    "fasce": [
+     [
+      2.86,
+      4.26
+     ],
+     [
+      2.86,
+      5.25
+     ],
+     [
+      2.86,
+      5.98
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "Normale",
+    "Buono",
+    "Ottimo"
+   ],
+   "combina": "prevalente",
+   "gruppi": [
+    {
+     "nome": "Tipologia edilizia",
+     "da": 0,
+     "a": 0,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Vetustà",
+     "da": 1,
+     "a": 1,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Posizione/contesto urbano",
+     "da": 2,
+     "a": 4,
+     "soglie": [
+      1,
+      2
+     ]
+    },
+    {
+     "nome": "Accessori in dotazione",
+     "da": 5,
+     "a": 14,
+     "soglie": [
+      2.7,
+      5.4
+     ]
+    },
+    {
+     "nome": "Dotazione tecnologica",
+     "da": 15,
+     "a": 23,
+     "soglie": [
+      3.1,
+      6.2
+     ]
+    },
+    {
+     "nome": "Prestazione energetica",
+     "da": 24,
+     "a": 24,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Rendita catastale",
+     "da": 25,
+     "a": 25,
+     "soglie": [
+      0,
+      1
+     ]
+    }
+   ],
+   "nota": "Ogni categoria vale normale, buono o ottimo (posizione: 2 servizi buono, 3 ottimo; accessori: oltre 2,70 punti buono, oltre 5,40 ottimo; dotazione tecnologica: oltre 3,10 buono, oltre 6,20 ottimo). La subfascia è il livello che ricorre più spesso; a parità vale il superiore."
+  },
+  "titoli_elementi": [
+   {
+    "da": 26,
+    "titolo": "Arredo: zona cucina"
+   },
+   {
+    "da": 37,
+    "titolo": "Arredo: zona letto"
+   },
+   {
+    "da": 44,
+    "titolo": "Arredo: zona giorno"
+   },
+   {
+    "da": 52,
+    "titolo": "Arredo: zona bagno"
+   },
+   {
+    "da": 57,
+    "titolo": "Arredo: zona ingresso"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Tipologia edilizia",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "condominio a scala unica con più di 10 unità, o a blocco/in linea con più scale (normale)",
+      "punti": 0
+     },
+     {
+      "testo": "condominio o scala con al massimo 10 unità abitative (buono)",
+      "punti": 1
+     },
+     {
+      "testo": "unità isolata unifamiliare o aggregata con ingresso indipendente fino a 4 unità, o attico con terrazzo panoramico (ottimo)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Vetustà (nuova costruzione o pesante ristrutturazione)",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "anteriore al 01/01/1979 (normale)",
+      "punti": 0
+     },
+     {
+      "testo": "dal 01/01/1979 al 31/12/2000 (buono)",
+      "punti": 1
+     },
+     {
+      "testo": "dal 01/01/2001 (ottimo)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Servizi postali, bancari, sanitari e alimentari entro 500 m",
+    "punti": 1
+   },
+   {
+    "testo": "Trasporto pubblico entro 500 m",
+    "punti": 1
+   },
+   {
+    "testo": "Almeno una scuola pubblica di ogni ordine e grado entro 500 m",
+    "punti": 1
+   },
+   {
+    "testo": "Posto auto, cicli e motocicli in autorimessa",
+    "punti": 1.0
+   },
+   {
+    "testo": "Cantina/ripostiglio in uso esclusivo",
+    "punti": 0.8
+   },
+   {
+    "testo": "Soffitta praticabile in uso esclusivo",
+    "punti": 0.8
+   },
+   {
+    "testo": "Doppi servizi igienici",
+    "punti": 1.2
+   },
+   {
+    "testo": "Serramenti a risparmio energetico in tutto l'alloggio",
+    "punti": 1.4
+   },
+   {
+    "testo": "Portoncino d'ingresso blindato",
+    "punti": 1.0
+   },
+   {
+    "testo": "Portoncino d'ingresso con serratura di sicurezza",
+    "punti": 0.5
+   },
+   {
+    "testo": "Avvolgibili/oscuranti automatizzati",
+    "punti": 1.0
+   },
+   {
+    "testo": "Basculante e/o cancello carraio automatizzato",
+    "punti": 1.0
+   },
+   {
+    "testo": "Verde e/o scoperto condominiali",
+    "punti": 0.7
+   },
+   {
+    "testo": "Riscaldamento",
+    "livelli": [
+     {
+      "testo": "autonomo a gas a condensazione",
+      "punti": 1.4
+     },
+     {
+      "testo": "autonomo a gas a camera stagna",
+      "punti": 1.2
+     },
+     {
+      "testo": "autonomo a pompa di calore o fonte rinnovabile",
+      "punti": 1.6
+     },
+     {
+      "testo": "centralizzato contabilizzato",
+      "punti": 1.1
+     }
+    ]
+   },
+   {
+    "testo": "Acqua calda sanitaria",
+    "livelli": [
+     {
+      "testo": "da impianto autonomo (caldaia)",
+      "punti": 1.2
+     },
+     {
+      "testo": "centralizzata",
+      "punti": 1.0
+     },
+     {
+      "testo": "da boiler a gas",
+      "punti": 1.1
+     },
+     {
+      "testo": "da boiler elettrico",
+      "punti": 0.7
+     },
+     {
+      "testo": "solare termico autonomo, pompa di calore o fonte rinnovabile",
+      "punti": 1.4
+     }
+    ]
+   },
+   {
+    "testo": "Impianto di condizionamento, di ogni genere",
+    "punti": 1.4
+   },
+   {
+    "testo": "Connessione Wi-Fi",
+    "punti": 1.0
+   },
+   {
+    "testo": "Linea telefonica",
+    "punti": 1.0
+   },
+   {
+    "testo": "Impianto di allarme, di ogni genere",
+    "punti": 1.2
+   },
+   {
+    "testo": "Ascensore/elevatore (escluse le unità non servite)",
+    "punti": 1.4
+   },
+   {
+    "testo": "Videocitofono",
+    "punti": 1.0
+   },
+   {
+    "testo": "Citofono",
+    "punti": 0.5
+   },
+   {
+    "testo": "Attestato di prestazione energetica (APE)",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "classe F o G (normale)",
+      "punti": 0
+     },
+     {
+      "testo": "classe C, D o E (buono)",
+      "punti": 1
+     },
+     {
+      "testo": "classe A o B (ottimo)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Rendita catastale",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "fino a 400 € (normale)",
+      "punti": 0
+     },
+     {
+      "testo": "da 400 a 900 € (buono)",
+      "punti": 1
+     },
+     {
+      "testo": "oltre 900 € (ottimo)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Mobile base e pensili",
+    "punti": 1.5
+   },
+   {
+    "testo": "Piano cottura a gas di rete, elettrico o a induzione",
+    "punti": 1.5
+   },
+   {
+    "testo": "Forno a gas di rete o elettrico",
+    "punti": 1.5
+   },
+   {
+    "testo": "Lavello",
+    "punti": 1.0
+   },
+   {
+    "testo": "Frigorifero",
+    "punti": 2.0
+   },
+   {
+    "testo": "Lavastoviglie",
+    "punti": 2.0
+   },
+   {
+    "testo": "Forno a microonde",
+    "punti": 1.0
+   },
+   {
+    "testo": "Tavolo con 4 sedie (cucina)",
+    "punti": 1.5
+   },
+   {
+    "testo": "Set stoviglie completo (piatti, posate, bicchieri, pentole)",
+    "punti": 1.5
+   },
+   {
+    "testo": "Tendaggi (cucina)",
+    "punti": 1.0
+   },
+   {
+    "testo": "Lampadario/punto luce (cucina)",
+    "punti": 0.5
+   },
+   {
+    "testo": "Letto completo di materasso",
+    "punti": 1.0
+   },
+   {
+    "testo": "Comodino con luce",
+    "punti": 0.5
+   },
+   {
+    "testo": "Armadio",
+    "punti": 1.5
+   },
+   {
+    "testo": "Cassettiera (non conta fino a 65 mq)",
+    "punti": 1.5
+   },
+   {
+    "testo": "Scrivania con luce",
+    "punti": 2.0
+   },
+   {
+    "testo": "Tendaggi (letto)",
+    "punti": 1.0
+   },
+   {
+    "testo": "Lampadario/punto luce (letto)",
+    "punti": 0.5
+   },
+   {
+    "testo": "Poltrona o divano",
+    "punti": 1.5
+   },
+   {
+    "testo": "Seconda poltrona o divano",
+    "punti": 1.5
+   },
+   {
+    "testo": "Tavolo con 4 sedie (giorno; non conta fino a 65 mq)",
+    "punti": 1.5
+   },
+   {
+    "testo": "Credenza (non conta fino a 65 mq)",
+    "punti": 1.5
+   },
+   {
+    "testo": "Libreria",
+    "punti": 1.5
+   },
+   {
+    "testo": "Televisore",
+    "punti": 1.5
+   },
+   {
+    "testo": "Tendaggi (giorno; non contano fino a 65 mq)",
+    "punti": 1.0
+   },
+   {
+    "testo": "Lampadario/punto luce (giorno; non conta fino a 65 mq)",
+    "punti": 0.5
+   },
+   {
+    "testo": "Mobile porta-oggetti (bagno)",
+    "punti": 1.0
+   },
+   {
+    "testo": "Specchio, porta-asciugamano e porta-sapone",
+    "punti": 1.0
+   },
+   {
+    "testo": "Lavatrice",
+    "punti": 2.0
+   },
+   {
+    "testo": "Tendaggi (bagno)",
+    "punti": 1.0
+   },
+   {
+    "testo": "Lampadario/punto luce (bagno)",
+    "punti": 0.5
+   },
+   {
+    "testo": "Mobile porta-oggetti (ingresso; non conta fino a 65 mq)",
+    "punti": 1.5
+   },
+   {
+    "testo": "Appendiabiti (non conta fino a 65 mq)",
+    "punti": 1.0
+   },
+   {
+    "testo": "Lampadario/punto luce (ingresso; non conta fino a 65 mq)",
+    "punti": 0.5
+   }
+  ],
+  "arredo": {
+   "da": 26,
+   "a": 59,
+   "perc": 30,
+   "soglia": 65,
+   "esclusi_piccoli": [
+    40,
+    46,
+    47,
+    50,
+    51,
+    57,
+    58,
+    59
+   ]
+  },
+  "superficie": {
+   "base": "Superficie utile riscaldata (dall'APE o da un tecnico abilitato)",
+   "correzioni": [
+    {
+     "fino": 36,
+     "perc": 25
+    },
+    {
+     "da": 36,
+     "fino": 45,
+     "imposta": 45
+    },
+    {
+     "da": 45,
+     "fino": 59,
+     "perc": 10
+    },
+    {
+     "da": 59,
+     "fino": 65,
+     "imposta": 65
+    }
+   ],
+   "grandi": {
+    "oltre": 100,
+    "perc": 60
+   },
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa singola",
+     "coeff": 0.6
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto esterno riservato",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "mansarda",
+     "testo": "Mansarda/taverna con altezza media di almeno 2,40 m",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazze",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta esclusiva (al massimo 20 mq, senza il posto auto)",
+     "coeff": 0.2,
+     "scaglione": [
+      20,
+      0.2,
+      0
+     ]
+    }
+   ],
+   "nota": "Sotto 36 mq la superficie si aumenta del 25%; da 36 a 45 mq si porta a 45; da 45 a 59 mq +10%; da 59 a 65 mq si porta a 65; oltre 100 mq la parte eccedente conta il 60%."
+  },
+  "maggiorazioni": [],
+  "nota_maggiorazioni": "Arredo: fino al 30%, in proporzione ai punti degli oggetti presenti (fino a 65 mq alcuni oggetti non contano). Durata oltre i tre anni: +3% (4 anni), +6% (5), +10% (6), su minimo e massimo.",
+  "durata": {
+   "4": 3,
+   "5": 6,
+   "6": 10
+  },
+  "combinazione": "prodotto",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato B",
+  "titolo": "Scheda per la determinazione del canone di locazione",
+  "sottotitolo": "ai sensi dell'Accordo territoriale per le locazioni del Comune di Padova sottoscritto il 14/02/2023",
+  "titolo_elementi": "Definizione della subfascia e presenza arredo",
+  "dichiarazione": "Le parti dichiarano, sotto la propria responsabilità, gli elementi oggettivi sopra riportati.",
+  "nota_zone": "La zona si ricava dalla planimetria (allegato A dell'accordo)."
+ }
+}

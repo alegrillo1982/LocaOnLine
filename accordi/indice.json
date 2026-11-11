@@ -434,6 +434,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcatanzaro-2026-07-01-accordo.pdf?alt=media&token=cc2037e4-a912-444d-a1d8-c787f235d025"
     }
    ]
+  },
+  {
+   "comune": "Padova",
+   "provincia": "PD",
+   "accordo": "padova-2023-02-14",
+   "sottoscritto": "14 febbraio 2023",
+   "depositato": "",
+   "zone": 5,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpadova-2023-02-14-accordo-allegati.pdf?alt=media&token=9d440114-1fa9-425f-88ed-705f45a27d81",
+   "documenti": [
+    {
+     "nome": "Accordo allegati",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpadova-2023-02-14-accordo-allegati.pdf?alt=media&token=9d440114-1fa9-425f-88ed-705f45a27d81"
+    }
+   ]
   }
  ]
 }

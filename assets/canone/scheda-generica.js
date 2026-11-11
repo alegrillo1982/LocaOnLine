@@ -39,8 +39,8 @@
     $("gen-elementi").innerHTML = r.elementi.map((e, i) => {
       const g = [...(r.fasce.gruppi || []), ...(r.titoli_elementi || [])].find((x) => x.da === i);
       const titolo = g ? `<h3 class="stacco">${testo(g.titolo || g.nome)}</h3>` : "";
-      if (e.livelli) return `${titolo}<label class="livello"><span><b class="codice">${i + 1}</b> ${testo(e.testo)}</span><select name="el" data-i="${i}"><option value="">scegli…</option>${e.livelli.map((l, k) => `<option value="${k}">${testo(l.testo)} (${l.punti} ${l.punti === 1 ? "punto" : "punti"})</option>`).join("")}</select></label>`;
-      return `${titolo}<label><input type="checkbox" name="el" value="${i}"> <span><b class="codice">${i + 1}</b> ${testo(e.testo)}${e.punti ? ` <small>(${e.punti} ${e.punti === 1 ? "punto" : "punti"})</small>` : ""}</span></label>`;
+      if (e.livelli) return `${titolo}<label class="livello"><span><b class="codice">${i + 1}</b> ${testo(e.testo)}</span><select name="el" data-i="${i}"><option value="">scegli…</option>${e.livelli.map((l, k) => `<option value="${k}">${testo(l.testo)}${e.mostra_punti === false ? "" : ` (${virgolaN(l.punti)} ${l.punti === 1 ? "punto" : "punti"})`}</option>`).join("")}</select></label>`;
+      return `${titolo}<label><input type="checkbox" name="el" value="${i}"> <span><b class="codice">${i + 1}</b> ${testo(e.testo)}${e.punti ? ` <small>(${virgolaN(e.punti)} ${e.punti === 1 ? "punto" : "punti"})</small>` : ""}</span></label>`;
     }).join("");
     const S = r.superficie || {};
     $("gen-superfici").innerHTML = [{ chiave: "base", testo: S.base || "Superficie dell'alloggio" }, ...(S.voci || [])].map((x) => `
@@ -116,9 +116,9 @@
     $("gen-sup-nota").textContent = (R().superficie || {}).nota || "";
     $("gen-zona-nota").textContent = r.zona ? (r.zona.nota || "") : ((accordo.pdf && accordo.pdf.nota_zone) || "");
     $("gen-soglie").textContent = R().fasce.gruppi ? (R().fasce.nota || "") : `Fasce${r.zona ? ` (${r.zona.nome})` : ""}: ${soglieTesto(r.zona)}.`;
-    $("gen-conteggio").textContent = R().fasce.criterio === "scelta" ? `· ${$("gen-elementi").querySelectorAll("input:checked").length} su ${R().elementi.length}` : R().fasce.criterio === "punti" ? `· ${virgolaN(r.punti)} punti` : R().fasce.conta ? `· ${r.punti} base${r.premium !== undefined ? `, ${r.premium} premium` : ""}` : `· ${r.punti} su ${R().elementi.length}`;
+    $("gen-conteggio").textContent = r.fascia.prevalente ? `· livello ${r.fascia.nome.toLowerCase()}` : R().fasce.criterio === "scelta" ? `· ${$("gen-elementi").querySelectorAll("input:checked").length} su ${R().elementi.length}` : R().fasce.criterio === "punti" ? `· ${virgolaN(r.punti)} punti` : R().fasce.conta ? `· ${r.punti} base${r.premium !== undefined ? `, ${r.premium} premium` : ""}` : `· ${r.punti} su ${R().elementi.length}`;
     $("gen-esito-fascia").textContent = r.base
-      ? `${r.zona.nome}, fascia ${r.fascia.nome}${R().fasce.criterio === "scelta" ? "" : ` (${virgolaN(r.punti)} ${R().fasce.criterio === "punti" ? (r.punti === 1 ? "punto" : "punti") : (r.punti === 1 ? "elemento" : "elementi")})`}: da € ${v(r.base[0])} a € ${v(r.base[1])} al mq ${unita()}` : `fascia ${r.fascia.nome}`;
+      ? `${r.zona.nome}, fascia ${r.fascia.nome}${R().fasce.criterio === "scelta" || r.fascia.prevalente ? "" : ` (${virgolaN(r.punti)} ${R().fasce.criterio === "punti" ? (r.punti === 1 ? "punto" : "punti") : (r.punti === 1 ? "elemento" : "elementi")})`}: da € ${v(r.base[0])} a € ${v(r.base[1])} al mq ${unita()}` : `fascia ${r.fascia.nome}`;
     $("gen-esito-magg").textContent = r.maggiorazioni.length
       ? r.maggiorazioni.map((m) => `${m.nome} ${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%`).join(", ") + (r.maggiorazioni.length > 1 ? ` = ${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%` : "") +
         (r.valori ? ` → da € ${v(r.valori[0])} a € ${v(r.valori[1])}` : "")
