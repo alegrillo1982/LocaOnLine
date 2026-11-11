@@ -782,6 +782,80 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpescara-2018-05-29-allegato-g-attestazione-bilaterale.pdf?alt=media&token=85305145-6cd9-4b99-896b-aeb50c8813d0"
     }
    ]
+  },
+  {
+   "comune": "Monza",
+   "provincia": "MB",
+   "accordo": "monza-2024-03-15",
+   "sottoscritto": "15 marzo 2024",
+   "depositato": "",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmonza-2024-03-15-accordo.pdf?alt=media&token=f9a73aad-b360-48be-9cb5-ab492ce1be42",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmonza-2024-03-15-accordo.pdf?alt=media&token=f9a73aad-b360-48be-9cb5-ab492ce1be42"
+    },
+    {
+     "nome": "Allegato 4b mappa zone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmonza-2024-03-15-allegato-4b-mappa-zone.pdf?alt=media&token=6981c508-7058-43ce-9f6c-fc0ebe370a07"
+    }
+   ]
+  },
+  {
+   "comune": "Reggio Emilia",
+   "provincia": "RE",
+   "accordo": "reggioemilia-2020-02-04",
+   "sottoscritto": "4 febbraio 2020",
+   "depositato": "5 febbraio 2020",
+   "zone": 5,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-accordo.pdf?alt=media&token=ad31a0d1-775c-4dd7-a520-da6d4a023068",
+   "documenti": [
+    {
+     "nome": "Accordo gemello uppi assocasa 2020 02 28",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-accordo-gemello-uppi-assocasa-2020-02-28.pdf?alt=media&token=26016696-399c-4ceb-abab-6b796dfc48dd"
+    },
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-accordo.pdf?alt=media&token=ad31a0d1-775c-4dd7-a520-da6d4a023068"
+    },
+    {
+     "nome": "Allegato a contratto agevolato",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-allegato-a-contratto-agevolato.pdf?alt=media&token=b87f4f00-0ecf-4f63-be45-709bae09db62"
+    },
+    {
+     "nome": "Allegato b contratto transitorio",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-allegato-b-contratto-transitorio.pdf?alt=media&token=ee6f02c3-484a-4d7b-af4a-cb20005cd1ef"
+    },
+    {
+     "nome": "Allegato c contratto studenti",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-allegato-c-contratto-studenti.pdf?alt=media&token=9c7487f4-3b9c-484e-a736-57a6910ba331"
+    },
+    {
+     "nome": "Allegato d cartine",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-allegato-d-cartine.pdf?alt=media&token=e0b6b864-0674-41f6-ad9c-1cc85faa9f67"
+    },
+    {
+     "nome": "Allegato d mappa centro ricerca vie",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-allegato-d-mappa-centro-ricerca-vie.pdf?alt=media&token=69b42092-f7c3-46c5-95ef-471d5421c13c"
+    },
+    {
+     "nome": "Allegato d mappa comune ricerca vie",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-allegato-d-mappa-comune-ricerca-vie.pdf?alt=media&token=6b4d98dc-f3eb-4c3c-9a30-7da85320ad0f"
+    },
+    {
+     "nome": "Allegato d zone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-allegato-d-zone.pdf?alt=media&token=bef1fa10-5ea9-44ea-bf80-de384cebde21"
+    },
+    {
+     "nome": "Allegato e valori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-allegato-e-valori.pdf?alt=media&token=3686d22a-f2ad-43a5-922f-3422a6ca85eb"
+    },
+    {
+     "nome": "Allegato f asseverazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-allegato-f-asseverazione.pdf?alt=media&token=74fc9fc3-13f7-4bb6-99a4-771951a23bd2"
+    }
+   ]
   }
  ]
 }

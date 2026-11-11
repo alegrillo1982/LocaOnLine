@@ -1,0 +1,543 @@
+{
+ "accordo": {
+  "codice": "monza-2024-03-15",
+  "modello": "monza-2024",
+  "comune": "Monza",
+  "provincia": "MB",
+  "titolo": "Accordo locale \"Quadro\" per i Comuni della Provincia di Monza e della Brianza",
+  "data": "2024-03-15",
+  "data_testo": "15 marzo 2024",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Monza: vale l'accordo provinciale di Monza e Brianza del 15 marzo 2024, in vigore dal 1° maggio 2024.</strong> Durava 18 mesi dal deposito ma resta valido finché non ne viene firmato uno nuovo, e il Comune di Monza lo indica ancora come vigente. Passati i 18 mesi, minimi e massimi si possono aumentare del 100% dell'ISTAT maturato dal deposito: qui trovi i valori originali, chiedi all'associazione quelli aggiornati.",
+  "firmatari_proprieta": [
+   "A.P.E. Monza (Confedilizia)",
+   "A.S.P.P.I. Comprensorio Brianza",
+   "A.S.P.P.I. Monza",
+   "CONFABITARE",
+   "CONFAPPI",
+   "FEDERPROPRIETÀ",
+   "U.P.P.I.",
+   "UNIONCASA"
+  ],
+  "firmatari_conduttori": [
+   "CONIA",
+   "SICET",
+   "SUNIA",
+   "UNIAT"
+  ],
+  "nota": "Accordo provinciale firmato a Monza il 15/03/2024 per tutti i 55 Comuni della Provincia di Monza e della Brianza; sostituisce dal 01/05/2024 ogni accordo precedente, compreso quello della città di Monza del 25/06/2019. Durata 18 mesi dal deposito (data e protocollo del deposito non riportati nella copia pubblicata), poi resta in vigore fino al nuovo; nel frattempo minimi e massimi si possono aumentare del 100% ISTAT FOI dal mese successivo al deposito (punto 14). Monza ha tre zone (mappa allegato 4/B) e valori annui al mq per zona, sub-fascia e taglia dell'alloggio (allegato 2/K). ASPPI Monza firma solo per alcuni Comuni, fra cui Monza.",
+  "fonte": "Comune di Monza, pagina 'Canone concordato e Agenzia per l'Abitare' (aggiornata a luglio 2026): accordo in scansione (54 pagine: testo, allegato 2/K di Monza, contratti tipo, richiesta di attestazione e calcolo) e mappa delle zone (allegato 4/B, viario del 26/10/2022)."
+ },
+ "esempio_zona": "la zona dalla mappa del Comune (allegato 4/B)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "tabella_per": "superficie",
+  "tabella_soglie": [
+   [
+    50.99,
+    "50"
+   ],
+   [
+    74.99,
+    "74"
+   ],
+   [
+    99.99,
+    "99"
+   ]
+  ],
+  "tabella_oltre": "oltre",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1",
+    "nota": "Zona 1 (in rosa nella mappa dell'allegato 4/B): il centro storico e la fascia che sale a nord fino alla Villa Reale e al Parco. Valori in euro al mq all'anno.",
+    "fasce": {
+     "50": [
+      [
+       20,
+       81
+      ],
+      [
+       82,
+       152
+      ],
+      [
+       153,
+       180
+      ]
+     ],
+     "74": [
+      [
+       20,
+       76
+      ],
+      [
+       77,
+       133
+      ],
+      [
+       134,
+       157
+      ]
+     ],
+     "99": [
+      [
+       20,
+       71
+      ],
+      [
+       72,
+       124
+      ],
+      [
+       125,
+       138
+      ]
+     ],
+     "oltre": [
+      [
+       20,
+       66
+      ],
+      [
+       67,
+       99
+      ],
+      [
+       100,
+       124
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2",
+    "nota": "Zona 2 (bordata in verde nella mappa dell'allegato 4/B): i quartieri intorno alla zona 1, a ovest e a est del centro; a sud il confine è via Mentana. Valori in euro al mq all'anno.",
+    "fasce": {
+     "50": [
+      [
+       20,
+       80
+      ],
+      [
+       81,
+       130
+      ],
+      [
+       131,
+       152
+      ]
+     ],
+     "74": [
+      [
+       20,
+       76
+      ],
+      [
+       77,
+       115
+      ],
+      [
+       116,
+       129
+      ]
+     ],
+     "99": [
+      [
+       20,
+       71
+      ],
+      [
+       72,
+       99
+      ],
+      [
+       100,
+       114
+      ]
+     ],
+     "oltre": [
+      [
+       20,
+       66
+      ],
+      [
+       67,
+       90
+      ],
+      [
+       91,
+       105
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3",
+    "nota": "Zona 3: tutto il resto del territorio comunale, fuori dalle zone 1 e 2 (mappa dell'allegato 4/B). Valori in euro al mq all'anno.",
+    "fasce": {
+     "50": [
+      [
+       20,
+       61
+      ],
+      [
+       62,
+       110
+      ],
+      [
+       111,
+       129
+      ]
+     ],
+     "74": [
+      [
+       20,
+       57
+      ],
+      [
+       58,
+       95
+      ],
+      [
+       96,
+       110
+      ]
+     ],
+     "99": [
+      [
+       20,
+       52
+      ],
+      [
+       53,
+       81
+      ],
+      [
+       82,
+       95
+      ]
+     ],
+     "oltre": [
+      [
+       20,
+       48
+      ],
+      [
+       49,
+       76
+      ],
+      [
+       77,
+       91
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "Sub-fascia 1",
+    "Sub-fascia 2",
+    "Sub-fascia 3"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 1,
+      "tutti": true
+     },
+     {
+      "da": 2,
+      "a": 6,
+      "n": 3
+     },
+     {
+      "da": 2,
+      "a": 7,
+      "n": 4
+     }
+    ],
+    [
+     {
+      "da": 0,
+      "a": 1,
+      "tutti": true
+     },
+     {
+      "da": 2,
+      "a": 6,
+      "n": 3
+     },
+     {
+      "da": 2,
+      "a": 7,
+      "n": 4
+     },
+     {
+      "da": 8,
+      "a": 14,
+      "n": 3
+     },
+     {
+      "da": 15,
+      "a": 20,
+      "n": 2
+     }
+    ]
+   ],
+   "conta": {
+    "da": 15,
+    "a": 23
+   },
+   "nota": "Sub-fascia 2: tutti gli elementi A e almeno 3 B (con riscaldamento a stufe nei singoli locali, almeno 4 B). Sub-fascia 3: in più almeno 3 C e almeno 2 fra D1, D2, D4, D6, D7 e D9. Il massimo della sub-fascia 3 spetta solo con almeno 4 elementi D. Il numero accanto alla sub-fascia conta gli elementi D.",
+   "nota_pdf": "Sub-fascia 1: manca un elemento A, oppure meno di 3 B, oppure riscaldamento a stufe con meno di 4 B. Sub-fascia 2: tutti gli A e almeno 3 B. Sub-fascia 3: tutti gli A, almeno 3 B, almeno 3 C e almeno 2 fra D1, D2, D4, D6, D7, D9; il massimo solo con almeno 4 elementi D (punto 4.1.b)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi di tipo A: servono tutti (se ne manca uno, sub-fascia 1)"
+   },
+   {
+    "da": 2,
+    "titolo": "Elementi di tipo B: ne servono almeno 3 per la sub-fascia 2"
+   },
+   {
+    "da": 7,
+    "titolo": "Riscaldamento: con stufe nei singoli locali servono almeno 4 elementi B"
+   },
+   {
+    "da": 8,
+    "titolo": "Elementi di tipo C: ne servono almeno 3 per la sub-fascia 3"
+   },
+   {
+    "da": 15,
+    "titolo": "Elementi di tipo D: per la sub-fascia 3 almeno 2 di questi…"
+   },
+   {
+    "da": 21,
+    "titolo": "…altri elementi di tipo D (con 4 elementi D in tutto si arriva al massimo della sub-fascia 3)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "A1 - Bagno interno completo (tazza, lavabo, vasca o doccia) con almeno una finestra o aerazione meccanica"
+   },
+   {
+    "testo": "A2 - Impianti essenziali funzionanti: acqua potabile, predisposizione per lo scaldabagno in bagno, impianto elettrico e impianto del gas"
+   },
+   {
+    "testo": "B1 - Cucina abitabile con almeno una finestra"
+   },
+   {
+    "testo": "B2 - Ascensore"
+   },
+   {
+    "testo": "B3 - Alloggio in stato di manutenzione normale (impianti, infissi, pavimenti, pareti e soffitti)"
+   },
+   {
+    "testo": "B4 - Impianti, esalazioni e scarichi a norma di igiene e sicurezza alla data del contratto"
+   },
+   {
+    "testo": "B5 - Riscaldamento centralizzato o autonomo"
+   },
+   {
+    "testo": "Il riscaldamento NON è fatto con stufe nei singoli locali (segna se è centralizzato o autonomo; non segnare se ci si scalda con stufe)"
+   },
+   {
+    "testo": "C1 - Doppio bagno, di cui almeno uno completo con finestra o aerazione meccanica"
+   },
+   {
+    "testo": "C2 - Posto auto scoperto regolarmente assegnato"
+   },
+   {
+    "testo": "C3 - Giardino condominiale"
+   },
+   {
+    "testo": "C4 - Alloggio in stato di manutenzione buono (impianti, infissi, pavimenti, pareti e soffitti)"
+   },
+   {
+    "testo": "C5 - Stabile in stato di manutenzione normale (impianti comuni, facciate, tetto, scale e spazi comuni)"
+   },
+   {
+    "testo": "C6 - Porte blindate e/o doppi vetri"
+   },
+   {
+    "testo": "C7 - Trasporti, negozi e servizi sociali entro 1 km"
+   },
+   {
+    "testo": "D1 - Balconi o terrazzo"
+   },
+   {
+    "testo": "D2 - Cantina o soffitta"
+   },
+   {
+    "testo": "D4 - Impianto fotovoltaico per l'energia elettrica"
+   },
+   {
+    "testo": "D6 - Giardino privato o spazio aperto esclusivo"
+   },
+   {
+    "testo": "D7 - Box o posto auto coperto (esclusivo o in comune)"
+   },
+   {
+    "testo": "D9 - Classe energetica da A a D"
+   },
+   {
+    "testo": "D3 - Edificio con meno di 30 anni, oppure immobile di pregio edilizio (anche se non vincolato)"
+   },
+   {
+    "testo": "D5 - Impianto di allarme funzionante"
+   },
+   {
+    "testo": "D8 - Lavori di manutenzione negli ultimi 10 anni con pratica in Comune (CILA, SCIA o simili)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie dell'alloggio (catastale: vani principali, bagni, ripostigli, ingressi, corridoi)",
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Box o posto auto coperto",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto scoperto",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, lastrici",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "cantine",
+     "testo": "Cantine, soffitte, solai e altre pertinenze (non box)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "verde",
+     "testo": "Giardino o area scoperta di uso esclusivo",
+     "coeff": 0.1
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 39.999,
+     "perc": 20,
+     "limite": 40
+    },
+    {
+     "fino": 50,
+     "perc": 0
+    },
+    {
+     "fino": 59.999,
+     "perc": 10,
+     "limite": 60
+    },
+    {
+     "fino": 120,
+     "perc": 0
+    },
+    {
+     "fino": 1000000,
+     "perc": -20,
+     "limite": 120
+    }
+   ],
+   "nota": "Superficie catastale (DPR 138/98) più le pertinenze affittate insieme: box 50%, balconi e terrazze 30%, posto auto scoperto, cantina e soffitta 25%, verde esclusivo 10%. Sul totale: sotto 40 mq +20% fino a 40 mq, fra 50 e 60 mq +10% fino a 60 mq, oltre 120 mq -20% ma non sotto 120 mq. La tabella dei valori (fino a 50, da 51 a 74, da 75 a 99, oltre 100 mq) si sceglie sulla superficie totale, pertinenze comprese."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento (mobili efficienti ed elettrodomestici funzionanti; se parziale, serve almeno la cucina completa di elettrodomestici, mobili e pensili)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 15
+     },
+     {
+      "valore": "75",
+      "testo": "arredato in parte, circa tre quarti",
+      "perc": 11.25
+     },
+     {
+      "valore": "50",
+      "testo": "arredato in parte, circa metà",
+      "perc": 7.5
+     },
+     {
+      "valore": "25",
+      "testo": "arredato in parte, circa un quarto",
+      "perc": 3.75
+     }
+    ]
+   },
+   {
+    "chiave": "clima",
+    "tipo": "spunta",
+    "testo": "Aria condizionata funzionante su almeno metà della superficie affittata",
+    "nome": "aria condizionata",
+    "perc": 5
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano e valgono sul minimo e sul massimo della sub-fascia. Arredo fino al +15% (in parte: in proporzione), aria condizionata fino al +5%, durata 4/5/6 anni +3/5/6%. Il canone può scendere sotto il minimo della sub-fascia scegliendo una sub-fascia inferiore, ma mai sotto il minimo della sub-fascia 1 (20 euro al mq l'anno).",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 6
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Sub-fascia 3: il valore massimo si può applicare solo con almeno 4 elementi di tipo D. Con 2 o 3 il canone va concordato sotto il massimo (l'accordo non fissa un valore preciso).",
+    "fascia": [
+     2,
+     3
+    ]
+   }
+  ],
+  "tabella_su": "totale"
+ },
+ "pdf": {
+  "allegato": "Allegato 9",
+  "titolo": "Richiesta di attestazione bilaterale ex D.M. 16.01.2017 - L. 4 agosto 2022 n. 122",
+  "sottotitolo": "Accordo locale \"Quadro\" per i Comuni della Provincia di Monza e della Brianza del 15/03/2024, in vigore dal 01/05/2024 - Comune di Monza",
+  "titolo_elementi": "Elementi oggettivi dell'alloggio (tipo A, B, C, D)",
+  "dichiarazione": "Il locatore e/o il conduttore dichiarano che i dati sopra comunicati sono stati dagli stessi rilevati e verificati. Pertanto, riconoscendo che l'Attestazione sarà rilasciata, secondo quanto previsto dal D.M. 16/01/2017 e dalla Legge 4 agosto 2022 n. 122, sulla base di quanto dichiarato dagli stessi, sollevano espressamente le Organizzazioni da qualsiasi responsabilità derivante da errori, omissioni o asseverazioni non veritiere ai dati dichiarati nel presente atto.",
+  "firme": [
+   "Il dichiarante",
+   "Il dichiarante"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "L'Organizzazione …………………… in persona di …………………… e l'Organizzazione …………………… in persona di ……………………, firmatarie dell'Accordo territoriale per il Comune di Monza, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTANO che i contenuti economici, rientranti nei valori di fascia della zona di appartenenza dell'immobile, e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Monza in vigore dal 01/05/2024."
+  ],
+  "firme_attestazione": [
+   "L'Organizzazione proprietari",
+   "L'Organizzazione inquilini"
+  ],
+  "nota_zone": "La zona si ricava dalla mappa del Comune di Monza (allegato 4/B): zona 1 in rosa, zona 2 bordata in verde, il resto è zona 3.",
+  "etichetta_conteggio": "TOTALE ELEMENTI D"
+ }
+}
