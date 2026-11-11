@@ -1,0 +1,842 @@
+{
+ "accordo": {
+  "codice": "taranto-2018-05-29",
+  "modello": "taranto-2018",
+  "comune": "Taranto",
+  "provincia": "TA",
+  "titolo": "Accordo territoriale per il Comune di Taranto",
+  "data": "2018-05-29",
+  "data_testo": "29 maggio 2018",
+  "deposito": "Comune di Taranto",
+  "deposito_data": "29.05.2018",
+  "protocollo": "85807",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Taranto del 29 maggio 2018: durata di tre anni dal deposito, ormai trascorsi.</strong> Resta in vigore fino alla firma di un nuovo accordo, che finora non risulta. Le fasce possono essere aggiornate al 75% dell'ISTAT (art. 10): qui trovi i valori originali, chiedi all'associazione che attesta il contratto se ne applica di aggiornati.",
+  "firmatari_proprieta": [
+   "A.S.P.P.I.",
+   "CONFEDILIZIA Taranto",
+   "FEDERPROPRIETÀ",
+   "U.P.P.I.",
+   "CONFABITARE"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA Taranto",
+   "SICET CISL Taranto",
+   "UNIAT UIL Taranto",
+   "UNIONE INQUILINI"
+  ],
+  "nota": "Firmato il 29/05/2018 e protocollato lo stesso giorno dall'Archivio generale del Comune di Taranto (prot. n. 85807, numero scritto a mano sul timbro). Sostituisce l'accordo del 16/12/2008 (prot. 7096). Durata tre anni dal giorno dopo il deposito, poi resta in vigore fino al nuovo: a novembre 2026 non ne risultano di più recenti. 9 aree omogenee (l'area i ha tre sottozone con valori propri), valori mensili al mq (allegato 1). ASSO CASA compare nell'intestazione ma la sua riga di firma è vuota.",
+  "fonte": "PDF dell'accordo protocollato (34 pagine, con gli allegati 1, 3, 4, 5 e 6) pubblicato da SUNIA nazionale e SUNIA Puglia; allegati 3-6 anche in file separati sul sito di Unione Inquilini."
+ },
+ "esempio_zona": "l'area omogenea dal quartiere",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "conteggio",
+  "zone": [
+   {
+    "codice": "a",
+    "nome": "a) Paolo VI",
+    "nota": "Area omogenea a) Paolo VI. Il confine passa a metà della strada; un edificio attraversato dal confine sta tutto nell'area di valore maggiore.",
+    "fasce": {
+     "normale": [
+      [
+       1.7,
+       2.1
+      ],
+      [
+       2.2,
+       3.2
+      ],
+      [
+       3.7,
+       4.9
+      ]
+     ],
+     "degrado": [
+      [
+       1.615,
+       1.995
+      ],
+      [
+       2.2,
+       3.2
+      ],
+      [
+       3.7,
+       4.9
+      ]
+     ],
+     "pregio": [
+      [
+       1.7,
+       2.1
+      ],
+      [
+       2.2,
+       3.2
+      ],
+      [
+       3.885,
+       5.145
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "b",
+    "nome": "b) Tamburi-Croce",
+    "nota": "Area omogenea b) Tamburi-Croce. Il confine passa a metà della strada; un edificio attraversato dal confine sta tutto nell'area di valore maggiore.",
+    "fasce": {
+     "normale": [
+      [
+       1.6,
+       2.2
+      ],
+      [
+       2.3,
+       2.9
+      ],
+      [
+       3.3,
+       4.7
+      ]
+     ],
+     "degrado": [
+      [
+       1.52,
+       2.09
+      ],
+      [
+       2.3,
+       2.9
+      ],
+      [
+       3.3,
+       4.7
+      ]
+     ],
+     "pregio": [
+      [
+       1.6,
+       2.2
+      ],
+      [
+       2.3,
+       2.9
+      ],
+      [
+       3.465,
+       4.935
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "c",
+    "nome": "c) Lido Azzurro",
+    "nota": "Area omogenea c) Lido Azzurro. Il confine passa a metà della strada; un edificio attraversato dal confine sta tutto nell'area di valore maggiore.",
+    "fasce": {
+     "normale": [
+      [
+       1.8,
+       2.3
+      ],
+      [
+       2.4,
+       2.9
+      ],
+      [
+       3.3,
+       3.8
+      ]
+     ],
+     "degrado": [
+      [
+       1.71,
+       2.185
+      ],
+      [
+       2.4,
+       2.9
+      ],
+      [
+       3.3,
+       3.8
+      ]
+     ],
+     "pregio": [
+      [
+       1.8,
+       2.3
+      ],
+      [
+       2.4,
+       2.9
+      ],
+      [
+       3.465,
+       3.99
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "d",
+    "nome": "d) Isola-Porta Napoli",
+    "nota": "Area omogenea d) Isola-Porta Napoli. Il confine passa a metà della strada; un edificio attraversato dal confine sta tutto nell'area di valore maggiore.",
+    "fasce": {
+     "normale": [
+      [
+       1.3,
+       1.7
+      ],
+      [
+       1.8,
+       2.8
+      ],
+      [
+       3.3,
+       4.0
+      ]
+     ],
+     "degrado": [
+      [
+       1.235,
+       1.615
+      ],
+      [
+       1.8,
+       2.8
+      ],
+      [
+       3.3,
+       4.0
+      ]
+     ],
+     "pregio": [
+      [
+       1.3,
+       1.7
+      ],
+      [
+       1.8,
+       2.8
+      ],
+      [
+       3.465,
+       4.2
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "e",
+    "nome": "e) San Vito-Lama-Carelli",
+    "nota": "Area omogenea e) San Vito-Lama-Carelli. Il confine passa a metà della strada; un edificio attraversato dal confine sta tutto nell'area di valore maggiore.",
+    "fasce": {
+     "normale": [
+      [
+       1.9,
+       2.3
+      ],
+      [
+       2.4,
+       3.8
+      ],
+      [
+       4.2,
+       6.0
+      ]
+     ],
+     "degrado": [
+      [
+       1.805,
+       2.185
+      ],
+      [
+       2.4,
+       3.8
+      ],
+      [
+       4.2,
+       6.0
+      ]
+     ],
+     "pregio": [
+      [
+       1.9,
+       2.3
+      ],
+      [
+       2.4,
+       3.8
+      ],
+      [
+       4.41,
+       6.3
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "f",
+    "nome": "f) Talsano-San Donato",
+    "nota": "Area omogenea f) Talsano-San Donato. Il confine passa a metà della strada; un edificio attraversato dal confine sta tutto nell'area di valore maggiore.",
+    "fasce": {
+     "normale": [
+      [
+       1.9,
+       2.4
+      ],
+      [
+       2.5,
+       3.8
+      ],
+      [
+       4.2,
+       6.0
+      ]
+     ],
+     "degrado": [
+      [
+       1.805,
+       2.28
+      ],
+      [
+       2.5,
+       3.8
+      ],
+      [
+       4.2,
+       6.0
+      ]
+     ],
+     "pregio": [
+      [
+       1.9,
+       2.4
+      ],
+      [
+       2.5,
+       3.8
+      ],
+      [
+       4.41,
+       6.3
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "g",
+    "nome": "g) Salinella-Taranto 2 (contrada Toscano)",
+    "nota": "Area omogenea g) Salinella-Taranto 2 (contrada Toscano). Il confine passa a metà della strada; un edificio attraversato dal confine sta tutto nell'area di valore maggiore.",
+    "fasce": {
+     "normale": [
+      [
+       1.9,
+       2.3
+      ],
+      [
+       2.4,
+       3.9
+      ],
+      [
+       4.3,
+       5.8
+      ]
+     ],
+     "degrado": [
+      [
+       1.805,
+       2.185
+      ],
+      [
+       2.4,
+       3.9
+      ],
+      [
+       4.3,
+       5.8
+      ]
+     ],
+     "pregio": [
+      [
+       1.9,
+       2.3
+      ],
+      [
+       2.4,
+       3.9
+      ],
+      [
+       4.515,
+       6.09
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "h",
+    "nome": "h) Borgo",
+    "nota": "Area omogenea h) Borgo, delimitata da corso Due Mari, via Roma, lungomare Vittorio Emanuele III, viale Virgilio angolo via Leonida, via Pitagora. Il confine passa a metà della strada; un edificio attraversato dal confine sta tutto nell'area di valore maggiore.",
+    "fasce": {
+     "normale": [
+      [
+       2.1,
+       2.8
+      ],
+      [
+       2.9,
+       4.3
+      ],
+      [
+       4.7,
+       6.8
+      ]
+     ],
+     "degrado": [
+      [
+       1.995,
+       2.66
+      ],
+      [
+       2.9,
+       4.3
+      ],
+      [
+       4.7,
+       6.8
+      ]
+     ],
+     "pregio": [
+      [
+       2.1,
+       2.8
+      ],
+      [
+       2.9,
+       4.3
+      ],
+      [
+       4.935,
+       7.14
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "i1",
+    "nome": "i) Italia-Montegranaro",
+    "nota": "Area omogenea i), sottozona Italia-Montegranaro (riga «Montegranaro» dell'allegato 1). Il confine passa a metà della strada; un edificio attraversato dal confine sta tutto nell'area di valore maggiore.",
+    "fasce": {
+     "normale": [
+      [
+       2.2,
+       2.9
+      ],
+      [
+       3.2,
+       4.1
+      ],
+      [
+       4.7,
+       6.5
+      ]
+     ],
+     "degrado": [
+      [
+       2.09,
+       2.755
+      ],
+      [
+       3.2,
+       4.1
+      ],
+      [
+       4.7,
+       6.5
+      ]
+     ],
+     "pregio": [
+      [
+       2.2,
+       2.9
+      ],
+      [
+       3.2,
+       4.1
+      ],
+      [
+       4.935,
+       6.825
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "i2",
+    "nome": "i) Solito-Corvisea",
+    "nota": "Area omogenea i), sottozona Solito-Corvisea (riga «Solito Corvisea» dell'allegato 1). Il confine passa a metà della strada; un edificio attraversato dal confine sta tutto nell'area di valore maggiore.",
+    "fasce": {
+     "normale": [
+      [
+       2.1,
+       2.9
+      ],
+      [
+       3.1,
+       4.0
+      ],
+      [
+       4.4,
+       5.8
+      ]
+     ],
+     "degrado": [
+      [
+       1.995,
+       2.755
+      ],
+      [
+       3.1,
+       4.0
+      ],
+      [
+       4.4,
+       5.8
+      ]
+     ],
+     "pregio": [
+      [
+       2.1,
+       2.9
+      ],
+      [
+       3.1,
+       4.0
+      ],
+      [
+       4.62,
+       6.09
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "i3",
+    "nome": "i) Tre Carrare-Battisti",
+    "nota": "Area omogenea i), sottozona Tre Carrare-Battisti (riga «Cesare Battisti» dell'allegato 1). Il confine passa a metà della strada; un edificio attraversato dal confine sta tutto nell'area di valore maggiore.",
+    "fasce": {
+     "normale": [
+      [
+       2.0,
+       2.9
+      ],
+      [
+       3.0,
+       3.8
+      ],
+      [
+       4.4,
+       5.5
+      ]
+     ],
+     "degrado": [
+      [
+       1.9,
+       2.755
+      ],
+      [
+       3.0,
+       3.8
+      ],
+      [
+       4.4,
+       5.5
+      ]
+     ],
+     "pregio": [
+      [
+       2.0,
+       2.9
+      ],
+      [
+       3.0,
+       3.8
+      ],
+      [
+       4.62,
+       5.775
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "A",
+    "B",
+    "C"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    5,
+    9
+   ],
+   "conta": {
+    "da": 0,
+    "a": 25
+   },
+   "nota_soglie": "contano solo i parametri da 1 a 26, e solo se installati a spese del proprietario"
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Parametri (art. 11): contano solo se installati a spese del proprietario"
+   },
+   {
+    "da": 26,
+    "titolo": "Condizioni generali dello stabile (art. 13): non contano per la fascia; fino a 4 lo stabile è in degrado, da 8 è di pregio"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Categoria catastale A/1, A/2, A/3, A/7, A/8 o A/9"
+   },
+   {
+    "testo": "Autorimessa singola o posto auto"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato"
+   },
+   {
+    "testo": "Porta blindata o cancello, e doppi vetri"
+   },
+   {
+    "testo": "Impianto di condizionamento"
+   },
+   {
+    "testo": "Area verde condominiale o esclusiva"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Vasca idromassaggio"
+   },
+   {
+    "testo": "Filodiffusione audio"
+   },
+   {
+    "testo": "Citofono e/o videocitofono"
+   },
+   {
+    "testo": "Cantina"
+   },
+   {
+    "testo": "Attico, terrazzo o balcone"
+   },
+   {
+    "testo": "Edificio completamente ristrutturato nei 5 anni prima dell'inizio del contratto"
+   },
+   {
+    "testo": "Allacciamento al gas metano"
+   },
+   {
+    "testo": "Portierato"
+   },
+   {
+    "testo": "Assenza di barriere architettoniche"
+   },
+   {
+    "testo": "Classe energetica dell'alloggio D"
+   },
+   {
+    "testo": "Antenna centralizzata"
+   },
+   {
+    "testo": "Alloggio nuovo, completamente ultimato e abitabile, entro 10 anni dal contratto di acquisto"
+   },
+   {
+    "testo": "Impianto antincendio condominiale"
+   },
+   {
+    "testo": "Impianto di allarme"
+   },
+   {
+    "testo": "Cassetta di sicurezza o cassaforte"
+   },
+   {
+    "testo": "Autoclave e/o riserva idrica"
+   },
+   {
+    "testo": "Costruzione successiva al 1990"
+   },
+   {
+    "testo": "Impianto elettrico a norma certificato"
+   },
+   {
+    "testo": "Stabile: portone d'ingresso funzionante, con apertura da ogni appartamento"
+   },
+   {
+    "testo": "Stabile: citofono funzionante"
+   },
+   {
+    "testo": "Stabile: pavimento dell'androne senza evidenti sconnessioni"
+   },
+   {
+    "testo": "Stabile: pareti di androne e scale senza intonaco staccato"
+   },
+   {
+    "testo": "Stabile: gradini senza marmi visibilmente sconnessi"
+   },
+   {
+    "testo": "Stabile: ringhiere stabili"
+   },
+   {
+    "testo": "Stabile: finestroni delle scale che chiudono bene, senza infiltrazioni d'acqua"
+   },
+   {
+    "testo": "Stabile: porte dei locali condominiali funzionanti (ascensore, autoclave, sala riunioni)"
+   },
+   {
+    "testo": "Stabile: assenza di barriere architettoniche"
+   },
+   {
+    "testo": "Stabile: impianti conformi alle norme vigenti"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile (senza muri, palchi morti e parti alte meno di 2,40 m)",
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Autorimessa a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto in autorimessa di uso comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazze, cantine e accessori simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Area scoperta in uso esclusivo del conduttore",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota millesimale)",
+     "coeff": 0.1
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 38,
+     "perc": 20,
+     "limite": 38
+    },
+    {
+     "fino": 55,
+     "perc": 15,
+     "limite": 55
+    }
+   ],
+   "nota": "Superficie convenzionale fino a 38 mq: +20%, senza superare 38 mq; fino a 55 mq: +15%, senza superare 55 mq. Se si affitta una porzione, il canone dell'intero alloggio si divide in proporzione alla superficie della parte locata, considerando anche le parti condivise."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "testo": "Appartamento di pregio: categoria A/1, A/7, A/8 o A/9",
+    "nome": "appartamento di pregio",
+    "perc": 8
+   },
+   {
+    "chiave": "ammobiliato",
+    "tipo": "scelta",
+    "testo": "Arredamento (art. 14)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato: almeno cucina, camera da letto e bagno",
+      "perc": 15
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato (fino a 55 mq bastano cucina, camera e bagno completi)",
+      "perc": 30
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Pregio e arredamento si sommano e si applicano una sola volta ai valori della fascia (l'arredamento vale «fino al» 30% o 15%). La maggiorazione per la durata e la riduzione del 5% per gli studenti universitari si applicano poi sul canone. Per gli studenti, l'alloggio arredato deve avere una scrivania in ogni camera da letto. Transitori: fino a 18 mesi, con i valori della fascia. Lo stato dello stabile si ricava dalle 10 condizioni: fino a 4 presenti valori della fascia A ridotti del 5%, da 8 in su valori della fascia C aumentati del 5%.",
+  "durata": {
+   "4": 4,
+   "5": 6,
+   "6": 7
+  },
+  "durata_dopo": true,
+  "contratto": {
+   "studenti": -5
+  },
+  "combinazione": "somma",
+  "avvisi": [],
+  "tabella_conta": {
+   "da": 26,
+   "a": 35,
+   "soglie": [
+    4,
+    7
+   ],
+   "valori": [
+    "degrado",
+    "normale",
+    "pregio"
+   ],
+   "titolo": "Stato dello stabile (art. 13)",
+   "testi": {
+    "degrado": "degrado, valori della fascia A -5%",
+    "normale": "condizioni normali",
+    "pregio": "pregio, valori della fascia C +5%"
+   }
+  }
+ },
+ "pdf": {
+  "allegato": "Allegato 5",
+  "titolo": "Richiesta di attestazione di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Taranto sottoscritto il 29/05/2018 (depositato il 29/05/2018, prot. n. 85807)",
+  "titolo_elementi": "Parametri (art. 11) e condizioni generali dello stabile (art. 13)",
+  "dichiarazione": "Il richiedente comunica, sotto la propria responsabilità, gli elementi ed i dati oggettivi dell'immobile sopra riportati e che il contratto di locazione è stato stipulato utilizzando il tipo di contratto allegato al D.M. 16/01/2017.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE DI RISPONDENZA EX D.M. 16/01/2017 (Allegato 3)",
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo Territoriale per il Comune di Taranto stipulato il 29/05/2018, in persona del Presidente pro-tempore, sulla base degli elementi oggettivi dichiarati dal richiedente, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto sopra descritto e qui allegato corrispondono a quanto previsto dall'Accordo Territoriale vigente per il Comune di Taranto, stipulato in data 29/05/2018.",
+   "Taranto, lì ……………"
+  ],
+  "firme_attestazione": [
+   "Per ricevuta, il richiedente",
+   "L'Organizzazione"
+  ],
+  "nota_zone": "L'area omogenea si ricava dal quartiere (art. 1 e allegato 1). Il confine passa a metà della strada; un edificio attraversato dal confine sta tutto nell'area di valore maggiore."
+ }
+}
