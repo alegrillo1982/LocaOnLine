@@ -270,11 +270,14 @@
   // L'accordo lo carica la pagina (pagina-canone.js) e lo annuncia con
   // l'evento "accordo": a ogni cambio di comune la scheda riparte da capo.
 
+  // il comune si ricorda a parte: per le citta' con una scheda propria "accordo" resta vuoto
+  let comuneAttivo = "";
   function traccia(evento) {
-    try { if (window.gtag) gtag("event", evento, { comune: accordo ? accordo.accordo.comune : "" }); } catch (e) { /* mai bloccare */ }
+    try { if (window.gtag) gtag("event", evento, { comune: comuneAttivo }); } catch (e) { /* mai bloccare */ }
   }
 
   window.addEventListener("accordo", (e) => {
+    comuneAttivo = e.detail.accordo.comune || "";
     // un accordo con un suo "modello" (Milano) ha la sua scheda: questa si nasconde
     if (e.detail.accordo.modello) { accordo = null; ultimo = null; modulo.hidden = true; return; }
     modulo.hidden = false;

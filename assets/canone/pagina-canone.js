@@ -117,7 +117,22 @@
       return;
     }
     sceltaComune.dataset.prima = sceltaComune.value;
+    misura("canone_comune_scelto", { comune: comuneDi(sceltaComune.value) });
     caricaAccordo(sceltaComune.value);
+  });
+
+  // Misura dell'uso (GA4): quale comune si sceglie e se la scheda si compila
+  // davvero. Solo azioni della persona (isTrusted): i cambi fatti dal codice
+  // non contano. Una volta per comune a ogni visita della pagina.
+  const comuneDi = (codice) => { const v = indice && indice.comuni.find((c) => c.accordo === codice); return v ? v.comune : codice || ""; };
+  function misura(evento, dati) {
+    try { if (window.gtag) gtag("event", evento, Object.assign({ comune: comuneDi(attuale) }, dati || {})); } catch (e) { /* mai bloccare */ }
+  }
+  const compilata = new Set();
+  for (const tipo of ["input", "change"]) $("pannello-scheda").addEventListener(tipo, (e) => {
+    if (!e.isTrusted || !attuale || compilata.has(attuale)) return;
+    compilata.add(attuale);
+    misura("canone_scheda_compilata");
   });
   sceltaComune.addEventListener("focus", () => { sceltaComune.dataset.prima = sceltaComune.value; });
 
