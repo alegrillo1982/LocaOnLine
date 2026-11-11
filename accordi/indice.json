@@ -99,6 +99,25 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorino-2024-04-15-firmatari.pdf?alt=media&token=de082124-59a0-450d-be9e-6e9f1e384571"
     }
    ]
+  },
+  {
+   "comune": "Palermo",
+   "provincia": "PA",
+   "accordo": "palermo-2020-01-23",
+   "sottoscritto": "23 gennaio 2020",
+   "depositato": "23 gennaio 2020",
+   "zone": 19,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpalermo-2020-01-23-accordo.pdf?alt=media&token=5a8c7a65-c0ca-4fcf-bb68-cfa1667b6b66",
+   "documenti": [
+    {
+     "nome": "Accordo firmato pagine 1 6",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpalermo-2020-01-23-accordo-firmato-pagine-1-6.pdf?alt=media&token=fb4d2d15-aad8-4d77-b3aa-84872cf3fde4"
+    },
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpalermo-2020-01-23-accordo.pdf?alt=media&token=5a8c7a65-c0ca-4fcf-bb68-cfa1667b6b66"
+    }
+   ]
   }
  ]
 }

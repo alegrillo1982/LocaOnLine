@@ -12,18 +12,18 @@
 
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Canone concordato Roma, Milano, Napoli, Torino: calcolo</title>
-  <meta name="description" content="Calcola il canone concordato con gli accordi di Roma, Milano, Napoli e Torino e compila il contratto 3+2, studenti o transitorio, in PDF o Word."/>
+  <title>Canone concordato: calcolo e contratto, Roma e grandi città</title>
+  <meta name="description" content="Calcola il canone concordato con gli accordi di Roma, Milano, Napoli, Torino e Palermo e compila il contratto 3+2 o transitorio, in PDF o Word."/>
   <link rel="canonical" href="https://locaonline.it/canone-concordato.html"/>
   <meta name="robots" content="index, follow"/>
 
   <meta property="og:type"        content="website"/>
   <meta property="og:url"         content="https://locaonline.it/canone-concordato.html"/>
-  <meta property="og:title"       content="Canone concordato Roma, Milano, Napoli, Torino: calcolo"/>
-  <meta property="og:description" content="Calcola il canone concordato con gli accordi di Roma, Milano, Napoli e Torino e compila il contratto 3+2, studenti o transitorio, in PDF o Word."/>
+  <meta property="og:title"       content="Canone concordato: calcolo e contratto, Roma e grandi città"/>
+  <meta property="og:description" content="Calcola il canone concordato con gli accordi di Roma, Milano, Napoli, Torino e Palermo e compila il contratto 3+2 o transitorio, in PDF o Word."/>
   <meta property="og:locale"      content="it_IT"/>
   <meta name="twitter:card"       content="summary"/>
-  <meta name="twitter:title"      content="Canone concordato Roma, Milano, Napoli, Torino: calcolo"/>
+  <meta name="twitter:title"      content="Canone concordato: calcolo e contratto, Roma e grandi città"/>
 
   <script type="application/ld+json">
   {
@@ -52,7 +52,7 @@
           {
             "@type": "Question",
             "name": "Cos'è la scheda di calcolo del canone concordato?",
-            "acceptedAnswer": { "@type": "Answer", "text": "È il modulo previsto dall'accordo territoriale del Comune (per Roma l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024): parte dalla zona, dalla superficie convenzionale e dalle dotazioni dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato." }
+            "acceptedAnswer": { "@type": "Answer", "text": "È il modulo previsto dall'accordo territoriale del Comune (per Roma l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024, per Palermo l'attestazione di rispondenza dell'accordo del 23 gennaio 2020): parte dalla zona, dalla superficie convenzionale e dalle dotazioni dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato." }
           },
           {
             "@type": "Question",
@@ -614,6 +614,87 @@
       <ul id="torino-avvisi" class="avvisi-canone" aria-live="polite"></ul>
     </section>
   </form>
+  <!-- Scheda per l'accordo di Palermo (2020): riproduce l'"Attestazione di
+       rispondenza" (allegato E). Visibile solo con l'accordo di Palermo. -->
+  <form id="scheda-palermo" class="scheda-palermo" autocomplete="off" onsubmit="return false" hidden>
+
+    <section class="sezione-canone">
+      <h2>Contratto</h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Tipo di contratto">
+        <label><input type="radio" name="tipo" value="agevolato" checked> Agevolato (3 + 2)</label>
+        <label><input type="radio" name="tipo" value="transitorio"> Transitorio</label>
+        <label><input type="radio" name="tipo" value="studenti"> Studenti universitari</label>
+      </div>
+      <div class="griglia-campi">
+        <label class="solo-agevolato">Durata<select name="durata_anni">
+          <option value="3">3 + 2 anni</option><option value="4">4 + 2 anni (+3%)</option><option value="5">5 + 2 anni (+5%)</option><option value="6">6 + 2 anni (+7%)</option></select></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Parti e immobile</h2>
+      <div class="griglia-campi">
+        <label class="largo">Locatore<input type="text" name="locatore"></label>
+        <label>C.F. locatore<input type="text" name="locatore_cf" class="maiuscolo"></label>
+        <label class="largo">Conduttore<input type="text" name="conduttore"></label>
+        <label>C.F. conduttore<input type="text" name="conduttore_cf" class="maiuscolo"></label>
+        <label>Comune<input type="text" name="citta"></label>
+        <label class="largo">Via e numero civico<input type="text" name="indirizzo"></label>
+        <label>Piano<input type="text" name="piano"></label>
+        <label>Interno<input type="text" name="interno"></label>
+      </div>
+      <div class="griglia-campi stacco">
+        <label class="largo">Microzona (quartiere)<select name="microzona"><option value="">scegli…</option></select></label>
+        <label class="largo">Epoca di costruzione o ristrutturazione totale<select name="epoca">
+          <option value="">scegli…</option><option value="dopo_2000">dopo l'1/1/2000</option><option value="dal_1970">dall'1/1/1970 al 31/12/1999</option><option value="prima_1970">prima del 31/12/1969</option></select></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Superficie <small>mq calpestabili, al netto dei muri</small></h2>
+      <div class="scorre">
+        <table class="tabella-superfici superfici-palermo">
+          <thead><tr><th>Voce</th><th>Mq</th><th>Mq conv.</th></tr></thead>
+          <tbody id="palermo-superfici"></tbody>
+          <tfoot><tr><th colspan="2">Superficie utile</th><td class="totale"><b id="palermo-totale">—</b> mq</td></tr></tfoot>
+        </table>
+      </div>
+      <p class="nota-copia stacco" id="palermo-sup-nota"></p>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Elementi oggettivi <small id="palermo-conteggio"></small></h2>
+      <div id="palermo-elementi" class="caselle colonna elementi"></div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Aumenti <small>non si sommano: vale il maggiore</small></h2>
+      <div class="caselle colonna">
+        <label><input type="checkbox" name="arredato"> Alloggio totalmente ammobiliato <small>(fino a +15%)</small></label>
+        <label><input type="checkbox" name="storico"> Immobile storico o di interesse architettonico, totalmente ristrutturato <small>(fino a +40%)</small></label>
+      </div>
+      <div class="griglia-campi stacco">
+        <label class="se-arredato">Ammobiliato + %<input type="text" name="arredato_perc" inputmode="decimal" placeholder="15"></label>
+        <label class="se-storico">Storico ristrutturato + %<input type="text" name="storico_perc" inputmode="decimal" placeholder="40"></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone calcolo">
+      <h2>Calcolo del canone</h2>
+      <dl class="righe-calcolo">
+        <dt>Microzona</dt><dd id="palermo-esito-zona">—</dd>
+        <dt>Sub-fascia</dt><dd id="palermo-esito-fascia">—</dd>
+        <dt><label for="palermo-valore">Valore al mq al mese (€)</label></dt>
+        <dd><input type="text" id="palermo-valore" name="valore_mq" inputmode="decimal" class="campo-numero"> <small id="palermo-valore-nota"></small></dd>
+        <dt>Canone base</dt><dd id="palermo-esito-base">—</dd>
+        <dt>Aumento</dt><dd id="palermo-esito-aumento">—</dd>
+        <dt>Canone mensile massimo</dt><dd><b id="palermo-esito-massimo">—</b></dd>
+        <dt><label for="palermo-pattuito">Canone mensile pattuito (€)</label></dt>
+        <dd><input type="text" id="palermo-pattuito" name="canone_mensile" inputmode="decimal" class="campo-numero"></dd>
+      </dl>
+      <ul id="palermo-avvisi" class="avvisi-canone" aria-live="polite"></ul>
+    </section>
+  </form>
   <div class="barra-canone" role="region" aria-label="Riepilogo del canone">
     <span>Canone massimo <b id="barra-massimo">—</b><span class="solo-largo"> al mese</span></span>
     <span id="stato-salvataggio" class="stato-salvataggio" aria-live="polite"></span>
@@ -859,7 +940,7 @@
             <summary class="font-semibold cursor-pointer">Cos'è la scheda di calcolo del canone concordato?</summary>
             <p class="text-sm text-[#4A5568] leading-relaxed mt-2">È il modulo previsto dall'accordo territoriale del Comune (per Roma
               l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo
-              del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024): parte dalla zona, dalla superficie convenzionale e dalle dotazioni
+              del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024, per Palermo l'attestazione di rispondenza dell'accordo del 23 gennaio 2020): parte dalla zona, dalla superficie convenzionale e dalle dotazioni
               dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato.</p>
           </details>
           <details class="bg-white border border-slate-200 rounded-xl p-4">
@@ -1018,6 +1099,9 @@
   <script src="assets/canone/canone-torino.js"></script>
   <script src="assets/canone/stampa-torino.js"></script>
   <script src="assets/canone/scheda-torino.js"></script>
+  <script src="assets/canone/canone-palermo.js"></script>
+  <script src="assets/canone/stampa-palermo.js"></script>
+  <script src="assets/canone/scheda-palermo.js"></script>
   <script src="assets/canone/modulo-contratto.js"></script>
   <script src="assets/canone/pagina-canone.js"></script>
   <script type="module" src="assets/canone/salva-canone.js"></script>

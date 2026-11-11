@@ -1,0 +1,241 @@
+{
+ "accordo": {
+  "codice": "palermo-2020-01-23",
+  "modello": "palermo-2020",
+  "comune": "Palermo",
+  "provincia": "PA",
+  "titolo": "Accordo territoriale per il Comune di Palermo",
+  "data": "2020-01-23",
+  "data_testo": "23 gennaio 2020",
+  "deposito": "prot. 66085",
+  "deposito_data": "23.01.2020",
+  "protocollo": "66085",
+  "ufficio": "Segreteria Generale del Comune di Palermo",
+  "ufficio_breve": "Segreteria Generale",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Palermo del 23 gennaio 2020: validità di tre anni dal deposito, scaduta il 24 gennaio 2023.</strong> Resta in vigore finché non viene firmato quello nuovo; nel frattempo i valori minimi e massimi <strong>possono essere aggiornati al 75% della variazione ISTAT</strong> (art. 20). Qui trovi i valori originali: chiedi all'associazione che attesta il contratto quelli aggiornati.",
+  "firmatari_proprieta": [
+   "ASPPI",
+   "CASAMIA",
+   "UNIONCASA",
+   "CONFABITARE",
+   "CONFAPPI",
+   "APE CONFEDILIZIA",
+   "APPC",
+   "UPPI",
+   "FEDERPROPRIETA'"
+  ],
+  "firmatari_conduttori": [
+   "S.I.C.E.T.",
+   "U.N.I.A.T. Sicilia",
+   "S.U.N.I.A.",
+   "A.N.I.A.",
+   "UNIONE INQUILINI"
+  ],
+  "nota": "Accordo depositato il 23/01/2020 (prot. 66085, come riportato nei moduli del Comune di Palermo). Sostituisce l'accordo del 29/12/2009. Durata 3 anni dal deposito, in vigore fino al nuovo (art. 20). Testo completo da copia pubblica (incentivisicilia.it); prime 6 pagine firmate da UPPI Sicilia.",
+  "fonte": "UPPI Sicilia (accordo firmato, pp. 1-6) e testo completo con allegati A-H."
+ },
+ "esempio_zona": "scegli la microzona dal quartiere (allegato B)",
+ "regole": {
+  "unita": "mensile",
+  "microzone": [
+   [
+    "1",
+    "Centro storico – Danisinni",
+    2.1,
+    4.9
+   ],
+   [
+    "2",
+    "Oreto – Montegrappa – Guadagna",
+    2.4,
+    4.1
+   ],
+   [
+    "3",
+    "Calatafimi – Villatasca",
+    3.0,
+    5.1
+   ],
+   [
+    "4",
+    "Altarello – Noce – Boccadifalco – Uditore – Baida – Passo di Rigano – Borgo Nuovo – CEP",
+    2.5,
+    5.3
+   ],
+   [
+    "5",
+    "Malfitano – Serradifalco – Olivuzza",
+    2.8,
+    5.0
+   ],
+   [
+    "6",
+    "Libertà – Politeama – S. Francesco Carella",
+    3.8,
+    7.7
+   ],
+   [
+    "7",
+    "Porto – Montalbo – Ammiraglio Rizzo – Acquasanta",
+    2.5,
+    5.0
+   ],
+   [
+    "8",
+    "S. Erasmo – Romagnolo – Sperone",
+    2.5,
+    4.5
+   ],
+   [
+    "9",
+    "Croce Verde – Ciaculli – Monte Grifone",
+    1.9,
+    4.1
+   ],
+   [
+    "10",
+    "Chiavelli – Bonagia – Falsomiele – Molara – Villagrazia – Rocca",
+    2.3,
+    4.3
+   ],
+   [
+    "11",
+    "Villabianca – Sperlinga – Sampolo – Sciuti – De Gasperi",
+    3.6,
+    6.9
+   ],
+   [
+    "12",
+    "Arenella – Vergine Maria – Favorita",
+    2.6,
+    4.5
+   ],
+   [
+    "13",
+    "Bandita – Acqua dei Corsari",
+    2.1,
+    4.1
+   ],
+   [
+    "14",
+    "Strasburgo – Belgio – Resuttana – San Lorenzo Quartieri",
+    3.0,
+    6.0
+   ],
+   [
+    "15",
+    "Bellolampo – Piano dell'Occhio",
+    2.0,
+    4.0
+   ],
+   [
+    "16",
+    "Cardillo – Villa Scalea",
+    2.8,
+    5.2
+   ],
+   [
+    "17",
+    "Pallavicino – S. Filippo Neri – Fondo Patti – Trapani Pescia",
+    2.7,
+    5.4
+   ],
+   [
+    "18",
+    "Addaura – Mondello – Castelforte",
+    4.1,
+    7.1
+   ],
+   [
+    "19",
+    "Sferracavallo – Tommaso Natale – Partanna Mondello",
+    2.7,
+    5.2
+   ]
+  ],
+  "sub_elementi": [
+   5,
+   10
+  ],
+  "epoca": {
+   "dopo_2000": [
+    8,
+    16,
+    28
+   ],
+   "dal_1970": [
+    3,
+    6,
+    20
+   ],
+   "prima_1970": [
+    -10,
+    2,
+    15
+   ]
+  },
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 7
+  },
+  "arredato": 15,
+  "storico_ristrutturato": 40,
+  "superficie": {
+   "accessori_comunicanti": 0.5,
+   "accessori_non": 0.25,
+   "balconi": [
+    25,
+    0.3,
+    0.1
+   ],
+   "balconi_non": [
+    25,
+    0.15,
+    0.05
+   ],
+   "scoperta": [
+    0.1,
+    0.02
+   ],
+   "pertinenze_massimo": 0.5,
+   "piccoli": [
+    50,
+    1.25
+   ],
+   "grandi": [
+    [
+     120,
+     150,
+     0.75
+    ],
+    [
+     150,
+     null,
+     0.25
+    ]
+   ]
+  },
+  "alloggio_sociale": -20
+ },
+ "elementi": [
+  "Presenza di 1 autorimessa singola o posto auto",
+  "Presenza di cortile comune",
+  "Presenza di una cantina o sottotetto o soffitta",
+  "Presenza d'impianto di videosorveglianza condominiale e/o allarme privato",
+  "Presenza d'impianto di riscaldamento",
+  "Comodità di salita (necessaria la presenza di ascensore se unità oltre il 2° piano - 3° f.t.)",
+  "Presenza d'area verde di pertinenza",
+  "Presenza di impianti di energia rinnovabile o risparmio energetico",
+  "Presenza di facilitazioni per superamento barriere architettoniche",
+  "Presenza d'impianto di condizionamento",
+  "Presenza di parziale dotazione di mobilio",
+  "Ubicazione entro 200 m da servizi di mobilità pubblica",
+  "Presenza di doppi servizi",
+  "Presenza d'allacciamento alla rete gas",
+  "Presenza di porta blindata",
+  "Presenza di doppi vetri",
+  "APE classe A, B o C"
+ ]
+}

@@ -184,6 +184,10 @@
 .cc .scheda-torino:not(.parziale) .solo-parziale, .cc .scheda-torino.parziale .no-parziale,
 .cc .scheda-torino:not(.con-pregio) .se-pregio { display: none; }
 .cc .superfici-torino .risultato { font-family: var(--dati); font-size: 14px; white-space: nowrap; }
+/* scheda di Palermo (scheda-palermo.js) */
+.cc .scheda-palermo:not(.tipo-agevolato) .solo-agevolato, .cc .scheda-palermo:not(.con-arredato) .se-arredato,
+.cc .scheda-palermo:not(.con-storico) .se-storico { display: none; }
+.cc .superfici-palermo .risultato { font-family: var(--dati); font-size: 14px; white-space: nowrap; }
 .cc .griglia-campi .cerca-via { position: relative; min-width: 0; }
 .cc .griglia-campi .cerca-via .risultati-zona { top: 100%; margin-top: 4px; }
 
@@ -194,6 +198,8 @@
   .cc .tabella-superfici.superfici-napoli tr[data-riga] td:nth-of-type(3)::before { content: "Mq convenzionali"; }
   .cc .tabella-superfici.superfici-torino tr[data-riga] td:nth-of-type(1)::before { content: "Mq"; }
   .cc .tabella-superfici.superfici-torino tr[data-riga] td:nth-of-type(3)::before { content: "Mq convenzionali"; }
+  .cc .tabella-superfici.superfici-palermo tr[data-riga] td:nth-of-type(1)::before { content: "Mq"; }
+  .cc .tabella-superfici.superfici-palermo tr[data-riga] td:nth-of-type(2)::before { content: "Mq convenzionali"; }
   .cc .sezione-canone { padding: 16px 14px; }
   .cc .griglia-campi .largo { grid-column: 1 / -1; }
   .cc .parametri { grid-template-columns: 1fr; }
