@@ -1,0 +1,482 @@
+{
+ "accordo": {
+  "codice": "pistoia-2026-10-19",
+  "modello": "pistoia-2026",
+  "comune": "Pistoia",
+  "provincia": "PT",
+  "titolo": "Accordo territoriale sulle locazioni a canone concordato nel Comune di Pistoia",
+  "data": "2026-10-19",
+  "data_testo": "19 ottobre 2026",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2029-10-31",
+  "firmatari_proprieta": [
+   "A.S.P.P.I. Pistoia",
+   "Confabitare Pistoia",
+   "Confedilizia Pistoia (A.P.E.)",
+   "U.P.P.I. Pistoia",
+   "Unioncasa Pistoia"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A. Pistoia Prato",
+   "S.I.C.E.T. Pistoia",
+   "U.N.I.A.T. Pistoia",
+   "ASSOCASA Toscana"
+  ],
+  "nota": "Firmato a Pistoia il 19/10/2026 da tutte le nove organizzazioni (data scritta a mano a pagina 1); sostituisce l'accordo depositato il 21/06/2018. In vigore dal 1° novembre 2026 per tre anni (fino al 31/10/2029) e comunque fino al successivo (art. 2): senza rinnovo i valori di tutte le fasce e zone aumentano del 3% ogni tre anni, il primo alla scadenza del triennio. L'originale è conservato presso l'UPPI di Pistoia (via Amati 26) e trasmesso via PEC al Comune da SUNIA Pistoia Prato o ASSOCASA Toscana: data e protocollo del deposito non sono pubblicati. Valori al mq al mese (art. 6) per 4 zone omogenee (allegato H, mappa catastale colorata) e 3 fasce A, B, C secondo i requisiti dell'art. 8. Superficie convenzionale dalla visura catastale (superficie totale) o con il Modello I (allegato G, L. 138/1998). Canone aggiornabile ogni anno del 75% della variazione ISTAT, salvo cedolare secca (art. 4).",
+  "fonte": "SUNIA nazionale, pagina «Accordi territoriali di Pistoia» (aggiornata il 02/11/2026): «Accordo-Territoriale-2026_PISTOIA.pdf», scansione firmata di 45 pagine con testo e allegati A (contratto agevolato), B (transitorio), C (studenti), D (oneri accessori), E (commissione di conciliazione), F (attestazioni unilaterale e bilaterale con Modello I), G (Modello I) e H (mappa delle zone)."
+ },
+ "esempio_zona": "la zona dalla mappa dell'allegato H (centro storico, prima periferia, seconda periferia o montana)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro storico",
+    "nota": "Zona 1 - Centro storico: la zona dentro le mura, colorata in arancione nella mappa dell'allegato H. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      5.35,
+      6.79
+     ],
+     [
+      6.8,
+      8.22
+     ],
+     [
+      8.23,
+      9.89
+     ],
+     [
+      8.23,
+      9.89
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Prima periferia",
+    "nota": "Zona 2 - Prima periferia: l'area intorno al centro storico, racchiusa dalla linea verde nella mappa dell'allegato H. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      5.12,
+      6.5
+     ],
+     [
+      6.51,
+      8.17
+     ],
+     [
+      8.18,
+      9.37
+     ],
+     [
+      8.18,
+      9.37
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - Seconda periferia",
+    "nota": "Zona 3 - Seconda periferia: il resto della pianura e delle colline, fino alla linea rosa nella mappa dell'allegato H. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.91,
+      5.23
+     ],
+     [
+      5.24,
+      6.73
+     ],
+     [
+      6.74,
+      8.05
+     ],
+     [
+      6.74,
+      8.05
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Montana",
+    "nota": "Zona 4 - Montana: dal confine con la zona 3 (linea rosa nella mappa dell'allegato H) fino alla fine del territorio comunale, verso nord. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.28,
+      4.26
+     ],
+     [
+      4.27,
+      5.23
+     ],
+     [
+      5.24,
+      6.5
+     ],
+     [
+      5.24,
+      6.5
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "C",
+    "B",
+    "A",
+    "A"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 2,
+      "tutti": true
+     },
+     {
+      "da": 3,
+      "a": 26,
+      "n": 3
+     }
+    ],
+    [
+     {
+      "da": 27,
+      "a": 27,
+      "tutti": true
+     },
+     {
+      "da": 3,
+      "a": 19,
+      "n": 3
+     }
+    ],
+    [
+     {
+      "da": 3,
+      "a": 19,
+      "n": 7
+     }
+    ]
+   ],
+   "blocca": [
+    {
+     "da": 28,
+     "a": 28,
+     "fino": 1,
+     "avviso": "Sopra 100 mq la fascia A richiede anche cucina con finestra e doppi servizi: si resta nella fascia B (art. 8)."
+    }
+   ],
+   "conta": {
+    "da": 3,
+    "a": 26
+   },
+   "nota": "Fascia B: le condizioni 1, 2 e 3 e almeno 3 requisiti fra 4 e 27. Fascia A: almeno 7 requisiti fra 4 e 20, oppure alloggio costruito o completamente ristrutturato negli ultimi 12 anni (28) con almeno 3 requisiti fra 4 e 20; sopra 100 mq servono anche cucina con finestra e doppi servizi (se mancano, segna 29: resta la fascia B). Fascia C: tutti gli altri.",
+   "nota_pdf": "Fascia B: condizioni 1-3 e almeno 3 requisiti fra 4-27. Fascia A: almeno 7 requisiti fra 4-20, oppure costruito o ristrutturato negli ultimi 12 anni (28) e almeno 3 fra 4-20; oltre 100 mq serve anche cucina finestrata e doppi servizi (29 = mancano). Fascia C: gli altri (art. 8)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Fascia B: servono queste condizioni…"
+   },
+   {
+    "da": 3,
+    "titolo": "Requisiti che contano per le fasce A e B"
+   },
+   {
+    "da": 20,
+    "titolo": "Requisiti che contano solo per la fascia B"
+   },
+   {
+    "da": 27,
+    "titolo": "Fascia A: costruzione recente e alloggi grandi"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Alloggio con uno standard di fruibilità di livello medio (in normali condizioni d'uso)"
+   },
+   {
+    "testo": "Riscaldamento presente in almeno la metà dei vani"
+   },
+   {
+    "testo": "Ascensore, se l'alloggio è oltre il terzo piano (se è più in basso, segna comunque)"
+   },
+   {
+    "testo": "Autorimessa singola o garage (coperto e utilizzabile per l'auto)"
+   },
+   {
+    "testo": "Ascensore o montascale"
+   },
+   {
+    "testo": "Posto auto esclusivo, anche scoperto (accatastato)"
+   },
+   {
+    "testo": "Riscaldamento autonomo (con libretto di manutenzione) o impianto di nuova generazione (pompa di calore)"
+   },
+   {
+    "testo": "Area scoperta esclusiva"
+   },
+   {
+    "testo": "Condizionatori in almeno la metà dei vani"
+   },
+   {
+    "testo": "Antenna satellitare propria o condominiale"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Aree scoperte condominiali"
+   },
+   {
+    "testo": "Cantina"
+   },
+   {
+    "testo": "Soffitta"
+   },
+   {
+    "testo": "Impianto di allarme o di videosorveglianza, anche condominiale"
+   },
+   {
+    "testo": "Colonnina di ricarica per auto elettriche"
+   },
+   {
+    "testo": "Fibra o internet satellitare"
+   },
+   {
+    "testo": "Pannelli solari per l'acqua calda e/o fotovoltaici"
+   },
+   {
+    "testo": "Riscaldamento condominiale con termovalvole (norma UNI 10200 o successive)"
+   },
+   {
+    "testo": "Parcheggio condominiale"
+   },
+   {
+    "testo": "Terrazzo a livello"
+   },
+   {
+    "testo": "Citofono"
+   },
+   {
+    "testo": "Antenna TV singola"
+   },
+   {
+    "testo": "Antenna TV centralizzata, anche non satellitare"
+   },
+   {
+    "testo": "Autoclave"
+   },
+   {
+    "testo": "Infissi nuovi, installati da non più di 10 anni"
+   },
+   {
+    "testo": "Alloggio costruito o completamente ristrutturato negli ultimi 12 anni (fa fede la fine lavori o l'abitabilità, o la dichiarazione di un tecnico)"
+   },
+   {
+    "testo": "Alloggio di oltre 100 mq senza cucina con finestra o senza doppi servizi (esclude la fascia A)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale totale in visura (o locali principali e accessori diretti, scale interne comprese)",
+   "voci": [
+    {
+     "chiave": "accessori",
+     "testo": "Locali accessori comunicanti (soffitte, cantine e simili, alti più di 1,5 m)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "accessori_nc",
+     "testo": "Locali accessori non comunicanti (soffitte, cantine e simili, alti più di 1,5 m)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "garage",
+     "testo": "Garage, posto auto esclusivo o assegnato",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazzi comunicanti (30% fino a 25 mq, poi 10%)",
+     "coeff": 0.3,
+     "scaglione": [
+      25,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "chiave": "balconi_nc",
+     "testo": "Balconi e terrazzi non comunicanti (15% fino a 25 mq, poi 5%)",
+     "coeff": 0.15,
+     "scaglione": [
+      25,
+      0.15,
+      0.05
+     ]
+    },
+    {
+     "chiave": "scoperte",
+     "testo": "Aree scoperte esclusive (10% fino alla superficie dell'alloggio, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    }
+   ],
+   "nota": "Con la visura catastale (estratta prima della firma del contratto) scrivi nel primo rigo la superficie totale indicata nella visura: comprende già balconi, terrazzi e aree scoperte, quindi aggiungi sotto solo le pertinenze accatastate a parte (garage e posti auto 50%, cantine e soffitte 50% se comunicanti, 25% se no). Se la superficie reale è diversa da quella catastale serve la dichiarazione di un tecnico; senza mq in visura si misura la planimetria e si compilano tutte le righe del Modello I (art. 7, allegato G). Per l'aumento sotto 60 mq conta solo la parte abitativa."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "recesso",
+    "tipo": "spunta",
+    "testo": "L'inquilino può lasciare l'alloggio con un preavviso più breve di sei mesi, senza gravi motivi (non si somma con l'aumento per gli alloggi sotto 60 mq)",
+    "nome": "preavviso di recesso ridotto",
+    "perc": 5,
+    "superficie": {
+     "su": "base",
+     "da": 60
+    }
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (APE)",
+    "nome": "classe energetica",
+    "nessuna": "classe F o G, o senza APE",
+    "opzioni": [
+     {
+      "valore": "A",
+      "testo": "classe A",
+      "perc": 13
+     },
+     {
+      "valore": "B",
+      "testo": "classe B",
+      "perc": 8
+     },
+     {
+      "valore": "C",
+      "testo": "classe C",
+      "perc": 5
+     },
+     {
+      "valore": "D",
+      "testo": "classe D",
+      "perc": 5
+     },
+     {
+      "valore": "E",
+      "testo": "classe E",
+      "perc": 2
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento (fino al 15% secondo quanto è arredato l'alloggio)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "100",
+      "testo": "completamente arredato",
+      "perc": 15
+     },
+     {
+      "valore": "75",
+      "testo": "arredato al 75%",
+      "perc": 11.25
+     },
+     {
+      "valore": "50",
+      "testo": "arredato al 50%",
+      "perc": 7.5
+     },
+     {
+      "valore": "25",
+      "testo": "arredato al 25%",
+      "perc": 3.75
+     }
+    ]
+   },
+   {
+    "chiave": "camere",
+    "tipo": "spunta",
+    "testo": "Affitto di singole camere, con meno di 60 mq in uso esclusivo (in alto la superficie dell'intero alloggio, poi segna «porzione» con i mq delle camere più la loro quota delle parti comuni)",
+    "nome": "camere singole",
+    "perc": 15
+   },
+   {
+    "chiave": "agenzia",
+    "tipo": "spunta",
+    "testo": "Alloggio affittato con la garanzia di un'Agenzia Casa Sociale del territorio",
+    "nome": "garanzia Agenzia Casa Sociale",
+    "perc": -35,
+    "dopo": true
+   }
+  ],
+  "correttivi_superficie": [
+   {
+    "nome": "alloggio sotto 60 mq",
+    "a": 59.999,
+    "perc": 30,
+    "su": "base"
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti si sommano e si applicano al valore al mq (art. 9 c. 9). Durata 4, 5 o 6 anni e più: +4, +5 o +6%. Alloggi sotto 60 mq di parte abitativa: fino a +30%, che non si somma con gli aumenti per la durata e per il preavviso ridotto (art. 9 c. 5). Garanzia di un'Agenzia Casa Sociale: -35%. Per i contratti transitori e per studenti valgono gli stessi valori e aumenti. Il minimo si può ridurre solo a favore dell'inquilino (art. 6). Gli alloggi di housing sociale seguono regole proprie (-40%, art. 9 c. 7 e art. 14).",
+  "durata": {
+   "4": 4,
+   "5": 5,
+   "6": 6
+  },
+  "durata_piccoli": {
+   "soglia": 60,
+   "4": 0,
+   "5": 0,
+   "6": 0
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato F",
+  "titolo": "Attestazione unilaterale di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale sulle locazioni a canone concordato nel Comune di Pistoia (PT), firmato il 19/10/2026, in vigore dal 01/11/2026",
+  "titolo_superficie": "MODELLO «I» - PROSPETTO DI CALCOLO DELLA SUPERFICIE DELL'UNITÀ IMMOBILIARE (L. 138 DEL 23/03/1998)",
+  "titolo_elementi": "Requisiti dell'alloggio (art. 8)",
+  "dichiarazione": "Il dichiarante dichiara che i dati sopra comunicati sono stati dallo stesso rilevati e verificati. Pertanto, riconoscendo che la presente Attestazione è rilasciata, secondo quanto previsto dal D.M. 16/1/2017, sulla base di quanto dichiarato dallo stesso, solleva espressamente l'Organizzazione da qualsiasi responsabilità derivante da errori, omissioni o asserzioni non veritiere relative ai dati dichiarati nel presente atto. Il dichiarante autorizza al trattamento dei dati personali ai sensi della normativa vigente.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Pistoia, in persona di ……………………………, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Pistoia depositato in data ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla mappa dell'allegato H dell'accordo: centro storico (arancione), prima periferia (dentro la linea verde), seconda periferia (fino alla linea rosa), montana (oltre la linea rosa)."
+ }
+}
