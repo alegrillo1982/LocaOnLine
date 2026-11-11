@@ -82,6 +82,14 @@
       const voci = totale - righe[0].convenzionale, tetto = cent(U * R.tetto_voci);
       if (voci > tetto) { totale = cent(righe[0].convenzionale + tetto); note.push(`Pertinenze contate fino a ${virgola(tetto)} mq (metà della superficie dell'alloggio).`); }
     }
+    // es. Livorno: la superficie convenzionale oltre certe soglie conta solo in parte, a scaglioni
+    const ST = R.scaglioni_totale;
+    if (ST && totale > ST[0].oltre) {
+      const prima = totale; let tt = ST[0].oltre;
+      ST.forEach((sc, k) => { const fine = k + 1 < ST.length ? ST[k + 1].oltre : Infinity; tt += Math.max(0, Math.min(prima, fine) - sc.oltre) * sc.perc / 100; });
+      totale = cent(tt);
+      note.push(`Superficie oltre ${virgola(ST[0].oltre, 0)} mq ridotta a scaglioni: da ${virgola(prima)} a ${virgola(totale)} mq.`);
+    }
     const ct = (R.correzioni_totale || []).find((x) => (R.correzioni_totale_su === "base" ? U : totale) <= x.fino);
     if (ct && ct.perc) {
       const prima = totale;

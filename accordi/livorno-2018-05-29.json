@@ -1,0 +1,403 @@
+{
+ "accordo": {
+  "codice": "livorno-2018-05-29",
+  "modello": "livorno-2018",
+  "comune": "Livorno",
+  "provincia": "LI",
+  "titolo": "Accordo territoriale del Comune di Livorno (protocollo di intesa per la stipula dei contratti di locazione)",
+  "data": "2018-05-29",
+  "data_testo": "29 maggio 2018",
+  "deposito": "Comune di Livorno",
+  "deposito_data": "30.05.2018",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Livorno del 29 maggio 2018.</strong> Era valido tre anni dal deposito, ma non è stato rinnovato: il Comune di Livorno lo indica ancora come l'accordo in vigore (bando 2025). I valori sono quelli originali del 2018.",
+  "firmatari_proprieta": [
+   "A.S.P.P.I.",
+   "CONFEDILIZIA",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "A.N.I.A.",
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T.",
+   "UNIONE INQUILINI"
+  ],
+  "nota": "Testo definitivo stipulato il 29/05/2018 (aggiorna gli accordi del 2/4/2007 e del 16/11/2011) e protocollato dal Comune di Livorno il 30/05/2018 secondo il comunicato del Comune; numero di protocollo non pubblicato (in copertina c'è solo quello del 2007, prot. gen. 26339 del 02.04.2007). Presa d'atto dell'assessore alla casa Leonardo Apolloni. Validità tre anni dal deposito (art. 2), mai rinnovato: le istruzioni del Comune per il bando 2025 rinviano ancora agli accordi del 2018. Nell'elenco dei firmatari compare anche AS.I.A. USB (timbro, firma non leggibile con certezza). Valori mensili al mq per 5 zone e 3 tipi di alloggio (A, B, C); isola di Gorgona 1,727 €/mq. La cartografia e lo stradario citati all'art. 4 non sono nella copia pubblicata: i perimetri delle zone sono nell'art. 15.",
+  "fonte": "Copia firmata pubblicata da SUNIA (sunia.info, AccLivorno2018.pdf, 10 pagine, e AllLivorno2018.pdf, 25 pagine con contratti tipo e attestazioni) e identica da UPPI (uppi.it, sede di Livorno); comunicato del Comune di Livorno dell'8/6/2018 (gonews.it); istruzioni del bando affitti 2025 del Comune di Livorno."
+ },
+ "esempio_zona": "la zona dalla via (perimetri dell'art. 15)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "solo_massimo": true,
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "1. Pregio",
+    "nota": "Zona 1 - Pregio: lungomare e colline a sud. Perimetro: Viale Italia fino all'angolo di Via Funaioli, Via dei Pensieri (esclusa), Via degli Oleandri, Via De Sanctis, Via dell'Ardenza e Piazza Sforzini (escluse), Via Mondolfi (esclusa), ferrovia, Via Grotte delle Fate (esclusa), Via della Fontanella, Via di Collinet, Via di Monterotondo, Via del Pino, Via del Viperaio, Via del Malva, Via della Porcigliana, Via di Quercianella e abitato di Quercianella, Via Aurelia, Via del Littorale, Via Pigafetta, Viale Vespucci, Via Pendola, Viale di Antignano. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      5.39,
+      6.34
+     ],
+     [
+      6.16,
+      7.24
+     ],
+     [
+      7.04,
+      8.28
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "2. Centro",
+    "nota": "Zona 2 - Centro. Perimetro: Via Cialdini (dal 1 al 49), Via dell'Arsenale, Molo Mediceo, Scali della Darsena, Via della Cinta Esterna (esclusa), Via Forte S. Pietro, Scali del Teatro, Via S. Marco, Scali del Rifugio, Piazza dei Domenicani, Scali della Fortezza Nuova, Piazza della Repubblica (tutta), Scali Saffi, Piazza Cavour, Via Magenta, Piazza della Vittoria (dal 49 al 75), Via Marradi (1-117 e 2-46), Via Roma (1-11 e 2-90), Piazza Attias, Corso Mazzini (1-3 e 2-6), Via Ricasoli, Via Sardi, Via degli Apostoli, Scali d'Azeglio. Valori in euro al mq al mese (uguali alla zona 3).",
+    "fasce": [
+     [
+      4.25,
+      5.0
+     ],
+     [
+      4.68,
+      5.71
+     ],
+     [
+      5.55,
+      6.52
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "3. Semicentrale Sud",
+    "nota": "Zona 3 - Semicentrale Sud. Perimetro: Scali Manzoni, Scali Olandesi, Via Bosi, Piazza XX Settembre, Via Gazzarrini, Via del Voltone, Via Mentana, Via Sproni (1-35 e 2-50), Via Gramsci, Viale Petrarca e Viale Boccaccio (numeri pari), Via Nazario Sauro, Via Masaccio, Via Montelungo, Via dei Pensieri, Via Randaccio, Viale Italia, Via Fagni, Piazza Luigi Orlando, Via Levi, Via D'Alesio, Piazza Mazzini, Scali Novi Lena, Piazza Giovane Italia, Via Cialdini (tratto sud). Valori in euro al mq al mese (uguali alla zona 2).",
+    "fasce": [
+     [
+      4.25,
+      5.0
+     ],
+     [
+      4.68,
+      5.71
+     ],
+     [
+      5.55,
+      6.52
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "4. Semicentrale Nord/Est",
+    "nota": "Zona 4 - Semicentrale Nord/Est. Perimetro: Via della Cinta Esterna e Via Mastacchi (escluse), Via Provinciale Pisana (1-181 e 2-208), ferrovia, Via delle Sorgenti (1-203 e 2-238), Via di Salviano (1-127 e 2-176), Via Sicilia, Via Mondolfi (1-145 e 2-132), Via S. Martino, Via Galiberti, Via Ricci, Via Tarrini, Piazza Sforzini, Via dell'Ardenza, Via De Sanctis, Via Machiavelli, Via Caduti del Marzabotto, Via Cattaneo, Viale Boccaccio e Viale Petrarca (numeri dispari), Piazza Garibaldi, Scali delle Cantine, Scali del Pontino, Via Castelli, Via del Gasometro, Scali Cerere, Scali della Dogana d'Acqua. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.66,
+      4.43
+     ],
+     [
+      4.31,
+      5.07
+     ],
+     [
+      4.92,
+      5.79
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "5. Periferia",
+    "nota": "Zona 5 - Periferia: fino ai confini comunali. Perimetro: Porto industriale, Via della Cinta Esterna, Via Mastacchi, Via Provinciale Pisana (dal 183 e dal 210), ferrovia, Via Grotte delle Fate, e le vie delle colline escluse (Via della Fontanella, Via di Collinet, Via di Monterotondo, Via del Pino, Via del Viperaio, Via del Malva, Via della Porcigliana, Via di Quercianella, abitato di Quercianella: sono zona Pregio). Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.49,
+      4.14
+     ],
+     [
+      4.03,
+      4.74
+     ],
+     [
+      4.6,
+      5.41
+     ]
+    ]
+   },
+   {
+    "codice": "gorgona",
+    "nome": "Isola di Gorgona",
+    "nota": "Isola di Gorgona: valore unico di 1,727 euro al mq al mese per tutti gli alloggi (art. 5, punto 1).",
+    "fasce": [
+     [
+      1.727,
+      1.727
+     ],
+     [
+      1.727,
+      1.727
+     ],
+     [
+      1.727,
+      1.727
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "C",
+    "B",
+    "A"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 6,
+      "n": 5
+     },
+     {
+      "da": 1,
+      "a": 1,
+      "tutti": true
+     },
+     {
+      "da": 3,
+      "a": 3,
+      "tutti": true
+     }
+    ],
+    [
+     {
+      "da": 0,
+      "a": 6,
+      "n": 5
+     },
+     {
+      "da": 1,
+      "a": 1,
+      "tutti": true
+     },
+     {
+      "da": 3,
+      "a": 3,
+      "tutti": true
+     },
+     {
+      "da": 7,
+      "a": 8,
+      "n": 1
+     },
+     {
+      "da": 9,
+      "a": 12,
+      "n": 2
+     }
+    ]
+   ],
+   "conta": {
+    "da": 0,
+    "a": 12
+   },
+   "nota": "Tipo B: le caratteristiche da 1 a 7; con 3 o più mancanti l'alloggio è di tipo C (bagno interno e impianto elettrico servono comunque). Tipo A: le caratteristiche del tipo B, più la ristrutturazione o la costruzione negli ultimi 10 anni (8 o 9) e almeno 2 fra 10 e 13.",
+   "nota_pdf": "Tipo B: caratteristiche 1-7 (è di tipo C se ne mancano 3 o più; bagno e impianto elettrico sempre necessari). Tipo A: requisiti del tipo B, più 8 o 9 e almeno 2 fra 10-13 (art. 7)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Tipo B: dotazioni dell'alloggio"
+   },
+   {
+    "da": 7,
+    "titolo": "Tipo A: almeno una di queste due…"
+   },
+   {
+    "da": 9,
+    "titolo": "…e almeno 2 di queste"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Impianto di riscaldamento funzionante e a norma"
+   },
+   {
+    "testo": "Bagno dentro l'abitazione con lavandino, vasca o doccia, wc e bidet, con finestra o aerazione forzata"
+   },
+   {
+    "testo": "Impianto idrico idoneo ed efficiente"
+   },
+   {
+    "testo": "Impianto elettrico a norma"
+   },
+   {
+    "testo": "Ascensore, se l'alloggio è oltre il terzo piano fuori terra (se è più in basso, segna comunque)"
+   },
+   {
+    "testo": "Ambienti a norma secondo leggi e regolamenti"
+   },
+   {
+    "testo": "Infissi efficienti"
+   },
+   {
+    "testo": "Alloggio ristrutturato negli ultimi 10 anni (ristrutturazione documentabile)"
+   },
+   {
+    "testo": "Edificio costruito negli ultimi 10 anni (non edilizia convenzionata o sovvenzionata)"
+   },
+   {
+    "testo": "Doppi servizi, con il secondo bagno di almeno 3 apparecchi"
+   },
+   {
+    "testo": "Spazi esterni a uso esclusivo (terrazze, logge, giardino, cortile) oltre il 30% della superficie utile e di almeno 20 mq"
+   },
+   {
+    "testo": "Posto auto o garage a uso esclusivo"
+   },
+   {
+    "testo": "Vista su bellezze artistiche o paesaggistiche"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile dell'alloggio (calpestabile)",
+   "voci": [
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa singola, o posto auto scoperto esclusivo (accatastato a parte in C/6) o condominiale",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Balconi, terrazze, cantine e accessori simili",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Area scoperta di pertinenza a uso esclusivo",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale, quota secondo i millesimi (mq del verde x millesimi / 1000)",
+     "coeff": 0.1
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 55,
+     "perc": 15,
+     "limite": 55
+    }
+   ],
+   "nota": "Alloggi fino a 55 mq di superficie convenzionale: +15%, senza superare 55 mq. Oltre 100 mq la parte eccedente conta il 70% (oltre 140 mq l'accordo riduce del 15% la parte sopra 140: qui si applica il 70%, che dà un risultato più prudente). Tolleranza del 5% in più o in meno (art. 6).",
+   "scaglioni_totale": [
+    {
+     "oltre": 100,
+     "perc": 70
+    },
+    {
+     "oltre": 140,
+     "perc": 85
+    }
+   ]
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "testo": "Classe energetica (aumenta il valore massimo, art. 5)",
+    "nome": "classe energetica",
+    "nessuna": "E, F, G o senza APE",
+    "nessuna_breve": "nessuna maggiorazione",
+    "opzioni": [
+     {
+      "valore": "AB",
+      "testo": "classe A o B",
+      "perc": 10
+     },
+     {
+      "valore": "C",
+      "testo": "classe C",
+      "perc": 8
+     },
+     {
+      "valore": "D",
+      "testo": "classe D",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento (da elencare in una nota allegata al contratto)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "arredo completo",
+      "perc": 15
+     },
+     {
+      "valore": "parziale",
+      "testo": "arredo parziale (fino a +10%)",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "bagno_esterno",
+    "tipo": "spunta",
+    "testo": "Il bagno è fuori dall'abitazione",
+    "nome": "bagno esterno",
+    "perc": 0
+   }
+  ],
+  "tetto_minimo": {
+   "chiave": "bagno_esterno",
+   "perc": 0,
+   "avviso": "Con il bagno fuori dall'abitazione si applica il canone minimo della tabella C (art. 7)."
+  },
+  "nota_maggiorazioni": "Le maggiorazioni si sommano e valgono sul valore massimo: classe energetica A/B +10%, C +8%, D +5%; arredo completo +15%, parziale fino a +10%; durata 4+2 anni +3%, 5+2 +5%, 6+2 e oltre +6%. Transitori e studenti seguono le regole dei contratti agevolati. Il minimo è per gli alloggi in cattivo stato o senza riscaldamento e ascensore (dal terzo piano); d'accordo fra le parti il canone può scendere fino al 30% sotto (art. 5).",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 6
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Il valore minimo vale per gli alloggi in cattivo stato di manutenzione o senza riscaldamento e ascensore (dal terzo piano); d'accordo fra le parti il canone può anche scendere fino al 30% sotto quello calcolato (art. 5)."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale del Comune di Livorno, stipulato il 29/05/2018 e protocollato dal Comune di Livorno il 30/05/2018",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE CONVENZIONALE",
+  "titolo_elementi": "Classificazione dell'unità immobiliare (art. 7)",
+  "dichiarazione": "Il dichiarante dichiara che i dati sopra comunicati sono stati dallo stesso rilevati e verificati e, riconoscendo che la presente Attestazione è rilasciata secondo il D.M. 16/1/2017 sulla base di quanto dichiarato, solleva espressamente l'Organizzazione da qualsiasi responsabilità derivante da errori, omissioni o asserzioni non veritiere relative ai dati dichiarati.",
+  "firme": [],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Livorno, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Livorno, stipulato il 29/05/2018."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "L'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla via: i perimetri delle cinque zone sono nell'art. 15 dell'accordo (Pregio, Centro, Semicentrale Sud, Semicentrale Nord/Est, Periferia); l'isola di Gorgona ha un valore proprio."
+ }
+}

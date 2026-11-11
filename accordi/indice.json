@@ -682,6 +682,25 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fprato-2024-12-19-allegato-g-attestazione-bilaterale.pdf?alt=media&token=f875865f-3563-435f-bf5e-5b4d6b7bf83b"
     }
    ]
+  },
+  {
+   "comune": "Livorno",
+   "provincia": "LI",
+   "accordo": "livorno-2018-05-29",
+   "sottoscritto": "29 maggio 2018",
+   "depositato": "30 maggio 2018",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flivorno-2018-05-29-accordo.pdf?alt=media&token=60e80495-dcf7-4668-a8b6-129c8ab52cd9",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flivorno-2018-05-29-accordo.pdf?alt=media&token=60e80495-dcf7-4668-a8b6-129c8ab52cd9"
+    },
+    {
+     "nome": "Allegato 1 contratti tipo e attestazioni",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flivorno-2018-05-29-allegato-1-contratti-tipo-e-attestazioni.pdf?alt=media&token=4e5e4ea0-cbd9-46de-a84e-b6f9a46f9be3"
+    }
+   ]
   }
  ]
 }
