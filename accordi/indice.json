@@ -18,8 +18,25 @@
    "sottoscritto": "27 luglio 2023",
    "depositato": "",
    "zone": 5,
-   "pdf": "https://www.milanoabitare.org/documents/357714223/0/ACCORDO+LUGLIO+2023+CON+INTEGRAZIONE+SETT.+2023+.pdf/2ff7d8f7-4b3b-cc9d-d1d0-b65211c0af15?t=1745843696578",
-   "pdf_studenti": ""
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmilano-2023-07-27-accordo-con-integrazione-2023-09-20.pdf?alt=media&token=e02a5c78-fead-4c41-813d-f8c350e6749c",
+   "documenti": [
+    {
+     "nome": "Accordo con integrazione 2023 09 20",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmilano-2023-07-27-accordo-con-integrazione-2023-09-20.pdf?alt=media&token=e02a5c78-fead-4c41-813d-f8c350e6749c"
+    },
+    {
+     "nome": "Allegati stradario",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmilano-2023-07-27-allegati-stradario.pdf?alt=media&token=1fd0fb28-607b-414e-b9a2-ef28868eb11f"
+    },
+    {
+     "nome": "Allegato 2 valori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmilano-2023-07-27-allegato-2-valori.pdf?alt=media&token=7f91967b-5049-4886-a7ea-d7c34f3b6eb0"
+    },
+    {
+     "nome": "Stanze studenti",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmilano-2023-07-27-stanze-studenti.pdf?alt=media&token=5e98388f-7cb4-4690-a346-4f0145f5eaa3"
+    }
+   ]
   },
   {
    "comune": "Napoli",
@@ -28,8 +45,13 @@
    "sottoscritto": "29 aprile 2025",
    "depositato": "24 luglio 2025",
    "zone": 7,
-   "pdf": "https://static-www.comune.napoli.it/wp-content/uploads/2022/11/Accordo_Territoriale_24_07_2025_251001_124425__1_.pdf",
-   "pdf_studenti": ""
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnapoli-2025-04-29-accordo.pdf?alt=media&token=46a1d6d3-fa44-42a6-a18f-4aa4ae876c9c",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnapoli-2025-04-29-accordo.pdf?alt=media&token=46a1d6d3-fa44-42a6-a18f-4aa4ae876c9c"
+    }
+   ]
   },
   {
    "comune": "Torino",
@@ -38,8 +60,45 @@
    "sottoscritto": "6 dicembre 2022, aggiornato al 15 aprile 2024",
    "depositato": "15 aprile 2024",
    "zone": 5,
-   "pdf": "https://www.comune.torino.it/media/4177",
-   "pdf_studenti": ""
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorino-2024-04-15-accordo.pdf?alt=media&token=95ecb4db-978e-4137-b8d4-feff533dc8e4",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorino-2024-04-15-accordo.pdf?alt=media&token=95ecb4db-978e-4137-b8d4-feff533dc8e4"
+    },
+    {
+     "nome": "Allegato 1 vie",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorino-2024-04-15-allegato-1-vie.pdf?alt=media&token=c2add35f-4abf-481c-839b-64d42c56dab5"
+    },
+    {
+     "nome": "Allegato 10 attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorino-2024-04-15-allegato-10-attestazione.pdf?alt=media&token=9f1bb973-d3be-414c-8d50-5bdf3085bc3e"
+    },
+    {
+     "nome": "Allegato 12 arredo minimo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorino-2024-04-15-allegato-12-arredo-minimo.pdf?alt=media&token=253d3fc0-a30a-49d5-bec9-604fd5d42a8c"
+    },
+    {
+     "nome": "Allegato 13 doppia vidimazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorino-2024-04-15-allegato-13-doppia-vidimazione.pdf?alt=media&token=5a96bf13-0c14-4ba6-9694-931949c8f859"
+    },
+    {
+     "nome": "Allegato 2 valori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorino-2024-04-15-allegato-2-valori.pdf?alt=media&token=a9db992e-7717-45c0-8f09-ff7bb171bc04"
+    },
+    {
+     "nome": "Allegato 3 valori studenti",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorino-2024-04-15-allegato-3-valori-studenti.pdf?alt=media&token=e92a2bd1-f119-42d2-9807-599f9aa08e38"
+    },
+    {
+     "nome": "Allegato 9 attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorino-2024-04-15-allegato-9-attestazione.pdf?alt=media&token=38bd6ec8-73e5-467a-8461-3264a69e0cbd"
+    },
+    {
+     "nome": "Firmatari",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorino-2024-04-15-firmatari.pdf?alt=media&token=de082124-59a0-450d-be9e-6e9f1e384571"
+    }
+   ]
   }
  ]
 }
