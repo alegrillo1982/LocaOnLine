@@ -265,7 +265,7 @@
     ricalcola();
   });
 
-  window.SchedaMilano = {
+  const api = window.SchedaMilano = {
     attiva: () => !!accordo,
     ultimo: () => ultimo, accordo: () => accordo, carica, creaPDF, nomePDF,
     leggi: () => (accordo ? leggi() : null),
@@ -276,4 +276,5 @@
               r.canone_massimo ? `max € ${v(r.canone_massimo)}` : ""].filter(Boolean).join(" · ");
     },
   };
+  (window.SchedeCitta = window.SchedeCitta || []).push(api);
 })();

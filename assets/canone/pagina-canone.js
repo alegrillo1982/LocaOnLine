@@ -99,7 +99,9 @@
       // ?comune=roma sceglie il comune dall'indirizzo della pagina
       const voluto = new URLSearchParams(location.search).get("comune");
       const trovato = voluto && comuni.find((c) => c.comune.toLowerCase() === voluto.toLowerCase());
-      if (trovato) sceltaComune.value = trovato.accordo;
+      // senza ?comune= si parte da Roma (la citta' dei clienti), non dalla prima in ordine alfabetico
+      const predefinito = comuni.find((c) => c.comune === "Roma") || comuni[0];
+      sceltaComune.value = (trovato || predefinito).accordo;
       sceltaComune.dataset.prima = sceltaComune.value;
       return caricaAccordo(sceltaComune.value);
     })

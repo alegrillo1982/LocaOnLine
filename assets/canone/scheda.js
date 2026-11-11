@@ -225,8 +225,9 @@
   // ------------------------------------------------------------------ PDF
   // Si crea qui, nel browser: la scheda com'e' adesso sullo schermo.
   let caratteri = null;
-  // l'accordo di Milano ha la sua scheda (scheda-milano.js): qui si passa a lei
-  const milano = () => (window.SchedaMilano && window.SchedaMilano.attiva() ? window.SchedaMilano : null);
+  // le citta' con una scheda propria (Milano, Napoli: scheda-milano.js,
+  // scheda-napoli.js) si registrano in SchedeCitta: qui si passa a quella attiva
+  const milano = () => (window.SchedeCitta || []).find((x) => x.attiva()) || null;
   async function creaPDF() {
     if (milano()) return milano().creaPDF();
     if (window.caricaLibrerie) await window.caricaLibrerie("pdf");

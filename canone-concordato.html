@@ -12,18 +12,18 @@
 
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Canone concordato Roma e Milano: calcolo e contratto</title>
-  <meta name="description" content="Calcola il canone concordato con gli accordi di Roma e Milano e compila il contratto 3+2, per studenti o transitorio, in PDF o Word."/>
+  <title>Canone concordato Roma, Milano, Napoli: calcolo e contratto</title>
+  <meta name="description" content="Calcola il canone concordato con gli accordi di Roma, Milano e Napoli e compila il contratto 3+2, studenti o transitorio, in PDF o Word."/>
   <link rel="canonical" href="https://locaonline.it/canone-concordato.html"/>
   <meta name="robots" content="index, follow"/>
 
   <meta property="og:type"        content="website"/>
   <meta property="og:url"         content="https://locaonline.it/canone-concordato.html"/>
-  <meta property="og:title"       content="Canone concordato Roma e Milano: calcolo e contratto"/>
-  <meta property="og:description" content="Calcola il canone concordato con gli accordi di Roma e Milano e compila il contratto 3+2, per studenti o transitorio, in PDF o Word."/>
+  <meta property="og:title"       content="Canone concordato Roma, Milano, Napoli: calcolo e contratto"/>
+  <meta property="og:description" content="Calcola il canone concordato con gli accordi di Roma, Milano e Napoli e compila il contratto 3+2, studenti o transitorio, in PDF o Word."/>
   <meta property="og:locale"      content="it_IT"/>
   <meta name="twitter:card"       content="summary"/>
-  <meta name="twitter:title"      content="Canone concordato Roma e Milano: calcolo e contratto"/>
+  <meta name="twitter:title"      content="Canone concordato Roma, Milano, Napoli: calcolo e contratto"/>
 
   <script type="application/ld+json">
   {
@@ -52,7 +52,7 @@
           {
             "@type": "Question",
             "name": "Cos'è la scheda di calcolo del canone concordato?",
-            "acceptedAnswer": { "@type": "Answer", "text": "È il modulo previsto dall'accordo territoriale del Comune (per Roma l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo del 27 luglio 2023): parte dalla zona, dalla superficie convenzionale e dalle dotazioni dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato." }
+            "acceptedAnswer": { "@type": "Answer", "text": "È il modulo previsto dall'accordo territoriale del Comune (per Roma l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025): parte dalla zona, dalla superficie convenzionale e dalle dotazioni dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato." }
           },
           {
             "@type": "Question",
@@ -395,6 +395,119 @@
       <ul id="milano-avvisi" class="avvisi-canone" aria-live="polite"></ul>
     </section>
   </form>
+  <!-- Scheda per l'accordo di Napoli (2025): riproduce la "Scheda determinativa
+       del canone concordato" (allegato H). Visibile solo con l'accordo di Napoli. -->
+  <form id="scheda-napoli" class="scheda-napoli" autocomplete="off" onsubmit="return false" hidden>
+
+    <section class="sezione-canone">
+      <h2>Contratto</h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Tipo di contratto">
+        <label><input type="radio" name="tipo" value="agevolato" checked> Abitativo (3 + 2)</label>
+        <label><input type="radio" name="tipo" value="studenti"> Studenti universitari</label>
+        <label><input type="radio" name="tipo" value="transitorio"> Transitorio</label>
+      </div>
+      <div class="griglia-campi">
+        <label class="solo-agevolato">Durata<select name="durata_anni">
+          <option value="3">3 + 2 anni</option><option value="4">4 + 2 anni (+2%)</option><option value="5">5 + 2 anni (+4%)</option>
+          <option value="6">6 + 2 anni (+6%)</option><option value="7">7 + 2 anni (+8%)</option><option value="8">8 + 2 anni (+10%)</option>
+          <option value="9">9 + 2 anni o più (+12%)</option></select></label>
+        <label class="no-agevolato">Durata in mesi<input type="text" name="mesi" inputmode="numeric"></label>
+      </div>
+      <div class="scelta-tipo stacco" role="radiogroup" aria-label="Locazione">
+        <label><input type="radio" name="locazione" value="intera" checked> Locazione intera</label>
+        <label><input type="radio" name="locazione" value="parziale"> Locazione parziale</label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Parti e immobile</h2>
+      <div class="griglia-campi">
+        <label class="largo">Locatore<input type="text" name="locatore"></label>
+        <label class="largo">Conduttore<input type="text" name="conduttore"></label>
+        <label>Comune<input type="text" name="citta"></label>
+        <label class="largo">Via e numero civico<input type="text" name="indirizzo"></label>
+      </div>
+      <h3 class="sotto">Dati catastali <small>dalla visura: servono per trovare l'area</small></h3>
+      <div class="griglia-campi">
+        <label>Sezione urbana<select name="sezione"><option value="">scegli…</option></select></label>
+        <label>Foglio<input type="text" name="foglio" inputmode="numeric"></label>
+        <label>Particella<input type="text" name="particella" inputmode="numeric"></label>
+        <label>Subalterno<input type="text" name="subalterno" inputmode="numeric"></label>
+      </div>
+      <p id="napoli-area" class="zona-scelta" aria-live="polite"></p>
+      <div id="napoli-strade" class="caselle colonna stacco" hidden></div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Superficie convenzionale</h2>
+      <div class="scorre">
+        <table class="tabella-superfici superfici-napoli">
+          <thead><tr><th>Voce</th><th>Mq</th><th>Coeff.</th><th>Mq conv.</th></tr></thead>
+          <tbody id="napoli-superfici"></tbody>
+          <tfoot><tr><th colspan="3">Totale superficie</th><td class="totale"><b id="napoli-totale">—</b> mq</td></tr></tfoot>
+        </table>
+      </div>
+      <div class="griglia-campi stacco">
+        <label>Verde condominiale (mq)<input type="text" name="verde_mq" inputmode="decimal"></label>
+        <label>Millesimi di proprietà<input type="text" name="verde_millesimi" inputmode="decimal"></label>
+        <label class="solo-parziale">Superficie locata (mq)<input type="text" name="superficie_locata" inputmode="decimal"></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Elementi caratteristici <small id="napoli-conteggio"></small></h2>
+      <div id="napoli-elementi" class="caselle colonna elementi"></div>
+      <div class="griglia-campi stacco">
+        <label>Classe energetica<select name="classe"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option value="altra">E, F o G</option></select></label>
+      </div>
+      <div class="caselle stacco"><label><input type="checkbox" name="classe_A_2013"> Classe A con APE rilasciata dopo l'1/1/2013 <small>(fascia comunque la 4^)</small></label></div>
+      <h3 class="sotto">Stato di conservazione dell'unità abitativa</h3>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Stato di conservazione">
+        <label><input type="radio" name="stato" value="ottimo"> Ottimo</label>
+        <label><input type="radio" name="stato" value="normale" checked> Normale</label>
+        <label><input type="radio" name="stato" value="mediocre"> Mediocre</label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Maggiorazioni e riduzioni <small>in % del valore al mq annuo</small></h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Arredo">
+        <label><input type="radio" name="arredo" value="no" checked> Non ammobiliato</label>
+        <label class="solo-agevolato"><input type="radio" name="arredo" value="parziale"> Parzialmente (cucina e camera)</label>
+        <label><input type="radio" name="arredo" value="completo"> Ammobiliato</label>
+      </div>
+      <div class="griglia-campi stacco correttivi-napoli">
+        <label class="se-arredo">Ammobiliato + %<input type="text" name="c_arredo" inputmode="decimal"><small data-max="arredo"></small></label>
+        <label class="solo-transitorio">Contratto transitorio + %<input type="text" name="c_transitorio" inputmode="decimal"><small>max 20%</small></label>
+        <label>Ampia veduta libera + %<input type="text" name="c_veduta" inputmode="decimal"><small>max 10%</small></label>
+        <label class="se-pregio">Strada di pregio ± %<input type="text" name="c_pregio" inputmode="decimal"><small data-max="pregio"></small></label>
+        <label class="se-non-pregio">Strada non di pregio − %<input type="text" name="c_non_pregio" inputmode="decimal"><small>riduzione max 30%</small></label>
+        <label class="se-piccoli">Superficie sotto 80 mq + %<input type="text" name="c_piccoli" inputmode="decimal"><small data-max="piccoli"></small></label>
+        <label class="se-grandi">Superficie oltre 130 mq − %<input type="text" name="c_grandi" inputmode="decimal"><small>riduzione max 30%</small></label>
+        <label>Impianti risparmio energetico + %<input type="text" name="c_risparmio" inputmode="decimal"><small>max 10%</small></label>
+        <label>Area giardinata (edif. uni/plurifamiliare) + %<input type="text" name="c_giardino" inputmode="decimal"><small>max 30%</small></label>
+      </div>
+      <div class="caselle stacco"><label><input type="checkbox" name="basso"> Piano terra su fronte strada, "basso napoletano" <small>(riduzione dal 5% al 10%)</small></label>
+        <label class="se-basso con-campo">− <input type="text" name="c_basso" inputmode="decimal" size="3"> %</label></div>
+    </section>
+
+    <section class="sezione-canone calcolo">
+      <h2>Calcolo del canone</h2>
+      <dl class="righe-calcolo">
+        <dt>Area omogenea</dt><dd id="napoli-esito-area">—</dd>
+        <dt>Fascia</dt><dd id="napoli-esito-fascia">—</dd>
+        <dt><label for="napoli-valore">Valore annuo concordato (€/mq)</label></dt>
+        <dd><input type="text" id="napoli-valore" name="valore_mq" inputmode="decimal" class="campo-numero"> <small id="napoli-valore-nota"></small></dd>
+        <dt>Maggiorazioni e riduzioni</dt><dd id="napoli-esito-correttivi">—</dd>
+        <dt>Valore annuo applicato</dt><dd id="napoli-esito-applicato">—</dd>
+        <dt>Canone annuo</dt><dd id="napoli-esito-annuo">—</dd>
+        <dt>Canone mensile massimo</dt><dd><b id="napoli-esito-massimo">—</b></dd>
+        <dt><label for="napoli-annuo">Canone annuo pattuito (€)</label></dt>
+        <dd><input type="text" id="napoli-annuo" name="canone_annuo" inputmode="decimal" class="campo-numero"> <small id="napoli-mensile"></small></dd>
+      </dl>
+      <ul id="napoli-avvisi" class="avvisi-canone" aria-live="polite"></ul>
+    </section>
+  </form>
   <div class="barra-canone" role="region" aria-label="Riepilogo del canone">
     <span>Canone massimo <b id="barra-massimo">—</b><span class="solo-largo"> al mese</span></span>
     <span id="stato-salvataggio" class="stato-salvataggio" aria-live="polite"></span>
@@ -640,7 +753,7 @@
             <summary class="font-semibold cursor-pointer">Cos'è la scheda di calcolo del canone concordato?</summary>
             <p class="text-sm text-[#4A5568] leading-relaxed mt-2">È il modulo previsto dall'accordo territoriale del Comune (per Roma
               l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo
-              del 27 luglio 2023): parte dalla zona, dalla superficie convenzionale e dalle dotazioni
+              del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025): parte dalla zona, dalla superficie convenzionale e dalle dotazioni
               dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato.</p>
           </details>
           <details class="bg-white border border-slate-200 rounded-xl p-4">
@@ -793,6 +906,9 @@
   <script src="assets/canone/stampa-milano.js"></script>
   <script src="assets/canone/scheda.js"></script>
   <script src="assets/canone/scheda-milano.js"></script>
+  <script src="assets/canone/canone-napoli.js"></script>
+  <script src="assets/canone/stampa-napoli.js"></script>
+  <script src="assets/canone/scheda-napoli.js"></script>
   <script src="assets/canone/modulo-contratto.js"></script>
   <script src="assets/canone/pagina-canone.js"></script>
   <script type="module" src="assets/canone/salva-canone.js"></script>

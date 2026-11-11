@@ -1,0 +1,2229 @@
+{
+ "accordo": {
+  "codice": "napoli-2025-04-29",
+  "modello": "napoli-2025",
+  "comune": "Napoli",
+  "provincia": "NA",
+  "titolo": "Accordo territoriale per il Comune di Napoli",
+  "data": "2025-04-29",
+  "data_testo": "29 aprile 2025",
+  "deposito": "prot. 2025.0668544",
+  "deposito_data": "24.07.2025",
+  "protocollo": "2025.0668544",
+  "ufficio": "Assessorato all'Urbanistica",
+  "ufficio_breve": "Assessorato all'Urbanistica",
+  "valido_fino": "",
+  "firmatari_proprieta": [
+   "A.P.E. Napoli Confedilizia",
+   "A.P.P.C.",
+   "A.S.P.P.I.",
+   "Confabitare Napoli",
+   "Unioncasa",
+   "Confappi",
+   "Federproprietà Napoli",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "Assocasa",
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T. Campania",
+   "Unione Inquilini"
+  ],
+  "nota": "Accordo del 29 aprile 2025, depositato al Comune di Napoli il 24/07/2025 (prot. 2025.0668544, verbale di deposito allegato al PDF). Sostituisce l'accordo del 7/11/2017. Valido fino a un nuovo decreto ministeriale (art. 32). Dal 29/04/2027 i valori minimi e massimi si aggiornano ogni anno al 75% ISTAT (art. 6 e allegato B).",
+  "fonte": "Comune di Napoli, pagina Accordi territoriali: PDF dell'accordo del 29/04/2025 con allegati e verbale di deposito."
+ },
+ "esempio_zona": "l'area si trova da sezione urbana e foglio catastale (dalla visura)",
+ "regole": {
+  "unita": "annuo",
+  "aree": {
+   "1": [
+    22,
+    47
+   ],
+   "2": [
+    26,
+    69
+   ],
+   "3": [
+    31,
+    81
+   ],
+   "4": [
+    40,
+    90
+   ],
+   "5": [
+    47,
+    113
+   ],
+   "6": [
+    51,
+    135
+   ],
+   "7": [
+    71,
+    169
+   ]
+  },
+  "fasce": [
+   [
+    1,
+    25
+   ],
+   [
+    26,
+    50
+   ],
+   [
+    51,
+    75
+   ],
+   [
+    76,
+    100
+   ]
+  ],
+  "fasce_elementi": [
+   0,
+   4,
+   5,
+   6
+  ],
+  "superficie": [
+   {
+    "chiave": "utile",
+    "etichetta": "Superficie utile abitabile",
+    "coeff": 1
+   },
+   {
+    "chiave": "box",
+    "etichetta": "Sup. box auto",
+    "coeff": 0.6
+   },
+   {
+    "chiave": "pa_scoperto_pert",
+    "etichetta": "Sup. p.auto scoperto pertinenziale",
+    "coeff": 0.4
+   },
+   {
+    "chiave": "soppalco",
+    "etichetta": "Sup. soppalco e veranda",
+    "coeff": 0.6
+   },
+   {
+    "chiave": "cantine",
+    "etichetta": "Sup. cantine",
+    "coeff": 0.3
+   },
+   {
+    "chiave": "pa_coperto_pert",
+    "etichetta": "Sup. p.auto coperto pertinenziale",
+    "coeff": 0.5
+   },
+   {
+    "chiave": "balconi",
+    "etichetta": "Sup. balconi, terrazze e simili",
+    "coeff": 0.25
+   },
+   {
+    "chiave": "pa_coperto_comune",
+    "etichetta": "Sup. p.auto coperto area comune",
+    "coeff": 0.4
+   },
+   {
+    "chiave": "scoperta",
+    "etichetta": "Sup. scoperta godimento esclusivo",
+    "coeff": 0.2
+   },
+   {
+    "chiave": "fruibile",
+    "etichetta": "Sup. fruibile (H<2,40)",
+    "coeff": 0.4
+   },
+   {
+    "chiave": "pa_scoperto_comune",
+    "etichetta": "Sup. p.auto scoperto assegnato in area comune",
+    "coeff": 0.4
+   }
+  ],
+  "verde_condominiale": 0.1,
+  "tolleranza": 0.05,
+  "correttivi": {
+   "arredato": 15,
+   "arredato_transitorio": 25,
+   "parz_arredato": 7,
+   "durata_per_anno": 2,
+   "durata_massimo": 12,
+   "transitorio": 20,
+   "veduta": 10,
+   "pregio_area": {
+    "3": 20,
+    "4": 25,
+    "5": 30,
+    "6": 30,
+    "7": 30
+   },
+   "non_pregio": 30,
+   "piccoli_soglia": 80,
+   "piccoli_massimo": 50,
+   "grandi_soglia": 130,
+   "grandi": 30,
+   "risparmio": 10,
+   "giardino": 30,
+   "basso": [
+    5,
+    10
+   ],
+   "totale_massimo": 100
+  }
+ },
+ "elementi": [
+  "edif. con ascensore (è comunque presente non oltre il 3° piano)",
+  "u.a. con doppi servizi",
+  "edif. con cortile e/o aree e spazi liberi di uso comune",
+  "u.a. con balcone sporgente, terrazzo, cantina",
+  "u.a. con riscaldamento autonomo/centralizzato",
+  "u.a. con area verde di pertinenza",
+  "u.a. con impianto di condizionamento",
+  "edif. con servizio di portierato e/o guardiania",
+  "edif. e/o u.a. recentemente ultimati o completamente ristrutturati negli ultimi dieci anni",
+  "u.a. con sistema di sicurezza o di allarme",
+  "u.a. attico",
+  "edif. o u.a. con video citofono",
+  "edif. con antenna centralizzata o impianto satellitare",
+  "u.a. con stato di manutenzione ottimo",
+  "u.a. con porta blindata",
+  "u.a. con infissi con doppi vetri",
+  "u.a. con classe energetica A, B, C o D",
+  "u.a. con posto auto",
+  "u.a. con cucina abitabile",
+  "edif. e/o u.a. con strutture di superamento delle barriere architettoniche",
+  "u.a. Wi-fi (contratti transitori, studenti universitari)",
+  "edif. e/o u.a. con impianti di risparmio energetico"
+ ],
+ "fogli": {
+  "AVV/1": 2,
+  "AVV/2": 4,
+  "AVV/3": 5,
+  "AVV/4": 4,
+  "AVV/5": 5,
+  "AVV/6": 5,
+  "AVV/7": 4,
+  "AVV/8": 6,
+  "AVV/9": 5,
+  "AVV/10": 4,
+  "AVV/11": 4,
+  "AVV/12": 4,
+  "AVV/13": 6,
+  "AVV/14": 6,
+  "AVV/15": 6,
+  "AVV/16": 6,
+  "BAR/1": 3,
+  "BAR/2": 3,
+  "BAR/3": 3,
+  "BAR/4": 3,
+  "BAR/5": 3,
+  "BAR/6": 3,
+  "BAR/7": 3,
+  "BAR/8": 3,
+  "BAR/9": 3,
+  "BAR/10": 3,
+  "BAR/11": 3,
+  "BAR/12": 3,
+  "BAR/13": 3,
+  "BAR/14": 3,
+  "CHA/1": 2,
+  "CHA/2": 2,
+  "CHA/3": 3,
+  "CHA/4": 3,
+  "CHA/5": 1,
+  "CHA/6": 2,
+  "CHA/7": 3,
+  "CHA/8": 2,
+  "CHA/9": 3,
+  "CHA/10": 3,
+  "CHA/11": 3,
+  "CHI/1": 3,
+  "CHI/2": 3,
+  "CHI/3": 4,
+  "CHI/4": 4,
+  "CHI/5": 4,
+  "CHI/6": 4,
+  "CHI/7": 5,
+  "CHI/8": 5,
+  "CHI/9": 5,
+  "CHI/10": 7,
+  "CHI/11": 7,
+  "CHI/12": 6,
+  "CHI/13": 7,
+  "CHI/14": 7,
+  "CHI/15": 7,
+  "CHI/16": 7,
+  "CHI/17": 7,
+  "CHI/18": 7,
+  "CHI/19": 7,
+  "CHI/20": 4,
+  "CHI/21": 4,
+  "CHI/22": 4,
+  "CHI/23": 5,
+  "CHI/24": 6,
+  "CHI/25": 7,
+  "CHI/26": 4,
+  "CHI/27": 5,
+  "CHI/28": 5,
+  "CHI/29": 7,
+  "CHI/30": 7,
+  "CHI/31": 6,
+  "CHI/32": 6,
+  "CHI/33": 6,
+  "CHI/34": 6,
+  "CHI/35": 7,
+  "CHI/36": 7,
+  "CHI/37": 7,
+  "CHI/38": 7,
+  "CHI/39": 4,
+  "CHI/40": 7,
+  "CHI/41": 4,
+  "MER/1": 4,
+  "MER/2": 4,
+  "MER/3": 5,
+  "MER/4": 5,
+  "MER/5": 5,
+  "MER/6": 5,
+  "MER/7": 5,
+  "MER/8": 5,
+  "MER/9": 5,
+  "MER/10": 4,
+  "MER/11": 4,
+  "MER/12": 4,
+  "MON/1": 5,
+  "MON/2": 5,
+  "MON/3": 5,
+  "MON/4": 5,
+  "PEN/1": 5,
+  "PEN/2": 5,
+  "PIA/1": 1,
+  "PIA/2": 2,
+  "PIA/3": 2,
+  "PIA/4": 2,
+  "PIA/5": 2,
+  "PIA/6": 3,
+  "PIA/7": 3,
+  "PIA/8": 3,
+  "PIA/9": 2,
+  "PIA/10": 4,
+  "PIA/11": 3,
+  "PIA/12": 4,
+  "PIA/13": 4,
+  "PIA/14": 4,
+  "PON/1": 3,
+  "PON/2": 2,
+  "PON/3": 2,
+  "PON/4": 2,
+  "PON/5": 2,
+  "PON/6": 3,
+  "PON/7": 3,
+  "PON/8": 3,
+  "PON/9": 3,
+  "PON/10": 3,
+  "PON/11": 3,
+  "PON/12": 3,
+  "PON/13": 4,
+  "PON/14": 4,
+  "PON/15": 4,
+  "PON/16": 3,
+  "PON/17": 4,
+  "POR/1": 5,
+  "POR/2": 6,
+  "POR/3": 6,
+  "SCA/1": 1,
+  "SCA/2": 2,
+  "SCA/3": 2,
+  "SCA/4": 2,
+  "SCA/5": 3,
+  "SCA/6": 3,
+  "SCA/7": 3,
+  "SCA/8": 3,
+  "SCA/9": 3,
+  "SCA/10": 3,
+  "SCA/11": 4,
+  "SCA/12": 3,
+  "SCA/13": 4,
+  "SCA/14": 3,
+  "SCA/15": 3,
+  "SCA/16": 4,
+  "SCA/17": 5,
+  "SCA/18": 5,
+  "SCA/19": 4,
+  "SCA/20": 5,
+  "SCA/21": 4,
+  "SCA/22": 4,
+  "SCA/23": 4,
+  "SCA/24": 3,
+  "SCA/25": 3,
+  "SEC/1": 2,
+  "SEC/2": 3,
+  "SEC/3": 3,
+  "SEC/4": 3,
+  "SEC/5": 3,
+  "SEC/6": 3,
+  "SEC/7": 3,
+  "SEC/8": 3,
+  "SEC/9": 3,
+  "SEC/10": 3,
+  "SFE/1": 7,
+  "SFE/2": 7,
+  "SFE/3": 7,
+  "SFE/4": 7,
+  "SFE/5": 7,
+  "SGO/1": 3,
+  "SGO/2": 3,
+  "SGO/3": 3,
+  "SGO/4": 3,
+  "SGO/5": 4,
+  "SGO/6": 3,
+  "SGO/7": 3,
+  "SGO/8": 3,
+  "SGO/9": 3,
+  "SGU/1": 5,
+  "SGU/2": 6,
+  "SLO/1": 5,
+  "SLO/2": 5,
+  "SOC/1": 3,
+  "SOC/2": 3,
+  "SOC/3": 3,
+  "SOC/4": 5,
+  "SOC/5": 5,
+  "SOC/6": 5,
+  "SOC/7": 4,
+  "SOC/8": 4,
+  "SOC/9": 4,
+  "SPI/1": 2,
+  "SPI/2": 2,
+  "SPI/3": 2,
+  "SPI/4": 4,
+  "SPI/5": 2,
+  "SPI/6": 3,
+  "SPI/7": 2,
+  "SPI/8": 3,
+  "SPI/9": 3,
+  "STE/1": 5,
+  "STE/2": 4,
+  "STE/3": 4,
+  "STE/4": 4,
+  "STE/5": 4,
+  "STE/6": 4,
+  "VIC/1": 3,
+  "VIC/2": 4,
+  "VIC/3": 4,
+  "VIC/4": 5,
+  "VIC/5": 4,
+  "VIC/6": 4,
+  "VIC/7": 5,
+  "VIC/8": 4,
+  "VIC/9": 5,
+  "VIC/10": 4,
+  "VIC/11": 4,
+  "VIC/12": 4,
+  "VIC/13": 4,
+  "VIC/14": 5,
+  "VIC/15": 5
+ },
+ "strade_pregio": [
+  {
+   "via": "C.so Secondigliano",
+   "sezione": "SEC",
+   "fogli": [
+    4,
+    5,
+    8,
+    9
+   ],
+   "area": 3
+  },
+  {
+   "via": "Corso Secondigliano",
+   "sezione": "SCA",
+   "fogli": [
+    10
+   ],
+   "area": 3
+  },
+  {
+   "via": "Via A. Righi",
+   "sezione": "CHI",
+   "fogli": [
+    1,
+    2
+   ],
+   "area": 3
+  },
+  {
+   "via": "Corso Italia",
+   "sezione": "SEC",
+   "fogli": [
+    5,
+    6
+   ],
+   "area": 3
+  },
+  {
+   "via": "Via Cinthia",
+   "sezione": "SOC",
+   "fogli": [
+    3
+   ],
+   "area": 3
+  },
+  {
+   "via": "Via Leonardo Bianchi",
+   "sezione": "CHA",
+   "fogli": [
+    9,
+    11
+   ],
+   "area": 3
+  },
+  {
+   "via": "Via Tarsia",
+   "sezione": "AVV",
+   "fogli": [
+    11,
+    12
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via Foria",
+   "sezione": "SCA",
+   "fogli": [
+    21,
+    23
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via Foria",
+   "sezione": "STE",
+   "fogli": [
+    6
+   ],
+   "area": 4
+  },
+  {
+   "via": "P.zza Carlo III",
+   "sezione": "VIC",
+   "fogli": [
+    10,
+    11
+   ],
+   "area": 4
+  },
+  {
+   "via": "P.zza Carlo III",
+   "sezione": "SCA",
+   "fogli": [
+    21
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via Foria",
+   "sezione": "VIC",
+   "fogli": [
+    11,
+    12
+   ],
+   "area": 4
+  },
+  {
+   "via": "C.so Garibaldi",
+   "sezione": "VIC",
+   "fogli": [
+    10
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via Rosaroll Cesare",
+   "sezione": "VIC",
+   "fogli": [
+    11,
+    12,
+    13
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via Cirillo Domenico",
+   "sezione": "VIC",
+   "fogli": [
+    12
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via Duomo",
+   "sezione": "VIC",
+   "fogli": [
+    12
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via Tribunali",
+   "sezione": "VIC",
+   "fogli": [
+    13
+   ],
+   "area": 4
+  },
+  {
+   "via": "Corso Malta",
+   "sezione": "VIC",
+   "fogli": [
+    3
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via Michelangelo da Caravaggio",
+   "sezione": "CHI",
+   "fogli": [
+    41
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via Salvator Rosa",
+   "sezione": "AVV",
+   "fogli": [
+    10,
+    11,
+    12
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via Diocleziano",
+   "sezione": "CHI",
+   "fogli": [
+    21,
+    22
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via Cinthia",
+   "sezione": "CHI",
+   "fogli": [
+    4,
+    5,
+    41
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via Cinthia",
+   "sezione": "SOC",
+   "fogli": [
+    7
+   ],
+   "area": 4
+  },
+  {
+   "via": "Corso V. Emanuele",
+   "sezione": "AVV",
+   "fogli": [
+    11
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via B. Guidetti (ex Via Cinthia)",
+   "sezione": "CHI",
+   "fogli": [
+    5
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via G. Natta (ex Via Cinthia)",
+   "sezione": "CHI",
+   "fogli": [
+    5
+   ],
+   "area": 4
+  },
+  {
+   "via": "Viale M. Bakunin (ex Via Cinthia)",
+   "sezione": "CHI",
+   "fogli": [
+    5
+   ],
+   "area": 4
+  },
+  {
+   "via": "Via V. Tiberio (ex Via Cinthia)",
+   "sezione": "CHI",
+   "fogli": [
+    5
+   ],
+   "area": 4
+  },
+  {
+   "via": "Piazza Cavour",
+   "sezione": "STE",
+   "fogli": [
+    6
+   ],
+   "area": 5,
+   "rimodulata": true
+  },
+  {
+   "via": "Piazza Dante",
+   "sezione": "AVV",
+   "fogli": [
+    12
+   ],
+   "area": 5,
+   "rimodulata": true
+  },
+  {
+   "via": "Piazza Museo Nazionale",
+   "sezione": "STE",
+   "fogli": [
+    6
+   ],
+   "area": 5,
+   "rimodulata": true
+  },
+  {
+   "via": "Via Pessina",
+   "sezione": "AVV",
+   "fogli": [
+    12
+   ],
+   "area": 5,
+   "rimodulata": true
+  },
+  {
+   "via": "Via Toledo",
+   "sezione": "AVV",
+   "fogli": [
+    12
+   ],
+   "area": 5,
+   "rimodulata": true
+  },
+  {
+   "via": "C.so Umberto I",
+   "sezione": "MER",
+   "fogli": [
+    3,
+    7
+   ],
+   "area": 5
+  },
+  {
+   "via": "C.so Umberto I",
+   "sezione": "PEN",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Toledo",
+   "sezione": "MON",
+   "fogli": [
+    2,
+    4
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Toledo",
+   "sezione": "SGU",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "P.zza Carità",
+   "sezione": "MON",
+   "fogli": [
+    4
+   ],
+   "area": 5
+  },
+  {
+   "via": "B. Croce",
+   "sezione": "SGU",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Piazza N. Amore",
+   "sezione": "PEN",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Duomo",
+   "sezione": "PEN",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Duomo",
+   "sezione": "MER",
+   "fogli": [
+    7
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Duomo",
+   "sezione": "SLO",
+   "fogli": [
+    2
+   ],
+   "area": 5
+  },
+  {
+   "via": "Piazza Dante Alighieri",
+   "sezione": "SGU",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Piazza Dante Alighieri",
+   "sezione": "SLO",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Piazza Bellini",
+   "sezione": "SLO",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Michelangelo da Caravaggio",
+   "sezione": "CHI",
+   "fogli": [
+    9
+   ],
+   "area": 5
+  },
+  {
+   "via": "Viale C. Augusto",
+   "sezione": "CHI",
+   "fogli": [
+    7,
+    8,
+    23
+   ],
+   "area": 5
+  },
+  {
+   "via": "Viale Colli Aminei",
+   "sezione": "SCA",
+   "fogli": [
+    17,
+    18,
+    20
+   ],
+   "area": 5
+  },
+  {
+   "via": "Viale Colli Aminei",
+   "sezione": "STE",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Viale Raffaello",
+   "sezione": "MON",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Piazza Cavour",
+   "sezione": "SLO",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Piazza Museo Nazionale",
+   "sezione": "SLO",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via dell'Epomeo",
+   "sezione": "SOC",
+   "fogli": [
+    4,
+    5
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Salvator Rosa",
+   "sezione": "AVV",
+   "fogli": [
+    9
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Diocleziano",
+   "sezione": "CHI",
+   "fogli": [
+    7,
+    28
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Cinthia",
+   "sezione": "SOC",
+   "fogli": [
+    4
+   ],
+   "area": 5
+  },
+  {
+   "via": "Corso Malta",
+   "sezione": "VIC",
+   "fogli": [
+    4
+   ],
+   "area": 5
+  },
+  {
+   "via": "Corso Garibaldi",
+   "sezione": "VIC",
+   "fogli": [
+    14
+   ],
+   "area": 5
+  },
+  {
+   "via": "Corso Garibaldi",
+   "sezione": "MER",
+   "fogli": [
+    3,
+    7,
+    8
+   ],
+   "area": 5
+  },
+  {
+   "via": "Piazza Garibaldi",
+   "sezione": "VIC",
+   "fogli": [
+    9,
+    14
+   ],
+   "area": 5
+  },
+  {
+   "via": "Piazza Garibaldi",
+   "sezione": "MER",
+   "fogli": [
+    3
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Piave",
+   "sezione": "SOC",
+   "fogli": [
+    6
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Porzio Giovanni (C.D.N.)",
+   "sezione": "VIC",
+   "fogli": [
+    9,
+    15
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Tarsia",
+   "sezione": "MON",
+   "fogli": [
+    2
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Rosaroll",
+   "sezione": "VIC",
+   "fogli": [
+    14
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via dei Tribunali",
+   "sezione": "SGU",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via dei Tribunali",
+   "sezione": "SLO",
+   "fogli": [
+    1,
+    2
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via dei Tribunali",
+   "sezione": "PEN",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "C.so V. Emanuele",
+   "sezione": "MON",
+   "fogli": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Pessina",
+   "sezione": "SLO",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Mezzocannone",
+   "sezione": "SGU",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Mezzocannone",
+   "sezione": "POR",
+   "fogli": [
+    1
+   ],
+   "area": 5
+  },
+  {
+   "via": "Via Taddeo da Sessa",
+   "sezione": "VIC",
+   "fogli": [
+    7
+   ],
+   "area": 5
+  },
+  {
+   "via": "C.so Europa",
+   "sezione": "CHI",
+   "fogli": [
+    9
+   ],
+   "area": 6,
+   "rimodulata": true
+  },
+  {
+   "via": "Via Manzoni",
+   "sezione": "CHI",
+   "fogli": [
+    9
+   ],
+   "area": 6,
+   "rimodulata": true
+  },
+  {
+   "via": "Via Santacroce G.",
+   "sezione": "MON",
+   "fogli": [
+    1
+   ],
+   "area": 6,
+   "rimodulata": true
+  },
+  {
+   "via": "Via Piave",
+   "sezione": "CHI",
+   "fogli": [
+    9
+   ],
+   "area": 6,
+   "rimodulata": true
+  },
+  {
+   "via": "Via Cilea F.",
+   "sezione": "AVV",
+   "fogli": [
+    13
+   ],
+   "area": 6,
+   "rimodulata": true
+  },
+  {
+   "via": "Via Cilea F.",
+   "sezione": "SOC",
+   "fogli": [
+    6
+   ],
+   "area": 6,
+   "rimodulata": true
+  },
+  {
+   "via": "Piazza e Galleria Vanvitelli",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Cimarosa",
+   "sezione": "AVV",
+   "fogli": [
+    14,
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Piazza Fuga",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Sanfelice L.",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Toma G.",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Morghen",
+   "sezione": "AVV",
+   "fogli": [
+    15,
+    16
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Mancini A.",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Michetti F.P.",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Donizetti G.",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Puccini G.",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Bernini G.",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Enrico Alvino",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Merliani",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Solimena F.",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Stanzione M.",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Piazzetta Aniello Falcone",
+   "sezione": "AVV",
+   "fogli": [
+    14
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Kagoshima",
+   "sezione": "AVV",
+   "fogli": [
+    14
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Ugo Ricci",
+   "sezione": "AVV",
+   "fogli": [
+    14
+   ],
+   "area": 6
+  },
+  {
+   "via": "Viale Michelangelo",
+   "sezione": "AVV",
+   "fogli": [
+    15,
+    16
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Kerbaker",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Palizzi F.",
+   "sezione": "CHI",
+   "fogli": [
+    12
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Palizzi F.",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Bonito",
+   "sezione": "AVV",
+   "fogli": [
+    16
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Torrione S. Martino",
+   "sezione": "AVV",
+   "fogli": [
+    15,
+    16
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Medina",
+   "sezione": "SGU",
+   "fogli": [
+    2
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Medina",
+   "sezione": "POR",
+   "fogli": [
+    2
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via S. Giacomo",
+   "sezione": "SGU",
+   "fogli": [
+    2
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Toledo",
+   "sezione": "SGU",
+   "fogli": [
+    2
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Ponte di Tappia",
+   "sezione": "SGU",
+   "fogli": [
+    2
+   ],
+   "area": 6
+  },
+  {
+   "via": "Piazza Municipio",
+   "sezione": "SGU",
+   "fogli": [
+    2
+   ],
+   "area": 6
+  },
+  {
+   "via": "Piazza Municipio",
+   "sezione": "POR",
+   "fogli": [
+    2,
+    3
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via T. Caravita",
+   "sezione": "SGU",
+   "fogli": [
+    2
+   ],
+   "area": 6
+  },
+  {
+   "via": "Piazza Fanzago (Bernini)",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Piazza degli Artisti",
+   "sezione": "AVV",
+   "fogli": [
+    8,
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Piazza Medaglie d'Oro",
+   "sezione": "AVV",
+   "fogli": [
+    8
+   ],
+   "area": 6
+  },
+  {
+   "via": "Viale Raffaello",
+   "sezione": "AVV",
+   "fogli": [
+    16
+   ],
+   "area": 6
+  },
+  {
+   "via": "Corso Umberto I",
+   "sezione": "POR",
+   "fogli": [
+    2
+   ],
+   "area": 6
+  },
+  {
+   "via": "Piazza Matteotti",
+   "sezione": "SGU",
+   "fogli": [
+    2
+   ],
+   "area": 6
+  },
+  {
+   "via": "C.so Europa",
+   "sezione": "AVV",
+   "fogli": [
+    13,
+    14
+   ],
+   "area": 6
+  },
+  {
+   "via": "P.zza Bovio G.",
+   "sezione": "POR",
+   "fogli": [
+    2
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Piave",
+   "sezione": "AVV",
+   "fogli": [
+    13
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Salvator Rosa",
+   "sezione": "AVV",
+   "fogli": [
+    8,
+    16
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Tasso",
+   "sezione": "AVV",
+   "fogli": [
+    14
+   ],
+   "area": 6
+  },
+  {
+   "via": "C.so V. Emanuele",
+   "sezione": "AVV",
+   "fogli": [
+    16
+   ],
+   "area": 6
+  },
+  {
+   "via": "C.so V. Emanuele",
+   "sezione": "CHI",
+   "fogli": [
+    12
+   ],
+   "area": 6
+  },
+  {
+   "via": "P.zza Carità",
+   "sezione": "SGU",
+   "fogli": [
+    2
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Mezzocannone",
+   "sezione": "POR",
+   "fogli": [
+    2
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Cotronei",
+   "sezione": "AVV",
+   "fogli": [
+    15
+   ],
+   "area": 6
+  },
+  {
+   "via": "Via Petrarca",
+   "sezione": "CHI",
+   "fogli": [
+    33
+   ],
+   "area": 7,
+   "rimodulata": true
+  },
+  {
+   "via": "Via Padula",
+   "sezione": "CHI",
+   "fogli": [
+    33
+   ],
+   "area": 7,
+   "rimodulata": true
+  },
+  {
+   "via": "Discesa Gaiola",
+   "sezione": "CHI",
+   "fogli": [
+    34
+   ],
+   "area": 7,
+   "rimodulata": true
+  },
+  {
+   "via": "Via Manzoni",
+   "sezione": "CHI",
+   "fogli": [
+    24,
+    33
+   ],
+   "area": 7,
+   "rimodulata": true
+  },
+  {
+   "via": "Via A. Falcone",
+   "sezione": "AVV",
+   "fogli": [
+    14,
+    15
+   ],
+   "area": 7,
+   "rimodulata": true
+  },
+  {
+   "via": "Via G. Santacroce",
+   "sezione": "AVV",
+   "fogli": [
+    16
+   ],
+   "area": 7,
+   "rimodulata": true
+  },
+  {
+   "via": "P.tta Aniello Falcone",
+   "sezione": "AVV",
+   "fogli": [
+    14
+   ],
+   "area": 7,
+   "rimodulata": true
+  },
+  {
+   "via": "Via Scarlatti",
+   "sezione": "AVV",
+   "fogli": [
+    14,
+    15
+   ],
+   "area": 7,
+   "rimodulata": true
+  },
+  {
+   "via": "Via Luca Giordano",
+   "sezione": "AVV",
+   "fogli": [
+    14,
+    15
+   ],
+   "area": 7,
+   "rimodulata": true
+  },
+  {
+   "via": "Via Mergellina",
+   "sezione": "CHI",
+   "fogli": [
+    18
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Caracciolo",
+   "sezione": "CHI",
+   "fogli": [
+    14,
+    16,
+    18,
+    19
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Partenope",
+   "sezione": "SFE",
+   "fogli": [
+    3,
+    4
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Nazario Sauro",
+   "sezione": "SFE",
+   "fogli": [
+    4,
+    5
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Posillipo",
+   "sezione": "CHI",
+   "fogli": [
+    25,
+    29,
+    30,
+    35,
+    36,
+    37
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Orazio",
+   "sezione": "CHI",
+   "fogli": [
+    18,
+    25,
+    40
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Catullo",
+   "sezione": "CHI",
+   "fogli": [
+    18,
+    25
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Nevio",
+   "sezione": "CHI",
+   "fogli": [
+    25
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Pacuvio",
+   "sezione": "CHI",
+   "fogli": [
+    40
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Scipione Capece",
+   "sezione": "CHI",
+   "fogli": [
+    25
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Petrarca",
+   "sezione": "CHI",
+   "fogli": [
+    25,
+    29,
+    30,
+    35,
+    36,
+    37
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Stazio",
+   "sezione": "CHI",
+   "fogli": [
+    40
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Marechiaro",
+   "sezione": "CHI",
+   "fogli": [
+    35
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via F. Russo",
+   "sezione": "CHI",
+   "fogli": [
+    36
+   ],
+   "area": 7
+  },
+  {
+   "via": "Piazza Di Giacomo S.",
+   "sezione": "CHI",
+   "fogli": [
+    36
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via S. Strato",
+   "sezione": "CHI",
+   "fogli": [
+    35
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via V. Padula",
+   "sezione": "CHI",
+   "fogli": [
+    35
+   ],
+   "area": 7
+  },
+  {
+   "via": "Discesa Gaiola",
+   "sezione": "CHI",
+   "fogli": [
+    35
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Morelli",
+   "sezione": "SFE",
+   "fogli": [
+    3
+   ],
+   "area": 7
+  },
+  {
+   "via": "Piazza dei Martiri",
+   "sezione": "CHI",
+   "fogli": [
+    16
+   ],
+   "area": 7
+  },
+  {
+   "via": "Piazza dei Martiri",
+   "sezione": "SFE",
+   "fogli": [
+    3
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Calabritto",
+   "sezione": "CHI",
+   "fogli": [
+    16
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Calabritto",
+   "sezione": "SFE",
+   "fogli": [
+    3
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Filangieri",
+   "sezione": "CHI",
+   "fogli": [
+    16,
+    17
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via dei Mille",
+   "sezione": "CHI",
+   "fogli": [
+    15,
+    16,
+    17
+   ],
+   "area": 7
+  },
+  {
+   "via": "Piazza Vittoria",
+   "sezione": "CHI",
+   "fogli": [
+    16
+   ],
+   "area": 7
+  },
+  {
+   "via": "Piazza Vittoria",
+   "sezione": "SFE",
+   "fogli": [
+    3
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Cesario Console",
+   "sezione": "SFE",
+   "fogli": [
+    2,
+    3,
+    4
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Carducci",
+   "sezione": "CHI",
+   "fogli": [
+    16
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via S. Pasquale",
+   "sezione": "CHI",
+   "fogli": [
+    15,
+    16
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Vittoria Colonna",
+   "sezione": "CHI",
+   "fogli": [
+    15,
+    16
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Crispi",
+   "sezione": "CHI",
+   "fogli": [
+    14,
+    15
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via del Parco Margherita",
+   "sezione": "CHI",
+   "fogli": [
+    15
+   ],
+   "area": 7
+  },
+  {
+   "via": "Parco Grifeo (Via Privata)",
+   "sezione": "CHI",
+   "fogli": [
+    11
+   ],
+   "area": 7
+  },
+  {
+   "via": "Corso V. Emanuele",
+   "sezione": "CHI",
+   "fogli": [
+    10,
+    11,
+    13,
+    14,
+    15,
+    17,
+    19,
+    38
+   ],
+   "area": 7
+  },
+  {
+   "via": "Riviera di Chiaia",
+   "sezione": "CHI",
+   "fogli": [
+    13,
+    14,
+    16,
+    19
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Manzoni",
+   "sezione": "CHI",
+   "fogli": [
+    10,
+    25,
+    29,
+    35,
+    36,
+    37,
+    38,
+    40
+   ],
+   "area": 7
+  },
+  {
+   "via": "Viale A. Gramsci",
+   "sezione": "CHI",
+   "fogli": [
+    19
+   ],
+   "area": 7
+  },
+  {
+   "via": "P.zza S. Pasquale",
+   "sezione": "CHI",
+   "fogli": [
+    16
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via M. Schipa",
+   "sezione": "CHI",
+   "fogli": [
+    13
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Serra G.",
+   "sezione": "SFE",
+   "fogli": [
+    1,
+    3
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via S. Lucia",
+   "sezione": "SFE",
+   "fogli": [
+    3,
+    4
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via S. Brigida",
+   "sezione": "SFE",
+   "fogli": [
+    1
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via S. Carlo",
+   "sezione": "SFE",
+   "fogli": [
+    1
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via C. Poerio",
+   "sezione": "CHI",
+   "fogli": [
+    16
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Verdi",
+   "sezione": "SFE",
+   "fogli": [
+    1
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Toledo",
+   "sezione": "SFE",
+   "fogli": [
+    1
+   ],
+   "area": 7
+  },
+  {
+   "via": "Piazza Trieste e Trento",
+   "sezione": "SFE",
+   "fogli": [
+    1
+   ],
+   "area": 7
+  },
+  {
+   "via": "Piazza Amedeo",
+   "sezione": "CHI",
+   "fogli": [
+    15
+   ],
+   "area": 7
+  },
+  {
+   "via": "Parco Comola Ricci (Via Privata)",
+   "sezione": "CHI",
+   "fogli": [
+    10,
+    38
+   ],
+   "area": 7
+  },
+  {
+   "via": "Largo Sermoneta",
+   "sezione": "CHI",
+   "fogli": [
+    18,
+    25
+   ],
+   "area": 7
+  },
+  {
+   "via": "Piazza S. Luigi",
+   "sezione": "CHI",
+   "fogli": [
+    30
+   ],
+   "area": 7
+  },
+  {
+   "via": "Piazza Sannazzaro",
+   "sezione": "CHI",
+   "fogli": [
+    18,
+    19
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via della Cavallerizza",
+   "sezione": "CHI",
+   "fogli": [
+    16
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Chiatamone",
+   "sezione": "SFE",
+   "fogli": [
+    3,
+    4
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Orsini Generale Giordano",
+   "sezione": "SFE",
+   "fogli": [
+    4
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Martucci G.",
+   "sezione": "CHI",
+   "fogli": [
+    15
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Bisignano",
+   "sezione": "CHI",
+   "fogli": [
+    16
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Palizzi Filippo",
+   "sezione": "CHI",
+   "fogli": [
+    11
+   ],
+   "area": 7
+  },
+  {
+   "via": "Parco Matarazzo (Via Privata)",
+   "sezione": "CHI",
+   "fogli": [
+    10,
+    40
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Tasso",
+   "sezione": "CHI",
+   "fogli": [
+    11,
+    38
+   ],
+   "area": 7
+  },
+  {
+   "via": "Piazza Municipio",
+   "sezione": "SFE",
+   "fogli": [
+    1
+   ],
+   "area": 7
+  },
+  {
+   "via": "Viale Maria Cristina di Savoia",
+   "sezione": "CHI",
+   "fogli": [
+    38
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Andrea d'Isernia",
+   "sezione": "CHI",
+   "fogli": [
+    13,
+    14
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Giovenale",
+   "sezione": "CHI",
+   "fogli": [
+    40
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Fedro",
+   "sezione": "CHI",
+   "fogli": [
+    10
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Monte di Dio",
+   "sezione": "SFE",
+   "fogli": [
+    3
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Chiaia",
+   "sezione": "CHI",
+   "fogli": [
+    17
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Chiaia",
+   "sezione": "SFE",
+   "fogli": [
+    1,
+    3
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Arangio Ruiz",
+   "sezione": "CHI",
+   "fogli": [
+    13
+   ],
+   "area": 7
+  },
+  {
+   "via": "P.tta Ascensione",
+   "sezione": "CHI",
+   "fogli": [
+    14,
+    15,
+    16
+   ],
+   "area": 7
+  },
+  {
+   "via": "Via Ascensione",
+   "sezione": "CHI",
+   "fogli": [
+    14,
+    15,
+    16
+   ],
+   "area": 7
+  }
+ ]
+}
