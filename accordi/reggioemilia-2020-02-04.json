@@ -1,0 +1,594 @@
+{
+ "accordo": {
+  "codice": "reggioemilia-2020-02-04",
+  "modello": "reggioemilia-2020",
+  "comune": "Reggio Emilia",
+  "provincia": "RE",
+  "titolo": "Accordo territoriale per il Comune di Reggio Emilia",
+  "data": "2020-02-04",
+  "data_testo": "4 febbraio 2020",
+  "deposito": "Comune di Reggio Emilia, PG/2020/0027366",
+  "deposito_data": "05.02.2020",
+  "protocollo": "PG/2020/0027366",
+  "ufficio": "Comune di Reggio Emilia, Protocollo generale",
+  "ufficio_breve": "Comune di Reggio Emilia",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Reggio Emilia: i valori dell'accordo sono canoni mensili per l'intero alloggio, non valori al mq.</strong> L'accordo del 4 febbraio 2020 è in vigore dal 1° marzo 2020: valeva tre anni ma resta valido finché non ne viene firmato uno nuovo, e il Comune lo indica ancora come vigente. Dal 1° marzo 2023 prevede che i valori si aggiornino ogni tre anni del 75% della variazione ISTAT, ma le tabelle aggiornate non sono pubblicate: qui trovi i valori originali. <strong>Chiedi quelli aggiornati all'associazione che attesta il contratto.</strong>",
+  "firmatari_proprieta": [
+   "A.P.E. - Confedilizia",
+   "A.S.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Firmato a Reggio Emilia il 04/02/2020, protocollato dal Comune il 05/02/2020 (PG/2020/0027366, timbro su ogni pagina e sugli allegati D, E, F); in vigore dal 01/03/2020 per tre anni, poi fino a un nuovo accordo; sostituisce l'accordo del 06/11/2003. Dal 28/02/2023, senza un nuovo accordo, i valori dell'allegato E si aggiornano del 75% della variazione ISTAT FOI del triennio precedente, e così ogni triennio (punto 18): nessuna tabella aggiornata pubblicata dal Comune o dalle associazioni. U.P.P.I. e ASSOCASA hanno firmato il 28/02/2020 un accordo con lo stesso contenuto economico (stesse zone, parametri e valori; P.G. 2020/0049182 del 03/03/2020); il Comune elenca fra le organizzazioni firmatarie anche Confabitare. Valori: canoni mensili interi per zona (A-E), classe di superficie (fino a 50, 50-75, 75-100, 100-120, oltre 120 mq) e sub-fascia (minima, media, massima). Si può pattuire meno del minimo, ma non meno di € 120 al mese (punto 7).",
+  "fonte": "Comune di Reggio Emilia, pagina «Nuovo accordo territoriale per contratti di locazione a canone concordato» (aggiornata il 20/02/2025): accordo protocollato (40 pagine, scansione con contratti tipo A, B, C, allegati D, E, F e cartina), allegati D, E, F in formato digitale, cartine e mappe delle zone con ricerca delle vie. Stesso testo pubblicato da SUNIA e da Confedilizia Reggio Emilia."
+ },
+ "esempio_zona": "la zona dalle cartine dell'allegato D (o dalla mappa del Comune, cercando la via)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "a_corpo": {
+   "nota": "I valori della tabella (allegato E) sono canoni mensili per l'intero alloggio, non valori al mq: la superficie complessiva (alloggio più pertinenze in percentuale) serve solo a scegliere la classe di superficie."
+  },
+  "tabella_per": "superficie",
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Zona A - Centro storico",
+    "nota": "Zona A (azzurro nelle cartine): il centro storico, cioè l'area dentro i viali di circonvallazione dell'«esagono» (viale Piave, viale Isonzo, viale Timavo, viale dei Mille). I confini passano a metà strada. Qui bastano meno parametri per le sub-fasce più alte.",
+    "fasce": {
+     "50": [
+      [
+       200,
+       300
+      ],
+      [
+       250,
+       380
+      ],
+      [
+       300,
+       460
+      ]
+     ],
+     "75": [
+      [
+       230,
+       370
+      ],
+      [
+       330,
+       480
+      ],
+      [
+       350,
+       550
+      ]
+     ],
+     "100": [
+      [
+       270,
+       460
+      ],
+      [
+       360,
+       520
+      ],
+      [
+       400,
+       580
+      ]
+     ],
+     "120": [
+      [
+       300,
+       500
+      ],
+      [
+       380,
+       550
+      ],
+      [
+       460,
+       630
+      ]
+     ],
+     "oltre": [
+      [
+       320,
+       530
+      ],
+      [
+       400,
+       580
+      ],
+      [
+       500,
+       680
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B",
+    "nota": "Zona B (rosa): fuori dal centro storico, verso sud. Confini: via Emilia Ospizio e ferrovia Reggio-Scandiano fino al confine comunale; confine sud del Comune fino al torrente Crostolo; Crostolo, viale Fornaciari, via Martiri della Bettola, via Guittone d'Arezzo, via della Canalina fino al ponte di San Claudio, di nuovo Crostolo fino alla tangenziale; tangenziale fino a via Rodolfo Morandi, poi via Paterlini fino a viale Piave. I confini passano a metà strada; in caso di dubbio fa fede la cartina.",
+    "fasce": {
+     "50": [
+      [
+       180,
+       250
+      ],
+      [
+       200,
+       320
+      ],
+      [
+       250,
+       360
+      ]
+     ],
+     "75": [
+      [
+       210,
+       340
+      ],
+      [
+       260,
+       400
+      ],
+      [
+       300,
+       470
+      ]
+     ],
+     "100": [
+      [
+       240,
+       380
+      ],
+      [
+       290,
+       500
+      ],
+      [
+       330,
+       540
+      ]
+     ],
+     "120": [
+      [
+       280,
+       440
+      ],
+      [
+       370,
+       540
+      ],
+      [
+       400,
+       600
+      ]
+     ],
+     "oltre": [
+      [
+       300,
+       480
+      ],
+      [
+       390,
+       570
+      ],
+      [
+       450,
+       650
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C",
+    "nota": "Zona C (grigio-blu nelle cartine): fuori dalle zone A e B. Verso Parma l'area fra via Emilia, torrente Modolena e confine comunale, con gli abitati di Rivalta e Codemondo; verso Modena un tratto sopra la via Emilia fra via Makallè e la ferrovia, e uno sotto la via Emilia fino al torrente Rodano e al confine. Fa fede la cartina.",
+    "fasce": {
+     "50": [
+      [
+       150,
+       210
+      ],
+      [
+       180,
+       300
+      ],
+      [
+       210,
+       320
+      ]
+     ],
+     "75": [
+      [
+       180,
+       290
+      ],
+      [
+       230,
+       380
+      ],
+      [
+       250,
+       420
+      ]
+     ],
+     "100": [
+      [
+       210,
+       330
+      ],
+      [
+       260,
+       400
+      ],
+      [
+       290,
+       500
+      ]
+     ],
+     "120": [
+      [
+       250,
+       360
+      ],
+      [
+       340,
+       450
+      ],
+      [
+       360,
+       550
+      ]
+     ],
+     "oltre": [
+      [
+       270,
+       380
+      ],
+      [
+       360,
+       470
+      ],
+      [
+       400,
+       590
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D",
+    "nome": "Zona D",
+    "nota": "Zona D (marrone): la fascia nord, fuori dalle zone A, B e C: dall'Autostrada A1 fino al torrente Rodano, poi il Rodano fino alla via Emilia, la via Emilia fino al torrente Modolena, il confine comunale fino a via Bassetta, via Bassetta e via Cella all'Oldo fino all'A1. Fa fede la cartina.",
+    "fasce": {
+     "50": [
+      [
+       150,
+       210
+      ],
+      [
+       180,
+       280
+      ],
+      [
+       210,
+       300
+      ]
+     ],
+     "75": [
+      [
+       180,
+       290
+      ],
+      [
+       230,
+       350
+      ],
+      [
+       250,
+       400
+      ]
+     ],
+     "100": [
+      [
+       210,
+       330
+      ],
+      [
+       260,
+       390
+      ],
+      [
+       290,
+       490
+      ]
+     ],
+     "120": [
+      [
+       250,
+       360
+      ],
+      [
+       340,
+       430
+      ],
+      [
+       360,
+       530
+      ]
+     ],
+     "oltre": [
+      [
+       270,
+       380
+      ],
+      [
+       360,
+       450
+      ],
+      [
+       400,
+       570
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "E",
+    "nome": "Zona E",
+    "nota": "Zona E (non colorata, più l'area arancione): tutto il resto del territorio comunale, cioè frazioni e forese. Ha gli stessi valori anche l'area arancione (Santa Croce) racchiusa fra ferrovia Milano-Bologna, via del Partigiano, via dell'Aeronautica, via Adua e ferrovia Reggio-Guastalla.",
+    "fasce": {
+     "50": [
+      [
+       120,
+       180
+      ],
+      [
+       150,
+       230
+      ],
+      [
+       180,
+       280
+      ]
+     ],
+     "75": [
+      [
+       150,
+       260
+      ],
+      [
+       200,
+       290
+      ],
+      [
+       220,
+       390
+      ]
+     ],
+     "100": [
+      [
+       180,
+       300
+      ],
+      [
+       230,
+       360
+      ],
+      [
+       260,
+       480
+      ]
+     ],
+     "120": [
+      [
+       220,
+       330
+      ],
+      [
+       310,
+       410
+      ],
+      [
+       310,
+       500
+      ]
+     ],
+     "oltre": [
+      [
+       240,
+       350
+      ],
+      [
+       330,
+       430
+      ],
+      [
+       350,
+       540
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "minima",
+    "media",
+    "massima"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    4,
+    5
+   ],
+   "soglie_zona": {
+    "A": [
+     3,
+     4
+    ]
+   },
+   "nota_soglie": "nel centro storico (zona A) basta un parametro in meno: minima fino a 3, media 4, massima da 5"
+  },
+  "elementi": [
+   {
+    "testo": "Abitazione di categoria catastale A/7 (villino, dalla visura)"
+   },
+   {
+    "testo": "Riscaldamento autonomo, oppure centralizzato con i contabilizzatori di calore"
+   },
+   {
+    "testo": "Impianto fisso di aria condizionata"
+   },
+   {
+    "testo": "Ascensore (non conta per gli alloggi al piano terra)"
+   },
+   {
+    "testo": "Autorimessa o box auto (nel centro storico basta un posto auto)"
+   },
+   {
+    "testo": "Cortile con parcheggio riservato all'alloggio"
+   },
+   {
+    "testo": "Cantina"
+   },
+   {
+    "testo": "Soffitta, esclusiva o condominiale"
+   },
+   {
+    "testo": "Doppi servizi (due bagni, ciascuno con il WC)"
+   },
+   {
+    "testo": "Fuori dal centro storico: area scoperta condominiale recintata; nel centro storico: cortile, anche condominiale, di almeno 10 mq"
+   },
+   {
+    "testo": "Area scoperta privata, o condominiale in uso esclusivo"
+   },
+   {
+    "testo": "Terrazzo, balcone o veranda a uso esclusivo"
+   },
+   {
+    "testo": "Porta blindata o cancello di sicurezza"
+   },
+   {
+    "testo": "Allarme interno all'alloggio"
+   },
+   {
+    "testo": "Certificazione energetica (APE) in classe D o migliore"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale dell'alloggio (visura, «escluse aree scoperte»)",
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa privata (C/6)",
+     "coeff": 0.75
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto coperto esclusivo delimitato (C/6 o C/7)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto scoperto esclusivo delimitato (C/6 o C/7)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "cantina",
+     "testo": "Cantina, deposito o soffitta accatastati a parte (C/2)",
+     "coeff": 0.25
+    }
+   ],
+   "nota": "Si parte dalla superficie catastale della visura (dove c'è la distinzione, la voce «escluse aree scoperte») e si aggiungono autorimessa (75%), posto auto coperto (50%) o scoperto (25%) e cantina, deposito o soffitta accatastati a parte (25%); nelle autorimesse collettive con un unico C/6 contano solo i mq assegnati. Il totale serve solo a scegliere la classe di superficie della tabella: il canone dell'accordo è un importo mensile, non un valore al mq."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "vincolato",
+    "tipo": "spunta",
+    "testo": "Abitazione di categoria A/1, A/8 o A/9, o immobile vincolato come bene culturale",
+    "nome": "immobile di pregio (A/1, A/8, A/9 o vincolato)",
+    "perc": 15
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento",
+    "nome": "arredamento",
+    "nessuna": "non arredato",
+    "dopo": true,
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato (arredi in ogni vano abitabile)",
+      "perc": 20
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato (arredati almeno la cucina e una camera da letto)",
+      "perc": 15
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "La durata oltre i 3 anni (+3% per 4 anni, +5% per 5, +8% per 6 o più) e gli immobili di pregio (+15%) aumentano il minimo e il massimo della tabella; l'arredo aumenta il canone fino al 20% se completo o al 15% se parziale. Si può pattuire anche meno del minimo, ma non meno di € 120 al mese. Per i contratti transitori fino a 30 giorni il canone è libero.",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 8
+  },
+  "combinazione": "somma",
+  "avvisi": [],
+  "tabella_su": "totale",
+  "tabella_soglie": [
+   [
+    50,
+    "50"
+   ],
+   [
+    75,
+    "75"
+   ],
+   [
+    100,
+    "100"
+   ],
+   [
+    120,
+    "120"
+   ]
+  ],
+  "tabella_oltre": "oltre",
+  "minimo_assoluto": 120
+ },
+ "pdf": {
+  "allegato": "ALLEGATO F",
+  "titolo": "Asseverazione - Attestazione di rispondenza ex DM 16/01/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Reggio Emilia del 04/02/2020 (PG/2020/0027366 del 05/02/2020), in vigore dal 01/03/2020",
+  "titolo_superficie": "SUPERFICIE (COME DA ACCORDO TERRITORIALE, PUNTO 4)",
+  "titolo_elementi": "Parametri",
+  "firme": [],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "Tutto ciò premesso, l'Associazione …………………………… di Reggio Emilia, su richiesta delle parti e sulla base dei dati di cui sopra dichiarati sotto la propria responsabilità dalle parti, così come indicati nel contratto di locazione debitamente sottoscritto e allegato alla presente asseverazione,",
+   "ATTESTA che i contenuti economici e normativi del contratto suddetto corrispondono a quanto previsto dall'Accordo Territoriale vigente per il Comune di Reggio Emilia del 04.02.2020.",
+   "Data ……/……/…………          Allegato: copia del contratto di locazione"
+  ],
+  "firme_attestazione": [
+   "L'Associazione (timbro e firma)"
+  ],
+  "nota_zone": "La zona si ricava dalle cartine dell'allegato D: A azzurro (centro storico), B rosa, C grigio-blu, D marrone, E tutto il territorio non colorato più l'area arancione. Sul sito del Comune c'è la mappa in PDF in cui cercare la via."
+ }
+}
