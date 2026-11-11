@@ -511,6 +511,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrescia-2024-04-02-sindacati-inquilini.pdf?alt=media&token=7ef8c857-f3dc-40b5-8e67-e04eb21c31dc"
     }
    ]
+  },
+  {
+   "comune": "Catania",
+   "provincia": "CT",
+   "accordo": "catania-2018-08-03",
+   "sottoscritto": "3 agosto 2018",
+   "depositato": "24 agosto 2018",
+   "zone": 30,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcatania-2018-08-03-accordo.pdf?alt=media&token=21fb336f-1126-452c-952c-a751a13aebad",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcatania-2018-08-03-accordo.pdf?alt=media&token=21fb336f-1126-452c-952c-a751a13aebad"
+    }
+   ]
   }
  ]
 }

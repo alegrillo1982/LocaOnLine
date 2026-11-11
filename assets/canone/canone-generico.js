@@ -112,6 +112,14 @@
       }
       return { n: gruppi.reduce((t, g) => t + g.n, 0), i: null, nome: gruppi.map((g) => `${g.nome} ${g.fascia}`).join(", "), gruppi, avviso: "" };
     }
+    if (F.criterio === "requisiti") {
+      // es. Catania: la subfascia più alta di cui l'immobile ha tutti i requisiti (tutti gli A, almeno n B, ...)
+      const conta = (q) => E.filter((e, k) => k >= q.da && k <= q.a && presente(e, el[k])).length;
+      let i = 0, avviso = "";
+      F.requisiti.forEach((req, k) => { if (req && req.every((q) => (q.tutti ? conta(q) === q.a - q.da + 1 : conta(q) >= q.n))) i = k; });
+      if (F.blocca && i > F.blocca.fino && conta(F.blocca) > 0) { i = F.blocca.fino; avviso = F.blocca.avviso; }
+      return { n: F.conta ? conta(F.conta) : 0, i, nome: F.nomi[i], avviso };
+    }
     if (F.criterio === "scelta") {
       const val = (s.maggiorazioni_scelte || {})[F.chiave];
       const i = Math.max(0, F.valori.indexOf(val));

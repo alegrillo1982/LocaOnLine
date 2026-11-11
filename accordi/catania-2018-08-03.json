@@ -1,0 +1,916 @@
+{
+ "accordo": {
+  "codice": "catania-2018-08-03",
+  "modello": "catania-2018",
+  "comune": "Catania",
+  "provincia": "CT",
+  "titolo": "Accordo territoriale per il territorio del Comune di Catania",
+  "data": "2018-08-03",
+  "data_testo": "3 agosto 2018",
+  "deposito": "Comune di Catania",
+  "deposito_data": "24.08.2018",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2021-08-24",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA (A.P.E.)",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET",
+   "UNIAT"
+  ],
+  "nota": "Firmato il 03/08/2018 e depositato il 24/08/2018, durata tre anni, resta in vigore fino al nuovo; dall'agosto 2020 i valori si aggiornano con l'ISTAT (punto H.5). Sostituisce l'accordo del 3/8/2004. Valori mensili per zona e subfascia (allegato 2).",
+  "fonte": "PDF dell'accordo depositato pubblicato da UPPI Catania (20 pagine); copia SUNIA priva della pagina con gli elementi C."
+ },
+ "esempio_zona": "la zona dal quartiere",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "1. Duomo, Civita, S. Nicola",
+    "nota": "Zona 1: Duomo, Civita, S. Nicola. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      4.0,
+      5.15
+     ],
+     [
+      5.16,
+      6.1
+     ],
+     [
+      6.11,
+      6.87
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "2. San Berillo",
+    "nota": "Zona 2: San Berillo. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      2.3,
+      3.43
+     ],
+     [
+      3.44,
+      4.0
+     ],
+     [
+      4.01,
+      4.8
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "3. Castello Ursino, Naumachia",
+    "nota": "Zona 3: Castello Ursino, Naumachia. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      2.8,
+      3.43
+     ],
+     [
+      3.44,
+      4.0
+     ],
+     [
+      4.01,
+      5.2
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "4. San Cristoforo",
+    "nota": "Zona 4: San Cristoforo. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      2.3,
+      3.43
+     ],
+     [
+      3.44,
+      4.0
+     ],
+     [
+      4.01,
+      4.8
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "5. Etnea, XX Settembre",
+    "nota": "Zona 5: Etnea, XX Settembre. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      4.0,
+      5.15
+     ],
+     [
+      5.16,
+      7.3
+     ],
+     [
+      7.31,
+      8.0
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "6. Piazza Carlo Alberto, Bovio",
+    "nota": "Zona 6: Piazza Carlo Alberto, Bovio. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      3.3,
+      4.58
+     ],
+     [
+      4.59,
+      5.15
+     ],
+     [
+      5.16,
+      6.0
+     ]
+    ]
+   },
+   {
+    "codice": "7",
+    "nome": "7. Porto, Cristoforo Colombo, Acquicella",
+    "nota": "Zona 7: Porto, Cristoforo Colombo, Acquicella. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      3.3,
+      4.58
+     ],
+     [
+      4.59,
+      5.15
+     ],
+     [
+      5.16,
+      6.0
+     ]
+    ]
+   },
+   {
+    "codice": "8",
+    "nome": "8. Androne, p.zza S. Maria di Gesù, p.zza Roma",
+    "nota": "Zona 8: Androne, p.zza S. Maria di Gesù, p.zza Roma. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      4.4,
+      5.15
+     ],
+     [
+      5.16,
+      7.1
+     ],
+     [
+      7.11,
+      8.0
+     ]
+    ]
+   },
+   {
+    "codice": "9",
+    "nome": "9. Viale Libertà, viale Africa",
+    "nota": "Zona 9: Viale Libertà, viale Africa. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      4.4,
+      5.15
+     ],
+     [
+      5.16,
+      7.1
+     ],
+     [
+      7.11,
+      8.0
+     ]
+    ]
+   },
+   {
+    "codice": "10",
+    "nome": "10. S. Euplio, C.so Sicilia, C.so Martiri della Libertà",
+    "nota": "Zona 10: S. Euplio, C.so Sicilia, C.so Martiri della Libertà. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      4.4,
+      5.15
+     ],
+     [
+      5.16,
+      7.1
+     ],
+     [
+      7.11,
+      8.0
+     ]
+    ]
+   },
+   {
+    "codice": "11",
+    "nome": "11. Consolazione",
+    "nota": "Zona 11: Consolazione. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      3.3,
+      4.58
+     ],
+     [
+      4.59,
+      6.0
+     ],
+     [
+      6.01,
+      7.0
+     ]
+    ]
+   },
+   {
+    "codice": "12",
+    "nome": "12. Piazza Trento, Europa, Michelangelo",
+    "nota": "Zona 12: Piazza Trento, Europa, Michelangelo. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      5.15,
+      5.72
+     ],
+     [
+      5.73,
+      7.2
+     ],
+     [
+      7.21,
+      8.3
+     ]
+    ]
+   },
+   {
+    "codice": "13",
+    "nome": "13. Piazza Lanza, via Lavaggi",
+    "nota": "Zona 13: Piazza Lanza, via Lavaggi. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      4.4,
+      5.15
+     ],
+     [
+      5.16,
+      6.1
+     ],
+     [
+      6.11,
+      7.0
+     ]
+    ]
+   },
+   {
+    "codice": "14",
+    "nome": "14. Via Susanna",
+    "nota": "Zona 14: Via Susanna. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      2.7,
+      4.0
+     ],
+     [
+      4.01,
+      4.4
+     ],
+     [
+      4.41,
+      5.5
+     ]
+    ]
+   },
+   {
+    "codice": "15",
+    "nome": "15. Picanello",
+    "nota": "Zona 15: Picanello. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      2.86,
+      4.0
+     ],
+     [
+      4.01,
+      4.58
+     ],
+     [
+      4.59,
+      5.7
+     ]
+    ]
+   },
+   {
+    "codice": "16",
+    "nome": "16. Via Messina, Ognina, Lungomare",
+    "nota": "Zona 16: Via Messina, Ognina, Lungomare. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      4.0,
+      5.15
+     ],
+     [
+      5.16,
+      6.29
+     ],
+     [
+      6.3,
+      8.0
+     ]
+    ]
+   },
+   {
+    "codice": "17",
+    "nome": "17. Cifali, Passo Gravina, Santa Sofia",
+    "nota": "Zona 17: Cifali, Passo Gravina, Santa Sofia. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      3.4,
+      4.5
+     ],
+     [
+      4.51,
+      5.7
+     ],
+     [
+      5.71,
+      6.9
+     ]
+    ]
+   },
+   {
+    "codice": "18",
+    "nome": "18. Via Passo Gravina, Circonvallazione",
+    "nota": "Zona 18: Via Passo Gravina, Circonvallazione. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      3.8,
+      5.15
+     ],
+     [
+      5.16,
+      6.1
+     ],
+     [
+      6.11,
+      7.0
+     ]
+    ]
+   },
+   {
+    "codice": "19",
+    "nome": "19. Nesima inferiore, via Palermo",
+    "nota": "Zona 19: Nesima inferiore, via Palermo. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      2.7,
+      4.0
+     ],
+     [
+      4.01,
+      5.15
+     ],
+     [
+      5.16,
+      6.0
+     ]
+    ]
+   },
+   {
+    "codice": "20",
+    "nome": "20. Cibali, Nesima inferiore",
+    "nota": "Zona 20: Cibali, Nesima inferiore. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      2.7,
+      4.0
+     ],
+     [
+      4.01,
+      5.15
+     ],
+     [
+      5.16,
+      6.0
+     ]
+    ]
+   },
+   {
+    "codice": "21",
+    "nome": "21. Barriera, Canalicchio superiore",
+    "nota": "Zona 21: Barriera, Canalicchio superiore. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      3.43,
+      4.58
+     ],
+     [
+      4.59,
+      5.6
+     ],
+     [
+      5.61,
+      6.5
+     ]
+    ]
+   },
+   {
+    "codice": "22",
+    "nome": "22. Nuovaluce, Sgroppillo, Cannizzaro",
+    "nota": "Zona 22: Nuovaluce, Sgroppillo, Cannizzaro. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      3.43,
+      4.58
+     ],
+     [
+      4.59,
+      5.6
+     ],
+     [
+      5.61,
+      6.5
+     ]
+    ]
+   },
+   {
+    "codice": "23",
+    "nome": "23. Trappeto sud, Trappeto nord",
+    "nota": "Zona 23: Trappeto sud, Trappeto nord. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      3.3,
+      4.4
+     ],
+     [
+      4.41,
+      5.5
+     ],
+     [
+      5.51,
+      6.2
+     ]
+    ]
+   },
+   {
+    "codice": "24",
+    "nome": "24. Monte Po, Telegrafo",
+    "nota": "Zona 24: Monte Po, Telegrafo. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      2.3,
+      3.3
+     ],
+     [
+      3.31,
+      4.0
+     ],
+     [
+      4.01,
+      4.5
+     ]
+    ]
+   },
+   {
+    "codice": "25",
+    "nome": "25. San Giorgio",
+    "nota": "Zona 25: San Giorgio. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      2.3,
+      3.3
+     ],
+     [
+      3.31,
+      4.0
+     ],
+     [
+      4.01,
+      4.5
+     ]
+    ]
+   },
+   {
+    "codice": "26",
+    "nome": "26. Librino, Santa Maria Goretti",
+    "nota": "Zona 26: Librino, Santa Maria Goretti. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      2.3,
+      3.3
+     ],
+     [
+      3.31,
+      4.0
+     ],
+     [
+      4.01,
+      4.5
+     ]
+    ]
+   },
+   {
+    "codice": "27",
+    "nome": "27. Nuclei edificati Oasi del Simeto",
+    "nota": "Zona 27: Nuclei edificati Oasi del Simeto. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      1.71,
+      2.86
+     ],
+     [
+      2.87,
+      3.43
+     ],
+     [
+      3.44,
+      4.0
+     ]
+    ]
+   },
+   {
+    "codice": "28",
+    "nome": "28. Zona industriale",
+    "nota": "Zona 28: Zona industriale. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      1.71,
+      2.86
+     ],
+     [
+      2.87,
+      3.43
+     ],
+     [
+      3.44,
+      4.0
+     ]
+    ]
+   },
+   {
+    "codice": "29",
+    "nome": "29. Zona agricola Simeto",
+    "nota": "Zona 29: Zona agricola Simeto. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      1.71,
+      2.86
+     ],
+     [
+      2.87,
+      3.43
+     ],
+     [
+      3.44,
+      4.0
+     ]
+    ]
+   },
+   {
+    "codice": "30",
+    "nome": "30. San Giovanni Galermo",
+    "nota": "Zona 30: San Giovanni Galermo. Il confine fra due zone passa a metà della strada.",
+    "fasce": [
+     [
+      2.7,
+      3.43
+     ],
+     [
+      3.44,
+      4.5
+     ],
+     [
+      4.51,
+      5.5
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "SubFascia 1",
+    "SubFascia 2",
+    "SubFascia 3"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 3,
+      "tutti": true
+     },
+     {
+      "da": 4,
+      "a": 18,
+      "n": 4
+     }
+    ],
+    [
+     {
+      "da": 0,
+      "a": 3,
+      "tutti": true
+     },
+     {
+      "da": 4,
+      "a": 18,
+      "n": 4
+     },
+     {
+      "da": 19,
+      "a": 33,
+      "n": 4
+     }
+    ]
+   ],
+   "blocca": {
+    "da": 34,
+    "a": 36,
+    "fino": 1,
+    "avviso": "Con un elemento del punto 9 (A/3 di classe 1-3, A/4, A/5, A/6; senza ascensore dal 2° piano; APE F o G) non si può applicare la SubFascia 3."
+   },
+   "conta": {
+    "da": 4,
+    "a": 33
+   },
+   "proporzionale": [
+    {
+     "passi": 4,
+     "da": 0
+    },
+    {
+     "passi": 4,
+     "da": 4
+    },
+    {
+     "passi": 4,
+     "da": 8
+    }
+   ],
+   "nota": "SubFascia 1: tutti gli elementi A. SubFascia 2: tutti gli A e almeno 4 B. SubFascia 3: tutti gli A, almeno 4 B e almeno 4 C. Il massimo della subfascia si raggiunge con 4, 8 o 12 elementi B e C; con meno, un valore intermedio."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi di tipo A"
+   },
+   {
+    "da": 4,
+    "titolo": "Elementi di tipo B"
+   },
+   {
+    "da": 19,
+    "titolo": "Elementi di tipo C"
+   },
+   {
+    "da": 34,
+    "titolo": "Elementi che escludono la SubFascia 3 (punto 9)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "A1 - Cucina o angolo cottura con almeno una finestra"
+   },
+   {
+    "testo": "A2 - Bagno interno completo (tazza, lavabo, vasca o doccia) con finestra o aerazione meccanica"
+   },
+   {
+    "testo": "A3 - Impianto elettrico conforme alle norme di legge"
+   },
+   {
+    "testo": "A4 - Predisposizione per uno scaldabagno che eroghi acqua calda in bagno"
+   },
+   {
+    "testo": "B1 - Cucina abitabile"
+   },
+   {
+    "testo": "B2 - Doppio bagno, di cui almeno uno completo con finestra o aerazione meccanica"
+   },
+   {
+    "testo": "B3 - Terrazze fino a 20 mq"
+   },
+   {
+    "testo": "B4 - Ripostiglio e/o lavanderia"
+   },
+   {
+    "testo": "B5 - Posto auto scoperto (esclusivo o in comune)"
+   },
+   {
+    "testo": "B6 - Ascensore"
+   },
+   {
+    "testo": "B7 - Allacciamento al gas di città"
+   },
+   {
+    "testo": "B8 - Stato di manutenzione dello stabile normale (impianti comuni, facciate, coperture, scale, spazi comuni)"
+   },
+   {
+    "testo": "B9 - Stato di manutenzione dell'alloggio normale (pareti, pavimenti, bagno, impianti, infissi)"
+   },
+   {
+    "testo": "B10 - Cortile condominiale"
+   },
+   {
+    "testo": "B11 - Vicinanza ai servizi: stazione, metropolitana, autobus, negozi, servizi sociali"
+   },
+   {
+    "testo": "B12 - Riscaldamento centralizzato o autonomo in tutte le stanze"
+   },
+   {
+    "testo": "B13 - APE in classe D o E"
+   },
+   {
+    "testo": "B14 - Autoclave e riserva idrica"
+   },
+   {
+    "testo": "B15 - Allarme, cancelli di sicurezza o videosorveglianza"
+   },
+   {
+    "testo": "C1 - Condizionamento, anche parziale (50%)"
+   },
+   {
+    "testo": "C2 - Porta blindata"
+   },
+   {
+    "testo": "C3 - Doppi vetri"
+   },
+   {
+    "testo": "C4 - Terrazze oltre 20 mq"
+   },
+   {
+    "testo": "C5 - Servizio di portiere"
+   },
+   {
+    "testo": "C6 - Autorimessa coperta inserita nel contratto come pertinenza"
+   },
+   {
+    "testo": "C7 - Giardino condominiale o privato"
+   },
+   {
+    "testo": "C8 - Edificio con meno di 4 unità abitative costruito negli ultimi 30 anni"
+   },
+   {
+    "testo": "C9 - Intervento di manutenzione o riqualificazione con pratica in Comune negli ultimi 10 anni"
+   },
+   {
+    "testo": "C10 - Casa singola"
+   },
+   {
+    "testo": "C11 - Videocitofono"
+   },
+   {
+    "testo": "C12 - APE in classe B o C"
+   },
+   {
+    "testo": "C13 - Adeguamento antisismico"
+   },
+   {
+    "testo": "C14 - Pannelli solari"
+   },
+   {
+    "testo": "C15 - Superamento delle barriere architettoniche o scala di ausilio"
+   },
+   {
+    "testo": "Categoria A/3 di classe 1, 2 o 3, oppure A/4, A/5 o A/6"
+   },
+   {
+    "testo": "Senza ascensore, con l'alloggio dal 2° piano in su"
+   },
+   {
+    "testo": "APE in classe F o G"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile calpestabile (senza le parti sotto 1,70 m)",
+   "correzioni": [
+    {
+     "fino": 60,
+     "incluso": true,
+     "perc": 25,
+     "tetto": 60
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Autorimessa singola",
+     "coeff": 0.7
+    },
+    {
+     "chiave": "posto_scoperto",
+     "testo": "Posto auto in autorimessa scoperta di uso comune",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "posto_coperto",
+     "testo": "Posto auto in autorimessa coperta di uso comune",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Superficie scoperta in godimento esclusivo",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "bassi",
+     "testo": "Aree con altezza fra 1,70 e 2,40 m",
+     "coeff": 0.5
+    }
+   ],
+   "nota": "Fino a 60 mq la superficie si aumenta del 25%, senza superare 60 mq. Tolleranza del 5% in più o in meno."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "ammobiliato",
+    "tipo": "scelta",
+    "testo": "Arredamento (con elenco degli arredi)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "cucina e camera da letto arredate",
+      "perc": 15
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato in ogni stanza",
+      "perc": 25
+     }
+    ]
+   },
+   {
+    "chiave": "classe_a",
+    "tipo": "spunta",
+    "testo": "Classe energetica A attestata dall'APE",
+    "nome": "classe energetica A",
+    "perc": 5
+   },
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "testo": "Immobile di pregio (art. 1, c. 2, lett. a, L. 431/98)",
+    "nome": "immobile di pregio",
+    "perc": 15
+   },
+   {
+    "chiave": "deposito",
+    "tipo": "spunta",
+    "testo": "Le parti rinunciano al deposito cauzionale",
+    "nome": "senza deposito cauzionale",
+    "perc": 5,
+    "contratti": [
+     "agevolato"
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Le percentuali si sommano e si applicano una sola volta ai valori della subfascia. Durata oltre i tre anni: +5%.",
+  "durata": {
+   "4": 5,
+   "5": 5,
+   "6": 5
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato 4",
+  "titolo": "Attestazione di rispondenza ex D.M. 16 gennaio 2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Catania del 03/08/2018, depositato il 24/08/2018",
+  "titolo_elementi": "Elementi oggettivi per l'individuazione della subfascia (allegato 3)",
+  "dichiarazione": "La parte richiedente dichiara, sotto la propria responsabilità, gli elementi oggettivi sopra riportati.",
+  "firme": [],
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Catania, sulla base degli elementi oggettivi dichiarati dalla parte richiedente e sotto la propria responsabilità, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Catania depositato il 24/08/2018."
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dal quartiere (allegato 2)."
+ }
+}
