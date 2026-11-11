@@ -1,0 +1,434 @@
+{
+ "accordo": {
+  "codice": "arezzo-2017-07-20",
+  "modello": "arezzo-2017",
+  "comune": "Arezzo",
+  "provincia": "AR",
+  "titolo": "Accordo territoriale per il territorio del Comune di Arezzo",
+  "data": "2017-07-20",
+  "data_testo": "20 luglio 2017",
+  "deposito": "Comune di Arezzo, 25/07/2017",
+  "deposito_data": "25.07.2017",
+  "protocollo": "2017/0091815",
+  "ufficio": "Comune di Arezzo",
+  "ufficio_breve": "Comune di Arezzo",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Arezzo del 20 luglio 2017, con le modifiche del 26 giugno 2018.</strong> Era di tre anni dal deposito, ormai trascorsi, ma resta in vigore finché non ne viene firmato uno nuovo: il Comune lo pubblica ancora e nel 2024 ha ricevuto nuove adesioni. I valori sono quelli della tabella del 2018, al mq al mese, e non si aggiornano con l'ISTAT. <strong>Con l'APE in classe G</strong> (fuori dal centro storico B1) valgono massimi più bassi: indicalo nella scheda.",
+  "firmatari_proprieta": [
+   "U.P.P.I. Arezzo",
+   "CONFABITARE Arezzo",
+   "A.P.P.C. Arezzo (Confcommercio)",
+   "CONFEDILIZIA - A.P.E. Arezzo",
+   "CONFEDILIZIA Cortona (A.P.C.C.)"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A. Arezzo",
+   "S.I.C.E.T. Arezzo",
+   "UIL (UIL-CST Toscana Centrale)"
+  ],
+  "nota": "Firmato ad Arezzo il 20/07/2017 e consegnato al Comune di Arezzo il 25/07/2017 (ricevuta di protocollo 2017/0091815, ore 10:44); durata tre anni dal giorno dopo il deposito, poi resta in vigore fino a un nuovo accordo (punto 5 dell'oggetto). Sostituisce l'accordo dell'ottobre 2004. Modifiche e integrazioni firmate il 26/06/2018 dalle stesse organizzazioni (in vigore dal giorno dopo il deposito, data e protocollo del deposito non indicati nel documento pubblicato): nuova tabella delle fasce (art. 2, minimo uguale per le tre subfasce di ogni area), categorie A/7 e A/8 aggiunte agli elementi, precisazione sull'edilizia popolare (case popolari riscattate) e tabella dei massimi per la classe energetica G (art. 4). Tre aree omogenee per zone censuarie OMI; subfascia minima fino a 4 elementi, intermedia fino a 7, massima da 8; senza riscaldamento, servizi igienici interni o ascensore oltre il secondo piano si resta nella minima. Superficie convenzionale della legge 392/1978, tolleranza 5%. Adesioni successive depositate in Comune: Unioncasa (11/11/2020), SaiCisal (2021), A.N.P.U. (19/10/2022), F.E.N.I.T. (24/11/2022), UNSICASA (22/04/2024); le dichiarazioni Unioncasa e SaiCisal parlano per errore di «accordo 2019» ma rimandano a quello firmato il 26/06/2018. Nessun aggiornamento ISTAT dei valori: l'art. 5 riguarda solo l'aggiornamento annuale del canone (fino al 75% dell'ISTAT, salvo cedolare secca).",
+  "fonte": "Comune di Arezzo, pagina «Accordi territoriali» (comune.arezzo.it/accordi-territoriali): accordo firmato e protocollato (11 pagine in scansione, con la ricevuta del 25/07/2017), allegati A-E (contratti tipo, oneri accessori, commissione paritetica), allegati F e F bis (attestazioni), «Modifiche e integrazioni» del 26/06/2018 e dichiarazioni di adesione. Stesso testo del 2017 pubblicato da SUNIA, UPPI (2021) e Confedilizia (ottobre 2025). Descrizioni indicative delle zone OMI da requot.com (dati OMI), non ufficiali."
+ },
+ "esempio_zona": "la zona OMI dalla mappa GEOPOI dell'Agenzia delle Entrate",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "scelta",
+  "tabella_chiave": "ape_g",
+  "tabella_predefinita": "normale",
+  "zone": [
+   {
+    "codice": "1B1",
+    "nome": "Area 1 - Centro storico (zona OMI B1)",
+    "nota": "Area 1 centrale, zona OMI B1: il centro storico dentro le mura. Qui non vale il limite per la classe energetica G e, se l'alloggio è stato ristrutturato integralmente negli ultimi 10 anni, il canone può salire fino al 20%. Per trovare la zona OMI: sito dell'Agenzia delle Entrate GEOPOI (cerca «Arezzo», poi «Visualizza zone OMI»), come indica il Comune; le località elencate sono solo indicative.",
+    "fasce": {
+     "normale": [
+      [
+       3.13,
+       3.61
+      ],
+      [
+       3.13,
+       4.99
+      ],
+      [
+       3.13,
+       9.32
+      ]
+     ],
+     "g": [
+      [
+       3.13,
+       3.61
+      ],
+      [
+       3.13,
+       4.99
+      ],
+      [
+       3.13,
+       9.32
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "1",
+    "nome": "Area 1 - Centrale (zone OMI C1, C2, C3, C6, C51)",
+    "nota": "Area 1 centrale fuori dalle mura, zone OMI C1, C2, C3, C6, C51. Indicativamente: Saione, Via Veneto, Via Arno, Belvedere, San Donato, Viale Piero della Francesca, Baldaccio, Via Perennio, Orciolaia, Via Chimera, zona Giotto, Viale Mecenate, Viale Michelangelo, Zona Tribunale, Cappuccini, Via Francesco Redi, Marchionna, Via Trento e Trieste, Viale Santa Margherita fino al raccordo, Via Tarlati, Villaggio Oriente. Per trovare la zona OMI: sito dell'Agenzia delle Entrate GEOPOI (cerca «Arezzo», poi «Visualizza zone OMI»), come indica il Comune; le località elencate sono solo indicative.",
+    "fasce": {
+     "normale": [
+      [
+       3.13,
+       3.61
+      ],
+      [
+       3.13,
+       4.99
+      ],
+      [
+       3.13,
+       9.32
+      ]
+     ],
+     "g": [
+      [
+       3.13,
+       3.37
+      ],
+      [
+       3.13,
+       4.3
+      ],
+      [
+       3.13,
+       7.16
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2 - Semicentrale (OMI D2, D3, D6, D66, D67)",
+    "nota": "Area 2 semicentrale, zone OMI D2, D3, D6, D66, D67. Indicativamente: Via Romana, Viale Dante, Tortaia, Meridiana, Pescaiola fino a Maestà di Giannino, l'ex Lebole e Via Fiorentina oltre il raccordo fino a San Leo e Ceciliano, Pratacci, la Catona, San Fabiano, Staggiano, zona Stadio, Santa Maria delle Grazie, Via Donatello. Per trovare la zona OMI: sito dell'Agenzia delle Entrate GEOPOI (cerca «Arezzo», poi «Visualizza zone OMI»), come indica il Comune; le località elencate sono solo indicative.",
+    "fasce": {
+     "normale": [
+      [
+       2.49,
+       3.13
+      ],
+      [
+       2.49,
+       4.35
+      ],
+      [
+       2.49,
+       7.45
+      ]
+     ],
+     "g": [
+      [
+       2.49,
+       2.81
+      ],
+      [
+       2.49,
+       3.74
+      ],
+      [
+       2.49,
+       5.9
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3 - Periferica (D5, D63, D65, E8, E9, R4, R6)",
+    "nota": "Area 3 periferica, zone OMI D5, D63, D65, E8, E9, R4, R6. Indicativamente: Bagnoro, Saccione, Agazzi, Pratantico, Indicatore, Ponte a Chiani, San Giuliano, Olmo, Policiano, Rigutino, Giovi, Ponte alla Chiassa, Tregozzano, Palazzo del Pero e il territorio rurale e collinare. Per trovare la zona OMI: sito dell'Agenzia delle Entrate GEOPOI (cerca «Arezzo», poi «Visualizza zone OMI»), come indica il Comune; le località elencate sono solo indicative.",
+    "fasce": {
+     "normale": [
+      [
+       1.86,
+       2.49
+      ],
+      [
+       1.86,
+       3.61
+      ],
+      [
+       1.86,
+       6.21
+      ]
+     ],
+     "g": [
+      [
+       1.86,
+       2.17
+      ],
+      [
+       1.86,
+       3.05
+      ],
+      [
+       1.86,
+       4.91
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "minima",
+    "intermedia",
+    "massima"
+   ],
+   "criterio": "conta",
+   "conta": {
+    "da": 0,
+    "a": 16
+   },
+   "soglie": [
+    4,
+    7
+   ],
+   "almeno": {
+    "da": 17,
+    "a": 19,
+    "n": 3,
+    "avviso": "Per uscire dalla subfascia minima servono riscaldamento, servizi igienici interni e, oltre il 2° piano, l'ascensore (art. 3)."
+   }
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi caratteristici (art. 3): si contano"
+   },
+   {
+    "da": 17,
+    "titolo": "Requisiti: se ne manca anche uno si resta nella subfascia minima"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Impianto di riscaldamento autonomo"
+   },
+   {
+    "testo": "Verde condominiale"
+   },
+   {
+    "testo": "Doppio bagno (conta solo negli alloggi da 90 mq in su)"
+   },
+   {
+    "testo": "Autorimessa (garage)"
+   },
+   {
+    "testo": "Vicino ai servizi pubblici essenziali (anche verde pubblico)"
+   },
+   {
+    "testo": "Balconi, cantina o soffitta"
+   },
+   {
+    "testo": "Categoria catastale da A/2 ad A/8 (dalla visura)"
+   },
+   {
+    "testo": "Edificio costruito da meno di 30 anni"
+   },
+   {
+    "testo": "Alloggio ristrutturato negli ultimi 15 anni"
+   },
+   {
+    "testo": "Cucina con almeno una finestra"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Terrazzo di oltre 20 mq"
+   },
+   {
+    "testo": "Giardino privato o spazio esclusivo"
+   },
+   {
+    "testo": "Fuori da un contesto di case popolari riscattate"
+   },
+   {
+    "testo": "Almeno doppia esposizione"
+   },
+   {
+    "testo": "Attestato di prestazione energetica (APE) (L. 90/2013)"
+   },
+   {
+    "testo": "Aria condizionata"
+   },
+   {
+    "testo": "Impianto di riscaldamento (di qualsiasi tipo)"
+   },
+   {
+    "testo": "Servizi igienici (bagno) dentro l'alloggio"
+   },
+   {
+    "testo": "Fino al 2° piano o con ascensore (escluso B1 o piano rialzato)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'alloggio (senza muri)",
+   "correzioni": [
+    {
+     "fino": 46,
+     "perc": 20,
+     "tetto": 50.6
+    },
+    {
+     "fino": 70,
+     "incluso": true,
+     "perc": 10,
+     "tetto": 70
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto macchina in autorimessa comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Superficie scoperta in godimento esclusivo",
+     "coeff": 0.15,
+     "scaglione": [
+      "base",
+      0.15,
+      0
+     ]
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (la tua quota in millesimi)",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Superficie convenzionale della legge 392/1978 (art. 13), con una tolleranza del 5% in più o in meno: l'alloggio al netto dei muri, l'autorimessa esclusiva al 50%, il posto macchina in autorimessa comune al 20%, balconi, terrazze, cantine e simili al 25%, lo scoperto esclusivo al 15% (fino a tanti mq quanti quelli dell'alloggio), il verde condominiale al 10% della tua quota (mq del verde x millesimi / 1000). I vani alti meno di 1,70 m contano il 70%: scrivili già ridotti. Come dice la legge, l'alloggio da 46 a 70 mq conta il 10% in più (non oltre 70 mq) e quello sotto i 46 mq il 20% in più (non oltre 50,6 mq)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "ape_g",
+    "tipo": "scelta",
+    "testo": "Classe energetica nell'APE (sceglie la tabella dei valori)",
+    "nome": "classe energetica",
+    "nessuna": "da A a F (non G)",
+    "escluse": [
+     "1B1"
+    ],
+    "opzioni": [
+     {
+      "valore": "g",
+      "testo": "classe G: massimi più bassi (art. 4)",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "b1_ristrutturato",
+    "tipo": "spunta",
+    "zone": [
+     "1B1"
+    ],
+    "testo": "Centro storico: alloggio ristrutturato integralmente negli ultimi 10 anni (con certificati di conformità, agibilità e impianti)",
+    "nome": "centro storico ristrutturato",
+    "perc": 20
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento (dal 5% al 10% secondo qualità e quantità dei mobili)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "arredato in parte o con mobili essenziali",
+      "perc": 5
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato, mobili in buono stato",
+      "perc": 10
+     }
+    ]
+   },
+   {
+    "chiave": "vincolato",
+    "tipo": "spunta",
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "testo": "Immobile vincolato (art. 1, c. 2, lett. a, L. 431/98)",
+    "nome": "immobile vincolato",
+    "perc": 10
+   },
+   {
+    "chiave": "vincolato_stud",
+    "tipo": "spunta",
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Immobile vincolato (art. 1, c. 2, lett. a, L. 431/98)",
+    "nome": "immobile vincolato",
+    "perc": 20
+   }
+  ],
+  "correttivi_superficie": [
+   {
+    "a": 49.99,
+    "su": "base",
+    "perc": 10,
+    "nome": "alloggio sotto i 50 mq"
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti sono il massimo consentito («fino a») e si sommano: arredamento dal 5% al 10%, immobile vincolato fino al 10% (fino al 20% per gli studenti), alloggio sotto i 50 mq fino al 10%, durata oltre i tre anni fino al 5%, centro storico (B1) ristrutturato negli ultimi 10 anni fino al 20%. Con l'APE in classe G, fuori dal B1, i massimi sono quelli della tabella dell'art. 4. Per una porzione di alloggio si contano i mq in uso esclusivo più la quota delle parti comuni divisa per il numero degli inquilini.",
+  "durata": {
+   "4": 5,
+   "5": 5,
+   "6": 5
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato F",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale del Comune di Arezzo depositato il 25/07/2017 (prot. 2017/0091815), modificato il 26/06/2018",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Accordo territoriale",
+  "titolo_elementi": "ELEMENTI E PARAMETRI OGGETTIVI (art. 3 dell'Accordo)",
+  "etichetta_conteggio": "ELEMENTI E PARAMETRI n.",
+  "dichiarazione": "Il richiedente (locatore o conduttore) dichiara sotto la propria responsabilità gli elementi sopra riportati.",
+  "firme": [
+   "Il dichiarante",
+   "Il dichiarante"
+  ],
+  "titolo_attestazione": "ATTESTA",
+  "attestazione": [
+   "TUTTO CIÒ PREMESSO, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Arezzo, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Arezzo depositato in data 25/07/2017."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla zona censuaria OMI dell'immobile: il Comune rimanda alla mappa GEOPOI dell'Agenzia delle Entrate (cerca «Arezzo», poi «Visualizza zone OMI»). Area 1: B1, C1, C2, C3, C6, C51; Area 2: D2, D3, D6, D66, D67; Area 3: D5, D63, D65, E8, E9, R4, R6."
+ }
+}
