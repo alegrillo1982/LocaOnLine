@@ -1,0 +1,741 @@
+{
+ "accordo": {
+  "codice": "alessandria-2024-07-19",
+  "modello": "alessandria-2024",
+  "comune": "Alessandria",
+  "provincia": "AL",
+  "titolo": "Accordo territoriale per il territorio del Comune di Alessandria",
+  "data": "2024-07-19",
+  "data_testo": "19 luglio 2024",
+  "deposito": "Comune di Alessandria, protocollo n. 0070991 del 26/07/2024",
+  "deposito_data": "26.07.2024",
+  "protocollo": "0070991",
+  "ufficio": "Comune di Alessandria, Protocollo generale",
+  "ufficio_breve": "Comune di Alessandria",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Alessandria modificato il 19 luglio 2024: durata di due anni per i contratti firmati dopo il 31 luglio 2024, ormai trascorsi.</strong> Resta in vigore fino alla firma di quello nuovo (titolo H) e il Comune lo pubblica ancora come vigente. L'accordo non prevede aggiornamenti ISTAT delle fasce: prima di firmare chiedi a un'associazione firmataria se è stato sottoscritto un accordo nuovo.",
+  "firmatari_proprieta": [
+   "A.P.P.C.",
+   "Confabitare",
+   "Confappi",
+   "Associazione Proprietari di Casa - Confedilizia",
+   "A.S.P.P.I.",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Testo dell'accordo depositato il 30/03/2018 (prot. 25965) coordinato con le modifiche concordate il 19/07/2024 e con correzioni di errori materiali; firmato in Sala Giunta (pagina delle firme datata 25/07/2024) e protocollato dal Comune il 26/07/2024 (n. 0070991). Si applica ai contratti firmati dopo il 31/07/2024, dura due anni e resta in vigore fino al nuovo accordo (titolo H); presa d'atto della Giunta con delibera n. 297 del 14/11/2024. I valori minimi e massimi restano invariati per tutta la durata dell'accordo (titolo A, punto 15): non ci sono aggiornamenti ISTAT delle tabelle. Valori in euro annui per mq, per area e anno di costruzione (allegato B per agevolati e transitori, allegato F per studenti, con aree proprie dell'allegato D). Gli aumenti e le riduzioni (superficie, durata, arredo, dotazioni, classe energetica, aumento bilaterale dei transitori) si sommano e cambiano solo il valore massimo. La versione «non scansionata» pubblicata dal Comune differisce dal testo firmato nel punto A.7 (vedi avvisi). UPPI ha firmato dichiarandosi contraria alla doppia attestazione per i contratti agevolati.",
+  "fonte": "Comune di Alessandria, scheda «Accordo Territoriale - Contratti di Locazione» (aggiornata il 23/10/2026): accordo coordinato con le firme, gli allegati e la pagina di protocollo (media/795), versione in formato testo (media/793 e 794) e delibera di presa d'atto n. 297/2024 (media/796). Stesso testo firmato anche su sunia.info (Accordo-Territoriale-Alessandria-26.07.2024.pdf). Notizia della firma: Radio Gold del 22/07/2024."
+ },
+ "esempio_zona": "l'area dagli allegati A e C (centro storico, quartieri intermedi, sobborghi) o, per gli studenti, dagli allegati D ed E",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "solo_massimo": true,
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Area 1 - Centro storico (agevolati)",
+    "nota": "Area 1, centro storico: dentro corso T. Borsalino, spalto Gamondio, spalto Marengo, spalto Rovereto, lungo Tanaro Solferino, lungo Tanaro San Martino, via Tiziano e spalto Borgoglio (allegati A e C). Le vie di confine fanno parte dell'area in cui sono inserite, come da cartografia allegata all'accordo. Valori dell'allegato B.",
+    "fasce": [
+     [
+      10,
+      60
+     ],
+     [
+      15,
+      65
+     ],
+     [
+      20,
+      72
+     ],
+     [
+      25,
+      75
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2 - Intermedia (agevolati)",
+    "nota": "Area 2, intermedia: quartieri Cittadella, Cristo (compreso Norberto Rosa), Europa, Galimberti (compresi Borsalino e Commercianti), Orti e Pista (allegati A e C). Le vie di confine fanno parte dell'area in cui sono inserite, come da cartografia allegata all'accordo. Valori dell'allegato B.",
+    "fasce": [
+     [
+      10,
+      55
+     ],
+     [
+      15,
+      58
+     ],
+     [
+      20,
+      62
+     ],
+     [
+      25,
+      65
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3 - Periferica (agevolati)",
+    "nota": "Area 3, periferica: sobborghi di Casalbagliano, Spinetta Marengo, Valle San Bartolomeo e Valmadonna (allegati A e C). Valori dell'allegato B.",
+    "fasce": [
+     [
+      10,
+      52
+     ],
+     [
+      15,
+      55
+     ],
+     [
+      20,
+      58
+     ],
+     [
+      25,
+      60
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Area 4 - Sobborghi (agevolati)",
+    "nota": "Area 4, sobborghi: Cabanette, Cantalupo, Castelceriolo, Litta Parodi, Lobbi, Mandrogne, San Giuliano Vecchio e Nuovo, San Michele e Villa del Foro (allegati A e C). Valori dell'allegato B.",
+    "fasce": [
+     [
+      10,
+      44
+     ],
+     [
+      15,
+      47
+     ],
+     [
+      20,
+      51
+     ],
+     [
+      25,
+      54
+     ]
+    ]
+   },
+   {
+    "codice": "T1",
+    "nome": "Area 1 - Centro storico (transitori)",
+    "nota": "Area 1, centro storico: dentro corso T. Borsalino, spalto Gamondio, spalto Marengo, spalto Rovereto, lungo Tanaro Solferino, lungo Tanaro San Martino, via Tiziano e spalto Borgoglio (allegati A e C). Le vie di confine fanno parte dell'area in cui sono inserite, come da cartografia allegata all'accordo. Valori dell'allegato B, con le regole dei contratti transitori.",
+    "fasce": [
+     [
+      10,
+      60
+     ],
+     [
+      15,
+      65
+     ],
+     [
+      20,
+      72
+     ],
+     [
+      25,
+      75
+     ]
+    ]
+   },
+   {
+    "codice": "T2",
+    "nome": "Area 2 - Intermedia (transitori)",
+    "nota": "Area 2, intermedia: quartieri Cittadella, Cristo (compreso Norberto Rosa), Europa, Galimberti (compresi Borsalino e Commercianti), Orti e Pista (allegati A e C). Le vie di confine fanno parte dell'area in cui sono inserite, come da cartografia allegata all'accordo. Valori dell'allegato B, con le regole dei contratti transitori.",
+    "fasce": [
+     [
+      10,
+      55
+     ],
+     [
+      15,
+      58
+     ],
+     [
+      20,
+      62
+     ],
+     [
+      25,
+      65
+     ]
+    ]
+   },
+   {
+    "codice": "T3",
+    "nome": "Area 3 - Periferica (transitori)",
+    "nota": "Area 3, periferica: sobborghi di Casalbagliano, Spinetta Marengo, Valle San Bartolomeo e Valmadonna (allegati A e C). Valori dell'allegato B, con le regole dei contratti transitori.",
+    "fasce": [
+     [
+      10,
+      52
+     ],
+     [
+      15,
+      55
+     ],
+     [
+      20,
+      58
+     ],
+     [
+      25,
+      60
+     ]
+    ]
+   },
+   {
+    "codice": "T4",
+    "nome": "Area 4 - Sobborghi (transitori)",
+    "nota": "Area 4, sobborghi: Cabanette, Cantalupo, Castelceriolo, Litta Parodi, Lobbi, Mandrogne, San Giuliano Vecchio e Nuovo, San Michele e Villa del Foro (allegati A e C). Valori dell'allegato B, con le regole dei contratti transitori.",
+    "fasce": [
+     [
+      10,
+      44
+     ],
+     [
+      15,
+      47
+     ],
+     [
+      20,
+      51
+     ],
+     [
+      25,
+      54
+     ]
+    ]
+   },
+   {
+    "codice": "S1",
+    "nome": "Studenti - Area 1 Universitaria",
+    "nota": "Contratti per studenti, area 1 universitaria (allegati D ed E): dentro il percorso fiume Tanaro, via Tiziano, lungo Tanaro Solferino, lungo Tanaro Magenta, via XXVIII Marzo, via della Chiatta, viale Milite Ignoto, via Teresa Michel, via Monteverde, via Galimberti, via Moccagatta, via Don Giovine, via Marengo, via San Giovanni Bosco, corso Romita, linea ferroviaria Torino-Genova, viale Medaglie d'Oro, spalto Borgoglio. Le vie di confine fanno parte dell'area in cui sono inserite, come da cartografia allegata all'accordo. Valori dell'allegato F.",
+    "fasce": [
+     [
+      10,
+      63
+     ],
+     [
+      15,
+      73
+     ],
+     [
+      20,
+      79
+     ],
+     [
+      25,
+      83
+     ]
+    ]
+   },
+   {
+    "codice": "S2",
+    "nome": "Studenti - Area 2 Intermedia",
+    "nota": "Contratti per studenti, area 2 intermedia (allegati D ed E): tutto il territorio fuori dall'area universitaria, esclusi i sobborghi. Valori dell'allegato F.",
+    "fasce": [
+     [
+      10,
+      52
+     ],
+     [
+      15,
+      66
+     ],
+     [
+      20,
+      69
+     ],
+     [
+      25,
+      73
+     ]
+    ]
+   },
+   {
+    "codice": "S3",
+    "nome": "Studenti - Area 3 Sobborghi",
+    "nota": "Contratti per studenti, area 3 periferica (allegati D ed E): sobborghi di Cabanette, Cantalupo, Casalbagliano, Castelceriolo, Litta Parodi, Lobbi, Mandrogne, San Giuliano Vecchio e Nuovo, San Michele, Spinetta Marengo, Valle San Bartolomeo, Valmadonna e Villa del Foro. Valori dell'allegato F.",
+    "fasce": [
+     [
+      10,
+      50
+     ],
+     [
+      15,
+      53
+     ],
+     [
+      20,
+      56
+     ],
+     [
+      25,
+      58
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "fino al 1962",
+    "1963-1990",
+    "1991-2007",
+    "dal 2008"
+   ],
+   "criterio": "punti",
+   "conta": {
+    "da": 0,
+    "a": 1
+   },
+   "soglie": [
+    0,
+    1,
+    2
+   ]
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Riga della tabella: anno di costruzione e interventi"
+   },
+   {
+    "da": 2,
+    "titolo": "Dotazioni (solo agevolati: con almeno 3, massimo +5%)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Anno di costruzione (o di completa ristrutturazione del fabbricato, con titolo edilizio)",
+    "livelli": [
+     {
+      "testo": "fino al 31/12/1962",
+      "punti": 0
+     },
+     {
+      "testo": "dal 1963 al 1990",
+      "punti": 1
+     },
+     {
+      "testo": "dal 1991 al 2007",
+      "punti": 2
+     },
+     {
+      "testo": "dal 1° gennaio 2008",
+      "punti": 3
+     }
+    ]
+   },
+   {
+    "testo": "Interventi negli ultimi 20 anni: impianto elettrico, riscaldamento o condizionamento, pavimenti, tutti gli infissi, bagni, cucina, disposizione interna",
+    "livelli": [
+     {
+      "testo": "meno di 3",
+      "punti": 0
+     },
+     {
+      "testo": "3 o 4 (riga sopra)",
+      "punti": 1
+     },
+     {
+      "testo": "5 o più (due righe sopra)",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Impianto di riscaldamento autonomo"
+   },
+   {
+    "testo": "Condizionamento d'aria con impianto fisso"
+   },
+   {
+    "testo": "Porta blindata (certificata in base alla classe)"
+   },
+   {
+    "testo": "Sistema antintrusione (allarme)"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Ascensore"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale totale della visura (o superficie lorda dichiarata da un tecnico)",
+   "voci": [
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazze (solo se non già compresi nella superficie)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "cantina",
+     "testo": "Cantina accatastata C/2",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa singola accatastata C/6",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Superficie scoperta in godimento esclusivo",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posto auto coperto o scoperto accatastato C/6",
+     "coeff": 0.25
+    }
+   ],
+   "nota": "Si parte dalla superficie catastale totale della visura; se manca, dalla superficie lorda dichiarata da un tecnico. Si aggiungono il 50% dell'autorimessa singola, il 25% del posto auto e della cantina, fino al 15% della superficie scoperta in uso esclusivo. La riga dei balconi è nel modulo di attestazione: usala solo se non sono già nella superficie della visura."
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "superficie oltre 110 mq",
+    "da": 110.01,
+    "perc": -15,
+    "zone": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ]
+   },
+   {
+    "nome": "superficie da 41 a 60 mq",
+    "da": 40.01,
+    "a": 60,
+    "perc": 15,
+    "zone": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ]
+   },
+   {
+    "nome": "superficie oltre 110 mq",
+    "da": 110.01,
+    "perc": -15,
+    "zone": [
+     "T1",
+     "T2",
+     "T3",
+     "T4"
+    ]
+   },
+   {
+    "nome": "superficie da 51 a 60 mq",
+    "da": 50.01,
+    "a": 60,
+    "perc": 20,
+    "zone": [
+     "T1",
+     "T2",
+     "T3",
+     "T4"
+    ]
+   },
+   {
+    "nome": "superficie da 41 a 50 mq",
+    "da": 40.01,
+    "a": 50,
+    "perc": 30,
+    "zone": [
+     "T1",
+     "T2",
+     "T3",
+     "T4"
+    ]
+   },
+   {
+    "nome": "superficie sotto i 41 mq",
+    "a": 40,
+    "perc": 50,
+    "zone": [
+     "T1",
+     "T2",
+     "T3",
+     "T4"
+    ]
+   },
+   {
+    "nome": "superficie oltre 110 mq",
+    "da": 110.01,
+    "perc": -10,
+    "zone": [
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   {
+    "nome": "superficie da 51 a 60 mq",
+    "da": 50.01,
+    "a": 60,
+    "perc": 20,
+    "zone": [
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   {
+    "nome": "superficie da 41 a 50 mq",
+    "da": 40.01,
+    "a": 50,
+    "perc": 30,
+    "zone": [
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   {
+    "nome": "superficie sotto i 41 mq",
+    "a": 40,
+    "perc": 50,
+    "zone": [
+     "S1",
+     "S2",
+     "S3"
+    ]
+   }
+  ],
+  "premium": {
+   "da": 2,
+   "a": 7,
+   "nome": "dotazioni (almeno 3)",
+   "scaglioni": [
+    {
+     "da": 3,
+     "perc": {
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5,
+      "altre": 0
+     }
+    }
+   ]
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredato",
+    "tipo": "spunta",
+    "ammobiliato": true,
+    "perc": 10,
+    "testo": "Completamente arredato: mobili in buono stato ed elettrodomestici funzionanti (televisore, lavatrice, frigorifero, piano cottura)",
+    "nome": "immobile completamente arredato"
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "testo": "Classe energetica dell'edificio (APE)",
+    "nome": "classe energetica",
+    "nessuna": "scegli la classe…",
+    "opzioni": [
+     {
+      "valore": "A",
+      "testo": "A, A1, A2, A3 o A4",
+      "perc": 12
+     },
+     {
+      "valore": "BC",
+      "testo": "B o C",
+      "perc": 8
+     },
+     {
+      "valore": "DE",
+      "testo": "D o E",
+      "perc": 5
+     },
+     {
+      "valore": "FG",
+      "testo": "F o G",
+      "perc": -3
+     },
+     {
+      "valore": "NC",
+      "testo": "NC (non classificata)",
+      "perc": -12
+     }
+    ]
+   },
+   {
+    "chiave": "energia_stud",
+    "tipo": "scelta",
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Classe energetica dell'edificio (APE)",
+    "nome": "classe energetica",
+    "nessuna": "scegli la classe…",
+    "opzioni": [
+     {
+      "valore": "A4",
+      "testo": "A1, A2, A3 o A4",
+      "perc": 12
+     },
+     {
+      "valore": "A",
+      "testo": "A",
+      "perc": 10
+     },
+     {
+      "valore": "BC",
+      "testo": "B o C",
+      "perc": 8
+     },
+     {
+      "valore": "DE",
+      "testo": "D o E",
+      "perc": 5
+     },
+     {
+      "valore": "FG",
+      "testo": "F o G",
+      "perc": -3
+     },
+     {
+      "valore": "NC",
+      "testo": "NC (non classificata)",
+      "perc": -12
+     }
+    ]
+   },
+   {
+    "chiave": "bilaterale",
+    "tipo": "spunta",
+    "contratti": [
+     "transitorio"
+    ],
+    "perc": 10,
+    "testo": "Aumento del 10% concordato dalle organizzazioni della proprietà e degli inquilini (attestazione bilaterale)",
+    "nome": "transitori: aumento bilaterale"
+   }
+  ],
+  "nota_maggiorazioni": "La riga della tabella dipende dall'anno di costruzione; con almeno 3 interventi importanti negli ultimi 20 anni si usa la riga successiva, con almeno 5 due righe sopra. Sul valore massimo: superficie (agevolati: oltre 110 mq -15%, da 41 a 60 mq +15%; transitori e studenti: oltre 110 mq -15% o -10%, da 51 a 60 +20%, da 41 a 50 +30%, sotto i 41 +50%), durata 4, 5 o 6 anni +3, +5 o +8%, arredo +10%, almeno 3 dotazioni +5% (solo agevolati), classe energetica da +12% a -12%, transitori fino a +10% con l'accordo delle organizzazioni. Le percentuali si sommano.",
+  "durata": {
+   "4": 3,
+   "5": 5,
+   "6": 8
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Per un contratto agevolato scegli una delle aree «(agevolati)»: le aree «(transitori)» e «Studenti» seguono altre regole.",
+    "contratti": [
+     "agevolato"
+    ],
+    "zone": [
+     "T1",
+     "T2",
+     "T3",
+     "T4",
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   {
+    "testo": "Per un contratto transitorio scegli una delle aree «(transitori)»: hanno gli stessi confini e valori, ma correttivi di superficie diversi.",
+    "contratti": [
+     "transitorio"
+    ],
+    "zone": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   {
+    "testo": "Per un contratto per studenti scegli una delle aree «Studenti» (allegato D): confini e valori sono diversi (allegato F).",
+    "contratti": [
+     "studenti"
+    ],
+    "zone": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "T1",
+     "T2",
+     "T3",
+     "T4"
+    ]
+   },
+   {
+    "testo": "Alloggi sotto i 41 mq: il testo firmato e protocollato prevede per i contratti agevolati solo «da 41 fino a 60 mq: +15%», quindi nessun aumento; la versione in formato testo pubblicata dal Comune scrive invece «fino a 60 mq». Qui si applica il testo firmato: fai verificare all'associazione.",
+    "contratti": [
+     "agevolato"
+    ],
+    "zone": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ]
+   },
+   {
+    "testo": "Gli aumenti e le riduzioni cambiano solo il valore massimo: il minimo resta quello della tabella."
+   },
+   {
+    "testo": "Dal 1° gennaio 2025 l'attestazione è obbligatoriamente bilaterale: la rilasciano insieme un'organizzazione della proprietà e una degli inquilini firmatarie."
+   },
+   {
+    "testo": "Contratti tramite l'Agenzia sociale per la locazione (ASLO), il fondo morosità incolpevole o altri aiuti pubblici: il canone massimo si riduce dal 15% al 20% e il contratto lo redige un'organizzazione firmataria (titolo D)."
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato I2",
+  "titolo": "Attestazione di rispondenza bilaterale ex D.M. 16/1/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Alessandria depositato il 30/03/2018, coordinato con le modifiche del 19/07/2024 (prot. Comune di Alessandria n. 0070991 del 26/07/2024)",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Accordo territoriale",
+  "titolo_elementi": "Elementi di valutazione, interventi di ristrutturazione e dotazioni",
+  "etichetta_conteggio": "RIGA DELLA TABELLA (PUNTI)",
+  "dichiarazione": "Locatore e conduttore chiedono l'attestazione ex D.M. 16/1/2017 e dichiarano, sotto la loro responsabilità in forma di autocertificazione, gli elementi sopra indicati.",
+  "firme": [
+   "Il locatore",
+   "Il conduttore"
+  ],
+  "titolo_attestazione": "ATTESTANO",
+  "attestazione": [
+   "Tutto ciò premesso, le Organizzazioni …………………………… e …………………………… come sopra rappresentate, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Alessandria depositato in data 30/03/2018 e successive modifiche e integrazioni."
+  ],
+  "firme_attestazione": [
+   "I dichiaranti",
+   "p. l'Organizzazione",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "Agevolati e transitori: area 1 centro storico, area 2 quartieri intermedi, area 3 sobborghi periferici, area 4 altri sobborghi (allegati A e C). Studenti: aree 1-3 dell'allegato D (cartografia allegato E)."
+ }
+}
