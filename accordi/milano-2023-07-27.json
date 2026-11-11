@@ -1,0 +1,342 @@
+{
+  "accordo": {
+    "codice": "milano-2023-07-27",
+    "modello": "milano-2023",
+    "comune": "Milano",
+    "provincia": "MI",
+    "titolo": "Accordo locale per la città metropolitana di Milano",
+    "data": "2023-07-27",
+    "data_testo": "27 luglio 2023",
+    "integrazione_testo": "20 settembre 2023",
+    "deposito": "",
+    "deposito_data": "",
+    "protocollo": "",
+    "ufficio": "",
+    "ufficio_breve": "",
+    "valido_fino": "",
+    "firmatari_conduttori": [
+      "SUNIA Milano",
+      "UNIAT",
+      "CONIA Milano e provincia"
+    ],
+    "firmatari_proprieta": [
+      "ASSOEDILIZIA aderente a CONFEDILIZIA",
+      "UPPI",
+      "ASPPI Milano",
+      "APPC",
+      "CONFAPPI Milano"
+    ],
+    "nota": "Testo del 27 luglio 2023 con l'accordo integrativo del 20 settembre 2023 (sub-fascia 1 con stufe, stanze 7.1 e 7.2, canone sotto il minimo con assistenza, C7 a 500 m).",
+    "nota_validita": "Art. 14: durata di 3 anni dal giorno del deposito; resta in vigore fino alla firma del nuovo accordo. Dopo la scadenza i limiti minimi e massimi delle fasce si aumentano con l'intera variazione ISTAT (indice FOI) dal mese successivo al 27 luglio 2023 (agosto 2023) al mese precedente la firma del contratto.",
+    "fonte": "Milano Abitare (Comune di Milano): Accordo luglio 2023 con integrazione settembre 2023 e Tabella valori (Allegato 2).",
+    "avviso_validita": "<strong>Accordo di Milano del 27 luglio 2023: validità di tre anni dal deposito.</strong> Resta in vigore finché non viene firmato quello nuovo; dopo la scadenza i minimi e i massimi delle fasce si aumentano con l'<strong>intera variazione ISTAT</strong> da agosto 2023 (art. 14). Qui trovi i valori originali: chiedi all'associazione che attesta il contratto quelli aggiornati."
+  },
+  "esempio_zona": "la zona (da 1 a 5) si trova dall'indirizzo sulla mappa dell'accordo",
+  "cerca_zona": [
+    {
+      "nome": "Cerca la zona dall'indirizzo (Assoedilizia, firmataria)",
+      "url": "https://concordato.assoedilizia.mi.it/"
+    },
+    {
+      "nome": "Mappa delle zone (Allegato 1)",
+      "url": "https://concordato.assoedilizia.mi.it/wp-content/uploads/2025/05/mappa-concordato-new2-1.jpg"
+    }
+  ],
+  "regole": {
+    "unita": "annuo",
+    "superficie": {
+      "base": "catastale",
+      "righe": [
+        {
+          "chiave": "appartamento",
+          "etichetta": "Superficie appartamento o porzione locata",
+          "coeff": 1
+        },
+        {
+          "chiave": "spazi_comuni",
+          "etichetta": "Superficie spazi comuni nell'appartamento (solo per locazione parziale)",
+          "coeff": 1,
+          "solo_parziale": true
+        },
+        {
+          "chiave": "autorimessa",
+          "etichetta": "Autorimessa singola",
+          "coeff": 0.5
+        },
+        {
+          "chiave": "posto_auto",
+          "etichetta": "Posto auto cortile",
+          "coeff": 0.25
+        },
+        {
+          "chiave": "balconi",
+          "etichetta": "Balconi, terrazze, lastrici solari",
+          "coeff": 0.3
+        },
+        {
+          "chiave": "cantine",
+          "etichetta": "Cantine, soffitte (non comunicanti)",
+          "coeff": 0.25
+        },
+        {
+          "chiave": "scoperta",
+          "etichetta": "Superficie scoperta in godimento esclusivo",
+          "coeff": 0.1
+        }
+      ],
+      "piccoli": {
+        "da": 28,
+        "a": 50,
+        "coeff": 0.1,
+        "etichetta": "Maggiorazione per alloggi con superficie da 28 a 50 mq"
+      },
+      "tolleranza": 0.04
+    },
+    "correttivi": {
+      "arredato": 15,
+      "semi_arredato": 8,
+      "durata": {
+        "4": 3,
+        "5": 5,
+        "6": 8,
+        "7": 10
+      },
+      "classe_G": -2,
+      "cumulo": "prodotto"
+    },
+    "elementi_D_per_massimo": 5,
+    "stanze": {
+      "2": 600,
+      "3": 500,
+      "4": 450,
+      "5": 400
+    },
+    "deposito_cauzionale_mensilita": 3,
+    "istat_aggiornamento": 75
+  },
+  "elementi": {
+    "A": [
+      [
+        "A1",
+        "bagno interno completo di tutti gli elementi (tazza, lavabo, vasca o doccia) e con almeno una finestra o dispositivo di areazione meccanica"
+      ],
+      [
+        "A2",
+        "impianti tecnologici essenziali e funzionanti: adduzione acqua potabile; impianto predisposto per l'installazione di uno scaldabagno che eroghi acqua calda in bagno; impianto elettrico; impianto gas"
+      ],
+      [
+        "A3",
+        "impianti tecnologici, di esalazione e scarico conformi alle norme igienico-sanitarie e di sicurezza, vigenti alla data di stipula del contratto"
+      ],
+      [
+        "A4",
+        "riscaldamento centralizzato o autonomo"
+      ]
+    ],
+    "B": [
+      [
+        "B1",
+        "cucina abitabile con almeno una finestra"
+      ],
+      [
+        "B2",
+        "ascensore per unità abitative situate al 2° piano o superiore"
+      ],
+      [
+        "B3",
+        "stato di manutenzione e conservazione dell'unità immobiliare normale in tutti i suoi elementi costitutivi; impianti tecnologici, infissi, pavimenti, pareti e soffitti"
+      ]
+    ],
+    "C": [
+      [
+        "C1",
+        "doppio bagno di cui almeno uno completo di tutti gli elementi (tazza, lavabo, vasca o doccia) e con almeno una finestra o dispositivo di areazione meccanica"
+      ],
+      [
+        "C2",
+        "autorimessa o posto auto coperto (esclusivo o in comune, locati al conduttore)"
+      ],
+      [
+        "C3",
+        "giardino condominiale"
+      ],
+      [
+        "C4",
+        "stato di manutenzione e conservazione dell'unità immobiliare buono in tutti i suoi elementi costitutivi: impianti tecnologici propri dell'abitazione, infissi, pavimenti, pareti e soffitti"
+      ],
+      [
+        "C5",
+        "stato di manutenzione e conservazione dello stabile normale in tutti i suoi elementi costitutivi: impianti tecnologici comuni, facciate, coperture, scale e spazi comuni interni"
+      ],
+      [
+        "C6",
+        "porte blindate o doppi vetri"
+      ],
+      [
+        "C7",
+        "prossimità dell'abitazione all'insieme dei servizi: distanza inferiore a 500 m da stazione metropolitana e trasporto pubblico (autobus, tram)"
+      ],
+      [
+        "C8",
+        "appartamenti fatti oggetto negli ultimi 10 anni di intervento edilizio manutentivo per il quale è stato richiesto al Comune titolo abilitativo o esperita altra procedura amministrativa"
+      ],
+      [
+        "C9",
+        "assenza di fonti specifiche di inquinamento ambientale ed acustico"
+      ]
+    ],
+    "D": [
+      [
+        "D1",
+        "presenza di elementi accessori: balconi o terrazzi"
+      ],
+      [
+        "D2",
+        "presenza di elementi funzionali: cantina o soffitta (locata al conduttore)"
+      ],
+      [
+        "D3",
+        "appartamenti con vetustà inferiore a 30 anni o immobili di pregio edilizio, ancorché non vincolati ai sensi di legge"
+      ],
+      [
+        "D4",
+        "presenza di domotica per la gestione degli elettrodomestici o impianti di climatizzazione"
+      ],
+      [
+        "D5",
+        "giardino privato o spazio aperto esclusivo"
+      ],
+      [
+        "D6",
+        "posto auto scoperto (locato al conduttore)"
+      ],
+      [
+        "D7",
+        "presenza di videocitofono"
+      ],
+      [
+        "D8",
+        "terrazza di superficie superiore a 20 mq."
+      ],
+      [
+        "D9",
+        "classe energetica A, B, C o D"
+      ],
+      [
+        "D10",
+        "appartamenti fatti oggetto negli ultimi 5 anni di intervento edilizio manutentivo per il quale è stato richiesto al Comune titolo abilitativo o esperita altra procedura amministrativa"
+      ]
+    ],
+    "stanze": [
+      [
+        "S1",
+        "Vano arredato e finestrato di superficie pari ad almeno 12 mq in appartamento completamente arredato"
+      ],
+      [
+        "S2",
+        "Presenza nell'appartamento di almeno un locale destinato ai servizi igienici o la presenza di due servizi igienici nel caso di locazione di oltre tre stanze"
+      ],
+      [
+        "S3",
+        "Presenza nell'appartamento di almeno un locale cucina finestrato di ampiezza minima pari a 9 mq o, se minore, presenza di un ulteriore locale destinato soggiorno, con diritto di utilizzare gli spazi comuni"
+      ]
+    ]
+  },
+  "zone": [
+    {
+      "codice": "1",
+      "nome": "Zona 1",
+      "colore": "giallo",
+      "fasce": [
+        [
+          100,
+          170
+        ],
+        [
+          171,
+          240
+        ],
+        [
+          241,
+          310
+        ]
+      ]
+    },
+    {
+      "codice": "2",
+      "nome": "Zona 2",
+      "colore": "magenta",
+      "fasce": [
+        [
+          70,
+          100
+        ],
+        [
+          101,
+          150
+        ],
+        [
+          151,
+          180
+        ]
+      ]
+    },
+    {
+      "codice": "3",
+      "nome": "Zona 3",
+      "colore": "viola",
+      "fasce": [
+        [
+          60,
+          95
+        ],
+        [
+          96,
+          145
+        ],
+        [
+          146,
+          170
+        ]
+      ]
+    },
+    {
+      "codice": "4",
+      "nome": "Zona 4",
+      "colore": "azzurro",
+      "fasce": [
+        [
+          55,
+          90
+        ],
+        [
+          91,
+          135
+        ],
+        [
+          136,
+          160
+        ]
+      ]
+    },
+    {
+      "codice": "5",
+      "nome": "Zona 5",
+      "colore": "verde",
+      "fasce": [
+        [
+          50,
+          85
+        ],
+        [
+          86,
+          120
+        ],
+        [
+          121,
+          130
+        ]
+      ]
+    }
+  ]
+}

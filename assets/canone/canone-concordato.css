@@ -157,7 +157,23 @@
 .cc .linguette button[aria-selected=true] { color: #fff; background: var(--notte); }
 
 /* telefono: una colonna dove serve, nessun elemento che esce dallo schermo */
+
+/* scheda di Milano (scheda-milano.js): stesse classi, qualche aggiunta */
+.cc .scheda-milano:not(.tipo-agevolato) .solo-agevolato { display: none; }
+.cc .scheda-milano.modo-stanza .solo-mq, .cc .scheda-milano:not(.modo-stanza) .solo-stanza { display: none; }
+.cc .scheda-milano:not(.parziale) .solo-parziale { display: none; }
+.cc .caselle.colonna { flex-direction: column; flex-wrap: nowrap; gap: 9px; }
+.cc .caselle.colonna label { align-items: flex-start; }
+.cc .caselle.colonna input[type=checkbox] { margin-top: 2px; }
+.cc .elementi .codice { display: inline-block; min-width: 2.2em; font-family: var(--dati); font-size: 13px; color: var(--blu); }
+.cc .superfici-milano .risultato { font-family: var(--dati); font-size: 14px; white-space: nowrap; }
+.cc .maiuscolo { text-transform: uppercase; }
+.cc .zona-milano label { display: flex; flex-direction: column; gap: 5px; max-width: 320px; font: 600 12px/1.3 Inter, sans-serif; color: var(--tenue); }
+.cc .zona-milano .nota-copia { margin: 8px 0 0; }
+
 @media (max-width: 640px) {
+  .cc .tabella-superfici.superfici-milano tr[data-riga] td:nth-of-type(1)::before { content: "Da visura (mq)"; }
+  .cc .tabella-superfici.superfici-milano tr[data-riga] td:nth-of-type(3)::before { content: "Superficie (mq)"; }
   .cc .sezione-canone { padding: 16px 14px; }
   .cc .griglia-campi .largo { grid-column: 1 / -1; }
   .cc .parametri { grid-template-columns: 1fr; }

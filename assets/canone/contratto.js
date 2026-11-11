@@ -256,7 +256,7 @@
     const modi = { bonifico: "a mezzo di bonifico bancario" + (pieno(d.iban) ? ` sul conto IBAN ${d.iban.replace(/\s+/g, "").toUpperCase()}` + (pieno(d.intestatario_conto) ? ` intestato a ${d.intestatario_conto}` : "") : ""),
                    domicilio: "nel domicilio del locatore", altro: o(d.pagamento_altro) };
     titolo("Articolo 2 (Canone)");
-    par(G(`Il canone annuo di locazione, secondo quanto stabilito dall'Accordo territoriale definito tra le Organizzazioni della Proprietà e le Organizzazioni degli inquilini e depositato il ${acc.deposito_data} con Protocollo n. ${acc.protocollo} presso il Comune di ${comuneAccordo(acc)} / ${acc.ufficio}, è convenuto in `, [euro(annuo) + " annuali"], `, che il conduttore si obbliga a corrispondere ${modi[d.pagamento] || modi.bonifico}, in n. ${rate} rate eguali anticipate di ${euro(annuo ? annuo / rate : null)} ciascuna, ${scadenzaRata}.`));
+    par(G(`Il canone annuo di locazione, secondo quanto stabilito dall'Accordo territoriale definito tra le Organizzazioni della Proprietà e le Organizzazioni degli inquilini e depositato il ${acc.deposito_data} con Protocollo n. ${acc.protocollo} presso il Comune di ${comuneAccordo(acc)}${acc.ufficio ? " / " + acc.ufficio : ""}, è convenuto in `, [euro(annuo) + " annuali"], `, che il conduttore si obbliga a corrispondere ${modi[d.pagamento] || modi.bonifico}, in n. ${rate} rate eguali anticipate di ${euro(annuo ? annuo / rate : null)} ciascuna, ${scadenzaRata}.`));
     if (cedolare) {
       par("Nel caso in cui l'Accordo territoriale di cui al presente punto lo preveda, il canone viene aggiornato ogni anno nella misura contrattata del 75%, che comunque non può superare il 75% della variazione Istat, ed esclusivamente nel caso in cui il locatore non abbia optato per la \u201ccedolare secca\u201d, per la durata dell'opzione.");
     } else {
@@ -525,7 +525,7 @@
     let n = 0;
     const articolo = (nome) => { numeri[nome] = ++n; titolo(`Articolo ${n} (${nome})`); };
     const cedolare = d.cedolare !== false && !loc.some((p) => p.tipo === "giuridica");
-    const accordo = `depositato il ${acc.deposito_data} presso il Comune di ${comuneAccordo(acc)} con Prot. ${acc.protocollo} - ${acc.ufficio_breve}`;
+    const accordo = `depositato il ${acc.deposito_data} presso il Comune di ${comuneAccordo(acc)} con Prot. ${acc.protocollo}${acc.ufficio_breve ? " - " + acc.ufficio_breve : ""}`;
 
     B.push({ t: "intestazione", righe: [
       { testo: "LOCAZIONE ABITATIVA DI NATURA TRANSITORIA", g: true, s: 13, sottolinea: true },
@@ -914,6 +914,13 @@
   function genera(dati, accordo, impostazioni = {}) {
     const m = MODELLI[dati.tipo || "agevolato"];
     if (!m) throw new Error("Tipo di contratto non previsto: " + dati.tipo);
+    // accordi senza data o protocollo di deposito pubblicati (Milano): righe da compilare
+    const a = accordo && accordo.accordo;
+    if (a && (!a.deposito_data || !a.protocollo)) {
+      const riga = "______________";
+      accordo = Object.assign({}, accordo, { accordo: Object.assign({}, a, {
+        deposito_data: a.deposito_data || riga, protocollo: a.protocollo || riga }) });
+    }
     return m.genera(dati, accordo, impostazioni);
   }
 

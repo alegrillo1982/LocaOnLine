@@ -51,15 +51,19 @@
       if (!r.ok) throw new Error(r.status);
       const accordo = await r.json();
       const a = accordo.accordo;
-      $("accordo-in-uso").textContent =
-        `Accordo del ${a.data_testo}, depositato il ${a.deposito_data} (prot. ${a.protocollo}).`;
+      // Roma: data e protocollo del deposito; Milano: data di deposito non pubblicata
+      const deposito = a.deposito_data ? `, depositato il ${a.deposito_data}` : "";
+      $("accordo-in-uso").textContent = `Accordo del ${a.data_testo}` +
+        (a.integrazione_testo ? `, integrato il ${a.integrazione_testo}` : "") + deposito +
+        (a.protocollo ? ` (prot. ${a.protocollo})` : "") + ".";
       // il PDF ufficiale, se e' stato caricato (link in accordi/indice.json)
       for (const [id, campo] of [["accordo-pdf", "pdf"], ["accordo-pdf-studenti", "pdf_studenti"]]) {
         const link = $(id);
         if (voce && voce[campo]) { link.href = voce[campo]; link.hidden = false; } else link.hidden = true;
       }
       $("fonte-accordo").textContent =
-        `${a.titolo} del ${a.data_testo}, depositato il ${a.deposito_data} con prot. ${a.protocollo}` +
+        `${a.titolo} del ${a.data_testo}` + (a.integrazione_testo ? `, integrato il ${a.integrazione_testo}` : "") +
+        deposito + (a.protocollo ? ` con prot. ${a.protocollo}` : "") +
         (a.ufficio ? ` (${a.ufficio})` : "") + (voce && voce.zone ? `: ${voce.zone} zone.` : ".");
       avvisoValidita(a);
       attuale = codice;
@@ -75,6 +79,7 @@
   function avvisoValidita(a) {
     const box = $("avviso-validita");
     const oggi = new Date().toISOString().slice(0, 10);
+    if (!a.valido_fino && a.avviso_validita) { box.innerHTML = a.avviso_validita; box.hidden = false; return; }
     if (!a.valido_fino || oggi <= a.valido_fino) { box.hidden = true; return; }
     const [aa, mm, gg] = a.valido_fino.split("-");
     box.innerHTML = `<strong>Accordo di ${a.comune} oltre la scadenza (${gg}/${mm}/${aa}).</strong> ` +

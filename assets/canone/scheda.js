@@ -225,7 +225,10 @@
   // ------------------------------------------------------------------ PDF
   // Si crea qui, nel browser: la scheda com'e' adesso sullo schermo.
   let caratteri = null;
+  // l'accordo di Milano ha la sua scheda (scheda-milano.js): qui si passa a lei
+  const milano = () => (window.SchedaMilano && window.SchedaMilano.attiva() ? window.SchedaMilano : null);
   async function creaPDF() {
+    if (milano()) return milano().creaPDF();
     if (window.caricaLibrerie) await window.caricaLibrerie("pdf");
     if (!ultimo || !window.PDFLib || !window.fontkit) throw new Error("la stampa non è ancora pronta, riprova tra un attimo");
     if (!caratteri) {
@@ -239,6 +242,7 @@
     return new Blob([byte], { type: "application/pdf" });
   }
   const nomePDF = () => {
+    if (milano()) return milano().nomePDF();
     const s = ultimo.scheda;
     return ["Scheda canone", s.locatore || "", s.zona || ""].filter(Boolean).join(" - ").replace(/[\\/:*?"<>|]/g, "") + ".pdf";
   };
@@ -270,6 +274,9 @@
   }
 
   window.addEventListener("accordo", (e) => {
+    // un accordo con un suo "modello" (Milano) ha la sua scheda: questa si nasconde
+    if (e.detail.accordo.modello) { accordo = null; ultimo = null; modulo.hidden = true; return; }
+    modulo.hidden = false;
     accordo = e.detail;
     costruisciParametri();
     campo("zona").value = "";
@@ -296,10 +303,13 @@
   });
 
   window.SchedaCanone = {
-    ultimo: () => ultimo, accordo: () => accordo, carica,
-    leggi: () => (accordo ? leggi() : null),
+    ultimo: () => (milano() ? milano().ultimo() : ultimo),
+    accordo: () => (milano() ? milano().accordo() : accordo),
+    carica: (d) => (milano() ? milano().carica(d) : carica(d)),
+    leggi: () => (milano() ? milano().leggi() : accordo ? leggi() : null),
     // un titolo per l'elenco della dashboard: zona, indirizzo, canone massimo
     titolo: () => {
+      if (milano()) return milano().titolo();
       if (!ultimo) return "Scheda del canone";
       const s = ultimo.scheda, r = ultimo.r;
       return [r.zona ? `${r.zona.codice} ${r.zona.nome}` : "Zona da scegliere", s.indirizzo,

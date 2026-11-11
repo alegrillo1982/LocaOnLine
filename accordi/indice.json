@@ -10,6 +10,16 @@
    "zone": 215,
    "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Froma-2023-07-25.pdf?alt=media&token=a9a83efb-6904-4b6d-91bf-a6d49f70dd6b",
    "pdf_studenti": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Froma-2023-07-25-studenti.pdf?alt=media&token=3e37cee9-8863-4d44-adc1-04fa9cd7c692"
+  },
+  {
+   "comune": "Milano",
+   "provincia": "MI",
+   "accordo": "milano-2023-07-27",
+   "sottoscritto": "27 luglio 2023",
+   "depositato": "",
+   "zone": 5,
+   "pdf": "https://www.milanoabitare.org/documents/357714223/0/ACCORDO+LUGLIO+2023+CON+INTEGRAZIONE+SETT.+2023+.pdf/2ff7d8f7-4b3b-cc9d-d1d0-b65211c0af15?t=1745843696578",
+   "pdf_studenti": ""
   }
  ]
 }

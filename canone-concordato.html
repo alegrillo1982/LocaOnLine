@@ -12,18 +12,18 @@
 
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Canone concordato Roma: calcolo e contratto gratis</title>
-  <meta name="description" content="Calcola il canone concordato con l'accordo territoriale di Roma e compila il contratto 3+2, per studenti o transitorio, in PDF o Word."/>
+  <title>Canone concordato Roma e Milano: calcolo e contratto</title>
+  <meta name="description" content="Calcola il canone concordato con gli accordi di Roma e Milano e compila il contratto 3+2, per studenti o transitorio, in PDF o Word."/>
   <link rel="canonical" href="https://locaonline.it/canone-concordato.html"/>
   <meta name="robots" content="index, follow"/>
 
   <meta property="og:type"        content="website"/>
   <meta property="og:url"         content="https://locaonline.it/canone-concordato.html"/>
-  <meta property="og:title"       content="Canone concordato Roma: calcolo e contratto gratis"/>
-  <meta property="og:description" content="Calcola il canone concordato con l'accordo territoriale di Roma e compila il contratto 3+2, per studenti o transitorio, in PDF o Word."/>
+  <meta property="og:title"       content="Canone concordato Roma e Milano: calcolo e contratto"/>
+  <meta property="og:description" content="Calcola il canone concordato con gli accordi di Roma e Milano e compila il contratto 3+2, per studenti o transitorio, in PDF o Word."/>
   <meta property="og:locale"      content="it_IT"/>
   <meta name="twitter:card"       content="summary"/>
-  <meta name="twitter:title"      content="Canone concordato Roma: calcolo e contratto gratis"/>
+  <meta name="twitter:title"      content="Canone concordato Roma e Milano: calcolo e contratto"/>
 
   <script type="application/ld+json">
   {
@@ -52,7 +52,7 @@
           {
             "@type": "Question",
             "name": "Cos'è la scheda di calcolo del canone concordato?",
-            "acceptedAnswer": { "@type": "Answer", "text": "È il modulo previsto dall'accordo territoriale del Comune (per Roma l'Allegato 2/B dell'accordo del 25 luglio 2023): parte dalla zona, dalla superficie convenzionale e dalle dotazioni dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato." }
+            "acceptedAnswer": { "@type": "Answer", "text": "È il modulo previsto dall'accordo territoriale del Comune (per Roma l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo del 27 luglio 2023): parte dalla zona, dalla superficie convenzionale e dalle dotazioni dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato." }
           },
           {
             "@type": "Question",
@@ -290,6 +290,107 @@
         <dd><input type="text" id="pattuito" name="canone_pattuito" inputmode="decimal" class="campo-numero"></dd>
       </dl>
       <ul id="avvisi" class="avvisi-canone" aria-live="polite"></ul>
+    </section>
+  </form>
+  <!-- Scheda per l'accordo di Milano (2023): riproduce la "Richiesta di
+       attestazione bilaterale". Visibile solo con l'accordo di Milano. -->
+  <form id="scheda-milano" class="scheda-milano" autocomplete="off" onsubmit="return false" hidden>
+
+    <section class="sezione-canone">
+      <h2>Contratto</h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Tipo di contratto">
+        <label><input type="radio" name="tipo" value="agevolato" checked> Abitativo (3 + 2)</label>
+        <label><input type="radio" name="tipo" value="studenti"> Studenti universitari</label>
+        <label><input type="radio" name="tipo" value="transitorio"> Transitorio</label>
+      </div>
+      <div class="griglia-campi">
+        <label class="solo-agevolato">Durata<select name="durata_anni">
+          <option value="3">3 + 2 anni</option><option value="4">4 anni (+3%)</option><option value="5">5 anni (+5%)</option>
+          <option value="6">6 anni (+8%)</option><option value="7">oltre 6 anni (+10%)</option></select></label>
+        <label>Dal<input type="date" name="dal"></label>
+        <label>Al<input type="date" name="al"></label>
+      </div>
+      <div class="scelta-tipo stacco" role="radiogroup" aria-label="Come si calcola il canone">
+        <label><input type="radio" name="modo" value="mq" checked> Canone a metro quadro</label>
+        <label><input type="radio" name="modo" value="stanza"> Singola stanza a canone forfettario (punto 7.2)</label>
+      </div>
+      <div class="caselle solo-mq"><label><input type="checkbox" name="parziale"> Locazione parziale o di singole camere (punto 7.1)</label></div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Parti e immobile</h2>
+      <div class="griglia-campi">
+        <label class="largo">Locatore<input type="text" name="locatore"></label>
+        <label>C.F. locatore<input type="text" name="locatore_cf" class="maiuscolo"></label>
+        <label>Residente a<input type="text" name="locatore_comune"></label>
+        <label class="largo">Via (locatore)<input type="text" name="locatore_via"></label>
+        <label class="largo">Conduttore<input type="text" name="conduttore"></label>
+        <label>C.F. conduttore<input type="text" name="conduttore_cf" class="maiuscolo"></label>
+        <label>Residente a<input type="text" name="conduttore_comune"></label>
+        <label class="largo">Via (conduttore)<input type="text" name="conduttore_via"></label>
+      </div>
+      <h3 class="sotto">Immobile locato</h3>
+      <div class="griglia-campi">
+        <label>Comune<input type="text" name="citta"></label>
+        <label class="largo">Via e numero civico<input type="text" name="indirizzo"></label>
+        <label>Piano<input type="text" name="piano"></label>
+        <div class="catasto"><span>Id. catastale</span>
+          <label>Fg <input type="text" name="foglio" inputmode="numeric" aria-label="Foglio"></label>
+          <label>Mapp <input type="text" name="particella" inputmode="numeric" aria-label="Mappale"></label>
+          <label>Sub <input type="text" name="subalterno" inputmode="numeric" aria-label="Subalterno"></label></div>
+      </div>
+      <div class="zona-milano stacco">
+        <label>Zona urbana omogenea<select name="zona"><option value="">scegli…</option></select></label>
+        <p class="nota-copia" id="milano-cerca-zona"></p>
+      </div>
+    </section>
+
+    <section class="sezione-canone solo-mq">
+      <h2>Caratteristiche dell'immobile <small id="milano-conteggi"></small></h2>
+      <div id="milano-elementi"></div>
+    </section>
+
+    <section class="sezione-canone solo-mq">
+      <h2>Superficie</h2>
+      <p class="nota-copia">Le superfici sono quelle <b>catastali</b> (dalla visura, DPR 138/98).</p>
+      <div class="scorre">
+        <table class="tabella-superfici superfici-milano">
+          <thead><tr><th>Voce</th><th>Da visura catastale (mq)</th><th>Coeff.</th><th>Sup. (mq)</th></tr></thead>
+          <tbody id="milano-superfici"></tbody>
+          <tfoot><tr><th colspan="3">Totale</th><td class="totale"><b id="milano-totale">—</b> mq</td></tr></tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section class="sezione-canone solo-mq">
+      <h2>Arredo, durata e classe energetica</h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Arredo">
+        <label><input type="radio" name="arredo" value="no" checked> Non arredato</label>
+        <label><input type="radio" name="arredo" value="semi"> Semi arredato <small>(fino a +8%)</small></label>
+        <label><input type="radio" name="arredo" value="completo"> Completamente arredato <small>(fino a +15%)</small></label>
+      </div>
+      <div class="caselle"><label><input type="checkbox" name="classe_G"> Classe energetica G <small>(−2%)</small></label></div>
+    </section>
+
+    <section class="sezione-canone solo-stanza">
+      <h2>Stanza a canone forfettario</h2>
+      <div id="milano-stanze" class="caselle colonna"></div>
+    </section>
+
+    <section class="sezione-canone calcolo">
+      <h2>Calcolo del canone</h2>
+      <dl class="righe-calcolo">
+        <dt>Zona</dt><dd id="milano-esito-zona">—</dd>
+        <dt class="solo-mq">Sub-fascia</dt><dd class="solo-mq" id="milano-esito-subfascia">—</dd>
+        <dt class="solo-mq">Valori €/mq annui</dt><dd class="solo-mq" id="milano-esito-fascia">—</dd>
+        <dt class="solo-mq">Correttivi</dt><dd class="solo-mq" id="milano-esito-correttivi">—</dd>
+        <dt class="solo-mq">Canone annuo</dt><dd class="solo-mq" id="milano-esito-annuo">—</dd>
+        <dt>Canone mensile massimo</dt><dd><b id="milano-esito-massimo">—</b></dd>
+        <dt><label for="milano-annuo">Canone annuo convenuto (€)</label></dt>
+        <dd><input type="text" id="milano-annuo" name="canone_annuo" inputmode="decimal" class="campo-numero">
+          <small id="milano-mensile"></small></dd>
+      </dl>
+      <ul id="milano-avvisi" class="avvisi-canone" aria-live="polite"></ul>
     </section>
   </form>
   <div class="barra-canone" role="region" aria-label="Riepilogo del canone">
@@ -536,7 +637,8 @@
           <details class="bg-white border border-slate-200 rounded-xl p-4" open>
             <summary class="font-semibold cursor-pointer">Cos'è la scheda di calcolo del canone concordato?</summary>
             <p class="text-sm text-[#4A5568] leading-relaxed mt-2">È il modulo previsto dall'accordo territoriale del Comune (per Roma
-              l'Allegato 2/B dell'accordo del 25 luglio 2023): parte dalla zona, dalla superficie convenzionale e dalle dotazioni
+              l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo
+              del 27 luglio 2023): parte dalla zona, dalla superficie convenzionale e dalle dotazioni
               dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato.</p>
           </details>
           <details class="bg-white border border-slate-200 rounded-xl p-4">
@@ -685,7 +787,10 @@
   <script src="assets/canone/stampa.js"></script>
   <script src="assets/canone/pdf-contratto.js"></script>
   <script src="assets/canone/word-contratto.js"></script>
+  <script src="assets/canone/canone-milano.js"></script>
+  <script src="assets/canone/stampa-milano.js"></script>
   <script src="assets/canone/scheda.js"></script>
+  <script src="assets/canone/scheda-milano.js"></script>
   <script src="assets/canone/modulo-contratto.js"></script>
   <script src="assets/canone/pagina-canone.js"></script>
   <script type="module" src="assets/canone/salva-canone.js"></script>

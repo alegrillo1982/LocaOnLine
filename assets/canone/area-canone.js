@@ -97,7 +97,7 @@ async function mostraAccordi() {
         </div>
         <div class="flex-1 min-w-0">
           <p class="text-sm font-semibold text-[#0F2A4A]">${testo(c.comune)}${c.provincia ? ` (${testo(c.provincia)})` : ''}</p>
-          <p class="text-xs text-slate-400 mt-0.5">Accordo del ${testo(c.sottoscritto)}, depositato il ${testo(c.depositato)}</p>
+          <p class="text-xs text-slate-400 mt-0.5">Accordo del ${testo(c.sottoscritto)}${c.depositato ? `, depositato il ${testo(c.depositato)}` : ''}</p>
         </div>
         <div class="flex items-center gap-2 flex-shrink-0">
           ${[['pdf', 'Accordo'], ['pdf_studenti', 'Studenti']].filter(([k]) => c[k]).map(([k, nome]) => `<a href="${testo(c[k])}" target="_blank" rel="noopener"
