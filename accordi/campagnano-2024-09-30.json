@@ -1,0 +1,432 @@
+{
+ "accordo": {
+  "codice": "campagnano-2024-09-30",
+  "modello": "provincia-roma-2024",
+  "comune": "Campagnano di Roma",
+  "provincia": "RM",
+  "titolo": "Accordo territoriale per il territorio del Comune di Campagnano di Roma",
+  "data": "2024-09-30",
+  "data_testo": "30 settembre 2024",
+  "deposito": "Comune di Campagnano di Roma, 04/10/2024",
+  "deposito_data": "04.10.2024",
+  "protocollo": "",
+  "ufficio": "Comune di Campagnano di Roma",
+  "ufficio_breve": "Comune di Campagnano di Roma",
+  "valido_fino": "2027-10-04",
+  "nota_validita": "Titolo G: validità triennale dal giorno successivo al deposito; senza rinnovo, le fasce si rivalutano con la variazione ISTAT assoluta. L'accordo resta in vigore fino alla firma del nuovo.",
+  "firmatari_proprieta": [
+   "A.P.P.C.",
+   "A.R.P.E.",
+   "A.S.P.P.I.",
+   "CONFAPPI",
+   "CONFEDILIZIA",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "FEDER.CASA",
+   "SAI CISAL",
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T.-APS Lazio",
+   "UNIONE INQUILINI"
+  ],
+  "nota": "Accordo firmato a Campagnano di Roma il 30/09/2024 dalle organizzazioni della proprietà e degli inquilini (la stessa famiglia dell'accordo di Roma del 25/07/2023) e trasmesso al Comune il 04/10/2024 (data dall'elenco degli accordi di Federcasa Roma; protocollo non indicato nei documenti). Sostituisce l'accordo del 2019. Per lo stesso comune esiste anche un accordo del 21/06/2024 firmato da Confabitare, Unioncasa, Assocasa e A.N.I.A., con valori diversi: qui non è usato. Allegato 1 (zone OMI e fasce A, B, C) trascritto dalla scansione firmata. Il canone si aggiorna ogni anno al massimo del 75% della variazione ISTAT (non con la cedolare secca).",
+  "fonte": "SUNIA, pagina «Accordi territoriali di Roma»: «Campagnano-di-Roma-Accordo-Territoriale-2024.pdf» (scansione firmata, 11 pagine, con l'allegato 1). Allegati 2/A e 2/B (elementi oggettivi e scheda di calcolo), comuni a tutti gli accordi, dal sito del Comune di Pomezia (prot. 104199 del 08/10/2024)."
+ },
+ "esempio_zona": "la microzona OMI (allegato 1)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tetto_zona": true,
+  "fasce": {
+   "nomi": [
+    "A",
+    "B",
+    "C"
+   ],
+   "criterio": "conta",
+   "conta": {
+    "da": 4,
+    "a": 23
+   },
+   "soglie": [
+    2,
+    6
+   ],
+   "obbligatori": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "avviso_obbligatori": "Senza tutte e 4 le caratteristiche dell'alloggio «normale» (acqua, gas o induzione, fognatura, riscaldamento) si resta in fascia A.",
+   "proporzionale": [
+    null,
+    {
+     "da": 3,
+     "passi": 3
+    },
+    {
+     "da": 7,
+     "passi": 2,
+     "max_con_aumenti": true
+    }
+   ],
+   "nota_soglie": "fascia A anche senza una sola delle 4 caratteristiche dell'alloggio «normale»; in fascia B il massimo con 6 parametri, in fascia C con 9 o con almeno un aumento",
+   "nota": "Fascia A: alloggio senza anche una sola delle 4 caratteristiche essenziali, o con meno di 3 parametri. Fascia B: da 3 parametri (il massimo della fascia con 6). Fascia C: da 7 parametri (il massimo con 9, o con un aumento percentuale), in proporzione al numero dei parametri (allegato 2/A)."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Alloggio «normale» (allegato 2/A): senza anche una sola di queste caratteristiche si resta in fascia A"
+   },
+   {
+    "da": 4,
+    "titolo": "Parametri (allegato 2/B): fascia B da 3, fascia C da 7"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Allaccio alla rete idrica"
+   },
+   {
+    "testo": "Gas (anche da deposito a norma) o cucina a induzione"
+   },
+   {
+    "testo": "Allaccio alla rete fognante"
+   },
+   {
+    "testo": "Idoneo impianto di riscaldamento"
+   },
+   {
+    "testo": "Posto auto"
+   },
+   {
+    "testo": "Cortile d'uso comune, area verde o impianto sportivo"
+   },
+   {
+    "testo": "Cantina"
+   },
+   {
+    "testo": "Terrazzo o balcone"
+   },
+   {
+    "testo": "Area verde di pertinenza o giardino"
+   },
+   {
+    "testo": "Aria condizionata"
+   },
+   {
+    "testo": "Stabile con ascensore"
+   },
+   {
+    "testo": "Bagno con finestra o doppi servizi"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Doppi vetri"
+   },
+   {
+    "testo": "Stabile con servizio di portierato"
+   },
+   {
+    "testo": "Stabile o alloggio ultimati o rifatti da meno di 10 anni"
+   },
+   {
+    "testo": "Sistema di sicurezza o sistema di allarme"
+   },
+   {
+    "testo": "Cucina abitabile con finestra"
+   },
+   {
+    "testo": "Videocitofono o videosorveglianza"
+   },
+   {
+    "testo": "Antenna centralizzata o impianto satellitare"
+   },
+   {
+    "testo": "Riscaldamento autonomo"
+   },
+   {
+    "testo": "Palazzina non superiore a 4 piani"
+   },
+   {
+    "testo": "Strutture per il superamento delle barriere architettoniche"
+   },
+   {
+    "testo": "Terrazzo o locale condominiale a uso comune"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'appartamento",
+   "correzioni": [
+    {
+     "fino": 46,
+     "perc": 30,
+     "tetto": 52.9
+    },
+    {
+     "da": 46,
+     "fino": 70,
+     "incluso": true,
+     "perc": 15,
+     "tetto": 70
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Autorimessa a uso esclusivo (box)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto auto o autorimessa di uso comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Area scoperta in godimento esclusivo",
+     "coeff": 0.15,
+     "scaglione": [
+      "base",
+      0.15,
+      0
+     ]
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota millesimale)",
+     "coeff": 0.1
+    },
+    {
+     "chiave": "basse",
+     "testo": "Vani con altezza inferiore a 1,70 m",
+     "coeff": 0.7
+    }
+   ],
+   "nota": "Superficie calpestabile al netto dei muri. Si aggiungono il box al 50%, il posto auto o l'autorimessa comune al 20%, balconi, terrazze e cantine al 25%, l'area scoperta esclusiva al 15% (fino a tanti mq quanti quelli dell'appartamento), il verde condominiale della propria quota millesimale al 10% e i vani alti meno di 1,70 m al 70%. Alloggi sotto i 46 mq: +30% fino a 52,90 mq; da 46 a 70 mq: +15% fino a 70 mq. Da 120 mq in su la superficie si può ridurre fino al 15% (facoltativo: qui non è ridotta). Tolleranza del 5% in più o in meno."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "spunta",
+    "ammobiliato": true,
+    "testo": "Alloggio completamente arredato (fino a +15%)",
+    "nome": "arredato",
+    "perc": 15
+   },
+   {
+    "chiave": "seminterrato",
+    "tipo": "spunta",
+    "testo": "Alloggio al piano seminterrato",
+    "nome": "seminterrato",
+    "perc": -10
+   },
+   {
+    "chiave": "ascensore",
+    "tipo": "spunta",
+    "testo": "Alloggio oltre il terzo piano senza ascensore",
+    "nome": "oltre il 3° piano senza ascensore",
+    "perc": -10
+   },
+   {
+    "chiave": "attico",
+    "tipo": "spunta",
+    "testo": "Alloggio al piano attico",
+    "nome": "attico",
+    "perc": 10
+   },
+   {
+    "chiave": "energia",
+    "tipo": "scelta",
+    "contratti": [
+     "agevolato",
+     "studenti"
+    ],
+    "testo": "Classe energetica (dall'APE)",
+    "nome": "classe energetica",
+    "nessuna": "classe G o senza APE",
+    "opzioni": [
+     {
+      "valore": "AB",
+      "testo": "edificio in classe A o B",
+      "perc": 5
+     },
+     {
+      "valore": "CDEF",
+      "testo": "classe C, D, E o F",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "energia_t",
+    "tipo": "scelta",
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Classe energetica (dall'APE)",
+    "nome": "classe energetica",
+    "nessuna": "classe G o senza APE",
+    "opzioni": [
+     {
+      "valore": "ABC",
+      "testo": "classe A, B o C",
+      "perc": 10
+     },
+     {
+      "valore": "DEF",
+      "testo": "classe D, E o F",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "eco",
+    "tipo": "spunta",
+    "contratti": [
+     "transitorio"
+    ],
+    "testo": "Interventi documentati Eco Bonus",
+    "nome": "Eco Bonus",
+    "perc": 5
+   },
+   {
+    "chiave": "sisma",
+    "tipo": "spunta",
+    "testo": "Interventi documentati Sisma Bonus",
+    "nome": "Sisma Bonus",
+    "perc": 10
+   },
+   {
+    "chiave": "elettro",
+    "tipo": "spunta",
+    "testo": "Almeno due elettrodomestici in classe A o B in dotazione (lavatrice, frigorifero, forno, condizionatori o pompe di calore)",
+    "nome": "elettrodomestici in classe A o B",
+    "perc": 5,
+    "se": {
+     "chiave": "energia",
+     "valori": [
+      "AB"
+     ],
+     "perc": 2,
+     "testo": "con l'edificio in classe A o B: insieme al massimo +7%"
+    }
+   },
+   {
+    "chiave": "villa",
+    "tipo": "spunta",
+    "sulle_fasce": true,
+    "testo": "Villa o villino: le fasce della zona aumentano fino al 10%",
+    "nome": "villa o villino (fasce)",
+    "perc": 10
+   },
+   {
+    "chiave": "storico",
+    "tipo": "spunta",
+    "sulle_fasce": true,
+    "testo": "Immobile storico o vincolato (art. 1, c. 2, lett. a, L. 431/98 o D.Lgs. 42/2004): fasce +15%",
+    "nome": "immobile storico o vincolato (fasce)",
+    "perc": 15
+   }
+  ],
+  "nota_maggiorazioni": "Arredamento completo fino a +15%; seminterrato o oltre il terzo piano senza ascensore -10%; attico +10%; Sisma Bonus documentato +10%. Classe energetica: per i contratti 3+2, classe C, D, E o F +5% ed edificio in classe A o B +5% (con almeno due elettrodomestici in classe A o B, insieme +7%); per i transitori, classe A, B o C +10%, D, E o F +5%, Eco Bonus +5%. Le percentuali si sommano e non portano oltre il massimo della zona (né sotto il minimo). Fuori da questo limite la durata più lunga (4+2 +7%, 5+2 +8%, 6+2 o più +9%) e il transitorio (+10%). Ville e villini: fasce della zona fino a +10%; immobili storici o vincolati: fasce +15%.",
+  "durata": {
+   "4": 7,
+   "5": 8,
+   "6": 9
+  },
+  "durata_dopo": true,
+  "contratto": {
+   "transitorio": 10
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "L'accordo di Campagnano di Roma non ha una parte per i contratti per studenti universitari: qui si applicano le regole dei contratti 3+2. Chiedi conferma all'associazione che attesta il contratto."
+   }
+  ],
+  "zone": [
+   {
+    "codice": "B1",
+    "nome": "B1 - Centrale",
+    "nota": "Zona B1 (Centrale), microzona OMI dell'Agenzia delle Entrate (allegato 1). I confini fra le zone passano sulla mezzeria delle strade; per le zone R senza valori si usano quelli delle microzone vicine.",
+    "fasce": [
+     [
+      4.0,
+      4.55
+     ],
+     [
+      4.56,
+      5.55
+     ],
+     [
+      5.56,
+      6.2
+     ]
+    ]
+   },
+   {
+    "codice": "D1",
+    "nome": "D1 - Periferica",
+    "nota": "Zona D1 (Periferica), microzona OMI dell'Agenzia delle Entrate (allegato 1). I confini fra le zone passano sulla mezzeria delle strade; per le zone R senza valori si usano quelli delle microzone vicine.",
+    "fasce": [
+     [
+      4.4,
+      4.93
+     ],
+     [
+      4.94,
+      5.88
+     ],
+     [
+      5.89,
+      6.5
+     ]
+    ]
+   },
+   {
+    "codice": "R3",
+    "nome": "R3 - Extraurbana R3 (microzona OMI)",
+    "nota": "Zona R3 (Extraurbana R3 (microzona OMI)), microzona OMI dell'Agenzia delle Entrate (allegato 1). I confini fra le zone passano sulla mezzeria delle strade; per le zone R senza valori si usano quelli delle microzone vicine.",
+    "fasce": [
+     [
+      3.5,
+      3.88
+     ],
+     [
+      3.89,
+      4.56
+     ],
+     [
+      4.57,
+      5.0
+     ]
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "Allegato 2/B",
+  "titolo": "Scheda per la determinazione del canone concordato",
+  "sottotitolo": "Accordo territoriale per il territorio del Comune di Campagnano di Roma del 30/09/2024",
+  "titolo_elementi": "Caratteristiche e parametri (allegati 2/A e 2/B)",
+  "firme": [
+   "Il Locatore",
+   "Il Conduttore",
+   "P. prestata assistenza"
+  ],
+  "nota_zone": "La zona è la microzona OMI dell'Agenzia delle Entrate in cui si trova l'immobile (allegato 1; le mappe sono depositate presso il Comune). I confini passano sulla mezzeria delle strade."
+ }
+}
