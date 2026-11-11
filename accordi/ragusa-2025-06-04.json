@@ -1,0 +1,569 @@
+{
+ "accordo": {
+  "codice": "ragusa-2025-06-04",
+  "modello": "ragusa-2025",
+  "comune": "Ragusa",
+  "provincia": "RG",
+  "titolo": "Accordo territoriale per il territorio del Comune di Ragusa",
+  "data": "2025-06-04",
+  "data_testo": "4 giugno 2025",
+  "deposito": "Comune di Ragusa",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "Comune di Ragusa",
+  "ufficio_breve": "Comune di Ragusa",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Ragusa: vale l'accordo firmato il 4 giugno 2025</strong>, che sostituisce quello del 30 ottobre 2017. Dura tre anni dal giorno dopo il deposito in Comune (quindi fino all'estate 2028) e resta comunque in vigore finché non ne viene firmato uno nuovo. L'accordo non prevede aggiornamenti ISTAT dei valori: qui trovi quelli dell'allegato 2. La data di deposito non è riportata con certezza nelle copie pubblicate: <strong>chiedila all'associazione che attesta il contratto</strong>, serve per l'attestazione.",
+  "firmatari_proprieta": [
+   "FEDERPROPRIETÀ",
+   "U.P.P.I.",
+   "UNION CASA"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Accordo per il Comune di Ragusa firmato il 04/06/2025 da SUNIA, SICET, UNIAT, Federproprietà, UPPI e Union Casa; sostituisce integralmente l'accordo stipulato il 30/10/2017. Trasmesso al Sindaco per il deposito con lettera SUNIA del 05/06/2025; sull'intestazione del testo la data di deposito è scritta a mano come 04/06/2025, quindi data e protocollo del deposito restano da confermare. Durata tre anni dal giorno successivo al deposito, poi in vigore fino al nuovo accordo (titolo H). Nessun aggiornamento ISTAT delle fasce. Territorio diviso nelle 15 microzone catastali della delibera del Consiglio comunale n. 72 del 17/11/1999, individuate per foglio catastale (allegato 1); valori mensili al mq per microzona e fascia (allegato 2); fascia secondo il numero di elementi oggettivi su 21 (allegato 3: fino a 7, da 8 a 14, da 15 a 21). Massimo ridotto al 90% per classe energetica D-E, all'80% per F-G, del 10% dal secondo piano senza ascensore (non per gli studenti); +30% per A/1, A/8, A/9; arredo fino a +20% (completo) o +10% (parziale), per gli studenti fino a +30% (completo). Nella copia SUNIA l'allegato 3 porta l'intestazione 'Accordo territoriale di Modica' (la copia di Modica ha quella di Ragusa): l'elenco dei 21 elementi è identico e firmato.",
+  "fonte": "SUNIA nazionale, pagina 'Accordi territoriali Ragusa' (sunia.it): scansione firmata di 14 pagine con lettera di trasmissione al Sindaco, testo e allegati 1-4 (manca l'allegato 5, modulo di richiesta alla commissione). Il Comune di Ragusa non pubblica l'accordo sul suo sito."
+ },
+ "esempio_zona": "la microzona dal foglio catastale (lo trovi nella visura catastale o nel rogito)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Microzona 1",
+    "nota": "Microzona 1: sezione A, fogli 52, 68, da 265 a 270 e da 277 a 281 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.35,
+      4.03
+     ],
+     [
+      4.04,
+      4.71
+     ],
+     [
+      4.72,
+      5.38
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Microzona 2",
+    "nota": "Microzona 2: sezione A, fogli da 64 a 67, 69, 70, 83 e da 98 a 100 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.15,
+      3.83
+     ],
+     [
+      3.84,
+      4.51
+     ],
+     [
+      4.52,
+      5.18
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Microzona 3",
+    "nota": "Microzona 3: sezione A, fogli 81, 82 e da 95 a 97 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.45,
+      4.04
+     ],
+     [
+      4.05,
+      4.64
+     ],
+     [
+      4.65,
+      5.22
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Microzona 4",
+    "nota": "Microzona 4: sezione A, fogli 50, 51, 53 e da 61 a 63 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.4,
+      4.0
+     ],
+     [
+      4.01,
+      4.61
+     ],
+     [
+      4.62,
+      5.2
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Microzona 5",
+    "nota": "Microzona 5: sezione A, fogli 34, 39, 40 e da 47 a 49 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.6,
+      2.1
+     ],
+     [
+      2.11,
+      2.61
+     ],
+     [
+      2.62,
+      3.1
+     ]
+    ]
+   },
+   {
+    "codice": "6",
+    "nome": "Microzona 6",
+    "nota": "Microzona 6: sezione A, fogli 93, 94 e da 112 a 114 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.6,
+      2.1
+     ],
+     [
+      2.11,
+      2.61
+     ],
+     [
+      2.62,
+      3.1
+     ]
+    ]
+   },
+   {
+    "codice": "7",
+    "nome": "Microzona 7",
+    "nota": "Microzona 7: sezione A, fogli 141, 142, 171 e 172 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.6,
+      2.1
+     ],
+     [
+      2.11,
+      2.61
+     ],
+     [
+      2.62,
+      3.1
+     ]
+    ]
+   },
+   {
+    "codice": "8",
+    "nome": "Microzona 8",
+    "nota": "Microzona 8: sezione A, fogli da 1 a 33, da 35 a 38, da 41 a 46, da 54 a 60, da 71 a 80, da 84 a 92, da 101 a 111, da 115 a 123, da 125 a 140, da 143 a 151, da 153 a 170, da 173 a 179, da 181 a 225, 227, 228, da 230 a 237, da 240 a 249, 254, 255 e 264 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.15,
+      3.83
+     ],
+     [
+      3.84,
+      4.51
+     ],
+     [
+      4.52,
+      5.18
+     ]
+    ]
+   },
+   {
+    "codice": "9",
+    "nome": "Microzona 9",
+    "nota": "Microzona 9: sezione A, fogli 229, 238, 239, da 250 a 253, 260, 261 e 263 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.6,
+      1.77
+     ],
+     [
+      1.78,
+      1.94
+     ],
+     [
+      1.95,
+      2.1
+     ]
+    ]
+   },
+   {
+    "codice": "10",
+    "nome": "Microzona 10",
+    "nota": "Microzona 10: sezione A, fogli da 256 a 259, 262 e da 271 a 276 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      5.8,
+      6.6
+     ],
+     [
+      6.61,
+      7.41
+     ],
+     [
+      7.42,
+      8.2
+     ]
+    ]
+   },
+   {
+    "codice": "11",
+    "nome": "Microzona 11 (nessun foglio nell'allegato 1)",
+    "nota": "Microzona 11: l'allegato 1 dell'accordo non le assegna alcun foglio catastale, anche se l'allegato 2 ne riporta i valori. Sceglila solo se l'associazione che attesta il contratto te lo conferma. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.54,
+      2.44
+     ],
+     [
+      2.45,
+      3.36
+     ],
+     [
+      3.37,
+      4.25
+     ]
+    ]
+   },
+   {
+    "codice": "12",
+    "nome": "Microzona 12",
+    "nota": "Microzona 12: sezione A, fogli 124, 152 e 180 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.54,
+      2.64
+     ],
+     [
+      2.65,
+      3.76
+     ],
+     [
+      3.77,
+      4.85
+     ]
+    ]
+   },
+   {
+    "codice": "13",
+    "nome": "Microzona 13",
+    "nota": "Microzona 13: sezione A, fogli 372, 378, 379, 384, 403 e 404 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      3.25,
+      3.99
+     ],
+     [
+      4.0,
+      4.73
+     ],
+     [
+      4.74,
+      5.46
+     ]
+    ]
+   },
+   {
+    "codice": "14",
+    "nome": "Microzona 14",
+    "nota": "Microzona 14: sezione A, foglio 226; sezioni B e C, fogli da 301 a 404 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.55,
+      1.8
+     ],
+     [
+      1.81,
+      2.06
+     ],
+     [
+      2.07,
+      2.3
+     ]
+    ]
+   },
+   {
+    "codice": "15",
+    "nome": "Microzona 15",
+    "nota": "Microzona 15: sezione D, fogli da 405 a 409 (allegato 1). Il foglio e la sezione catastale li trovi nella visura catastale o nel rogito. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      1.55,
+      1.8
+     ],
+     [
+      1.81,
+      2.06
+     ],
+     [
+      2.07,
+      2.3
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "1",
+    "2",
+    "3"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    7,
+    14
+   ],
+   "nota": "Fascia 1 fino a 7 elementi, fascia 2 da 8 a 14, fascia 3 da 15 a 21."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi oggettivi (allegato 3): segna quelli presenti"
+   },
+   {
+    "da": 18,
+    "titolo": "Durata del contratto: solo per i contratti agevolati, segna soltanto quella del tuo contratto (non vale per transitori e studenti)"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Autorimessa singola o posto auto coperto"
+   },
+   {
+    "testo": "Cortile comune"
+   },
+   {
+    "testo": "Cantina, sottotetto o soffitta"
+   },
+   {
+    "testo": "Riscaldamento autonomo con caldaia a condensazione, oppure impianto di climatizzazione"
+   },
+   {
+    "testo": "Comodità di accesso: piano terra o primo piano, oppure ascensore se l'alloggio è dal secondo piano in su"
+   },
+   {
+    "testo": "Area verde di pertinenza"
+   },
+   {
+    "testo": "Uno o più posti auto scoperti"
+   },
+   {
+    "testo": "Alloggio costruito o adeguato alle norme antisismiche"
+   },
+   {
+    "testo": "Isolamento termico dell'edificio (cappotto)"
+   },
+   {
+    "testo": "Doppio servizio (due bagni) o lavanderia"
+   },
+   {
+    "testo": "Allacciamento alla rete del gas"
+   },
+   {
+    "testo": "Porta blindata e/o sistemi antifurto (allarme, videosorveglianza)"
+   },
+   {
+    "testo": "Infissi a taglio termico con vetrocamera"
+   },
+   {
+    "testo": "Alloggio tutto su un unico livello"
+   },
+   {
+    "testo": "Alloggio non in condominio, oppure con ingresso indipendente"
+   },
+   {
+    "testo": "Solare termico dell'alloggio (pannelli per l'acqua calda)"
+   },
+   {
+    "testo": "Impianto fotovoltaico dell'alloggio o condominiale"
+   },
+   {
+    "testo": "Il locatore rinuncia alla cauzione"
+   },
+   {
+    "testo": "Durata del contratto 4+2 anni"
+   },
+   {
+    "testo": "Durata del contratto 5+2 anni"
+   },
+   {
+    "testo": "Durata del contratto 6+2 anni"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'appartamento (senza muri)",
+   "correzioni": [
+    {
+     "fino": 52.9,
+     "perc": 15,
+     "tetto": 52.9
+    },
+    {
+     "da": 52.9,
+     "fino": 70,
+     "incluso": true,
+     "perc": 20,
+     "tetto": 70
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa ad uso esclusivo",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto macchina in autorimessa comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Superficie scoperta in godimento esclusivo",
+     "coeff": 0.15,
+     "tetto": "base"
+    }
+   ],
+   "nota": "Superficie calpestabile dell'appartamento più le pertinenze con i loro coefficienti (titolo A, punto 6). Sotto 52,90 mq la superficie si può aumentare del 15% fino a 52,90 mq; da 52,90 a 70 mq si può aumentare del 20% fino a 70 mq: qui l'aumento è già applicato. Dai 120 mq in su le parti possono pattuire anche un canone più basso del minimo."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "ape",
+    "tipo": "scelta",
+    "testo": "Classe energetica dell'edificio (APE)",
+    "nome": "classe energetica",
+    "nessuna": "classe A, B o C",
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "opzioni": [
+     {
+      "valore": "DE",
+      "testo": "classe D o E (massimo al 90%)",
+      "perc": -10
+     },
+     {
+      "valore": "FG",
+      "testo": "classe F o G (massimo all'80%)",
+      "perc": -20
+     }
+    ],
+    "mostra_perc": false,
+    "solo_max": true
+   },
+   {
+    "chiave": "senza_ascensore",
+    "tipo": "spunta",
+    "testo": "Alloggio dal secondo piano in su, in un edificio senza ascensore",
+    "nome": "dal secondo piano senza ascensore",
+    "perc": -10,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "solo_max": true
+   },
+   {
+    "chiave": "signorile",
+    "tipo": "spunta",
+    "testo": "Categoria catastale A/1, A/8 o A/9 (abitazioni signorili, ville, castelli)",
+    "nome": "categoria A/1, A/8, A/9",
+    "perc": 30
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "in parte (almeno camera con letto matrimoniale e armadio, cucina con frigo, forno e lavatrice)",
+      "perc": 10
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 20
+     }
+    ]
+   },
+   {
+    "chiave": "arredo_studenti",
+    "tipo": "scelta",
+    "testo": "Arredamento (contratto per studenti)",
+    "nome": "arredato",
+    "nessuna": "non arredato o arredato in parte",
+    "ammobiliato": true,
+    "contratti": [
+     "studenti"
+    ],
+    "opzioni": [
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 30
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti e le riduzioni si sommano. Classe energetica D o E: il massimo non può superare il 90% di quello della fascia; F o G: l'80%. Dal secondo piano in su senza ascensore: massimo ridotto del 10%. Queste riduzioni non valgono per i contratti per studenti. Valgono solo sul massimo: se il massimo ridotto scende sotto il minimo, il minimo si abbassa allo stesso valore. Categorie A/1, A/8 e A/9: minimo e massimo +30%. Arredo completo fino a +20%, parziale (almeno una camera da letto completa e la cucina con gli elettrodomestici) fino a +10%; per gli studenti arredo completo fino a +30%. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie locata, considerando anche le parti condivise.",
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Microzona 11: l'allegato 1 dell'accordo non le assegna fogli catastali. Verifica la microzona con l'associazione che attesta il contratto.",
+    "zone": [
+     "11"
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 4",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale per il territorio del Comune di Ragusa sottoscritto il 04/06/2025",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Accordo territoriale",
+  "titolo_elementi": "ELEMENTI OGGETTIVI PER LA DETERMINAZIONE DEL CANONE",
+  "etichetta_conteggio": "PER UN TOTALE DI N. ELEMENTI",
+  "dichiarazione": "Il richiedente, nella qualità di locatore / conduttore dell'immobile o porzione di immobile sopra indicato, ha presentato richiesta per l'attestazione ex D.M. 16/01/2017, dichiarando, sotto la sua responsabilità, gli elementi sopra indicati.",
+  "firme": [],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "TUTTO CIÒ PREMESSO, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Ragusa, come sopra rappresentata, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Ragusa depositato in data ……………………"
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "Ragusa è divisa in 15 microzone catastali (allegato 1): la microzona si ricava dalla sezione e dal foglio catastale dell'immobile, che trovi nella visura o nel rogito. Gran parte della città (sezione A) è in microzona 8; le sezioni B e C (fogli da 301 a 404) sono in microzona 14, la sezione D (fogli da 405 a 409) in microzona 15."
+ }
+}

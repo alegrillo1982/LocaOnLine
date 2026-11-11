@@ -260,7 +260,7 @@
       }
     }
     const z = r.zona ? r.zona.codice : "";
-    const add = (nome, perc, dopo, solo_base) => { if (perc) r.maggiorazioni.push({ nome, perc, dopo: !!dopo, ...(solo_base ? { solo_base: true } : {}) }); };
+    const add = (nome, perc, dopo, solo_base, solo_max) => { if (perc) r.maggiorazioni.push({ nome, perc, dopo: !!dopo, ...(solo_base ? { solo_base: true } : {}), ...(solo_max ? { solo_max: true } : {}) }); };
     const sup = superficie(accordo, s);
     r.superficie = sup;
     if (sup) avvisi.push(...sup.note); else avvisi.push("Inserisci la superficie.");
@@ -279,8 +279,8 @@
       if (m.tipo === "scelta") { const o = (m.opzioni || []).find((x) => x.valore === val);
         // es. Ferrara: quota fissa mensile per zona (garage), da sommare al canone
         if (o && o.importo_zona && o.importo_zona[z]) (r.importi = r.importi || []).push({ nome: `${m.nome || m.testo}: ${o.testo}`, importo: o.importo_zona[z] });
-        if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc, m.dopo, m.solo_base); }
-      else if (val) add(m.nome || m.testo, m.perc, m.dopo, m.solo_base);
+        if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc, m.dopo, m.solo_base, m.solo_max); }
+      else if (val) add(m.nome || m.testo, m.perc, m.dopo, m.solo_base, m.solo_max);
     }
     if (R.alternativa) {
       const A = R.alternativa, el = s.elementi || [];
@@ -323,14 +323,20 @@
     if (tipo === "agevolato" && DU) add(`durata ${s.durata_anni} + 2 anni`, DU[String(anni)] || 0, R.durata_dopo);
     if (R.contratto && R.contratto[tipo]) { add(tipo === "studenti" ? "contratto per studenti" : "contratto transitorio", R.contratto[tipo], R.durata_dopo); if (R.contratto.anche_minimo) r.maggiorazioni[r.maggiorazioni.length - 1].minimo = true; }
     // es. Latina: alcune maggiorazioni valgono solo per la superficie dell'abitazione, non per le pertinenze
-    const sb = r.maggiorazioni.filter((m) => m.solo_base);
+    const sb = r.maggiorazioni.filter((m) => m.solo_base && !m.solo_max);
     r.fattore_base = R.combinazione === "prodotto" ? sb.reduce((k, m) => k * (1 + m.perc / 100), 1) : 1 + sb.reduce((t, m) => t + m.perc, 0) / 100;
-    const prima = r.maggiorazioni.filter((m) => !m.dopo && !m.solo_base), dopo = r.maggiorazioni.filter((m) => m.dopo && !m.solo_base);
+    const prima = r.maggiorazioni.filter((m) => !m.dopo && !m.solo_base && !m.solo_max), dopo = r.maggiorazioni.filter((m) => m.dopo && !m.solo_base && !m.solo_max);
     r.fattore = (R.combinazione === "prodotto"
       ? prima.reduce((k, m) => k * (1 + m.perc / 100), 1)
       : 1 + prima.reduce((t, m) => t + m.perc, 0) / 100) * dopo.reduce((k, m) => k * (1 + m.perc / 100), 1);
     const kMin = r.maggiorazioni.filter((m) => m.minimo).reduce((k, m) => k * (1 + m.perc / 100), 1);
     if (r.base) r.valori = r.base.map((x, i) => (R.solo_massimo && i === 0 ? Math.round(x * kMin * 1000) / 1000 : Math.round(x * r.fattore * 1000) / 1000));
+    // es. Ragusa: alcune riduzioni valgono solo sul massimo; se scende sotto il minimo, il minimo lo segue
+    const SM = r.maggiorazioni.filter((m) => m.solo_max);
+    if (SM.length && r.valori) {
+      const max = Math.round(r.valori[1] * (1 + SM.reduce((tt, m) => tt + m.perc, 0) / 100) * 1000) / 1000;
+      r.valori = [Math.min(r.valori[0], max), max];
+    }
     // es. Messina: le maggiorazioni non superano il massimo della microzona; senza riscaldamento, al massimo -5%
     if (R.tetto_fascia && r.valori && r.massimo_fascia !== undefined) {
       if (r.valori[1] > r.massimo_fascia) { r.valori = [r.valori[0], r.massimo_fascia]; avvisi.push("Il valore si ferma al massimo della microzona (art. 3)."); }

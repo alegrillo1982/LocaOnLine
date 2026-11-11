@@ -1142,6 +1142,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcaserta-2026-09-01-accordo.pdf?alt=media&token=49d9843c-cd3b-4e51-a3c9-aa584d70a7c6"
     }
    ]
+  },
+  {
+   "comune": "Ragusa",
+   "provincia": "RG",
+   "accordo": "ragusa-2025-06-04",
+   "sottoscritto": "4 giugno 2025",
+   "depositato": "",
+   "zone": 15,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fragusa-2025-06-04-accordo.pdf?alt=media&token=9aeeee7a-c185-4934-8450-8f008b06d3d9",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fragusa-2025-06-04-accordo.pdf?alt=media&token=9aeeee7a-c185-4934-8450-8f008b06d3d9"
+    }
+   ]
   }
  ]
 }
