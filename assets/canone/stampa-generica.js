@@ -143,7 +143,7 @@
     const tab = [
       ...(R.tabella_per === "conteggio" && r.tipologia ? [[R.tabella_conta.titolo || "Tabella dei valori", `${(R.tabella_conta.testi || {})[r.tipologia] || r.tipologia} (${r.conteggio_tabella} su ${R.tabella_conta.a - R.tabella_conta.da + 1})`]] : []),
       ...(mt ? [["Tabella dei valori", `${mt.nome} ${tabella}${String(r.tipologia || "").startsWith("stud_") ? ", studenti universitari" : ""}`]] : []),
-      ...(R.a_corpo ? [
+      ...(R.a_corpo && r.a_corpo !== false ? [
         ["Canone di tabella al " + per, r.base ? `minimo € ${v(r.base[0])}   massimo € ${v(r.base[1])}` : ""],
         ["Canone con le maggiorazioni al " + per, r.valori ? `minimo € ${v(r.valori[0])}   massimo € ${v(r.valori[1])}` : ""]] : [
       ["Valori base al mq/" + per, r.base ? `minimo € ${v(r.base[0])}   massimo € ${v(r.base[1])}` : ""],

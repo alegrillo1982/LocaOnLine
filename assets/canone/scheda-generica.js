@@ -101,6 +101,7 @@
     if (!accordo) return;
     const s = leggi(), r = CanoneGenerico.calcola(accordo, s);
     ultimo = { scheda: s, r };
+    if (R().a_corpo) $("gen-valore-etichetta").textContent = r.a_corpo === false ? `Valore al mq ${unita()} (€)` : `Canone di tabella ${unita()} (€)`;
     for (const t of ["agevolato", "transitorio", "studenti"]) modulo.classList.toggle("tipo-" + t, s.tipo === t);
     modulo.classList.toggle("porzione", s.porzione);
     modulo.querySelectorAll("[data-m]").forEach((el) => {
@@ -118,7 +119,7 @@
     $("gen-soglie").textContent = R().fasce.gruppi ? (R().fasce.nota || "") : `Fasce${r.zona ? ` (${r.zona.nome})` : ""}: ${soglieTesto(r.zona)}.`;
     $("gen-conteggio").textContent = R().fasce.criterio === "differenza" ? `· ${virgolaN(r.punti)}%` : r.fascia.prevalente ? `· livello ${r.fascia.nome.toLowerCase()}` : R().fasce.criterio === "scelta" ? `· ${$("gen-elementi").querySelectorAll("input:checked").length} su ${R().elementi.length}` : R().fasce.criterio === "punti" ? `· ${virgolaN(r.punti)} punti` : R().fasce.conta ? `· ${r.punti}${r.premium !== undefined ? ` base, ${r.premium} premium` : ` su ${R().fasce.conta.a - R().fasce.conta.da + 1}`}` : `· ${r.punti} su ${R().elementi.length}`;
     $("gen-esito-fascia").textContent = r.base
-      ? `${r.zona.nome}, fascia ${r.fascia.nome}${R().fasce.criterio === "scelta" || R().fasce.criterio === "differenza" || r.fascia.prevalente ? "" : ` (${virgolaN(r.punti)} ${R().fasce.criterio === "punti" ? (r.punti === 1 ? "punto" : "punti") : (r.punti === 1 ? "elemento" : "elementi")})`}: da € ${v(r.base[0])} a € ${v(r.base[1])}${R().a_corpo ? "" : " al mq"} ${unita()}` : `fascia ${r.fascia.nome}`;
+      ? `${r.zona.nome}, fascia ${r.fascia.nome}${R().fasce.criterio === "scelta" || R().fasce.criterio === "differenza" || r.fascia.prevalente ? "" : ` (${virgolaN(r.punti)} ${R().fasce.criterio === "punti" ? (r.punti === 1 ? "punto" : "punti") : (r.punti === 1 ? "elemento" : "elementi")})`}: da € ${v(r.base[0])} a € ${v(r.base[1])}${R().a_corpo && r.a_corpo !== false ? "" : " al mq"} ${unita()}` : `fascia ${r.fascia.nome}`;
     $("gen-esito-magg").textContent = r.maggiorazioni.length
       ? r.maggiorazioni.map((m) => `${m.nome} ${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%`).join(", ") + (r.maggiorazioni.length > 1 ? ` = ${r.fattore >= 1 ? "+" : ""}${v((r.fattore - 1) * 100)}%` : "") +
         (r.valori ? ` → da € ${v(r.valori[0])} a € ${v(r.valori[1])}` : "")

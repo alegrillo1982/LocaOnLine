@@ -1030,6 +1030,49 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fforli-2017-12-19-allegato-4-attestazione.pdf?alt=media&token=05cc75c4-bc37-4f08-aec5-abcca8d082da"
     }
    ]
+  },
+  {
+   "comune": "Vicenza",
+   "provincia": "VI",
+   "accordo": "vicenza-2019-01-28",
+   "sottoscritto": "28 gennaio 2019",
+   "depositato": "28 gennaio 2019",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvicenza-2019-01-28-accordo.pdf?alt=media&token=ab26202b-6be7-4af1-8f56-a1cd4a8e5247",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvicenza-2019-01-28-accordo.pdf?alt=media&token=ab26202b-6be7-4af1-8f56-a1cd4a8e5247"
+    },
+    {
+     "nome": "Allegato 1 zone cartina stradario",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvicenza-2019-01-28-allegato-1-zone-cartina-stradario.pdf?alt=media&token=25133148-40a5-452c-9fab-ade075c0a79b"
+    },
+    {
+     "nome": "Allegato 2 valori originali 2019",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvicenza-2019-01-28-allegato-2-valori-originali-2019.pdf?alt=media&token=2e47adba-3c08-4192-ae86-7f7f1283407c"
+    },
+    {
+     "nome": "Allegato 3 elementi oggettivi",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvicenza-2019-01-28-allegato-3-elementi-oggettivi.pdf?alt=media&token=8885f561-8605-47df-9485-7dbc52326149"
+    },
+    {
+     "nome": "Allegato 4 attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvicenza-2019-01-28-allegato-4-attestazione.pdf?alt=media&token=45818e7d-98c8-47b8-9f24-0d1d1f9b2702"
+    },
+    {
+     "nome": "Allegato 5 subentro studenti",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvicenza-2019-01-28-allegato-5-subentro-studenti.pdf?alt=media&token=ef8fa901-17af-4cff-a890-5da81893233c"
+    },
+    {
+     "nome": "Allegato 6 richiesta negoziazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvicenza-2019-01-28-allegato-6-richiesta-negoziazione.pdf?alt=media&token=aefb75ca-20b9-4df3-b9e7-3cdc3086d74a"
+    },
+    {
+     "nome": "Protocollo integrativo 2024 07 10",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvicenza-2019-01-28-protocollo-integrativo-2024-07-10.pdf?alt=media&token=2a21a7e8-5886-4051-a9ca-3023ecf5835b"
+    }
+   ]
   }
  ]
 }

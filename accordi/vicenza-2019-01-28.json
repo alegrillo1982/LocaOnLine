@@ -1,0 +1,519 @@
+{
+ "accordo": {
+  "codice": "vicenza-2019-01-28",
+  "modello": "vicenza-2019",
+  "comune": "Vicenza",
+  "provincia": "VI",
+  "titolo": "Accordo territoriale per il territorio del Comune di Vicenza",
+  "data": "2019-01-28",
+  "data_testo": "28 gennaio 2019",
+  "deposito": "Comune di Vicenza, Protocollo generale N. 0013895/2019",
+  "deposito_data": "28.01.2019",
+  "protocollo": "0013895/2019",
+  "ufficio": "Comune di Vicenza, Protocollo generale",
+  "ufficio_breve": "Comune di Vicenza",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Vicenza: fino a 120 mq i valori dell'accordo sono canoni mensili per l'intero alloggio; oltre 120 mq sono valori al mq.</strong> L'accordo depositato il 28 gennaio 2019 durava tre anni ma resta in vigore finché non ne viene firmato uno nuovo (lo conferma il protocollo integrativo del 10 luglio 2024). Qui trovi i valori <strong>aggiornati all'ISTAT come nel calcolatore del Comune di Vicenza</strong> (circa +14,3% rispetto al 2019): l'accordo li aggiorna ogni anno fino al 75% dell'ISTAT. L'attestazione di un'associazione firmataria è obbligatoria: chiedile conferma dei valori.",
+  "firmatari_proprieta": [
+   "A.P.E. - CONFEDILIZIA",
+   "U.P.P.I.",
+   "A.N.P.E.",
+   "A.S.P.P.I.",
+   "A.P.P.C."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "CONIAV (oggi APIAV-CONIAV)",
+   "S.I.C.E.T. (con riserva)"
+  ],
+  "nota": "Accordo per il Comune di Vicenza in attuazione del D.M. 16/01/2017, protocollato dal Comune il 28/01/2019 (Protocollo generale N. 0013895/2019, timbro sulla prima pagina): il testo non riporta la data di firma, quindi si usa quella del deposito. Durata tre anni dal giorno dopo il deposito, poi resta in vigore fino al nuovo accordo (titolo G); il protocollo integrativo firmato il 10/07/2024 conferma le organizzazioni firmatarie e la validità fino a un nuovo decreto ministeriale. Sostituisce gli accordi del 12/02/2004 e del 04/05/2016 (studenti). Firmano anche la Fondazione Studi Universitari Vicenza e un rappresentante degli studenti; il SICET firma con riserva su attestazione obbligatoria e transitori in deroga. Tre zone concentriche (allegato 1: cartina e stradario); canoni mensili per zona, classe di superficie convenzionale (fino a 50, 51-70, 71-100, 101-120 mq) e sub-fascia (inferiore, medio, superiore), valori al mq oltre 120 mq (allegato 2); sub-fascia dal punteggio dell'allegato 3. Valori aggiornati ISTAT (75%) ripresi dal calcolatore on line del Comune: circa 1,1426 volte quelli originali, data dell'aggiornamento non indicata.",
+  "fonte": "Comune di Vicenza: pagina «Accordo territoriale per il territorio del Comune di Vicenza» (testo protocollato, 10 pagine), pagina «Locazione a canone concordato» con fasce di oscillazione e parametri in PDF e calcolatore on line (valori aggiornati). SUNIA: accordo completo con allegati 1-6 (58 pagine, scansione) e protocollo integrativo del 10/07/2024."
+ },
+ "esempio_zona": "la zona dallo stradario dell'allegato 1 (o dal calcolatore del Comune, cercando la via)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "a_corpo": {
+   "al_mq": [
+    "oltre"
+   ],
+   "nota": "Fino a 120 mq di superficie convenzionale i valori della tabella (allegato 2) sono canoni mensili per l'intero alloggio: la superficie serve a scegliere la colonna. Oltre 120 mq i valori sono al mq e si moltiplicano per la superficie convenzionale."
+  },
+  "tabella_per": "superficie",
+  "tabella_su": "totale",
+  "tabella_soglie": [
+   [
+    50,
+    "50"
+   ],
+   [
+    70,
+    "70"
+   ],
+   [
+    100,
+    "100"
+   ],
+   [
+    120,
+    "120"
+   ]
+  ],
+  "tabella_oltre": "oltre",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - centro",
+    "nota": "Zona 1 (grigio scuro nella cartina dell'allegato 1): il centro storico e le vie subito attorno, fra cui Corso Palladio, Corso Fogazzaro, Piazza dei Signori, Piazza Castello, Viale Roma, Piazzale della Stazione e Viale Dalmazia. Alcune vie (es. Viale Milano, Corso SS. Felice e Fortunato) sono divise fra due zone secondo il numero civico: controlla lo stradario.",
+    "fasce": {
+     "50": [
+      [
+       132.54,
+       291.36
+      ],
+      [
+       291.36,
+       404.47
+      ],
+      [
+       404.47,
+       495.88
+      ]
+     ],
+     "70": [
+      [
+       291.36,
+       351.9
+      ],
+      [
+       351.9,
+       475.31
+      ],
+      [
+       475.31,
+       556.42
+      ]
+     ],
+     "100": [
+      [
+       351.9,
+       444.45
+      ],
+      [
+       444.45,
+       666.11
+      ],
+      [
+       666.11,
+       834.08
+      ]
+     ],
+     "120": [
+      [
+       444.45,
+       505.01
+      ],
+      [
+       505.01,
+       694.67
+      ],
+      [
+       694.67,
+       870.63
+      ]
+     ],
+     "oltre": [
+      [
+       4.0,
+       5.14
+      ],
+      [
+       5.14,
+       6.85
+      ],
+      [
+       6.85,
+       9.14
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - fascia intermedia",
+    "nota": "Zona 2 (grigio chiaro nella cartina dell'allegato 1): i quartieri attorno al centro, fra cui Borgo Casale, Corso Padova, Viale Trento, Viale Mazzini e parte di Viale Crispi. Alcune vie (es. Strada Marosticana, Viale Riviera Berica, Viale Verona) sono divise fra due zone secondo il numero civico: controlla lo stradario.",
+    "fasce": {
+     "50": [
+      [
+       132.54,
+       278.78
+      ],
+      [
+       278.78,
+       370.19
+      ],
+      [
+       370.19,
+       449.03
+      ]
+     ],
+     "70": [
+      [
+       278.78,
+       333.63
+      ],
+      [
+       333.63,
+       410.18
+      ],
+      [
+       410.18,
+       501.59
+      ]
+     ],
+     "100": [
+      [
+       333.63,
+       418.17
+      ],
+      [
+       418.17,
+       574.71
+      ],
+      [
+       574.71,
+       712.96
+      ]
+     ],
+     "120": [
+      [
+       418.17,
+       473.02
+      ],
+      [
+       473.02,
+       634.12
+      ],
+      [
+       634.12,
+       792.94
+      ]
+     ],
+     "oltre": [
+      [
+       3.43,
+       4.0
+      ],
+      [
+       4.0,
+       6.28
+      ],
+      [
+       6.28,
+       7.99
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - resto del territorio",
+    "nota": "Zona 3 (bianco nella cartina dell'allegato 1): tutto il resto del territorio comunale, periferie e frazioni (es. Viale del Lavoro, Viale della Tecnica, Viale Sant'Agostino, Strada di Saviabona, Strada di Polegge). Per le vie divise fra due zone conta il numero civico: controlla lo stradario.",
+    "fasce": {
+     "50": [
+      [
+       132.54,
+       261.64
+      ],
+      [
+       261.64,
+       350.76
+      ],
+      [
+       350.76,
+       422.75
+      ]
+     ],
+     "70": [
+      [
+       261.64,
+       310.78
+      ],
+      [
+       310.78,
+       370.19
+      ],
+      [
+       370.19,
+       455.88
+      ]
+     ],
+     "100": [
+      [
+       310.78,
+       386.19
+      ],
+      [
+       386.19,
+       509.58
+      ],
+      [
+       509.58,
+       634.12
+      ]
+     ],
+     "120": [
+      [
+       386.19,
+       435.32
+      ],
+      [
+       435.32,
+       567.85
+      ],
+      [
+       567.85,
+       712.96
+      ]
+     ],
+     "oltre": [
+      [
+       2.86,
+       4.0
+      ],
+      [
+       4.0,
+       5.71
+      ],
+      [
+       5.71,
+       7.42
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "inferiore",
+    "medio",
+    "superiore"
+   ],
+   "criterio": "punti",
+   "soglie": [
+    2,
+    5
+   ]
+  },
+  "elementi": [
+   {
+    "testo": "Tipologia edilizia",
+    "livelli": [
+     {
+      "testo": "casa singola, bifamiliare o a schiera",
+      "punti": 3
+     },
+     {
+      "testo": "alloggio in uno stabile fino a 14 alloggi",
+      "punti": 2
+     },
+     {
+      "testo": "alloggio in uno stabile con più di 14 alloggi",
+      "punti": 1
+     }
+    ]
+   },
+   {
+    "testo": "Anni dalla costruzione, o dalla ristrutturazione integrale (anche manutenzione straordinaria di tutto l'alloggio paragonabile a un restauro completo)",
+    "livelli": [
+     {
+      "testo": "da 0 a 15 anni",
+      "punti": 2
+     },
+     {
+      "testo": "da 16 a 35 anni",
+      "punti": 1
+     },
+     {
+      "testo": "oltre 35 anni",
+      "punti": 0
+     }
+    ]
+   },
+   {
+    "testo": "Accessori e servizi: quanti ne ha fra a) posto auto coperto o garage interno, b) posto auto scoperto esclusivo, c) doppi servizi, d) soffitta o cantina, e) aria condizionata, f) ascensore, g) elettrodomestici in classe A+ o migliore (se arredato o semi arredato), h) sistema di sicurezza o antintrusione (basta la porta blindata), i) cancello o basculante elettrico, j) videocitofono o predisposizione per internet, k) terrazze di almeno 5 mq in tutto, l) doppi vetri o vetrocamera",
+    "livelli": [
+     {
+      "testo": "nessuno",
+      "punti": 0
+     },
+     {
+      "testo": "1",
+      "punti": 1
+     },
+     {
+      "testo": "2 o 3",
+      "punti": 2
+     },
+     {
+      "testo": "da 4 a 6",
+      "punti": 3
+     },
+     {
+      "testo": "da 7 a 9",
+      "punti": 4
+     },
+     {
+      "testo": "da 10 a 12",
+      "punti": 5
+     }
+    ]
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'alloggio",
+   "correzioni": [
+    {
+     "fino": 46,
+     "perc": 20
+    },
+    {
+     "fino": 70,
+     "perc": 10
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa a uso esclusivo",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto auto in autorimessa di uso comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine e accessori simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperta",
+     "testo": "Area scoperta in uso esclusivo del conduttore",
+     "coeff": 0.15,
+     "tetto": "base"
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (quota millesimale dell'alloggio)",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Si parte dalla superficie calpestabile dell'alloggio: fino a 45,99 mq conta il 120%, da 46 a 69,99 mq il 110%, da 70 mq il 100%. Si aggiungono autorimessa esclusiva (50%), posto auto in autorimessa comune (20%), balconi, terrazze e cantine (25%), area scoperta esclusiva (15%, mai più della superficie dell'alloggio) e verde condominiale in quota millesimale (10%). Il totale sceglie la colonna della tabella: fino a 50, 51-70, 71-100, 101-120 o oltre 120 mq."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredamento",
+    "nome": "arredo",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "contratti": [
+     "agevolato",
+     "transitorio"
+    ],
+    "opzioni": [
+     {
+      "valore": "nuovo",
+      "testo": "arredo completo nuovo o recente (fino a 5 anni)",
+      "perc": 15
+     },
+     {
+      "valore": "medio",
+      "testo": "arredo completo di 6-10 anni",
+      "perc": 10
+     },
+     {
+      "valore": "vecchio",
+      "testo": "arredo completo di oltre 10 anni",
+      "perc": 5
+     },
+     {
+      "valore": "semi",
+      "testo": "semi arredato (almeno cucina e una camera)",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "arredo_studenti",
+    "tipo": "scelta",
+    "testo": "Arredamento (contratto per studenti)",
+    "nome": "arredo",
+    "nessuna": "solo la dotazione minima obbligatoria",
+    "ammobiliato": true,
+    "contratti": [
+     "studenti"
+    ],
+    "opzioni": [
+     {
+      "valore": "nuovo",
+      "testo": "arredo completo nuovo o recente (fino a 5 anni)",
+      "perc": 15
+     },
+     {
+      "valore": "medio",
+      "testo": "arredo completo di 6-10 anni",
+      "perc": 10
+     },
+     {
+      "valore": "vecchio",
+      "testo": "arredo completo di oltre 10 anni",
+      "perc": 5
+     }
+    ]
+   },
+   {
+    "chiave": "vincolato",
+    "tipo": "spunta",
+    "testo": "Immobile vincolato come bene culturale o di categoria A/1, A/8, A/9",
+    "nome": "immobile vincolato o di pregio",
+    "perc": 2
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti valgono sul minimo e sul massimo e si sommano: durata oltre i 3 anni (+2% per 4 anni, +3% per 5, +4% per 6 o più), arredo, immobile vincolato o A/1, A/8, A/9 (+2%) e, per i transitori, +15%. Per gli studenti (contratti da 6 mesi a 3 anni) l'alloggio deve avere almeno: zona giorno arredata (divano, tavolo e sedie), cucina con forno e frigorifero, letto, scrivania e armadio, bagno e lavatrice. I contratti fino a 30 giorni hanno canone libero.",
+  "durata": {
+   "4": 2,
+   "5": 3,
+   "6": 4
+  },
+  "contratto": {
+   "transitorio": 15
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 4",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/1/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Vicenza, depositato il 28/01/2019 (Comune di Vicenza, protocollo N. 0013895/2019)",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Accordo territoriale",
+  "titolo_elementi": "Elementi e parametri oggettivi: punteggio",
+  "etichetta_conteggio": "PUNTEGGIO TOTALE",
+  "dichiarazione": "Il richiedente, nella qualità di locatore/conduttore, ha presentato richiesta per l'attestazione ex D.M. 16/1/2017, dichiarando sotto la sua responsabilità gli elementi sopra indicati.",
+  "firme": [
+   "Il dichiarante"
+  ],
+  "titolo_attestazione": "ATTESTA",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Vicenza, in persona di ……………………………, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Vicenza, depositato in data 28/01/2019."
+  ],
+  "firme_attestazione": [
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dall'allegato 1: cartina (zona 1 grigio scuro, zona 2 grigio chiaro, zona 3 il resto) e stradario con i numeri civici. Il calcolatore on line del Comune di Vicenza trova la zona cercando la via."
+ }
+}

@@ -355,8 +355,10 @@
           else avvisi.push("Porzione: indica i mq della parte locata, compresa la quota delle parti condivise.");
         }
         const mese = R.unita === "anno" ? 12 : 1;
-        let q = R.a_corpo ? 1 : sup.totale;
-        if (!R.a_corpo && r.fattore_base !== 1) {
+        // es. Vicenza: a corpo fino a una certa taglia, al mq per le taglie elencate in a_corpo.al_mq
+        r.a_corpo = !!(R.a_corpo && !(R.a_corpo.al_mq || []).includes(r.tipologia));
+        let q = r.a_corpo ? 1 : sup.totale;
+        if (!r.a_corpo && r.fattore_base !== 1) {
           const ab = (R.superficie.voci || []).filter((v) => v.abitazione).map((v) => v.chiave);
           const Sab = sup.righe.filter((x) => x.chiave === "base" || ab.includes(x.chiave)).reduce((t, x) => t + x.convenzionale, 0);
           q = cent(sup.totale + Sab * (r.fattore_base - 1));
