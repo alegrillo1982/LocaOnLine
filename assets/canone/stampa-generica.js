@@ -103,7 +103,7 @@
     // elementi o parametri, su due colonne (es. Varese: nessun elemento, la sezione non si stampa)
     if (R.elementi.length) {
     sezione((P.titolo_elementi || (R.fasce.criterio === "punti" ? "PARAMETRI E PUNTEGGI" : "ELEMENTI PRESENTI")).toUpperCase());
-    const el = s.elementi || [], E = R.elementi, met = Math.ceil(E.length / 2), w = (DX - SX) / 2 - 12;
+    const E = R.elementi, el = (s.elementi || []).map((x, k) => (E[k] && E[k].zone && !E[k].zone.includes(String(s.zona || "")) ? false : x)), met = Math.ceil(E.length / 2), w = (DX - SX) / 2 - 12;
     const livello = (i) => { const e = E[i], val = el[i]; return e.livelli && val !== "" && val !== undefined && val !== null && val !== false ? e.livelli[Number(val)] : null; };
     const puntiEl = (i) => (E[i].mostra_punti === false ? "" : E[i].livelli ? (livello(i) ? livello(i).punti : "") : E[i].punti);
     const righeCol = (i) => aCapo(`${i + 1}) ${E[i].testo}${livello(i) ? `: ${livello(i).testo}` : ""}`, reg, 8, w - 26 - ((E[i].punti || E[i].livelli) && E[i].mostra_punti !== false ? 16 : 0));

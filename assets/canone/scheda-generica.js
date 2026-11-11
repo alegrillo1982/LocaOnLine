@@ -113,6 +113,7 @@
     modulo.querySelectorAll("[data-el]").forEach((el) => {
       const e = R().elementi[Number(el.dataset.el)];
       el.hidden = !!(e && e.zone && s.zona && !e.zone.includes(s.zona));
+      if (el.hidden) el.querySelectorAll("input").forEach((c) => { c.checked = false; });
     });
     const sup = r.superficie;
     for (const td of modulo.querySelectorAll("[data-sup]")) {
