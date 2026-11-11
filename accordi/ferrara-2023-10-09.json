@@ -1,0 +1,534 @@
+{
+ "accordo": {
+  "codice": "ferrara-2023-10-09",
+  "modello": "ferrara-2023",
+  "comune": "Ferrara",
+  "provincia": "FE",
+  "titolo": "Accordo territoriale per il Comune di Ferrara",
+  "data": "2023-10-09",
+  "data_testo": "9 ottobre 2023",
+  "deposito": "Segreteria del Comune di Ferrara, 18/10/2023",
+  "deposito_data": "18.10.2023",
+  "protocollo": "",
+  "ufficio": "Comune di Ferrara, Segreteria",
+  "ufficio_breve": "Comune di Ferrara",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Ferrara: i valori dell'accordo sono al mq al mese e si parte dalla fascia media.</strong> L'accordo è in vigore dal 19 ottobre 2023 e resta valido finché non ne viene firmato uno nuovo. Ogni parametro in aumento alza il valore di 0,25 € al mq, ogni parametro in diminuzione lo abbassa di 0,25 €, fra il minimo e il massimo della tabella. <strong>Il garage esclusivo si paga a parte, con una quota fissa mensile</strong> che trovi negli avvisi sotto il calcolo.",
+  "firmatari_proprieta": [
+   "A.S.P.P.I.",
+   "CONFABITARE",
+   "CONFAPPI",
+   "CONFEDILIZIA - A.P.E.",
+   "U.P.P.I.",
+   "UNIONCASA"
+  ],
+  "firmatari_conduttori": [
+   "ASSOCASA",
+   "S.I.C.E.T.",
+   "S.U.N.I.A.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Accordo firmato a Ferrara (il testo porta la data del 09/10/2023, l'integrazione del 2024 indica come data di firma il 18/10/2023), depositato presso la Segreteria del Comune di Ferrara il 18/10/2023 e in vigore dal 19/10/2023 fino a un nuovo accordo; sostituisce l'accordo depositato il 26/03/2018 e le modifiche del 06/06/2018. Integrazione del 08/07/2024 (in vigore dal 09/07/2024): regola soltanto le adesioni di nuove organizzazioni, non cambia i valori. Tabella dei valori (allegato 1): stesura del 09/10/2023 firmata dalle organizzazioni; una stesura del 27/11/2024 pubblicata da ASPPI Ferrara ha gli stessi valori e corregge solo le ultime due classi di superficie (da 100 a 109,99 mq e oltre 110, come nel testo dell'accordo). Valori al mq al mese per zona (4), classe di superficie (9) e fascia minima, media e massima, più una quota fissa mensile per il garage. Nessun aggiornamento ISTAT dei valori previsto o pubblicato. Numero di protocollo del deposito non indicato nei documenti.",
+  "fonte": "SUNIA, pagina «Accordi territoriali di Ferrara»: testo dell'accordo (scansione firmata, 7 pagine), allegati da 1 a 6 (tabella dei valori, moduli di dichiarazione 2, 2/P, 3, 3/P, attestazione 4, elenco delle vie, elenco delle località periferiche), allegati da A a E (contratti tipo, oneri accessori, commissione di negoziazione) e integrazione dell'8 luglio 2024. ASPPI Ferrara (files.asppife.it): stessi documenti e tabella dei valori in stesura del 27/11/2024."
+ },
+ "esempio_zona": "la zona dall'elenco delle vie (allegato 5) o delle frazioni periferiche (allegato 6)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "tabella_per": "superficie",
+  "tabella_soglie": [
+   [
+    35.99,
+    "35"
+   ],
+   [
+    49.99,
+    "36"
+   ],
+   [
+    59.99,
+    "50"
+   ],
+   [
+    69.99,
+    "60"
+   ],
+   [
+    79.99,
+    "70"
+   ],
+   [
+    89.99,
+    "80"
+   ],
+   [
+    99.99,
+    "90"
+   ],
+   [
+    109.99,
+    "100"
+   ]
+  ],
+  "tabella_oltre": "110",
+  "minimo_riga_inferiore": true,
+  "zone": [
+   {
+    "codice": "centro",
+    "nome": "Centro storico e zone di pregio",
+    "nota": "Centro storico e zone di pregio: le vie dentro le mura e le vie indicate come «Zona di Pregio» nell'elenco delle vie (allegato 5), ad esempio via Caldirolo, via Chendi, piazza Europa, via Jugoslavia, via Algeria, via dei Frutteti e un tratto di via Pomposa. Le vie mancanti o messe per errore in un'altra zona stanno nella zona geograficamente corretta.",
+    "fasce": {
+     "35": [
+      [
+       8.0,
+       10.0
+      ]
+     ],
+     "36": [
+      [
+       6.8,
+       8.8
+      ]
+     ],
+     "50": [
+      [
+       6.8,
+       8.8
+      ]
+     ],
+     "60": [
+      [
+       5.7,
+       7.7
+      ]
+     ],
+     "70": [
+      [
+       5.7,
+       7.7
+      ]
+     ],
+     "80": [
+      [
+       5.7,
+       7.7
+      ]
+     ],
+     "90": [
+      [
+       5.7,
+       7.7
+      ]
+     ],
+     "100": [
+      [
+       5.7,
+       7.7
+      ]
+     ],
+     "110": [
+      [
+       5.1,
+       7.1
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "fuori",
+    "nome": "Zona fuori le mura",
+    "nota": "Zona fuori le mura: le vie della città fuori dalle mura indicate come «Fuori Mura» nell'elenco delle vie (allegato 5). Le vie mancanti o messe per errore in un'altra zona stanno nella zona geograficamente corretta.",
+    "fasce": {
+     "35": [
+      [
+       7.8,
+       9.8
+      ]
+     ],
+     "36": [
+      [
+       6.4,
+       8.4
+      ]
+     ],
+     "50": [
+      [
+       6.4,
+       8.4
+      ]
+     ],
+     "60": [
+      [
+       5.1,
+       7.1
+      ]
+     ],
+     "70": [
+      [
+       5.1,
+       7.1
+      ]
+     ],
+     "80": [
+      [
+       5.1,
+       7.1
+      ]
+     ],
+     "90": [
+      [
+       4.9,
+       6.9
+      ]
+     ],
+     "100": [
+      [
+       4.9,
+       6.9
+      ]
+     ],
+     "110": [
+      [
+       4.3,
+       6.3
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "periferica",
+    "nome": "Zona periferica (entro 10 km)",
+    "nota": "Zona periferica, entro 10 km dal centro storico: le frazioni dell'allegato 6 - Aguscello, Baura, Boara, Casaglia, Chiesuol del Fosso, Cocomaro di Cona, Cocomaro di Focomorto, Codrea, Cona, Contrapò, Correggio, Focomorto, Fondo Reno, Fossanova San Marco, Fossanova San Biagio, Francolino, Gaibana, Gaibanella - Sant'Egidio, Gorgo, Malborghetto, Malborghetto di Boara, Mizzana, Montalbano, Pontegradella, Pontelagoscuro, Porotto - Cassana, Quartesana, San Martino, Torre Fossa.",
+    "fasce": {
+     "35": [
+      [
+       6.7,
+       8.7
+      ]
+     ],
+     "36": [
+      [
+       5.9,
+       7.9
+      ]
+     ],
+     "50": [
+      [
+       5.9,
+       7.9
+      ]
+     ],
+     "60": [
+      [
+       5.0,
+       7.0
+      ]
+     ],
+     "70": [
+      [
+       5.0,
+       7.0
+      ]
+     ],
+     "80": [
+      [
+       4.9,
+       6.9
+      ]
+     ],
+     "90": [
+      [
+       4.7,
+       6.7
+      ]
+     ],
+     "100": [
+      [
+       4.4,
+       6.4
+      ]
+     ],
+     "110": [
+      [
+       4.1,
+       6.1
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "forese",
+    "nome": "Zona forese - agricola (oltre 10 km)",
+    "nota": "Zona forese - agricola: le frazioni e le campagne a più di 10 km dal centro storico, cioè quelle che non sono nell'elenco delle vie della città (allegato 5) né fra le località della zona periferica (allegato 6).",
+    "fasce": {
+     "35": [
+      [
+       5.9,
+       7.9
+      ]
+     ],
+     "36": [
+      [
+       4.9,
+       6.9
+      ]
+     ],
+     "50": [
+      [
+       4.9,
+       6.98
+      ]
+     ],
+     "60": [
+      [
+       3.8,
+       5.8
+      ]
+     ],
+     "70": [
+      [
+       3.8,
+       5.8
+      ]
+     ],
+     "80": [
+      [
+       3.5,
+       5.5
+      ]
+     ],
+     "90": [
+      [
+       3.3,
+       5.3
+      ]
+     ],
+     "100": [
+      [
+       3.0,
+       5.0
+      ]
+     ],
+     "110": [
+      [
+       2.7,
+       4.7
+      ]
+     ]
+    }
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "unica"
+   ],
+   "criterio": "punti",
+   "soglie": [],
+   "proporzionale": [
+    {
+     "passi": 8,
+     "da": -4
+    }
+   ],
+   "nota": "Si parte dal valore della fascia media; ogni parametro in aumento aggiunge 0,25 € al mq, ogni parametro in diminuzione toglie 0,25 €. Con una somma di almeno +4 parametri si arriva alla fascia massima, con -4 o meno si resta alla minima."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Parametri in aumento (tabella 2): +0,25 € al mq ciascuno"
+   },
+   {
+    "da": 11,
+    "titolo": "Parametri in diminuzione (tabella 3): -0,25 € al mq ciascuno"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Abitazione di categoria catastale A/7 o A/2 (dalla visura)",
+    "punti": 1
+   },
+   {
+    "testo": "Alloggio al piano terra, rialzato o primo, oppure oltre il primo piano con ascensore",
+    "punti": 1
+   },
+   {
+    "testo": "Impianto fisso di aria condizionata (installato a spese del proprietario)",
+    "punti": 1
+   },
+   {
+    "testo": "Porta blindata",
+    "punti": 1
+   },
+   {
+    "testo": "Doppi vetri (non le doppie finestre)",
+    "punti": 1
+   },
+   {
+    "testo": "Doppi servizi (due bagni)",
+    "punti": 1
+   },
+   {
+    "testo": "Riscaldamento autonomo o teleriscaldamento autonomo",
+    "punti": 1
+   },
+   {
+    "testo": "Edificio con certificazione energetica (APE) in classe A, B, C o D",
+    "punti": 1
+   },
+   {
+    "testo": "Allarme interno o inferriate, per gli alloggi al piano terra o al primo piano",
+    "punti": 1
+   },
+   {
+    "testo": "Impianto fotovoltaico",
+    "punti": 1
+   },
+   {
+    "testo": "Posto auto esclusivo",
+    "punti": 1
+   },
+   {
+    "testo": "Classe energetica inferiore a D (E, F o G)",
+    "punti": -1
+   },
+   {
+    "testo": "Edificio in cattivo stato di manutenzione",
+    "punti": -1
+   },
+   {
+    "testo": "Nessun amministratore di condominio in un edificio con più di 8 unità (garage esclusi)",
+    "punti": -1
+   },
+   {
+    "testo": "Alloggio oltre il secondo piano senza ascensore",
+    "punti": -1
+   },
+   {
+    "testo": "Acqua da impianto centralizzato senza contatore separato per l'alloggio",
+    "punti": -1
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'appartamento",
+   "voci": [
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazzi, cantine, porticati, verande",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "soffitte",
+     "testo": "Soffitte e sottotetti non abitabili, con scala fissa",
+     "coeff": 0.1
+    },
+    {
+     "chiave": "scale",
+     "testo": "Scale interne (proiezione)",
+     "coeff": 1
+    },
+    {
+     "chiave": "verde",
+     "testo": "Area verde o cortile a uso esclusivo",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0
+     ]
+    }
+   ],
+   "nota": "Si parte dai mq calpestabili dell'appartamento: soppalchi e mansarde accatastati e collegati all'alloggio contano solo per la parte alta almeno 1,60 m. Si aggiungono balconi, terrazzi, cantine, porticati e verande al 25%, soffitte e sottotetti non abitabili ma raggiungibili con una scala fissa al 10%, le scale interne al 100%, l'area verde o il cortile esclusivo al 10% (fino a tanti mq quanti quelli dell'appartamento). Le pertinenze contano solo se risultano al catasto. Il garage esclusivo non entra nella superficie: ha una quota fissa mensile. La classe di superficie della tabella si sceglie sui mq calpestabili dell'appartamento."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento",
+    "nome": "arredamento",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "minima",
+      "testo": "dotazione minima (cucina con frigorifero, piano cottura e lavello)",
+      "perc": 13
+     },
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato (cucina con tavolo e almeno 4 sedie, camera da letto con reti, materassi e armadio)",
+      "perc": 18
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato (mobili in tutte le stanze)",
+      "perc": 28
+     }
+    ]
+   },
+   {
+    "chiave": "garage",
+    "tipo": "scelta",
+    "testo": "Garage esclusivo (quota fissa mensile per zona, la sua superficie non conta)",
+    "nome": "garage",
+    "nessuna": "nessun garage",
+    "mostra_perc": false,
+    "opzioni": [
+     {
+      "valore": "singolo",
+      "testo": "singolo",
+      "importo_zona": {
+       "centro": 38,
+       "fuori": 32,
+       "periferica": 30,
+       "forese": 25
+      }
+     },
+     {
+      "valore": "doppio",
+      "testo": "doppio",
+      "importo_zona": {
+       "centro": 50,
+       "fuori": 40,
+       "periferica": 35,
+       "forese": 30
+      }
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "L'arredamento aumenta il canone fino al 13% (solo la cucina), al 18% (cucina e camera da letto) o al 28% (tutte le stanze). La durata più lunga di 3+2 aumenta il canone così ottenuto fino al 2% (4+2), al 4% (5+2) o al 6% (6+2). Il garage esclusivo si aggiunge con una quota fissa mensile.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "durata_dopo": true,
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegati 3",
+  "titolo": "Dichiarazione di proprietario/i e conduttore/i al fine della determinazione del canone locativo concordato",
+  "sottotitolo": "Parametri per la determinazione del canone di locazione concordato - contratti non assistiti. Accordo territoriale per il Comune di Ferrara del 09/10/2023, depositato il 18/10/2023",
+  "titolo_superficie": "TABELLA 1 - SUPERFICIE UNITÀ ABITATIVA",
+  "titolo_elementi": "Tabella 2 - Parametri correttivi in aumento e tabella 3 - in diminuzione",
+  "etichetta_conteggio": "SOMMA ALGEBRICA DEI PARAMETRI",
+  "dichiarazione": "Consapevoli che chiunque rilascia dichiarazioni mendaci è punito ai sensi del codice penale e delle leggi speciali in materia, ai sensi e per gli effetti dell'art. 46 D.P.R. n. 445/2000.",
+  "firme": [
+   "Il/i Locatore/i",
+   "Il/i Conduttore/i"
+  ],
+  "titolo_attestazione": "ALLEGATO 4 - ATTESTAZIONE DI CONFORMITÀ AI SENSI DEL D.M. 16/01/2017 - CONTRATTI NON ASSISTITI",
+  "attestazione": [
+   "L'Organizzazione dei Proprietari ……………………………… (ovvero) l'Organizzazione dei Conduttori ………………………………, PRESO ATTO della dichiarazione dei proprietari e dei conduttori sopra riportata, relativa all'unità abitativa sita in Ferrara, resa ai sensi dell'art. 46 D.P.R. n. 445/2000, al fine della determinazione del canone locativo;",
+   "ATTESO che il canone mensile concordato tra le parti contrattuali pari a € ……………… mensili rientra nei parametri previsti dall'Accordo siglato tra le Organizzazioni Sindacali della Proprietà e degli Inquilini, depositato presso il Comune di Ferrara in data 18/10/2023;",
+   "CONSIDERATO che lo schema contrattuale utilizzato per redigere il contratto (contratto 3+2, contratto per studenti, contratto transitorio), registrato a ……………… ovvero in corso di registrazione, corrisponde agli schemi contrattuali definiti dall'Accordo sopra richiamato,",
+   "ATTESTA ai fini del riconoscimento delle agevolazioni di legge, che i contenuti economici e normativi del contratto sopra richiamato corrispondono ai contenuti dell'Accordo territoriale vigente per il Comune di Ferrara depositato in data 18/10/2023.",
+   "Data ……/……/…………"
+  ],
+  "firme_attestazione": [
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dall'elenco delle vie di Ferrara (allegato 5: centro storico, zona di pregio, fuori mura) e dall'elenco delle frazioni entro 10 km dal centro storico (allegato 6, zona periferica); le altre frazioni sono zona forese - agricola."
+ }
+}

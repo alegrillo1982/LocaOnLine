@@ -267,7 +267,10 @@
       if (!perZona(m, z)) continue;
       const val = (s.maggiorazioni_scelte || {})[m.chiave];
       if (m.tipo === "auto") { add(m.nome || m.testo, m.perc, m.dopo); continue; }
-      if (m.tipo === "scelta") { const o = (m.opzioni || []).find((x) => x.valore === val); if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc, m.dopo, m.solo_base); }
+      if (m.tipo === "scelta") { const o = (m.opzioni || []).find((x) => x.valore === val);
+        // es. Ferrara: quota fissa mensile per zona (garage), da sommare al canone
+        if (o && o.importo_zona && o.importo_zona[z]) (r.importi = r.importi || []).push({ nome: `${m.nome || m.testo}: ${o.testo}`, importo: o.importo_zona[z] });
+        if (o && o.perc) add(`${m.nome || m.testo}: ${o.testo}`, o.perc, m.dopo, m.solo_base); }
       else if (val) add(m.nome || m.testo, m.perc, m.dopo, m.solo_base);
     }
     if (R.alternativa) {
@@ -364,6 +367,12 @@
         r.canone_massimo = cent(q * r.valori[1] / mese * k);
       }
     }
+    if (r.importi && r.canone_massimo !== null) {
+      const tot = r.importi.reduce((t, x) => t + x.importo, 0);
+      r.canone_minimo = cent(r.canone_minimo + tot); r.canone_massimo = cent(r.canone_massimo + tot);
+      r.canone_intero = cent(r.canone_intero + tot); r.canone = cent(r.canone + tot);
+      avvisi.push(r.importi.map((x) => `${x.nome}: + € ${virgola(x.importo)} al mese`).join("; ") + " (quota fissa compresa nel canone).");
+    }
     const pattuito = numero(s.canone_mensile);
     if (pattuito !== null) {
       r.canone_pattuito = pattuito;
@@ -382,7 +391,7 @@
         const lim = TS[k - 1][0], r2 = calcola(accordo, { ...s, _riga: true, canone_mensile: "", superfici: { ...(s.superfici || {}), base: String(lim) } });
         if (r2.canone_massimo !== null && (r2.canone_minimo > r.canone_minimo || r2.canone_massimo > r.canone_massimo)) {
           r.canone_minimo = Math.max(r.canone_minimo, r2.canone_minimo); r.canone_massimo = Math.max(r.canone_massimo, r2.canone_massimo);
-          avvisi.push(`Il canone non può essere più basso di quello di un alloggio di ${virgola(lim, 0)} mq della riga inferiore della tabella: minimo € ${virgola(r.canone_minimo)}, massimo € ${virgola(r.canone_massimo)}.`);
+          avvisi.push(`Il canone non può essere più basso di quello di un alloggio di ${virgola(lim, lim % 1 ? 2 : 0)} mq della riga inferiore della tabella: minimo € ${virgola(r.canone_minimo)}, massimo € ${virgola(r.canone_massimo)}.`);
         }
       }
     }

@@ -976,6 +976,37 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnovara-2026-02-27-allegato-g-attestazione.pdf?alt=media&token=f4bcda93-abec-4ec6-a196-e06817105a71"
     }
    ]
+  },
+  {
+   "comune": "Ferrara",
+   "provincia": "FE",
+   "accordo": "ferrara-2023-10-09",
+   "sottoscritto": "9 ottobre 2023",
+   "depositato": "18 ottobre 2023",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fferrara-2023-10-09-accordo.pdf?alt=media&token=7cdf201e-7090-4c35-bcea-b879a7e5519d",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fferrara-2023-10-09-accordo.pdf?alt=media&token=7cdf201e-7090-4c35-bcea-b879a7e5519d"
+    },
+    {
+     "nome": "Allegato 1 6 tabella moduli vie",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fferrara-2023-10-09-allegato-1-6-tabella-moduli-vie.pdf?alt=media&token=6fb63bb4-fba7-41f8-a665-97f8689ff974"
+    },
+    {
+     "nome": "Allegato 1 tabella stesura 2024 11 27",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fferrara-2023-10-09-allegato-1-tabella-stesura-2024-11-27.pdf?alt=media&token=cc9bd1e5-f688-40af-9e7f-1f7b58bcab25"
+    },
+    {
+     "nome": "Allegato a e contratti tipo oneri commissione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fferrara-2023-10-09-allegato-a-e-contratti-tipo-oneri-commissione.pdf?alt=media&token=61359edf-b663-4505-918d-806cbfdba30a"
+    },
+    {
+     "nome": "Integrazione 2024 07 08 adesioni",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fferrara-2023-10-09-integrazione-2024-07-08-adesioni.pdf?alt=media&token=56c03049-7633-4684-bfaa-40e9afacb0ed"
+    }
+   ]
   }
  ]
 }
