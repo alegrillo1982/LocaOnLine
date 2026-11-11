@@ -887,6 +887,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpiacenza-2019-07-23-allegato-d-attestazione.pdf?alt=media&token=165490d6-be82-448e-997f-27b278cc5992"
     }
    ]
+  },
+  {
+   "comune": "Siracusa",
+   "provincia": "SR",
+   "accordo": "siracusa-2023-12-11",
+   "sottoscritto": "11 dicembre 2023",
+   "depositato": "",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsiracusa-2023-12-11-accordo.pdf?alt=media&token=d0cadb9a-ceb0-4455-9ef2-a7911bccbf33",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsiracusa-2023-12-11-accordo.pdf?alt=media&token=d0cadb9a-ceb0-4455-9ef2-a7911bccbf33"
+    }
+   ]
   }
  ]
 }

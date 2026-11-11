@@ -1,0 +1,319 @@
+{
+ "accordo": {
+  "codice": "siracusa-2023-12-11",
+  "modello": "siracusa-2023",
+  "comune": "Siracusa",
+  "provincia": "SR",
+  "titolo": "Accordo territoriale per i Comuni della Provincia di Siracusa",
+  "data": "2023-12-11",
+  "data_testo": "11 dicembre 2023",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Siracusa: vale l'accordo provinciale firmato l'11 dicembre 2023.</strong> Dura tre anni e resta comunque in vigore finché non ne viene firmato uno nuovo; il Comune lo pubblica come accordo vigente. Per i contratti firmati dal secondo anno (da dicembre 2024) minimi e massimi delle fasce si aumentano del 100% della variazione ISTAT maturata dalla firma dell'accordo: qui trovi i valori originali, <strong>chiedi quelli aggiornati all'associazione che attesta il contratto.</strong> La mappa delle zone pubblicata è in bianco e nero: per essere sicuro della zona chiedi all'associazione.",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA (A.S.P.E. Siracusa)",
+   "U.P.P.I.",
+   "A.S.P.P.I.",
+   "UNIONCASA (aderente)",
+   "CONFAPPI (aderente)"
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T."
+  ],
+  "nota": "Accordo provinciale sottoscritto l'11/12/2023 da A.S.P.E.-Confedilizia, UPPI, ASPPI, SUNIA, SICET e UNIAT per tutti i Comuni della Provincia/Libero Consorzio di Siracusa; sostituisce l'accordo del 09/12/2017. Da depositare a cura dell'A.S.P.E. presso ogni Comune e la Regione (data e protocollo del deposito non riportati nelle copie pubblicate). Durata tre anni, poi in vigore fino al nuovo accordo (titolo H). Sulle pagine firmate compaiono anche i timbri di UNIONCASA (sede provinciale di Siracusa) e, nella copia pubblicata dal Comune il 17/04/2026 ('Adesione Confapp'), di CONFAPPI delegazione di Bagheria. Siracusa città: zone A, B e C (mappa e legenda, allegati 1 e 2; valori allegato 3) più la zona periferica e costiera (allegato 4); gli altri Comuni hanno una zona unica (allegato 5, non modellato qui). Valori mensili al mq di superficie convenzionale (art. 13 L. 392/78). Con meno di 2 elementi (3 oltre il primo piano) e per le categorie A/4 e A/5 il massimo è 3/4 di quello della zona. Minimi e massimi aumentati del 100% ISTAT FOI per i contratti dal secondo anno; canone aggiornato ogni anno al 75% ISTAT.",
+  "fonte": "Comune di Siracusa, avviso 'Accordo territoriale contratti di locazione a canone concordato - Adesione Confapp' (17/04/2026): scansione firmata di 20 pagine con testo, allegati 1-9 e timbro CONFAPPI. Stessa scansione senza CONFAPPI pubblicata da UPPI Siracusa; testo non firmato e senza allegati 1-5 su SUNIA e Confedilizia."
+ },
+ "esempio_zona": "la zona dalla mappa dell'accordo (allegati 1 e 2) o, per le località sul mare e in campagna, dall'elenco della zona periferica e costiera",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Zona A (dentro la linea verde)",
+    "nota": "Zona A: l'area delimitata dalla linea verde sulla mappa dell'accordo (allegati 1 e 2). Valgono come zona A, ovunque si trovino in città, anche gli immobili ultimati dopo il 31/12/2010, quelli ristrutturati integralmente o restaurati con lavori finiti dopo quella data e quelli in classe energetica A o B. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.9,
+      4.875
+     ],
+     [
+      2.9,
+      6.5
+     ]
+    ]
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B (dentro la linea rosa)",
+    "nota": "Zona B: l'area delimitata dalla linea rosa sulla mappa dell'accordo (allegati 1 e 2). Un edificio che si affaccia sulla linea di confine prende i valori della zona migliore. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.6,
+      4.05
+     ],
+     [
+      2.6,
+      5.4
+     ]
+    ]
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C (resto della città)",
+    "nota": "Zona C: tutta la città fuori dalle linee verde e rosa (allegato 2), escluse le località della zona periferica e costiera. Un edificio che si affaccia sulla linea di confine prende i valori della zona migliore. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.0,
+      3.375
+     ],
+     [
+      2.0,
+      4.5
+     ]
+    ]
+   },
+   {
+    "codice": "P",
+    "nome": "Zona periferica e costiera",
+    "nota": "Zona periferica e costiera (allegato 4), per esempio: Belvedere, Cassibile, Isola, Murro di Porco, Plemmirio, Costa Bianca, Terrauzza, Milocca, Fanusa, Costa del Sole, Arenella, Asparano, Li Greci, Ognina, Porcini, Cuba, Fontane Bianche. Valori in euro al mq al mese.",
+    "fasce": [
+     [
+      2.0,
+      5.1
+     ],
+     [
+      2.0,
+      6.8
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "ridotta (3/4)",
+    "piena"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 10,
+      "n": 2
+     }
+    ]
+   ],
+   "blocca": [
+    {
+     "da": 11,
+     "a": 11,
+     "fino": 0,
+     "salvo": {
+      "da": 0,
+      "a": 10,
+      "n": 3
+     },
+     "avviso": "Alloggio oltre il primo piano con meno di 3 elementi: il canone non può superare i 3/4 del massimo della zona (titolo A, punto 6)."
+    },
+    {
+     "da": 12,
+     "a": 12,
+     "fino": 0,
+     "avviso": "Categoria A/4 o A/5: il massimo non può superare i 3/4 di quello della zona, qualunque siano gli elementi (contenimento dei canoni)."
+    }
+   ],
+   "conta": {
+    "da": 0,
+    "a": 10
+   },
+   "nota": "Con almeno 2 elementi (almeno 3 se l'alloggio è oltre il primo piano) vale il massimo pieno della zona; con meno, e sempre per le categorie A/4 e A/5, il massimo è 3/4 di quello della zona. Il minimo non cambia.",
+   "nota_pdf": "Meno di 2 elementi (meno di 3 oltre il primo piano) o categoria A/4, A/5: massimo ridotto a 3/4 di quello della zona. Box e posti auto contano come un solo elemento."
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi e parametri oggettivi: ne servono almeno 2 (3 oltre il primo piano)"
+   },
+   {
+    "da": 11,
+    "titolo": "Piano e categoria catastale"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Riscaldamento"
+   },
+   {
+    "testo": "Ascensore"
+   },
+   {
+    "testo": "Autorimessa singola o in comune, oppure posto auto in area comune o esclusiva (anche se sono più di uno contano come un solo elemento)"
+   },
+   {
+    "testo": "Doppio servizio (due bagni)"
+   },
+   {
+    "testo": "Costruzione ultimata dopo l'anno 2000"
+   },
+   {
+    "testo": "Superficie non inferiore a 100 mq"
+   },
+   {
+    "testo": "Impianto di distribuzione del gas metano"
+   },
+   {
+    "testo": "Superamento delle barriere architettoniche"
+   },
+   {
+    "testo": "Impianto fotovoltaico"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Impianto di videosorveglianza"
+   },
+   {
+    "testo": "L'alloggio è oltre il primo piano (dal secondo piano in su)"
+   },
+   {
+    "testo": "Categoria catastale A/4 o A/5 (case popolari e ultrapopolari)"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie calpestabile dell'appartamento (senza muri)",
+   "grandi": {
+    "oltre": 120,
+    "perc": 50
+   },
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa singola",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_comune",
+     "testo": "Posto macchina in autorimessa comune",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine, soffitte e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Superficie scoperta in godimento esclusivo",
+     "coeff": 0.15
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale (la tua quota in millesimi)",
+     "coeff": 0.1
+    }
+   ],
+   "nota": "Superficie calcolata come dice l'art. 13 della legge 392/1978 (scheda dell'allegato 6), con una tolleranza del 10% in più o in meno. Oltre 120 mq di superficie calpestabile, la parte in più conta la metà. Per il verde condominiale scrivi la tua quota: mq del verde x millesimi / 1000."
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "alloggio fino a 60 mq",
+    "a": 60,
+    "perc": 20,
+    "su": "base"
+   }
+  ],
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "testo": "Arredamento (mobili efficienti e in buono stato)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "arredato in parte",
+      "perc": 15
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "cassibile",
+    "tipo": "spunta",
+    "testo": "Cassibile: inquilino lavoratore agricolo arrivato da un Paese fuori dall'Unione Europea da meno di 2 anni (massimo ridotto del 40%)",
+    "nome": "Cassibile, lavoratore agricolo extra UE",
+    "perc": 0,
+    "mostra_perc": false,
+    "zone": [
+     "P"
+    ]
+   }
+  ],
+  "riduzione_max": {
+   "chiave": "cassibile",
+   "perc": 40,
+   "fasce": [
+    0,
+    1
+   ],
+   "avviso": "Cassibile, inquilino lavoratore agricolo extra UE arrivato in Italia da meno di 2 anni: il massimo del canone si riduce del 40% (contenimento dei canoni)."
+  },
+  "nota_maggiorazioni": "Tutti gli aumenti si sommano e valgono sia sul minimo sia sul massimo: arredo completo +30%, parziale +15% (anche per transitori e studenti); alloggi fino a 60 mq di superficie calpestabile fino al +20%; durata 4 anni +6%, 5 anni +9%, 6 o più +12% (solo contratti agevolati). L'aumento del 20% per gli alloggi piccoli è facoltativo: puoi pattuire anche meno. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie locata, considerando anche le parti condivise.",
+  "durata": {
+   "4": 6,
+   "5": 9,
+   "6": 12
+  },
+  "combinazione": "somma",
+  "avvisi": [
+   {
+    "testo": "Se l'immobile è stato ultimato dopo il 31/12/2010, o ristrutturato integralmente o restaurato con lavori finiti dopo quella data, o è in classe energetica A o B, vale come zona A: scegli la zona A (titolo A, punto 2).",
+    "zone": [
+     "B",
+     "C"
+    ]
+   },
+   {
+    "testo": "Per gli immobili ultimati dopo il 31/12/2010, ristrutturati dopo quella data o in classe A o B, l'accordo li equipara alla zona A (minimo 2,90, massimo 6,50): chiedi all'associazione quale fascia applicare nella zona periferica e costiera.",
+    "zone": [
+     "P"
+    ]
+   }
+  ]
+ },
+ "pdf": {
+  "allegato": "All. 6",
+  "titolo": "Attestazione di rispondenza ex D.M. 16/1/2017",
+  "sottotitolo": "Accordo territoriale per i Comuni della Provincia di Siracusa sottoscritto l'11/12/2023 - Comune di Siracusa",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Accordo territoriale",
+  "titolo_elementi": "ELEMENTI E PARAMETRI OGGETTIVI",
+  "etichetta_conteggio": "TOTALE ELEMENTI E PARAMETRI n.",
+  "dichiarazione": "Il richiedente, nella qualità di locatore o di conduttore, ha presentato richiesta per l'attestazione ex D.M. 16/1/2017, dichiarando, sotto la sua responsabilità, gli elementi sopra indicati.",
+  "firme": [],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "Tutto ciò premesso, l'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Siracusa, sulla base degli elementi oggettivi confermati dal sottoscritto dichiarante sotto la propria responsabilità, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che il canone mensile di euro …………………… indicato dal richiedente è rispondente all'Accordo Territoriale e che i contenuti normativi del contratto sopra indicato corrispondono a quanto previsto dall'Accordo territoriale vigente stipulato l'11/12/2023 e depositato in data ……………………"
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "Per l'Organizzazione Sindacale"
+  ],
+  "nota_zone": "Siracusa città è divisa in tre zone (mappa e legenda, allegati 1 e 2): A dentro la linea verde, B dentro la linea rosa, C tutto il resto; le località periferiche e costiere (Belvedere, Cassibile, Isola, Plemmirio, Ognina, Fontane Bianche e simili) hanno una zona propria (allegato 4). Un edificio che si affaccia su una linea di confine prende i valori della zona migliore. Gli immobili ultimati dopo il 31/12/2010, ristrutturati dopo quella data o in classe A o B valgono come zona A."
+ }
+}
