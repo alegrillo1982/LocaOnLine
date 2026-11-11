@@ -1,0 +1,232 @@
+{
+  "accordo": {
+    "codice": "pavia-2019-01-24",
+    "modello": "pavia-2019",
+    "comune": "Pavia",
+    "provincia": "PV",
+    "titolo": "Accordo territoriale per la Città di Pavia",
+    "data": "2019-01-24",
+    "data_testo": "24 gennaio 2019",
+    "deposito": "Comune di Pavia",
+    "deposito_data": "24.01.2019",
+    "protocollo": "",
+    "ufficio": "Comune di Pavia",
+    "ufficio_breve": "Comune di Pavia",
+    "valido_fino": "",
+    "avviso_validita": "<strong>Accordo di Pavia del 24 gennaio 2019, con l'integrazione del 3 settembre 2019.</strong> Durava tre anni ma resta in vigore finché non ne viene firmato uno nuovo (art. 3 e 14), e il Comune lo pubblica ancora come accordo vigente: a novembre 2026 non ne risultano di più recenti. Dopo i primi tre anni i minimi e i massimi si aumentano con la variazione ISTAT dei prezzi al consumo, da febbraio 2019 al mese prima della firma del contratto (art. 3), ma nessuno pubblica tabelle aggiornate: <strong>qui trovi i valori originali del 2019</strong>. Chiedi all'associazione che attesta il contratto il coefficiente ISTAT da applicare.",
+    "firmatari_proprieta": [
+      "A.P.E. Pavia - CONFEDILIZIA",
+      "U.P.P.I.",
+      "CONFAPPI",
+      "A.P.P.C."
+    ],
+    "firmatari_conduttori": [
+      "S.U.N.I.A.",
+      "S.I.C.E.T. (con dissenso sui punti 5.2 d e 12)",
+      "U.N.I.A.T.",
+      "C.O.N.I.A.",
+      "Coordinamento per il Diritto allo Studio - U.D.U. Pavia"
+    ],
+    "nota": "Firmato nella sede del Comune di Pavia il 24/01/2019 alla presenza del Sindaco e dell'Assessore alla Casa (schema approvato dalla Giunta con delibera n. 21 del 17/01/2019); il modulo di attestazione lo indica come depositato presso il Comune di Pavia il 24/01/2019. Vale anche per sette comuni vicini (San Martino Siccomario, San Genesio ed Uniti, Torre d'Isola, Cura Carpignano, Borgarello, Valle Salimbene, Travacò Siccomario), qui non modellati: per loro c'è la Zona 5. Sostituisce l'accordo del 14/12/2010. Integrato il 03/09/2019 (bidet o tazza con doccetta, acqua calda e riscaldamento fra gli impianti A2, B2 anche per gli alloggi entro il 2° piano, porta blindata e/o doppi vetri, soppalchi nella superficie, nuovo motivo di transitorietà per studio sotto i 6 mesi). Il SICET firma con dissenso su attestazione e transitori in deroga (dichiarazione a verbale); l'U.D.U. compare fra i firmatari ma la sua firma non si vede sulla pagina finale. Quattro zone nel Comune (Allegato 1), quattro classi di superficie (fino a 50, 50-70, 70-90, oltre 90 mq), tre sub-fasce secondo gli elementi A, B e C; con almeno 5 elementi D si può applicare il massimo della sub-fascia. Valori annui al mq. Dopo tre anni i valori si aggiornano con l'ISTAT (art. 3): nessuna tabella aggiornata pubblicata.",
+    "fonte": "Comune di Pavia, scheda 'Accordo Locale sui Contratti di Locazione' (accordo firmato di 11 pagine, allegati 1-6, delibera di Giunta, cartografia, dichiarazione SICET; pagina aggiornata il 19/09/2024). Integrazione del 03/09/2019 e modulo di attestazione in formato testo dall'archivio documenti dell'U.P.P.I. di Pavia. Stesso testo pubblicato da SUNIA e SICET."
+  },
+  "esempio_zona": "la zona dalla planimetria dell'Allegato 1",
+  "regole": {
+    "generico": true,
+    "unita": "anno",
+    "tabella_per": "superficie",
+    "tabella_su": "totale",
+    "tabella_soglie": [[50, "50"], [70, "70"], [90, "90"]],
+    "tabella_oltre": "oltre",
+    "zone": [
+      {
+        "codice": "1",
+        "nome": "Zona 1 - Nucleo storico",
+        "nota": "Zona 1 - Nucleo storico, esteso a parte di Borgo Ticino e del Ticinello (Allegato 1, in azzurro). La tabella dipende dalla superficie convenzionale: fino a 50 mq, da 50 a 70, da 70 a 90, oltre 90 mq. Valori in euro al mq all'anno.",
+        "fasce": {
+          "50": [[70, 105], [80, 120], [90, 130]],
+          "70": [[65, 100], [80, 115], [85, 125]],
+          "90": [[60, 95], [70, 105], [80, 115]],
+          "oltre": [[60, 85], [70, 95], [75, 105]]
+        }
+      },
+      {
+        "codice": "2",
+        "nome": "Zona 2 - Adiacente al nucleo storico",
+        "nota": "Zona 2 - Adiacente al nucleo storico: la fascia intorno alla Zona 1, sulle due rive del Ticino (Allegato 1, in rosso). La tabella dipende dalla superficie convenzionale: fino a 50 mq, da 50 a 70, da 70 a 90, oltre 90 mq. Valori in euro al mq all'anno.",
+        "fasce": {
+          "50": [[60, 90], [70, 95], [75, 110]],
+          "70": [[55, 85], [65, 90], [75, 105]],
+          "90": [[50, 80], [60, 85], [70, 100]],
+          "oltre": [[50, 75], [55, 80], [70, 95]]
+        }
+      },
+      {
+        "codice": "3",
+        "nome": "Zona 3 - Periferica",
+        "nota": "Zona 3 - Periferica: i quartieri esterni alla Zona 2 (Allegato 1, in giallo). La tabella dipende dalla superficie convenzionale: fino a 50 mq, da 50 a 70, da 70 a 90, oltre 90 mq. Valori in euro al mq all'anno.",
+        "fasce": {
+          "50": [[50, 85], [60, 90], [70, 95]],
+          "70": [[45, 80], [55, 85], [65, 90]],
+          "90": [[40, 70], [50, 80], [60, 85]],
+          "oltre": [[40, 60], [50, 70], [60, 80]]
+        }
+      },
+      {
+        "codice": "4",
+        "nome": "Zona 4 - Territorio agricolo",
+        "nota": "Zona 4 - Territorio agricolo del Comune di Pavia (Allegato 1, in verde). Stessi valori della Zona 5 (comuni vicini). La tabella dipende dalla superficie convenzionale: fino a 50 mq, da 50 a 70, da 70 a 90, oltre 90 mq. Valori in euro al mq all'anno.",
+        "fasce": {
+          "50": [[50, 75], [55, 80], [60, 90]],
+          "70": [[45, 70], [50, 75], [55, 85]],
+          "90": [[40, 60], [45, 65], [50, 75]],
+          "oltre": [[35, 50], [40, 60], [45, 65]]
+        }
+      }
+    ],
+    "fasce": {
+      "nomi": ["Sub-fascia 1", "Sub-fascia 2", "Sub-fascia 3"],
+      "criterio": "requisiti",
+      "requisiti": [
+        null,
+        [{ "da": 0, "a": 1, "tutti": true }, { "da": 2, "a": 6, "n": 3 }],
+        [{ "da": 0, "a": 1, "tutti": true }, { "da": 2, "a": 6, "n": 3 }, { "da": 7, "a": 13, "n": 3 }]
+      ],
+      "blocca": [
+        {
+          "da": 29,
+          "a": 29,
+          "fino": 0,
+          "salvo": { "da": 2, "a": 6, "n": 4 },
+          "avviso": "Alloggio scaldato con stufe nelle singole stanze e con meno di 4 elementi B: Sub-fascia 1 (art. 4.1 B)."
+        },
+        {
+          "da": 30,
+          "a": 30,
+          "fino": 1,
+          "avviso": "Palazzo con parti comuni in evidente degrado (facciata, cortile, scale): non si può applicare la Sub-fascia 3 (art. 4.1 B)."
+        }
+      ],
+      "conta": { "da": 14, "a": 28 },
+      "nota": "Sub-fascia 2: tutti gli elementi A e almeno 3 elementi B. Sub-fascia 3: in più almeno 3 elementi C (mai se le parti comuni del palazzo sono in evidente degrado). Tutti gli altri nella Sub-fascia 1, come anche gli alloggi scaldati con stufe nelle singole stanze, se non hanno almeno 4 elementi B. Con almeno 5 elementi D si può applicare il massimo della sub-fascia.",
+      "nota_pdf": "Sub-fascia 1: manca un elemento A, oppure meno di 3 elementi B, oppure stufe nei singoli locali (salvo almeno 4 elementi B). Sub-fascia 2: tutti gli A e almeno 3 B. Sub-fascia 3: tutti gli A, almeno 3 B e almeno 3 C; mai con parti comuni in evidente degrado. Almeno 5 elementi D: si può applicare il valore massimo della sub-fascia (art. 4.1 B e integrazione del 03/09/2019)."
+    },
+    "titoli_elementi": [
+      { "da": 0, "titolo": "Elementi di tipo A: servono tutti per salire oltre la Sub-fascia 1" },
+      { "da": 2, "titolo": "Elementi di tipo B: ne servono almeno 3" },
+      { "da": 7, "titolo": "Elementi di tipo C: almeno 3 per la Sub-fascia 3" },
+      { "da": 14, "titolo": "Elementi di tipo D: con almeno 5 si può arrivare al massimo" },
+      { "da": 29, "titolo": "Condizioni che limitano la sub-fascia" }
+    ],
+    "elementi": [
+      { "testo": "A1 - Bagno interno completo (tazza, lavabo, bidet o tazza con doccetta, vasca o doccia) con almeno una finestra o aerazione meccanica" },
+      { "testo": "A2 - Impianti essenziali funzionanti: acqua potabile, acqua calda sanitaria, impianto elettrico, impianto di riscaldamento" },
+      { "testo": "B1 - Cucina abitabile con almeno una finestra" },
+      { "testo": "B2 - Ascensore, oppure alloggio entro il 2° piano (in quel caso segna comunque)" },
+      { "testo": "B3 - Alloggio in stato di manutenzione normale (impianti, infissi, pavimenti, pareti e soffitti)" },
+      { "testo": "B4 - Impianti, esalazioni e scarichi a norma (igiene e sicurezza) alla firma del contratto" },
+      { "testo": "B5 - Riscaldamento centralizzato o autonomo (non a stufe)" },
+      { "testo": "C1 - Doppio bagno, almeno uno completo e con finestra o aerazione meccanica" },
+      { "testo": "C2 - Garage o posto auto coperto (esclusivo o in comune)" },
+      { "testo": "C3 - Giardino condominiale" },
+      { "testo": "C4 - Alloggio in buono stato di manutenzione (impianti, infissi, pavimenti, pareti e soffitti)" },
+      { "testo": "C5 - Palazzo in stato di manutenzione normale (impianti comuni, facciate, tetto, scale e spazi comuni)" },
+      { "testo": "C6 - Porta blindata e/o doppi vetri" },
+      { "testo": "C7 - Vicino ai servizi: mezzi pubblici, negozi, servizi sociali" },
+      { "testo": "D1 - Balconi o terrazzo" },
+      { "testo": "D2 - Cantina, soffitta o ripostiglio esterno" },
+      { "testo": "D3 - Costruito da meno di 30 anni, o ristrutturato del tutto negli ultimi 30 anni (o immobile di pregio)" },
+      { "testo": "D4 - Nessuna fonte di inquinamento ambientale o acustico (classi acustiche 1, 2 o 3 del Comune)" },
+      { "testo": "D5 - Affaccio su strade, piazze o luoghi di pregio storico o ambientale" },
+      { "testo": "D6 - Giardino privato o spazio esterno in uso esclusivo" },
+      { "testo": "D7 - Posto auto scoperto" },
+      { "testo": "D8 - Lavori di manutenzione con pratica in Comune negli ultimi 10 anni" },
+      { "testo": "D9 - Terrazza di oltre 20 mq" },
+      { "testo": "D10 - Zanzariere su finestre e porte finestre" },
+      { "testo": "D11 - Aria condizionata" },
+      { "testo": "D12 - Parcheggio per biciclette o moto" },
+      { "testo": "D13 - Impianto di allarme" },
+      { "testo": "D14 - Collegamento Internet attivo" },
+      { "testo": "D15 - Collegamento alla fibra ottica" },
+      { "testo": "Riscaldamento con stufe nelle singole stanze" },
+      { "testo": "Parti comuni del palazzo (facciata, cortile, scale) in evidente degrado" }
+    ],
+    "superficie": {
+      "base": "Superficie interna dell'abitazione (con muri interni e soppalchi)",
+      "correzioni": [{ "fino": 30, "perc": 10, "tetto": 30 }],
+      "voci": [
+        { "chiave": "accessori", "testo": "Soffitta, cantina o scala interna comunicanti con l'abitazione (50%)", "coeff": 0.5 },
+        { "chiave": "accessori_nc", "testo": "Soffitta o cantina non comunicanti con l'abitazione (25%)", "coeff": 0.25 },
+        { "chiave": "balconi", "testo": "Balconi e terrazzi comunicanti (30% fino a 25 mq, poi 10%)", "coeff": 0.3, "scaglione": [25, 0.3, 0.1] },
+        { "chiave": "balconi_nc", "testo": "Balconi e terrazzi non comunicanti (15% fino a 25 mq, poi 5%)", "coeff": 0.15, "scaglione": [25, 0.15, 0.05] },
+        { "chiave": "box", "testo": "Box chiuso individuale (75%)", "coeff": 0.75 },
+        { "chiave": "posto_coperto", "testo": "Posto auto coperto con stallo riservato e delimitato (50%)", "coeff": 0.5 },
+        { "chiave": "posto_scoperto", "testo": "Posto auto scoperto con stallo riservato e delimitato (30%)", "coeff": 0.3 },
+        { "chiave": "posto_libero", "testo": "Posto auto scoperto non riservato e non delimitato (15%)", "coeff": 0.15 },
+        { "chiave": "area", "testo": "Area scoperta esclusiva (10% fino ai mq dell'abitazione, poi 2%)", "coeff": 0.1, "scaglione": ["base", 0.1, 0.02] },
+        { "chiave": "giardino", "testo": "Giardino di villa o villino: mq oltre il 20% dell'abitazione (10%, poi 2%)", "coeff": 0.1, "scaglione": ["base", 0.1, 0.02] }
+      ],
+      "tetto_voci": 0.5,
+      "nota": "Superficie convenzionale come nell'Allegato 3: abitazione per intero (vani, bagni, ripostigli, ingressi, corridoi, soppalchi e muri interni; senza muri perimetrali e in comune e senza le parti alte meno di 1,50 m), più le pertinenze con le percentuali indicate; tutte le pertinenze insieme contano al massimo per metà della superficie dell'abitazione. Se l'abitazione è sotto i 30 mq si aumenta del 10%, fino a 30 mq. Il giardino di una villa o villino non conta fino al 20% della superficie dell'abitazione: inserisci solo i mq che superano quella quota. La classe di superficie della tabella (fino a 50, 50-70, 70-90, oltre 90 mq) si sceglie sulla superficie convenzionale. Una differenza di misura entro il 4% non cambia il canone."
+    },
+    "maggiorazioni": [
+      {
+        "chiave": "arredo",
+        "tipo": "scelta",
+        "ammobiliato": true,
+        "testo": "Alloggio arredato (Allegato 2)",
+        "nome": "arredato",
+        "nessuna": "non arredato",
+        "opzioni": [
+          { "valore": "completo", "testo": "arredo completo in buono stato (tutti gli elementi dell'Allegato 2, esclusi i facoltativi)", "breve": "arredo completo", "perc": 20 },
+          { "valore": "vetusto", "testo": "arredo completo ma vecchio e usurato", "breve": "arredo vecchio e usurato", "perc": 10 },
+          { "valore": "parziale", "testo": "manca più della metà degli elementi dell'Allegato 2", "breve": "arredo incompleto", "perc": 10 },
+          { "valore": "parziale_vetusto", "testo": "arredo vecchio e manca più della metà degli elementi", "breve": "arredo vecchio e incompleto", "perc": 5 }
+        ]
+      },
+      {
+        "chiave": "energia",
+        "tipo": "scelta",
+        "testo": "Classe energetica (APE)",
+        "nome": "classe energetica",
+        "nessuna": "classe G",
+        "opzioni": [
+          { "valore": "ABC", "testo": "classe A, B o C", "perc": 10 },
+          { "valore": "DE", "testo": "classe D o E", "perc": 5 },
+          { "valore": "F", "testo": "classe F", "perc": 2 }
+        ]
+      },
+      { "chiave": "vincolo", "tipo": "spunta", "testo": "Immobile vincolato (L. 1089/1939) o di categoria catastale A/1, A/8, A/9", "nome": "immobile vincolato o A/1, A/8, A/9", "perc": 5 },
+      { "chiave": "stufe", "tipo": "spunta", "testo": "Senza caldaia autonoma o centralizzata efficiente: stufe o apparecchi elettrici mobili", "nome": "senza caldaia efficiente", "perc": -5 },
+      { "chiave": "serramenti", "tipo": "spunta", "testo": "Finestre vecchie, senza guarnizioni e poco isolanti", "nome": "serramenti vetusti", "perc": -5 },
+      { "chiave": "bagno_cieco", "tipo": "spunta", "testo": "Bagno senza finestra o con sola aspirazione forzata (se non c'è un secondo bagno con finestra)", "nome": "bagno senza finestra", "perc": -5 },
+      { "chiave": "piano", "tipo": "spunta", "testo": "Alloggio oltre il 2° piano in un palazzo senza ascensore", "nome": "oltre il 2° piano senza ascensore", "perc": -5 }
+    ],
+    "nota_maggiorazioni": "Aumenti e riduzioni si sommano e si applicano al minimo e al massimo della sub-fascia, come nel riepilogo dell'attestazione: arredo fino a +20% (+10% se i mobili sono vecchi; percentuale dimezzata se manca più della metà degli elementi), classe energetica A-B-C +10%, D-E +5%, F +2%, immobile vincolato o A/1, A/8, A/9 +5%; -5% ciascuno per riscaldamento senza caldaia efficiente, finestre vetuste, bagno senza finestra, oltre il 2° piano senza ascensore. Durata 4/5/6 anni +3/5/8%, oltre 6 anni +10%. Transitori fino a +10% (nei comuni sotto i 10.000 abitanti e sotto i 30 giorni il canone è libero). Studenti universitari: stessi valori, senza aumenti per il tipo di contratto. Si può sempre pattuire un canone più basso del minimo (art. 4.1 D). Per una stanza o una parte dell'alloggio si conta anche la quota delle parti comuni; la somma dei canoni delle stanze non può superare il canone dell'intero alloggio (art. 7).",
+    "durata": { "4": 3, "5": 5, "6": 8 },
+    "contratto": { "transitorio": 10 },
+    "combinazione": "somma",
+    "avvisi": [
+      { "fascia": [0, 1, 2, 3, 4], "testo": "Meno di 5 elementi D: l'accordo consente il valore massimo della sub-fascia solo con almeno 5 elementi D. Tieni il canone sotto il massimo indicato." },
+      { "contratti": ["studenti"], "testo": "Contratto per studenti (da 6 a 36 mesi): per iscritti a corsi di laurea, master, dottorati, specializzazioni e perfezionamenti. Nel contratto va scritto che lo studente può recedere con 2 mesi di preavviso, con raccomandata, se interrompe gli studi (art. 6.2). Per soggiorni di studio sotto i 6 mesi si usa il contratto transitorio." },
+      { "contratti": ["transitorio"], "testo": "Transitorio (fino a 18 mesi): serve un motivo documentato previsto dall'accordo, per esempio trasferimento temporaneo di lavoro, separazione, assistenza a un familiare, casa in arrivo entro 18 mesi, studio per meno di 6 mesi (art. 5.2 e integrazione del 03/09/2019); per altri motivi serve un incontro fra le associazioni." }
+    ]
+  },
+  "pdf": {
+    "allegato": "ALLEGATO 6",
+    "titolo": "Attestazione di rispondenza (D.M. 16/1/2017)",
+    "sottotitolo": "Accordo territoriale per la Città di Pavia del 24/01/2019, depositato presso il Comune di Pavia il 24/01/2019, integrato il 03/09/2019",
+    "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Allegato 3 dell'Accordo territoriale",
+    "titolo_elementi": "Prospetto illustrativo degli elementi qualitativi (sub-fasce 1, 2, 3)",
+    "etichetta_conteggio": "ELEMENTI QUALITATIVI TIPO D n.",
+    "dichiarazione": "Il richiedente, nella qualità di locatore/conduttore, ha presentato richiesta per l'attestazione ex D.M. 16/1/2017, dichiarando sotto la propria responsabilità gli elementi oggettivi sopra indicati, confermati dalle parti contraenti firmando in calce.",
+    "firme": [],
+    "titolo_attestazione": "ATTESTAZIONE",
+    "attestazione": [
+      "Tutto ciò premesso, l'Organizzazione/le Organizzazioni ……………………………, firmataria/e dell'Accordo territoriale, sotto la propria responsabilità e sulla base degli elementi oggettivi sopra dichiarati dalle parti contraenti,",
+      "ATTESTA / ATTESTANO la conformità dei contenuti economici e normativi del contratto sopra descritto alle disposizioni dell'Accordo territoriale vigente per il Comune di Pavia, S. Martino Siccomario, S. Genesio ed Uniti, Cura Carpignano, Borgarello, Torre d'Isola, Valle Salimbene, Travacò Siccomario, depositato presso il Comune di Pavia il 24.01.2019."
+    ],
+    "firme_attestazione": ["Il dichiarante", "p. l'Organizzazione"],
+    "nota_zone": "La zona si ricava dalla planimetria dell'Allegato 1 (Zone omogenee): Zona 1 nucleo storico e parte di Borgo Ticino e Ticinello, Zona 2 adiacente al nucleo storico, Zona 3 periferica, Zona 4 territorio agricolo. I confini passano a metà strada; un edificio attraversato dal confine sta nella zona di valore più alto."
+  }
+}
