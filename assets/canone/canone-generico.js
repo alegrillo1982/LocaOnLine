@@ -112,6 +112,27 @@
       }
       return { n: gruppi.reduce((t, g) => t + g.n, 0), i: null, nome: gruppi.map((g) => `${g.nome} ${g.fascia}`).join(", "), gruppi, avviso: "" };
     }
+    if (F.criterio === "obbligatori") {
+      // es. Bergamo: per ogni subfascia un numero minimo di elementi, alcuni obbligatori; un obbligatorio
+      // mancante si può sostituire con altri elementi (sost), a volte con una riduzione del massimo (penale)
+      const flag = (k) => !!(k && (s.maggiorazioni_scelte || {})[k]);
+      const basso = flag(F.flag_basso), restauro = flag(F.flag_restauro);
+      const n = E.filter((e, k) => presente(e, el[k])).length;
+      let i = 0, penale = false;
+      F.livelli.forEach((L, k) => {
+        if (!L) return;
+        let serve = L.totale - (basso ? 1 : 0), ok = true, pen = false;
+        for (const o of L.obbligatori) {
+          if (basso && o.esente_basso) continue;
+          if (o.k.some((j) => presente(E[j], el[j]))) continue;
+          const rest = restauro && o.restauro, sost = rest ? 1 : o.sost;
+          if (!sost) { ok = false; break; }
+          serve += sost - 1; if (o.penale && !rest) pen = true;
+        }
+        if (ok && n >= serve) { i = k; penale = pen; }
+      });
+      return { n, i, nome: F.nomi[i], avviso: penale ? F.avviso_penale || "" : "", penale };
+    }
     if (F.criterio === "requisiti") {
       // es. Catania: la subfascia più alta di cui l'immobile ha tutti i requisiti (tutti gli A, almeno n B, ...)
       const conta = (q) => E.filter((e, k) => k >= q.da && k <= q.a && presente(e, el[k])).length;
@@ -173,6 +194,10 @@
         // es. Catanzaro: le ville hanno una fascia sola, qualunque sia il numero di elementi
         r.base = tab[0]; f.i = 0; f.nome = R.fasce.nomi_tabella[chiave.replace(/^stud_/, "")];
       } else r.base = tab[f.i];
+      if (r.base && f.penale && R.fasce.penale_perc) r.base = [r.base[0], cent(r.base[1] * (1 - R.fasce.penale_perc / 100))];
+      // es. Bergamo: classe energetica bassa, massimo ridotto prima delle maggiorazioni
+      const RM = R.riduzione_max;
+      if (r.base && RM && (s.maggiorazioni_scelte || {})[RM.chiave] && RM.fasce.includes(f.i)) { r.base = [r.base[0], cent(r.base[1] * (1 - RM.perc / 100))]; avvisi.push(RM.avviso); }
       const P = R.fasce.proporzionale && R.fasce.proporzionale[f.i];
       if (P && r.base) {
         const passi = Math.max(0, Math.min(f.n - P.da, P.passi));
@@ -230,7 +255,8 @@
       r.arredo = { punti: si, totale: tot };
       if (si && tot) add(`arredo (${virgola(si, 1)} su ${virgola(tot, 1)} punti)`, Math.round(si / tot * A.perc * 100) / 100);
     }
-    if (tipo === "agevolato" && R.durata) add(`durata ${s.durata_anni} + 2 anni`, R.durata[String(anni)] || 0, R.durata_dopo);
+    const DU = R.durata_piccoli && sup && sup.righe[0].mq < R.durata_piccoli.soglia ? R.durata_piccoli : R.durata;
+    if (tipo === "agevolato" && DU) add(`durata ${s.durata_anni} + 2 anni`, DU[String(anni)] || 0, R.durata_dopo);
     if (R.contratto && R.contratto[tipo]) { add(tipo === "studenti" ? "contratto per studenti" : "contratto transitorio", R.contratto[tipo], R.durata_dopo); if (R.contratto.anche_minimo) r.maggiorazioni[r.maggiorazioni.length - 1].minimo = true; }
     const prima = r.maggiorazioni.filter((m) => !m.dopo), dopo = r.maggiorazioni.filter((m) => m.dopo);
     r.fattore = (R.combinazione === "prodotto"

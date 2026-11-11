@@ -1,0 +1,447 @@
+{
+ "accordo": {
+  "codice": "bergamo-2025-11-06",
+  "modello": "bergamo-2025",
+  "comune": "Bergamo",
+  "provincia": "BG",
+  "titolo": "Accordo territoriale per il Comune di Bergamo",
+  "data": "2025-11-06",
+  "data_testo": "6 novembre 2025",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "avviso_validita": "<strong>Bergamo: dal 1° novembre di ogni anno i valori si aggiornano al 100% dell'ISTAT</strong> (base settembre 2025). Qui trovi i valori originali dell'accordo: chiedi all'associazione quelli aggiornati.",
+  "firmatari_proprieta": [
+   "A.P.P.E. Confedilizia Bergamo",
+   "A.S.P.P.I.",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET",
+   "UNIAT"
+  ],
+  "nota": "Firmato il 06/11/2025, durata tre anni dal 1° febbraio 2026 (data e protocollo del deposito non pubblicati); sostituisce l'accordo del 13/06/2017. Valori annui al mq per area e sub-fascia, aggiornati ogni 1° novembre al 100% ISTAT.",
+  "fonte": "PDF dell'accordo firmato pubblicato dal SUNIA (16 pagine, scansione)."
+ },
+ "esempio_zona": "l'area dall'elenco vie (allegato 1 bis)",
+ "regole": {
+  "generico": true,
+  "unita": "anno",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Area 1 - Papa Giovanni",
+    "nota": "Area 1 (colore arancione nella cartografia): Papa Giovanni, Stazione, Quarenghi (in parte), Scotti, Tasso, Ghislandi. Le vie sono nell'elenco dell'allegato 1 bis dei precedenti accordi; via Pignolo e via T. Tasso sono interamente in area 2.",
+    "fasce": [
+     [
+      48.0,
+      68.0
+     ],
+     [
+      68.01,
+      110.0
+     ],
+     [
+      110.01,
+      135.0
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Area 2 - Città Alta e colli",
+    "nota": "Area 2 (colore verde nella cartografia): Città Alta e colli, XXIV Maggio, Vittorio Emanuele, Verdi, Pignolo. Le vie sono nell'elenco dell'allegato 1 bis dei precedenti accordi; via Pignolo e via T. Tasso sono interamente in area 2.",
+    "fasce": [
+     [
+      48.0,
+      68.0
+     ],
+     [
+      68.01,
+      120.0
+     ],
+     [
+      120.01,
+      150.0
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Area 3 - Stadio",
+    "nota": "Area 3 (colore rosa nella cartografia): Stadio, Baioni-Valtesse, Monterosso, parte di Corridoni e S. Caterina. Le vie sono nell'elenco dell'allegato 1 bis dei precedenti accordi; via Pignolo e via T. Tasso sono interamente in area 2.",
+    "fasce": [
+     [
+      43.0,
+      60.0
+     ],
+     [
+      60.01,
+      100.0
+     ],
+     [
+      100.01,
+      120.0
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Area 4 - Longuelo",
+    "nota": "Area 4 (colore giallo nella cartografia): Longuelo, Loreto, Broseta (in parte), S. Bernardino, Moroni, S. Giovanni Bosco, Promessi Sposi, Borgo Palazzo (in parte), Redona. Le vie sono nell'elenco dell'allegato 1 bis dei precedenti accordi; via Pignolo e via T. Tasso sono interamente in area 2.",
+    "fasce": [
+     [
+      43.0,
+      60.0
+     ],
+     [
+      60.01,
+      90.0
+     ],
+     [
+      90.01,
+      115.0
+     ]
+    ]
+   },
+   {
+    "codice": "5",
+    "nome": "Area 5 - Sud della città",
+    "nota": "Area 5 (colore azzurro nella cartografia): Sud della città, verso Treviolo, Lallio, Azzano S. Paolo, Orio al Serio. Le vie sono nell'elenco dell'allegato 1 bis dei precedenti accordi; via Pignolo e via T. Tasso sono interamente in area 2.",
+    "fasce": [
+     [
+      37.0,
+      52.0
+     ],
+     [
+      52.01,
+      85.0
+     ],
+     [
+      85.01,
+      105.0
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "sub-fascia 1",
+    "sub-fascia 2",
+    "sub-fascia 3"
+   ],
+   "criterio": "obbligatori",
+   "flag_basso": "piano_basso",
+   "flag_restauro": "restaurato",
+   "livelli": [
+    null,
+    {
+     "totale": 7,
+     "obbligatori": [
+      {
+       "k": [
+        2
+       ],
+       "sost": 2
+      },
+      {
+       "k": [
+        3
+       ]
+      },
+      {
+       "k": [
+        4
+       ]
+      },
+      {
+       "k": [
+        6
+       ],
+       "sost": 2,
+       "esente_basso": true
+      },
+      {
+       "k": [
+        12
+       ]
+      }
+     ]
+    },
+    {
+     "totale": 11,
+     "obbligatori": [
+      {
+       "k": [
+        0
+       ],
+       "sost": 2,
+       "penale": true,
+       "restauro": true
+      },
+      {
+       "k": [
+        2
+       ],
+       "sost": 1
+      },
+      {
+       "k": [
+        3
+       ]
+      },
+      {
+       "k": [
+        5
+       ],
+       "sost": 2,
+       "penale": true
+      },
+      {
+       "k": [
+        6
+       ],
+       "sost": 2,
+       "penale": true,
+       "esente_basso": true,
+       "restauro": true
+      },
+      {
+       "k": [
+        7
+       ],
+       "sost": 1,
+       "restauro": true
+      },
+      {
+       "k": [
+        12
+       ]
+      }
+     ]
+    }
+   ],
+   "penale_perc": 10,
+   "avviso_penale": "Sub-fascia 3 raggiunta sostituendo box/posto auto, riscaldamento con termoregolazione o ascensore: il massimo scende del 10% e serve l'assistenza bilaterale delle due organizzazioni.",
+   "nota": "Sub-fascia 2: almeno 7 elementi, obbligatori 3, 4, 5, 7 e 13 (cantina e ascensore sostituibili ciascuno con due elementi in più). Sub-fascia 3: almeno 11 elementi, obbligatori 1, 3, 4, 6, 7, 8 e 13 (cantina e verde sostituibili con un elemento in più; box, riscaldamento e ascensore con due, ma il massimo scende del 10%). Entro il 2° piano l'ascensore non conta e serve un elemento in meno.",
+   "nota_pdf": "Sub-fascia 2: almeno 7 elementi, obbligatori 3, 4, 5, 7, 13. Sub-fascia 3: almeno 11, obbligatori 1, 3, 4, 6, 7, 8, 13 (sostituzioni e piani bassi: vedi accordo)."
+  },
+  "elementi": [
+   {
+    "testo": "Autorimessa singola o posto auto coperto o scoperto"
+   },
+   {
+    "testo": "Cortile comune"
+   },
+   {
+    "testo": "Cantina, sottotetto o soffitta"
+   },
+   {
+    "testo": "Acqua corrente, allacciamento al gas e impianti elettrici efficienti"
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato"
+   },
+   {
+    "testo": "Riscaldamento autonomo o con termoregolazione, oppure condizionamento"
+   },
+   {
+    "testo": "Ascensore (edificio con almeno tre piani fuori terra, unità oltre il terzo livello)"
+   },
+   {
+    "testo": "Area verde di pertinenza o condominiale, o aree attrezzate"
+   },
+   {
+    "testo": "Impianti o strutture per l'accesso dei disabili"
+   },
+   {
+    "testo": "Un ulteriore posto auto o box"
+   },
+   {
+    "testo": "Impianti sportivi di pertinenza dell'immobile"
+   },
+   {
+    "testo": "Dotazione di mobilio"
+   },
+   {
+    "testo": "Bagno completo"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Doppi vetri"
+   },
+   {
+    "testo": "Portineria o videocitofono"
+   },
+   {
+    "testo": "Balconi e/o terrazze di almeno 8 mq"
+   },
+   {
+    "testo": "Unità ultimata o completamente ristrutturata negli ultimi 10 anni"
+   },
+   {
+    "testo": "Antenna centralizzata o altro impianto di ricetrasmissione"
+   },
+   {
+    "testo": "Vicinanza ai servizi essenziali"
+   }
+  ],
+  "riduzione_max": {
+   "chiave": "ape_bassa",
+   "perc": 4,
+   "fasce": [
+    1,
+    2
+   ],
+   "avviso": "Classe energetica E, F o G: il massimo della sub-fascia 2 o 3 scende del 4%, prima delle maggiorazioni."
+  },
+  "correttivi_superficie": [
+   {
+    "nome": "alloggio sotto 52 mq",
+    "a": 51.99,
+    "perc": 20,
+    "su": "base"
+   },
+   {
+    "nome": "alloggio da 52 a 64 mq",
+    "da": 52,
+    "a": 64,
+    "perc": 10,
+    "su": "base"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie dei locali abitativi (anche taverne, mansarde e sottotetti abitabili e comunicanti), senza i muri perimetrali",
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Box e autorimesse",
+     "coeff": 0.7
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posti auto privati coperti o scoperti",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantine",
+     "testo": "Soffitte, cantine, taverne non abitabili comunicanti con l'alloggio",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantine_nc",
+     "testo": "Soffitte, cantine e simili non comunicanti",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazze comunicanti (30% fino a 25 mq, poi 10%)",
+     "coeff": 0.3,
+     "scaglione": [
+      25,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "chiave": "balconi_nc",
+     "testo": "Balconi e terrazze non comunicanti (15% fino a 25 mq, poi 5%)",
+     "coeff": 0.15,
+     "scaglione": [
+      25,
+      0.15,
+      0.05
+     ]
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta esclusiva (10% fino alla superficie dell'alloggio, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    }
+   ],
+   "nota": "Criteri del DPR 138/1998 con le deroghe dell'accordo; tolleranza del 7%. Le pertinenze non contano oltre la metà della superficie dei locali abitativi."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredato",
+    "tipo": "spunta",
+    "testo": "Completamente arredato, oppure immobile vincolato (art. 1, c. 2, lett. a, L. 431/98); se arredato solo in parte l'aumento è minore e proporzionale",
+    "nome": "arredato o vincolato",
+    "perc": 15
+   },
+   {
+    "chiave": "ape_bassa",
+    "tipo": "spunta",
+    "testo": "Classe energetica E, F o G",
+    "nome": "classe energetica bassa",
+    "perc": 0,
+    "mostra_perc": false
+   },
+   {
+    "chiave": "piano_basso",
+    "tipo": "spunta",
+    "testo": "Alloggio entro il 2° piano (piano terra e rialzato esclusi dal conteggio): l'ascensore non serve",
+    "nome": "piano basso",
+    "perc": 0,
+    "mostra_perc": false
+   },
+   {
+    "chiave": "restaurato",
+    "tipo": "spunta",
+    "testo": "Alloggio restaurato nei borghi storici, in Città Alta o nel Parco dei Colli: box, ascensore e verde si sostituiscono con un elemento ciascuno",
+    "nome": "restaurato",
+    "perc": 0,
+    "mostra_perc": false
+   }
+  ],
+  "nota_maggiorazioni": "Sotto 52 mq +20%, da 52 a 64 mq +10%. Durata 4/5/6 anni: +4/6/8% (+5/8/10% sotto 64 mq). Transitori e studenti: +5%.",
+  "durata": {
+   "4": 4,
+   "5": 6,
+   "6": 8
+  },
+  "durata_piccoli": {
+   "soglia": 64,
+   "4": 5,
+   "5": 8,
+   "6": 10
+  },
+  "contratto": {
+   "transitorio": 5,
+   "studenti": 5
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato 1",
+  "titolo": "Attestazione di rispondenza ex D.M. 16 gennaio 2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Bergamo del 06/11/2025, in vigore dal 01/02/2026",
+  "titolo_elementi": "Elementi di riferimento per la sub-fascia",
+  "firme": [],
+  "attestazione": [
+   "Le Organizzazioni ……………………………, firmatarie dell'Accordo territoriale per il Comune di Bergamo, sulla base degli elementi oggettivi sopra riportati, dichiarati dalle parti sotto la propria responsabilità, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTANO congiuntamente che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Bergamo."
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "firme_attestazione": [
+   "Il dichiarante",
+   "p. l'Organizzazione della proprietà",
+   "p. l'Organizzazione dei conduttori"
+  ],
+  "nota_zone": "L'area si ricava dall'elenco vie e dalla cartografia dei precedenti accordi (allegati 1 e 1 bis)."
+ }
+}

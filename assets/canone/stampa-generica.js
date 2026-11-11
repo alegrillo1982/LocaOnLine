@@ -119,7 +119,7 @@
     spazio(14); a += 2;
     const soglie = (R.fasce.soglie_zona && r.zona && R.fasce.soglie_zona[r.zona.codice]) || R.fasce.soglie;
     const cosa = R.fasce.criterio === "punti" ? "punti" : "elementi";
-    if (R.fasce.criterio === "requisiti") { for (const rr of aCapo(R.fasce.nota || "", reg, 7.8, DX - SX - 110)) { spazio(10); tx(rr, SX, a, { sz: 7.8 }); a += 9.5; } a -= 9.5; }
+    if (R.fasce.criterio === "requisiti" || R.fasce.criterio === "obbligatori") { for (const rr of aCapo(R.fasce.nota_pdf || R.fasce.nota || "", reg, 7.8, DX - SX - 110)) { spazio(10); tx(rr, SX, a, { sz: 7.8 }); a += 9.5; } a -= 9.5; }
     else if (R.fasce.criterio === "scelta") tx(`Fascia ${r.fascia.nome} (scelta in base al foglio di calcolo dell'accordo).`, SX, a, { sz: 7.8, c: DATO });
     else if (!r.fascia.gruppi && !soglie.length) tx("Una sola fascia per zona: gli elementi indicano se avvicinarsi al minimo o al massimo.", SX, a, { sz: 7.8 });
     else if (r.fascia.prevalente) { for (const rr of aCapo(r.fascia.gruppi.map((g) => `${g.nome}: ${g.fascia.toLowerCase()}`).join("  ·  ") + `  →  livello prevalente ${r.fascia.nome.toUpperCase()}`, reg, 7.8, DX - SX)) { spazio(10); tx(rr, SX, a, { sz: 7.8, c: DATO }); a += 9.5; } a -= 9.5; }

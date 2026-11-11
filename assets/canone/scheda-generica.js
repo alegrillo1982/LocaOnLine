@@ -24,7 +24,7 @@
 
   function soglieTesto(z) {
     const F = R().fasce, s = (F.soglie_zona && z && F.soglie_zona[z.codice]) || F.soglie, cosa = F.criterio === "punti" ? "punti" : "elementi";
-    if (F.criterio === "scelta" || F.criterio === "requisiti") return F.nota || "fascia scelta in base al foglio di calcolo dell'accordo";
+    if (F.criterio === "scelta" || F.criterio === "requisiti" || F.criterio === "obbligatori") return F.nota || "fascia scelta in base al foglio di calcolo dell'accordo";
     if (!s.length) return "una sola fascia per zona; gli elementi indicano se avvicinarsi al minimo o al massimo";
     return F.nomi.map((nome, i) => i === 0 ? `${nome}: fino a ${s[0]} ${cosa}` : i < s.length ? `${nome}: da ${s[i - 1] + 1} a ${s[i]}` : `${nome}: da ${s[i - 1] + 1}`).join(" · ") + (F.almeno ? ` (${F.almeno.avviso.replace(/^Per /, "per ").replace(/\.$/, "")})` : "") + (F.nota_soglie ? `; ${F.nota_soglie}` : "");
   }
@@ -53,7 +53,7 @@
       const cl = m.contratti ? m.contratti.map((c) => `per-${c}`).join(" ") : "";
       if (m.tipo === "scelta") return `<div class="griglia-campi stacco ${cl}" data-m="${m.chiave}"><label class="largo">${testo(m.testo)}<select name="m_${m.chiave}">` +
         `<option value="">${testo(m.nessuna || "no")}</option>` + m.opzioni.map((o) => `<option value="${testo(o.valore)}">${testo(o.testo)}${o.perc && m.mostra_perc !== false ? ` (${o.perc > 0 ? "+" : ""}${v(o.perc, o.perc % 1 ? 1 : 0)}%)` : ""}</option>`).join("") + `</select></label></div>`;
-      return `<div class="caselle colonna stacco ${cl}" data-m="${m.chiave}"><label><input type="checkbox" name="m_${m.chiave}"> ${testo(m.testo)} (${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%)</label></div>`;
+      return `<div class="caselle colonna stacco ${cl}" data-m="${m.chiave}"><label><input type="checkbox" name="m_${m.chiave}"> ${testo(m.testo)}${m.mostra_perc === false ? "" : ` (${m.perc > 0 ? "+" : ""}${v(m.perc, m.perc % 1 ? 1 : 0)}%)`}</label></div>`;
     }).join("") + (r.nota_maggiorazioni ? `<p class="nota-copia stacco">${testo(r.nota_maggiorazioni)}</p>` : "");
     $("gen-valore-etichetta").textContent = `Valore al mq ${unita()} (€)`;
   }
