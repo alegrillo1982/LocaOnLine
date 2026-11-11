@@ -1073,6 +1073,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvicenza-2019-01-28-protocollo-integrativo-2024-07-10.pdf?alt=media&token=2a21a7e8-5886-4051-a9ca-3023ecf5835b"
     }
    ]
+  },
+  {
+   "comune": "Ravenna",
+   "provincia": "RA",
+   "accordo": "ravenna-2025-11-10",
+   "sottoscritto": "10 novembre 2025",
+   "depositato": "",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fravenna-2025-11-10-accordo.pdf?alt=media&token=2ad2f881-7582-4a0c-ba12-aa682fe60e50",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fravenna-2025-11-10-accordo.pdf?alt=media&token=2ad2f881-7582-4a0c-ba12-aa682fe60e50"
+    }
+   ]
   }
  ]
 }

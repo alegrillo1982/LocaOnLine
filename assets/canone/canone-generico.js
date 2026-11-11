@@ -358,6 +358,13 @@
         // es. Vicenza: a corpo fino a una certa taglia, al mq per le taglie elencate in a_corpo.al_mq
         r.a_corpo = !!(R.a_corpo && !(R.a_corpo.al_mq || []).includes(r.tipologia));
         let q = r.a_corpo ? 1 : sup.totale;
+        // es. Ravenna: fuori dalle righe della tabella il canone a corpo si calcola in proporzione ai mq
+        const AP = r.a_corpo && R.a_corpo.proporzionale;
+        if (AP && r.mq_tabella !== null && r.mq_tabella !== undefined) {
+          const Ur = Math.round(r.mq_tabella);
+          if (Ur > AP.oltre) q = Ur / AP.oltre; else if (Ur < AP.sotto) q = Ur / AP.sotto;
+          if (q !== 1) avvisi.push(`Oltre le righe della tabella: canone della riga di ${q > 1 ? AP.oltre : AP.sotto} mq in proporzione a ${Ur} mq.`);
+        }
         if (!r.a_corpo && r.fattore_base !== 1) {
           const ab = (R.superficie.voci || []).filter((v) => v.abitazione).map((v) => v.chiave);
           const Sab = sup.righe.filter((x) => x.chiave === "base" || ab.includes(x.chiave)).reduce((t, x) => t + x.convenzionale, 0);
