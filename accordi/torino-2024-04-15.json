@@ -1,0 +1,610 @@
+{
+ "accordo": {
+  "codice": "torino-2024-04-15",
+  "modello": "torino-2024",
+  "comune": "Torino",
+  "provincia": "TO",
+  "titolo": "Accordo territoriale per il Comune di Torino",
+  "data": "2024-04-15",
+  "data_testo": "6 dicembre 2022, aggiornato al 15 aprile 2024",
+  "deposito": "",
+  "deposito_data": "15.04.2024",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "firmatari_proprieta": [
+   "APE",
+   "UPPI",
+   "CONFAPPI",
+   "ASPPI",
+   "APPC",
+   "CONFABITARE",
+   "FEDERCASA",
+   "FEDERPROPRIETA'",
+   "UNIONCASA",
+   "S.E.I.ASS."
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET",
+   "UNIAT",
+   "ANIA",
+   "UNIONE INQUILINI",
+   "FEDERCASA TORINO CONFSAL",
+   "ANIAT CONIA",
+   "SAI/CISAL"
+  ],
+  "nota": "Accordo territoriale del 06/12/2022 aggiornato al 15/04/2024, in vigore per i contratti dal 01/05/2024; resta in vigore fino a un nuovo decreto ministeriale (cap. X). Elenco firmatari aggiornato al 17/12/2025 (Comune di Torino). Nessun numero di protocollo pubblicato.",
+  "fonte": "Comune di Torino, Contratti di locazione convenzionati e accordi territoriali: testo base, firmatari, allegati 1, 2, 3, 9, 10, 12, 13."
+ },
+ "esempio_zona": "scrivi la via: la zona si trova dall'elenco viario dell'accordo",
+ "stradario": "torino-2024-04-15-stradario.json",
+ "zone": {
+  "1": "Centro",
+  "2": "Semicentro",
+  "3": "Periferia",
+  "4": "Collinare",
+  "P": "Pregio"
+ },
+ "regole": {
+  "unita": "mensile",
+  "valori": {
+   "3": {
+    "1": [
+     [
+      6.5,
+      3.7
+     ],
+     [
+      5.7,
+      3.1
+     ],
+     [
+      4.6,
+      2.5
+     ]
+    ],
+    "2": [
+     [
+      5.9,
+      3.7
+     ],
+     [
+      5.2,
+      3.1
+     ],
+     [
+      4.5,
+      2.5
+     ]
+    ],
+    "3": [
+     [
+      5.5,
+      3.7
+     ],
+     [
+      4.7,
+      3.1
+     ],
+     [
+      4.0,
+      2.5
+     ]
+    ],
+    "4": [
+     [
+      6.5,
+      3.7
+     ],
+     [
+      5.7,
+      3.1
+     ],
+     [
+      4.6,
+      2.5
+     ]
+    ]
+   },
+   "4": {
+    "1": [
+     [
+      6.6,
+      3.8
+     ],
+     [
+      5.8,
+      3.2
+     ],
+     [
+      4.7,
+      2.6
+     ]
+    ],
+    "2": [
+     [
+      6.0,
+      3.8
+     ],
+     [
+      5.4,
+      3.2
+     ],
+     [
+      4.6,
+      2.6
+     ]
+    ],
+    "3": [
+     [
+      5.6,
+      3.8
+     ],
+     [
+      4.8,
+      3.2
+     ],
+     [
+      4.1,
+      2.6
+     ]
+    ],
+    "4": [
+     [
+      6.6,
+      3.8
+     ],
+     [
+      5.8,
+      3.2
+     ],
+     [
+      4.7,
+      2.6
+     ]
+    ]
+   },
+   "5": {
+    "1": [
+     [
+      6.7,
+      3.8
+     ],
+     [
+      5.9,
+      3.2
+     ],
+     [
+      4.8,
+      2.6
+     ]
+    ],
+    "2": [
+     [
+      6.1,
+      3.8
+     ],
+     [
+      5.5,
+      3.2
+     ],
+     [
+      4.7,
+      2.6
+     ]
+    ],
+    "3": [
+     [
+      5.7,
+      3.8
+     ],
+     [
+      4.9,
+      3.2
+     ],
+     [
+      4.2,
+      2.6
+     ]
+    ],
+    "4": [
+     [
+      6.7,
+      3.8
+     ],
+     [
+      5.9,
+      3.2
+     ],
+     [
+      4.8,
+      2.6
+     ]
+    ]
+   },
+   "6": {
+    "1": [
+     [
+      6.9,
+      3.9
+     ],
+     [
+      6.0,
+      3.3
+     ],
+     [
+      4.9,
+      2.7
+     ]
+    ],
+    "2": [
+     [
+      6.2,
+      3.9
+     ],
+     [
+      5.6,
+      3.3
+     ],
+     [
+      4.8,
+      2.7
+     ]
+    ],
+    "3": [
+     [
+      5.8,
+      3.9
+     ],
+     [
+      5.0,
+      3.3
+     ],
+     [
+      4.3,
+      2.7
+     ]
+    ],
+    "4": [
+     [
+      6.9,
+      3.9
+     ],
+     [
+      6.0,
+      3.3
+     ],
+     [
+      4.9,
+      2.7
+     ]
+    ]
+   }
+  },
+  "valori_studenti": {
+   "1": [
+    [
+     6.5,
+     3.7
+    ],
+    [
+     5.7,
+     3.1
+    ],
+    [
+     4.6,
+     2.5
+    ]
+   ],
+   "2": [
+    [
+     5.9,
+     3.7
+    ],
+    [
+     5.2,
+     3.1
+    ],
+    [
+     4.5,
+     2.5
+    ]
+   ],
+   "3": [
+    [
+     5.5,
+     3.7
+    ],
+    [
+     4.7,
+     3.1
+    ],
+    [
+     4.0,
+     2.5
+    ]
+   ],
+   "4": [
+    [
+     6.5,
+     3.7
+    ],
+    [
+     5.7,
+     3.1
+    ],
+    [
+     4.6,
+     2.5
+    ]
+   ]
+  },
+  "pregio": [
+   8.0,
+   5.0
+  ],
+  "sub_punti": [
+   6,
+   4.5
+  ],
+  "studenti_sub": [
+   4,
+   3,
+   2
+  ],
+  "superficie": [
+   {
+    "chiave": "abitazione",
+    "etichetta": "Abitazione (mansarde: parte alta almeno 1,60 m)",
+    "coeff": 1
+   },
+   {
+    "chiave": "mansarda_bassa",
+    "etichetta": "Mansarda, parte sotto 1,60 m",
+    "coeff": 0.25
+   },
+   {
+    "chiave": "box",
+    "etichetta": "Box",
+    "coeff": 0.8
+   },
+   {
+    "chiave": "cantine",
+    "etichetta": "Cantine e soffitte",
+    "coeff": 0.25
+   },
+   {
+    "chiave": "balconi",
+    "etichetta": "Balconi e terrazze",
+    "coeff": 0.25
+   },
+   {
+    "chiave": "scoperta",
+    "etichetta": "Aree scoperte ad uso esclusivo",
+    "coeff": 0.1
+   }
+  ],
+  "piccoli": [
+   [
+    41,
+    30
+   ],
+   [
+    51,
+    25
+   ],
+   [
+    67,
+    20
+   ]
+  ],
+  "minimo_67_80": 80.4,
+  "correttivi": {
+   "nuovo_8_anni": 20,
+   "ristrutturato": 10,
+   "classe": {
+    "A1-A4": 6,
+    "A-B-C": 5,
+    "D-E": 0,
+    "F-G-NC": -5
+   },
+   "arredo_acquistato": 5,
+   "senza_deposito": 2.5,
+   "recesso_3_mesi": 2.5,
+   "arredato": 10,
+   "cucina": 5,
+   "elementi_9": 10,
+   "transitorio_arredo": 15,
+   "studenti_arredo": 20,
+   "parziale_coabitante": 10,
+   "riduzione_minimi": 10
+  }
+ },
+ "elementi": [
+  [
+   "1a",
+   "1",
+   "presenza di autorimessa singola o posto auto coperto ad uso esclusivo o presenza di posto auto/motocicli scoperto in cortile condominiale ad uso esclusivo",
+   1
+  ],
+  [
+   "1b",
+   "1",
+   "presenza di posto auto/motocicli scoperto in cortile condominiale",
+   0.5
+  ],
+  [
+   "2",
+   "",
+   "presenza di 1 cantina ad uso esclusivo",
+   1
+  ],
+  [
+   "3",
+   "",
+   "presenza di sottotetto o soffitta ad uso esclusivo",
+   1
+  ],
+  [
+   "4a",
+   "4",
+   "presenza di impianto di riscaldamento centralizzato condominiale privo di valvole termostatiche",
+   0.5
+  ],
+  [
+   "4b",
+   "4",
+   "presenza di impianto di riscaldamento autonomo o centralizzato, ma dotato di valvole termostatiche e contacalorie installati su ogni radiatore, salvo impianti con impossibilità tecnica d'installazione (impianti a pannelli radianti a pavimento e/o soffitto)",
+   1
+  ],
+  [
+   "5a",
+   "5",
+   "presenza di impianto di condizionamento",
+   1
+  ],
+  [
+   "5b",
+   "5",
+   "presenza di impianto di condizionamento mobile",
+   0.5
+  ],
+  [
+   "6a",
+   "6",
+   "stabili dotati di ascensore",
+   1
+  ],
+  [
+   "6b",
+   "6",
+   "stabili sprovvisti di ascensore: alloggio ubicato al piano terra/rialzato (1° f.t.)",
+   1
+  ],
+  [
+   "6c",
+   "6",
+   "stabili sprovvisti di ascensore: alloggio ubicato al 1° piano (2° f.t.)",
+   0.5
+  ],
+  [
+   "6e",
+   "6",
+   "mansarde con accesso ascensore al piano sottostante",
+   0.5
+  ],
+  [
+   "6d",
+   "",
+   "presenza nello stabile di sistemi per l'abbattimento delle barriere architettoniche",
+   1
+  ],
+  [
+   "7a",
+   "7",
+   "presenza di area verde condominiale (con certificazione di congruità bilaterale)",
+   0.5
+  ],
+  [
+   "7b",
+   "7",
+   "presenza di area verde e/o cortile ad uso esclusivo",
+   1
+  ],
+  [
+   "8",
+   "",
+   "presenza di allacciamento dell'alloggio alla rete gas",
+   0.5
+  ],
+  [
+   "9",
+   "",
+   "presenza di impianto satellitare centralizzato con derivazione fino all'interno dell'alloggio",
+   1
+  ],
+  [
+   "10",
+   "",
+   "presenza di impianto videocitofonico e/o di sorveglianza",
+   1
+  ],
+  [
+   "11",
+   "",
+   "presenza di porta blindata avente telaio metallico (non solo rinforzata o con sola serratura di sicurezza ad H)",
+   1
+  ],
+  [
+   "12",
+   "",
+   "presenza, in tutte le aperture, di doppi vetri o vetri camera con affaccio verso l'esterno (esclusi i serramenti con affaccio su verande)",
+   1
+  ],
+  [
+   "13",
+   "",
+   "presenza all'interno dell'unità di servizio igienico completo",
+   0.5
+  ],
+  [
+   "14",
+   "",
+   "presenza di doppi servizi (di cui almeno uno completo ed il secondo dotato di almeno lavabo e w.c.)",
+   1
+  ],
+  [
+   "16",
+   "",
+   "presenza di locale lavanderia con lavabo",
+   0.5
+  ],
+  [
+   "17",
+   "",
+   "presenza all'interno dell'alloggio di arredo cucina completo con frigorifero e lavatrice (esclude le maggiorazioni per l'arredo)",
+   1
+  ],
+  [
+   "18",
+   "",
+   "presenza di almeno un balcone verandato o terrazzo verandato ma privi di elementi radianti",
+   1
+  ],
+  [
+   "19",
+   "",
+   "unità di oltre mq. 100 dotata di doppio ingresso su stesso piano",
+   1
+  ],
+  [
+   "20",
+   "",
+   "vicinanza linea metropolitana (non oltre i 400 mt. dalla fermata)",
+   1
+  ],
+  [
+   "21",
+   "",
+   "interventi di efficientamento energetico effettuati negli ultimi 5 anni, anche soltanto deliberati e in corso (certificazione bilaterale)",
+   1
+  ],
+  [
+   "22",
+   "",
+   "interventi Sismabonus anche soltanto deliberati e in corso di esecuzione (certificazione bilaterale)",
+   1
+  ]
+ ],
+ "elementi_studenti": [
+  "presenza di doppi servizi oltre i 100 mq.",
+  "disponibilità di almeno 14 – 18 mq. a studente abitante",
+  "disponibilità di una camera singola per studente",
+  "ubicazione dell'alloggio in prossimità della sede universitaria cui è iscritto lo studente (3 km di raggio; con più studenti basta che uno rispetti il parametro)",
+  "possibilità di collegamento alla sede universitaria con mezzi pubblici, ma utilizzandone non oltre due",
+  "comodità di salita: ascensore per tutti i piani, o senza ascensore sino al 1° piano (2° f.t.), o sistemi per le barriere architettoniche, o mansarda con ascensore al piano sottostante",
+  "presenza di collegamento gratuito ad Internet"
+ ]
+}

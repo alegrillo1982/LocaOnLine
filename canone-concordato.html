@@ -12,18 +12,18 @@
 
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Canone concordato Roma, Milano, Napoli: calcolo e contratto</title>
-  <meta name="description" content="Calcola il canone concordato con gli accordi di Roma, Milano e Napoli e compila il contratto 3+2, studenti o transitorio, in PDF o Word."/>
+  <title>Canone concordato Roma, Milano, Napoli, Torino: calcolo</title>
+  <meta name="description" content="Calcola il canone concordato con gli accordi di Roma, Milano, Napoli e Torino e compila il contratto 3+2, studenti o transitorio, in PDF o Word."/>
   <link rel="canonical" href="https://locaonline.it/canone-concordato.html"/>
   <meta name="robots" content="index, follow"/>
 
   <meta property="og:type"        content="website"/>
   <meta property="og:url"         content="https://locaonline.it/canone-concordato.html"/>
-  <meta property="og:title"       content="Canone concordato Roma, Milano, Napoli: calcolo e contratto"/>
-  <meta property="og:description" content="Calcola il canone concordato con gli accordi di Roma, Milano e Napoli e compila il contratto 3+2, studenti o transitorio, in PDF o Word."/>
+  <meta property="og:title"       content="Canone concordato Roma, Milano, Napoli, Torino: calcolo"/>
+  <meta property="og:description" content="Calcola il canone concordato con gli accordi di Roma, Milano, Napoli e Torino e compila il contratto 3+2, studenti o transitorio, in PDF o Word."/>
   <meta property="og:locale"      content="it_IT"/>
   <meta name="twitter:card"       content="summary"/>
-  <meta name="twitter:title"      content="Canone concordato Roma, Milano, Napoli: calcolo e contratto"/>
+  <meta name="twitter:title"      content="Canone concordato Roma, Milano, Napoli, Torino: calcolo"/>
 
   <script type="application/ld+json">
   {
@@ -52,7 +52,7 @@
           {
             "@type": "Question",
             "name": "Cos'è la scheda di calcolo del canone concordato?",
-            "acceptedAnswer": { "@type": "Answer", "text": "È il modulo previsto dall'accordo territoriale del Comune (per Roma l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025): parte dalla zona, dalla superficie convenzionale e dalle dotazioni dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato." }
+            "acceptedAnswer": { "@type": "Answer", "text": "È il modulo previsto dall'accordo territoriale del Comune (per Roma l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024): parte dalla zona, dalla superficie convenzionale e dalle dotazioni dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato." }
           },
           {
             "@type": "Question",
@@ -508,6 +508,112 @@
       <ul id="napoli-avvisi" class="avvisi-canone" aria-live="polite"></ul>
     </section>
   </form>
+  <!-- Scheda per l'accordo di Torino (2022/2024): riproduce l'"Attestazione di
+       congruità" (allegato 9). Visibile solo con l'accordo di Torino. -->
+  <form id="scheda-torino" class="scheda-torino" autocomplete="off" onsubmit="return false" hidden>
+
+    <section class="sezione-canone">
+      <h2>Contratto</h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Tipo di contratto">
+        <label><input type="radio" name="tipo" value="agevolato" checked> Agevolato (3 + 2)</label>
+        <label><input type="radio" name="tipo" value="transitorio"> Transitorio</label>
+        <label><input type="radio" name="tipo" value="studenti"> Studenti universitari</label>
+      </div>
+      <div class="griglia-campi">
+        <label class="solo-agevolato">Durata<select name="durata_anni">
+          <option value="3">3 + 2 anni</option><option value="4">4 + 2 anni</option><option value="5">5 + 2 anni</option><option value="6">6 + 2 anni o più</option></select></label>
+      </div>
+      <div class="caselle stacco no-agevolato"><label><input type="checkbox" name="parziale"> Locazione parziale con il locatore convivente (cap. IV e V)</label></div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Parti e immobile</h2>
+      <div class="griglia-campi">
+        <label class="largo">Locatore<input type="text" name="locatore"></label>
+        <label>C.F. locatore<input type="text" name="locatore_cf" class="maiuscolo"></label>
+        <label class="largo">Conduttore<input type="text" name="conduttore"></label>
+        <label>C.F. conduttore<input type="text" name="conduttore_cf" class="maiuscolo"></label>
+        <label>Comune<input type="text" name="citta"></label>
+        <div class="largo cerca-via"><label>Via e numero civico <small>la zona si trova dall'elenco viario</small><input type="text" name="indirizzo" placeholder="es. Via Po 12" aria-controls="torino-vie"></label>
+          <div id="torino-vie" class="risultati-zona" role="listbox" hidden></div></div>
+      </div>
+      <p id="torino-zona-indirizzo" class="zona-scelta" aria-live="polite"></p>
+      <div class="griglia-campi stacco">
+        <label>Zona<select name="zona"><option value="">scegli…</option><option value="1">1 Centro</option><option value="2">2 Semicentro</option><option value="3">3 Periferia</option><option value="4">4 Collinare</option><option value="P">Pregio</option></select></label>
+        <label class="se-pregio">In pregio, calcola con l'area<select name="area_pregio"><option value="">no: valori di pregio</option><option value="1">1 Centro</option><option value="2">2 Semicentro</option><option value="3">3 Periferia</option><option value="4">4 Collinare</option></select></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Superficie utile <small>mq calpestabili, al netto dei muri</small></h2>
+      <div class="scorre no-parziale">
+        <table class="tabella-superfici superfici-torino">
+          <thead><tr><th>Voce</th><th>Mq</th><th>Coeff.</th><th>Mq conv.</th></tr></thead>
+          <tbody id="torino-superfici"></tbody>
+          <tfoot><tr><th colspan="3">Totale</th><td class="totale"><b id="torino-totale">—</b> mq</td></tr></tfoot>
+        </table>
+      </div>
+      <div class="griglia-campi solo-parziale">
+        <label>Mq a uso esclusivo<input type="text" name="mq_esclusivi" inputmode="decimal"></label>
+        <label>Mq condivisi (al 50%)<input type="text" name="mq_condivisi" inputmode="decimal"></label>
+        <label>Numero di inquilini<input type="text" name="inquilini" inputmode="numeric" value="1"></label>
+      </div>
+      <div class="caselle stacco solo-parziale"><label><input type="checkbox" name="minori"> Famiglia con minori a carico <small>(niente aumento per i coabitanti)</small></label></div>
+      <p class="nota-copia stacco" id="torino-mq"></p>
+    </section>
+
+    <section class="sezione-canone no-studenti">
+      <h2>Dotazioni dell'immobile <small id="torino-punti"></small></h2>
+      <div id="torino-elementi" class="caselle colonna elementi"></div>
+      <div class="griglia-campi stacco"><label>Servizi igienici oltre il secondo<input type="text" name="servizi_extra" inputmode="numeric"><small>0,5 punti ciascuno</small></label></div>
+    </section>
+
+    <section class="sezione-canone solo-studenti">
+      <h2>Dotazioni per gli studenti <small id="torino-punti-studenti"></small></h2>
+      <div id="torino-elementi-studenti" class="caselle colonna"></div>
+      <div class="caselle stacco colonna">
+        <label><input type="checkbox" name="servizio_interno" checked> L'alloggio ha il servizio igienico interno</label>
+        <label><input type="checkbox" name="edisu"> Garanzia dell'EDISU <small>(valori minimi della fascia)</small></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone no-parziale">
+      <h2>Maggiorazioni <small>non nelle zone di pregio</small></h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Arredo">
+        <label><input type="radio" name="arredo" value="no" checked> Non arredato</label>
+        <label class="solo-agevolato"><input type="radio" name="arredo" value="cucina"> Arredo cucina completo con frigo e lavatrice (+5%)</label>
+        <label class="solo-agevolato"><input type="radio" name="arredo" value="completo"> Completamente arredato, allegato 12 (+10%)</label>
+        <label class="no-agevolato"><input type="radio" name="arredo" value="camera"> Ammobiliati almeno cucina e camera da letto</label>
+      </div>
+      <div class="griglia-campi stacco">
+        <label>Classe energetica<select name="classe"><option value="">—</option><option value="A1-A4">A1 – A4 (+6%)</option><option value="A-B-C">A, B o C (+5%)</option><option value="D-E">D o E</option><option value="F-G-NC">F, G o non classificato (−5%)</option></select></label>
+        <label>Costruito negli ultimi 8 anni + %<input type="text" name="c_nuovo_8_anni" inputmode="decimal"><small>max 20%</small></label>
+        <label>Ristrutturato negli ultimi 10 anni + %<input type="text" name="c_ristrutturato" inputmode="decimal"><small>max 10%, doppia vidimazione</small></label>
+      </div>
+      <div class="caselle stacco colonna">
+        <label><input type="checkbox" name="arredo_acquistato"> Arredo acquistato negli ultimi 5 anni per almeno € 5.000 (+5%, doppia vidimazione)</label>
+        <label><input type="checkbox" name="senza_deposito"> Nessun deposito cauzionale né fideiussione (+2,5%)</label>
+        <label class="solo-agevolato"><input type="checkbox" name="recesso_3_mesi"> Recesso del conduttore con soli 3 mesi di preavviso (+2,5%)</label>
+        <label class="no-studenti"><input type="checkbox" name="elementi_9"> Almeno 9 dotazioni per almeno 8 punti (+10%, doppia vidimazione)</label>
+      </div>
+    </section>
+
+    <section class="sezione-canone calcolo">
+      <h2>Calcolo del canone</h2>
+      <dl class="righe-calcolo">
+        <dt>Zona e sub-fascia</dt><dd id="torino-esito-fascia">—</dd>
+        <dt>Mq convenzionali</dt><dd id="torino-esito-mq">—</dd>
+        <dt><label for="torino-valore">Valore al mq al mese (€)</label></dt>
+        <dd><input type="text" id="torino-valore" name="valore_mq" inputmode="decimal" class="campo-numero"> <small id="torino-valore-nota"></small></dd>
+        <dt>Canone base</dt><dd id="torino-esito-base">—</dd>
+        <dt>Maggiorazioni</dt><dd id="torino-esito-correttivi">—</dd>
+        <dt>Canone mensile massimo</dt><dd><b id="torino-esito-massimo">—</b></dd>
+        <dt><label for="torino-pattuito">Canone mensile pattuito (€)</label></dt>
+        <dd><input type="text" id="torino-pattuito" name="canone_mensile" inputmode="decimal" class="campo-numero"></dd>
+      </dl>
+      <ul id="torino-avvisi" class="avvisi-canone" aria-live="polite"></ul>
+    </section>
+  </form>
   <div class="barra-canone" role="region" aria-label="Riepilogo del canone">
     <span>Canone massimo <b id="barra-massimo">—</b><span class="solo-largo"> al mese</span></span>
     <span id="stato-salvataggio" class="stato-salvataggio" aria-live="polite"></span>
@@ -753,7 +859,7 @@
             <summary class="font-semibold cursor-pointer">Cos'è la scheda di calcolo del canone concordato?</summary>
             <p class="text-sm text-[#4A5568] leading-relaxed mt-2">È il modulo previsto dall'accordo territoriale del Comune (per Roma
               l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo
-              del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025): parte dalla zona, dalla superficie convenzionale e dalle dotazioni
+              del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024): parte dalla zona, dalla superficie convenzionale e dalle dotazioni
               dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato.</p>
           </details>
           <details class="bg-white border border-slate-200 rounded-xl p-4">
@@ -909,6 +1015,9 @@
   <script src="assets/canone/canone-napoli.js"></script>
   <script src="assets/canone/stampa-napoli.js"></script>
   <script src="assets/canone/scheda-napoli.js"></script>
+  <script src="assets/canone/canone-torino.js"></script>
+  <script src="assets/canone/stampa-torino.js"></script>
+  <script src="assets/canone/scheda-torino.js"></script>
   <script src="assets/canone/modulo-contratto.js"></script>
   <script src="assets/canone/pagina-canone.js"></script>
   <script type="module" src="assets/canone/salva-canone.js"></script>
