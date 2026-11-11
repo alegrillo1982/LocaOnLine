@@ -332,13 +332,15 @@
       <h3 class="sotto">Immobile locato</h3>
       <div class="griglia-campi">
         <label>Comune<input type="text" name="citta"></label>
-        <label class="largo">Via e numero civico<input type="text" name="indirizzo"></label>
+        <div class="largo cerca-via"><label>Via e numero civico <small>la zona si trova da sola</small><input type="text" name="indirizzo" placeholder="es. Via Paolo Sarpi 12" aria-controls="milano-vie"></label>
+          <div id="milano-vie" class="risultati-zona" role="listbox" hidden></div></div>
         <label>Piano<input type="text" name="piano"></label>
         <div class="catasto"><span>Id. catastale</span>
           <label>Fg <input type="text" name="foglio" inputmode="numeric" aria-label="Foglio"></label>
           <label>Mapp <input type="text" name="particella" inputmode="numeric" aria-label="Mappale"></label>
           <label>Sub <input type="text" name="subalterno" inputmode="numeric" aria-label="Subalterno"></label></div>
       </div>
+      <p id="milano-zona-indirizzo" class="zona-scelta" aria-live="polite"></p>
       <div class="zona-milano stacco">
         <label>Zona urbana omogenea<select name="zona"><option value="">scegli…</option></select></label>
         <p class="nota-copia" id="milano-cerca-zona"></p>

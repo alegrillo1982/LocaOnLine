@@ -26,19 +26,15 @@
       "APPC",
       "CONFAPPI Milano"
     ],
-    "nota": "Testo del 27 luglio 2023 con l'accordo integrativo del 20 settembre 2023 (sub-fascia 1 con stufe, stanze 7.1 e 7.2, canone sotto il minimo con assistenza, C7 a 500 m).",
+    "nota": "Testo del 27 luglio 2023 con l'accordo integrativo del 20 settembre 2023 (sub-fascia 1 con stufe, stanze 7.1 e 7.2, canone sotto il minimo con assistenza, C7 a 500 m). Il numero di protocollo del deposito non risulta pubblicato: il contratto non lo cita.",
     "nota_validita": "Art. 14: durata di 3 anni dal giorno del deposito; resta in vigore fino alla firma del nuovo accordo. Dopo la scadenza i limiti minimi e massimi delle fasce si aumentano con l'intera variazione ISTAT (indice FOI) dal mese successivo al 27 luglio 2023 (agosto 2023) al mese precedente la firma del contratto.",
     "fonte": "Milano Abitare (Comune di Milano): Accordo luglio 2023 con integrazione settembre 2023 e Tabella valori (Allegato 2).",
     "avviso_validita": "<strong>Accordo di Milano del 27 luglio 2023: validità di tre anni dal deposito.</strong> Resta in vigore finché non viene firmato quello nuovo; dopo la scadenza i minimi e i massimi delle fasce si aumentano con l'<strong>intera variazione ISTAT</strong> da agosto 2023 (art. 14). Qui trovi i valori originali: chiedi all'associazione che attesta il contratto quelli aggiornati."
   },
-  "esempio_zona": "la zona (da 1 a 5) si trova dall'indirizzo sulla mappa dell'accordo",
+  "esempio_zona": "scrivi via e numero civico: la zona si trova dallo stradario dell'accordo",
   "cerca_zona": [
     {
-      "nome": "Cerca la zona dall'indirizzo (Assoedilizia, firmataria)",
-      "url": "https://concordato.assoedilizia.mi.it/"
-    },
-    {
-      "nome": "Mappa delle zone (Allegato 1)",
+      "nome": "mappa delle zone (Allegato 1)",
       "url": "https://concordato.assoedilizia.mi.it/wp-content/uploads/2025/05/mappa-concordato-new2-1.jpg"
     }
   ],
@@ -338,5 +334,6 @@
         ]
       ]
     }
-  ]
+  ],
+  "stradario": "milano-2023-07-27-stradario.json"
 }

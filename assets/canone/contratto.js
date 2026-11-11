@@ -914,14 +914,38 @@
   function genera(dati, accordo, impostazioni = {}) {
     const m = MODELLI[dati.tipo || "agevolato"];
     if (!m) throw new Error("Tipo di contratto non previsto: " + dati.tipo);
-    // accordi senza data o protocollo di deposito pubblicati (Milano): righe da compilare
+    // Accordi senza data di deposito pubblicata (Milano): una riga da compilare.
+    // Senza numero di protocollo (Milano non ne ha): le frasi che lo citano
+    // si tolgono dal testo, invece di lasciare una riga vuota.
     const a = accordo && accordo.accordo;
+    const SENZA = "\u0000PROT\u0000";
     if (a && (!a.deposito_data || !a.protocollo)) {
-      const riga = "______________";
       accordo = Object.assign({}, accordo, { accordo: Object.assign({}, a, {
-        deposito_data: a.deposito_data || riga, protocollo: a.protocollo || riga }) });
+        deposito_data: a.deposito_data || "______________", protocollo: a.protocollo || SENZA }) });
     }
-    return m.genera(dati, accordo, impostazioni);
+    const blocchi = m.genera(dati, accordo, impostazioni);
+    return a && !a.protocollo ? senzaProtocollo(blocchi, SENZA) : blocchi;
+  }
+
+  /** Toglie "con Protocollo n. …", ", n° Prot. …", "con Prot. …" e le righe
+   *  d'intestazione rimaste vuote. */
+  function senzaProtocollo(blocchi, segno) {
+    const frase = new RegExp(`,?\\s*(?:con\\s+)?(?:n°\\s*)?(?:Protocollo|Prot\\.)\\s*(?:n[°.]?\\s*)?${segno}`, "gi");
+    // solo i testi che citano il protocollo: gli altri restano come sono (spazi compresi)
+    const pulisci = (t) => (typeof t === "string" && t.includes(segno)
+      ? t.replace(frase, "").replace(/\s+,/g, ",").replace(/\s{2,}/g, " ").trim() : t);
+    const sistema = (x) => {
+      if (!x || typeof x !== "object") return x;
+      // via solo le righe rimaste vuote perche' contenevano solo il protocollo
+      if (Array.isArray(x)) return x.filter((e) => !(e && typeof e === "object" && typeof e.testo === "string" &&
+        e.testo.includes(segno) && pulisci(e.testo) === "")).map(sistema);
+      const out = {};
+      for (const [k, val] of Object.entries(x)) out[k] = k === "testo" ? pulisci(val) : sistema(val);
+      return out;
+    };
+    const fuori = sistema(blocchi);
+    if (JSON.stringify(fuori).includes(segno)) throw new Error("protocollo rimasto nel contratto");
+    return fuori;
   }
 
   return { genera, scadenza, conRecesso, breveSenzaObbligo, fineTransitorio, inizioGiorni, canoneTransitorio, giornoPagamento, termineRata, MODELLI, persona, immobile };

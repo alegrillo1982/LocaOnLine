@@ -52,8 +52,86 @@
     const zona = campo("zona");
     zona.innerHTML = '<option value="">scegli…</option>' + accordo.zone.map((z) =>
       `<option value="${z.codice}">${z.nome} (${z.colore} sulla mappa)</option>`).join("");
-    $("milano-cerca-zona").innerHTML = "Non sai la zona? " + (accordo.cerca_zona || []).map((l) =>
+    $("milano-cerca-zona").innerHTML = (accordo.stradario ? "La zona si imposta da sola quando scrivi via e numero civico. " : "") + "Puoi controllarla sulla " + (accordo.cerca_zona || []).map((l) =>
       `<a href="${testo(l.url)}" target="_blank" rel="noopener" class="text-[#2E7CF6] underline">${testo(l.nome)}</a>`).join(" · ");
+  }
+
+  // ------------------------------------------- zona dall'indirizzo (stradario)
+  // Lo stradario dell'accordo (allegato, 52.762 indirizzi): via -> zona, o per
+  // le vie divise fra piu' zone, zona -> numeri civici. Si scarica al primo uso.
+  let stradario = null, caricamento = null, indice = null;
+  const norma = (t) => String(t || "").normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[’`´]/g, "'").toUpperCase().replace(/\s+/g, " ").trim();
+  const TIPI = /^(VIA|VIALE|PIAZZA|PIAZZALE|PIAZZETTA|LARGO|CORSO|VICOLO|GALLERIA|PASSAGGIO|BASTIONI|STRADA|SITO|ALZAIA|CAVALCAVIA|FORO|GIARDINO|SOTTOPASSO|RIPA|PARCO|P\.ZA|P\.LE|V\.LE|C\.SO)\s+/;
+  function prepara() {
+    if (caricamento || !accordo.stradario) return caricamento;
+    caricamento = fetch("accordi/" + accordo.stradario).then((r) => r.json()).then((d) => {
+      stradario = d.vie;
+      indice = Object.keys(stradario).map((via) => ({ via, intera: norma(via), nome: norma(via).replace(TIPI, "") }));
+    }).catch(() => { caricamento = null; });
+    return caricamento;
+  }
+  /** "Via Paolo Sarpi 12" -> { via: "VIA PAOLO SARPI", civico: "12" } */
+  function dividi(testoIndirizzo) {
+    const t = norma(testoIndirizzo).replace(/,/g, " ").replace(/\s+/g, " ");
+    const m = t.match(/^(.*?)\s+(?:N\.?\s*)?(\d+\s*[A-Z]?(?:\/\d+[A-Z]?)?)$/);
+    return m ? { via: m[1], civico: m[2].replace(/\s+/g, "") } : { via: t, civico: "" };
+  }
+  const SIGLE = { "C.SO": "CORSO", "P.ZA": "PIAZZA", "P.ZZA": "PIAZZA", "P.LE": "PIAZZALE", "V.LE": "VIALE", "V.": "VIA", "L.GO": "LARGO" };
+  function trovaVie(via) {
+    if (!via) return [];
+    const parole = via.split(" ");
+    if (SIGLE[parole[0]]) { parole[0] = SIGLE[parole[0]]; via = parole.join(" "); }
+    const intera = indice.filter((x) => x.intera === via);
+    if (intera.length) return intera;
+    const esatta = indice.filter((x) => x.nome === via);
+    if (esatta.length) return esatta;
+    const senza = via.replace(TIPI, "");
+    return indice.filter((x) => x.nome.includes(senza)).slice(0, 8);
+  }
+  function zonaDaIndirizzo(aggiornaSelezione = true) {
+    const box = $("milano-vie"), esito = $("milano-zona-indirizzo"), sel = campo("zona");
+    // la zona messa in automatico si toglie se l'indirizzo non la determina piu'
+    const togliAuto = () => { if (aggiornaSelezione && sel.dataset.auto) { sel.value = ""; delete sel.dataset.auto; } };
+    if (!stradario) { prepara() && prepara().then(() => stradario && zonaDaIndirizzo(aggiornaSelezione)); return; }
+    const { via, civico } = dividi(campo("indirizzo").value);
+    box.hidden = true; box.innerHTML = ""; esito.innerHTML = "";
+    if (via.length < 3) { togliAuto(); return; }
+    const trovate = trovaVie(via);
+    if (trovate.length !== 1) {
+      togliAuto();
+      if (!trovate.length) { esito.textContent = "Via non trovata nello stradario dell'accordo: controlla come è scritta, o scegli la zona dalla mappa."; return; }
+      box.innerHTML = trovate.map((x) => `<button type="button" role="option" data-via="${testo(x.via)}">${testo(x.via)}</button>`).join("");
+      box.hidden = false;
+      return;
+    }
+    const nome = trovate[0].via, voce = stradario[nome];
+    let zona = null, nota = "";
+    if (typeof voce === "number") zona = String(voce);
+    else if (civico) {
+      for (const [z, elenco] of Object.entries(voce)) if (elenco.split(" ").includes(civico)) zona = z;
+      if (!zona) {
+        nota = `il civico ${civico} non è nell'elenco: la via è divisa fra le zone ${Object.keys(voce).join(", ")}.`;
+        // i civici vicini sullo stesso lato (pari o dispari): se sono nella stessa zona, la suggerisce
+        const n = parseInt(civico, 10);
+        if (n) {
+          let sotto = null, sopra = null;
+          for (const [z, elenco] of Object.entries(voce)) for (const c of elenco.split(" ")) {
+            const k = parseInt(c, 10);
+            if (!k || k % 2 !== n % 2) continue;
+            if (k <= n && (!sotto || k > sotto.k)) sotto = { k, c, z };
+            if (k >= n && (!sopra || k < sopra.k)) sopra = { k, c, z };
+          }
+          if (sotto && sopra && sotto.z === sopra.z) nota += ` I civici vicini (${sotto.c} e ${sopra.c}) sono in zona ${sotto.z}: probabilmente è quella, controlla sulla mappa.`;
+          else nota += " Controlla sulla mappa.";
+        } else nota += " Controlla sulla mappa.";
+      }
+    } else nota = `la via è divisa fra le zone ${Object.keys(voce).join(", ")}: scrivi anche il numero civico.`;
+    if (!zona) { togliAuto(); esito.innerHTML = `<b>${testo(nome)}</b>: ${testo(nota)}`; return; }
+    if (aggiornaSelezione && (!sel.value || sel.dataset.auto)) { sel.value = zona; sel.dataset.auto = "1"; }
+    const diversa = sel.value && sel.value !== zona;
+    esito.innerHTML = `<b>Zona ${zona}</b> secondo lo stradario dell'accordo (${testo(nome)}${civico ? " " + testo(civico) : ""})` +
+      (diversa ? ` <span class="avviso-zona">· hai scelto la zona ${testo(sel.value)}</span>` : "");
   }
 
   // --------------------------------------------------------------- lettura
@@ -92,6 +170,8 @@
     modulo.querySelectorAll("input[name=el]").forEach((c) => { c.checked = !!(d.elementi || {})[c.value]; });
     modulo.querySelectorAll("input[name=stanza]").forEach((c) => { c.checked = !!(d.stanze || {})[c.value]; });
     for (const r of accordo.regole.superficie.righe) campo("sup_" + r.chiave).value = (d.superfici || {})[r.chiave] || "";
+    delete campo("zona").dataset.auto;
+    zonaDaIndirizzo(false);
     ricalcola();
   }
 
@@ -130,8 +210,24 @@
     $("milano-avvisi").innerHTML = r.avvisi.map((a) => `<li>${testo(a)}</li>`).join("");
   }
 
-  modulo.addEventListener("input", ricalcola);
-  modulo.addEventListener("change", ricalcola);
+  let attesa = null;
+  modulo.addEventListener("input", (e) => {
+    if (e.target.name === "indirizzo") { clearTimeout(attesa); attesa = setTimeout(() => { zonaDaIndirizzo(); ricalcola(); }, 250); }
+    ricalcola();
+  });
+  modulo.addEventListener("change", (e) => {
+    if (e.target.name === "zona") { delete e.target.dataset.auto; zonaDaIndirizzo(false); }
+    ricalcola();
+  });
+  modulo.addEventListener("focusin", (e) => { if (e.target.name === "indirizzo") prepara(); });
+  modulo.addEventListener("click", (e) => {
+    const b = e.target.closest("#milano-vie [data-via]");
+    if (!b) return;
+    const { civico } = dividi(campo("indirizzo").value);
+    campo("indirizzo").value = b.dataset.via + (civico ? " " + civico : " ");
+    campo("indirizzo").focus();
+    zonaDaIndirizzo(); ricalcola();
+  });
 
   // ------------------------------------------------------------------ PDF
   let risorse = null;
@@ -163,6 +259,8 @@
     accordo = e.detail;
     costruisci();
     modulo.reset();
+    delete campo("zona").dataset.auto;
+    $("milano-vie").hidden = true; $("milano-zona-indirizzo").innerHTML = "";
     campo("citta").value = (accordo.accordo.comune || "").toUpperCase();
     ricalcola();
   });
