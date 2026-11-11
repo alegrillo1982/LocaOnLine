@@ -1309,6 +1309,512 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftreviso-2024-02-05-allegato-1-fasce-oscillazione.pdf?alt=media&token=d05f6d26-63c6-4fb0-b952-c30a2d2b26d4"
     }
    ]
+  },
+  {
+   "comune": "Pavia",
+   "provincia": "PV",
+   "accordo": "pavia-2019-01-24",
+   "sottoscritto": "24 gennaio 2019",
+   "depositato": "24 gennaio 2019",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-accordo.pdf?alt=media&token=18cd0488-26a7-4cbc-8c60-fe38edd938bc",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-accordo.pdf?alt=media&token=18cd0488-26a7-4cbc-8c60-fe38edd938bc"
+    },
+    {
+     "nome": "Allegato 1 planimetria siglata",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-allegato-1-planimetria-siglata.pdf?alt=media&token=8364f344-55ec-4023-9045-9ae80e832265"
+    },
+    {
+     "nome": "Allegato 1 planimetria zone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-allegato-1-planimetria-zone.pdf?alt=media&token=2d94a7fa-887d-4988-8dcf-42fdab5d71fb"
+    },
+    {
+     "nome": "Allegato 2 arredi",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-allegato-2-arredi.pdf?alt=media&token=c3d7081d-e98b-4835-888d-bdad513b55eb"
+    },
+    {
+     "nome": "Allegato 3 calcolo superfici",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-allegato-3-calcolo-superfici.pdf?alt=media&token=8a29576d-f3a2-4217-a49f-afe5eb77e0c4"
+    },
+    {
+     "nome": "Allegato 4 richiesta conciliazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-allegato-4-richiesta-conciliazione.pdf?alt=media&token=8ce7bb16-72ae-4d81-a974-7533e109b526"
+    },
+    {
+     "nome": "Allegato 5 oneri accessori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-allegato-5-oneri-accessori.pdf?alt=media&token=05d92874-77df-4d7d-ad99-8b8cd2208ae3"
+    },
+    {
+     "nome": "Allegato 6 attestazione testo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-allegato-6-attestazione-testo.pdf?alt=media&token=188416e7-fcf7-4e7d-9c5f-37b6ff59fb17"
+    },
+    {
+     "nome": "Allegato 6 attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-allegato-6-attestazione.pdf?alt=media&token=b06e05da-0933-46e1-808d-ba194199f8d9"
+    },
+    {
+     "nome": "Dichiarazione sicet",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-dichiarazione-sicet.pdf?alt=media&token=7d85f694-1f4e-431b-9136-0a6ece7881e1"
+    },
+    {
+     "nome": "Informativa comune",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-informativa-comune.pdf?alt=media&token=c263830b-4d42-4917-9839-e701f94293b0"
+    },
+    {
+     "nome": "Integrazione 2019 09 03",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-integrazione-2019-09-03.pdf?alt=media&token=6f002376-5dd8-452f-b9a7-72ce0587eb0e"
+    }
+   ]
+  },
+  {
+   "comune": "Asti",
+   "provincia": "AT",
+   "accordo": "asti-2025-05-13",
+   "sottoscritto": "13 maggio 2025",
+   "depositato": "20 maggio 2025",
+   "zone": 5,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fasti-2025-05-13-accordo.pdf?alt=media&token=9680a25b-168f-4b0b-b182-be4b5579e905",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fasti-2025-05-13-accordo.pdf?alt=media&token=9680a25b-168f-4b0b-b182-be4b5579e905"
+    },
+    {
+     "nome": "Allegato a planimetrie",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fasti-2025-05-13-allegato-a-planimetrie.pdf?alt=media&token=6f765b25-1df3-4585-b31b-c0a05c4a49d4"
+    },
+    {
+     "nome": "Allegato b tabelle valori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fasti-2025-05-13-allegato-b-tabelle-valori.pdf?alt=media&token=e907334a-9def-41fc-b022-d0c6069e1742"
+    },
+    {
+     "nome": "Allegato c attestazioni",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fasti-2025-05-13-allegato-c-attestazioni.pdf?alt=media&token=7cd67b8b-5a2a-4f62-9458-99cc0f32406c"
+    }
+   ]
+  },
+  {
+   "comune": "Brindisi",
+   "provincia": "BR",
+   "accordo": "brindisi-2019-07-10",
+   "sottoscritto": "10 luglio 2019",
+   "depositato": "",
+   "zone": 7,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrindisi-2019-07-10-accordo.pdf?alt=media&token=e1ad4b36-0353-4c91-919d-c45ab79f90f8",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrindisi-2019-07-10-accordo.pdf?alt=media&token=e1ad4b36-0353-4c91-919d-c45ab79f90f8"
+    }
+   ]
+  },
+  {
+   "comune": "Pistoia",
+   "provincia": "PT",
+   "accordo": "pistoia-2026-10-19",
+   "sottoscritto": "19 ottobre 2026",
+   "depositato": "",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpistoia-2026-10-19-accordo.pdf?alt=media&token=2af7febb-8e93-41a3-852c-e78121aad9c3",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpistoia-2026-10-19-accordo.pdf?alt=media&token=2af7febb-8e93-41a3-852c-e78121aad9c3"
+    }
+   ]
+  },
+  {
+   "comune": "Cremona",
+   "provincia": "CR",
+   "accordo": "cremona-2022-12-27",
+   "sottoscritto": "27 dicembre 2022",
+   "depositato": "9 gennaio 2023",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcremona-2022-12-27-accordo.pdf?alt=media&token=dcf8a18d-11ec-48ff-b93d-3a855e5a565e",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcremona-2022-12-27-accordo.pdf?alt=media&token=dcf8a18d-11ec-48ff-b93d-3a855e5a565e"
+    },
+    {
+     "nome": "Adesione confabitare",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcremona-2022-12-27-adesione-confabitare.pdf?alt=media&token=217fa285-d80e-41c7-a40c-1501274cbd92"
+    },
+    {
+     "nome": "Adesione unioncasa",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcremona-2022-12-27-adesione-unioncasa.pdf?alt=media&token=a4f2307f-be58-41d3-95d1-bddee4f0d4b3"
+    },
+    {
+     "nome": "Allegato 1 planimetrie zone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcremona-2022-12-27-allegato-1-planimetrie-zone.pdf?alt=media&token=08c77f8e-47f5-4eca-93a2-3ddf19c6b648"
+    },
+    {
+     "nome": "Allegato 2 modulo commissione conciliazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcremona-2022-12-27-allegato-2-modulo-commissione-conciliazione.pdf?alt=media&token=e255bcaa-61d3-4c59-8815-3b0cac97206d"
+    },
+    {
+     "nome": "Allegato 3 oneri accessori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcremona-2022-12-27-allegato-3-oneri-accessori.pdf?alt=media&token=a6972873-e355-4a8c-81bd-c04b4985e2f5"
+    },
+    {
+     "nome": "Allegato 4 modulo attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcremona-2022-12-27-allegato-4-modulo-attestazione.pdf?alt=media&token=bd53a44e-dbc2-4883-b33c-5933f9339475"
+    },
+    {
+     "nome": "Integrativo fondazione citta di cremona",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcremona-2022-12-27-integrativo-fondazione-citta-di-cremona.pdf?alt=media&token=40fd2d44-e146-482c-b596-91a2af9f52b0"
+    }
+   ]
+  },
+  {
+   "comune": "Lucca",
+   "provincia": "LU",
+   "accordo": "lucca-2019-03-14",
+   "sottoscritto": "14 marzo 2019",
+   "depositato": "",
+   "zone": 7,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flucca-2019-03-14-accordo.pdf?alt=media&token=ef2fe25f-3fd3-43be-90b5-bd1057b48574",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flucca-2019-03-14-accordo.pdf?alt=media&token=ef2fe25f-3fd3-43be-90b5-bd1057b48574"
+    },
+    {
+     "nome": "Adesione anpu 2022",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flucca-2019-03-14-adesione-anpu-2022.pdf?alt=media&token=35a9946c-4389-4a89-a278-6ded9664a1a0"
+    },
+    {
+     "nome": "Adesione appc 2024",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flucca-2019-03-14-adesione-appc-2024.pdf?alt=media&token=ff29a41e-80fe-4157-9f90-2b2c4775f5f7"
+    },
+    {
+     "nome": "Adesione ati 2025",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flucca-2019-03-14-adesione-ati-2025.pdf?alt=media&token=e174274c-f4e5-4c22-afcb-78e80a0e5471"
+    },
+    {
+     "nome": "Adesione confproprieta 2026",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flucca-2019-03-14-adesione-confproprieta-2026.pdf?alt=media&token=fd63531f-68bb-428c-a7c7-ae31d99589c1"
+    },
+    {
+     "nome": "Adesione federcasa confsal 2019",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flucca-2019-03-14-adesione-federcasa-confsal-2019.pdf?alt=media&token=aca769cc-ac95-46e2-aea8-79a464f8c961"
+    }
+   ]
+  },
+  {
+   "comune": "Grosseto",
+   "provincia": "GR",
+   "accordo": "grosseto-2025-07-25",
+   "sottoscritto": "25 luglio 2025",
+   "depositato": "30 luglio 2025",
+   "zone": 16,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgrosseto-2025-07-25-accordo.pdf?alt=media&token=1236bb09-8768-4b46-b6ae-7082edc089c4",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgrosseto-2025-07-25-accordo.pdf?alt=media&token=1236bb09-8768-4b46-b6ae-7082edc089c4"
+    },
+    {
+     "nome": "Testo iniziale superato",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgrosseto-2025-07-25-testo-iniziale-superato.pdf?alt=media&token=9ea3ec67-35d0-4a35-92da-223a27b6fdf5"
+    }
+   ]
+  },
+  {
+   "comune": "Alessandria",
+   "provincia": "AL",
+   "accordo": "alessandria-2024-07-19",
+   "sottoscritto": "19 luglio 2024",
+   "depositato": "26 luglio 2024",
+   "zone": 11,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Falessandria-2024-07-19-accordo.pdf?alt=media&token=154a9e59-c35f-4ce2-9eae-30b3a0cb4681",
+   "documenti": [
+    {
+     "nome": "Accordo versione testo comune",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Falessandria-2024-07-19-accordo-versione-testo-comune.pdf?alt=media&token=c5bbae1d-3383-4b3b-b3fb-c62737f4a3c0"
+    },
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Falessandria-2024-07-19-accordo.pdf?alt=media&token=154a9e59-c35f-4ce2-9eae-30b3a0cb4681"
+    },
+    {
+     "nome": "Allegati a n versione testo comune",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Falessandria-2024-07-19-allegati-a-n-versione-testo-comune.pdf?alt=media&token=0f9b80dc-d1b3-4e01-9a14-d0451d5246b3"
+    },
+    {
+     "nome": "Delibera giunta 297 2024",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Falessandria-2024-07-19-delibera-giunta-297-2024.pdf?alt=media&token=faec5274-8a83-4e24-a504-735ad7cc5799"
+    }
+   ]
+  },
+  {
+   "comune": "La Spezia",
+   "provincia": "SP",
+   "accordo": "laspezia-2025-12-29",
+   "sottoscritto": "29 dicembre 2025",
+   "depositato": "",
+   "zone": 13,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flaspezia-2025-12-29-accordo.pdf?alt=media&token=4beeebe1-7977-4579-9de4-77c04b51e48f",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flaspezia-2025-12-29-accordo.pdf?alt=media&token=4beeebe1-7977-4579-9de4-77c04b51e48f"
+    }
+   ]
+  },
+  {
+   "comune": "Udine",
+   "provincia": "UD",
+   "accordo": "udine-2017-09-25",
+   "sottoscritto": "25 settembre 2017",
+   "depositato": "27 settembre 2017",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fudine-2017-09-25-accordo.pdf?alt=media&token=550ce6cf-95e9-42e8-8c1f-7429c0517e82",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fudine-2017-09-25-accordo.pdf?alt=media&token=550ce6cf-95e9-42e8-8c1f-7429c0517e82"
+    },
+    {
+     "nome": "Aggiornamento istat 2026 2027",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fudine-2017-09-25-aggiornamento-istat-2026-2027.pdf?alt=media&token=e4e0898b-6d59-4103-ab21-fd2f3a36043e"
+    },
+    {
+     "nome": "Allegato zone cartografia",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fudine-2017-09-25-allegato-zone-cartografia.pdf?alt=media&token=9bc7b3b1-e59f-448d-9522-29f2bc146a99"
+    },
+    {
+     "nome": "Protocollo 1 2018 04 13 testo coordinato",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fudine-2017-09-25-protocollo-1-2018-04-13-testo-coordinato.pdf?alt=media&token=0716a93c-483a-4639-9708-1a31e6fe2344"
+    },
+    {
+     "nome": "Protocollo 2 2020 06 03 minimo 0 50",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fudine-2017-09-25-protocollo-2-2020-06-03-minimo-0-50.pdf?alt=media&token=8f712ab6-eb5a-45ad-8c53-87df5cd8037e"
+    },
+    {
+     "nome": "Protocollo 3 2021 05 17 enti tinteggiatura porzioni",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fudine-2017-09-25-protocollo-3-2021-05-17-enti-tinteggiatura-porzioni.pdf?alt=media&token=3dcaf358-bed8-4473-9cd7-b0a9c0e090d5"
+    },
+    {
+     "nome": "Protocollo 4 2025 09 10 studenti its",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fudine-2017-09-25-protocollo-4-2025-09-10-studenti-its.pdf?alt=media&token=d3b59480-d851-41aa-839a-fdf3c678d8a9"
+    }
+   ]
+  },
+  {
+   "comune": "Pisa",
+   "provincia": "PI",
+   "accordo": "pisa-2018-03-12",
+   "sottoscritto": "12 marzo 2018",
+   "depositato": "13 marzo 2018",
+   "zone": 5,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpisa-2018-03-12-accordo.pdf?alt=media&token=544344d5-396c-4cb7-b202-0e1d579faa77",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpisa-2018-03-12-accordo.pdf?alt=media&token=544344d5-396c-4cb7-b202-0e1d579faa77"
+    },
+    {
+     "nome": "Adesione sai cisal 2018 10 16",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpisa-2018-03-12-adesione-sai-cisal-2018-10-16.pdf?alt=media&token=6d579d8e-39e4-4587-b094-a6b706918cfe"
+    },
+    {
+     "nome": "Nota integrativa 2018 10 16",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpisa-2018-03-12-nota-integrativa-2018-10-16.pdf?alt=media&token=8f554bf0-b3c0-4b01-9d13-871d9d8f98f6"
+    }
+   ]
+  },
+  {
+   "comune": "Arezzo",
+   "provincia": "AR",
+   "accordo": "arezzo-2017-07-20",
+   "sottoscritto": "20 luglio 2017",
+   "depositato": "25 luglio 2017",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-accordo.pdf?alt=media&token=13e19aca-cbe7-4c94-87c1-9de06f2f7511",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-accordo.pdf?alt=media&token=13e19aca-cbe7-4c94-87c1-9de06f2f7511"
+    },
+    {
+     "nome": "Adesione anpu 2022",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-adesione-anpu-2022.pdf?alt=media&token=9bd37882-d16c-418b-bf73-289d2a7a447b"
+    },
+    {
+     "nome": "Adesione fenit 2022",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-adesione-fenit-2022.pdf?alt=media&token=f8519d6c-48bd-4f60-ac0b-8c331b044802"
+    },
+    {
+     "nome": "Adesione saicisal 2021",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-adesione-saicisal-2021.pdf?alt=media&token=65e0b3e2-a469-4ca4-a5e5-d8f4a2246ab3"
+    },
+    {
+     "nome": "Adesione unioncasa 2020",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-adesione-unioncasa-2020.pdf?alt=media&token=db2fca36-fa7b-4c50-b651-a1d7c1caaa81"
+    },
+    {
+     "nome": "Adesione unsicasa 2024",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-adesione-unsicasa-2024.pdf?alt=media&token=a07d9986-4ada-4400-beb7-8a9cf828a20e"
+    },
+    {
+     "nome": "Allegato a contratto agevolato",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-allegato-a-contratto-agevolato.pdf?alt=media&token=2aa54d47-0a94-4744-94ee-4cf310fb76c9"
+    },
+    {
+     "nome": "Allegato b contratto transitorio",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-allegato-b-contratto-transitorio.pdf?alt=media&token=4bb9d9f4-4e5c-47a4-a97d-53b31a952a4c"
+    },
+    {
+     "nome": "Allegato c contratto studenti",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-allegato-c-contratto-studenti.pdf?alt=media&token=1ddbdb23-2b63-4b76-acee-a608e5ad2ce8"
+    },
+    {
+     "nome": "Allegato d oneri accessori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-allegato-d-oneri-accessori.pdf?alt=media&token=17784845-9a3d-4c96-9a82-be414c91b35e"
+    },
+    {
+     "nome": "Allegato e negoziazione paritetica",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-allegato-e-negoziazione-paritetica.pdf?alt=media&token=60232e42-2b26-4d39-ac02-e3555d4b3dbf"
+    },
+    {
+     "nome": "Allegato f attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-allegato-f-attestazione.pdf?alt=media&token=780f118b-1c74-419d-9c24-3d70b9f6ac6e"
+    },
+    {
+     "nome": "Allegato f bis attestazione bilaterale",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-allegato-f-bis-attestazione-bilaterale.pdf?alt=media&token=df97ba02-3b4b-4dbf-b4b8-4ce587e53430"
+    },
+    {
+     "nome": "Modifiche integrazioni 2018 06 26",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-modifiche-integrazioni-2018-06-26.pdf?alt=media&token=14ab3337-a417-4b38-a678-43fd9537ceef"
+    }
+   ]
+  },
+  {
+   "comune": "Lecce",
+   "provincia": "LE",
+   "accordo": "lecce-2018-03-02",
+   "sottoscritto": "2 marzo 2018",
+   "depositato": "",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flecce-2018-03-02-accordo.pdf?alt=media&token=dd4b1656-6d29-4ef0-928f-efb4eea479ac",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flecce-2018-03-02-accordo.pdf?alt=media&token=dd4b1656-6d29-4ef0-928f-efb4eea479ac"
+    },
+    {
+     "nome": "Allegato 2 fasce di oscillazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flecce-2018-03-02-allegato-2-fasce-di-oscillazione.pdf?alt=media&token=5fe98a07-c7e0-4720-bb51-348a6a13cdf4"
+    },
+    {
+     "nome": "Allegato 3 elementi oggettivi",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flecce-2018-03-02-allegato-3-elementi-oggettivi.pdf?alt=media&token=60d0ad18-2f65-4f25-b3de-20b033570ea6"
+    },
+    {
+     "nome": "Allegato 4 attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flecce-2018-03-02-allegato-4-attestazione.pdf?alt=media&token=11b2d721-e952-484b-bc73-7c1de32f261e"
+    },
+    {
+     "nome": "Allegato 5 modulo negoziazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flecce-2018-03-02-allegato-5-modulo-negoziazione.pdf?alt=media&token=8ebc9cf8-5009-4002-9602-f84159d1f9ca"
+    }
+   ]
+  },
+  {
+   "comune": "Como",
+   "provincia": "CO",
+   "accordo": "como-2020-10-05",
+   "sottoscritto": "5 ottobre 2020",
+   "depositato": "6 ottobre 2020",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-accordo.pdf?alt=media&token=b23c6826-abd7-4ece-8c11-619c357bb4ce",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-accordo.pdf?alt=media&token=b23c6826-abd7-4ece-8c11-619c357bb4ce"
+    },
+    {
+     "nome": "Aggiornamento istat ottobre 2023",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-aggiornamento-istat-ottobre-2023.pdf?alt=media&token=8e87ab6d-2054-43a7-8e26-873bfd346dd9"
+    },
+    {
+     "nome": "Allegato 1 viario microzone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-1-viario-microzone.pdf?alt=media&token=168a59f8-028a-4c30-910c-28f59e685701"
+    },
+    {
+     "nome": "Allegato 10 contratto studenti",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-10-contratto-studenti.pdf?alt=media&token=e174ebdf-abbc-431d-9143-06512b6f45f3"
+    },
+    {
+     "nome": "Allegato 11 richiesta negoziazione paritetica",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-11-richiesta-negoziazione-paritetica.pdf?alt=media&token=0b044c80-4af0-4539-802b-b09bd51e2230"
+    },
+    {
+     "nome": "Allegato 12 attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-12-attestazione.pdf?alt=media&token=14e3b2df-ba3e-4c7d-a36f-8eaa5a2b49c3"
+    },
+    {
+     "nome": "Allegato 2 mappali microzona 1",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-2-mappali-microzona-1.pdf?alt=media&token=8b53f563-7355-4dab-a3f1-2a2330220069"
+    },
+    {
+     "nome": "Allegato 2 mappali microzona 2",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-2-mappali-microzona-2.pdf?alt=media&token=7b1f8170-becb-4110-9563-26e04735a0cc"
+    },
+    {
+     "nome": "Allegato 2 mappali microzona 3",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-2-mappali-microzona-3.pdf?alt=media&token=fb30a1c2-51f1-43eb-ac30-9f6a63fd3e12"
+    },
+    {
+     "nome": "Allegato 2 mappali microzona 4",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-2-mappali-microzona-4.pdf?alt=media&token=1573c23e-3fcc-440d-8683-ad929a63b4de"
+    },
+    {
+     "nome": "Allegato 2 mappali microzona 5",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-2-mappali-microzona-5.pdf?alt=media&token=6f85ce67-7b6f-4d8d-9a54-e912c405ef3a"
+    },
+    {
+     "nome": "Allegato 2 mappali microzona 6",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-2-mappali-microzona-6.pdf?alt=media&token=c0cb4933-5c49-44a9-bdbb-24a2cbed03b1"
+    },
+    {
+     "nome": "Allegato 3 planimetria microzone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-3-planimetria-microzone.pdf?alt=media&token=2202734b-3fdc-43b3-95d7-dd5a137619b3"
+    },
+    {
+     "nome": "Allegato 4 elementi oggettivi",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-4-elementi-oggettivi.pdf?alt=media&token=d48b23cd-cc9b-417d-8239-fb7f719b3fb8"
+    },
+    {
+     "nome": "Allegato 5 fasce fino 60 mq",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-5-fasce-fino-60-mq.pdf?alt=media&token=190156e7-03ca-48c1-98b9-19e9f14c8d5b"
+    },
+    {
+     "nome": "Allegato 6 fasce oltre 60 mq",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-6-fasce-oltre-60-mq.pdf?alt=media&token=befbd76a-7b6b-4a42-9ff5-a19f05bd11a3"
+    },
+    {
+     "nome": "Allegato 7 oneri accessori",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-7-oneri-accessori.pdf?alt=media&token=606b0e53-ea95-4288-901a-99c6baf2ec74"
+    },
+    {
+     "nome": "Allegato 8 contratto agevolato",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-8-contratto-agevolato.pdf?alt=media&token=cb5b4c37-4fbe-479f-b3c3-24152315b740"
+    },
+    {
+     "nome": "Allegato 9 contratto transitorio",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-allegato-9-contratto-transitorio.pdf?alt=media&token=aa6cd69d-f040-458f-90c2-df35eb8c1891"
+    },
+    {
+     "nome": "Testo completo con ricevute deposito",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-testo-completo-con-ricevute-deposito.pdf?alt=media&token=d4301249-e835-41b1-86dd-b87c6ac2bae2"
+    }
+   ]
   }
  ]
 }
