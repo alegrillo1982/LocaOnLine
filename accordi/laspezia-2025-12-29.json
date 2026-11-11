@@ -1,0 +1,747 @@
+{
+ "accordo": {
+  "codice": "laspezia-2025-12-29",
+  "modello": "laspezia-2025",
+  "comune": "La Spezia",
+  "provincia": "SP",
+  "titolo": "Accordo territoriale per il Comune della Spezia",
+  "data": "2025-12-29",
+  "data_testo": "29 dicembre 2025",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2028-12-31",
+  "firmatari_proprieta": [
+   "A.P.E. - Confedilizia",
+   "A.P.P.C. Leandro Gatto",
+   "U.P.P.I.",
+   "CONFAPPI",
+   "CONFABITARE",
+   "A.S.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "S.A.I.",
+   "Unione Inquilini",
+   "ASSOCASA"
+  ],
+  "nota": "Firmato alla Spezia il 29/12/2025; si applica ai contratti sottoscritti e registrati dal 01/01/2026 al 31/12/2028 (durata tre anni dal 01/01/2026, poi resta in vigore fino al nuovo accordo); per i contratti sottoscritti e registrati entro il 31/12/2025 vale l'accordo del 2018 (protocollato dal Comune il 25/05/2018, in vigore dal 01/06/2018), che il nuovo sostituisce integralmente. Da depositare presso la Segreteria Generale del Comune e la Regione Liguria: la copia pubblicata non riporta data né protocollo di deposito. Sei aree omogenee formate da zone OMI (B4-B5-B6-B7-C6, D9-D10, E6-E7, E8-R4, R6, R7), tre fasce (minima, media, massima) in euro al mq al mese, validi dal 01/01/2026 al 31/12/2028 senza aggiornamento ISTAT (allegato 2). La fascia si ricava dai sette gruppi di elementi dell'allegato 3 (vale il livello prevalente, con regole per la parità). Superficie utile calpestabile con coefficienti 1,20 sotto i 46 mq (massimo 50,6 mq) e 1,10 da 46 a 70 mq (massimo 70 mq), più le pertinenze. Aumenti tutti calcolati sul canone base e sommati: arredo fino al 20%, 25% o 30%, durata (4 anni +2%, 5 anni +8%, 6 anni +10%), immobile storico vincolato +10% (solo agevolati), elementi accessori dell'allegato 4 (+5%, +10%, +15%); riduzione fino al 10% per adiacenza a strade a elevato traffico. Il canone si aggiorna ogni anno al massimo del 75% dell'ISTAT.",
+  "fonte": "Testo firmato con gli allegati 1, 1a, 2-6 (19 pagine in scansione) pubblicato da SUNIA nella pagina «Accordi territoriali di La Spezia» (gennaio 2026), con il comunicato SUNIA del 29/12/2025. Denominazioni delle zone OMI: Agenzia delle Entrate, Statistiche regionali Liguria 2026 (tabella 34). Il Comune non pubblica il testo; UPPI pubblica ancora l'accordo del 2018."
+ },
+ "esempio_zona": "il codice della zona OMI dell'indirizzo (mappa GEOPOI dell'Agenzia delle Entrate), es. B4",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "B4",
+    "nome": "B4 - Centro storico",
+    "nota": "Zona OMI B4 (Centro storico), area omogenea 1 (zone OMI B4, B5, B6, B7, C6). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. È «zona centro» (B4, B5, B6): per la tipologia edilizia il limite è 18 alloggi invece di 12 e per la vetustà la fascia media arriva a 100 anni invece di 50. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile). Nella tabella il minimo della fascia media è scritto 2,991 (nelle altre aree 2,91): qui si usa il valore stampato.",
+    "fasce": [
+     [
+      2.32,
+      6.98
+     ],
+     [
+      2.991,
+      8.73
+     ],
+     [
+      3.8,
+      9
+     ]
+    ]
+   },
+   {
+    "codice": "B5",
+    "nome": "B5 - Via dei Colli, via Mazzini e altre",
+    "nota": "Zona OMI B5 (Via dei Colli, via Mazzini, piazza Europa, piazza Verdi, via Chiodo), area omogenea 1 (zone OMI B4, B5, B6, B7, C6). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. È «zona centro» (B4, B5, B6): per la tipologia edilizia il limite è 18 alloggi invece di 12 e per la vetustà la fascia media arriva a 100 anni invece di 50. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile). Nella tabella il minimo della fascia media è scritto 2,991 (nelle altre aree 2,91): qui si usa il valore stampato.",
+    "fasce": [
+     [
+      2.32,
+      6.98
+     ],
+     [
+      2.991,
+      8.73
+     ],
+     [
+      3.8,
+      9
+     ]
+    ]
+   },
+   {
+    "codice": "B6",
+    "nome": "B6 - Zona stazione, quartiere Umbertino e altre",
+    "nota": "Zona OMI B6 (Zona stazione, quartiere Umbertino, viale Ferrari), area omogenea 1 (zone OMI B4, B5, B6, B7, C6). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. È «zona centro» (B4, B5, B6): per la tipologia edilizia il limite è 18 alloggi invece di 12 e per la vetustà la fascia media arriva a 100 anni invece di 50. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile). Nella tabella il minimo della fascia media è scritto 2,991 (nelle altre aree 2,91): qui si usa il valore stampato.",
+    "fasce": [
+     [
+      2.32,
+      6.98
+     ],
+     [
+      2.991,
+      8.73
+     ],
+     [
+      3.8,
+      9
+     ]
+    ]
+   },
+   {
+    "codice": "B7",
+    "nome": "B7 - Zona ospedale",
+    "nota": "Zona OMI B7 (Zona ospedale), area omogenea 1 (zone OMI B4, B5, B6, B7, C6). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile). Nella tabella il minimo della fascia media è scritto 2,991 (nelle altre aree 2,91): qui si usa il valore stampato.",
+    "fasce": [
+     [
+      2.32,
+      6.98
+     ],
+     [
+      2.991,
+      8.73
+     ],
+     [
+      3.8,
+      9
+     ]
+    ]
+   },
+   {
+    "codice": "C6",
+    "nome": "C6 - Mazzetta, Migliarina e altre",
+    "nota": "Zona OMI C6 (Mazzetta, Migliarina, Canaletto, Favaro, Valdellora, La Chiappa, Rebocco, Pegazzano, Fabiano Basso), area omogenea 1 (zone OMI B4, B5, B6, B7, C6). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile). Nella tabella il minimo della fascia media è scritto 2,991 (nelle altre aree 2,91): qui si usa il valore stampato.",
+    "fasce": [
+     [
+      2.32,
+      6.98
+     ],
+     [
+      2.991,
+      8.73
+     ],
+     [
+      3.8,
+      9
+     ]
+    ]
+   },
+   {
+    "codice": "D9",
+    "nome": "D9 - Fossamastra, Ruffino, Muggiano, Termo",
+    "nota": "Zona OMI D9 (Fossamastra, Ruffino, Muggiano, Termo), area omogenea 2 (zone OMI D9, D10). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile).",
+    "fasce": [
+     [
+      2.32,
+      6.4
+     ],
+     [
+      2.91,
+      7.57
+     ],
+     [
+      3.48,
+      8.14
+     ]
+    ]
+   },
+   {
+    "codice": "D10",
+    "nome": "D10 - Sarbia, Foce e altre",
+    "nota": "Zona OMI D10 (Sarbia, Foce, Sant'Anna, Fabiano Alto, Marola, Cadimare), area omogenea 2 (zone OMI D9, D10). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile).",
+    "fasce": [
+     [
+      2.32,
+      6.4
+     ],
+     [
+      2.91,
+      7.57
+     ],
+     [
+      3.48,
+      8.14
+     ]
+    ]
+   },
+   {
+    "codice": "E6",
+    "nome": "E6 - Pitelli",
+    "nota": "Zona OMI E6 (Pitelli), area omogenea 3 (zone OMI E6, E7). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile).",
+    "fasce": [
+     [
+      2.32,
+      5.82
+     ],
+     [
+      2.91,
+      6.98
+     ],
+     [
+      3.48,
+      7.5
+     ]
+    ]
+   },
+   {
+    "codice": "E7",
+    "nome": "E7 - San Venerio, Carozzo",
+    "nota": "Zona OMI E7 (San Venerio, Carozzo), area omogenea 3 (zone OMI E6, E7). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile).",
+    "fasce": [
+     [
+      2.32,
+      5.82
+     ],
+     [
+      2.91,
+      6.98
+     ],
+     [
+      3.48,
+      7.5
+     ]
+    ]
+   },
+   {
+    "codice": "E8",
+    "nome": "E8 - Biassa",
+    "nota": "Zona OMI E8 (Biassa), area omogenea 4 (zone OMI E8, R4). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile).",
+    "fasce": [
+     [
+      2.32,
+      5.5
+     ],
+     [
+      2.91,
+      6.5
+     ],
+     [
+      3.48,
+      7
+     ]
+    ]
+   },
+   {
+    "codice": "R4",
+    "nome": "R4 - Fascia collinare est",
+    "nota": "Zona OMI R4 (Fascia collinare est), area omogenea 4 (zone OMI E8, R4). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile).",
+    "fasce": [
+     [
+      2.32,
+      5.5
+     ],
+     [
+      2.91,
+      6.5
+     ],
+     [
+      3.48,
+      7
+     ]
+    ]
+   },
+   {
+    "codice": "R6",
+    "nome": "R6 - Tramonti",
+    "nota": "Zona OMI R6 (Tramonti), area omogenea 5 (zona OMI R6). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile).",
+    "fasce": [
+     [
+      2.32,
+      7.45
+     ],
+     [
+      2.91,
+      9.2
+     ],
+     [
+      4.08,
+      11
+     ]
+    ]
+   },
+   {
+    "codice": "R7",
+    "nome": "R7 - Fascia collinare con edificazioni sparse",
+    "nota": "Zona OMI R7 (Fascia collinare con edificazioni sparse), area omogenea 6 (zona OMI R7). Valori in euro al mq al mese, validi dal 1° gennaio 2026 al 31 dicembre 2028. Il codice della zona OMI si trova cercando l'indirizzo sulla mappa GEOPOI dell'Agenzia delle Entrate (o con l'app OMI Mobile).",
+    "fasce": [
+     [
+      2.32,
+      5.34
+     ],
+     [
+      2.91,
+      6.4
+     ],
+     [
+      3.48,
+      6.98
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "minima",
+    "media",
+    "massima"
+   ],
+   "combina": "prevalente",
+   "gruppi": [
+    {
+     "nome": "Tipologia edilizia",
+     "da": 0,
+     "a": 0,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Tipologia catastale",
+     "da": 1,
+     "a": 1,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Vetustà",
+     "da": 2,
+     "a": 2,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Accessori in dotazione",
+     "da": 3,
+     "a": 8,
+     "soglie": [
+      1,
+      2
+     ]
+    },
+    {
+     "nome": "Spazi comuni attrezzati",
+     "da": 9,
+     "a": 9,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Dotazione servizi tecnici",
+     "da": 10,
+     "a": 12,
+     "soglie": [
+      0,
+      1
+     ]
+    },
+    {
+     "nome": "Dotazione di autorimessa",
+     "da": 13,
+     "a": 13,
+     "soglie": [
+      0,
+      1
+     ]
+    }
+   ],
+   "parita": {
+    "1-2": 2,
+    "0-2": 1,
+    "0-1": 1
+   },
+   "nota": "Ognuno dei 7 gruppi vale minima, media o massima (accessori: 3 o più massima, 2 media, meno di 2 minima; servizi tecnici: 2 o più massima, 1 media, nessuno minima). Vale il livello prevalente; a parità: massima e media → massima, massima e minima → media, media e minima → media. La fascia minima vale solo con almeno 4 gruppi in minima: con 3 minime, 2 medie e 2 massime la fascia è la media.",
+   "prevalente_minimo": {
+    "livello": 0,
+    "almeno": 4,
+    "altrimenti": 1
+   }
+  },
+  "titoli_elementi": [
+   {
+    "da": 14,
+    "titolo": "Elementi accessori (allegato 4): con 2 elementi +5%, con 3 +10%, con 4 o più +15%"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Tipologia edilizia",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "unità su scala con più di 12 alloggi (zona centro B4, B5, B6: più di 18) - minima",
+      "punti": 0
+     },
+     {
+      "testo": "unità con accesso indipendente o su scala fino a 12 alloggi (zona centro B4, B5, B6: fino a 18) - media",
+      "punti": 1
+     },
+     {
+      "testo": "casa singola o bifamiliare - massima",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Tipologia catastale",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "A/4, A/5, A/6, tutte le classi - minima",
+      "punti": 0
+     },
+     {
+      "testo": "A/3, tutte le classi - media",
+      "punti": 1
+     },
+     {
+      "testo": "A/2, tutte le classi - massima",
+      "punti": 2
+     },
+     {
+      "testo": "A/1 o A/7, tutte le classi - massima",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Vetustà",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "oltre 50 anni (zona centro B4, B5, B6: oltre 100 anni) - minima",
+      "punti": 0
+     },
+     {
+      "testo": "oltre 15 e fino a 50 anni (zona centro B4, B5, B6: fino a 100 anni) - media",
+      "punti": 1
+     },
+     {
+      "testo": "nuova costruzione, o manutenzione straordinaria anche parziale negli ultimi 15 anni documentata da fatture - massima",
+      "punti": 2
+     },
+     {
+      "testo": "integrale rifacimento documentato dell'alloggio - massima",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Posto auto all'aperto",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Spazio a uso esclusivo",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Doppi servizi",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Terrazzi o balconi",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Cantina (non conta per gli A/7)",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Terrazza sul piano attico",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Spazi comuni attrezzati",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "nessuno, o spazio condominiale inferiore al 10% dell'area del fabbricato - minima",
+      "punti": 0
+     },
+     {
+      "testo": "spazio condominiale fra il 10% e il 50% dell'area occupata dal fabbricato - media",
+      "punti": 1
+     },
+     {
+      "testo": "parco giochi, attrezzature sportive fisse o spazio condominiale oltre il 50% dell'area del fabbricato - massima",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Impianto di riscaldamento autonomo",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Impianto di condizionamento o raffrescamento",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Ascensore",
+    "punti": 1,
+    "mostra_punti": false
+   },
+   {
+    "testo": "Dotazione di autorimessa o box",
+    "mostra_punti": false,
+    "livelli": [
+     {
+      "testo": "nessuna autorimessa o box - minima",
+      "punti": 0
+     },
+     {
+      "testo": "con un solo posto auto - media",
+      "punti": 1
+     },
+     {
+      "testo": "con due o più posti auto - massima",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Pavimenti in parquet in sala e camere"
+   },
+   {
+    "testo": "Pavimenti in marmo o in cotto"
+   },
+   {
+    "testo": "Doppi vetri in tutte le stanze"
+   },
+   {
+    "testo": "Porta o serramenti blindati"
+   },
+   {
+    "testo": "Serramenti interni di legno pregiato o vetro"
+   },
+   {
+    "testo": "Parabola satellitare"
+   },
+   {
+    "testo": "Impianto antifurto"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Rivestimento esterno del fabbricato in marmo o materiale pregiato"
+   },
+   {
+    "testo": "Sistemi alternativi di riscaldamento"
+   },
+   {
+    "testo": "Tapparelle motorizzate"
+   },
+   {
+    "testo": "Inferriate di protezione (in tutto o in parte dell'alloggio)"
+   },
+   {
+    "testo": "Cancello elettrico"
+   },
+   {
+    "testo": "Affreschi interni o esterni"
+   },
+   {
+    "testo": "Impianto fotovoltaico"
+   },
+   {
+    "testo": "Impianto solare termico"
+   },
+   {
+    "testo": "Impianto geotermico"
+   },
+   {
+    "testo": "Cappotto esterno o interno"
+   },
+   {
+    "testo": "Rete wi-fi"
+   },
+   {
+    "testo": "Certificazione energetica (APE) in classe A, B, C o D"
+   },
+   {
+    "testo": "Doppi servizi"
+   },
+   {
+    "testo": "Rinuncia alla cauzione e a qualsiasi forma di garanzia"
+   },
+   {
+    "testo": "Riduzione del preavviso a 2 mesi senza gravi motivi"
+   },
+   {
+    "testo": "Presenza di portiere"
+   }
+  ],
+  "premium": {
+   "da": 14,
+   "a": 37,
+   "nome": "elementi accessori (allegato 4)",
+   "scaglioni": [
+    {
+     "da": 2,
+     "perc": {
+      "altre": 5
+     }
+    },
+    {
+     "da": 3,
+     "perc": {
+      "altre": 10
+     }
+    },
+    {
+     "da": 4,
+     "perc": {
+      "altre": 15
+     }
+    }
+   ]
+  },
+  "superficie": {
+   "base": "Superficie utile calpestabile, al netto dei muri (tolleranza 5%)",
+   "correzioni": [
+    {
+     "fino": 46,
+     "perc": 20,
+     "tetto": 50.6
+    },
+    {
+     "fino": 70,
+     "incluso": true,
+     "perc": 10,
+     "tetto": 70
+    }
+   ],
+   "voci": [
+    {
+     "chiave": "autorimessa",
+     "testo": "Autorimessa singola (50%)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "posto_auto",
+     "testo": "Posto auto in comune (20%)",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi, terrazze, cantine, sottotetti alti almeno 1,70 m (25%)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "scoperto",
+     "testo": "Area scoperta esclusiva (15%, fino ai mq dell'alloggio)",
+     "coeff": 0.15,
+     "scaglione": [
+      "base",
+      0.15,
+      0
+     ]
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde condominiale, quota millesimale (10%, fino ai mq dell'alloggio)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0
+     ]
+    }
+   ],
+   "nota": "Si usa la superficie calpestabile al netto dei muri perimetrali e interni (vani principali, bagni, ripostigli, ingressi, corridoi), con una tolleranza del 5% in più o in meno. Gli alloggi sotto i 46 mq si aumentano del 20% (fino a 50,6 mq), quelli da 46 a 70 mq del 10% (fino a 70 mq). Le pertinenze contano in percentuale: autorimessa singola 50%, posto auto in comune 20%, balconi, terrazze, cantine e sottotetti alti almeno 1,70 m 25%, area scoperta esclusiva 15% e verde condominiale (quota millesimale) 10%, queste ultime due solo fino a una superficie pari a quella dell'alloggio."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "20",
+      "testo": "tutto il mobilio necessario per abitare l'alloggio (fino al 20%)",
+      "perc": 20
+     },
+     {
+      "valore": "25",
+      "testo": "ogni stanza arredata e cucina completa di frigo, freezer, lavastoviglie, lavatrice, piano cottura, TV e forno (fino al 25%)",
+      "perc": 25
+     },
+     {
+      "valore": "30",
+      "testo": "come sopra, alloggio prima usato per affitti brevi con CIN annullato e documentato (fino al 30%)",
+      "perc": 30
+     }
+    ]
+   },
+   {
+    "chiave": "vincolato",
+    "tipo": "spunta",
+    "testo": "Immobile storico vincolato (art. 1, c. 2, lett. a, L. 431/98)",
+    "nome": "immobile storico vincolato",
+    "perc": 10,
+    "contratti": [
+     "agevolato"
+    ]
+   },
+   {
+    "chiave": "traffico",
+    "tipo": "spunta",
+    "testo": "Adiacente a una strada a elevato traffico, attestato da un'associazione firmataria (riduzione fino al 10%)",
+    "nome": "adiacenza a strada a elevato traffico",
+    "perc": -10
+   }
+  ],
+  "nota_maggiorazioni": "Gli aumenti sono il massimo consentito («fino a») e si calcolano ciascuno sul canone base, poi si sommano: arredo fino al 20% (tutto il mobilio necessario), 25% (ogni stanza arredata e cucina completa di elettrodomestici) o 30% (come sopra, per alloggi prima usati per affitti brevi con CIN annullato); durata 4 anni +2%, 5 anni +8%, 6 anni o più +10% (solo agevolati); immobile storico vincolato +10% (solo agevolati); elementi accessori dell'allegato 4: 2 elementi +5%, 3 +10%, 4 o più +15%. Adiacenza a strade a elevato traffico: canone massimo ridotto fino al 10%. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie della parte locata.",
+  "durata": {
+   "4": 2,
+   "5": 8,
+   "6": 10
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 1",
+  "titolo": "Attestazione bilaterale di rispondenza ex D.M. 16 gennaio 2017",
+  "sottotitolo": "Accordo territoriale per il Comune della Spezia del 29/12/2025, valido per i contratti sottoscritti e registrati dal 01/01/2026 al 31/12/2028",
+  "titolo_superficie": "CALCOLO DELLA SUPERFICIE ai sensi dell'Accordo territoriale",
+  "titolo_elementi": "Elementi e parametri oggettivi (allegato 3) ed elementi accessori (allegato 4)",
+  "dichiarazione": "Il locatore e il conduttore hanno presentato richiesta per l'attestazione ex D.M. 16/01/2017, dichiarando, sotto la loro responsabilità, gli elementi sopra riportati.",
+  "firme": [],
+  "titolo_attestazione": "TUTTO CIÒ PREMESSO",
+  "attestazione": [
+   "le Organizzazioni ……………………………, come sopra rappresentate, sotto la propria responsabilità e sulla base degli elementi oggettivi e soggettivi sopra dichiarati dalle parti contraenti, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTANO che i contenuti economici e normativi del contratto sopra descritto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune della Spezia depositato il …………"
+  ],
+  "firme_attestazione": [
+   "Il locatore",
+   "Il conduttore",
+   "p. l'Organizzazione",
+   "p. l'Organizzazione"
+  ],
+  "nota_zone": "La zona è quella OMI dell'Agenzia delle Entrate: cerca l'indirizzo sulla mappa GEOPOI o con l'app OMI Mobile. Le 13 zone OMI sono raggruppate in sei aree omogenee con gli stessi valori."
+ }
+}
