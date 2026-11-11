@@ -1,0 +1,573 @@
+{
+ "accordo": {
+  "codice": "prato-2024-12-19",
+  "modello": "prato-2024",
+  "comune": "Prato",
+  "provincia": "PO",
+  "titolo": "Accordo territoriale per la stipula dei contratti di locazione applicabile nel Comune di Prato",
+  "data": "2024-12-19",
+  "data_testo": "19 dicembre 2024",
+  "deposito": "Comune di Prato",
+  "deposito_data": "19.12.2024",
+  "protocollo": "2025/0014632 del 21/01/2025",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "2028-01-31",
+  "firmatari_proprieta": [
+   "U.P.P.I.",
+   "CONFEDILIZIA",
+   "CONFABITARE",
+   "APPC",
+   "A.S.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "SICET",
+   "UNIAT",
+   "ASSOCASA"
+  ],
+  "nota": "Sottoscritto il 19/12/2024 e depositato lo stesso giorno (art. 7 D.M. 16/01/2017); protocollato dal Comune di Prato il 21/01/2025 (prot. 2025/0014632), firma pubblica nel Salone consiliare il 17/01/2025 (comunicato del Comune). Durata tre anni dal 1° febbraio 2025; se non rinnovato resta in vigore fino al nuovo e i valori di tutte le fasce aumentano del 3% ogni tre anni, il primo aumento da gennaio 2028 (punto B). Sostituisce l'accordo del 31/07/2003. Vale per le abitazioni A/2, A/3, A/4, A/5, A/6 e A/7. Valori mensili al mq per 6 zone (fogli di mappa catastale) e 3 fasce A, B, C. Nel testo sono elencati anche Unione Inquilini, Feder-Casa, ANIA, Federproprietà e Confappi, senza firma nella copia pubblicata.",
+  "fonte": "Copia firmata e protocollata pubblicata dal Comune di Prato (pagina 'Contratti di affitto a canone concordato', 16 pagine, scansione) e dal SUNIA; modelli di attestazione F e G (RTF) dalla stessa pagina del Comune."
+ },
+ "esempio_zona": "la zona dal foglio di mappa catastale (visura)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - Centro storico",
+    "nota": "Zona 1 - Centro storico: fogli di mappa catastale dal 47 al 50 (il foglio è indicato nella visura catastale). Valori in euro al mq al mese.",
+    "fasce": {
+     "normale": [
+      [
+       4.36,
+       5.73
+      ],
+      [
+       5.57,
+       7.35
+      ],
+      [
+       7.14,
+       8.65
+      ]
+     ],
+     "piccolo": [
+      [
+       5.57,
+       7.35
+      ],
+      [
+       7.14,
+       8.65
+      ],
+      [
+       7.14,
+       8.65
+      ]
+     ],
+     "nuovo": [
+      [
+       7.14,
+       8.65
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - Pietà, Giolica, Castellina",
+    "nota": "Zona 2 - Pietà, Giolica, Castellina, Filettole, Carteano, Canneto: fogli di mappa catastale dal 17 al 20, dal 25 al 28, dal 38 al 40, 51, 53, 54 (il foglio è indicato nella visura catastale). Valori in euro al mq al mese.",
+    "fasce": {
+     "normale": [
+      [
+       4.3,
+       5.92
+      ],
+      [
+       5.77,
+       7.57
+      ],
+      [
+       7.35,
+       9.2
+      ]
+     ],
+     "piccolo": [
+      [
+       5.77,
+       7.57
+      ],
+      [
+       7.35,
+       9.2
+      ],
+      [
+       7.35,
+       9.2
+      ]
+     ],
+     "nuovo": [
+      [
+       7.35,
+       9.2
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - S. Lucia, Coiano, Galceti",
+    "nota": "Zona 3 - S. Lucia, Coiano, Galceti, Villa Fiorita, Figline, Cerreto: fogli di mappa catastale da 1 a 16 (il foglio è indicato nella visura catastale). Valori in euro al mq al mese.",
+    "fasce": {
+     "normale": [
+      [
+       4.41,
+       5.84
+      ],
+      [
+       5.67,
+       7.02
+      ],
+      [
+       6.82,
+       8.32
+      ]
+     ],
+     "piccolo": [
+      [
+       5.67,
+       7.02
+      ],
+      [
+       6.82,
+       8.32
+      ],
+      [
+       6.82,
+       8.32
+      ]
+     ],
+     "nuovo": [
+      [
+       6.82,
+       8.32
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - Adiacente al Centro storico",
+    "nota": "Zona 4 - Adiacente il Centro storico, Repubblica, pedecollinare est: fogli di mappa catastale 36, 37, 45, 46, 52, 60, dal 61 al 67 (il foglio è indicato nella visura catastale). Valori in euro al mq al mese.",
+    "fasce": {
+     "normale": [
+      [
+       4.41,
+       6.06
+      ],
+      [
+       5.88,
+       7.57
+      ],
+      [
+       7.35,
+       9.08
+      ]
+     ],
+     "piccolo": [
+      [
+       5.88,
+       7.57
+      ],
+      [
+       7.35,
+       9.08
+      ],
+      [
+       7.35,
+       9.08
+      ]
+     ],
+     "nuovo": [
+      [
+       7.35,
+       9.08
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "5",
+    "nome": "Zona 5 - Chiesanuova, Maliseti",
+    "nota": "Zona 5 - Chiesanuova, Maliseti, S. Paolo, Galciana, Grignano, Mezzana: fogli di mappa catastale dal 21 al 24, 31, 34, 35, 42, 43, 44, 57, 58, 59, 68, dal 74 al 77, dal 82 al 86 (il foglio è indicato nella visura catastale). Valori in euro al mq al mese.",
+    "fasce": {
+     "normale": [
+      [
+       4.41,
+       5.94
+      ],
+      [
+       5.77,
+       7.02
+      ],
+      [
+       6.82,
+       8.11
+      ]
+     ],
+     "piccolo": [
+      [
+       5.77,
+       7.02
+      ],
+      [
+       6.82,
+       8.11
+      ],
+      [
+       6.82,
+       8.11
+      ]
+     ],
+     "nuovo": [
+      [
+       6.82,
+       8.11
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "6",
+    "nome": "Zona 6 - Frazioni periferiche",
+    "nota": "Zona 6 - Frazioni periferiche: fogli di mappa catastale 29, 30, 32, 33, 41, 55, 56, 69, dal 70 al 73, dal 78 all'81, dall'87 al 107 (il foglio è indicato nella visura catastale). Valori in euro al mq al mese.",
+    "fasce": {
+     "normale": [
+      [
+       4.09,
+       5.29
+      ],
+      [
+       5.14,
+       6.49
+      ],
+      [
+       6.3,
+       7.57
+      ]
+     ],
+     "piccolo": [
+      [
+       5.14,
+       6.49
+      ],
+      [
+       6.3,
+       7.57
+      ],
+      [
+       6.3,
+       7.57
+      ]
+     ],
+     "nuovo": [
+      [
+       6.3,
+       7.57
+      ]
+     ]
+    }
+   }
+  ],
+  "tabella_per": "scelta",
+  "tabella_chiave": "alloggio",
+  "tabella_predefinita": "normale",
+  "fasce": {
+   "nomi": [
+    "C",
+    "B",
+    "A"
+   ],
+   "criterio": "requisiti",
+   "requisiti": [
+    null,
+    [
+     {
+      "da": 0,
+      "a": 5,
+      "tutti": true
+     }
+    ],
+    [
+     {
+      "da": 6,
+      "a": 9,
+      "tutti": true
+     },
+     {
+      "da": 10,
+      "a": 27,
+      "n": 2
+     }
+    ]
+   ],
+   "conta": {
+    "da": 0,
+    "a": 27
+   },
+   "nomi_tabella": {
+    "nuovo": "A"
+   },
+   "nota": "Fascia B: tutte le caratteristiche da 1 a 6. Fascia A: tutte le dotazioni da 7 a 10 e almeno 2 requisiti da 11 a 28, oppure alloggio costruito o ristrutturato negli ultimi 10 anni (scelta più sotto). Fascia C: tutti gli altri.",
+   "nota_pdf": "Fascia B: tutti i requisiti 1-6. Fascia A: tutti i requisiti 7-10 e almeno 2 fra 11-28, oppure costruito o ristrutturato negli ultimi 10 anni. Fascia C: gli altri (art. 1).",
+   "nomi_per_tabella": {
+    "piccolo": [
+     "B superiore",
+     "A superiore",
+     "A"
+    ]
+   }
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Fascia B: servono tutte queste caratteristiche"
+   },
+   {
+    "da": 6,
+    "titolo": "Fascia A: servono tutte queste dotazioni…"
+   },
+   {
+    "da": 10,
+    "titolo": "…e almeno 2 di questi requisiti"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Riscaldamento completo"
+   },
+   {
+    "testo": "Servizio igienico principale con finestra o aerazione forzata con ricambio d'aria efficiente"
+   },
+   {
+    "testo": "Impianto idrico idoneo ed efficiente"
+   },
+   {
+    "testo": "Impianto elettrico in sicurezza"
+   },
+   {
+    "testo": "Ascensore, se l'alloggio è oltre il quarto piano fuori terra (se è più in basso, segna comunque)"
+   },
+   {
+    "testo": "Infissi ed affissi efficienti"
+   },
+   {
+    "testo": "Riscaldamento singolo efficiente e a norma, o condominiale a norma sul risparmio energetico con contabilizzatori di calore"
+   },
+   {
+    "testo": "Doppi servizi, se l'alloggio supera 80 mq catastali (se è più piccolo, segna comunque)"
+   },
+   {
+    "testo": "Posto auto assegnato o autorimessa privata (in Zona 1 - Centro storico non è richiesto: segna comunque)"
+   },
+   {
+    "testo": "Ascensore, se l'alloggio è oltre il secondo piano fuori terra (se è più in basso, segna comunque)"
+   },
+   {
+    "testo": "Cantina"
+   },
+   {
+    "testo": "Soffitta"
+   },
+   {
+    "testo": "Aree a verde o terrazzi non condominiali"
+   },
+   {
+    "testo": "Impianti sportivi nelle adiacenze"
+   },
+   {
+    "testo": "Portierato"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Addolcitore"
+   },
+   {
+    "testo": "Antenna satellitare"
+   },
+   {
+    "testo": "Impianto di condizionamento o pompe di calore in almeno un vano"
+   },
+   {
+    "testo": "Mancanza di barriere architettoniche"
+   },
+   {
+    "testo": "Autoclave"
+   },
+   {
+    "testo": "Coibentazione / cappotto"
+   },
+   {
+    "testo": "Portone blindato"
+   },
+   {
+    "testo": "Finestre con vetri termici"
+   },
+   {
+    "testo": "Ulteriori parcheggi condominiali oltre il primo"
+   },
+   {
+    "testo": "Resedi"
+   },
+   {
+    "testo": "Solare termico, anche condominiale"
+   },
+   {
+    "testo": "Solare fotovoltaico, anche condominiale"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie catastale in visura (o locali principali e accessori diretti)",
+   "voci": [
+    {
+     "chiave": "accessori",
+     "testo": "Locali accessori comunicanti (soffitte, cantine e simili)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "accessori_nc",
+     "testo": "Locali accessori non comunicanti (soffitte, cantine e simili)",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "balconi",
+     "testo": "Balconi e terrazzi comunicanti (30% fino a 25 mq, poi 10%)",
+     "coeff": 0.3,
+     "scaglione": [
+      25,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "chiave": "balconi_nc",
+     "testo": "Balconi e terrazzi non comunicanti (15% fino a 25 mq, poi 5%)",
+     "coeff": 0.15,
+     "scaglione": [
+      25,
+      0.15,
+      0.05
+     ]
+    },
+    {
+     "chiave": "scoperte",
+     "testo": "Aree scoperte esclusive (10% fino alla superficie dell'alloggio, poi 2%)",
+     "coeff": 0.1,
+     "scaglione": [
+      "base",
+      0.1,
+      0.02
+     ]
+    },
+    {
+     "chiave": "garage",
+     "testo": "Garage, posto auto esclusivo o assegnato",
+     "coeff": 0.5
+    }
+   ],
+   "nota": "Con la visura (estratta da non più di 90 giorni): in alto la superficie catastale totale incluse aree scoperte, e sotto solo le pertinenze accatastate a parte (garage e posti auto 50%, cantine e soffitte 50% se comunicanti, 25% se no). Senza mq in visura: misura sulla planimetria i locali principali e accessori diretti alti più di 1,5 m (scale interne comprese) e compila tutte le righe (art. 4 e prospetto dell'attestazione)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "alloggio",
+    "tipo": "scelta",
+    "testo": "Fascia dei valori (art. 1 e art. 5)",
+    "nome": "Valori:",
+    "nessuna": "quella dei requisiti qui sopra",
+    "nessuna_breve": "fascia dei requisiti",
+    "opzioni": [
+     {
+      "valore": "piccolo",
+      "testo": "alloggio fino a 65 mq (superficie escluse aree scoperte): si usa la fascia superiore",
+      "breve": "alloggio fino a 65 mq, fascia superiore (art. 5)",
+      "perc": 0
+     },
+     {
+      "valore": "nuovo",
+      "testo": "alloggio costruito o ristrutturato negli ultimi 10 anni: fascia A",
+      "breve": "costruito o ristrutturato negli ultimi 10 anni, fascia A (art. 1)",
+      "perc": 0
+     }
+    ]
+   },
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento funzionale ed efficiente (l'idoneità va dichiarata dal conduttore nel contratto)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "100",
+      "testo": "arredo idoneo in ogni vano utile locato",
+      "perc": 15
+     },
+     {
+      "valore": "75",
+      "testo": "arredato al 75%",
+      "perc": 11.25
+     },
+     {
+      "valore": "50",
+      "testo": "arredato al 50%",
+      "perc": 7.5
+     },
+     {
+      "valore": "25",
+      "testo": "arredato al 25%",
+      "perc": 3.75
+     }
+    ]
+   }
+  ],
+  "nota_maggiorazioni": "Le percentuali si sommano e si applicano al canone base (art. 7). Arredo fino a +15% in proporzione all'arredamento. Durata 4/5/6 anni: +4/5/6%. Transitori +5%, studenti +10%. Alle singole stanze affittate (porzione di alloggio) non si applicano altre maggiorazioni (art. 8). Il minimo si può ridurre ancora solo a favore dell'inquilino (art. 2).",
+  "durata": {
+   "4": 4,
+   "5": 5,
+   "6": 6
+  },
+  "contratto": {
+   "transitorio": 5,
+   "studenti": 10
+  },
+  "combinazione": "somma",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato F",
+  "titolo": "Attestazione unilaterale di rispondenza ex D.M. 16.01.2017",
+  "sottotitolo": "Accordo territoriale per la stipula dei contratti di locazione applicabile nel Comune di Prato (PO), sottoscritto e depositato il 19/12/2024, in vigore dal 01/02/2025",
+  "titolo_superficie": "PROSPETTO DI CALCOLO DELLA SUPERFICIE DELL'UNITÀ IMMOBILIARE",
+  "titolo_elementi": "Prospetto dei requisiti",
+  "dichiarazione": "Il dichiarante dichiara che i dati comunicati sono stati dallo stesso rilevati e verificati. Pertanto, riconoscendo che la presente Attestazione è rilasciata, secondo quanto previsto dal D.M. 16/1/2017, sulla base di quanto dichiarato, solleva espressamente l'Organizzazione da qualsiasi responsabilità derivante da errori, omissioni o asserzioni non veritiere relative ai dati dichiarati nel presente atto. Il dichiarante autorizza al trattamento dei dati personali ai sensi della normativa vigente.",
+  "firme": [
+   "Parte locatrice",
+   "Parte conduttrice"
+  ],
+  "titolo_attestazione": "ATTESTAZIONE",
+  "attestazione": [
+   "L'Organizzazione ……………………………, firmataria dell'Accordo territoriale per il Comune di Prato (PO) depositato il 19/12/2024, in persona di ……………………………, sulla base degli elementi oggettivi sopra dichiarati, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo territoriale vigente per il Comune di Prato (PO) depositato il 19/12/2024."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dal foglio di mappa catastale dell'immobile (lo trovi nella visura): l'elenco dei fogli di ogni zona è nell'art. 2 dell'accordo."
+ }
+}

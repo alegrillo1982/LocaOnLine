@@ -659,6 +659,29 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftaranto-2018-05-29-allegato-6-richiesta-commissione.pdf?alt=media&token=a3e74b66-3092-4de9-9845-a6c9a6264e8e"
     }
    ]
+  },
+  {
+   "comune": "Prato",
+   "provincia": "PO",
+   "accordo": "prato-2024-12-19",
+   "sottoscritto": "19 dicembre 2024",
+   "depositato": "19 dicembre 2024",
+   "zone": 6,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fprato-2024-12-19-accordo.pdf?alt=media&token=3c1f34d0-38cd-4edc-9514-efaf080c7e89",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fprato-2024-12-19-accordo.pdf?alt=media&token=3c1f34d0-38cd-4edc-9514-efaf080c7e89"
+    },
+    {
+     "nome": "Allegato f attestazione unilaterale",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fprato-2024-12-19-allegato-f-attestazione-unilaterale.pdf?alt=media&token=9967c627-4f6a-4492-b442-10152aab7c6f"
+    },
+    {
+     "nome": "Allegato g attestazione bilaterale",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fprato-2024-12-19-allegato-g-attestazione-bilaterale.pdf?alt=media&token=f875865f-3563-435f-bf5e-5b4d6b7bf83b"
+    }
+   ]
   }
  ]
 }

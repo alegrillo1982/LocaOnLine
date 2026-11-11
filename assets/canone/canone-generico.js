@@ -217,7 +217,12 @@
       } else if (tab.length === 1 && (R.fasce.nomi_tabella || {})[chiave.replace(/^stud_/, "")]) {
         // es. Catanzaro: le ville hanno una fascia sola, qualunque sia il numero di elementi
         r.base = tab[0]; f.i = 0; f.nome = R.fasce.nomi_tabella[chiave.replace(/^stud_/, "")];
-      } else r.base = tab[f.i];
+      } else {
+        r.base = tab[f.i];
+        // es. Prato: per gli alloggi piccoli la tabella è spostata di una fascia, e il nome la segue
+        const NT = (R.fasce.nomi_per_tabella || {})[chiave];
+        if (NT) f.nome = NT[f.i];
+      }
       if (r.base && R.fasce.criterio === "differenza") {
         r.massimo_fascia = r.base[1];
         r.base = [r.base[0], Math.round((r.base[0] + (r.base[1] - r.base[0]) * Math.min(f.n, 100) / 100) * 1000) / 1000];
