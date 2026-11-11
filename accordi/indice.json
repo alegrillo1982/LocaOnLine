@@ -701,6 +701,21 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flivorno-2018-05-29-allegato-1-contratti-tipo-e-attestazioni.pdf?alt=media&token=4e5e4ea0-cbd9-46de-a84e-b6f9a46f9be3"
     }
    ]
+  },
+  {
+   "comune": "Foggia",
+   "provincia": "FG",
+   "accordo": "foggia-2020-03-06",
+   "sottoscritto": "6 marzo 2020",
+   "depositato": "9 marzo 2020",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffoggia-2020-03-06-accordo.pdf?alt=media&token=bc3fb252-b99a-4f53-b4dd-7cd264760239",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffoggia-2020-03-06-accordo.pdf?alt=media&token=bc3fb252-b99a-4f53-b4dd-7cd264760239"
+    }
+   ]
   }
  ]
 }

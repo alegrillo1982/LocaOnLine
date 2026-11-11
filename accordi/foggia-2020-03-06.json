@@ -1,0 +1,359 @@
+{
+ "accordo": {
+  "codice": "foggia-2020-03-06",
+  "modello": "foggia-2020",
+  "comune": "Foggia",
+  "provincia": "FG",
+  "titolo": "Accordo territoriale per il Comune di Foggia",
+  "data": "2020-03-06",
+  "data_testo": "6 marzo 2020",
+  "deposito": "Comune di Foggia",
+  "deposito_data": "09.03.2020",
+  "protocollo": "",
+  "ufficio": "Segreteria generale",
+  "ufficio_breve": "Segreteria generale",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Foggia del 6 marzo 2020 (depositato il 9 marzo 2020): la durata di tre anni è trascorsa.</strong> Resta in vigore fino alla firma di un nuovo accordo. A maggio 2026 la stampa locale ha dato notizia di un accordo rinnovato, ma il testo non risulta ancora pubblicato: chiedi all'associazione che attesta il contratto quale accordo applica. Dal 2024 le fasce possono essere aggiornate ogni anno al 75% dell'ISTAT: qui trovi i valori originali.",
+  "firmatari_proprieta": [
+   "A.P.P.E. - CONFEDILIZIA",
+   "A.P.P.C.",
+   "CONFAPPI",
+   "U.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET",
+   "UNIAT",
+   "ASSOCASA",
+   "UNIONE INQUILINI"
+  ],
+  "nota": "Firmato a Foggia il 06/03/2020 (data scritta a mano a pag. 13) e depositato presso il Comune di Foggia il 09/03/2020 (data indicata da SUNIA, UPPI Foggia e FoggiaToday; nel PDF non c'è il timbro di deposito, protocollo non indicato). Sostituisce l'accordo depositato il 28/10/2005. Durata tre anni dal deposito, poi resta in vigore fino al nuovo; se entro un anno dalla scadenza non c'è un nuovo accordo, le fasce si possono aggiornare ogni anno al 75% dell'ISTAT. Il 20/05/2026 Statoquotidiano ha annunciato la firma di un nuovo accordo, senza data, firmatari né testo: non risulta pubblicato da SUNIA, UPPI Foggia, Confedilizia né dal Comune. 4 zone, 4 fasce (A+, A, B, C), valori mensili al mq con tolleranza del 5% (allegato 2).",
+  "fonte": "PDF dell'accordo firmato (50 pagine, con allegati 1-5, A-D) pubblicato da SUNIA nazionale, SUNIA Puglia e UPPI Foggia (file identici); stessa scansione su confedilizia.it."
+ },
+ "esempio_zona": "la zona dalla via (allegato 1)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "1",
+    "nome": "Zona 1 - area interna",
+    "nota": "Zona 1: area interna delimitata da piazza Cavour, via Scillitani fino all'incrocio con via Montegrappa, via del Carso, via Re di Puglia, piazza Vittorio Veneto, via Manfredi, via Sant'Antonio, via Sant'Alfonso Maria de' Liguori fino all'incrocio con viale Candelaro, viale Candelaro, viale Ofanto fino all'incrocio con via Guglielmi, via Guglielmi, via Caggese fino all'incrocio con via Galliani, via Galliani verso piazza Cavour. Se l'immobile sta sulla linea di confine fra due zone, vale quella di maggior valore (art. 2 dei contratti agevolati).",
+    "fasce": [
+     [
+      0.83,
+      3.07
+     ],
+     [
+      1.24,
+      4.18
+     ],
+     [
+      1.34,
+      4.46
+     ],
+     [
+      1.61,
+      5.35
+     ]
+    ]
+   },
+   {
+    "codice": "2",
+    "nome": "Zona 2 - intorno alla zona 1",
+    "nota": "Zona 2: dal perimetro di viale Candelaro, viale Giotto fino all'incrocio con via Altamura, via Altamura, via Rovelli, via L. Perosi, via Martiri di via Fani, via P. Telesforo, via Natola, viale I Maggio, via degli Aviatori fino all'incrocio con via Einaudi, via Einaudi, via D'Addedda fino all'incrocio con via Lenotti, via Lenotti, via Smaldone fino all'incrocio con corso del Mezzogiorno, corso del Mezzogiorno verso viale Ofanto. Se l'immobile sta sulla linea di confine fra due zone, vale quella di maggior valore (art. 2 dei contratti agevolati).",
+    "fasce": [
+     [
+      0.72,
+      2.79
+     ],
+     [
+      1.14,
+      3.91
+     ],
+     [
+      1.24,
+      4.18
+     ],
+     [
+      1.49,
+      5.02
+     ]
+    ]
+   },
+   {
+    "codice": "3",
+    "nome": "Zona 3 - resto della città",
+    "nota": "Zona 3: tutte le altre vie della città non comprese nelle zone 1 e 2. Se l'immobile sta sulla linea di confine fra due zone, vale quella di maggior valore (art. 2 dei contratti agevolati).",
+    "fasce": [
+     [
+      0.62,
+      2.51
+     ],
+     [
+      1.03,
+      3.36
+     ],
+     [
+      1.14,
+      3.91
+     ],
+     [
+      1.37,
+      4.69
+     ]
+    ]
+   },
+   {
+    "codice": "4",
+    "nome": "Zona 4 - agricola e frazioni",
+    "nota": "Zona 4: zona agricola e frazioni. Se l'immobile sta sulla linea di confine fra due zone, vale quella di maggior valore (art. 2 dei contratti agevolati).",
+    "fasce": [
+     [
+      0.31,
+      1.95
+     ],
+     [
+      0.62,
+      2.51
+     ],
+     [
+      0.72,
+      2.79
+     ],
+     [
+      0.86,
+      3.35
+     ]
+    ]
+   }
+  ],
+  "fasce": {
+   "nomi": [
+    "C",
+    "B",
+    "A",
+    "A+"
+   ],
+   "criterio": "conta",
+   "soglie": [
+    0,
+    4,
+    9
+   ],
+   "conta": {
+    "da": 3,
+    "a": 19
+   },
+   "obbligatori": [
+    0,
+    1,
+    2
+   ],
+   "nota_soglie": "contano solo gli elementi non essenziali (da 4 a 20); senza anche uno solo degli elementi essenziali (1-3) si resta in fascia C"
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Elementi essenziali: servono tutti e tre, altrimenti fascia C"
+   },
+   {
+    "da": 3,
+    "titolo": "Elementi non essenziali: da 1 a 4 fascia B, da 5 a 9 fascia A, da 10 fascia A+"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Appartamento dal 1° piano in su (vale anche il piano rialzato con giardino)"
+   },
+   {
+    "testo": "Riscaldamento autonomo o centralizzato, o altro impianto termico (L. 90/2013)"
+   },
+   {
+    "testo": "Ascensore, se l'appartamento è oltre il 2° piano (fino al 2° piano non serve: segna comunque questa casella)"
+   },
+   {
+    "testo": "Piano intermedio, o piano rialzato con giardino"
+   },
+   {
+    "testo": "Condizionatori in almeno metà dei vani"
+   },
+   {
+    "testo": "Doppio servizio"
+   },
+   {
+    "testo": "Box, o posto auto scoperto assegnato con delibera condominiale"
+   },
+   {
+    "testo": "Doppia esposizione"
+   },
+   {
+    "testo": "Cortile comune"
+   },
+   {
+    "testo": "Cantina o soffitta"
+   },
+   {
+    "testo": "Edificio senza alcuna barriera architettonica (L. 13/1989)"
+   },
+   {
+    "testo": "Doppi vetri, vetri termici o doppi infissi in almeno metà dell'abitazione"
+   },
+   {
+    "testo": "Sbarre anti-intrusione alle finestre in almeno metà dell'abitazione"
+   },
+   {
+    "testo": "Porta blindata"
+   },
+   {
+    "testo": "Allarme, videocamera, impianti di sicurezza o domotica"
+   },
+   {
+    "testo": "Videocitofono"
+   },
+   {
+    "testo": "Copertura in fibra ottica"
+   },
+   {
+    "testo": "Autoclave o riserva idrica, condominiale o propria"
+   },
+   {
+    "testo": "Fonti di energia rinnovabile (es. pannelli solari)"
+   },
+   {
+    "testo": "Terrazzo o giardino a uso esclusivo, di almeno il 20% della superficie dell'alloggio"
+   }
+  ],
+  "superficie": {
+   "base": "Superficie netta calpestabile dell'alloggio",
+   "voci": [
+    {
+     "chiave": "box",
+     "testo": "Garage, box e posti auto accatastati",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "accessori",
+     "testo": "Terrazzi, balconi, cantine, verande, ripostigli, tavernette, mansarde e simili",
+     "coeff": 0.25
+    },
+    {
+     "chiave": "posto",
+     "testo": "Posti auto non accatastati, assegnati da regolamento o delibera condominiale",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "verde",
+     "testo": "Verde e cortile condominiale (quota millesimale)",
+     "coeff": 0.1
+    }
+   ],
+   "correzioni_totale": [
+    {
+     "fino": 38,
+     "perc": 20,
+     "limite": 38
+    },
+    {
+     "fino": 55,
+     "perc": 15,
+     "limite": 55
+    },
+    {
+     "fino": 70,
+     "perc": 10,
+     "limite": 70
+    }
+   ],
+   "nota": "Terrazzi, balconi, lavanderie, cantine, porticati, verande, ripostigli, tavernette e mansarde: 25%. Superficie fino a 38 mq: +20%, senza superare 38 mq; fino a 55 mq: +15%, senza superare 55 mq; fino a 70 mq: +10%, senza superare 70 mq (art. 6). Se si affitta una porzione, il canone dell'intero alloggio si divide in proporzione alla superficie della parte locata, contando anche la quota delle parti condivise (art. 7)."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "ammobiliato",
+    "tipo": "scelta",
+    "testo": "Arredamento",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "ammobiliato": true,
+    "opzioni": [
+     {
+      "valore": "parziale",
+      "testo": "parzialmente arredato, con blocco cucina",
+      "perc": 10
+     },
+     {
+      "valore": "completo",
+      "testo": "completamente arredato: camere, soggiorno, bagno e cucina completa",
+      "perc": 20
+     }
+    ]
+   },
+   {
+    "chiave": "classe",
+    "tipo": "scelta",
+    "testo": "Classe energetica (dall'APE)",
+    "nome": "classe energetica",
+    "nessuna": "E, F o G",
+    "opzioni": [
+     {
+      "valore": "D",
+      "testo": "classe D",
+      "perc": 3
+     },
+     {
+      "valore": "C",
+      "testo": "classe C",
+      "perc": 4
+     },
+     {
+      "valore": "B",
+      "testo": "classe B",
+      "perc": 6
+     },
+     {
+      "valore": "A",
+      "testo": "classe A (A1, A2, A3 o A4)",
+      "perc": 8
+     }
+    ]
+   },
+   {
+    "chiave": "pregio",
+    "tipo": "spunta",
+    "contratti": [
+     "studenti"
+    ],
+    "testo": "Immobile vincolato o di categoria A/1, A/8 o A/9 (art. 1, c. 2, lett. a, L. 431/98)",
+    "nome": "immobile di pregio",
+    "perc": 5
+   }
+  ],
+  "nota_maggiorazioni": "Le maggiorazioni si applicano una dopo l'altra: ognuna sul canone già aumentato dalle precedenti (art. 9). Arredamento e durata sono «fino a» quella percentuale. Completamente arredato: camere da letto, soggiorno, bagno e cucina con piano cottura, forno, frigorifero e lavatrice, elettrodomestici e televisore funzionanti. Le fasce hanno una tolleranza del 5% in più o in meno (art. 3): qui trovi i valori senza tolleranza. Transitori (fino a 18 mesi) e studenti: stesse fasce e stesse maggiorazioni dei contratti agevolati; per gli studenti, +5% sugli immobili di pregio.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "combinazione": "prodotto",
+  "avvisi": []
+ },
+ "pdf": {
+  "allegato": "Allegato 4",
+  "titolo": "Attestazione di rispondenza D.M. 16/01/2017",
+  "sottotitolo": "Accordo territoriale per il Comune di Foggia sottoscritto il 06/03/2020 (depositato presso il Comune di Foggia il 09/03/2020)",
+  "titolo_superficie": "SUPERFICIE",
+  "titolo_elementi": "Elementi essenziali e non essenziali",
+  "dichiarazione": "Il locatore ha presentato richiesta per l'attestazione del D.M. 16/01/2017, dichiarando, sotto la sua responsabilità, gli elementi sopra riportati.",
+  "firme": [],
+  "titolo_attestazione": "TUTTO CIÒ PREMESSO",
+  "attestazione": [
+   "l'Organizzazione ……………………………, sulla base degli elementi oggettivi dichiarati dalla parte locatrice sotto la propria personale responsabilità, anche ai fini dell'ottenimento di eventuali agevolazioni fiscali,",
+   "ATTESTA che i contenuti economici e normativi del contratto corrispondono a quanto previsto dall'Accordo Territoriale vigente per il Comune di Foggia depositato in data 09/03/2020."
+  ],
+  "firme_attestazione": [
+   "Il dichiarante",
+   "P. l'Organizzazione"
+  ],
+  "nota_zone": "La zona si ricava dalla via (allegato 1): zona 1 area interna, zona 2 la fascia intorno, zona 3 il resto della città, zona 4 zona agricola e frazioni. Sul confine fra due zone vale quella di maggior valore."
+ }
+}
