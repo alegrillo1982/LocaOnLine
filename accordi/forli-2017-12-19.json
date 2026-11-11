@@ -1,0 +1,556 @@
+{
+ "accordo": {
+  "codice": "forli-2017-12-19",
+  "modello": "forli-2017",
+  "comune": "Forlì",
+  "provincia": "FC",
+  "titolo": "Accordo territoriale per il Comune di Forlì",
+  "data": "2017-12-19",
+  "data_testo": "19 dicembre 2017",
+  "deposito": "Comune di Forlì",
+  "deposito_data": "27.12.2017",
+  "protocollo": "P.G. 0109249/17",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Forlì del 19 dicembre 2017: durata di tre anni dal deposito, ormai trascorsi.</strong> Resta applicato finché non viene rinnovato, e il Comune lo pubblica ancora. I valori della tabella non si aggiornano con l'ISTAT (clausole finali). <strong>Attenzione:</strong> a fine marzo 2026 altre associazioni (Confappi, Confabitare, Unioncasa, Assocasa, Feder.casa-Confsal) hanno depositato in Comune un secondo accordo, contestato dai firmatari di quello del 2017 e ancora all'esame del Comune; il suo testo non è pubblicato. Qui trovi il calcolo con l'accordo del 2017: chiedi all'associazione che assiste il contratto quale accordo applica.",
+  "firmatari_proprieta": [
+   "A.P.E. - Confedilizia Forlì-Cesena",
+   "A.S.P.P.I. Forlì",
+   "A.N.C.E. Unindustria Forlì-Cesena (solo per transitori e studenti)"
+  ],
+  "firmatari_conduttori": [
+   "S.I.C.E.T. Romagna",
+   "S.U.N.I.A. Forlì-Cesena",
+   "U.N.I.A.T. Emilia-Romagna, sportello di Forlì"
+  ],
+  "nota": "Firmato il 19/12/2017 e consegnato al Comune di Forlì: sulla copia firmata c'è il protocollo P.G. 0109249/17 scritto a mano con il timbro del 27/12/2017 (nel testo si legge «depositato il 19/12/2017»). Il Comune ha firmato lo stesso giorno un protocollo d'intesa per la riduzione dell'IMU, che richiede l'allegato 4 compilato e firmato dalle parti. Durata tre anni dal deposito; valori minimi e massimi NON aggiornabili, nemmeno con l'ISTAT, fino a una revisione ufficiale. Sostituisce gli accordi del 30/08/1999, 21/10/2003 e 25/05/2004. Quattro zone (fogli di mappa catastale, allegato 1), quattro righe secondo la superficie utile (fino a 50, 51-80, 81-100, oltre 100 mq) e tre fasce secondo i punti dell'allegato 3 (minima fino a 7, media da 8 a 13, massima da 14); valori in euro al mq al mese (allegato 2). Nella tabella della zona D la seconda riga è scritta «da mq. 51 a 100» per un refuso: è la riga 51-80. A marzo 2026 Confappi, Confabitare, Unioncasa, Assocasa e Feder.casa-Confsal hanno depositato un secondo accordo (in vigore per loro dal 01/04/2026), contestato da Confedilizia, ASPPI, SUNIA, SICET, UNIAT e ANCE; il Comune ha detto di averlo solo ricevuto e di doverne verificare la legittimità. Il testo non è pubblicato.",
+  "fonte": "Comune di Forlì, sezione Casa dei documenti tecnici: «Testo accordo Forlì dicembre 2017 integrale» (42 pagine: accordo, allegati 1-5, cartina delle zone e contratti tipo del D.M. 16/01/2017) e «All. 4 Comune di Forlì accordo 2017» (modulo compilabile). Copia firmata e protocollata, con il protocollo d'intesa IMU, pubblicata da SUNIA (48 pagine in scansione). Notizie del secondo accordo: ForlìToday 31/03/2026, 01/04/2026 e 09/04/2026; Corriere Romagna 05/04/2026."
+ },
+ "esempio_zona": "la zona dal foglio di mappa catastale (visura)",
+ "regole": {
+  "generico": true,
+  "unita": "mese",
+  "zone": [
+   {
+    "codice": "A",
+    "nome": "Zona A - Residenziale di pregio",
+    "nota": "Zona A - Residenziale di pregio: fogli di mappa catastale 93, 96, 116-118, 142-148, 173-175, 178-182, 200-204, 214-225, 228, 233, 235-239, 243, 249-251, 258, 259 (il foglio è nella visura). Indicativamente: parte del centro storico, Via D. Raggi, Via Campo di Marte, Viale Gramsci, Via Dragoni, Ronco, residenziale Coriano, Vecchiazzano, Romiti, San Martino in Strada, Via Lunga, Gorizia, Cadore, Isonzo, Lughese. La riga della tabella dipende dalla superficie utile: fino a 50 mq, da 51 a 80, da 81 a 100, da 101 in poi (con la tolleranza del 10% si usa la riga inferiore fino a 55, 88 e 110 mq). Valori in euro al mq al mese.",
+    "fasce": {
+     "50": [
+      [
+       4.8,
+       5.8
+      ],
+      [
+       5.1,
+       6.8
+      ],
+      [
+       6.1,
+       7.9
+      ]
+     ],
+     "80": [
+      [
+       4.3,
+       5.6
+      ],
+      [
+       4.8,
+       6.2
+      ],
+      [
+       5.4,
+       7.2
+      ]
+     ],
+     "100": [
+      [
+       4.1,
+       5.1
+      ],
+      [
+       4.6,
+       5.8
+      ],
+      [
+       5.0,
+       6.8
+      ]
+     ],
+     "oltre": [
+      [
+       3.5,
+       4.5
+      ],
+      [
+       4.0,
+       5.4
+      ],
+      [
+       4.6,
+       6.4
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "B",
+    "nome": "Zona B - Centro storico e residenziale ordinaria",
+    "nota": "Zona B - Centro storico e residenziale ordinaria: fogli di mappa catastale 48-51, 68-72, 86, 87, 97, 98, 107-112, 114, 115, 119, 137, 139-141, 149-151, 171, 172, 176, 177, 183-185, 196, 198, 199, 205, 206, 240-242, 252, 253, 260, 261, 272 (il foglio è nella visura). Indicativamente: l'altra parte del centro storico, San Giorgio, Pieveacquedotto, zona industriale Coriano, Carpena, Villanova, Cava, San Varano, Quattro. La riga della tabella dipende dalla superficie utile: fino a 50 mq, da 51 a 80, da 81 a 100, da 101 in poi (con la tolleranza del 10% si usa la riga inferiore fino a 55, 88 e 110 mq). Valori in euro al mq al mese.",
+    "fasce": {
+     "50": [
+      [
+       4.7,
+       5.6
+      ],
+      [
+       4.9,
+       6.5
+      ],
+      [
+       5.8,
+       7.6
+      ]
+     ],
+     "80": [
+      [
+       4.1,
+       5.5
+      ],
+      [
+       4.7,
+       6.0
+      ],
+      [
+       5.3,
+       7.0
+      ]
+     ],
+     "100": [
+      [
+       3.9,
+       5.0
+      ],
+      [
+       4.5,
+       5.6
+      ],
+      [
+       4.9,
+       6.6
+      ]
+     ],
+     "oltre": [
+      [
+       3.3,
+       4.2
+      ],
+      [
+       3.7,
+       5.3
+      ],
+      [
+       4.5,
+       6.3
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "C",
+    "nome": "Zona C - Frazioni, residenziale periferica",
+    "nota": "Zona C - Frazioni, residenziale periferica: fogli di mappa catastale 9-12, 14, 16-30, 34, 37-39, 43-47, 52, 53, 56-59, 63-65, 81, 83-85, 90-92, 100, 102-106, 121-127, 135, 136, 138, 152-155, 166-170, 186-189, 194, 195, 197, 207, 209-211, 226, 227, 229, 257, 265-269, 276, 277, 286-289 (il foglio è nella visura). Indicativamente: Ponte Vico, Villafranca, San Martino in Villafranca, Brancolino, Barisano, Poggio, San Tomè, Roncadello, Malmissole, Durazzanino, Borgo Sisa, Villa Rotta, Pievequinta, Casemurate, Caserma, Carpinello, Villa Selva, San Leonardo, San Lorenzo in Noceto, Collina, Para, Villagrappa, Granarolo, Villa Rovere, Castiglione-Pescaccia. La riga della tabella dipende dalla superficie utile: fino a 50 mq, da 51 a 80, da 81 a 100, da 101 in poi (con la tolleranza del 10% si usa la riga inferiore fino a 55, 88 e 110 mq). Valori in euro al mq al mese.",
+    "fasce": {
+     "50": [
+      [
+       4.3,
+       5.4
+      ],
+      [
+       4.8,
+       6.1
+      ],
+      [
+       5.1,
+       6.9
+      ]
+     ],
+     "80": [
+      [
+       4.0,
+       4.8
+      ],
+      [
+       4.3,
+       5.5
+      ],
+      [
+       4.7,
+       6.3
+      ]
+     ],
+     "100": [
+      [
+       3.8,
+       4.6
+      ],
+      [
+       4.1,
+       5.1
+      ],
+      [
+       4.5,
+       5.9
+      ]
+     ],
+     "oltre": [
+      [
+       3.2,
+       4.1
+      ],
+      [
+       3.6,
+       4.7
+      ],
+      [
+       4.2,
+       5.5
+      ]
+     ]
+    }
+   },
+   {
+    "codice": "D",
+    "nome": "Zona D - Residenziale forese",
+    "nota": "Zona D - Residenziale forese (campagna): fogli di mappa catastale 1-8, 13, 15, 31-33, 35, 36, 40-42, 54, 55, 60-62, 66, 67, 73-80, 82, 88, 89, 94, 95, 99, 101, 113, 120, 128-134, 156-165, 190-193, 208, 212, 213, 230-232, 234, 244-248, 254-256, 262-264, 270, 271, 273-275, 278-285, 290-295 (il foglio è nella visura). Tutto il resto del territorio comunale. La riga della tabella dipende dalla superficie utile: fino a 50 mq, da 51 a 80, da 81 a 100, da 101 in poi (con la tolleranza del 10% si usa la riga inferiore fino a 55, 88 e 110 mq). Valori in euro al mq al mese.",
+    "fasce": {
+     "50": [
+      [
+       3.9,
+       4.8
+      ],
+      [
+       4.3,
+       5.4
+      ],
+      [
+       4.8,
+       6.4
+      ]
+     ],
+     "80": [
+      [
+       3.7,
+       4.6
+      ],
+      [
+       4.2,
+       5.1
+      ],
+      [
+       4.6,
+       6.0
+      ]
+     ],
+     "100": [
+      [
+       3.5,
+       4.4
+      ],
+      [
+       4.0,
+       4.9
+      ],
+      [
+       4.4,
+       5.6
+      ]
+     ],
+     "oltre": [
+      [
+       3.1,
+       3.9
+      ],
+      [
+       3.4,
+       4.3
+      ],
+      [
+       3.8,
+       5.2
+      ]
+     ]
+    }
+   }
+  ],
+  "tabella_per": "superficie",
+  "tabella_soglie": [
+   [
+    50,
+    "50"
+   ],
+   [
+    80,
+    "80"
+   ],
+   [
+    100,
+    "100"
+   ]
+  ],
+  "tabella_oltre": "oltre",
+  "fasce": {
+   "nomi": [
+    "minima",
+    "media",
+    "massima"
+   ],
+   "criterio": "punti",
+   "soglie": [
+    7,
+    13
+   ],
+   "almeno": {
+    "da": 7,
+    "a": 7,
+    "n": 1,
+    "avviso": "senza impianto di riscaldamento si resta comunque nella fascia minima: se c'è, indica di che tipo è"
+   }
+  },
+  "titoli_elementi": [
+   {
+    "da": 0,
+    "titolo": "Dotazioni dell'alloggio e dell'edificio"
+   },
+   {
+    "da": 21,
+    "titolo": "Pertinenze"
+   },
+   {
+    "da": 26,
+    "titolo": "Penalizzazione"
+   }
+  ],
+  "elementi": [
+   {
+    "testo": "Ascensore e/o alloggio senza barriere architettoniche",
+    "punti": 1
+   },
+   {
+    "testo": "Area verde e/o cortile a uso esclusivo",
+    "punti": 1
+   },
+   {
+    "testo": "Terrazza o balcone di almeno 5 mq",
+    "punti": 1
+   },
+   {
+    "testo": "Veranda",
+    "punti": 1
+   },
+   {
+    "testo": "Doppi vetri in tutte le finestre (non la doppia finestra)",
+    "punti": 1
+   },
+   {
+    "testo": "Doppi servizi (due bagni)",
+    "punti": 2
+   },
+   {
+    "testo": "Edificio con non più di 8 abitazioni",
+    "punti": 1
+   },
+   {
+    "testo": "Riscaldamento (senza impianto: fascia minima)",
+    "livelli": [
+     {
+      "testo": "centralizzato senza contabilizzatori, o altro",
+      "punti": 0
+     },
+     {
+      "testo": "centralizzato con contabilizzatori",
+      "punti": 1
+     },
+     {
+      "testo": "autonomo",
+      "punti": 2
+     }
+    ]
+   },
+   {
+    "testo": "Condizionatore solo in una parte dell'alloggio",
+    "punti": 1
+   },
+   {
+    "testo": "Condizionamento fisso in tutto l'alloggio",
+    "punti": 2
+   },
+   {
+    "testo": "Pannelli solari",
+    "punti": 1
+   },
+   {
+    "testo": "Wi-Fi attivo",
+    "punti": 1
+   },
+   {
+    "testo": "Impianto TV satellitare",
+    "punti": 1
+   },
+   {
+    "testo": "Antisismica: ristrutturato con nuova abitabilità",
+    "punti": 2
+   },
+   {
+    "testo": "Antisismica: appartamento nuovo",
+    "punti": 3
+   },
+   {
+    "testo": "Inferriate, infissi di sicurezza o cancelletti",
+    "punti": 1
+   },
+   {
+    "testo": "Videocitofono, videosorveglianza o allarme",
+    "punti": 1
+   },
+   {
+    "testo": "Porta blindata",
+    "punti": 2
+   },
+   {
+    "testo": "Prelazione sul nuovo affitto scritta nel contratto",
+    "punti": 1
+   },
+   {
+    "testo": "Attestato energetico (APE) in classe A o B",
+    "punti": 2
+   },
+   {
+    "testo": "Attestato energetico (APE) in classe C, D o E",
+    "punti": 1
+   },
+   {
+    "testo": "Cantina di oltre 8 mq e/o posto auto coperto",
+    "punti": 1
+   },
+   {
+    "testo": "Mansarda alta almeno 1,80 m",
+    "punti": 1
+   },
+   {
+    "testo": "Posto auto scoperto nel cortile condominiale",
+    "punti": 1
+   },
+   {
+    "testo": "Posto auto scoperto riservato (C/6 di 1ª classe)",
+    "punti": 1
+   },
+   {
+    "testo": "Garage",
+    "punti": 2
+   },
+   {
+    "testo": "Oltre il 3° piano fuori terra, senza ascensore",
+    "punti": -2
+   }
+  ],
+  "superficie": {
+   "base": "Superficie utile interna (o superficie catastale meno il 15%)",
+   "voci": [
+    {
+     "chiave": "balconi",
+     "testo": "Terrazza o balcone, solo se oltre 5 mq (15%)",
+     "coeff": 0.15,
+     "oltre_mq": 5
+    },
+    {
+     "chiave": "veranda",
+     "testo": "Veranda (30%)",
+     "coeff": 0.3
+    },
+    {
+     "chiave": "garage",
+     "testo": "Autorimessa singola (50%)",
+     "coeff": 0.5
+    },
+    {
+     "chiave": "cantina",
+     "testo": "Posto auto coperto riservato e cantina (20%)",
+     "coeff": 0.2
+    },
+    {
+     "chiave": "mansarda",
+     "testo": "Mansarda di pertinenza alta almeno 1,80 m (30%)",
+     "coeff": 0.3
+    }
+   ],
+   "nota": "Si usa la superficie utile interna dalla planimetria, senza i muri perimetrali, oppure la superficie catastale ridotta del 15%. Le pertinenze affittate con l'alloggio contano in percentuale (dalla visura, o dalle planimetrie): terrazzi e balconi oltre 5 mq 15%, veranda 30%, autorimessa 50%, posto auto coperto e cantina 20%, mansarda 30%. La riga della tabella si sceglie con la superficie utile; se la supera di non più del 10% (per esempio 54 mq contro 50) il massimo può arrivare a quello della riga inferiore, mentre il minimo resta quello della riga normale."
+  },
+  "maggiorazioni": [
+   {
+    "chiave": "arredo",
+    "tipo": "scelta",
+    "ammobiliato": true,
+    "testo": "Arredamento (allegato 5)",
+    "nome": "arredato",
+    "nessuna": "non arredato",
+    "opzioni": [
+     {
+      "valore": "minimo",
+      "testo": "arredo minimo: blocco cucina",
+      "perc": 5
+     },
+     {
+      "valore": "completo",
+      "testo": "arredo completo, zona giorno e notte",
+      "perc": 15
+     },
+     {
+      "valore": "pregio",
+      "testo": "arredo nuovo o di pregio su misura, elettrodomestici di qualità",
+      "perc": 20
+     }
+    ]
+   },
+   {
+    "chiave": "vani_bassi",
+    "tipo": "spunta",
+    "dopo": true,
+    "testo": "Oltre 100 mq, con sottotetto, mansarda, sottoscala o tavernetta riscaldati ma più bassi dell'altezza abitabile compresi nei mq: superficie ridotta del 5%",
+    "nome": "oltre 100 mq con vani bassi: superficie -5%",
+    "perc": -5
+   }
+  ],
+  "nota_maggiorazioni": "Le maggiorazioni sono il massimo consentito («fino a») e si sommano sul canone di tabella, come nell'allegato 4: arredo minimo +5%, completo +15%, nuovo o di pregio +20%; durata oltre 3 anni +2% per ogni anno in più (4 anni +2%, 5 +4%, 6 +6%); contratti transitori (fino a 18 mesi) e per studenti universitari +10%. Per gli alloggi oltre 100 mq con vani bassi riscaldati la metratura si riduce del 5%. Per una porzione di alloggio il canone dell'intero si divide in proporzione alla superficie usata in esclusiva più la quota delle parti in comune.",
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "contratto": {
+   "transitorio": 10,
+   "studenti": 10
+  },
+  "combinazione": "somma",
+  "avvisi": [],
+  "riga_inferiore_facoltativa": {
+   "perc": 10
+  }
+ },
+ "pdf": {
+  "allegato": "ALLEGATO 4 (Forlì)",
+  "titolo": "Determinazione dei limiti abitativi ed elementi utili per individuare il canone di locazione abitativo agevolato e transitorio",
+  "sottotitolo": "Legge 431/1998, art. 2, c. 3, legge 2/2002, D.M. 30/12/02 e D.M. 16/01/2017 ed Accordo territoriale del 19/12/2017 (P.G. 0109249/17 del 27/12/2017)",
+  "titolo_superficie": "DATI E MISURE",
+  "titolo_elementi": "Determinazione della fascia (All. 3 dell'Accordo territoriale del Comune di Forlì)",
+  "etichetta_conteggio": "TOTALE DEI PUNTI",
+  "dichiarazione": "Le parti dichiarano: a) di aver preso visione, per quanto interessa, del testo integrale dell'Accordo territoriale; b) che gli elementi sopra riportati sono stati forniti e corrispondono a verità; c) che concordano nell'individuazione del canone all'interno delle fasce di oscillazione desunte dalla compilazione delle precedenti tabelle. Il presente all. «4» sottoscritto dal locatore e conduttore, «obbligatorio» unitamente al Contratto d'affitto regolarmente registrato, forma altresì «Attestazione ed Asseverazione del Canone di locazione economico e normativo» ed è utile alla parte locatrice per ottenere la riduzione IMU dal Comune di Forlì.",
+  "firme": [
+   "la parte locatrice",
+   "la parte conduttrice"
+  ],
+  "nota_zone": "La zona si ricava dal foglio di mappa catastale dell'immobile (lo trovi nella visura): l'allegato 1 dell'accordo elenca i fogli delle zone A, B, C e D, e c'è anche la cartina. Il centro storico è diviso fra la zona A e la zona B."
+ }
+}

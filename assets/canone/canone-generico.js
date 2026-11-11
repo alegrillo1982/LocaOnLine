@@ -212,7 +212,8 @@
         chiave = (s.maggiorazioni_scelte || {}).casa ? "casa"
           : TS ? (U === null ? TS[0][1] : ((TS.find((x) => U <= x[0]) || [])[1] || R.tabella_oltre))
           : U === null ? "70" : U <= 45 ? "45" : U <= 70 ? "70" : U <= 120 ? "120" : "oltre";
-        r.tipologia = chiave;
+        if (s._tabella) chiave = s._tabella;
+        r.tipologia = chiave; r.mq_tabella = U;
       }
       if (R.tabella_per === "conteggio") {
         // es. Taranto: la tabella dipende da quanti elementi di un gruppo sono presenti (stato dello stabile)
@@ -382,6 +383,19 @@
         if (R.minimo_assoluto === undefined) avvisi.push(`Il canone pattuito è sotto il minimo (€ ${virgola(r.canone_minimo)} al mese).`);
         else if (pattuito < R.minimo_assoluto) avvisi.push(`Il canone non può scendere sotto € ${virgola(R.minimo_assoluto)} al mese.`);
         else avvisi.push(`Sotto il minimo della fascia (€ ${virgola(r.canone_minimo)}): consentito, purché non sotto € ${virgola(R.minimo_assoluto)} al mese.`);
+      }
+    }
+    // es. Forlì: se la superficie supera di poco (perc) il limite della riga inferiore, il massimo può arrivare a quello di quella riga
+    const RF = R.riga_inferiore_facoltativa;
+    if (RF && R.tabella_soglie && !s._riga && r.tipologia && r.canone_massimo !== null && r.mq_tabella !== null) {
+      const TS = R.tabella_soglie, k = r.tipologia === R.tabella_oltre ? TS.length : TS.findIndex((x) => x[1] === r.tipologia);
+      if (k > 0 && r.mq_tabella <= TS[k - 1][0] * (1 + RF.perc / 100)) {
+        const r2 = calcola(accordo, { ...s, _riga: true, _tabella: TS[k - 1][1], canone_mensile: "" });
+        if (r2.canone_massimo !== null && r2.canone_massimo > r.canone_massimo) {
+          r.canone_massimo = r2.canone_massimo; r.valori = [r.valori[0], r2.valori[1]]; r.valore_proposto = r2.valori[1];
+          if (numero(s.valore_mq) === null) { r.valore = r2.valori[1]; r.canone_intero = r2.canone_intero; r.canone = r2.canone; }
+          avvisi.push(`Superficie entro il ${RF.perc}% oltre ${virgola(TS[k - 1][0], 0)} mq: il massimo può arrivare a quello della riga inferiore della tabella (minimo della riga normale).`);
+        }
       }
     }
     // es. Pescara: il canone non può essere più basso di quello della riga inferiore della tabella (alloggio più piccolo)

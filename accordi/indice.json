@@ -1007,6 +1007,29 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fferrara-2023-10-09-integrazione-2024-07-08-adesioni.pdf?alt=media&token=56c03049-7633-4684-bfaa-40e9afacb0ed"
     }
    ]
+  },
+  {
+   "comune": "Forlì",
+   "provincia": "FC",
+   "accordo": "forli-2017-12-19",
+   "sottoscritto": "19 dicembre 2017",
+   "depositato": "27 dicembre 2017",
+   "zone": 4,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fforli-2017-12-19-accordo.pdf?alt=media&token=0b5daef4-a4e9-469f-91a9-72a3cb3327df",
+   "documenti": [
+    {
+     "nome": "Accordo firmato protocollato",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fforli-2017-12-19-accordo-firmato-protocollato.pdf?alt=media&token=078a71be-a478-4ff0-bd80-c70328d282ab"
+    },
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fforli-2017-12-19-accordo.pdf?alt=media&token=0b5daef4-a4e9-469f-91a9-72a3cb3327df"
+    },
+    {
+     "nome": "Allegato 4 attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fforli-2017-12-19-allegato-4-attestazione.pdf?alt=media&token=05cc75c4-bc37-4f08-aec5-abcca8d082da"
+    }
+   ]
   }
  ]
 }
