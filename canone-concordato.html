@@ -791,6 +791,108 @@
       <ul id="genova-avvisi" class="avvisi-canone" aria-live="polite"></ul>
     </section>
   </form>
+  <!-- Scheda per l'accordo metropolitano di Bologna (2024): riproduce
+       l'"Attestazione bilaterale di rispondenza" (allegato 14). Visibile solo
+       con l'accordo di Bologna. -->
+  <form id="scheda-bologna" class="scheda-bologna" autocomplete="off" onsubmit="return false" hidden>
+
+    <section class="sezione-canone">
+      <h2>Contratto</h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Tipo di contratto">
+        <label><input type="radio" name="tipo" value="agevolato" checked> Agevolato (3 + 2)</label>
+        <label><input type="radio" name="tipo" value="transitorio"> Transitorio</label>
+        <label><input type="radio" name="tipo" value="studenti"> Studenti universitari</label>
+      </div>
+      <div class="griglia-campi">
+        <label class="solo-agevolato">Durata<select name="durata_anni">
+          <option value="3">3 + 2 anni</option><option value="4">4 + 2 anni (+5%)</option><option value="5">5 + 2 anni (+8%)</option><option value="6">6 + 2 anni (+12%)</option></select></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Parti e immobile</h2>
+      <div class="griglia-campi">
+        <label class="largo">Locatore<input type="text" name="locatore"></label>
+        <label>C.F. locatore<input type="text" name="locatore_cf" class="maiuscolo"></label>
+        <label class="largo">Conduttore<input type="text" name="conduttore"></label>
+        <label>C.F. conduttore<input type="text" name="conduttore_cf" class="maiuscolo"></label>
+        <label class="largo">Via e numero civico<input type="text" name="indirizzo"></label>
+        <label>Foglio<input type="text" name="foglio" inputmode="numeric"></label>
+        <label>Particella<input type="text" name="particella"></label>
+        <label>Subalterno<input type="text" name="subalterno" inputmode="numeric"></label>
+      </div>
+      <div class="griglia-campi stacco">
+        <label>Zona<select name="zona"><option value="">scegli…</option></select></label>
+        <label>Vani abitabili<select name="vani"><option value="">scegli…</option></select></label>
+      </div>
+      <p class="nota-copia stacco">Zona: cerca l'indirizzo sulla
+        <a href="https://cartografia.cittametropolitana.bo.it/canone-concordato/" target="_blank" rel="noopener" class="text-[#2E7CF6] underline">mappa della Città metropolitana</a>.
+        Le vie di confine valgono per la zona di valore più alto. Vani: camere, soggiorno, studio, sala da pranzo, cucina (almeno 9 mq con finestra); non bagni e accessori.</p>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Superficie</h2>
+      <div class="griglia-campi">
+        <label class="largo">Superficie dell'alloggio da<select name="fonte_sup">
+          <option value="catastale">visura (escluse aree scoperte)</option><option value="interna">misura interna dalla pianta</option></select></label>
+      </div>
+      <div class="caselle colonna stacco solo-catastale">
+        <label><input type="checkbox" name="con_cantina"> La superficie catastale comprende la cantina o soffitta (−10% invece di −5%)</label>
+      </div>
+      <div class="scorre stacco">
+        <table class="tabella-superfici superfici-bologna">
+          <thead><tr><th>Voce</th><th>Mq</th><th>Mq conv.</th></tr></thead>
+          <tbody id="bologna-superfici"></tbody>
+          <tfoot><tr><th colspan="2">Superficie convenzionale</th><td class="totale"><b id="bologna-totale">—</b> mq</td></tr></tfoot>
+        </table>
+      </div>
+      <div class="caselle colonna stacco">
+        <label><input type="checkbox" name="porzione"> Si affitta solo una porzione (es. una stanza)</label>
+      </div>
+      <div class="griglia-campi solo-porzione">
+        <label>A · mq del conduttore<input type="text" name="mq_conduttore" class="campo-numero" inputmode="decimal"></label>
+        <label>B · mq del locatore o di altri<input type="text" name="mq_altri" class="campo-numero" inputmode="decimal"></label>
+        <label>C · mq delle parti comuni<input type="text" name="mq_comuni" class="campo-numero" inputmode="decimal"></label>
+      </div>
+      <p class="nota-copia stacco" id="bologna-sup-nota"></p>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Parametri <small id="bologna-conteggio"></small></h2>
+      <p class="nota-copia">Contano solo se installati a spese del proprietario. Fino a 3: fascia minima; da 4 a 7: media; oltre 7: massima.</p>
+      <div id="bologna-elementi" class="caselle colonna elementi"></div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Maggiorazioni <small>si sommano</small></h2>
+      <div class="caselle colonna">
+        <label><input type="checkbox" name="pregio"> Immobile di pregio: categoria A/1, A/7, A/8, A/9 o vincolato (+8%)</label>
+        <label class="no-transitorio"><input type="checkbox" name="deposito"> Deposito cauzionale fino a una mensilità, senza altre garanzie onerose (+5%)</label>
+        <label class="no-transitorio"><input type="checkbox" name="recesso"> Recesso libero del conduttore con preavviso fino a 3 mesi (+5%)</label>
+      </div>
+      <div class="griglia-campi stacco">
+        <label class="largo">Arredo<select name="arredo">
+          <option value="">non arredato</option><option value="si">completamente arredato, con elenco degli arredi (fino a +13%)</option><option value="nuovo">mobili acquistati nei 2 anni precedenti, con fatture (+15%)</option></select></label>
+        <label class="largo">Classe energetica (con APE consegnato)<select name="energia">
+          <option value="">nessuna maggiorazione</option><option value="ab">A o B (+12%)</option><option value="cd">C o D (+7%)</option></select></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone calcolo">
+      <h2>Calcolo del canone</h2>
+      <dl class="righe-calcolo">
+        <dt>Fascia</dt><dd id="bologna-esito-fascia">—</dd>
+        <dt>Maggiorazioni</dt><dd id="bologna-esito-magg">—</dd>
+        <dt><label for="bologna-valore">Valore al mq all'anno (€)</label></dt>
+        <dd><input type="text" id="bologna-valore" name="valore_mq" inputmode="decimal" class="campo-numero"> <small id="bologna-valore-nota"></small></dd>
+        <dt>Canone mensile minimo</dt><dd id="bologna-esito-minimo">—</dd>
+        <dt>Canone mensile massimo</dt><dd><b id="bologna-esito-massimo">—</b></dd>
+        <dt><label for="bologna-pattuito">Canone mensile pattuito (€)</label></dt>
+        <dd><input type="text" id="bologna-pattuito" name="canone_mensile" inputmode="decimal" class="campo-numero"></dd>
+      </dl>
+      <ul id="bologna-avvisi" class="avvisi-canone" aria-live="polite"></ul>
+    </section>
+  </form>
   <div class="barra-canone" role="region" aria-label="Riepilogo del canone">
     <span>Canone massimo <b id="barra-massimo">—</b><span class="solo-largo"> al mese</span></span>
     <span id="stato-salvataggio" class="stato-salvataggio" aria-live="polite"></span>
@@ -1201,6 +1303,9 @@
   <script src="assets/canone/canone-genova.js"></script>
   <script src="assets/canone/stampa-genova.js"></script>
   <script src="assets/canone/scheda-genova.js"></script>
+  <script src="assets/canone/canone-bologna.js"></script>
+  <script src="assets/canone/stampa-bologna.js"></script>
+  <script src="assets/canone/scheda-bologna.js"></script>
   <script src="assets/canone/modulo-contratto.js"></script>
   <script src="assets/canone/pagina-canone.js"></script>
   <script type="module" src="assets/canone/salva-canone.js"></script>

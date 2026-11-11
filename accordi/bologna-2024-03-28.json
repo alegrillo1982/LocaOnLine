@@ -1,0 +1,412 @@
+{
+ "accordo": {
+  "codice": "bologna-2024-03-28",
+  "modello": "bologna-2024",
+  "comune": "Bologna",
+  "provincia": "BO",
+  "titolo": "Accordo applicabile nel territorio metropolitano di Bologna",
+  "data": "2024-03-27",
+  "data_testo": "27 marzo 2024",
+  "deposito": "P.G. 20926/2024",
+  "deposito_data": "28.03.2024",
+  "protocollo": "20926/2024",
+  "ufficio": "Città metropolitana di Bologna",
+  "ufficio_breve": "Città metropolitana di Bologna",
+  "valido_fino": "2027-03-31",
+  "firmatari_proprieta": [
+   "ASPPI",
+   "UPPI",
+   "CONFABITARE",
+   "AIPI-CONFAPPI",
+   "APPC",
+   "UNIONCASA",
+   "APE",
+   "APIB FEDERPROPRIETA'"
+  ],
+  "firmatari_conduttori": [
+   "SUNIA",
+   "SICET",
+   "UNIAT",
+   "UNIONE INQUILINI",
+   "ASSOCASA",
+   "APIAB-CONIA",
+   "FEDER.CASA",
+   "AIDA"
+  ],
+  "nota": "Accordo metropolitano firmato il 27/03/2024, depositato il 28/03/2024 (P.G. 20926), in vigore per i contratti dal 1/4/2024 fino al 31/03/2027 e comunque fino al nuovo (art. 16). Integrazioni: 13/05/2024 (P.G. 32004, allegati 3 e 7, non riguardano il Comune di Bologna) e 25/11/2024 (P.G. 77163: vie di confine, nuova esigenza transitoria). Qui solo il Comune di Bologna: allegato 1 (tariffe) e 5 (zone).",
+  "fonte": "Città metropolitana di Bologna, pagina dell'accordo (testo firmato, versione accessibile, allegati)."
+ },
+ "esempio_zona": "pregio, A o B (mappa della Città metropolitana)",
+ "regole": {
+  "unita": "euro annui al mq di superficie convenzionale",
+  "zone": [
+   [
+    "pregio",
+    "Zona di pregio"
+   ],
+   [
+    "A",
+    "Zona A"
+   ],
+   [
+    "B",
+    "Zona B"
+   ]
+  ],
+  "vani": [
+   [
+    "mono",
+    "monolocale"
+   ],
+   [
+    "2",
+    "2 vani"
+   ],
+   [
+    "3",
+    "3 vani"
+   ],
+   [
+    "4",
+    "4 vani"
+   ],
+   [
+    "5",
+    "5 vani"
+   ],
+   [
+    "oltre5",
+    "oltre 5 vani"
+   ]
+  ],
+  "tariffe": {
+   "pregio": {
+    "mono": [
+     [
+      86,
+      147
+     ],
+     [
+      95,
+      163
+     ],
+     [
+      103,
+      175
+     ]
+    ],
+    "2": [
+     [
+      75,
+      128
+     ],
+     [
+      83,
+      141
+     ],
+     [
+      90,
+      153
+     ]
+    ],
+    "3": [
+     [
+      65,
+      111
+     ],
+     [
+      72,
+      122
+     ],
+     [
+      78,
+      133
+     ]
+    ],
+    "4": [
+     [
+      62,
+      101
+     ],
+     [
+      68,
+      111
+     ],
+     [
+      74,
+      121
+     ]
+    ],
+    "5": [
+     [
+      56,
+      91
+     ],
+     [
+      62,
+      100
+     ],
+     [
+      67,
+      109
+     ]
+    ],
+    "oltre5": [
+     [
+      50,
+      81
+     ],
+     [
+      55,
+      90
+     ],
+     [
+      60,
+      98
+     ]
+    ]
+   },
+   "A": {
+    "mono": [
+     [
+      71,
+      120
+     ],
+     [
+      77,
+      130
+     ],
+     [
+      86,
+      147
+     ]
+    ],
+    "2": [
+     [
+      61,
+      104
+     ],
+     [
+      67,
+      113
+     ],
+     [
+      75,
+      127
+     ]
+    ],
+    "3": [
+     [
+      53,
+      91
+     ],
+     [
+      58,
+      99
+     ],
+     [
+      65,
+      111
+     ]
+    ],
+    "4": [
+     [
+      51,
+      82
+     ],
+     [
+      55,
+      90
+     ],
+     [
+      62,
+      101
+     ]
+    ],
+    "5": [
+     [
+      46,
+      74
+     ],
+     [
+      50,
+      81
+     ],
+     [
+      56,
+      91
+     ]
+    ],
+    "oltre5": [
+     [
+      41,
+      67
+     ],
+     [
+      46,
+      73
+     ],
+     [
+      50,
+      81
+     ]
+    ]
+   },
+   "B": {
+    "mono": [
+     [
+      60,
+      102
+     ],
+     [
+      66,
+      112
+     ],
+     [
+      72,
+      122
+     ]
+    ],
+    "2": [
+     [
+      52,
+      90
+     ],
+     [
+      58,
+      98
+     ],
+     [
+      63,
+      107
+     ]
+    ],
+    "3": [
+     [
+      45,
+      78
+     ],
+     [
+      50,
+      84
+     ],
+     [
+      54,
+      93
+     ]
+    ],
+    "4": [
+     [
+      44,
+      70
+     ],
+     [
+      48,
+      78
+     ],
+     [
+      52,
+      84
+     ]
+    ],
+    "5": [
+     [
+      39,
+      63
+     ],
+     [
+      44,
+      70
+     ],
+     [
+      47,
+      77
+     ]
+    ],
+    "oltre5": [
+     [
+      36,
+      57
+     ],
+     [
+      38,
+      63
+     ],
+     [
+      42,
+      69
+     ]
+    ]
+   }
+  },
+  "fasce": {
+   "nomi": [
+    "minima",
+    "media",
+    "massima"
+   ],
+   "fino": [
+    3,
+    7
+   ]
+  },
+  "superficie": {
+   "catastale_con_cantina": 0.1,
+   "catastale_senza_cantina": 0.05,
+   "autorimessa": 0.5,
+   "posto_auto": 0.2,
+   "terrazzo": [
+    10,
+    0.1
+   ],
+   "verde": [
+    10,
+    0.1
+   ]
+  },
+  "maggiorazioni": {
+   "pregio": 8,
+   "arredo": 13,
+   "arredo_nuovo": 15,
+   "durata": {
+    "4": 5,
+    "5": 8,
+    "6": 12
+   },
+   "deposito": 5,
+   "recesso": 5,
+   "energia_ab": 12,
+   "energia_cd": 7
+  },
+  "esclusi": {
+   "transitorio": [
+    "durata",
+    "deposito",
+    "recesso"
+   ],
+   "studenti": [
+    "durata"
+   ]
+  }
+ },
+ "elementi": [
+  "Tipologia A/1-A/2-A/3-A/7-A/8-A/9 (dalla visura catastale)",
+  "Autorimessa singola (accessibile, con corrente elettrica, locata con l'abitazione)",
+  "Posto auto esclusivo, anche scoperto, regolarmente accatastato (locato con l'abitazione)",
+  "Accesso fino al 1° piano o, se superiore, con ascensore (seminterrato solo con area esclusiva collegata)",
+  "Riscaldamento autonomo (su tutta la casa, a norma, con libretto) o contacalorie se centralizzato, o a pavimento/parete",
+  "Porta blindata o sistema di allarme o cancello di sicurezza",
+  "Doppi vetri su almeno l'80% degli infissi",
+  "Condizionamento: impianto che serve almeno il 50% dei vani utili (non solo apparecchi portatili)",
+  "Area verde condominiale, prevalentemente erbosa e fruibile dal conduttore",
+  "Area verde esclusiva, prevalentemente erbosa e fruibile dal conduttore",
+  "Doppio servizio (il secondo bagno almeno con WC e lavabo)",
+  "Interventi di risparmio energetico documentati, con APE almeno in classe D e APE precedente ai lavori",
+  "Cantina o soffitta",
+  "Cortile con possibilità di parcheggio di autoveicoli",
+  "Balcone o terrazzo o lastrico solare di pertinenza esclusiva",
+  "Anno di costruzione o di recupero edilizio importante successivo al 1/1/2013",
+  "Impianto fotovoltaico o pannelli solari per l'acqua calda",
+  "Superamento delle barriere architettoniche (anche nelle parti condominiali)"
+ ]
+}

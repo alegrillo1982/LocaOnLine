@@ -133,6 +133,41 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgenova-2025-06-03-accordo.pdf?alt=media&token=862ee9fb-be57-4c78-a636-27b6fb94d2f4"
     }
    ]
+  },
+  {
+   "comune": "Bologna",
+   "provincia": "BO",
+   "accordo": "bologna-2024-03-28",
+   "sottoscritto": "27 marzo 2024",
+   "depositato": "28 marzo 2024",
+   "zone": 3,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbologna-2024-03-28-accordo.pdf?alt=media&token=f586efbc-cf31-4057-89b8-893b8b6e93f4",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbologna-2024-03-28-accordo.pdf?alt=media&token=f586efbc-cf31-4057-89b8-893b8b6e93f4"
+    },
+    {
+     "nome": "Allegati 14 15 16 attestazioni",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbologna-2024-03-28-allegati-14-15-16-attestazioni.pdf?alt=media&token=adc375c2-59ba-415a-a587-b6139718d588"
+    },
+    {
+     "nome": "Allegato 1 tariffe bologna",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbologna-2024-03-28-allegato-1-tariffe-bologna.pdf?alt=media&token=f2deae0a-6081-4581-8c13-bc832d865c91"
+    },
+    {
+     "nome": "Allegato 5 zone bologna",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbologna-2024-03-28-allegato-5-zone-bologna.pdf?alt=media&token=911ba127-16e8-4d77-930f-3fe02dfb31bd"
+    },
+    {
+     "nome": "Integrazione 2024 05 13",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbologna-2024-03-28-integrazione-2024-05-13.pdf?alt=media&token=d99576e4-6daa-48a0-a46a-9b702b37f811"
+    },
+    {
+     "nome": "Integrazione 2024 11 25",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbologna-2024-03-28-integrazione-2024-11-25.pdf?alt=media&token=77db1393-a081-4b40-885b-78ab0c4f1530"
+    }
+   ]
   }
  ]
 }

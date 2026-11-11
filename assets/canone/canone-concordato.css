@@ -196,6 +196,10 @@
 .cc .scheda-genova:not(.tipo-agevolato) .solo-agevolato, .cc .scheda-genova.tipo-agevolato .no-agevolato,
 .cc .scheda-genova:not(.porzione) .solo-porzione, .cc .scheda-genova.porzione .no-porzione,
 .cc .scheda-genova:not(.da-ape) .se-ape, .cc .scheda-genova.porzione .se-ape { display: none; }
+/* scheda di Bologna (scheda-bologna.js) */
+.cc .scheda-bologna:not(.tipo-agevolato) .solo-agevolato, .cc .scheda-bologna.tipo-transitorio .no-transitorio,
+.cc .scheda-bologna:not(.porzione) .solo-porzione, .cc .scheda-bologna:not(.da-catastale) .solo-catastale { display: none; }
+.cc .superfici-bologna .risultato { font-family: var(--dati); font-size: 14px; white-space: nowrap; }
 .cc .griglia-campi .cerca-via { position: relative; min-width: 0; }
 .cc .griglia-campi .cerca-via .risultati-zona { top: 100%; margin-top: 4px; }
 
@@ -208,6 +212,8 @@
   .cc .tabella-superfici.superfici-torino tr[data-riga] td:nth-of-type(3)::before { content: "Mq convenzionali"; }
   .cc .tabella-superfici.superfici-palermo tr[data-riga] td:nth-of-type(1)::before { content: "Mq"; }
   .cc .tabella-superfici.superfici-palermo tr[data-riga] td:nth-of-type(2)::before { content: "Mq convenzionali"; }
+  .cc .tabella-superfici.superfici-bologna tr[data-riga] td:nth-of-type(1)::before { content: "Mq"; }
+  .cc .tabella-superfici.superfici-bologna tr[data-riga] td:nth-of-type(2)::before { content: "Mq convenzionali"; }
   .cc .sezione-canone { padding: 16px 14px; }
   .cc .griglia-campi .largo { grid-column: 1 / -1; }
   .cc .parametri { grid-template-columns: 1fr; }
