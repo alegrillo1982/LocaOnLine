@@ -13,14 +13,14 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Canone concordato: calcolo e contratto, Roma e grandi città</title>
-  <meta name="description" content="Calcola il canone concordato con gli accordi di Roma, Milano, Napoli, Torino, Palermo e Genova e compila il contratto 3+2 o transitorio, in PDF o Word."/>
+  <meta name="description" content="Calcola il canone concordato a Roma, Milano, Napoli, Torino e in altre sei città e compila il contratto 3+2 o transitorio, in PDF o Word."/>
   <link rel="canonical" href="https://locaonline.it/canone-concordato.html"/>
   <meta name="robots" content="index, follow"/>
 
   <meta property="og:type"        content="website"/>
   <meta property="og:url"         content="https://locaonline.it/canone-concordato.html"/>
   <meta property="og:title"       content="Canone concordato: calcolo e contratto, Roma e grandi città"/>
-  <meta property="og:description" content="Calcola il canone concordato con gli accordi di Roma, Milano, Napoli, Torino, Palermo e Genova e compila il contratto 3+2 o transitorio, in PDF o Word."/>
+  <meta property="og:description" content="Calcola il canone concordato a Roma, Milano, Napoli, Torino e in altre sei città e compila il contratto 3+2 o transitorio, in PDF o Word."/>
   <meta property="og:locale"      content="it_IT"/>
   <meta name="twitter:card"       content="summary"/>
   <meta name="twitter:title"      content="Canone concordato: calcolo e contratto, Roma e grandi città"/>
@@ -52,7 +52,7 @@
           {
             "@type": "Question",
             "name": "Cos'è la scheda di calcolo del canone concordato?",
-            "acceptedAnswer": { "@type": "Answer", "text": "È il modulo previsto dall'accordo territoriale del Comune (per Roma l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024, per Palermo l'attestazione di rispondenza dell'accordo del 23 gennaio 2020, per Genova la scheda per la determinazione del canone dell'accordo del 29 maggio 2025): parte dalla zona, dalla superficie convenzionale e dalle dotazioni dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato." }
+            "acceptedAnswer": { "@type": "Answer", "text": "È il modulo previsto dall'accordo territoriale del Comune (per Roma l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024, per Palermo l'attestazione di rispondenza dell'accordo del 23 gennaio 2020, per Genova la scheda per la determinazione del canone dell'accordo del 29 maggio 2025, per Bologna l'attestazione bilaterale dell'accordo metropolitano del 27 marzo 2024, per Bari la scheda della zona dell'accordo del 13 marzo 2024, per Venezia la Tab. 2 con la scheda di calcolo e l'attestazione dell'accordo integrato il 28 luglio 2026; per Firenze, dove i modelli di attestazione non sono pubblicati, un prospetto che segue gli articoli dell'accordo del 3 luglio 2025): parte dalla zona, dalla superficie convenzionale e dalle dotazioni dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato." }
           },
           {
             "@type": "Question",
@@ -1080,6 +1080,104 @@
       <ul id="bari-avvisi" class="avvisi-canone" aria-live="polite"></ul>
     </section>
   </form>
+  <!-- Scheda per l'accordo di Venezia (2026): riproduce la Tab. 2 (elementi
+       oggettivi), la scheda di calcolo e l'attestazione (allegato 4).
+       Visibile solo con l'accordo di Venezia. -->
+  <form id="scheda-venezia" class="scheda-venezia" autocomplete="off" onsubmit="return false" hidden>
+
+    <section class="sezione-canone">
+      <h2>Contratto</h2>
+      <div class="scelta-tipo" role="radiogroup" aria-label="Tipo di contratto">
+        <label><input type="radio" name="tipo" value="agevolato" checked> Agevolato (3 + 2)</label>
+        <label><input type="radio" name="tipo" value="transitorio"> Transitorio (max +10%)</label>
+        <label><input type="radio" name="tipo" value="studenti"> Studenti universitari (max +15%)</label>
+      </div>
+      <div class="griglia-campi">
+        <label class="solo-agevolato">Durata<select name="durata_anni">
+          <option value="3">3 + 2 anni</option><option value="4">4 + 2 anni (+2%)</option><option value="5">5 + 2 anni (+4%)</option><option value="6">6 + 2 anni o più (+6%)</option></select></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Parti e immobile</h2>
+      <div class="griglia-campi">
+        <label class="largo">Locatore<input type="text" name="locatore"></label>
+        <label>C.F. locatore<input type="text" name="locatore_cf" class="maiuscolo"></label>
+        <label class="largo">Conduttore<input type="text" name="conduttore"></label>
+        <label>C.F. conduttore<input type="text" name="conduttore_cf" class="maiuscolo"></label>
+        <label class="largo">Indirizzo (sestiere o via e civico)<input type="text" name="indirizzo"></label>
+        <label>Piano<input type="text" name="piano"></label>
+        <label>Interno<input type="text" name="interno"></label>
+      </div>
+      <div class="griglia-campi stacco">
+        <label class="largo">Zona omogenea<select name="zona"><option value="">scegli…</option></select></label>
+        <label class="largo no-terraferma">Dove si trova<select name="localita">
+          <option value="venezia">Venezia centro storico e isole (escluso il Lido)</option><option value="lido">Lido e Pellestrina</option></select></label>
+      </div>
+      <p class="nota-copia stacco">Zone: <a href="https://www.comune.venezia.it/sites/comune.venezia.it/files/immagini/DDR/Patti_Territoriali/Microzone_19_01_Ottimizzata.pdf" target="_blank" rel="noopener" class="text-[#2E7CF6] underline">tavola delle zone omogenee del Comune di Venezia</a>.</p>
+      <div class="caselle colonna stacco">
+        <label class="se-pregio"><input type="checkbox" name="pregio"> <span id="venezia-pregio-testo">Zona di particolare pregio</span></label>
+        <label class="solo-zona1"><input type="checkbox" name="zona1_penalita"> Altezza sotto 2,50 m, o piano terra sotto quota 110 cm in edificio senza difese dall'acqua alta (massimo −20%)</label>
+        <label class="solo-zona5"><input type="checkbox" name="degrado"> Area di particolare degrado dell'area industriale di Marghera (−15%)</label>
+        <label><input type="checkbox" name="a5"> Categoria catastale A/5 (subfascia inferiore)</label>
+        <label><input type="checkbox" name="acqua_alta"> Piano terra sotto quota 110 cm senza opere contro l'acqua alta (subfascia inferiore)</label>
+        <label><input type="checkbox" name="vincolato"> Immobile vincolato, art. 1 c. 2 lett. a) L. 431/98 (+15%)</label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Superficie</h2>
+      <div class="scorre">
+        <table class="tabella-superfici superfici-venezia">
+          <thead><tr><th>Voce</th><th>Mq</th><th>Mq conv.</th></tr></thead>
+          <tbody id="venezia-superfici"></tbody>
+          <tfoot><tr><th colspan="2">Superficie convenzionale</th><td class="totale"><b id="venezia-totale">—</b> mq</td></tr></tfoot>
+        </table>
+      </div>
+      <p class="nota-copia stacco" id="venezia-sup-nota"></p>
+      <div class="caselle colonna stacco">
+        <label><input type="checkbox" name="porzione"> Si affitta solo una porzione (es. una stanza)</label>
+      </div>
+      <div class="griglia-campi solo-porzione">
+        <label class="largo">Mq della porzione, con la quota delle parti condivise<input type="text" name="mq_porzione" class="campo-numero" inputmode="decimal"></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Elementi oggettivi (Tab. 2) <small id="venezia-conteggio"></small></h2>
+      <div id="venezia-elementi"></div>
+    </section>
+
+    <section class="sezione-canone">
+      <h2>Altri criteri (Tab. 3) e maggiorazioni</h2>
+      <div class="caselle colonna">
+        <label><input type="checkbox" name="manutenzione"> Almeno 3 interventi di manutenzione documentati negli ultimi 10 anni: caldaia, impianto elettrico, bagno, pavimenti, serramenti, tetto, cappotto, scuri (massimo +10%)</label>
+        <label><input type="checkbox" name="vetusto"> Ultimato o ristrutturato da oltre 30 anni, senza lavori su caldaia, impianto elettrico, finestre e bagno (massimo −10%, non nel centro storico)</label>
+        <label><input type="checkbox" name="senza_bagno"> Senza bagno interno, o in terraferma senza allaccio alla fognatura (dal minimo al minimo +10%)</label>
+      </div>
+      <div class="griglia-campi stacco">
+        <label class="largo">Arredo (non conta sulle superfici accessorie)<select name="arredo">
+          <option value="">non arredato</option><option value="parziale">arredato, almeno cucina, bagno e camera (fino a +15%)</option><option value="completo">arredo completo con elettrodomestici, da inventario (fino a +25%)</option></select></label>
+        <label class="largo">Classe energetica (APE)<select name="energia">
+          <option value="">C, D, E o senza variazione</option><option value="A">A (fino a +15%)</option><option value="B">B (fino a +5%)</option><option value="F">F (−5%)</option><option value="G">G (−10%)</option></select></label>
+      </div>
+    </section>
+
+    <section class="sezione-canone calcolo">
+      <h2>Calcolo del canone</h2>
+      <dl class="righe-calcolo">
+        <dt>Subfascia</dt><dd id="venezia-esito-fascia">—</dd>
+        <dt>Correzioni</dt><dd id="venezia-esito-magg">—</dd>
+        <dt><label for="venezia-valore">Valore al mq all'anno (€)</label></dt>
+        <dd><input type="text" id="venezia-valore" name="valore_mq" inputmode="decimal" class="campo-numero"> <small id="venezia-valore-nota"></small></dd>
+        <dt>Canone mensile minimo</dt><dd id="venezia-esito-minimo">—</dd>
+        <dt>Canone mensile massimo</dt><dd><b id="venezia-esito-massimo">—</b></dd>
+        <dt><label for="venezia-pattuito">Canone mensile pattuito (€)</label></dt>
+        <dd><input type="text" id="venezia-pattuito" name="canone_mensile" inputmode="decimal" class="campo-numero"></dd>
+      </dl>
+      <ul id="venezia-avvisi" class="avvisi-canone" aria-live="polite"></ul>
+    </section>
+  </form>
   <div class="barra-canone" role="region" aria-label="Riepilogo del canone">
     <span>Canone massimo <b id="barra-massimo">—</b><span class="solo-largo"> al mese</span></span>
     <span id="stato-salvataggio" class="stato-salvataggio" aria-live="polite"></span>
@@ -1325,7 +1423,7 @@
             <summary class="font-semibold cursor-pointer">Cos'è la scheda di calcolo del canone concordato?</summary>
             <p class="text-sm text-[#4A5568] leading-relaxed mt-2">È il modulo previsto dall'accordo territoriale del Comune (per Roma
               l'Allegato 2/B dell'accordo del 25 luglio 2023, per Milano la richiesta di attestazione bilaterale dell'accordo
-              del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024, per Palermo l'attestazione di rispondenza dell'accordo del 23 gennaio 2020, per Genova la scheda per la determinazione del canone dell'accordo del 29 maggio 2025): parte dalla zona, dalla superficie convenzionale e dalle dotazioni
+              del 27 luglio 2023, per Napoli la scheda determinativa dell'accordo del 29 aprile 2025, per Torino l'attestazione di congruità dell'accordo aggiornato al 15 aprile 2024, per Palermo l'attestazione di rispondenza dell'accordo del 23 gennaio 2020, per Genova la scheda per la determinazione del canone dell'accordo del 29 maggio 2025, per Bologna l'attestazione bilaterale dell'accordo metropolitano del 27 marzo 2024, per Bari la scheda della zona dell'accordo del 13 marzo 2024, per Venezia la Tab. 2 con la scheda di calcolo e l'attestazione dell'accordo integrato il 28 luglio 2026; per Firenze, dove i modelli di attestazione non sono pubblicati, un prospetto che segue gli articoli dell'accordo del 3 luglio 2025): parte dalla zona, dalla superficie convenzionale e dalle dotazioni
               dell'immobile, e dà il canone mensile massimo che si può chiedere con un contratto a canone concordato.</p>
           </details>
           <details class="bg-white border border-slate-200 rounded-xl p-4">
@@ -1499,6 +1597,9 @@
   <script src="assets/canone/canone-bari.js"></script>
   <script src="assets/canone/stampa-bari.js"></script>
   <script src="assets/canone/scheda-bari.js"></script>
+  <script src="assets/canone/canone-venezia.js"></script>
+  <script src="assets/canone/stampa-venezia.js"></script>
+  <script src="assets/canone/scheda-venezia.js"></script>
   <script src="assets/canone/modulo-contratto.js"></script>
   <script src="assets/canone/pagina-canone.js"></script>
   <script type="module" src="assets/canone/salva-canone.js"></script>

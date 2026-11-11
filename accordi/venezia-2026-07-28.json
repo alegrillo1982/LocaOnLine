@@ -1,0 +1,229 @@
+{
+ "accordo": {
+  "codice": "venezia-2026-07-28",
+  "modello": "venezia-2026",
+  "comune": "Venezia",
+  "provincia": "VE",
+  "titolo": "Accordo territoriale integrato e modificato per il Comune di Venezia",
+  "data": "2026-07-28",
+  "data_testo": "28 luglio 2026",
+  "deposito": "",
+  "deposito_data": "",
+  "protocollo": "",
+  "ufficio": "",
+  "ufficio_breve": "",
+  "valido_fino": "",
+  "avviso_validita": "<strong>Accordo di Venezia integrato e modificato, firmato il 28 luglio 2026: vale per i contratti dal 1° settembre 2026.</strong> Da gennaio 2027 i valori massimi si aggiornano ogni anno al 100% dell'ISTAT: qui trovi i valori della Tabella 1 di gennaio 2026.",
+  "firmatari_proprieta": [
+   "CONFEDILIZIA",
+   "U.P.P.I.",
+   "A.S.P.P.I."
+  ],
+  "firmatari_conduttori": [
+   "S.U.N.I.A.",
+   "S.I.C.E.T.",
+   "U.N.I.A.T.",
+   "UNIONE INQUILINI"
+  ],
+  "nota": "Accordo depositato il 30/03/2018, integrato e modificato con l'allegato sub A firmato il 28/07/2026 (pagina del Comune di Venezia), efficace dal 01/09/2026. Data e protocollo del nuovo deposito non pubblicati. Tabella 1 dei valori aggiornata a gennaio 2026 (prot. PG/2026/0063980 del 03/02/2026).",
+  "fonte": "Comune di Venezia, pagina Patti territoriali: accordo integrato (15 pagine, scansione), Tabella 1 2026, Tab. 2, Tab. 3, allegato 4, tavola delle zone."
+ },
+ "esempio_zona": "la zona omogenea dalla tavola del Comune",
+ "regole": {
+  "unita": "euro annui al mq di superficie convenzionale",
+  "zone": [
+   [
+    "1",
+    "Venezia: San Marco, Dorsoduro Est"
+   ],
+   [
+    "2",
+    "Venezia: San Polo, Santa Croce, Cannaregio Sud, Castello Ovest; Lido: Piazzale S. M. Elisabetta, Gran Viale, area Casinò"
+   ],
+   [
+    "3",
+    "Venezia: Cannaregio Nord, Dorsoduro Ovest, Castello Sud ed Est, Giudecca, Murano, Tronchetto, Marittima, S. Giorgio, altre isole; Lido e Pellestrina: Pellestrina, Alberoni, Malamocco, fine di via S. Gallo, Ca' Bianca"
+   ],
+   [
+    "4",
+    "Terraferma: area tra Stazione, Corso del Popolo, Carpenedo, asse ferroviario Venezia-Trieste (Mestre centro)"
+   ],
+   [
+    "5",
+    "Terraferma: resto del territorio (Mestre, Marghera, Favaro, Zelarino, Chirignago...)"
+   ]
+  ],
+  "tab1": {
+   "1": [
+    [
+     87.82,
+     164.33
+    ],
+    [
+     126.42,
+     198.45
+    ],
+    [
+     154.74,
+     226.36
+    ]
+   ],
+   "2": [
+    [
+     49.22,
+     110.07
+    ],
+    [
+     81.38,
+     134.88
+    ],
+    [
+     101.97,
+     155.05
+    ]
+   ],
+   "3": [
+    [
+     42.77,
+     89.92
+    ],
+    [
+     64.64,
+     110.07
+    ],
+    [
+     81.38,
+     134.88
+    ]
+   ],
+   "4": [
+    [
+     45.37,
+     85.26
+    ],
+    [
+     60.77,
+     97.68
+    ],
+    [
+     71.09,
+     110.07
+    ]
+   ],
+   "5": [
+    [
+     32.46,
+     68.2
+    ],
+    [
+     46.02,
+     89.92
+    ],
+    [
+     64.64,
+     100.78
+    ]
+   ]
+  },
+  "pregio": {
+   "1": "area di particolare pregio della tavola B, immobili con affaccio sul Canal Grande, alle Zattere tra Punta Dogana e il pontile S. Basegio con affaccio sul canale della Giudecca (+30% sul massimo)",
+   "3": "immobili con affaccio o accesso da via Garibaldi o Riva dei Sette Martiri (+20% sul massimo)",
+   "4": "via Felisati e viale Garibaldi, vie su Largo Rotonda Garibaldi (Grimani, Nievo, Bixio, Cavalletto, Sagredo, Rismondo) (+20% sul massimo)",
+   "5": "Favaro: piazza Pastrello; Marghera: piazza Mercato e piazza S. Antonio (+20% sul massimo)"
+  },
+  "pregio_perc": {
+   "1": 30,
+   "3": 20,
+   "4": 20,
+   "5": 20
+  },
+  "degrado": 15,
+  "zona1_penalita": 20,
+  "manutenzione": 10,
+  "vetusta": 10,
+  "senza_bagno": 10,
+  "durata": {
+   "4": 2,
+   "5": 4,
+   "6": 6
+  },
+  "transitorio": 10,
+  "studenti": 15,
+  "vincolato": 15,
+  "energia": {
+   "A": 15,
+   "B": 5,
+   "F": -5,
+   "G": -10
+  },
+  "arredo": {
+   "parziale": 15,
+   "completo": 25
+  },
+  "superficie": {
+   "autorimessa": {
+    "5": 0.6,
+    "altre": 0.85
+   },
+   "posto_coperto": {
+    "5": 0.4,
+    "altre": 0.5
+   },
+   "posto_scoperto": {
+    "5": 0.2,
+    "altre": 0.3
+   },
+   "accessori": 0.25,
+   "scoperta": 0.15,
+   "verde": 0.1,
+   "basse": 0.5,
+   "tetto_scoperte": {
+    "3": 0.3,
+    "5": 0.3,
+    "altre": 0.5
+   }
+  }
+ },
+ "elementi": {
+  "A": [
+   "Impianto elettrico funzionante",
+   "Impianto di acqua corrente funzionante",
+   "Allacciamento alla rete del gas funzionante o impianto alternativo funzionante",
+   "Impianto di riscaldamento (centrale o autonomo) e produzione acqua calda funzionanti",
+   "Bagno interno completo (tazza, lavabo, vasca o doccia) con almeno una finestra o aerazione meccanica",
+   "Impianti tecnologici, di esalazione e scarico conformi alle norme igienico-sanitarie e di sicurezza vigenti"
+  ],
+  "B": [
+   "Autorimessa singola o posto auto coperto o scoperto (singolo o in autorimessa comune)",
+   "Cortile comune o area verde comune",
+   "Cantina o magazzino",
+   "Sottotetto o soffitta",
+   "Terrazza o balcone o poggiolo calpestabile o corte privata",
+   "Doppi vetri, doppi serramenti o vetrocamera su almeno il 50% delle finestre",
+   "Locale cucina con almeno una finestra (sotto 70 mq anche soggiorno con angolo cottura)",
+   "Porta blindata"
+  ],
+  "C": [
+   "Area verde di pertinenza della singola unità",
+   "Doppi servizi igienici, almeno uno completo e con finestra o aerazione meccanica",
+   "Ulteriore autorimessa singola o posto auto oltre al primo",
+   "Impianto di condizionamento",
+   "Dispositivo di superamento barriere architettoniche",
+   "Impianto di allarme",
+   "Terrazza esclusiva superiore a 20 mq",
+   "Impianto videocitofonico",
+   "Impianto ascensore oltre il secondo livello",
+   "Colonnine rifornimento auto elettriche",
+   "Impianto fotovoltaico certificato"
+  ],
+  "D": [
+   "Altana a uso esclusivo",
+   "Riva d'acqua per l'edificio",
+   "Altezza superiore a 3,20 m su oltre il 50% dell'alloggio",
+   "Affreschi, stucchi, bassorilievi di pregio all'interno",
+   "Affaccio esterno di pregio",
+   "Impianto di rilevamento fumi certificato a norma",
+   "Assenza dal rischio di acqua alta nell'unità (quota calpestio > 110 s.l.m.)"
+  ]
+ }
+}

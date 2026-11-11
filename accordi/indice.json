@@ -198,6 +198,41 @@
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbari-2024-03-13-accordo.pdf?alt=media&token=9784fa99-0f2f-4492-8bea-412c4ff22e5d"
     }
    ]
+  },
+  {
+   "comune": "Venezia",
+   "provincia": "VE",
+   "accordo": "venezia-2026-07-28",
+   "sottoscritto": "28 luglio 2026",
+   "depositato": "",
+   "zone": 5,
+   "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvenezia-2026-07-28-accordo.pdf?alt=media&token=fa3274a5-08dd-4bd8-8e29-4dae173a6a22",
+   "documenti": [
+    {
+     "nome": "Accordo",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvenezia-2026-07-28-accordo.pdf?alt=media&token=fa3274a5-08dd-4bd8-8e29-4dae173a6a22"
+    },
+    {
+     "nome": "Allegato 4 attestazione",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvenezia-2026-07-28-allegato-4-attestazione.pdf?alt=media&token=22f4865c-6a70-450b-b50a-09065307c390"
+    },
+    {
+     "nome": "Tab 2 elementi",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvenezia-2026-07-28-tab-2-elementi.pdf?alt=media&token=d5157f84-7bf2-4c61-ae49-94d840721dce"
+    },
+    {
+     "nome": "Tab 3 criteri",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvenezia-2026-07-28-tab-3-criteri.pdf?alt=media&token=be61b1d7-0963-4c5d-84a0-be822e680432"
+    },
+    {
+     "nome": "Tabella 1 valori 2026",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvenezia-2026-07-28-tabella-1-valori-2026.pdf?alt=media&token=2ad68b8b-7e00-463f-a644-e559f3cc2a9c"
+    },
+    {
+     "nome": "Tavola zone",
+     "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvenezia-2026-07-28-tavola-zone.pdf?alt=media&token=07dee397-c844-4437-a93f-1dafd04efacd"
+    }
+   ]
   }
  ]
 }
