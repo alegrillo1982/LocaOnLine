@@ -46,6 +46,16 @@
   /** "del 3 agosto", ma "dell'11 novembre" e "dell'8 giugno". */
   const del_ = (d) => (/^(8|11)\b/.test(d) ? `dell'${d}` : `del ${d}`);
 
+  const MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio",
+    "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+  /** "27.07.2023" -> "il 27 luglio 2023" ("l'8 marzo", "l'11 aprile"); altro formato: com'e'. */
+  function dataEstesa(d) {
+    const m = /^(\d{1,2})[./](\d{1,2})[./](\d{4})$/.exec(d);
+    if (!m || !MESI[m[2] - 1]) return `il ${d}`;
+    const g = String(+m[1]);
+    return `${g === "8" || g === "11" ? "l'" : "il "}${g === "1" ? "1°" : g} ${MESI[m[2] - 1]} ${m[3]}`;
+  }
+
   async function caricaAccordo(codice) {
     const voce = indice.comuni.find((c) => c.accordo === codice);
     $("accordo-in-uso").textContent = "Caricamento dell'accordo…";
@@ -56,14 +66,18 @@
       const a = accordo.accordo;
       // Roma: data e protocollo del deposito; Milano: data di deposito non pubblicata
       const deposito = a.deposito_data ? `, depositato il ${a.deposito_data}` : "";
+      // in cima alla pagina la data scritta per esteso ("27 luglio 2023") e niente
+      // protocollo: resta nelle fonti in fondo alla pagina e nel PDF
       $("accordo-in-uso").textContent = `Accordo ${del_(a.data_testo)}` +
-        (a.integrazione_testo ? `, integrato il ${a.integrazione_testo}` : "") + deposito +
-        (a.protocollo ? ` (prot. ${a.protocollo})` : "") + ".";
+        (a.integrazione_testo ? `, integrato il ${a.integrazione_testo}` : "") +
+        (a.deposito_data ? `, depositato ${dataEstesa(a.deposito_data)}` : "") + ".";
       // il PDF ufficiale, se e' stato caricato (link in accordi/indice.json)
+      let conLink = false;
       for (const [id, campo] of [["accordo-pdf", "pdf"], ["accordo-pdf-studenti", "pdf_studenti"]]) {
         const link = $(id);
-        if (voce && voce[campo]) { link.href = voce[campo]; link.hidden = false; } else link.hidden = true;
+        if (voce && voce[campo]) { link.href = voce[campo]; link.hidden = false; conLink = true; } else link.hidden = true;
       }
+      $("accordo-link").hidden = !conLink;
       $("fonte-accordo").textContent =
         `${a.titolo} ${del_(a.data_testo)}` + (a.integrazione_testo ? `, integrato il ${a.integrazione_testo}` : "") +
         deposito + (a.protocollo ? ` con prot. ${a.protocollo}` : "") +

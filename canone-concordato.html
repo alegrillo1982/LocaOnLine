@@ -77,9 +77,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous"
         onload="this.onload=null;this.rel='stylesheet'"/>
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"/></noscript>
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous"/></noscript>
   <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
   <link rel="apple-touch-icon" href="favicon.svg"/>
   <meta name="theme-color" content="#0F2A4A"/>
@@ -87,6 +87,9 @@
   <style>
     #mobile-menu{display:none;}
     #mobile-menu.open{display:block;}
+    .link-accordo{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .75rem;border-radius:.5rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;font-weight:600;white-space:nowrap}
+    .link-accordo:hover{background:rgba(255,255,255,.22)}
+    .link-accordo[hidden],#accordo-link[hidden]{display:none}
   </style>
 </head>
 <body class="font-sans bg-[#F4F7FB] text-[#0F2A4A] antialiased">
@@ -154,9 +157,13 @@
             <div id="comuni-trovati" class="risultati-zona" role="listbox" hidden></div>
             <select id="comune" hidden aria-hidden="true" tabindex="-1"></select>
           </div>
-          <p class="text-slate-200 text-sm mt-2 md:mt-0"><span id="accordo-in-uso" aria-live="polite">Caricamento dell'accordo…</span>
-            <a id="accordo-pdf" href="#" target="_blank" rel="noopener" class="text-white font-semibold underline whitespace-nowrap" hidden><i class="fa-regular fa-file-pdf"></i> Leggi l'accordo</a>
-            <a id="accordo-pdf-studenti" href="#" target="_blank" rel="noopener" class="text-white font-semibold underline whitespace-nowrap ml-2" hidden><i class="fa-regular fa-file-pdf"></i> Accordo studenti</a></p>
+          <div class="text-slate-200 text-sm mt-2 md:mt-0">
+            <p id="accordo-in-uso" aria-live="polite">Caricamento dell'accordo…</p>
+            <p id="accordo-link" class="flex flex-wrap gap-2 mt-2" hidden>
+              <a id="accordo-pdf" href="#" target="_blank" rel="noopener" class="link-accordo" hidden><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Accordo</a>
+              <a id="accordo-pdf-studenti" href="#" target="_blank" rel="noopener" class="link-accordo" hidden><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Accordo studenti</a>
+            </p>
+          </div>
         </div>
         <p class="text-slate-300 text-sm mt-3">Il tuo comune non c'è, o l'accordo è cambiato?
           <a href="#richiesta" class="text-white font-semibold underline">Chiedici di aggiungerlo</a>.</p>
