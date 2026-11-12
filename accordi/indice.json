@@ -1,5 +1,5 @@
 {
- "_nota": "Elenco dei comuni con l'accordo territoriale. Per aggiungere un comune: il file dell'accordo in questa cartella (stessa struttura di roma-2023-07-25.json) e una riga qui sotto. \"pdf\" e \"pdf_studenti\" sono i link ai PDF ufficiali (accordo e accordo per gli studenti universitari) caricati in Firebase Storage, cartella accordi/: vuoti finche' non ci sono.",
+ "_nota": "Elenco dei comuni con l'accordo territoriale. Per aggiungere un comune: il file dell'accordo in questa cartella (stessa struttura di roma-2023-07-25.json) e una riga qui sotto. \"pdf\" e \"pdf_studenti\" sono i link ai PDF ufficiali (accordo e accordo per gli studenti universitari) caricati in Firebase Storage, cartella accordi/: vuoti finche' non ci sono. \"alta_tensione\": perché il comune è ad alta tensione abitativa (cedolare secca al 10%): \"cipe\" (elenco della delibera CIPE 87/2003, che comprende i capoluoghi del 2003), \"confinante\" (confina con Bari, Bologna, Catania, Firenze, Genova, Milano, Napoli, Palermo, Roma, Torino o Venezia), \"capoluogo\" (capoluogo di provincia istituito dopo il 2003), \"no\".",
  "comuni": [
   {
    "comune": "Roma",
@@ -9,7 +9,8 @@
    "depositato": "27 luglio 2023",
    "zone": 215,
    "pdf": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Froma-2023-07-25.pdf?alt=media&token=a9a83efb-6904-4b6d-91bf-a6d49f70dd6b",
-   "pdf_studenti": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Froma-2023-07-25-studenti.pdf?alt=media&token=3e37cee9-8863-4d44-adc1-04fa9cd7c692"
+   "pdf_studenti": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Froma-2023-07-25-studenti.pdf?alt=media&token=3e37cee9-8863-4d44-adc1-04fa9cd7c692",
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Milano",
@@ -36,7 +37,8 @@
      "nome": "Stanze studenti",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmilano-2023-07-27-stanze-studenti.pdf?alt=media&token=5e98388f-7cb4-4690-a346-4f0145f5eaa3"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Napoli",
@@ -51,7 +53,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnapoli-2025-04-29-accordo.pdf?alt=media&token=46a1d6d3-fa44-42a6-a18f-4aa4ae876c9c"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Torino",
@@ -98,7 +101,8 @@
      "nome": "Firmatari",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorino-2024-04-15-firmatari.pdf?alt=media&token=de082124-59a0-450d-be9e-6e9f1e384571"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Palermo",
@@ -117,7 +121,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpalermo-2020-01-23-accordo.pdf?alt=media&token=5a8c7a65-c0ca-4fcf-bb68-cfa1667b6b66"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Genova",
@@ -132,7 +137,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgenova-2025-06-03-accordo.pdf?alt=media&token=862ee9fb-be57-4c78-a636-27b6fb94d2f4"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Bologna",
@@ -167,7 +173,8 @@
      "nome": "Integrazione 2024 11 25",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbologna-2024-03-28-integrazione-2024-11-25.pdf?alt=media&token=77db1393-a081-4b40-885b-78ab0c4f1530"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Firenze",
@@ -182,7 +189,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffirenze-2025-07-03-accordo.pdf?alt=media&token=95dd698f-d768-4edb-ab61-245a21c1dbbe"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Bari",
@@ -197,7 +205,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbari-2024-03-13-accordo.pdf?alt=media&token=9784fa99-0f2f-4492-8bea-412c4ff22e5d"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Venezia",
@@ -232,7 +241,8 @@
      "nome": "Tavola zone",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvenezia-2026-07-28-tavola-zone.pdf?alt=media&token=07dee397-c844-4437-a93f-1dafd04efacd"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Cagliari",
@@ -247,7 +257,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcagliari-2026-03-30-accordo.pdf?alt=media&token=b61a843b-3c99-4dc0-ad80-f239d098e251"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Trieste",
@@ -262,7 +273,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrieste-2025-12-15-accordo.pdf?alt=media&token=ddc15bb4-7ae6-4821-b52c-e2fdc6629ed0"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Ancona",
@@ -285,7 +297,8 @@
      "nome": "Errata corrige 2019 05 14",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fancona-2019-04-23-errata-corrige-2019-05-14.pdf?alt=media&token=acd8e4f0-ffc5-4db4-bee3-9188e3a1d38a"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Perugia",
@@ -300,7 +313,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fperugia-2024-10-10-accordo.pdf?alt=media&token=3f6859f1-96df-457c-a735-44f23f270dd1"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "L'Aquila",
@@ -315,7 +329,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flaquila-2025-09-26-accordo.pdf?alt=media&token=f9aa2bec-3744-43cc-9f1f-88f75cb88cf5"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Campobasso",
@@ -330,7 +345,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcampobasso-2020-06-30-accordo.pdf?alt=media&token=94a07885-1ab5-48cd-bd61-4bb540f98d8a"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Potenza",
@@ -345,7 +361,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpotenza-1999-07-28-accordo.pdf?alt=media&token=9742de82-4b7f-4501-b3f9-e9a2dd7d8ef2"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Aosta",
@@ -360,7 +377,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Faosta-2026-05-27-accordo.pdf?alt=media&token=43ff1fe4-7b67-4049-a4b5-c73ecf1e18b6"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Bolzano",
@@ -387,7 +405,8 @@
      "nome": "Allegato 8a attestazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbolzano-2018-11-27-allegato-8a-attestazione.pdf?alt=media&token=14a39fe7-f647-4afd-bcf4-e77cf24a7c31"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Trento",
@@ -418,7 +437,8 @@
      "nome": "Regolamento unico",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrento-2024-12-13-regolamento-unico.pdf?alt=media&token=fd55ae52-23b4-45f8-9819-250716e148b7"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Catanzaro",
@@ -433,7 +453,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcatanzaro-2026-07-01-accordo.pdf?alt=media&token=cc2037e4-a912-444d-a1d8-c787f235d025"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Padova",
@@ -448,7 +469,8 @@
      "nome": "Accordo allegati",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpadova-2023-02-14-accordo-allegati.pdf?alt=media&token=9d440114-1fa9-425f-88ed-705f45a27d81"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Verona",
@@ -463,7 +485,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fverona-2017-06-08-accordo.pdf?alt=media&token=0524cf70-74d9-4fb6-a4a2-78ff12d6762c"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Brescia",
@@ -510,7 +533,8 @@
      "nome": "Sindacati inquilini",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrescia-2024-04-02-sindacati-inquilini.pdf?alt=media&token=7ef8c857-f3dc-40b5-8e67-e04eb21c31dc"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Catania",
@@ -525,7 +549,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcatania-2018-08-03-accordo.pdf?alt=media&token=21fb336f-1126-452c-952c-a751a13aebad"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Bergamo",
@@ -540,7 +565,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbergamo-2025-11-06-accordo.pdf?alt=media&token=463b3a2b-a882-407c-b62d-d5e57e9a80ad"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Messina",
@@ -555,7 +581,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmessina-2024-11-11-accordo.pdf?alt=media&token=49e42c4f-a0aa-47e9-980f-d93a1951a584"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Reggio Calabria",
@@ -570,7 +597,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggiocalabria-2025-11-07-accordo.pdf?alt=media&token=4df463e3-2e58-4d9c-9e0d-c050aff61754"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Modena",
@@ -585,7 +613,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmodena-2026-10-07-accordo.pdf?alt=media&token=4e738819-ebc6-4539-a404-c934cad2c064"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Salerno",
@@ -600,7 +629,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsalerno-2019-07-08-accordo.pdf?alt=media&token=8c3dec28-0068-472d-9835-40fb3fbbbc2f"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Parma",
@@ -623,7 +653,8 @@
      "nome": "Allegato 2 valori ott2026 set2027",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fparma-2019-03-26-allegato-2-valori-ott2026-set2027.pdf?alt=media&token=4f9908d5-9729-4762-83f9-5b4378a133c3"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Taranto",
@@ -658,7 +689,8 @@
      "nome": "Allegato 6 richiesta commissione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftaranto-2018-05-29-allegato-6-richiesta-commissione.pdf?alt=media&token=a3e74b66-3092-4de9-9845-a6c9a6264e8e"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Prato",
@@ -681,7 +713,8 @@
      "nome": "Allegato g attestazione bilaterale",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fprato-2024-12-19-allegato-g-attestazione-bilaterale.pdf?alt=media&token=f875865f-3563-435f-bf5e-5b4d6b7bf83b"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Livorno",
@@ -700,7 +733,8 @@
      "nome": "Allegato 1 contratti tipo e attestazioni",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flivorno-2018-05-29-allegato-1-contratti-tipo-e-attestazioni.pdf?alt=media&token=4e5e4ea0-cbd9-46de-a84e-b6f9a46f9be3"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Foggia",
@@ -715,7 +749,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffoggia-2020-03-06-accordo.pdf?alt=media&token=bc3fb252-b99a-4f53-b4dd-7cd264760239"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Latina",
@@ -746,7 +781,8 @@
      "nome": "Protocollo intesa imu 2023",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flatina-2022-06-20-protocollo-intesa-imu-2023.pdf?alt=media&token=b66e1fbf-e3f8-4f9f-a3a6-185e59e3a557"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Pescara",
@@ -781,7 +817,8 @@
      "nome": "Allegato g attestazione bilaterale",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpescara-2018-05-29-allegato-g-attestazione-bilaterale.pdf?alt=media&token=85305145-6cd9-4b99-896b-aeb50c8813d0"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Monza",
@@ -800,7 +837,8 @@
      "nome": "Allegato 4b mappa zone",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmonza-2024-03-15-allegato-4b-mappa-zone.pdf?alt=media&token=6981c508-7058-43ce-9f6c-fc0ebe370a07"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Reggio Emilia",
@@ -855,7 +893,8 @@
      "nome": "Allegato f asseverazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Freggioemilia-2020-02-04-allegato-f-asseverazione.pdf?alt=media&token=74fc9fc3-13f7-4bb6-99a4-771951a23bd2"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Piacenza",
@@ -886,7 +925,8 @@
      "nome": "Allegato d attestazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpiacenza-2019-07-23-allegato-d-attestazione.pdf?alt=media&token=165490d6-be82-448e-997f-27b278cc5992"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Siracusa",
@@ -901,7 +941,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsiracusa-2023-12-11-accordo.pdf?alt=media&token=d0cadb9a-ceb0-4455-9ef2-a7911bccbf33"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Sassari",
@@ -940,7 +981,8 @@
      "nome": "Associazioni firmatarie",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsassari-2012-04-04-associazioni-firmatarie.pdf?alt=media&token=4920e0da-85a3-42e8-887f-3b3978d67f40"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Novara",
@@ -975,7 +1017,8 @@
      "nome": "Allegato g attestazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnovara-2026-02-27-allegato-g-attestazione.pdf?alt=media&token=f4bcda93-abec-4ec6-a196-e06817105a71"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Ferrara",
@@ -1006,7 +1049,8 @@
      "nome": "Integrazione 2024 07 08 adesioni",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fferrara-2023-10-09-integrazione-2024-07-08-adesioni.pdf?alt=media&token=56c03049-7633-4684-bfaa-40e9afacb0ed"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Forlì",
@@ -1029,7 +1073,8 @@
      "nome": "Allegato 4 attestazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fforli-2017-12-19-allegato-4-attestazione.pdf?alt=media&token=05cc75c4-bc37-4f08-aec5-abcca8d082da"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Vicenza",
@@ -1072,7 +1117,8 @@
      "nome": "Protocollo integrativo 2024 07 10",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvicenza-2019-01-28-protocollo-integrativo-2024-07-10.pdf?alt=media&token=2a21a7e8-5886-4051-a9ca-3023ecf5835b"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Ravenna",
@@ -1087,7 +1133,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fravenna-2025-11-10-accordo.pdf?alt=media&token=2ad2f881-7582-4a0c-ba12-aa682fe60e50"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Rimini",
@@ -1126,7 +1173,8 @@
      "nome": "Allegato 5 richiesta commissione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frimini-2018-07-19-allegato-5-richiesta-commissione.pdf?alt=media&token=fbf41d81-c8d4-4790-b2d8-4106bf0fdbc7"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Caserta",
@@ -1141,7 +1189,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcaserta-2026-09-01-accordo.pdf?alt=media&token=49d9843c-cd3b-4e51-a3c9-aa584d70a7c6"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Ragusa",
@@ -1156,7 +1205,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fragusa-2025-06-04-accordo.pdf?alt=media&token=9aeeee7a-c185-4934-8450-8f008b06d3d9"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Pesaro",
@@ -1231,7 +1281,8 @@
      "nome": "Modulo proroga cessazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpesaro-2025-02-26-modulo-proroga-cessazione.pdf?alt=media&token=2158f882-c1c6-4e0e-a9a9-5d234f66af81"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Massa",
@@ -1274,7 +1325,8 @@
      "nome": "Allegato e negoziazione paritetica",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmassa-2017-11-15-allegato-e-negoziazione-paritetica.pdf?alt=media&token=c05bf948-1fef-4a39-9a20-64cd75ec6da1"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Varese",
@@ -1289,7 +1341,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvarese-2018-12-03-accordo.pdf?alt=media&token=98a6ad85-9f2d-4f20-94a0-6f1b0ce1c0fb"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Treviso",
@@ -1308,7 +1361,8 @@
      "nome": "Allegato 1 fasce oscillazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftreviso-2024-02-05-allegato-1-fasce-oscillazione.pdf?alt=media&token=d05f6d26-63c6-4fb0-b952-c30a2d2b26d4"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Pavia",
@@ -1367,7 +1421,8 @@
      "nome": "Integrazione 2019 09 03",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpavia-2019-01-24-integrazione-2019-09-03.pdf?alt=media&token=6f002376-5dd8-452f-b9a7-72ce0587eb0e"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Asti",
@@ -1394,7 +1449,8 @@
      "nome": "Allegato c attestazioni",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fasti-2025-05-13-allegato-c-attestazioni.pdf?alt=media&token=7cd67b8b-5a2a-4f62-9458-99cc0f32406c"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Brindisi",
@@ -1409,7 +1465,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbrindisi-2019-07-10-accordo.pdf?alt=media&token=e1ad4b36-0353-4c91-919d-c45ab79f90f8"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Pistoia",
@@ -1424,7 +1481,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpistoia-2026-10-19-accordo.pdf?alt=media&token=2af7febb-8e93-41a3-852c-e78121aad9c3"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Cremona",
@@ -1467,7 +1525,8 @@
      "nome": "Integrativo fondazione citta di cremona",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcremona-2022-12-27-integrativo-fondazione-citta-di-cremona.pdf?alt=media&token=40fd2d44-e146-482c-b596-91a2af9f52b0"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Lucca",
@@ -1502,7 +1561,8 @@
      "nome": "Adesione federcasa confsal 2019",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flucca-2019-03-14-adesione-federcasa-confsal-2019.pdf?alt=media&token=aca769cc-ac95-46e2-aea8-79a464f8c961"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Grosseto",
@@ -1521,7 +1581,8 @@
      "nome": "Testo iniziale superato",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgrosseto-2025-07-25-testo-iniziale-superato.pdf?alt=media&token=9ea3ec67-35d0-4a35-92da-223a27b6fdf5"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Alessandria",
@@ -1548,7 +1609,8 @@
      "nome": "Delibera giunta 297 2024",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Falessandria-2024-07-19-delibera-giunta-297-2024.pdf?alt=media&token=faec5274-8a83-4e24-a504-735ad7cc5799"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "La Spezia",
@@ -1563,7 +1625,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flaspezia-2025-12-29-accordo.pdf?alt=media&token=4beeebe1-7977-4579-9de4-77c04b51e48f"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Udine",
@@ -1602,7 +1665,8 @@
      "nome": "Protocollo 4 2025 09 10 studenti its",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fudine-2017-09-25-protocollo-4-2025-09-10-studenti-its.pdf?alt=media&token=d3b59480-d851-41aa-839a-fdf3c678d8a9"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Pisa",
@@ -1625,7 +1689,8 @@
      "nome": "Nota integrativa 2018 10 16",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpisa-2018-03-12-nota-integrativa-2018-10-16.pdf?alt=media&token=8f554bf0-b3c0-4b01-9d13-871d9d8f98f6"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Arezzo",
@@ -1692,7 +1757,8 @@
      "nome": "Modifiche integrazioni 2018 06 26",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Farezzo-2017-07-20-modifiche-integrazioni-2018-06-26.pdf?alt=media&token=14ab3337-a417-4b38-a678-43fd9537ceef"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Lecce",
@@ -1723,7 +1789,8 @@
      "nome": "Allegato 5 modulo negoziazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flecce-2018-03-02-allegato-5-modulo-negoziazione.pdf?alt=media&token=8ebc9cf8-5009-4002-9602-f84159d1f9ca"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Como",
@@ -1814,7 +1881,8 @@
      "nome": "Testo completo con ricevute deposito",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcomo-2020-10-05-testo-completo-con-ricevute-deposito.pdf?alt=media&token=d4301249-e835-41b1-86dd-b87c6ac2bae2"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Guidonia Montecelio",
@@ -1837,7 +1905,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fguidonia-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=9b182a5a-d654-4f38-a476-3383e8e6024c"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Fiumicino",
@@ -1860,7 +1929,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffiumicino-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=002f183f-12e7-43cb-9847-714ff89efa43"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Pomezia",
@@ -1883,7 +1953,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpomezia-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=504162b1-2a25-4ba6-afa0-f26cdb0ab348"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Anzio",
@@ -1906,7 +1977,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fanzio-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=8e37086f-f2bf-42c0-8d66-c6660bccfc64"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Tivoli",
@@ -1929,7 +2001,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftivoli-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=c1209a2f-4d4f-449a-b1eb-55d6e94f87f8"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Velletri",
@@ -1952,7 +2025,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvelletri-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=a3b3a10b-d22c-48b4-867c-fcb0110c10f7"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Civitavecchia",
@@ -1975,7 +2049,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcivitavecchia-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=17b2f3e1-aa9c-4d2f-9297-84e93ec38161"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Ardea",
@@ -1998,7 +2073,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fardea-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=473f934c-6419-421d-b982-019803ea67bd"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Nettuno",
@@ -2021,7 +2097,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnettuno-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=a97f6169-501d-4736-afe1-7f112626e0aa"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Marino",
@@ -2044,7 +2121,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmarino-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=265f2266-c4e2-49ea-9fb8-3fcf8b830bfd"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Albano Laziale",
@@ -2067,7 +2145,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Falbano-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=8489ffe4-0569-4c2c-a5df-d34b136be393"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Ladispoli",
@@ -2090,7 +2169,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fladispoli-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=5abeb1aa-b072-4e60-909e-042e4a209935"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Monterotondo",
@@ -2113,7 +2193,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmonterotondo-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=e879808e-27b3-4ae5-8f57-15c934497a1a"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Ciampino",
@@ -2136,7 +2217,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fciampino-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=600f2072-ebbb-4117-8bcf-96d52ab8a963"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Cerveteri",
@@ -2159,7 +2241,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcerveteri-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=5585c627-9af7-4c43-919e-e2dc608ea37b"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Anguillara Sabazia",
@@ -2182,7 +2265,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fanguillara-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=6506fd5e-66f4-4fd2-8d1b-7540f331350e"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Fonte Nuova",
@@ -2205,7 +2289,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffontenuova-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=c4eda4fc-710b-46ce-81aa-cbe258c754bf"
     }
-   ]
+   ],
+   "alta_tensione": "confinante"
   },
   {
    "comune": "Ariccia",
@@ -2228,7 +2313,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fariccia-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=2b2770a8-8fff-497c-ab49-0fae0943eab1"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Artena",
@@ -2251,7 +2337,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fartena-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=c919c89e-e636-4a51-919a-42fec803029c"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Bracciano",
@@ -2274,7 +2361,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbracciano-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=52e7c150-b478-4fa6-9cd6-fbf9a9916488"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Campagnano di Roma",
@@ -2297,7 +2385,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcampagnano-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=36715871-5d85-4cb8-b34d-ad356b2af969"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Castel Gandolfo",
@@ -2320,7 +2409,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcastelgandolfo-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=d9502dcf-1121-46e7-8035-4f1b827d1580"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Colleferro",
@@ -2343,7 +2433,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcolleferro-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=04fbe22b-2658-499f-b039-23b2323286bc"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Colonna",
@@ -2366,7 +2457,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcolonna-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=46057308-9d3d-4ea6-acb4-f85cf2f7d2a6"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Formello",
@@ -2389,7 +2481,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fformello-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=8a37ce64-98cc-4137-982b-66cc23f71d56"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Frascati",
@@ -2412,7 +2505,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffrascati-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=b67fcb71-7e42-4e54-ba46-4768ac99619c"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Gallicano nel Lazio",
@@ -2435,7 +2529,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgallicano-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=4d5446b8-a166-4251-9fd7-c21fb1e62e06"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Genzano di Roma",
@@ -2458,7 +2553,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgenzano-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=1d47d23a-3036-4e60-a4d8-9e4c989710bd"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Grottaferrata",
@@ -2481,7 +2577,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgrottaferrata-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=03774f5a-5889-464c-8fce-28ab34367da7"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Lariano",
@@ -2504,7 +2601,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flariano-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=2b4a7052-4c42-47da-a67c-f916f280db22"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Marcellina",
@@ -2527,7 +2625,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmarcellina-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=5c8a5ca8-ff2a-416d-995d-05289ead7b47"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Mentana",
@@ -2550,7 +2649,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmentana-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=4a9bd6fe-ab3b-433e-bf6c-ecf9a43745e4"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Monte Porzio Catone",
@@ -2573,7 +2673,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmonteporzio-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=aa5cb4a7-baa4-48d6-bd26-5fdbfc684809"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Monte Compatri",
@@ -2596,7 +2697,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmontecompatri-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=3d103ea5-1123-4850-a69b-045c7b01691d"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Palestrina",
@@ -2619,7 +2721,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpalestrina-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=e82f8d86-dcdd-43b6-a6b8-ac3ed740f944"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Palombara Sabina",
@@ -2642,7 +2745,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpalombara-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=5904271c-5e0f-4e5e-b273-5ba359f5f96b"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Poli",
@@ -2665,7 +2769,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpoli-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=77ccd020-e482-429f-a7f1-b8c69f1e3888"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Riano",
@@ -2688,7 +2793,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Friano-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=908099c1-aeb0-41d5-8623-6a572968b6ca"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Rocca di Papa",
@@ -2711,7 +2817,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Froccadipapa-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=e3b62b44-5bb8-4d7d-a7b7-772144cdfc6d"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Rocca Priora",
@@ -2734,7 +2841,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Froccapriora-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=84fb7180-903b-457d-aad8-d77f44a9a6fd"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Sacrofano",
@@ -2757,7 +2865,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsacrofano-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=126fcb75-bd97-479a-9028-270a8cf03c61"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "San Cesareo",
@@ -2780,7 +2889,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsancesareo-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=b75edc02-0cad-49b2-be80-fecec19c4e77"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Santa Marinella",
@@ -2803,7 +2913,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsantamarinella-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=74c46191-d66a-419e-8cb2-3b5505eda736"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Valmontone",
@@ -2826,7 +2937,8 @@
      "nome": "Allegato 2b scheda",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvalmontone-2024-09-30-allegato-2b-scheda.pdf?alt=media&token=5aa566fb-8ef7-4403-84eb-1f215b2550de"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Rieti",
@@ -2845,7 +2957,8 @@
      "nome": "Integrazioni rettifiche e accordo studenti",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frieti-2023-01-18-integrazioni-rettifiche-e-accordo-studenti.pdf?alt=media&token=1f1a8785-1ae9-4bc8-8ff7-e727e0724a31"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Mantova",
@@ -2860,7 +2973,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmantova-2017-11-09-accordo.pdf?alt=media&token=cc12c835-1f49-42fc-b5fc-5561a573c4ce"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Viterbo",
@@ -2883,7 +2997,8 @@
      "nome": "Allegato d scheda attestazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fviterbo-2023-11-16-allegato-d-scheda-attestazione.pdf?alt=media&token=96c4ce33-dc79-43b4-bc63-a835f3b704fa"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Pordenone",
@@ -2902,7 +3017,8 @@
      "nome": "Allegato 1 zone",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpordenone-2018-02-02-allegato-1-zone.pdf?alt=media&token=9c183075-c9cf-4944-b1a3-f269a2b7681c"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Frosinone",
@@ -2917,7 +3033,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffrosinone-2026-09-10-accordo.pdf?alt=media&token=762c1d7a-0553-44a1-8088-85653627ad03"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Siena",
@@ -2936,7 +3053,8 @@
      "nome": "Delibera giunta 148 2026 04 21",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsiena-2026-04-07-delibera-giunta-148-2026-04-21.pdf?alt=media&token=ad6e3579-50b7-47ad-a56f-d3f5245ec5ff"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Savona",
@@ -2951,7 +3069,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsavona-2018-10-01-accordo.pdf?alt=media&token=b18f1092-9817-42ab-9908-49cc13fb198b"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Trapani",
@@ -2966,7 +3085,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrapani-2025-03-07-accordo.pdf?alt=media&token=399a0b88-626d-4915-9964-f8d3422692f9"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Avellino",
@@ -2981,7 +3101,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Favellino-2026-02-25-accordo.pdf?alt=media&token=8cbff992-1983-4dc1-b046-b2fd6ff574d9"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Matera",
@@ -2996,7 +3117,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmatera-2019-02-15-accordo.pdf?alt=media&token=727711fd-78d1-4f0d-863e-adad43e93aa3"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Agrigento",
@@ -3015,7 +3137,8 @@
      "nome": "Adesione confabitare 2023",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fagrigento-2017-11-20-adesione-confabitare-2023.pdf?alt=media&token=f37afc5b-56a8-4155-af24-847d1c1cf7da"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Cuneo",
@@ -3086,7 +3209,8 @@
      "nome": "Elenco associazioni",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcuneo-2026-02-26-elenco-associazioni.pdf?alt=media&token=d84ce4ce-d1f0-40fd-a472-bd457f7208b0"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Barletta",
@@ -3101,7 +3225,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbarletta-2024-07-05-accordo.pdf?alt=media&token=571766f9-8c73-49f4-a908-48a336044eb5"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Teramo",
@@ -3116,7 +3241,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fteramo-2019-01-12-accordo.pdf?alt=media&token=56333996-6745-40d0-821c-f39484c1a885"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Chieti",
@@ -3135,7 +3261,8 @@
      "nome": "Allegato f attestazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fchieti-2019-08-06-allegato-f-attestazione.pdf?alt=media&token=5cda3e10-010c-42b8-a85e-ef07ff90ec6f"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Lecco",
@@ -3150,7 +3277,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flecco-2026-05-12-accordo.pdf?alt=media&token=e40a3194-6eaa-4e71-8bbb-fabf442ffc5f"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Andria",
@@ -3165,7 +3293,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fandria-2024-07-05-accordo.pdf?alt=media&token=7c7aec04-43ec-4858-8eb0-461062e031b7"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Trani",
@@ -3180,7 +3309,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftrani-2024-07-05-accordo.pdf?alt=media&token=948a96d4-bec4-495c-a494-efbc6f05ada6"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Biella",
@@ -3195,7 +3325,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbiella-2019-12-20-accordo.pdf?alt=media&token=c806c573-5bbf-461c-947d-d03dafdb72d2"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Ascoli Piceno",
@@ -3230,7 +3361,8 @@
      "nome": "Allegato scheda calcolo verbale attestato",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fascolipiceno-2025-02-13-allegato-scheda-calcolo-verbale-attestato.pdf?alt=media&token=90bfd57b-8e20-4a13-8101-36bf162f4bd4"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Fermo",
@@ -3269,7 +3401,8 @@
      "nome": "Tabella oneri accessori",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffermo-2018-03-27-tabella-oneri-accessori.pdf?alt=media&token=60c7de10-adc1-4b08-bb01-e0dcb6288c1c"
     }
-   ]
+   ],
+   "alta_tensione": "capoluogo"
   },
   {
    "comune": "Gorizia",
@@ -3284,7 +3417,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgorizia-2018-04-18-accordo.pdf?alt=media&token=7801794c-3a46-4193-9757-83591e347783"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Enna",
@@ -3299,7 +3433,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fenna-2025-05-27-accordo.pdf?alt=media&token=827f186e-c545-4f7e-9531-2af0531dbafb"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Belluno",
@@ -3314,7 +3449,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbelluno-2025-02-24-accordo.pdf?alt=media&token=f9e38e4f-96e3-4d3e-b5c7-f56d1fbcc624"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Vibo Valentia",
@@ -3329,7 +3465,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvibovalentia-2021-03-30-accordo.pdf?alt=media&token=04e3ef10-ce50-42f6-bc85-a15239cc0689"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Imperia",
@@ -3344,7 +3481,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fimperia-2019-12-10-accordo.pdf?alt=media&token=5d67cbe1-f3c6-4d58-90d5-6212b036a962"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Oristano",
@@ -3359,7 +3497,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Foristano-2019-10-23-accordo.pdf?alt=media&token=83212c67-0a17-4df2-8b04-2501377e433b"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Verbania",
@@ -3434,7 +3573,8 @@
      "nome": "Allegato o contratto universitari",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fverbania-2023-03-29-allegato-o-contratto-universitari.pdf?alt=media&token=1a43bd0e-58d1-4da6-a4e9-dec9642258aa"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Isernia",
@@ -3449,7 +3589,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fisernia-2023-02-08-accordo.pdf?alt=media&token=0567b8b1-1470-452e-976c-155851f1b471"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Lodi",
@@ -3484,7 +3625,8 @@
      "nome": "Allegato 5 oneri accessori",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flodi-2019-07-15-allegato-5-oneri-accessori.pdf?alt=media&token=2b741c32-53b5-49ab-9b5f-9cf1351f7417"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Nuoro",
@@ -3499,7 +3641,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fnuoro-2026-07-07-accordo.pdf?alt=media&token=e742fadb-3dd3-41d5-96a3-dc41b035d945"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Crotone",
@@ -3514,7 +3657,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcrotone-2018-05-24-accordo.pdf?alt=media&token=c0c10667-e45a-45cf-a114-d3e5e811f549"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Rovigo",
@@ -3529,7 +3673,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Frovigo-2026-06-29-accordo.pdf?alt=media&token=d94e9759-99e8-4cf1-95f1-ac65ceefb00b"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Macerata",
@@ -3568,7 +3713,8 @@
      "nome": "Integrazione rettifica 2019",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmacerata-2018-09-25-integrazione-rettifica-2019.pdf?alt=media&token=e8f681f2-361f-457f-96ec-1e6ea53e308e"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Sondrio",
@@ -3583,7 +3729,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsondrio-2003-05-19-accordo.pdf?alt=media&token=eede23a4-98e7-470a-9ced-a4ce6af367ab"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Vercelli",
@@ -3598,7 +3745,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fvercelli-2022-09-19-accordo.pdf?alt=media&token=8d10fac0-1405-4f62-ad21-66cfe5724cd9"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Gela",
@@ -3613,7 +3761,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgela-2025-11-21-accordo.pdf?alt=media&token=55869972-cb72-4b89-be46-c238791b619d"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Torre del Greco",
@@ -3628,7 +3777,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ftorredelgreco-2018-06-07-accordo.pdf?alt=media&token=a5d89d84-6ae9-4408-8787-5ce6430c19e9"
     }
-   ]
+   ],
+   "alta_tensione": "no"
   },
   {
    "comune": "Giugliano in Campania",
@@ -3643,7 +3793,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fgiugliano-2018-06-07-accordo.pdf?alt=media&token=e9ab50ed-7f4e-4e2f-b953-37b653d08b4f"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Cesena",
@@ -3686,7 +3837,8 @@
      "nome": "Allegato 6 attestazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcesena-2026-05-19-allegato-6-attestazione.pdf?alt=media&token=51c70494-47ca-42b7-a39c-71d32ad3b602"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Marsala",
@@ -3701,7 +3853,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmarsala-2020-02-27-accordo.pdf?alt=media&token=043c0836-6a29-4c02-9b1b-90767692c7ff"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Castellammare di Stabia",
@@ -3716,7 +3869,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcastellammare-2019-01-16-accordo.pdf?alt=media&token=644c1974-01cf-41da-9672-d60b7e0447a5"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Formia",
@@ -3743,7 +3897,8 @@
      "nome": "Allegato 3 attestazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fformia-2023-07-10-allegato-3-attestazione.pdf?alt=media&token=b6871244-7b0e-4de8-9730-298db4a9c435"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Bisceglie",
@@ -3758,7 +3913,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbisceglie-2024-07-05-accordo.pdf?alt=media&token=ddec04ce-7554-41cb-8105-45bc9c3df192"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Pozzuoli",
@@ -3773,7 +3929,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fpozzuoli-2018-06-07-accordo.pdf?alt=media&token=46d17d31-3356-478a-b464-50627382df04"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Altamura",
@@ -3788,7 +3945,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Faltamura-2024-07-05-accordo.pdf?alt=media&token=5dff21fe-2431-4803-a8f4-c5e95f0e2d0e"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Cassino",
@@ -3803,7 +3961,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcassino-2026-09-10-accordo.pdf?alt=media&token=2350422f-0bcb-4b4d-ba3f-3ba532218d25"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Terracina",
@@ -3830,7 +3989,8 @@
      "nome": "Allegato 3 attestazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fterracina-2024-07-29-allegato-3-attestazione.pdf?alt=media&token=00624b5a-fc65-45d5-a781-40b4a15378b0"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Cisterna di Latina",
@@ -3857,7 +4017,8 @@
      "nome": "Allegato 3 attestazione",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcisterna-2020-02-20-allegato-3-attestazione.pdf?alt=media&token=ad854799-d894-4305-ad51-342d6a615d38"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Molfetta",
@@ -3872,7 +4033,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fmolfetta-2024-07-05-accordo.pdf?alt=media&token=92456008-926b-481e-97d4-101a03ea8b58"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Carpi",
@@ -3887,7 +4049,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fcarpi-2026-10-07-accordo.pdf?alt=media&token=5496bbc4-e5cf-416b-ac35-e3633daa355d"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Bagheria",
@@ -3902,7 +4065,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbagheria-2023-10-11-accordo.pdf?alt=media&token=905841f4-bdc4-4b2b-8958-e20807d99aa4"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Busto Arsizio",
@@ -3929,7 +4093,8 @@
      "nome": "Delibera giunta 140 2019",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fbustoarsizio-2019-03-18-delibera-giunta-140-2019.pdf?alt=media&token=4940ed03-d781-41f8-abe4-9a733571456f"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Fondi",
@@ -3944,7 +4109,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Ffondi-2019-02-05-accordo.pdf?alt=media&token=03c1c04b-aa44-474d-9841-3102fee1b769"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Sesto San Giovanni",
@@ -3959,7 +4125,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fsestosangiovanni-2025-04-01-accordo.pdf?alt=media&token=533f38eb-1915-4c3b-a3c2-f1f8f10d612a"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Lamezia Terme",
@@ -3974,7 +4141,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Flameziaterme-2026-09-15-accordo.pdf?alt=media&token=8b744912-29b2-4aa4-a603-3fe8efd72a9f"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Iglesias",
@@ -4037,7 +4205,8 @@
      "nome": "Testo sunia non firmato",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Figlesias-2019-05-23-testo-sunia-non-firmato.pdf?alt=media&token=918eca5a-1291-472f-bb46-71cc6fb4e207"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Aprilia",
@@ -4052,7 +4221,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Faprilia-2019-10-14-accordo.pdf?alt=media&token=7780fe71-171b-43b6-9aa0-6cafd6629c6d"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Imola",
@@ -4087,7 +4257,8 @@
      "nome": "Integrazione 2024 11 25",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Fimola-2024-03-27-integrazione-2024-11-25.pdf?alt=media&token=53969d9f-86d7-4087-a497-b1684b97dbc0"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Acireale",
@@ -4102,7 +4273,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Facireale-2020-05-25-accordo.pdf?alt=media&token=46d2ae7b-c55d-40b8-b59e-6662945b8239"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   },
   {
    "comune": "Olbia",
@@ -4117,7 +4289,8 @@
      "nome": "Accordo",
      "url": "https://firebasestorage.googleapis.com/v0/b/locaonline-e8157.firebasestorage.app/o/accordi%2Folbia-2000-10-04-accordo.pdf?alt=media&token=f4670629-8585-448c-a278-5a83a568bb95"
     }
-   ]
+   ],
+   "alta_tensione": "cipe"
   }
  ]
 }

@@ -61,6 +61,11 @@
           },
           {
             "@type": "Question",
+            "name": "La cedolare secca al 10% vale in tutti i comuni?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Il contratto a canone concordato si può fare in qualsiasi comune che abbia un accordo territoriale, ma la cedolare secca al 10% spetta solo nei comuni ad alta tensione abitativa: Bari, Bologna, Catania, Firenze, Genova, Milano, Napoli, Palermo, Roma, Torino e Venezia con i comuni confinanti, gli altri capoluoghi di provincia e i comuni dell'elenco approvato dal CIPE con la delibera n. 87 del 13 novembre 2003. Negli altri comuni la cedolare è al 21%. Quando scegli il comune, il calcolatore ti dice in quale caso sei." }
+          },
+          {
+            "@type": "Question",
             "name": "I dati che inserisco vengono salvati?",
             "acceptedAnswer": { "@type": "Answer", "text": "Solo se lo scegli tu. Il calcolo, il PDF e il Word si creano sul tuo telefono o computer, senza inviare nulla. Se premi «Salva», la scheda o il contratto vengono conservati nella tua area riservata di LocaOnLine, dove puoi riaprirli o eliminarli quando vuoi." }
           }
@@ -89,7 +94,7 @@
     #mobile-menu.open{display:block;}
     .link-accordo{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .75rem;border-radius:.5rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;font-weight:600;white-space:nowrap}
     .link-accordo:hover{background:rgba(255,255,255,.22)}
-    .link-accordo[hidden],#accordo-link[hidden]{display:none}
+    .link-accordo[hidden],#accordo-link[hidden],#alta-tensione[hidden]{display:none}
   </style>
 </head>
 <body class="font-sans bg-[#F4F7FB] text-[#0F2A4A] antialiased">
@@ -163,6 +168,7 @@
               <a id="accordo-pdf" href="#" target="_blank" rel="noopener" class="link-accordo" hidden><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Accordo</a>
               <a id="accordo-pdf-studenti" href="#" target="_blank" rel="noopener" class="link-accordo" hidden><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Accordo studenti</a>
             </p>
+            <p id="alta-tensione" class="flex gap-2 items-start mt-3" hidden><i class="fa-solid mt-0.5" aria-hidden="true"></i><span></span></p>
           </div>
         </div>
         <p class="text-slate-300 text-sm mt-3">Il tuo comune non c'è, o l'accordo è cambiato?
@@ -1520,6 +1526,15 @@
               verificare che il contratto rispetti l'accordo in vigore.</p>
           </details>
           <details class="bg-white border border-slate-200 rounded-xl p-4">
+            <summary class="font-semibold cursor-pointer">La cedolare secca al 10% vale in tutti i comuni?</summary>
+            <p class="text-sm text-[#4A5568] leading-relaxed mt-2">No. Il contratto a canone concordato si può fare in qualsiasi
+              comune che abbia un accordo territoriale, ma la cedolare secca al 10% spetta solo nei comuni ad alta tensione
+              abitativa: Bari, Bologna, Catania, Firenze, Genova, Milano, Napoli, Palermo, Roma, Torino e Venezia con i comuni
+              confinanti, gli altri capoluoghi di provincia e i comuni dell'elenco approvato dal CIPE con la delibera n. 87 del
+              13 novembre 2003. Negli altri comuni la cedolare è al 21%. Quando scegli il comune, il calcolatore ti dice in quale
+              caso sei.</p>
+          </details>
+          <details class="bg-white border border-slate-200 rounded-xl p-4">
             <summary class="font-semibold cursor-pointer">I dati che inserisco vengono salvati?</summary>
             <p class="text-sm text-[#4A5568] leading-relaxed mt-2">Solo se lo scegli tu. Il calcolo, il PDF e il Word si creano sul
               tuo telefono o computer, senza inviare nulla. Se premi «Salva», la scheda o il contratto vengono conservati nella tua
@@ -1531,7 +1546,8 @@
           <p class="font-bold text-[#0F2A4A] mb-1">Fonti</p>
           <ul class="list-disc ml-5 space-y-1 text-[#4A5568]">
             <li><a href="https://www.agenziaentrate.gov.it/portale/documents/20143/302381/Risoluzione+n+31+del+20+aprile+2018_RISOLUZIONE+N.+31_E+DEL+20042018.pdf/209dc1fd-1767-b61a-e3f1-1035fcc2ef16" target="_blank" rel="noopener" class="text-[#2E7CF6] hover:underline">Agenzia delle Entrate, risoluzione n. 31/E del 20 aprile 2018</a> — attestazione per i contratti non assistiti</li>
-            <li id="fonte-accordo">Accordo territoriale del Comune scelto, con il protocollo di deposito indicato in cima alla pagina</li>
+            <li><a href="https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/cedolare-secca/scheda-informativa-cedolare-secca" target="_blank" rel="noopener" class="text-[#2E7CF6] hover:underline">Agenzia delle Entrate, cedolare secca: i comuni con l'aliquota al 10%</a></li>
+            <li id="fonte-accordo">Accordo territoriale del Comune scelto</li>
           </ul>
         </div>
         <p class="text-sm text-[#4A5568] mt-5">Per approfondire: <a href="guida-cedolare-secca-quando-conviene.html" class="text-[#2E7CF6] hover:underline">Cedolare secca: quando conviene</a>

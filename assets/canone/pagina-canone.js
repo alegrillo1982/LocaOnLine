@@ -78,6 +78,7 @@
         if (voce && voce[campo]) { link.href = voce[campo]; link.hidden = false; conLink = true; } else link.hidden = true;
       }
       $("accordo-link").hidden = !conLink;
+      altaTensione(voce);
       $("fonte-accordo").textContent =
         `${a.titolo} ${del_(a.data_testo)}` + (a.integrazione_testo ? `, integrato il ${a.integrazione_testo}` : "") +
         deposito + (a.protocollo ? ` con prot. ${a.protocollo}` : "") +
@@ -89,6 +90,21 @@
     } catch (e) {
       $("accordo-in-uso").textContent = "Accordo non caricato: controlla la connessione e ricarica la pagina.";
     }
+  }
+
+  /** Comune ad alta tensione abitativa o no (campo "alta_tensione" di accordi/indice.json,
+   *  con il motivo: "cipe", "confinante", "capoluogo" oppure "no"): decide l'aliquota
+   *  della cedolare secca, 10% o 21%. */
+  function altaTensione(voce) {
+    const riga = $("alta-tensione");
+    const v = voce && voce.alta_tensione;
+    if (!v) { riga.hidden = true; return; }
+    const si = v !== "no";
+    riga.querySelector("i").className = `fa-solid mt-0.5 ${si ? "fa-circle-check text-emerald-300" : "fa-circle-info text-slate-300"}`;
+    riga.querySelector("span").textContent = si
+      ? "Comune ad alta tensione abitativa: con la cedolare secca l'aliquota è al 10%."
+      : "Il comune non risulta ad alta tensione abitativa: il contratto concordato è valido, ma la cedolare secca resta al 21%.";
+    riga.hidden = false;
   }
 
   /** Un accordo oltre la sua validita' (per Roma tre anni dal deposito)
