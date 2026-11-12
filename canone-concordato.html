@@ -95,6 +95,10 @@
     .link-accordo{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .75rem;border-radius:.5rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;font-weight:600;white-space:nowrap}
     .link-accordo:hover{background:rgba(255,255,255,.22)}
     .link-accordo[hidden],#accordo-link[hidden],#alta-tensione[hidden]{display:none}
+    .ata-nota{display:flex;gap:.4rem;align-items:flex-start;font-weight:500;font-size:13px;line-height:1.4;margin-top:2px}
+    .ata-nota[hidden]{display:none}
+    .ata-nota.si{color:#047857}
+    .ata-nota.no{color:#4A5568}
   </style>
 </head>
 <body class="font-sans bg-[#F4F7FB] text-[#0F2A4A] antialiased">
@@ -1488,7 +1492,8 @@
                 <option value="aggiungere">Aggiungere un comune</option>
                 <option value="aggiornare">Aggiornare un accordo già presente</option>
               </select></label>
-            <label class="largo">Comune *<input type="text" id="r-comune" autocomplete="address-level2" required/></label>
+            <label class="largo">Comune *<input type="text" id="r-comune" autocomplete="address-level2" required aria-describedby="r-ata"/>
+              <span id="r-ata" class="ata-nota" aria-live="polite" hidden></span></label>
             <label>Nome *<input type="text" id="r-nome" autocomplete="given-name" required/></label>
             <label>Cognome *<input type="text" id="r-cognome" autocomplete="family-name" required/></label>
             <label class="largo">Email *<input type="email" id="r-email" autocomplete="email" required/></label>
@@ -1735,6 +1740,52 @@
       el.textContent = msg;
     }
 
+    // Comune ad alta tensione abitativa? (accordi/alta-tensione.json: elenco CIPE 87/2003,
+    // confinanti con le 11 grandi citta', capoluoghi istituiti dopo). Inutile chiedere un
+    // accordo se il cliente lo vuole solo per la cedolare al 10% e il comune non ne ha diritto.
+    let elencoATA = null;
+    const chiaveATA = (t) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+      .replace(/\(.*?\)/g, '').replace(/[^a-z]/g, '');
+    async function caricaATA() {
+      if (!elencoATA) elencoATA = fetch('accordi/alta-tensione.json').then((r) => r.json()).then((d) => {
+        const m = new Map();
+        for (const [nome, regione] of d.comuni) {
+          const k = chiaveATA(nome);
+          m.set(k, [...(m.get(k) || []), { nome, regione }]);
+        }
+        return m;
+      }).catch(() => { elencoATA = null; return null; });
+      return elencoATA;
+    }
+    /** { si: [{nome, regione}] } se c'e', { si: null } se no, null se non si puo' dire */
+    async function cercaATA(testo) {
+      // "Roma (RM)", "Roma RM", "Roma, RM": via la sigla della provincia
+      const pulito = testo.replace(/\(.*?\)/g, '').replace(/[ ,]+[A-Z]{2}\s*$/, '').trim();
+      if (chiaveATA(pulito).length < 3) return null;
+      const m = await caricaATA();
+      return m ? { si: m.get(chiaveATA(pulito)) || null } : null;
+    }
+    async function mostraATA(finito) {
+      const el = $('r-ata');
+      const r = await cercaATA($('r-comune').value);
+      if (!r || (!r.si && !finito)) { if (!r || !finito) el.hidden = true; return; }
+      if (r.si) {
+        const dove = [...new Set(r.si.map((v) => v.regione))].join(' o in ');
+        el.className = 'ata-nota si';
+        el.innerHTML = '<i class="fa-solid fa-circle-check mt-0.5" aria-hidden="true"></i><span></span>';
+        el.querySelector('span').textContent = `${r.si[0].nome} (${dove}) è ad alta tensione abitativa: con il canone concordato la cedolare secca è al 10%.`;
+      } else {
+        el.className = 'ata-nota no';
+        el.innerHTML = '<i class="fa-solid fa-circle-info mt-0.5" aria-hidden="true"></i><span></span>';
+        el.querySelector('span').textContent = 'Non lo troviamo tra i comuni ad alta tensione abitativa (controlla di averlo scritto per intero). ' +
+          'Se non lo è, il contratto concordato si può fare, ma la cedolare secca resta al 21%: se ti serve solo per il 10%, non conviene.';
+      }
+      el.hidden = false;
+    }
+    let attesaATA;
+    $('r-comune').addEventListener('input', () => { clearTimeout(attesaATA); attesaATA = setTimeout(() => mostraATA(false), 250); });
+    $('r-comune').addEventListener('change', () => { clearTimeout(attesaATA); mostraATA(true); });
+
     $('form-richiesta').addEventListener('submit', async (e) => {
       e.preventDefault();
       const ok = 'Richiesta inviata, grazie! Ti scriviamo quando l\'accordo è disponibile. Riceverai anche una email di conferma.';
@@ -1747,17 +1798,19 @@
       if (!$('r-privacy').checked) { esito('Per inviare la richiesta devi accettare la Privacy Policy.', 'errore'); return; }
       const btn = $('r-invia');
       btn.disabled = true; $('r-etichetta').textContent = 'Invio in corso…';
+      const ata = await cercaATA(comune).catch(() => null);
       const messaggio = `Richiesta dalla pagina del canone concordato\n` +
         `Cosa: ${tipo === 'aggiornare' ? 'aggiornare un accordo già presente' : 'aggiungere un comune'}\n` +
         `Comune: ${comune}\n` +
-        `Comune selezionato nella pagina: ${$('comune').selectedOptions[0]?.textContent || '—'}\n\n` +
+        `Comune selezionato nella pagina: ${$('comune').selectedOptions[0]?.textContent || '—'}\n` +
+        `Alta tensione abitativa: ${!ata ? 'non verificato' : ata.si ? 'sì, ' + ata.si.map((v) => v.regione).join(' o ') + ' (cedolare al 10%)' : 'non trovato (cedolare al 21%)'}\n\n` +
         `Note:\n${note || '—'}`;
       try {
         await inviaContatto({ nome, cognome, email, telefono: '', messaggio,
           argomento: tipo === 'aggiornare' ? 'Accordo territoriale da aggiornare' : 'Accordo territoriale da aggiungere' });
         esito(ok, 'ok');
         try { gtag('event', 'richiesta_accordo', { tipo, comune }); } catch (err) { /* mai bloccare */ }
-        e.target.reset();
+        e.target.reset(); $('r-ata').hidden = true;
       } catch (err) {
         console.error(err);
         esito('Invio non riuscito. Scrivici a info@locaonline.it indicando il comune.', 'errore');
