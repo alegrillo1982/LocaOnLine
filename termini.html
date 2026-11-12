@@ -7,6 +7,15 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+    // Visite di Alessandro e prove in locale: marcate "internal" ed escluse da Analytics (filtro
+    // "Internal Traffic"). Su ogni telefono o browser basta aprire una volta locaonline.it/?interno=1
+    // (?interno=0 per togliere il segno).
+    try {
+      if (/[?&]interno=1\b/.test(location.search)) localStorage.setItem('loca_interno', '1');
+      if (/[?&]interno=0\b/.test(location.search)) localStorage.removeItem('loca_interno');
+      if (localStorage.getItem('loca_interno') === '1' || /^(localhost|127\.0\.0\.1)$/.test(location.hostname))
+        gtag('set', { traffic_type: 'internal' });
+    } catch (e) { /* mai bloccare */ }
 
     gtag('config', 'AW-18245314132');
   </script>
